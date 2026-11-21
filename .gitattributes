@@ -1,0 +1,2 @@
+# CSV sources use RFC-style CRLF records; the CR is not trailing whitespace.
+*.csv whitespace=trailing-space,space-before-tab,cr-at-eol

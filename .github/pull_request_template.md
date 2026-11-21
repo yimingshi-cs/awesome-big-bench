@@ -1,0 +1,3 @@
+- What should readers see differently?
+- Primary sources (link the version or date that supports the change):
+- For directory, naming or trend data edits, run `python3 scripts/build_guide.py` and include the refreshed README and offline page. For trend data, run the trend audit and refresh affected figures.

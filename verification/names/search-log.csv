@@ -1,0 +1,439 @@
+checked_on,name,index,query_url,result
+2026-11-20,Alignment's Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Alignment%27s+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Alignment+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Alignment%E2%80%99s+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22alignmentslastexam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22alignmentlastexam%22&terms-4-field=all&size=50,no results
+2026-11-20,Alignment's Last Exam,domains,https://dns.google/resolve?name=alignment-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Alignment's Last Exam,domains,https://dns.google/resolve?name=alignmentlastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Alignment's Last Exam,domains,https://dns.google/resolve?name=alignments-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Alignment's Last Exam,domains,https://dns.google/resolve?name=alignmentslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Alignment's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/alignment-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/alignmentlastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/alignments-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/alignmentslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/alignment-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/alignmentlastexam.org,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/alignments-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/alignmentslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/alignment-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/alignmentlastexam.com,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/alignments-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/alignmentslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/repositories?q=%22alignment-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/repositories?q=%22alignmentlastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/repositories?q=%22alignments-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/repositories?q=%22alignmentslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/users?q=alignment-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/users?q=alignmentlastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/users?q=alignments-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,github,https://api.github.com/search/users?q=alignmentslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/datasets?search=alignment-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/datasets?search=alignmentlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/datasets?search=alignments-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/datasets?search=alignmentslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/models?search=alignment-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/models?search=alignmentlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/models?search=alignments-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/models?search=alignmentslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/spaces?search=alignment-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/spaces?search=alignmentlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/spaces?search=alignments-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hf,https://huggingface.co/api/spaces?search=alignmentslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Alignment's Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Alignment%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,8 stories returned; normalized phrase in first 8 titles: none
+2026-11-20,Alignment's Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Alignment+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,8 stories returned; normalized phrase in first 8 titles: none
+2026-11-20,Alignment's Last Exam,open web (replay link),https://www.google.com/search?q=%22Alignment%27s+Last+Exam%22+OR+%22Alignments+Last+Exam%22+OR+%22Alignment+Last+Exam%22+benchmark+AI,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Alignment's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Alignment%27s+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Alignment's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Alignments+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Alignment's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22alignmentslastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Coders' Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Coders%27+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Coder%27s+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Coders+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Coder+Last+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Coders%E2%80%99+Last+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Coder%E2%80%99s+Last+Exam%22&terms-5-field=all&terms-6-operator=OR&terms-6-term=%22coderslastexam%22&terms-6-field=all&terms-7-operator=OR&terms-7-term=%22coderlastexam%22&terms-7-field=all&size=50,no results
+2026-11-20,Coders' Last Exam,domains,https://dns.google/resolve?name=coder-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Coders' Last Exam,domains,https://dns.google/resolve?name=coderlastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Coders' Last Exam,domains,https://dns.google/resolve?name=coders-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Coders' Last Exam,domains,https://dns.google/resolve?name=coderslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Coders' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/coder-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/coderlastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/coders-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/coderslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/coder-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/coderlastexam.org,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/coders-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/coderslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/coder-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/coderlastexam.com,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/coders-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/coderslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/repositories?q=%22coder-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/repositories?q=%22coderlastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/repositories?q=%22coders-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/repositories?q=%22coderslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/users?q=coder-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/users?q=coderlastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/users?q=coders-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,github,https://api.github.com/search/users?q=coderslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/datasets?search=coder-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/datasets?search=coderlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/datasets?search=coders-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/datasets?search=coderslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/models?search=coder-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/models?search=coderlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/models?search=coders-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/models?search=coderslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/spaces?search=coder-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/spaces?search=coderlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/spaces?search=coders-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hf,https://huggingface.co/api/spaces?search=coderslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Coders' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Coder%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,12 stories returned; normalized phrase in first 12 titles: none
+2026-11-20,Coders' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Coder+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,12 stories returned; normalized phrase in first 12 titles: none
+2026-11-20,Coders' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Coders%27+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,12 stories returned; normalized phrase in first 12 titles: none
+2026-11-20,Coders' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Coders+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,12 stories returned; normalized phrase in first 12 titles: none
+2026-11-20,Coders' Last Exam,open web (replay link),https://www.google.com/search?q=%22Coders%27+Last+Exam%22+OR+%22Coder%27s+Last+Exam%22+OR+%22Humanity%27s+Last+Code+Exam%22+benchmark,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Coders' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Coders%27+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Coders' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Coders+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Coders' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22coderslastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Embodied+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied%27s+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied%E2%80%99s+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22embodiedlastexam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22embodiedslastexam%22&terms-4-field=all&size=50,no results
+2026-11-20,Embodied Last Exam,domains,https://dns.google/resolve?name=embodied-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Embodied Last Exam,domains,https://dns.google/resolve?name=embodiedlastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Embodied Last Exam,domains,https://dns.google/resolve?name=embodieds-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Embodied Last Exam,domains,https://dns.google/resolve?name=embodiedslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Embodied Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/embodied-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/embodiedlastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/embodieds-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/embodiedslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/embodied-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/embodiedlastexam.org,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/embodieds-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/embodiedslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.verisign.com/com/v1/domain/embodied-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.verisign.com/com/v1/domain/embodiedlastexam.com,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.verisign.com/com/v1/domain/embodieds-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,domains,https://rdap.verisign.com/com/v1/domain/embodiedslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/repositories?q=%22embodied-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/repositories?q=%22embodiedlastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/repositories?q=%22embodieds-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/repositories?q=%22embodiedslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/users?q=embodied-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/users?q=embodiedlastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/users?q=embodieds-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,github,https://api.github.com/search/users?q=embodiedslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/datasets?search=embodied-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/datasets?search=embodiedlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/datasets?search=embodieds-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/datasets?search=embodiedslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/models?search=embodied-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/models?search=embodiedlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/models?search=embodieds-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/models?search=embodiedslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/spaces?search=embodied-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/spaces?search=embodiedlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/spaces?search=embodieds-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hf,https://huggingface.co/api/spaces?search=embodiedslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Embodied%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Embodied+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied Last Exam,open web (replay link),https://www.google.com/search?q=%22Embodied+Last+Exam%22+OR+%22Embodied%27s+Last+Exam%22+OR+%22Robots%27+Last+Exam%22+benchmark,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Embodied Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Embodied+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22embodiedlastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied-Dojo,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Embodied-Dojo%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied+Dojo%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22EmbodiedDojo%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22embodieddojo%22&terms-3-field=all&size=50,no results
+2026-11-20,Embodied-Dojo,domains,https://dns.google/resolve?name=embodied-dojo.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Embodied-Dojo,domains,https://dns.google/resolve?name=embodieddojo.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Embodied-Dojo,domains,https://rdap.identitydigital.services/rdap/domain/embodied-dojo.ai,RDAP 404 (no record returned)
+2026-11-20,Embodied-Dojo,domains,https://rdap.identitydigital.services/rdap/domain/embodieddojo.ai,RDAP 404 (no record returned)
+2026-11-20,Embodied-Dojo,domains,https://rdap.publicinterestregistry.org/rdap/domain/embodied-dojo.org,RDAP 404 (no record returned)
+2026-11-20,Embodied-Dojo,domains,https://rdap.publicinterestregistry.org/rdap/domain/embodieddojo.org,RDAP 404 (no record returned)
+2026-11-20,Embodied-Dojo,domains,https://rdap.verisign.com/com/v1/domain/embodied-dojo.com,RDAP 404 (no record returned)
+2026-11-20,Embodied-Dojo,domains,https://rdap.verisign.com/com/v1/domain/embodieddojo.com,RDAP 404 (no record returned)
+2026-11-20,Embodied-Dojo,github,https://api.github.com/search/repositories?q=%22embodied-dojo%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied-Dojo,github,https://api.github.com/search/repositories?q=%22embodieddojo%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied-Dojo,github,https://api.github.com/search/users?q=embodied-dojo+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied-Dojo,github,https://api.github.com/search/users?q=embodieddojo+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Embodied-Dojo,hf,https://huggingface.co/api/datasets?search=embodied-dojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied-Dojo,hf,https://huggingface.co/api/datasets?search=embodieddojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied-Dojo,hf,https://huggingface.co/api/models?search=embodied-dojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied-Dojo,hf,https://huggingface.co/api/models?search=embodieddojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied-Dojo,hf,https://huggingface.co/api/spaces?search=embodied-dojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied-Dojo,hf,https://huggingface.co/api/spaces?search=embodieddojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Embodied-Dojo,hn,https://hn.algolia.com/api/v1/search?query=Embodied+Dojo&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied-Dojo,hn,https://hn.algolia.com/api/v1/search?query=Embodied-Dojo&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied-Dojo,hn,https://hn.algolia.com/api/v1/search?query=EmbodiedDojo&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied-Dojo,open web (replay link),https://www.google.com/search?q=%22Embodied-Dojo%22+OR+%22EmbodiedDojo%22+OR+%22Embodied+Dojo%22+benchmark+RoboDojo,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Embodied-Dojo,openalex,https://api.openalex.org/works?filter=title.search%3A%22Embodied+Dojo%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied-Dojo,openalex,https://api.openalex.org/works?filter=title.search%3A%22Embodied-Dojo%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Embodied-Dojo,openalex,https://api.openalex.org/works?filter=title.search%3A%22embodieddojo%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Dojo,Google Scholar,https://scholar.google.com/scholar?q=%22MM-Dojo%22,"HTTP 429; rate-limited, no results inferred. Remaining Scholar queries not run."
+2026-11-20,MM-Dojo,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22MM-Dojo%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22MM+Dojo%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22MMDojo%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22mmdojo%22&terms-3-field=all&size=50,no results
+2026-11-20,MM-Dojo,domains,https://dns.google/resolve?name=mm-dojo.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,MM-Dojo,domains,https://dns.google/resolve?name=mmdojo.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,MM-Dojo,domains,https://rdap.identitydigital.services/rdap/domain/mm-dojo.ai,RDAP 404 (no record returned)
+2026-11-20,MM-Dojo,domains,https://rdap.identitydigital.services/rdap/domain/mmdojo.ai,RDAP 404 (no record returned)
+2026-11-20,MM-Dojo,domains,https://rdap.publicinterestregistry.org/rdap/domain/mm-dojo.org,RDAP 404 (no record returned)
+2026-11-20,MM-Dojo,domains,https://rdap.publicinterestregistry.org/rdap/domain/mmdojo.org,RDAP 404 (no record returned)
+2026-11-20,MM-Dojo,domains,https://rdap.verisign.com/com/v1/domain/mm-dojo.com,RDAP 404 (no record returned)
+2026-11-20,MM-Dojo,domains,https://rdap.verisign.com/com/v1/domain/mmdojo.com,RDAP 404 (no record returned)
+2026-11-20,MM-Dojo,github,https://api.github.com/search/repositories?q=%22mm-dojo%22+in%3Aname+is%3Apublic&per_page=100,reviewed 2 of 2 returned names; normalized exact: none
+2026-11-20,MM-Dojo,github,https://api.github.com/search/repositories?q=%22mmdojo%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,MM-Dojo,github,https://api.github.com/search/users?q=mm-dojo+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,MM-Dojo,github,https://api.github.com/search/users?q=mmdojo+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,MM-Dojo,hf,https://huggingface.co/api/datasets?search=mm-dojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Dojo,hf,https://huggingface.co/api/datasets?search=mmdojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Dojo,hf,https://huggingface.co/api/models?search=mm-dojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Dojo,hf,https://huggingface.co/api/models?search=mmdojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Dojo,hf,https://huggingface.co/api/spaces?search=mm-dojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Dojo,hf,https://huggingface.co/api/spaces?search=mmdojo&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Dojo,hn,https://hn.algolia.com/api/v1/search?query=MM+Dojo&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Dojo,hn,https://hn.algolia.com/api/v1/search?query=MM-Dojo&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Dojo,hn,https://hn.algolia.com/api/v1/search?query=MMDojo&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Dojo,open web (replay link),https://www.google.com/search?q=%22MM-Dojo%22+OR+%22MMDojo%22+OR+%22MM+Dojo%22+multimodal+AI+benchmark,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,MM-Dojo,openalex,https://api.openalex.org/works?filter=title.search%3A%22MM+Dojo%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Dojo,openalex,https://api.openalex.org/works?filter=title.search%3A%22MM-Dojo%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Dojo,openalex,https://api.openalex.org/works?filter=title.search%3A%22mmdojo%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22MM-Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22MM+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22MMExam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22mmexam%22&terms-3-field=all&size=50,no results
+2026-11-20,MM-Exam,domains,https://dns.google/resolve?name=mm-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,MM-Exam,domains,https://dns.google/resolve?name=mmexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,MM-Exam,domains,https://rdap.identitydigital.services/rdap/domain/mm-exam.ai,RDAP 404 (no record returned)
+2026-11-20,MM-Exam,domains,https://rdap.identitydigital.services/rdap/domain/mmexam.ai,RDAP 404 (no record returned)
+2026-11-20,MM-Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/mm-exam.org,RDAP 404 (no record returned)
+2026-11-20,MM-Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/mmexam.org,RDAP 404 (no record returned)
+2026-11-20,MM-Exam,domains,https://rdap.verisign.com/com/v1/domain/mm-exam.com,RDAP 404 (no record returned)
+2026-11-20,MM-Exam,domains,https://rdap.verisign.com/com/v1/domain/mmexam.com,RDAP registration record: MMEXAM.COM
+2026-11-20,MM-Exam,github,https://api.github.com/search/repositories?q=%22mm-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 151 of 151 returned names; normalized exact: https://github.com/sashiqurzamman/mm-exam; https://github.com/yaoyongxi/MM_Exam
+2026-11-20,MM-Exam,github,https://api.github.com/search/repositories?q=%22mmexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 13 of 13 returned names; normalized exact: https://github.com/Sadjek2/MMexam; https://github.com/Anu7288/MMEXAM; https://github.com/chharish12/MMExam; https://github.com/malgina876/mmexam; https://github.com/Balu5815/MMExam; https://github.com/Purushothambhumana/MMexam
+2026-11-20,MM-Exam,github,https://api.github.com/search/users?q=mm-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,MM-Exam,github,https://api.github.com/search/users?q=mmexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,MM-Exam,hf,https://huggingface.co/api/datasets?search=mm-exam&limit=100,9 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Exam,hf,https://huggingface.co/api/datasets?search=mmexam&limit=100,1 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Exam,hf,https://huggingface.co/api/models?search=mm-exam&limit=100,6 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Exam,hf,https://huggingface.co/api/models?search=mmexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Exam,hf,https://huggingface.co/api/spaces?search=mm-exam&limit=100,1 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Exam,hf,https://huggingface.co/api/spaces?search=mmexam&limit=100,1 Hub ID(s) returned; normalized exact: none
+2026-11-20,MM-Exam,hn,https://hn.algolia.com/api/v1/search?query=MM+Exam&tags=story&typoTolerance=false&hitsPerPage=50,23 stories returned; normalized phrase in first 23 titles: none
+2026-11-20,MM-Exam,hn,https://hn.algolia.com/api/v1/search?query=MM-Exam&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Exam,hn,https://hn.algolia.com/api/v1/search?query=MMExam&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Exam,open web (replay link),https://www.google.com/search?q=%22MM-Exam%22+OR+%22MMExam%22+OR+%22MM-Exams%22+multimodal+AI+benchmark+MM+exam,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,MM-Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22MM+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22MM-Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,MM-Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22mmexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Mathematicians' Last Exam,Google Scholar,https://scholar.google.com/scholar?q=%22Mathematicians%27+Last+Exam%22,"HTTP 429; rate-limited, no results inferred. Remaining Scholar queries not run."
+2026-11-20,Mathematicians' Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Mathematicians%27+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Mathematician%27s+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Mathematicians+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Mathematician+Last+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Mathematicians%E2%80%99+Last+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Mathematician%E2%80%99s+Last+Exam%22&terms-5-field=all&terms-6-operator=OR&terms-6-term=%22mathematicianslastexam%22&terms-6-field=all&terms-7-operator=OR&terms-7-term=%22mathematicianlastexam%22&terms-7-field=all&size=50,no results
+2026-11-20,Mathematicians' Last Exam,domains,https://dns.google/resolve?name=mathematician-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Mathematicians' Last Exam,domains,https://dns.google/resolve?name=mathematicianlastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Mathematicians' Last Exam,domains,https://dns.google/resolve?name=mathematicians-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Mathematicians' Last Exam,domains,https://dns.google/resolve?name=mathematicianslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/mathematician-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/mathematicianlastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/mathematicians-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/mathematicianslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/mathematician-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/mathematicianlastexam.org,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/mathematicians-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/mathematicianslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/mathematician-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/mathematicianlastexam.com,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/mathematicians-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/mathematicianslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/repositories?q=%22mathematician-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/repositories?q=%22mathematicianlastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/repositories?q=%22mathematicians-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/repositories?q=%22mathematicianslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/users?q=mathematician-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/users?q=mathematicianlastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/users?q=mathematicians-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,github,https://api.github.com/search/users?q=mathematicianslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/datasets?search=mathematician-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/datasets?search=mathematicianlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/datasets?search=mathematicians-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/datasets?search=mathematicianslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/models?search=mathematician-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/models?search=mathematicianlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/models?search=mathematicians-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/models?search=mathematicianslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/spaces?search=mathematician-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/spaces?search=mathematicianlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/spaces?search=mathematicians-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hf,https://huggingface.co/api/spaces?search=mathematicianslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Mathematicians' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Mathematician%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,4 stories returned; normalized phrase in first 4 titles: none
+2026-11-20,Mathematicians' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Mathematician+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,4 stories returned; normalized phrase in first 4 titles: none
+2026-11-20,Mathematicians' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Mathematicians%27+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,4 stories returned; normalized phrase in first 4 titles: none
+2026-11-20,Mathematicians' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Mathematicians+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,4 stories returned; normalized phrase in first 4 titles: none
+2026-11-20,Mathematicians' Last Exam,open web (replay link),https://www.google.com/search?q=%22Mathematicians%27+Last+Exam%22+OR+%22Mathematician%27s+Last+Exam%22+OR+%22Mathematicians+Last+Exam%22+benchmark+AI,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Mathematicians' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Mathematicians%27+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Mathematicians' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Mathematicians+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Mathematicians' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22mathematicianslastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Researchers' Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Researchers%27+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Researcher%27s+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Researchers+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Researcher+Last+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Researchers%E2%80%99+Last+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Researcher%E2%80%99s+Last+Exam%22&terms-5-field=all&terms-6-operator=OR&terms-6-term=%22researcherslastexam%22&terms-6-field=all&terms-7-operator=OR&terms-7-term=%22researcherlastexam%22&terms-7-field=all&size=50,no results
+2026-11-20,Researchers' Last Exam,domains,https://dns.google/resolve?name=researcher-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Researchers' Last Exam,domains,https://dns.google/resolve?name=researcherlastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Researchers' Last Exam,domains,https://dns.google/resolve?name=researchers-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Researchers' Last Exam,domains,https://dns.google/resolve?name=researcherslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Researchers' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/researcher-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/researcherlastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/researchers-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/researcherslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/researcher-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/researcherlastexam.org,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/researchers-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/researcherslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/researcher-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/researcherlastexam.com,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/researchers-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,domains,https://rdap.verisign.com/com/v1/domain/researcherslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/repositories?q=%22researcher-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/repositories?q=%22researcherlastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/repositories?q=%22researchers-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/repositories?q=%22researcherslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/users?q=researcher-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/users?q=researcherlastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/users?q=researchers-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,github,https://api.github.com/search/users?q=researcherslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/datasets?search=researcher-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/datasets?search=researcherlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/datasets?search=researchers-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/datasets?search=researcherslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/models?search=researcher-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/models?search=researcherlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/models?search=researchers-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/models?search=researcherslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/spaces?search=researcher-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/spaces?search=researcherlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/spaces?search=researchers-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hf,https://huggingface.co/api/spaces?search=researcherslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Researchers' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Researcher%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,19 stories returned; normalized phrase in first 19 titles: none
+2026-11-20,Researchers' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Researcher+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,19 stories returned; normalized phrase in first 19 titles: none
+2026-11-20,Researchers' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Researchers%27+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,19 stories returned; normalized phrase in first 19 titles: none
+2026-11-20,Researchers' Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Researchers+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,19 stories returned; normalized phrase in first 19 titles: none
+2026-11-20,Researchers' Last Exam,open web (replay link),https://www.google.com/search?q=%22Researchers%27+Last+Exam%22+OR+%22Researcher%27s+Last+Exam%22+OR+%22Scientists%27+First+Exam%22+benchmark,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Researchers' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Researchers%27+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Researchers' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Researchers+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Researchers' Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22researcherslastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22SWE-Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22SWE+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22SWEExam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22sweexam%22&terms-3-field=all&size=50,no results
+2026-11-20,SWE-Exam,domains,https://dns.google/resolve?name=swe-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,SWE-Exam,domains,https://dns.google/resolve?name=sweexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,SWE-Exam,domains,https://rdap.identitydigital.services/rdap/domain/swe-exam.ai,RDAP 404 (no record returned)
+2026-11-20,SWE-Exam,domains,https://rdap.identitydigital.services/rdap/domain/sweexam.ai,RDAP 404 (no record returned)
+2026-11-20,SWE-Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/swe-exam.org,RDAP 404 (no record returned)
+2026-11-20,SWE-Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/sweexam.org,RDAP 404 (no record returned)
+2026-11-20,SWE-Exam,domains,https://rdap.verisign.com/com/v1/domain/swe-exam.com,RDAP 404 (no record returned)
+2026-11-20,SWE-Exam,domains,https://rdap.verisign.com/com/v1/domain/sweexam.com,RDAP 404 (no record returned)
+2026-11-20,SWE-Exam,github,https://api.github.com/search/repositories?q=%22swe-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 124 of 124 returned names; normalized exact: https://github.com/Arefin168/SWE-Exam; https://github.com/XimenaVargasGamez/SWE-EXAM; https://github.com/NicolasStigler/SWE-EXAM; https://github.com/kal-dereje/swe-exam; https://github.com/Mygmarsaikhan/SWE_EXAM
+2026-11-20,SWE-Exam,github,https://api.github.com/search/repositories?q=%22sweexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 1 of 1 returned names; normalized exact: none
+2026-11-20,SWE-Exam,github,https://api.github.com/search/users?q=swe-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 1 of 1 returned names; normalized exact: none
+2026-11-20,SWE-Exam,github,https://api.github.com/search/users?q=sweexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 1 of 1 returned names; normalized exact: none
+2026-11-20,SWE-Exam,hf,https://huggingface.co/api/datasets?search=swe-exam&limit=100,1 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Exam,hf,https://huggingface.co/api/datasets?search=sweexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Exam,hf,https://huggingface.co/api/models?search=swe-exam&limit=100,1 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Exam,hf,https://huggingface.co/api/models?search=sweexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Exam,hf,https://huggingface.co/api/spaces?search=swe-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Exam,hf,https://huggingface.co/api/spaces?search=sweexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Exam,hn,https://hn.algolia.com/api/v1/search?query=SWE+Exam&tags=story&typoTolerance=false&hitsPerPage=50,54 stories returned; normalized phrase in first 50 titles: none
+2026-11-20,SWE-Exam,hn,https://hn.algolia.com/api/v1/search?query=SWE-Exam&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Exam,hn,https://hn.algolia.com/api/v1/search?query=SWEExam&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Exam,open web (replay link),https://www.google.com/search?q=%22SWE-Exam%22+OR+%22SWEExam%22+OR+%22SWE+Exam%22+benchmark+AI+software+engineering,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,SWE-Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22SWE+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22SWE-Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22sweexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Mock,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22SWE-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22SWE+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22SWEMock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22swemock%22&terms-3-field=all&size=50,no results
+2026-11-20,SWE-Mock,domains,https://dns.google/resolve?name=swe-mock.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,SWE-Mock,domains,https://dns.google/resolve?name=swemock.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,SWE-Mock,domains,https://rdap.identitydigital.services/rdap/domain/swe-mock.ai,RDAP 404 (no record returned)
+2026-11-20,SWE-Mock,domains,https://rdap.identitydigital.services/rdap/domain/swemock.ai,RDAP 404 (no record returned)
+2026-11-20,SWE-Mock,domains,https://rdap.publicinterestregistry.org/rdap/domain/swe-mock.org,RDAP 404 (no record returned)
+2026-11-20,SWE-Mock,domains,https://rdap.publicinterestregistry.org/rdap/domain/swemock.org,RDAP 404 (no record returned)
+2026-11-20,SWE-Mock,domains,https://rdap.verisign.com/com/v1/domain/swe-mock.com,RDAP 404 (no record returned)
+2026-11-20,SWE-Mock,domains,https://rdap.verisign.com/com/v1/domain/swemock.com,RDAP 404 (no record returned)
+2026-11-20,SWE-Mock,github,https://api.github.com/search/repositories?q=%22swe-mock%22+in%3Aname+is%3Apublic&per_page=100,reviewed 13 of 13 returned names; normalized exact: none
+2026-11-20,SWE-Mock,github,https://api.github.com/search/repositories?q=%22swemock%22+in%3Aname+is%3Apublic&per_page=100,reviewed 3 of 3 returned names; normalized exact: https://github.com/v-akkala/swemock; https://github.com/Bhaumik-Tandan/Swemock
+2026-11-20,SWE-Mock,github,https://api.github.com/search/users?q=swe-mock+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,SWE-Mock,github,https://api.github.com/search/users?q=swemock+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,SWE-Mock,hf,https://huggingface.co/api/datasets?search=swe-mock&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Mock,hf,https://huggingface.co/api/datasets?search=swemock&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Mock,hf,https://huggingface.co/api/models?search=swe-mock&limit=100,1 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Mock,hf,https://huggingface.co/api/models?search=swemock&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Mock,hf,https://huggingface.co/api/spaces?search=swe-mock&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Mock,hf,https://huggingface.co/api/spaces?search=swemock&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,SWE-Mock,hn,https://hn.algolia.com/api/v1/search?query=SWE+Mock&tags=story&typoTolerance=false&hitsPerPage=50,6 stories returned; normalized phrase in first 6 titles: none
+2026-11-20,SWE-Mock,hn,https://hn.algolia.com/api/v1/search?query=SWE-Mock&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Mock,hn,https://hn.algolia.com/api/v1/search?query=SWEMock&tags=story&typoTolerance=false&hitsPerPage=50,0 stories returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Mock,open web (replay link),https://www.google.com/search?q=%22SWE-Mock%22+OR+%22SWEMock%22+OR+%22SWE+Mock%22+benchmark+AI+software+engineering,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,SWE-Mock,openalex,https://api.openalex.org/works?filter=title.search%3A%22SWE+Mock%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Mock,openalex,https://api.openalex.org/works?filter=title.search%3A%22SWE-Mock%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,SWE-Mock,openalex,https://api.openalex.org/works?filter=title.search%3A%22swemock%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Video's Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Video%27s+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Video+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Video%E2%80%99s+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22videoslastexam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22videolastexam%22&terms-4-field=all&size=50,no results
+2026-11-20,Video's Last Exam,domains,https://dns.google/resolve?name=video-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Video's Last Exam,domains,https://dns.google/resolve?name=videolastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Video's Last Exam,domains,https://dns.google/resolve?name=videos-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Video's Last Exam,domains,https://dns.google/resolve?name=videoslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Video's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/video-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/videolastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/videos-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/videoslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/video-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/videolastexam.org,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/videos-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/videoslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/video-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/videolastexam.com,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/videos-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/videoslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/repositories?q=%22video-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/repositories?q=%22videolastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/repositories?q=%22videos-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/repositories?q=%22videoslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/users?q=video-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/users?q=videolastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/users?q=videos-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,github,https://api.github.com/search/users?q=videoslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/datasets?search=video-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/datasets?search=videolastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/datasets?search=videos-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/datasets?search=videoslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/models?search=video-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/models?search=videolastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/models?search=videos-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/models?search=videoslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/spaces?search=video-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/spaces?search=videolastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/spaces?search=videos-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hf,https://huggingface.co/api/spaces?search=videoslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Video's Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Video%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,187 stories returned; normalized phrase in first 50 titles: none
+2026-11-20,Video's Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Video+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,187 stories returned; normalized phrase in first 50 titles: none
+2026-11-20,Video's Last Exam,open web (replay link),https://www.google.com/search?q=%22Video%27s+Last+Exam%22+OR+%22Videos+Last+Exam%22+OR+%22Video+Last+Exam%22+benchmark,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Video's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Video%27s+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Video's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Videos+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Video's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22videoslastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Vision's Last Exam,arxiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Vision%27s+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Vision+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Vision%E2%80%99s+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22visionslastexam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22visionlastexam%22&terms-4-field=all&size=50,no results
+2026-11-20,Vision's Last Exam,domains,https://dns.google/resolve?name=vision-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Vision's Last Exam,domains,https://dns.google/resolve?name=visionlastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Vision's Last Exam,domains,https://dns.google/resolve?name=visions-last-exam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Vision's Last Exam,domains,https://dns.google/resolve?name=visionslastexam.io&type=NS,"DNS status 3 (3 = NXDOMAIN); delegation only, not registration."
+2026-11-20,Vision's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/vision-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/visionlastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/visions-last-exam.ai,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.identitydigital.services/rdap/domain/visionslastexam.ai,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/vision-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/visionlastexam.org,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/visions-last-exam.org,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.publicinterestregistry.org/rdap/domain/visionslastexam.org,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/vision-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/visionlastexam.com,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/visions-last-exam.com,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,domains,https://rdap.verisign.com/com/v1/domain/visionslastexam.com,RDAP 404 (no record returned)
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/repositories?q=%22vision-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/repositories?q=%22visionlastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/repositories?q=%22visions-last-exam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/repositories?q=%22visionslastexam%22+in%3Aname+is%3Apublic&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/users?q=vision-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/users?q=visionlastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/users?q=visions-last-exam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,github,https://api.github.com/search/users?q=visionslastexam+in%3Alogin+type%3Aorg&per_page=100,reviewed 0 of 0 returned names; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/datasets?search=vision-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/datasets?search=visionlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/datasets?search=visions-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/datasets?search=visionslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/models?search=vision-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/models?search=visionlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/models?search=visions-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/models?search=visionslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/spaces?search=vision-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/spaces?search=visionlastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/spaces?search=visions-last-exam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hf,https://huggingface.co/api/spaces?search=visionslastexam&limit=100,0 Hub ID(s) returned; normalized exact: none
+2026-11-20,Vision's Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Vision%27s+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,44 stories returned; normalized phrase in first 44 titles: none
+2026-11-20,Vision's Last Exam,hn,https://hn.algolia.com/api/v1/search?query=Vision+Last+Exam&tags=story&typoTolerance=false&hitsPerPage=50,44 stories returned; normalized phrase in first 44 titles: none
+2026-11-20,Vision's Last Exam,open web (replay link),https://www.google.com/search?q=%22Vision%27s+Last+Exam%22+OR+%22Visions+Last+Exam%22+OR+%22Vision+Last+Exam%22+multimodal+benchmark,Discovery query; see reviewed sources in names.md. Ranking and backend can change.
+2026-11-20,Vision's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Vision%27s+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Vision's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22Visions+Last+Exam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none
+2026-11-20,Vision's Last Exam,openalex,https://api.openalex.org/works?filter=title.search%3A%22visionslastexam%22&per_page=100&select=display_name%2Cdoi,0 records returned; normalized phrase in first 0 titles: none

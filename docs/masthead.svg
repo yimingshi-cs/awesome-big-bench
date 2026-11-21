@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 174" role="img" aria-labelledby="title desc">
+<title id="title">Awesome Big Bench</title><desc id="desc">A field guide to AI evaluation. An index of tasks, names and evidence.</desc>
+<rect width="1080" height="174" rx="9" fill="#153f34"/><path fill="none" stroke="#46675a" d="M32 38h1016M32 146h1016"/>
+<g fill="#deefda" font-family="monospace" font-size="13" letter-spacing="2"><text x="33" y="26">FIELD GUIDE  /  AI EVALUATION</text><text x="1047" y="26" text-anchor="end">RESEARCH INDEX</text></g>
+<text x="31" y="110" fill="#f5f9ee" font-family="Georgia,serif" font-size="67" letter-spacing="-3">Awesome Big Bench</text>
+<g fill="none" stroke="#91b89a" stroke-width="2" stroke-linejoin="round"><path d="m794 88 60-34 60 34-60 34z"/><path d="m824 71 60 34m-30-51v1m-30 50 60-34m-90 17v17l60 34 60-34V88m-60 34v17"/>
+<path stroke="#d5f5a5" d="m908 80 42-24 42 24-42 24zM908 80v12l42 24 42-24V80m-42 24v12"/></g>
+<text x="33" y="164" fill="#d9ead7" font-family="monospace" font-size="11" letter-spacing="2">TASK DIRECTORY   /   NAME GRID   /   TITLE TRENDS</text></svg>

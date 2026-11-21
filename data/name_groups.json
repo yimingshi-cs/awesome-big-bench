@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "Coding": ["SWE", "Coders"],
+    "Agents & tools": ["Agent", "GUI", "Tool"],
+    "Vision & video": ["MM", "Vision", "Video"],
+    "Robotics": ["Embodied", "Robo", "Robots"],
+    "Reasoning & math": ["Reasoning", "Mathematicians"],
+    "Memory": ["Memory"],
+    "Safety": ["Alignment"],
+    "Research & science": ["Research", "Researchers", "Scientists"],
+    "Meta-evaluation": ["Bench", "BenchBench", "Benchmark", "Benchmarks", "Benches", "Meta"],
+    "General": ["Frontier", "Humanity", "Awesome"]
+  },
+  "endings": {
+    "Tests": ["Bench", "Eval"],
+    "Exams": ["Exam", "Mock", "First Exam", "Last Exam", "Last Code Exam"],
+    "Practice": ["Dojo", "Gym"],
+    "Other": ["²", "RSI"]
+  },
+  "exceptions": {
+    "Humanity|Last Code Exam": "Coding",
+    "Frontier|RSI": "Research & science"
+  }
+}

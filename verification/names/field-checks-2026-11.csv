@@ -1,0 +1,371 @@
+checked_on,name,index,query_url,result
+2026-11-21,Agent-Mock,DNS NS,https://dns.google/resolve?name=agent-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Agent-Mock,DNS NS,https://dns.google/resolve?name=agentmock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Agent-Mock,DNS NS (local resolver),https://dns.google/resolve?name=agent-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Agent-Mock,DNS NS (local resolver),https://dns.google/resolve?name=agentmock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Agent-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22agent-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 125/125 returned names; normalized exact: https://github.com/agent-habilis/agent-mock; https://github.com/giridharvc7/AgentMock; https://github.com/andrewterebey/AgentMock; https://github.com/yifzhang/AgentMock; https://github.com/AwabShuja/AgentMock; https://github.com/angdybo/AgentMock; https://github.com/iatharvmore/agent_mock; https://github.com/ToniBlankenburg/agent_mock; https://github.com/abhi23-web/agent_mock; https://github.com/Hedeanly/AGENT_MOCK.
+2026-11-21,Agent-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22agentmock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 9/9 returned names; normalized exact: https://github.com/angdybo/AgentMock; https://github.com/AwabShuja/AgentMock; https://github.com/andrewterebey/AgentMock; https://github.com/yifzhang/AgentMock; https://github.com/Meghasinha234/agentmock; https://github.com/giridharvc7/AgentMock; https://github.com/nguruprasanna/agentmock.
+2026-11-21,Agent-Mock,GitHub users,https://api.github.com/search/users?q=agent-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Agent-Mock,GitHub users,https://api.github.com/search/users?q=agentmock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Agent-Mock,HF datasets,https://huggingface.co/api/datasets?search=agent-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Agent-Mock,HF datasets,https://huggingface.co/api/datasets?search=agentmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Agent-Mock,HF models,https://huggingface.co/api/models?search=agent-mock&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,Agent-Mock,HF models,https://huggingface.co/api/models?search=agentmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Agent-Mock,HF spaces,https://huggingface.co/api/spaces?search=agent-mock&limit=100,15 ID(s) returned; normalized exact slug: none.
+2026-11-21,Agent-Mock,HF spaces,https://huggingface.co/api/spaces?search=agentmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Agent-Mock,Open web (replay),https://www.google.com/search?q=%22Agent-Mock%22+OR+%22AgentMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,Agent-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Agent-Mock%22&per_page=100&select=display_name%2Cdoi,"2 title hit(s); examples containing the normalized phrase: MockAgent: Multi-Agent Mock Generation for LLM-Based Unit Test Generation; Application of multi-agent systems in legal education: the impact of multi-agent mock trial exercises on student satisfaction, core skill enhancement, and cognitive development."
+2026-11-21,Agent-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22agentmock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Agent-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/agent-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,Agent-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/agentmock.ai,HTTP 404; no registration record returned.
+2026-11-21,Agent-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/agent-mock.org,HTTP 404; no registration record returned.
+2026-11-21,Agent-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/agentmock.org,HTTP 404; no registration record returned.
+2026-11-21,Agent-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/agent-mock.com,HTTP 404; no registration record returned.
+2026-11-21,Agent-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/agentmock.com,Record present for AGENTMOCK.COM.
+2026-11-22,Agent-Mock,Verdict evidence,https://github.com/yifzhang/AgentMock,AgentMock is an existing regression-testing repository; agentmock.com is also registered.
+2026-11-21,Agent-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Agent-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22agentmock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22agentmocks%22&terms-4-field=all&size=50,Returned arXiv IDs: 2602.00409. No exact benchmark title in those results.
+2026-11-22,Agent-Mock,arXiv result,https://arxiv.org/abs/2602.00409,Paper studies over-mocked software tests; the paper does not introduce Agent-Mock.
+2026-11-21,AgentBench,Project / paper,https://arxiv.org/abs/2308.03688,An agent benchmark spanning eight interactive environments.
+2026-11-21,AgentDojo,Project / paper,https://agentdojo.spylab.ai/,A benchmark for the security and usefulness of tool-using assistants.
+2026-11-21,AgentGym,Project / paper,https://agentgym.github.io/,A collection of interactive environments for developing generalist agents.
+2026-11-21,GUI-Dojo,DNS NS,https://dns.google/resolve?name=gui-dojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,GUI-Dojo,DNS NS,https://dns.google/resolve?name=guidojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,GUI-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=gui-dojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,GUI-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=guidojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,GUI-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22gui-dojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 18/18 returned names; normalized exact: none.
+2026-11-21,GUI-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22guidojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 1/1 returned names; normalized exact: none.
+2026-11-21,GUI-Dojo,GitHub users,https://api.github.com/search/users?q=gui-dojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,GUI-Dojo,GitHub users,https://api.github.com/search/users?q=guidojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,GUI-Dojo,HF datasets,https://huggingface.co/api/datasets?search=gui-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Dojo,HF datasets,https://huggingface.co/api/datasets?search=guidojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Dojo,HF models,https://huggingface.co/api/models?search=gui-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Dojo,HF models,https://huggingface.co/api/models?search=guidojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Dojo,HF spaces,https://huggingface.co/api/spaces?search=gui-dojo&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Dojo,HF spaces,https://huggingface.co/api/spaces?search=guidojo&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Dojo,Open web (replay),https://www.google.com/search?q=%22GUI-Dojo%22+OR+%22GUIDojo%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-22,GUI-Dojo,Open web (replay),https://www.google.com/search?q=%22GUIDojo%22+software+toolkit+%22GUIDojo%22,Broader exact-name and compact-spelling discovery; no exact AI benchmark found.
+2026-11-21,GUI-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22GUI-Dojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,GUI-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22guidojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,GUI-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/gui-dojo.ai,HTTP 404; no registration record returned.
+2026-11-21,GUI-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/guidojo.ai,HTTP 404; no registration record returned.
+2026-11-21,GUI-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/gui-dojo.org,HTTP 404; no registration record returned.
+2026-11-21,GUI-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/guidojo.org,HTTP 404; no registration record returned.
+2026-11-21,GUI-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/gui-dojo.com,HTTP 404; no registration record returned.
+2026-11-21,GUI-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/guidojo.com,HTTP 404; no registration record returned.
+2026-11-22,GUI-Dojo,Verdict evidence,https://registry.npmjs.org/-/v1/search?text=maintainer%3Aguidojo&size=2,An npm maintainer already uses the joined spelling guidojo. No GUI benchmark found.
+2026-11-21,GUI-Dojo,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22GUI-Dojo%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22GUI+Dojo%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22guidojo%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22GUI-Dojos%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22guidojos%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-22,GUI-Dojo,npm public package index,https://registry.npmjs.org/-/v1/search?text=maintainer%3Aguidojo&size=2,"The normalized handle is already used by a package maintainer, not the name of a GUI benchmark. The npm profile page itself was inaccessible here."
+2026-11-21,GUI-Exam,DNS NS,https://dns.google/resolve?name=gui-exam.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,GUI-Exam,DNS NS,https://dns.google/resolve?name=guiexam.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,GUI-Exam,DNS NS (local resolver),https://dns.google/resolve?name=gui-exam.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,GUI-Exam,DNS NS (local resolver),https://dns.google/resolve?name=guiexam.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,GUI-Exam,GitHub repositories,https://api.github.com/search/repositories?q=%22gui-exam%22+in%3Aname+is%3Apublic&per_page=100,Scanned 1000/1134 returned names (search cap or incomplete result); normalized exact: https://github.com/nkundabella/GUI-Exam; https://github.com/VishSeran/GUI-Exam; https://github.com/jhdbjayarathna2002-hue/GUI-EXAM; https://github.com/brandon0341/GUI-exam; https://github.com/Pau5erra/GUI_Exam; https://github.com/Balanovskiy/GuiExam; https://github.com/Sebastien-Moraz/GUI_Exam; https://github.com/hoon1113/GUI_Exam.
+2026-11-22,GUI-Exam,GitHub repositories,https://api.github.com/search/repositories?q=%22guiexam%22+in%3Aname+is%3Apublic&per_page=100,Scanned 121/121 returned names; normalized exact: https://github.com/Balanovskiy/GuiExam; https://github.com/nipunraj09/GUIexam.
+2026-11-22,GUI-Exam,GitHub users,https://api.github.com/search/users?q=gui-exam+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,GUI-Exam,GitHub users,https://api.github.com/search/users?q=guiexam+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,GUI-Exam,HF datasets,https://huggingface.co/api/datasets?search=gui-exam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Exam,HF datasets,https://huggingface.co/api/datasets?search=guiexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Exam,HF models,https://huggingface.co/api/models?search=gui-exam&limit=100,5 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Exam,HF models,https://huggingface.co/api/models?search=guiexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Exam,HF spaces,https://huggingface.co/api/spaces?search=gui-exam&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Exam,HF spaces,https://huggingface.co/api/spaces?search=guiexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Exam,Open web (replay),https://www.google.com/search?q=%22GUI-Exam%22+OR+%22GUIExam%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,GUI-Exam,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22GUI-Exam%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,GUI-Exam,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22guiexam%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,GUI-Exam,RDAP,https://rdap.identitydigital.services/rdap/domain/gui-exam.ai,HTTP 404; no registration record returned.
+2026-11-21,GUI-Exam,RDAP,https://rdap.identitydigital.services/rdap/domain/guiexam.ai,HTTP 404; no registration record returned.
+2026-11-21,GUI-Exam,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/gui-exam.org,HTTP 404; no registration record returned.
+2026-11-21,GUI-Exam,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/guiexam.org,HTTP 404; no registration record returned.
+2026-11-21,GUI-Exam,RDAP,https://rdap.verisign.com/com/v1/domain/gui-exam.com,HTTP 404; no registration record returned.
+2026-11-21,GUI-Exam,RDAP,https://rdap.verisign.com/com/v1/domain/guiexam.com,HTTP 404; no registration record returned.
+2026-11-22,GUI-Exam,Verdict evidence,https://github.com/VishSeran/GUI-Exam,An exact repository name already exists. No GUI agent benchmark was established.
+2026-11-21,GUI-Exam,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22GUI-Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22GUI+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22guiexam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22GUI-Exams%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22guiexams%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,GUI-Mock,DNS NS,https://dns.google/resolve?name=gui-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,GUI-Mock,DNS NS,https://dns.google/resolve?name=guimock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,GUI-Mock,DNS NS (local resolver),https://dns.google/resolve?name=gui-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,GUI-Mock,DNS NS (local resolver),https://dns.google/resolve?name=guimock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,GUI-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22gui-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 92/92 returned names; normalized exact: none.
+2026-11-21,GUI-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22guimock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 5/5 returned names; normalized exact: none.
+2026-11-21,GUI-Mock,GitHub users,https://api.github.com/search/users?q=gui-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,GUI-Mock,GitHub users,https://api.github.com/search/users?q=guimock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,GUI-Mock,HF datasets,https://huggingface.co/api/datasets?search=gui-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Mock,HF datasets,https://huggingface.co/api/datasets?search=guimock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Mock,HF models,https://huggingface.co/api/models?search=gui-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Mock,HF models,https://huggingface.co/api/models?search=guimock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Mock,HF spaces,https://huggingface.co/api/spaces?search=gui-mock&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Mock,HF spaces,https://huggingface.co/api/spaces?search=guimock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,GUI-Mock,Open web (replay),https://www.google.com/search?q=%22GUI-Mock%22+OR+%22GUIMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-22,GUI-Mock,Open web (replay),https://www.google.com/search?q=%22GUIMock%22+OR+%22GUI-Mock%22+GUI+mockup+%22GUIMock%22+tool+product,Broader exact-name and compact-spelling discovery; no exact AI benchmark found.
+2026-11-21,GUI-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22GUI-Mock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,GUI-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22guimock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,GUI-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/gui-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,GUI-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/guimock.ai,HTTP 404; no registration record returned.
+2026-11-21,GUI-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/gui-mock.org,HTTP 404; no registration record returned.
+2026-11-21,GUI-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/guimock.org,HTTP 404; no registration record returned.
+2026-11-21,GUI-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/gui-mock.com,HTTP 404; no registration record returned.
+2026-11-21,GUI-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/guimock.com,HTTP 404; no registration record returned.
+2026-11-21,GUI-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22GUI-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22GUI+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22guimock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22GUI-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22guimocks%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,MM-Mock,DNS NS,https://dns.google/resolve?name=mm-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,MM-Mock,DNS NS,https://dns.google/resolve?name=mmmock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,MM-Mock,DNS NS (local resolver),https://dns.google/resolve?name=mm-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,MM-Mock,DNS NS (local resolver),https://dns.google/resolve?name=mmmock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,MM-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22mm-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 20/20 returned names; normalized exact: https://github.com/jholdr/mm-mock.
+2026-11-21,MM-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22mmmock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 4/4 returned names; normalized exact: https://github.com/salunkeareen/mmmock.
+2026-11-21,MM-Mock,GitHub users,https://api.github.com/search/users?q=mm-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,MM-Mock,GitHub users,https://api.github.com/search/users?q=mmmock+in%3Alogin+type%3Aorg&per_page=100,No finding: JSONDecodeError.
+2026-11-22,MM-Mock,GitHub users,https://api.github.com/search/users?q=mmmock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,MM-Mock,HF datasets,https://huggingface.co/api/datasets?search=mm-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,MM-Mock,HF datasets,https://huggingface.co/api/datasets?search=mmmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,MM-Mock,HF models,https://huggingface.co/api/models?search=mm-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,MM-Mock,HF models,https://huggingface.co/api/models?search=mmmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,MM-Mock,HF models,https://huggingface.co/api/models?search=mmmock&limit=100,No finding: ReadTimeout.
+2026-11-21,MM-Mock,HF spaces,https://huggingface.co/api/spaces?search=mm-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,MM-Mock,HF spaces,https://huggingface.co/api/spaces?search=mmmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,MM-Mock,Open web (replay),https://www.google.com/search?q=%22MM-Mock%22+OR+%22MMMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,MM-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22MM-Mock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,MM-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22mmmock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,MM-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/mm-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,MM-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/mmmock.ai,HTTP 404; no registration record returned.
+2026-11-21,MM-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/mm-mock.org,HTTP 404; no registration record returned.
+2026-11-21,MM-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/mmmock.org,HTTP 404; no registration record returned.
+2026-11-21,MM-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/mm-mock.com,HTTP 404; no registration record returned.
+2026-11-21,MM-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/mmmock.com,HTTP 404; no registration record returned.
+2026-11-22,MM-Mock,Verdict evidence,https://github.com/jholdr/mm-mock,The exact repository slug exists. Its empty repository does not establish a multimodal benchmark.
+2026-11-21,MM-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22MM-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22MM+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22mmmock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22MM-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22mmmocks%22&terms-4-field=all&size=50,Returned arXiv IDs: 1412.6105. No exact benchmark title in those results.
+2026-11-22,MM-Mock,arXiv result,https://arxiv.org/abs/1412.6105,Astronomy paper about synthetic cluster observations; not a benchmark called MM-Mock.
+2026-11-21,Memory Gym,Project / paper,https://arxiv.org/abs/2309.17207,Partially observable games test a decision-making agent’s memory.
+2026-11-21,Memory-Exam,DNS NS,https://dns.google/resolve?name=memory-exam.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Memory-Exam,DNS NS,https://dns.google/resolve?name=memoryexam.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Memory-Exam,DNS NS (local resolver),https://dns.google/resolve?name=memory-exam.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Memory-Exam,DNS NS (local resolver),https://dns.google/resolve?name=memoryexam.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-22,Memory-Exam,GitHub repositories,https://api.github.com/search/repositories?q=%22memory-exam%22+in%3Aname+is%3Apublic&per_page=100,Scanned 161/161 returned names; normalized exact: https://github.com/Mudwin/memory-exam; https://github.com/yvesivo/memory-exam; https://github.com/SanderTeuthof/MemoryExam.
+2026-11-22,Memory-Exam,GitHub repositories,https://api.github.com/search/repositories?q=%22memoryexam%22+in%3Aname+is%3Apublic&per_page=100,Scanned 7/7 returned names; normalized exact: https://github.com/SanderTeuthof/MemoryExam.
+2026-11-22,Memory-Exam,GitHub users,https://api.github.com/search/users?q=memory-exam+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Memory-Exam,GitHub users,https://api.github.com/search/users?q=memoryexam+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Memory-Exam,HF datasets,https://huggingface.co/api/datasets?search=memory-exam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Exam,HF datasets,https://huggingface.co/api/datasets?search=memoryexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Exam,HF models,https://huggingface.co/api/models?search=memory-exam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Exam,HF models,https://huggingface.co/api/models?search=memoryexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Exam,HF spaces,https://huggingface.co/api/spaces?search=memory-exam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Exam,HF spaces,https://huggingface.co/api/spaces?search=memoryexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Exam,Open web (replay),https://www.google.com/search?q=%22Memory-Exam%22+OR+%22MemoryExam%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,Memory-Exam,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Memory-Exam%22&per_page=100&select=display_name%2Cdoi,27 title hit(s); examples containing the normalized phrase: Face Name Associative Memory Exam; Validation of the Face Name Associative Memory Exam in cognitively normal older individuals; Face Name Associative Memory Exam--Spanish Version.
+2026-11-21,Memory-Exam,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22memoryexam%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Memory-Exam,RDAP,https://rdap.identitydigital.services/rdap/domain/memory-exam.ai,HTTP 404; no registration record returned.
+2026-11-21,Memory-Exam,RDAP,https://rdap.identitydigital.services/rdap/domain/memoryexam.ai,HTTP 404; no registration record returned.
+2026-11-21,Memory-Exam,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/memory-exam.org,HTTP 404; no registration record returned.
+2026-11-21,Memory-Exam,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/memoryexam.org,Record present for memoryexam.org.
+2026-11-21,Memory-Exam,RDAP,https://rdap.verisign.com/com/v1/domain/memory-exam.com,HTTP 404; no registration record returned.
+2026-11-21,Memory-Exam,RDAP,https://rdap.verisign.com/com/v1/domain/memoryexam.com,Record present for MEMORYEXAM.COM.
+2026-11-22,Memory-Exam,Verdict evidence,https://memoryexam.com/,"MemoryExam.com offers a memory test for people, not language models."
+2026-11-21,Memory-Exam,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Memory-Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Memory+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22memoryexam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Memory-Exams%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22memoryexams%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,Memory-Mock,DNS NS,https://dns.google/resolve?name=memory-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Memory-Mock,DNS NS,https://dns.google/resolve?name=memorymock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Memory-Mock,DNS NS (local resolver),https://dns.google/resolve?name=memory-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Memory-Mock,DNS NS (local resolver),https://dns.google/resolve?name=memory-mock.io&type=NS,"Local DNS resolver: no DNS response. URL replays the NS lookup, not the same resolver."
+2026-11-21,Memory-Mock,DNS NS (local resolver),https://dns.google/resolve?name=memorymock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Memory-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22memory-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 2/2 returned names; normalized exact: none.
+2026-11-21,Memory-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22memorymock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 1/1 returned names; normalized exact: none.
+2026-11-21,Memory-Mock,GitHub users,https://api.github.com/search/users?q=memory-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Memory-Mock,GitHub users,https://api.github.com/search/users?q=memorymock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Memory-Mock,HF datasets,https://huggingface.co/api/datasets?search=memory-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Mock,HF datasets,https://huggingface.co/api/datasets?search=memorymock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Mock,HF models,https://huggingface.co/api/models?search=memory-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Mock,HF models,https://huggingface.co/api/models?search=memorymock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Mock,HF spaces,https://huggingface.co/api/spaces?search=memory-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Mock,HF spaces,https://huggingface.co/api/spaces?search=memorymock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Memory-Mock,Open web (replay),https://www.google.com/search?q=%22Memory-Mock%22+OR+%22MemoryMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-22,Memory-Mock,Open web (replay),https://www.google.com/search?q=%22MemoryMock%22+OR+%22Memory-Mock%22+library+software+project+mock+memory,Broader exact-name and compact-spelling discovery; no exact AI benchmark found.
+2026-11-21,Memory-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Memory-Mock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Memory-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22memorymock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Memory-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/memory-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,Memory-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/memorymock.ai,HTTP 404; no registration record returned.
+2026-11-21,Memory-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/memory-mock.org,HTTP 404; no registration record returned.
+2026-11-21,Memory-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/memorymock.org,HTTP 404; no registration record returned.
+2026-11-21,Memory-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/memory-mock.com,HTTP 404; no registration record returned.
+2026-11-21,Memory-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/memorymock.com,HTTP 404; no registration record returned.
+2026-11-21,Memory-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Memory-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Memory+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22memorymock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Memory-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22memorymocks%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,MemoryBench,Project / paper,https://github.com/THUIR/MemoryBench,A benchmark for memory and continual learning in language-model systems.
+2026-11-21,Reasoning Gym,Project / paper,https://github.com/open-thought/reasoning-gym,Procedurally generated reasoning tasks with verifiable answers.
+2026-11-21,Reasoning-Dojo,DNS NS,https://dns.google/resolve?name=reasoning-dojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Reasoning-Dojo,DNS NS,https://dns.google/resolve?name=reasoningdojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Reasoning-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=reasoning-dojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Reasoning-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=reasoningdojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-22,Reasoning-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22reasoning-dojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Reasoning-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22reasoningdojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Reasoning-Dojo,GitHub users,https://api.github.com/search/users?q=reasoning-dojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Reasoning-Dojo,GitHub users,https://api.github.com/search/users?q=reasoningdojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Reasoning-Dojo,HF datasets,https://huggingface.co/api/datasets?search=reasoning-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Dojo,HF datasets,https://huggingface.co/api/datasets?search=reasoningdojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Dojo,HF models,https://huggingface.co/api/models?search=reasoning-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Dojo,HF models,https://huggingface.co/api/models?search=reasoningdojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Dojo,HF spaces,https://huggingface.co/api/spaces?search=reasoning-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Dojo,HF spaces,https://huggingface.co/api/spaces?search=reasoningdojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Dojo,Open web (replay),https://www.google.com/search?q=%22Reasoning-Dojo%22+OR+%22ReasoningDojo%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-22,Reasoning-Dojo,Open web (replay),https://www.google.com/search?q=%22ReasoningDojo%22+OR+%22Reasoning+Dojo%22+learning+app+site+reasoningdojo,Broader exact-name and compact-spelling discovery; no exact AI benchmark found.
+2026-11-21,Reasoning-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Reasoning-Dojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Reasoning-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22reasoningdojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Reasoning-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/reasoning-dojo.ai,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/reasoningdojo.ai,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/reasoning-dojo.org,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/reasoningdojo.org,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/reasoning-dojo.com,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/reasoningdojo.com,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Dojo,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Reasoning-Dojo%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Reasoning+Dojo%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22reasoningdojo%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Reasoning-Dojos%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22reasoningdojos%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,Reasoning-Mock,DNS NS,https://dns.google/resolve?name=reasoning-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Reasoning-Mock,DNS NS,https://dns.google/resolve?name=reasoningmock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Reasoning-Mock,DNS NS (local resolver),https://dns.google/resolve?name=reasoning-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Reasoning-Mock,DNS NS (local resolver),https://dns.google/resolve?name=reasoningmock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Reasoning-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22reasoning-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 3/3 returned names; normalized exact: none.
+2026-11-21,Reasoning-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22reasoningmock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Reasoning-Mock,GitHub users,https://api.github.com/search/users?q=reasoning-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Reasoning-Mock,GitHub users,https://api.github.com/search/users?q=reasoningmock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Reasoning-Mock,HF datasets,https://huggingface.co/api/datasets?search=reasoning-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Mock,HF datasets,https://huggingface.co/api/datasets?search=reasoningmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Mock,HF models,https://huggingface.co/api/models?search=reasoning-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Mock,HF models,https://huggingface.co/api/models?search=reasoningmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Mock,HF spaces,https://huggingface.co/api/spaces?search=reasoning-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Mock,HF spaces,https://huggingface.co/api/spaces?search=reasoningmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Reasoning-Mock,Open web (replay),https://www.google.com/search?q=%22Reasoning-Mock%22+OR+%22ReasoningMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-22,Reasoning-Mock,Open web (replay),https://www.google.com/search?q=%22ReasoningMock%22+OR+%22Reasoning-Mock%22+assessment+project+reasoning+benchmark,Broader exact-name and compact-spelling discovery; no exact AI benchmark found.
+2026-11-21,Reasoning-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Reasoning-Mock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Reasoning-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22reasoningmock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Reasoning-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/reasoning-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/reasoningmock.ai,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/reasoning-mock.org,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/reasoningmock.org,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/reasoning-mock.com,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/reasoningmock.com,HTTP 404; no registration record returned.
+2026-11-21,Reasoning-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Reasoning-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Reasoning+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22reasoningmock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Reasoning-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22reasoningmocks%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,Research-Dojo,DNS NS,https://dns.google/resolve?name=research-dojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Research-Dojo,DNS NS,https://dns.google/resolve?name=researchdojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Research-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=research-dojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Research-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=research-dojo.io&type=NS,"Local DNS resolver: no DNS response. URL replays the NS lookup, not the same resolver."
+2026-11-21,Research-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=researchdojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-22,Research-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22research-dojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 9/9 returned names; normalized exact: https://github.com/jhlee0619/research-dojo; https://github.com/lyhengchhen/research_dojo.
+2026-11-22,Research-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22researchdojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Research-Dojo,GitHub users,https://api.github.com/search/users?q=research-dojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Research-Dojo,GitHub users,https://api.github.com/search/users?q=researchdojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Research-Dojo,HF datasets,https://huggingface.co/api/datasets?search=research-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Dojo,HF datasets,https://huggingface.co/api/datasets?search=researchdojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Dojo,HF models,https://huggingface.co/api/models?search=research-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Dojo,HF models,https://huggingface.co/api/models?search=researchdojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Dojo,HF spaces,https://huggingface.co/api/spaces?search=research-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Dojo,HF spaces,https://huggingface.co/api/spaces?search=researchdojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Dojo,Open web (replay),https://www.google.com/search?q=%22Research-Dojo%22+OR+%22ResearchDojo%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,Research-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Research-Dojo%22&per_page=100&select=display_name%2Cdoi,1 title hit(s); examples containing the normalized phrase: Research Dojo: applying agile principles to agile research - workshop summary from XP2013.
+2026-11-21,Research-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22researchdojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Research-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/research-dojo.ai,HTTP 404; no registration record returned.
+2026-11-21,Research-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/researchdojo.ai,HTTP 404; no registration record returned.
+2026-11-21,Research-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/research-dojo.org,HTTP 404; no registration record returned.
+2026-11-21,Research-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/researchdojo.org,HTTP 404; no registration record returned.
+2026-11-21,Research-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/research-dojo.com,HTTP 404; no registration record returned.
+2026-11-21,Research-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/researchdojo.com,Record present for RESEARCHDOJO.COM.
+2026-11-22,Research-Dojo,Verdict evidence,https://github.com/jhlee0619/research-dojo,Research Dojo is a tool for running experiments with coding agents. It is not a benchmark.
+2026-11-22,Research-Dojo,Workshop report,https://doi.org/10.1145/2507288.2507324,Research Dojo was also the name of an XP2013 workshop.
+2026-11-21,Research-Dojo,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Research-Dojo%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Research+Dojo%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22researchdojo%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Research-Dojos%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22researchdojos%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,Research-Mock,DNS NS,https://dns.google/resolve?name=research-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Research-Mock,DNS NS,https://dns.google/resolve?name=researchmock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Research-Mock,DNS NS (local resolver),https://dns.google/resolve?name=research-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Research-Mock,DNS NS (local resolver),https://dns.google/resolve?name=researchmock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Research-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22research-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 19/19 returned names; normalized exact: https://github.com/pasi-isiwara/research-mock; https://github.com/dakratochwill/researchMock; https://github.com/Rishitapandey/Research_Mock.
+2026-11-21,Research-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22researchmock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 2/2 returned names; normalized exact: https://github.com/dakratochwill/researchMock.
+2026-11-21,Research-Mock,GitHub users,https://api.github.com/search/users?q=research-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Research-Mock,GitHub users,https://api.github.com/search/users?q=researchmock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Research-Mock,HF datasets,https://huggingface.co/api/datasets?search=research-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Mock,HF datasets,https://huggingface.co/api/datasets?search=researchmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Mock,HF models,https://huggingface.co/api/models?search=research-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Mock,HF models,https://huggingface.co/api/models?search=researchmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Mock,HF spaces,https://huggingface.co/api/spaces?search=research-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Mock,HF spaces,https://huggingface.co/api/spaces?search=research-mock&limit=100,No finding: ReadTimeout.
+2026-11-21,Research-Mock,HF spaces,https://huggingface.co/api/spaces?search=researchmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Research-Mock,Open web (replay),https://www.google.com/search?q=%22Research-Mock%22+OR+%22ResearchMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,Research-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Research-Mock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Research-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22researchmock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Research-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/research-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,Research-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/researchmock.ai,HTTP 404; no registration record returned.
+2026-11-21,Research-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/research-mock.org,HTTP 404; no registration record returned.
+2026-11-21,Research-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/researchmock.org,HTTP 404; no registration record returned.
+2026-11-21,Research-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/research-mock.com,HTTP 404; no registration record returned.
+2026-11-21,Research-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/researchmock.com,Record present for RESEARCHMOCK.COM.
+2026-11-22,Research-Mock,Verdict evidence,https://github.com/dakratochwill/researchMock,researchMock is a website mockup; researchmock.com is also registered.
+2026-11-21,Research-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Research-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Research+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22researchmock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Research-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22researchmocks%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,ResearchGym,Project / paper,https://arxiv.org/abs/2602.15112,Agents attempt end-to-end research tasks adapted from published papers.
+2026-11-21,SWE-Dojo,DNS NS,https://dns.google/resolve?name=swe-dojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,SWE-Dojo,DNS NS,https://dns.google/resolve?name=swedojo.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,SWE-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=swe-dojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,SWE-Dojo,DNS NS (local resolver),https://dns.google/resolve?name=swedojo.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,SWE-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22swe-dojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,SWE-Dojo,GitHub repositories,https://api.github.com/search/repositories?q=%22swedojo%22+in%3Aname+is%3Apublic&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,SWE-Dojo,GitHub users,https://api.github.com/search/users?q=swe-dojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,SWE-Dojo,GitHub users,https://api.github.com/search/users?q=swedojo+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,SWE-Dojo,HF datasets,https://huggingface.co/api/datasets?search=swe-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,SWE-Dojo,HF datasets,https://huggingface.co/api/datasets?search=swedojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,SWE-Dojo,HF models,https://huggingface.co/api/models?search=swe-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,SWE-Dojo,HF models,https://huggingface.co/api/models?search=swedojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,SWE-Dojo,HF spaces,https://huggingface.co/api/spaces?search=swe-dojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,SWE-Dojo,HF spaces,https://huggingface.co/api/spaces?search=swedojo&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,SWE-Dojo,Live site,https://swe-dojo.com/,Redirected to a job-interview practice sign-in page branded jobhunt.dojo.
+2026-11-21,SWE-Dojo,Open web (replay),https://www.google.com/search?q=%22SWE-Dojo%22+OR+%22SWEDojo%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,SWE-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22SWE-Dojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,SWE-Dojo,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22swedojo%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,SWE-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/swe-dojo.ai,HTTP 404; no registration record returned.
+2026-11-21,SWE-Dojo,RDAP,https://rdap.identitydigital.services/rdap/domain/swedojo.ai,HTTP 404; no registration record returned.
+2026-11-21,SWE-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/swe-dojo.org,HTTP 404; no registration record returned.
+2026-11-21,SWE-Dojo,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/swedojo.org,HTTP 404; no registration record returned.
+2026-11-21,SWE-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/swe-dojo.com,Record present for SWE-DOJO.COM.
+2026-11-21,SWE-Dojo,RDAP,https://rdap.verisign.com/com/v1/domain/swedojo.com,HTTP 404; no registration record returned.
+2026-11-21,SWE-Dojo,Verdict evidence,https://rdap.verisign.com/com/v1/domain/swe-dojo.com,"swe-dojo.com serves a job-interview practice site, not an agent benchmark."
+2026-11-21,SWE-Dojo,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22SWE-Dojo%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22SWE+Dojo%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22swedojo%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22SWE-Dojos%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22swedojos%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,SWE-Gym,Project / paper,https://github.com/SWE-Gym/SWE-Gym,An environment for training software engineering agents and verifiers.
+2026-11-21,Tool-Exam,DNS NS,https://dns.google/resolve?name=tool-exam.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Tool-Exam,DNS NS,https://dns.google/resolve?name=toolexam.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Tool-Exam,DNS NS (local resolver),https://dns.google/resolve?name=tool-exam.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Tool-Exam,DNS NS (local resolver),https://dns.google/resolve?name=toolexam.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-22,Tool-Exam,GitHub repositories,https://api.github.com/search/repositories?q=%22tool-exam%22+in%3Aname+is%3Apublic&per_page=100,Scanned 1000/1480 returned names (search cap or incomplete result); normalized exact: https://github.com/rafidahm/Tool-Exam; https://github.com/NhatLam71388/Tool_Exam.
+2026-11-22,Tool-Exam,GitHub repositories,https://api.github.com/search/repositories?q=%22toolexam%22+in%3Aname+is%3Apublic&per_page=100,Scanned 14/14 returned names; normalized exact: none.
+2026-11-22,Tool-Exam,GitHub users,https://api.github.com/search/users?q=tool-exam+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-22,Tool-Exam,GitHub users,https://api.github.com/search/users?q=toolexam+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Tool-Exam,HF datasets,https://huggingface.co/api/datasets?search=tool-exam&limit=100,5 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Exam,HF datasets,https://huggingface.co/api/datasets?search=toolexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Exam,HF models,https://huggingface.co/api/models?search=tool-exam&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Exam,HF models,https://huggingface.co/api/models?search=toolexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Exam,HF spaces,https://huggingface.co/api/spaces?search=tool-exam&limit=100,4 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Exam,HF spaces,https://huggingface.co/api/spaces?search=toolexam&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Exam,Open web (replay),https://www.google.com/search?q=%22Tool-Exam%22+OR+%22ToolExam%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,Tool-Exam,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Tool-Exam%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Tool-Exam,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22toolexam%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Tool-Exam,RDAP,https://rdap.identitydigital.services/rdap/domain/tool-exam.ai,HTTP 404; no registration record returned.
+2026-11-21,Tool-Exam,RDAP,https://rdap.identitydigital.services/rdap/domain/toolexam.ai,HTTP 404; no registration record returned.
+2026-11-21,Tool-Exam,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/tool-exam.org,HTTP 404; no registration record returned.
+2026-11-21,Tool-Exam,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/toolexam.org,HTTP 404; no registration record returned.
+2026-11-21,Tool-Exam,RDAP,https://rdap.verisign.com/com/v1/domain/tool-exam.com,HTTP 404; no registration record returned.
+2026-11-21,Tool-Exam,RDAP,https://rdap.verisign.com/com/v1/domain/toolexam.com,HTTP 404; no registration record returned.
+2026-11-22,Tool-Exam,Verdict evidence,https://github.com/NhatLam71388/Tool_Exam,"Tool_Exam is an existing Python repository, not evidence of a tool-use benchmark."
+2026-11-21,Tool-Exam,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Tool-Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Tool+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22toolexam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Tool-Exams%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22toolexams%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,Tool-Mock,DNS NS,https://dns.google/resolve?name=tool-mock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Tool-Mock,DNS NS,https://dns.google/resolve?name=toolmock.io&type=NS,No finding: ConnectTimeout.
+2026-11-21,Tool-Mock,DNS NS (local resolver),https://dns.google/resolve?name=tool-mock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Tool-Mock,DNS NS (local resolver),https://dns.google/resolve?name=toolmock.io&type=NS,"Local DNS resolver: NXDOMAIN. URL replays the NS lookup, not the same resolver."
+2026-11-21,Tool-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22tool-mock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 62/62 returned names; normalized exact: https://github.com/christianagilare/tool-mock.
+2026-11-21,Tool-Mock,GitHub repositories,https://api.github.com/search/repositories?q=%22toolmock%22+in%3Aname+is%3Apublic&per_page=100,Scanned 2/2 returned names; normalized exact: https://github.com/Ayubjon/toolmock.
+2026-11-21,Tool-Mock,GitHub users,https://api.github.com/search/users?q=tool-mock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Tool-Mock,GitHub users,https://api.github.com/search/users?q=toolmock+in%3Alogin+type%3Aorg&per_page=100,Scanned 0/0 returned names; normalized exact: none.
+2026-11-21,Tool-Mock,HF datasets,https://huggingface.co/api/datasets?search=tool-mock&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Mock,HF datasets,https://huggingface.co/api/datasets?search=toolmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Mock,HF models,https://huggingface.co/api/models?search=tool-mock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Mock,HF models,https://huggingface.co/api/models?search=toolmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Mock,HF spaces,https://huggingface.co/api/spaces?search=tool-mock&limit=100,1 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Mock,HF spaces,https://huggingface.co/api/spaces?search=toolmock&limit=100,0 ID(s) returned; normalized exact slug: none.
+2026-11-21,Tool-Mock,Open web (replay),https://www.google.com/search?q=%22Tool-Mock%22+OR+%22ToolMock%22+benchmark+dataset+AI,"Project discovery, not an immutable ranking. See the dated decision and its source."
+2026-11-21,Tool-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22Tool-Mock%22&per_page=100&select=display_name%2Cdoi,"1 title hit(s); examples containing the normalized phrase: CAD/CAM SYSTEM FOR VIRTUAL MACHINING, MACHINE TOOL MOCK-UP AND KNOWLEDGE BASE MACHINING."
+2026-11-21,Tool-Mock,OpenAlex,https://api.openalex.org/works?filter=title.search%3A%22toolmock%22&per_page=100&select=display_name%2Cdoi,0 title hit(s); no normalized phrase found in returned titles.
+2026-11-21,Tool-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/tool-mock.ai,HTTP 404; no registration record returned.
+2026-11-21,Tool-Mock,RDAP,https://rdap.identitydigital.services/rdap/domain/toolmock.ai,HTTP 404; no registration record returned.
+2026-11-21,Tool-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/tool-mock.org,HTTP 404; no registration record returned.
+2026-11-21,Tool-Mock,RDAP,https://rdap.publicinterestregistry.org/rdap/domain/toolmock.org,HTTP 404; no registration record returned.
+2026-11-21,Tool-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/tool-mock.com,HTTP 404; no registration record returned.
+2026-11-21,Tool-Mock,RDAP,https://rdap.verisign.com/com/v1/domain/toolmock.com,HTTP 404; no registration record returned.
+2026-11-22,Tool-Mock,Verdict evidence,https://github.com/Ayubjon/toolmock,"toolmock tests tool-calling agents with simulated tools. It is a test library, not a benchmark."
+2026-11-21,Tool-Mock,arXiv,https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Tool-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Tool+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22toolmock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Tool-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22toolmocks%22&terms-4-field=all&size=50,No results for the phrase variants.
+2026-11-21,ToolBench,Project / paper,https://github.com/OpenBMB/ToolBench,OpenBMB’s platform for training and evaluating tool use.

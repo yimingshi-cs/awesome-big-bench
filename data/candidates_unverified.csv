@@ -1,0 +1,52 @@
+name,arxiv_id,arxiv_url,paper_title,v1_date,domain,status
+DS-1000,2211.11501,https://arxiv.org/abs/2211.11501,DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation,2022-11-18,Coding,candidate
+OCRBench,2305.07895,https://arxiv.org/abs/2305.07895,OCRBench: On the Hidden Mystery of OCR in Large Multimodal Models,2023-05-13,Multimodal,candidate
+C-Eval,2305.08322,https://arxiv.org/abs/2305.08322,C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models,2023-05-15,General,candidate
+TheoremQA,2305.12524,https://arxiv.org/abs/2305.12524,TheoremQA: A Theorem-driven Question Answering dataset,2023-05-21,Reasoning,candidate
+ZeroSCROLLS,2305.14196,https://arxiv.org/abs/2305.14196,ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding,2023-05-23,Long-context & Memory,candidate
+RepoBench,2306.03091,https://arxiv.org/abs/2306.03091,RepoBench: Benchmarking Repository-Level Code Auto-Completion Systems,2023-06-05,Coding,candidate
+SEED-Bench,2307.16125,https://arxiv.org/abs/2307.16125,SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension,2023-07-30,Multimodal,candidate
+ClassEval,2308.01861,https://arxiv.org/abs/2308.01861,ClassEval: A Manually-Crafted Benchmark for Evaluating LLMs on Class-level Code Generation,2023-08-03,Coding,candidate
+MM-Vet,2308.02490,https://arxiv.org/abs/2308.02490,MM-Vet: Evaluating Large Multimodal Models for Integrated Capabilities,2023-08-04,Multimodal,candidate
+EgoSchema,2308.09126,https://arxiv.org/abs/2308.09126,EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding,2023-08-17,Multimodal,candidate
+Do-Not-Answer,2308.13387,https://arxiv.org/abs/2308.13387,Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs,2023-08-25,Safety,candidate
+HallusionBench,2310.14566,https://arxiv.org/abs/2310.14566,HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models,2023-10-23,Multimodal,candidate
+CRUXEval,2401.03065,https://arxiv.org/abs/2401.03065,"CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution",2024-01-05,Coding,candidate
+DebugBench,2401.04621,https://arxiv.org/abs/2401.04621,DebugBench: Evaluating Debugging Capability of Large Language Models,2024-01-09,Coding,candidate
+VisualWebArena,2401.13649,https://arxiv.org/abs/2401.13649,VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks,2024-01-24,CUA,candidate
+WebVoyager,2401.13919,https://arxiv.org/abs/2401.13919,WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models,2024-01-25,CUA,candidate
+MATH-Vision,2402.14804,https://arxiv.org/abs/2402.14804,Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset,2024-02-22,Multimodal,candidate
+WorkArena,2403.07718,https://arxiv.org/abs/2403.07718,WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?,2024-03-12,CUA,candidate
+RewardBench,2403.13787,https://arxiv.org/abs/2403.13787,RewardBench: Evaluating Reward Models for Language Modeling,2024-03-20,General,candidate
+MathVerse,2403.14624,https://arxiv.org/abs/2403.14624,MathVerse: Does Your Multi-modal LLM Truly See the Diagrams in Visual Math Problems?,2024-03-21,Multimodal,candidate
+MMStar,2403.20330,https://arxiv.org/abs/2403.20330,Are We on the Right Way for Evaluating Large Vision-Language Models?,2024-03-29,Multimodal,candidate
+BLINK,2404.12390,https://arxiv.org/abs/2404.12390,BLINK: Multimodal Large Language Models Can See but Not Perceive,2024-04-18,Multimodal,candidate
+NaturalCodeBench,2405.04520,https://arxiv.org/abs/2405.04520,NaturalCodeBench: Examining Coding Performance Mismatch on HumanEval and Natural User Prompts,2024-05-07,Coding,candidate
+AndroidWorld,2405.14573,https://arxiv.org/abs/2405.14573,AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents,2024-05-23,CUA,candidate
+MixEval,2406.06565,https://arxiv.org/abs/2406.06565,MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures,2024-06-03,General,candidate
+WildBench,2406.04770,https://arxiv.org/abs/2406.04770,WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild,2024-06-07,General,candidate
+Arena-Hard,2406.11939,https://arxiv.org/abs/2406.11939,From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline,2024-06-17,General,candidate
+BigCodeBench,2406.15877,https://arxiv.org/abs/2406.15877,BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions,2024-06-22,Coding,candidate
+LiveBench,2406.19314,https://arxiv.org/abs/2406.19314,"LiveBench: A Challenging, Contamination-Limited LLM Benchmark",2024-06-27,General,candidate
+PutnamBench,2407.11214,https://arxiv.org/abs/2407.11214,PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition,2024-07-15,Reasoning,candidate
+SciCode,2407.13168,https://arxiv.org/abs/2407.13168,SciCode: A Research Coding Benchmark Curated by Scientists,2024-07-18,Coding,candidate
+AssistantBench,2407.15711,https://arxiv.org/abs/2407.15711,AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks?,2024-07-22,CUA,candidate
+LongVideoBench,2407.15754,https://arxiv.org/abs/2407.15754,LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding,2024-07-22,Multimodal,candidate
+AppWorld,2407.18901,https://arxiv.org/abs/2407.18901,AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents,2024-07-26,CUA,candidate
+MMMU-Pro,2409.02813,https://arxiv.org/abs/2409.02813,MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark,2024-09-04,Multimodal,candidate
+Windows Agent Arena,2409.08264,https://arxiv.org/abs/2409.08264,Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale,2024-09-12,CUA,candidate
+SWE-bench Multimodal,2410.03859,https://arxiv.org/abs/2410.03859,SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?,2024-10-04,Coding,candidate
+GSM-Symbolic,2410.05229,https://arxiv.org/abs/2410.05229,GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models,2024-10-07,Reasoning,candidate
+Omni-MATH,2410.07985,https://arxiv.org/abs/2410.07985,Omni-MATH: A Universal Olympiad Level Mathematic Benchmark For Large Language Models,2024-10-10,Reasoning,candidate
+AgentHarm,2410.09024,https://arxiv.org/abs/2410.09024,AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents,2024-10-11,Safety,candidate
+SimpleQA,2411.04368,https://arxiv.org/abs/2411.04368,Measuring short-form factuality in large language models,2024-11-07,Reasoning,candidate
+Spider 2.0,2411.07763,https://arxiv.org/abs/2411.07763,Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows,2024-11-12,Coding,candidate
+ProcessBench,2412.06559,https://arxiv.org/abs/2412.06559,ProcessBench: Identifying Process Errors in Mathematical Reasoning,2024-12-09,Reasoning,candidate
+TheAgentCompany,2412.14161,https://arxiv.org/abs/2412.14161,TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks,2024-12-18,CUA,candidate
+SWE-Lancer,2502.12115,https://arxiv.org/abs/2502.12115,SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?,2025-02-17,Coding,candidate
+SuperGPQA,2502.14739,https://arxiv.org/abs/2502.14739,SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines,2025-02-20,Reasoning,candidate
+SciReplicate-Bench,2504.00255,https://arxiv.org/abs/2504.00255,SciReplicate-Bench: Benchmarking LLMs in Agent-driven Algorithmic Reproduction from Research Papers,2025-03-31,AutoResearch,candidate
+Multi-SWE-bench,2504.02605,https://arxiv.org/abs/2504.02605,Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving,2025-04-03,Coding,candidate
+BrowseComp,2504.12516,https://arxiv.org/abs/2504.12516,BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents,2025-04-16,CUA,candidate
+SWE-bench Live,2505.23419,https://arxiv.org/abs/2505.23419,SWE-bench Goes Live!,2025-05-29,Coding,candidate
+OpenEQA,,,,,Embodied,candidate
