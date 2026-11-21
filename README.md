@@ -6,7 +6,7 @@
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
 
-**[Browse benchmarks](https://yimingshi-cs.github.io/awesome-big-bench/)** · **[Find a name](https://yimingshi-cs.github.io/awesome-big-bench/#names)** · **[Explore trends](https://yimingshi-cs.github.io/awesome-big-bench/#trends)** · **[Contribute](CONTRIBUTING.md)**
+**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Contribute](CONTRIBUTING.md)**
 
 ## Where to start
 
@@ -191,7 +191,7 @@ Some names have no exact benchmark match in the sources checked:
 | Memory | [Memory-Mock](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Memory-Mock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Memory+Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22memorymock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Memory-Mocks%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22memorymocks%22&terms-4-field=all&size=50>) |
 | Safety | [Alignment's Last Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22Alignment%27s+Last+Exam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Alignment+Last+Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Alignment%E2%80%99s+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22alignmentslastexam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22alignmentlastexam%22&terms-4-field=all&size=50>) |
 
-[Names by field](https://yimingshi-cs.github.io/awesome-big-bench/#names) · [Search records and dates](verification/names.md) · [Report a match](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). Unsearched combinations are not suggestions.
+[Names by field](https://yiming-shi.com/awesome-big-bench/#names) · [Search records and dates](verification/names.md) · [Report a match](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). Unsearched combinations are not suggestions.
 
 ## “Bench” in arXiv titles
 
