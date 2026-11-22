@@ -2,10 +2,11 @@ renderCover();
 const renderDirectory=initDirectory();
 initNames();
 initTrends();
-initFlagships();
 function route(first=false){
   const [key,qs]=(location.hash.slice(1)||'names').split('?');
-  const page=(key==='browse'||key==='directory')?'directory':['releases','trends'].includes(key)?key:'names';
+  // Older shared links now open the name map, not a retired section.
+  if(key==='releases')history.replaceState(history.state,'','#names');
+  const page=(key==='browse'||key==='directory')?'directory':key==='trends'?'trends':'names';
   document.querySelectorAll('.page').forEach(s=>s.hidden=s.id!==page);
   document.querySelectorAll('nav [data-page]').forEach(n=>{
     if(n.dataset.page===page)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');

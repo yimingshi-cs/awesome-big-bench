@@ -3,8 +3,7 @@
     "Coding": [
       "SWE",
       "Terminal",
-      "CWE",
-      "Coders"
+      "CWE"
     ],
     "CUA": [
       "Agent",
@@ -73,5 +72,8 @@
   },
   "exceptions": {
     "Frontier|RSI": "RSI"
+  },
+  "catalogVersions": {
+    "CWE|Bench": "cwe-bench-v2"
   }
 }
