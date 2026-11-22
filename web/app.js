@@ -20,26 +20,24 @@ const issue = (name,template) => repo+'/issues/new?template='+template+'.md&titl
 const displayDomain = d => d;
 const fmt = n => n.toLocaleString('en-US');
 const setPressed = (node,on) => node.setAttribute('aria-pressed',String(on));
-const states={used:'In use',near:'Similar name',no_match:'No exact match',partial:'Search incomplete',unchecked:'Not checked'};
-const keys=['used','near','no_match','partial','unchecked'];
 
-function renderCover() {
-  const pair = year => {
-    const selected=months.filter(m=>m.month.startsWith(year+'-') && +m.month.slice(-2)<=9);
-    return selected.reduce((a,m)=>[a[0]+m.hits,a[1]+m.total],[0,0]);
-  };
-  const [h1,t1]=pair('2020'),[h2,t2]=pair('2026'), ratio=(h2/t2)/(h1/t1);
-  $('#cover-growth').textContent=ratio.toFixed(2)+'×';
-  $('#edition').textContent=catalog.length+' benchmarks  /  '+domains.length+' domains';
-  const examples=names.filter(n=>n.status==='no_match');
-  const pick=examples.find(n=>!n.name.includes('Last Exam')) || examples[0];
-  $('#cover-atlas').textContent=pick ? 'Try '+pick.name+' and other ideas' : 'See which names are in use';
-  const seq=months.filter(m=>m.month<='2026-09').map(m=>100*m.hits/m.total),hi=Math.max(...seq);
-  const pts=seq.map((v,i)=>[2+i*152/(seq.length-1),35-32*v/hi]);
-  const svg=svgNode('svg',{viewBox:'0 0 156 39',preserveAspectRatio:'none'});
-  svg.append(svgNode('polygon',{points:'2,38 '+pts.map(p=>p.join(',')).join(' ')+' 154,38',fill:'#436f54'}));
-  svg.append(svgNode('polyline',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#c4e8a0','stroke-width':1.7,'vector-effect':'non-scaling-stroke'}));$('#sparkline').append(svg);
-  for(const [v,l,d] of [[ratio.toFixed(2)+'×','Increase in share','Jan–Sep, 2020 to 2026'],[(100*h1/t1).toFixed(2)+'%','Jan–Sep 2020',fmt(h1)+' / '+fmt(t1)+' papers'],[(100*h2/t2).toFixed(2)+'%','Jan–Sep 2026',fmt(h2)+' / '+fmt(t2)+' papers']]){
-    const item=el('div');item.append(el('span',l,'micro'),el('b',v),el('span',d,'fact-detail'));$('#comparison').append(item);
+function renderCover(){
+  function period(year){
+    const selected=months.filter(m=>m.month.startsWith(year+'-')&&Number(m.month.slice(5))<=9);
+    const hits=selected.reduce((a,m)=>a+m.hits,0),total=selected.reduce((a,m)=>a+m.total,0);
+    return {year,hits,total,share:100*hits/total};
   }
+  const a=period('2020'),b=period('2026');
+  for(const part of [a,b]){
+    const t=el('span',null,'slope-stop');t.append(el('strong',part.share.toFixed(2)+'%'),el('small',part.year));$('#slope').append(t);
+    if(part===a){
+      const svg=svgNode('svg',{viewBox:'0 0 71 25','aria-hidden':'true'});
+      svg.append(svgNode('path',{d:'M2 21 L69 4',fill:'none',stroke:'currentColor','stroke-width':2,'stroke-linecap':'round'}));
+      $('#slope').append(svg);
+    }
+  }
+  for(const part of [a,b]){
+    const cell=el('div');cell.append(el('span','Jan–Sep '+part.year),el('b',part.share.toFixed(2)+'%'),el('small',fmt(part.hits)+' of '+fmt(part.total)+' CS papers'));$('#comparison').append(cell);
+  }
+  const delta=el('div',null,'factor');delta.append(el('span','2026 vs. 2020'),el('b',(b.share/a.share).toFixed(2)+'×'),el('small','Jan–Sep share ratio'));$('#comparison').append(delta);
 }

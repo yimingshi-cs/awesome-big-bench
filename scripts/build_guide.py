@@ -1,5 +1,9 @@
 """Build the GitHub reading guide and portable (no network required) web edition."""
 import argparse
+import base64
+from collections import defaultdict
+from itertools import product
+from urllib.parse import quote
 import csv
 import json
 import re
@@ -13,8 +17,7 @@ REPO = "https://github.com/yimingshi-cs/awesome-big-bench"
 DOMAINS = ["Coding", "CUA", "Reasoning", "Multimodal", "Embodied", "Safety",
            "Long-context & Memory", "AutoResearch", "RSI", "General"]
 LABEL = {}
-STATES = {"used": "Documented use", "near": "Related use", "no_match": "No match in checked sources",
-          "partial": "Incomplete search", "unchecked": "Not checked"}
+STATES = {"used": "Same-name AI benchmark", "no_match": "No exact match found"}
 
 
 def read_csv(file):
@@ -75,16 +78,31 @@ def render():
         if unknown or len(values) != len(set(values)):
             raise ValueError(f'Unassigned or repeated name taxonomy items: {col} {unknown}')
     matrix = unique(names, lambda x: (x['prefix'], x['suffix']))
+    prefixes = [p for group in groups['fields'].values() for p in group]
+    endings = [e for group in groups['endings'].values() for e in group]
+    expected = set(product(prefixes, endings))
+    if set(matrix) != expected:
+        raise ValueError('A public map needs dated evidence for every prefix × ending')
+    with (ROOT/'verification/names/matrix-searches.csv').open(encoding='utf-8',newline='') as f:
+        receipts = defaultdict(list)
+        for rec in csv.DictReader(f):
+            key = rec['prefix'], rec['suffix']
+            check_url(rec['query_url'])
+            date.fromisoformat(rec['checked_on'])
+            if not rec['index'] or not rec['result'] or not rec['query_url']:
+                raise ValueError(f'Empty search receipt: {key}')
+            receipts[key].append(rec)
+    if set(receipts) != expected:
+        raise ValueError('Search receipt coverage differs from the matrix')
     for x in names:
         if x['status'] not in STATES or not x['name']:
             raise ValueError(str(x))
         for k in ['source_url','search_url']:
             check_url(x[k])
-        if x['status'] in ('used','near') and not x['source_url']:
+        if x['status'] == 'used' and not x['source_url']:
             raise ValueError('Missing positive evidence: '+x['name'])
-        if x['status'] != 'unchecked':
-            date.fromisoformat(x['checked_on'])
-        if x['status'] in ('partial','no_match') and not x['search_url']:
+        date.fromisoformat(x['checked_on'])
+        if not x['search_url']:
             raise ValueError('Missing search evidence: '+x['name'])
 
     monthly = read_csv('monthly.csv')
@@ -110,11 +128,11 @@ def render():
             parts.append("| — | No entry selected yet. [Suggest one](CONTRIBUTING.md). | — | — |")
         parts.append('')
     sample = ['| Field | No exact benchmark found |', '|---|---|']
-    for domain, prefixes in groups['fields'].items():
+    for domain, members in groups['fields'].items():
         checked = [n for n in names if n['status']=='no_match' and
-                   groups['exceptions'].get(n['prefix']+'|'+n['suffix'],domain if n['prefix'] in prefixes else '')==domain]
+                   groups['exceptions'].get(n['prefix']+'|'+n['suffix'],domain if n['prefix'] in members else '')==domain]
         if checked:
-            sample.append('| '+domain+' | '+', '.join(link(n['name'],n['search_url']) for n in checked)+' |')
+            sample.append('| '+domain+' | '+', '.join(link(n['name'],n['search_url']) for n in checked[:2])+' |')
     trend = (ROOT/'web/trend-note.md').read_text().strip()
     readme=(ROOT/'web/readme.md').read_text()
     for k,v in [('COUNT',str(len(cat))),('JUMP',' · '.join(jumps)),('CATALOG','\n'.join(parts).strip()),('GRID','\n'.join(sample)),('TREND',trend)]:
@@ -126,8 +144,38 @@ def render():
     scripts = ('app.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
+    mark=(ROOT/'docs/bench-mark.svg').read_text().strip()
+    mark_uri='data:image/svg+xml,'+quote(mark,safe='')
+    font=base64.b64encode((ROOT/'web/assets/manrope-latin.woff2').read_bytes()).decode('ascii')
+    font_license=(ROOT/'web/assets/Manrope-OFL.txt').read_text()
+    html=html.replace('/* MARK */',mark).replace('/* MARK_URI */',mark_uri).replace('/* FONT */',font)
+    html=html.replace('</head>','<!-- Bundled font notice:\n'+font_license.replace('--','—')+'\n-->\n</head>')
     html = html.replace('/* DATA */',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'))
-    return {'README.md':readme, 'docs/index.html':html}
+    masthead = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 136" role="img" aria-label="Awesome Big Bench">'
+                '<rect width="960" height="136" rx="10" fill="#e9f8f2"/>'
+                +mark.replace('<svg ', '<svg x="28" y="24" width="88" height="88" ',1)
+                +'<text x="140" y="91" font-family="Georgia,serif" font-size="62" letter-spacing="-3" fill="#192522">Awesome Big Bench</text></svg>\n')
+    outputs={'README.md':readme, 'docs/index.html':html, 'docs/masthead.svg':masthead}
+    def slug(v):
+        return 'squared' if v=='²' else re.sub(r'[^a-z0-9]+','-',v.lower()).strip('-')
+    for prefix in prefixes:
+        lines=[f'# {prefix}: name checks','','[Full search receipts](../names/matrix-searches.csv) · [Criteria](../names.md)','']
+        for suffix in endings:
+            x=matrix[prefix,suffix]
+            lines.extend([f'<a name="{slug(suffix)}"></a>',f"## {md(x['name'])}",'',
+                          f"**{STATES[x['status']]}** · {x['checked_on']}",'',x['note'],''])
+            if x['source_url']:
+                lines.extend([link('Primary source' if x['status']=='used' else 'Related source (not a match)',x['source_url']),''])
+            links=[];seen=set()
+            for rec in receipts[prefix,suffix]:
+                label=rec['index']
+                if label.lower().startswith(('primary ', 'excluded ', 'additional primary')):continue
+                if label in seen:continue
+                seen.add(label)
+                links.append(link(label,rec['query_url']))
+            lines.extend(['Queries: '+' · '.join(links),''])
+        outputs['verification/matrix/'+slug(prefix)+'.md']='\n'.join(lines)
+    return outputs
 
 
 if __name__=='__main__':

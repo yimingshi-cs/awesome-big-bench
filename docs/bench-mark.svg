@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Awesome Big Bench">
+  <rect width="48" height="48" rx="11" fill="#a7e7d7"/>
+  <g fill="#112f2a">
+    <rect x="8" y="9" width="9" height="8" rx="2"/><rect x="19" y="9" width="9" height="8" rx="2"/>
+    <rect x="8" y="19" width="32" height="5" rx="2"/><rect x="6" y="26" width="36" height="5" rx="2"/>
+    <path d="M11 30h5l-1 9h-5zm21 0h5l1 9h-5z"/>
+  </g>
+  <rect x="30" y="10" width="9" height="6" rx="1.5" fill="none" stroke="#346c5d" stroke-width="1.5"/>
+</svg>
