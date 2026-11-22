@@ -1,0 +1,16 @@
+[
+  {"family":"SWE-bench","cell":["SWE","Bench"]},
+  {"family":"Terminal-Bench","cell":["Terminal","Bench"]},
+  {"family":"CWE-bench","cell":["CWE","Bench"]},
+  {"family":"Agents’ Last Exam","cell":["Agent","Last Exam"]},
+  {"family":"AutomationBench","cell":["Automation","Bench"]},
+  {"family":"RoboDojo","cell":["Robo","Dojo"]},
+  {"family":"PostTrainBench","cell":["PostTrain","Bench"]},
+  {"family":"LifeVal","cell":["Life","val"]},
+  {"family":"Humanity’s Last Exam","cell":["Humanity","Last Exam"]},
+  {"family":"OSWorld","landmark":"osworld"},
+  {"family":"ARC-AGI","landmark":"arc-agi-2","variant":"ARC-AGI-2"},
+  {"family":"FrontierMath","landmark":"frontiermath"},
+  {"family":"GraphWalks","landmark":"graphwalks"},
+  {"family":"SEC-bench Pro","landmark":"sec-bench-pro"}
+]

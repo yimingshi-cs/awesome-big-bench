@@ -36,4 +36,4 @@ Each CSV row is one observed benchmark/configuration, not a new benchmark. Famil
 For machine comparison, see [combined inventory](../../data/flagship_evaluations.csv) and [normalized family comparison](families.csv). For complete exclusion decisions, including source pages, see [excluded configurations](anthropic-exclusions.csv). Of the two comparison files, the latter has one row per family and four indicator columns. References to “full” mean the attributable, method-described inventory in these release documents, not every private test Anthropic ran.
 
 
-[Website comparison](https://yiming-shi.com/awesome-big-bench/#releases) · [Machine-readable inventory](../../data/flagship_evaluations.csv). Family counts in source notes follow the original review; the shared comparison uses the explicit normalization in the [inventory guide](README.md).
+[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Machine-readable inventory](../../data/flagship_evaluations.csv). Family counts in source notes follow the original review; the shared comparison uses the explicit normalization in the [inventory guide](README.md).

@@ -2,7 +2,7 @@
 
 Publicly defined tests reported in six focal releases through **22 November 2026**. A row records a release and evaluation configuration, not necessarily an independent benchmark. Scores are not compared across non-equivalent protocols.
 
-[Interactive comparison](https://yiming-shi.com/awesome-big-bench/#releases) · [Complete CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)
+[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Complete CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)
 
 | Lab | Release | First release | Headline records | All public records | Distinct families |
 |---|---|---|---:|---:|---:|

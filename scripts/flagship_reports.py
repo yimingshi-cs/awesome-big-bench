@@ -1,10 +1,42 @@
 """Render companion tables from the same release rows used by the website."""
 import csv
 from collections import defaultdict
+from itertools import chain
 from io import StringIO
 
 LABS = {'OpenAI':'openai', 'Anthropic':'anthropic', 'Google':'google'}
 GENERATIONS = ('previous','current')
+
+
+def map_evidence(matches, records, matrix, landmarks):
+    """Project only reviewed identities; related variants do not claim each other's name."""
+    result = {"cells": {}, "landmarks": {}, "reports": {}}
+    known_landmarks = set(chain.from_iterable(landmarks.values()))
+    for m in matches:
+        family, variant = m["family"], m.get("variant")
+        key = family + (": " + variant if variant else "")
+        picked = [r for r in records if r["family"] == family and
+                  (not variant or r["benchmark"] == variant)]
+        if not picked or key in result["reports"]:
+            raise ValueError(f"Missing or duplicate map evidence: {key}")
+        keep = ("vendor", "release", "date", "benchmark", "release_url", "location")
+        result["reports"][key] = [{k: r[k] for k in keep} for r in picked]
+        if "cell" in m:
+            pair = tuple(m["cell"])
+            if matrix.get(pair, {}).get("status") != "used":
+                raise ValueError(f"Release evidence cannot occupy a cell: {pair}")
+            target = "|".join(pair)
+            if target in result["cells"]:
+                raise ValueError(f"Duplicate map match: {target}")
+            result["cells"][target] = key
+        if "landmark" in m:
+            slug = m["landmark"]
+            if slug not in known_landmarks or slug in result["landmarks"]:
+                raise ValueError(f"Unknown or duplicate landmark: {slug}")
+            result["landmarks"][slug] = key
+        if not ("cell" in m or "landmark" in m):
+            raise ValueError(f"Unplaced map evidence: {key}")
+    return result
 
 
 def reports(records):
@@ -25,7 +57,7 @@ def reports(records):
         writer.writerow([f, *(value(v,g) for v in LABS for g in GENERATIONS)])
     s=['# Which benchmarks did the flagship releases report?', '',
        'Publicly defined tests reported in six focal releases through **22 November 2026**. A row records a release and evaluation configuration, not necessarily an independent benchmark. Scores are not compared across non-equivalent protocols.', '',
-       '[Interactive comparison](https://yiming-shi.com/awesome-big-bench/#releases) · [Complete CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)', '',
+       '[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Complete CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)', '',
        '| Lab | Release | First release | Headline records | All public records | Distinct families |',
        '|---|---|---|---:|---:|---:|']
     for lab in LABS:

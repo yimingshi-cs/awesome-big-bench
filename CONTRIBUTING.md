@@ -12,7 +12,7 @@ Edit `data/names.csv` and append dated, repeatable checks to `verification/names
 
 ## Flagship releases
 
-Use `data/flagship_evaluations.csv` for model-specific results. Record the exact version, focal release, qualifier, document location, release link and public protocol link. Keep `headline` (the launch highlights) distinct from `extended` (other documented tests). An explicitly internal test is not a public result just because its score appears in a card. Keep notes and exclusions under `verification/flagships/`. The CSV comparison and summary tables rebuild with the site.
+Use `data/flagship_evaluations.csv` for model-specific results. Record the exact version, focal release, qualifier, document location, release link and public protocol link. Keep `headline` (the launch highlights) distinct from `extended` (other documented tests). An explicitly internal test is not a public result just because its score appears in a card. Keep notes and exclusions under `verification/flagships/`. The CSV comparison and summary tables rebuild with the site. Link a family to a confirmed name or field landmark in `data/map_report_matches.json` only after checking project identity. For a version-specific entry, use an exact `variant` selector. An alias, a namesake, an index component or a similarly named spin-off does not inherit the highlight.
 
 ## Rebuild
 

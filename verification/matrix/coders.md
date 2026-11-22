@@ -1,6 +1,6 @@
 # Coders: name checks
 
-[Full search receipts](../names/matrix-searches.csv) · [Criteria](../names.md)
+Retired from the homepage. [Search receipts for this edition](https://github.com/yimingshi-cs/awesome-big-bench/blob/9c148290d62919513023bc7fc77082789f66ea21/verification/names/matrix-searches.csv) · [Criteria](../names.md)
 
 <a name="bench"></a>
 ## Coders-Bench

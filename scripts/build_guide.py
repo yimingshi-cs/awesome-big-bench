@@ -3,7 +3,7 @@ import argparse
 import base64
 from collections import defaultdict
 from itertools import product
-from flagship_reports import reports
+from flagship_reports import map_evidence, reports
 from urllib.parse import quote
 import csv
 import json
@@ -145,6 +145,19 @@ def render():
     for group, slugs in landmarks.items():
         if group not in groups['fields'] or not set(slugs) <= cat.keys():
             raise ValueError('Unresolved field landmark: '+group)
+    # A project already represented by a cell belongs in its detail, not in a field header too.
+    def identity(name):
+        return name.casefold().replace("’", "'")
+    by_name = {identity(x['name']): x['slug'] for x in cat_rows}
+    catalog_cells = {"|".join(pair): by_name[identity(x['name'])]
+                     for pair, x in matrix.items() if x['status']=='used' and identity(x['name']) in by_name}
+    for pair, slug in groups['catalogVersions'].items():
+        if slug not in cat or matrix[tuple(pair.split('|'))]['status'] != 'used':
+            raise ValueError('Invalid catalog version link: '+pair)
+        catalog_cells[pair] = slug
+    duplicated = set(catalog_cells.values()) & {s for ids in landmarks.values() for s in ids}
+    if duplicated:
+        raise ValueError('A field landmark repeats a name cell: '+str(duplicated))
     releases = read_csv('flagship_evaluations.csv')
     for r in releases:
         if not all(r.get(k) for k in ('vendor','release','generation','date','benchmark','family','tier','location','release_url','protocol_url')):
@@ -156,8 +169,10 @@ def render():
     observed = {(r['vendor'], r['generation']) for r in releases}
     if observed != set(product(('OpenAI','Anthropic','Google'),('current','previous'))):
         raise ValueError('Expected two generations per vendor')
-    payload = dict(repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,flagshipRecords=releases,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
-    scripts = ('app.js','directory.js','names.js','trends.js','flagships.js','route.js')
+    matches = json.loads((ROOT/'data/map_report_matches.json').read_text())
+    evidence = map_evidence(matches, releases, matrix, landmarks)
+    payload = dict(repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,mapEvidence=evidence,mapCatalog=catalog_cells,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
+    scripts = ('app.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()

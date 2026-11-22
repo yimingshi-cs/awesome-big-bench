@@ -16,7 +16,9 @@ Queries: [arXiv metadata titles (local scan)](<https://huggingface.co/datasets/l
 
 **No exact match found** · 2026-11-22
 
-No qualifying same-name AI benchmark identified in the checked sources.
+No benchmark named HumanityEval was found. HumanEval, the Python coding benchmark, has a different name.
+
+[Related source (not a match)](<https://github.com/openai/human-eval>)
 
 Queries: [arXiv metadata titles (local scan)](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository search](<https://api.github.com/search/repositories?q=HumanityEval+OR+Humanity-Eval+in%3Aname&per_page=60>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=HumanityEval&limit=40>) · [Crossref titles](<https://api.crossref.org/works?query.title=HumanityEval&rows=10&select=title%2CDOI>) · [Europe PMC title index](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE%3A%22BenchEval%22+OR+TITLE%3A%22Bench-Eval%22+OR+TITLE%3A%22Bench+Eval%22%29+OR+%28TITLE%3A%22BenchBenchEval%22+OR+TITLE%3A%22BenchBench-Eval%22+OR+TITLE%3A%22BenchBench+Eval%22%29+OR+%28TITLE%3A%22BenchmarkEval%22+OR+TITLE%3A%22Benchmark-Eval%22+OR+TITLE%3A%22Benchmark+Eval%22%29+OR+%28TITLE%3A%22BenchmarksEval%22+OR+TITLE%3A%22Benchmarks-Eval%22+OR+TITLE%3A%22Benchmarks+Eval%22%29+OR+%28TITLE%3A%22BenchesEval%22+OR+TITLE%3A%22Benches-Eval%22+OR+TITLE%3A%22Benches+Eval%22%29+OR+%28TITLE%3A%22MetaEval%22+OR+TITLE%3A%22Meta-Eval%22+OR+TITLE%3A%22Meta+Eval%22%29+OR+%28TITLE%3A%22FrontierEval%22+OR+TITLE%3A%22Frontier-Eval%22+OR+TITLE%3A%22Frontier+Eval%22%29+OR+%28TITLE%3A%22HumanityEval%22+OR+TITLE%3A%22Humanity-Eval%22+OR+TITLE%3A%22Humanity+Eval%22+OR+TITLE%3A%22Humanity%27s+Eval%22%29+OR+%28TITLE%3A%22AwesomeEval%22+OR+TITLE%3A%22Awesome-Eval%22+OR+TITLE%3A%22Awesome+Eval%22%29&format=json&pageSize=250&resultType=lite>)
 

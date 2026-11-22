@@ -1,5 +1,5 @@
 'use strict';
-const {catalog, names, months, domains, repo, nameGroups, fieldLandmarks, flagshipRecords} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog} = JSON.parse(document.querySelector('#payload').textContent);
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
   const node = document.createElement(tag);

@@ -31,4 +31,4 @@
 * The model-specific method PDFs and safety reports are the linked technical records used here; no additional broad standalone Gemini 4 Argon/Carbon technical report was identified in the official source chain before the cutoff. This is an inventory of publicly identifiable protocols attributable to these release packets, not every internal test Google ran.
 
 
-[Website comparison](https://yiming-shi.com/awesome-big-bench/#releases) · [Machine-readable inventory](../../data/flagship_evaluations.csv). Family counts in source notes follow the original review; the shared comparison uses the explicit normalization in the [inventory guide](README.md).
+[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Machine-readable inventory](../../data/flagship_evaluations.csv). Family counts in source notes follow the original review; the shared comparison uses the explicit normalization in the [inventory guide](README.md).
