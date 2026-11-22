@@ -20,6 +20,15 @@ No exact-named AI benchmark or protocol-defined evaluation suite was identified 
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ScientistsEval%22%7C%22Scientists-Eval%22%7C%22Scientists+Eval%22%7C%22Scientists%27+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ScientistsEval&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ScientistsEval&limit=50>)
 
+<a name="val"></a>
+## Scientistsval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Scientistsval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Scientistsval%22%7C%22Scientists-val%22%7C%22Scientists+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Scientistsval%22+OR+TITLE%3A%22Scientists-val%22+OR+TITLE%3A%22Scientists+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Scientistsval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Scientists’ Exam
 
@@ -28,15 +37,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ScientistsExam%22%7C%22Scientists-Exam%22%7C%22Scientists+Exam%22%7C%22Scientists%27+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ScientistsExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ScientistsExam&limit=50>)
-
-<a name="mock"></a>
-## Scientists’ Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ScientistsMock%22%7C%22Scientists-Mock%22%7C%22Scientists+Mock%22%7C%22Scientists%27+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ScientistsMock&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ScientistsMock&limit=50>)
 
 <a name="first-exam"></a>
 ## Scientists’ First Exam
@@ -59,15 +59,6 @@ The official title of AISLE is “AI Scientists’ Last Exam”; dropping the le
 [Related source (not a match)](<https://aisle.science/>)
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ScientistsLastExam%22%7C%22Scientists-Last-Exam%22%7C%22Scientists+Last+Exam%22%7C%22Scientists%27+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ScientistsLastExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ScientistsLastExam&limit=50>)
-
-<a name="last-code-exam"></a>
-## Scientists’ Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ScientistsLastCodeExam%22%7C%22Scientists-Last-Code-Exam%22%7C%22Scientists+Last+Code+Exam%22%7C%22Scientists%27+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ScientistsLastCodeExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ScientistsLastCodeExam&limit=50>)
 
 <a name="dojo"></a>
 ## Scientists’ Dojo

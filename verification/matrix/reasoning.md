@@ -24,6 +24,15 @@ The authors’ evaluation framework scores reasoning steps with Knowledge Index 
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ReasoningEval%22%7C%22Reasoning-Eval%22%7C%22Reasoning+Eval%22%7C%22Reasoning%27s+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ReasoningEval&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ReasoningEval&limit=50>)
 
+<a name="val"></a>
+## Reasoningval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Reasoningval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Reasoningval%22%7C%22Reasoning-val%22%7C%22Reasoning+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Reasoningval%22+OR+TITLE%3A%22Reasoning-val%22+OR+TITLE%3A%22Reasoning+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Reasoningval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Reasoning-Exam
 
@@ -32,15 +41,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ReasoningExam%22%7C%22Reasoning-Exam%22%7C%22Reasoning+Exam%22%7C%22Reasoning%27s+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ReasoningExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ReasoningExam&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=reasoning-exam+in%3Aname&per_page=60>)
-
-<a name="mock"></a>
-## Reasoning-Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ReasoningMock%22%7C%22Reasoning-Mock%22%7C%22Reasoning+Mock%22%7C%22Reasoning%27s+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ReasoningMock&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ReasoningMock&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=reasoning-mock+in%3Aname&per_page=60>)
 
 <a name="first-exam"></a>
 ## Reasoning First Exam
@@ -59,15 +59,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ReasoningLastExam%22%7C%22Reasoning-Last-Exam%22%7C%22Reasoning+Last+Exam%22%7C%22Reasoning%27s+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ReasoningLastExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ReasoningLastExam&limit=50>)
-
-<a name="last-code-exam"></a>
-## Reasoning Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ReasoningLastCodeExam%22%7C%22Reasoning-Last-Code-Exam%22%7C%22Reasoning+Last+Code+Exam%22%7C%22Reasoning%27s+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ReasoningLastCodeExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ReasoningLastCodeExam&limit=50>)
 
 <a name="dojo"></a>
 ## Reasoning-Dojo

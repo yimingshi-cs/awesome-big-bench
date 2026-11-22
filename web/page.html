@@ -5,7 +5,7 @@
 <title>Awesome Big Bench</title><link rel="icon" href="/* MARK_URI */" type="image/svg+xml"><style>/* STYLE */</style></head>
 <body><a class="skip" href="#main-content">Skip to content</a>
 <header><div class="shell top"><a href="#names" class="brand" aria-label="Awesome Big Bench home"><span class="brand-mark" aria-hidden="true">/* MARK */</span>Awesome Big Bench</a>
-<nav aria-label="Main"><a data-page="names" href="#names">Name map</a><a data-page="directory" href="#directory">Directory</a><a data-page="trends" href="#trends">Trends</a></nav><a class="repo-link" href="https://github.com/yimingshi-cs/awesome-big-bench">GitHub</a></div></header>
+<nav aria-label="Main"><a data-page="names" href="#names">Name map</a><a data-page="directory" href="#directory">Directory</a><a data-page="releases" href="#releases">Flagship evals</a><a data-page="trends" href="#trends">Trends</a></nav><a class="repo-link" href="https://github.com/yimingshi-cs/awesome-big-bench">GitHub</a></div></header>
 <main id="main-content" tabindex="-1" class="shell">
 <section id="names" class="page">
 <div class="map-intro"><h1>The benchmark <em>index.</em></h1>
@@ -19,6 +19,13 @@
 <section id="directory" class="page" hidden>
 <div class="page-head"><h1>Benchmark <em>directory.</em></h1><label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="query" type="search" placeholder="Search" aria-label="Search benchmarks and tasks"></label></div>
 <div class="directory-layout"><aside class="filters"><div id="domains"></div><label class="mobile-domain">Field <select id="mobile-domain"></select></label></aside><div class="results"><span id="count" class="sr-only" aria-live="polite"></span><div id="entries"></div></div></div></section>
+<section id="releases" class="page" hidden>
+<div class="page-head"><div><h1>Flagship <em>evaluations.</em></h1><p class="release-deck">Two flagship releases per lab · 22 Nov 2026</p></div></div>
+<div id="release-labs" class="release-tabs"></div>
+<div class="release-controls"><label>Show <select id="release-scope"><option value="headline">Launch highlights</option><option value="all">All public evals</option></select></label><select id="release-repeat" aria-label="Filter benchmark recurrence"></select><label class="search"><input id="release-query" type="search" placeholder="Search benchmarks" aria-label="Search flagship evaluations"></label><button type="button" id="release-reset" class="subtle">Reset</button></div>
+<p id="release-help" class="release-help">Select a lab for versions and sources. A family can recur with a different test set or protocol.</p>
+<div id="release-results"></div><div class="release-bottom"><span id="release-count"></span><div id="release-docs" class="links"></div></div>
+<details class="method-note"><summary>Inclusion and comparison</summary><p>Highlights come from the focal launch materials. The full list also includes documented results in model cards, methodology notes and associated reports. A public protocol can use held-out questions. Explicitly internal versions and name-only mentions are excluded. Recurrence filters use the selected scope. “Latest only” means reported only in the newer release, not newly invented.</p></details></section>
 <section id="trends" class="page" hidden>
 <div class="page-head"><h1>“Bench” in <em>paper titles.</em></h1></div><div id="comparison" class="comparison"></div>
 <div class="chart-heading"><h2>Share of arXiv CS papers</h2><label>Period <select id="trend-window"><option value="all">Full series</option><option value="since">Since Jan 2024</option><option value="recent">Last 12 complete months</option></select></label></div>

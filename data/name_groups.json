@@ -2,12 +2,15 @@
   "fields": {
     "Coding": [
       "SWE",
+      "Terminal",
+      "CWE",
       "Coders"
     ],
     "CUA": [
       "Agent",
       "GUI",
-      "Tool"
+      "Tool",
+      "Automation"
     ],
     "Reasoning": [
       "Reasoning",
@@ -27,36 +30,37 @@
       "Alignment"
     ],
     "Long-context & Memory": [
+      "Long",
       "Memory"
     ],
     "AutoResearch": [
       "Research",
-      "Researchers",
       "Scientists"
     ],
+    "RSI": [
+      "PostTrain"
+    ],
     "General": [
+      "GDP",
+      "Life",
       "Frontier",
       "Humanity",
-      "Awesome",
       "Meta",
       "Bench",
       "Benchmark",
-      "BenchBench",
-      "Benchmarks",
-      "Benches"
+      "BenchBench"
     ]
   },
   "endings": {
     "Tests": [
       "Bench",
-      "Eval"
+      "Eval",
+      "val"
     ],
     "Exams": [
       "Exam",
-      "Mock",
       "First Exam",
-      "Last Exam",
-      "Last Code Exam"
+      "Last Exam"
     ],
     "Practice": [
       "Dojo",
@@ -68,7 +72,6 @@
     ]
   },
   "exceptions": {
-    "Humanity|Last Code Exam": "Coding",
     "Frontier|RSI": "RSI"
   }
 }

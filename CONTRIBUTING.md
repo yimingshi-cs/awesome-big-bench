@@ -10,6 +10,10 @@ Edit `data/famous.csv` and `data/catalog_tasks.csv` using the same slug. Disting
 
 Edit `data/names.csv` and append dated, repeatable checks to `verification/names/matrix-searches.csv`. Use `used` only for an exact-named AI benchmark or reusable AI evaluation suite with a primary source. A namesake tool, company, course, model, or environment alone does not qualify. Use `no_match` after successful checks found no qualifying benchmark. Keep related projects in the note, not in a third state. A failed lookup is not a negative result. When adding an axis entry to `data/name_groups.json`, research the new combinations before publishing them.
 
+## Flagship releases
+
+Use `data/flagship_evaluations.csv` for model-specific results. Record the exact version, focal release, qualifier, document location, release link and public protocol link. Keep `headline` (the launch highlights) distinct from `extended` (other documented tests). An explicitly internal test is not a public result just because its score appears in a card. Keep notes and exclusions under `verification/flagships/`. The CSV comparison and summary tables rebuild with the site.
+
 ## Rebuild
 
 Run from the root:

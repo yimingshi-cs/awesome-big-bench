@@ -1,8 +1,10 @@
 // Directory state lives in the URL so a reader can share a filtered reading list.
 function initDirectory() {
   let domain='All domains';
-  const available=['All domains',...domains], domButtons=new Map();
-  const count=d=>catalog.filter(x=>d==='All domains'||d===x.domain).length;
+  const security=new Set(['cwe-bench-v2','sec-bench-pro','webexploitbench-v12','cyberseceval']);
+  const inDomain=(x,d)=>d==='All domains'||(d==='Cybersecurity'?security.has(x.slug):d===x.domain);
+  const available=['All domains',...domains,'Cybersecurity'], domButtons=new Map();
+  const count=d=>catalog.filter(x=>inDomain(x,d)).length;
   const putState=(d,q)=>{
     const p=new URLSearchParams();
     if(d!=='All domains')p.set('domain',d);
@@ -27,7 +29,7 @@ function initDirectory() {
   function draw(){
     const q=$('#query').value.trim().toLowerCase(),host=$('#entries');host.replaceChildren();
     $('#mobile-domain').value=domain;for(const [d,b] of domButtons)setPressed(b,d===domain);
-    const found=catalog.filter(x=>(domain==='All domains'||domain===x.domain)&&[x.name,x.task,x.slug,x.description,x.domain,x.input,x.output,x.assessment].join(' ').toLowerCase().includes(q));
+    const found=catalog.filter(x=>inDomain(x,domain)&&[x.name,x.task,x.slug,x.description,x.domain,x.input,x.output,x.assessment].join(' ').toLowerCase().includes(q));
     $('#count').textContent=found.length+' results';
     if(!found.length){host.append(el('p','No benchmarks match this selection.','small'),button('Clear filters',()=>choose('All domains'),'subtle'));return;}
     const t=el('table',null,'bench-table');t.setAttribute('aria-label','Benchmark task comparison');const head=t.createTHead().insertRow();

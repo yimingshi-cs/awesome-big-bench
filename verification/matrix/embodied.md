@@ -24,6 +24,15 @@ The project evaluates multimodal models with embodied-agent tasks.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22EmbodiedEval%22+OR+%22Embodied-Eval%22+OR+%22Embodied+Eval%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=EmbodiedEval&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22EmbodiedEval%22%7C%22Embodied-Eval%22%7C%22Embodied+Eval%22%7C%22Embodied%27s+Eval%22%7C%22Embodieds%27+Eval%22%7C%22Embodieds+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22EmbodiedEval%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied-Eval%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied+Eval%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Embodied%27s+Eval%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Embodieds%27+Eval%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Embodieds+Eval%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Embodied+Eval&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=EmbodiedEval+OR+Embodied-Eval+in%3Aname+is%3Apublic&per_page=100>)
 
+<a name="val"></a>
+## Embodiedval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Embodiedval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Embodiedval%22%7C%22Embodied-val%22%7C%22Embodied+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Embodiedval%22+OR+TITLE%3A%22Embodied-val%22+OR+TITLE%3A%22Embodied+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Embodiedval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Embodied-Exam
 
@@ -34,15 +43,6 @@ The embodied-exam-data repository belongs to Embodied First Exam, not a separate
 [Related source (not a match)](<https://huggingface.co/datasets/MLL-Lab/embodied-exam-data>)
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22EmbodiedExam%22+OR+%22Embodied-Exam%22+OR+%22Embodied+Exam%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=EmbodiedExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22EmbodiedExam%22%7C%22Embodied-Exam%22%7C%22Embodied+Exam%22%7C%22Embodied%27s+Exam%22%7C%22Embodieds%27+Exam%22%7C%22Embodieds+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22EmbodiedExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Embodied%27s+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Embodieds%27+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Embodieds+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Embodied+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=EmbodiedExam+OR+Embodied-Exam+in%3Aname+is%3Apublic&per_page=100>)
-
-<a name="mock"></a>
-## Embodied-Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22EmbodiedMock%22+OR+%22Embodied-Mock%22+OR+%22Embodied+Mock%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=EmbodiedMock&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22EmbodiedMock%22%7C%22Embodied-Mock%22%7C%22Embodied+Mock%22%7C%22Embodied%27s+Mock%22%7C%22Embodieds%27+Mock%22%7C%22Embodieds+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22EmbodiedMock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied-Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied+Mock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Embodied%27s+Mock%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Embodieds%27+Mock%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Embodieds+Mock%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Embodied+Mock&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=EmbodiedMock+OR+Embodied-Mock+in%3Aname+is%3Apublic&per_page=100>)
 
 <a name="first-exam"></a>
 ## Embodied First Exam
@@ -65,15 +65,6 @@ Embodied First Exam and Robots’ Last Exam are real but differently named.
 [Related source (not a match)](<https://arxiv.org/abs/2611.12177>)
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22Embodied+Last+Exam%22+OR+%22Embodied%27s+Last+Exam%22+OR+%22Embodieds%27+Last+Exam%22+OR+%22EmbodiedLastExam%22+AI+benchmark+evaluation+model>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=EmbodiedLastExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22EmbodiedLastExam%22%7C%22Embodied-Last-Exam%22%7C%22Embodied+Last+Exam%22%7C%22Embodied%27s+Last+Exam%22%7C%22Embodieds%27+Last+Exam%22%7C%22Embodieds+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22EmbodiedLastExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied-Last-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Embodied%27s+Last+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Embodieds%27+Last+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Embodieds+Last+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Embodied+Last+Exam&rows=12&select=title%2CDOI>)
-
-<a name="last-code-exam"></a>
-## Embodied Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22Embodied+Last+Code+Exam%22+OR+%22Embodied%27s+Last+Code+Exam%22+OR+%22Embodieds%27+Last+Code+Exam%22+OR+%22EmbodiedLastCodeExam%22+AI+benchmark+evaluation+model>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=EmbodiedLastCodeExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22EmbodiedLastCodeExam%22%7C%22Embodied-Last-Code-Exam%22%7C%22Embodied+Last+Code+Exam%22%7C%22Embodied%27s+Last+Code+Exam%22%7C%22Embodieds%27+Last+Code+Exam%22%7C%22Embodieds+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22EmbodiedLastCodeExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied-Last-Code-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied+Last+Code+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Embodied%27s+Last+Code+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Embodieds%27+Last+Code+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Embodieds+Last+Code+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Embodied+Last+Code+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=EmbodiedLastCodeExam+OR+Embodied-Last-Code-Exam+OR+embodieds-Last-Code-Exam+in%3Aname+is%3Apublic&per_page=100>)
 
 <a name="dojo"></a>
 ## Embodied-Dojo
