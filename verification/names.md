@@ -3,7 +3,7 @@
 The homepage opens on the full **29 × 10** matrix. The map distinguishes names already used by an AI benchmark from names that still look open.
 
 - **Green:** an original paper, task suite, implementation or scored evaluation identifies a benchmark of this name. A published earlier name is labelled as such in the cell details.
-- **Dark green:** a taken name whose benchmark family appears in at least one of the six [flagship release reports](flagships/). Open the name for the exact versions. The accent marks documented use, not a quality score.
+- **Dark green:** a taken name whose benchmark family appears in at least one of the reviewed [flagship or reasoning-model reports](flagships/). Open the name for the exact versions. The accent marks documented use, not a quality score.
 - **Light grey:** the recorded searches did not establish such a benchmark. An unrelated repository, commercial service, model or training-only environment does not use up the name for this purpose. This is not a domain-registration or trademark search.
 
 The 290 decisions and dates are in [names.csv](../data/names.csv). The [2,158 individual query and source records](names/matrix-searches.csv) include failed requests marked as failures. Click a cell on the [name map](https://yiming-shi.com/awesome-big-bench/) for its evidence or to report a correction on GitHub.

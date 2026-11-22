@@ -1,6 +1,6 @@
 {
-  "Coding": ["humaneval"],
-  "CUA": ["osworld"],
+  "Coding": ["humaneval", "arc-agi-3"],
+  "CUA": ["osworld", "toolathlon", "browsecomp"],
   "Reasoning": ["frontiermath", "arc-agi-2"],
   "Multimodal": ["mmmu", "video-mme"],
   "Embodied": ["libero"],
@@ -8,5 +8,5 @@
   "Long-context & Memory": ["graphwalks", "needle-in-a-haystack"],
   "AutoResearch": ["paperbench", "re-bench"],
   "RSI": [],
-  "General": ["mmlu"]
+  "General": ["mmlu", "apex-agents"]
 }

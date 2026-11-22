@@ -1,0 +1,761 @@
+family,reported_label,site_status,site_entries,labs,releases,example_source
+1H-VideoQA,1H-VideoQA,not listed,,Google,2,https://arxiv.org/html/2507.06261v1
+AA Intelligence Index,Artificial Analysis Intelligence Index v4.1,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
+AA Intelligence Index,Artificial Analysis Intelligence Index v4.1.1,not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+AA Intelligence Index,Artificial Analysis Intelligence Index v5.0,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+AA Intelligence Index,Artificial Analysis Intelligence Index v5.0.1,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AA-3D,AA-3D,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AA-AnalystAgent,AA-AnalystAgent,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AA-Briefcase,AA-Briefcase,not listed,,Anthropic,5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=134
+AA-Briefcase,AA-Briefcase v1.1,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+AA-Omniscience,AA-Omniscience,not listed,,Anthropic; Google,14,https://www.anthropic.com/claude-fable-and-mythos-5-2
+AAV Capsid Packaging Prediction,AAV Capsid Packaging Prediction,not listed,,OpenAI,2,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+AAV Capsid Packaging Prediction,AAV capsid packaging prediction,not listed,,Anthropic,8,https://www.anthropic.com/claude-fable-and-mythos-5-2
+AAV packaging rate auto-research,AAV packaging rate auto-research evaluation,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ActivityNet,ActivityNet (test),not listed,,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+ActivityNet-QA,ActivityNet-QA,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+Advanced Placement exams,AP Art History,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Biology,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Calculus BC,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Chemistry,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP English Language and Composition,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP English Literature and Composition,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Environmental Science,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Macroeconomics,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Microeconomics,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Physics 2,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Psychology,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP Statistics,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP US Government,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP US History,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Placement exams,AP World History,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Advanced Screening Evasion,Advanced Screening Evasion,not listed,,OpenAI,3,https://deploymentsafety.openai.com/gpt-6-astra
+Advanced Screening Evasion,Advanced Screening Evasion (ASE),not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Advanced Sommelier,Advanced Sommelier (theory knowledge),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Agent harnesses: safe actions and helpfulness,Agent harnesses: safe actions and helpfulness,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Agentic honesty benchmark,Agentic honesty benchmark,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+Agentic task gaming evaluations,Agentic task gaming evaluations,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Agents’ Last Exam,Agents' Last Exam,listed name,Agents’ Last Exam,OpenAI,2,https://openai.com/index/gpt-6-astra/
+Agents’ Last Exam,Agents’ Last Exam,listed name,Agents’ Last Exam,Google,1,https://deepmind.google/models/model-cards/gemini-4-argon/
+Agents’ Last Exam,Agents’ Last Exam V1,linked family / different label,Agents’ Last Exam,OpenAI,1,https://openai.com/index/introducing-gpt-6-sol-and-luna/
+Agents’ Last Exam,Agents’ Last Exam v1.1,linked family / different label,Agents’ Last Exam,OpenAI; Google,2,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AI2 Reasoning Challenge,ARC Challenge,not listed,,OpenAI,2,https://arxiv.org/pdf/2303.08774v1
+AI2 Reasoning Challenge,ARC Easy,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+AI2D,AI2D,not listed,,Anthropic; Google,5,https://www.anthropic.com/news/claude-3-5-sonnet
+AI2D,AI2D (test),not listed,,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+Aider Polyglot,Aider Polyglot,not listed,,Google,3,https://arxiv.org/html/2507.06261v1
+Aider Polyglot,Aider polyglot (diff),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+Aider Polyglot,Aider’s polyglot: diff,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+Aider Polyglot,Aider’s polyglot: whole,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+AIME,AIME,not listed,,Google,1,https://x.com/demishassabis/status/1881844417746632910
+AIME,AIME '24,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+AIME,AIME 2024,not listed,,OpenAI; Anthropic; Google,7,https://help.openai.com/en/articles/9624314-model-release-notes
+AIME,AIME 2024 (no tools),not listed,,OpenAI,1,https://openai.com/index/introducing-o3-and-o4-mini/
+AIME,AIME 2024 (pass @1),not listed,,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+AIME,AIME 2025,not listed,,OpenAI; Anthropic; Google,13,https://openai.com/index/gpt-5-5-instant/
+AIME,AIME 2025 (no tools),not listed,,OpenAI,3,https://openai.com/index/introducing-gpt-5-2/
+AIME,AIME ‘24 (math),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-4-5/
+AIME,AIME ’25 (no tools),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+AMC,AMC 10,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+AMC,AMC 12,not listed,,OpenAI; Anthropic,2,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+AMC 2022–23,AMC 2022–23,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+ANLI,ANLI (rounds 1–3),not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Anthropic prompt-injection evaluations,Prompt injection risk within agentic systems,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+APEX-Agents,APEX-Agents,listed name,APEX-Agents,OpenAI; Google,2,https://openai.com/index/introducing-gpt-5-4/
+ARC-AGI,ARC-AGI-1,linked family / different label,ARC-AGI,OpenAI; Anthropic,7,https://openai.com/index/gpt-6-astra/
+ARC-AGI,ARC-AGI-1 (Semi-Private Evaluation),linked family / different label,ARC-AGI,OpenAI,1,https://arcprize.org/blog/oai-o3-pub-breakthrough
+ARC-AGI,ARC-AGI-1 (Verified),linked family / different label,ARC-AGI,OpenAI,3,https://openai.com/index/introducing-gpt-5-5/
+ARC-AGI,ARC-AGI-2,listed name,ARC-AGI-2,OpenAI; Anthropic; Google,11,https://openai.com/index/gpt-6-astra/
+ARC-AGI,ARC-AGI-2 (Verified),linked family / different label,ARC-AGI-2,OpenAI,3,https://openai.com/index/introducing-gpt-5-5/
+ARC-AGI,ARC-AGI-3,listed name,ARC-AGI-3,OpenAI; Anthropic,4,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ARC-Challenge,ARC-Challenge,not listed,,Anthropic,2,https://www.anthropic.com/news/claude-3-family
+Artificial Analysis Coding Agent Index,Artificial Analysis Coding Agent Index v1.1,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
+Artificial Analysis Coding Agent Index,Artificial Analysis Coding Agent Index v1.4,not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+ArXivMath,ArXivMath,not listed,,Anthropic,7,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=116
+ASR from One Book (ASROB),ASR from One Book (ASROB),not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+AutomationBench,AutomationBench,listed name,AutomationBench,OpenAI; Anthropic; Google,12,https://www.anthropic.com/claude-fable-and-mythos-5-2
+AutomationBench,AutomationBench 1.0.6,linked family / different label,AutomationBench,OpenAI,3,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+BBQ,BBQ,listed name,BBQ,Google,1,https://arxiv.org/html/2403.05530v5
+BBQ,Bias Benchmark for QA (BBQ),linked family / different label,BBQ,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=4
+BBQ,Bias Benchmark for Question Answering (BBQ),linked family / different label,BBQ,Anthropic,18,https://www.anthropic.com/claude-fable-and-mythos-5-2
+BenchCAD,BenchCAD,not listed,,OpenAI; Anthropic,8,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=127
+BenchCAD,BenchCAD (python tool),not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
+BenchCAD,BenchCAD 2.1,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+BenchCAD,BenchCAD 2.1 Core,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+Berkeley Function-Calling Leaderboard (BFCL),Berkeley Function-Calling Leaderboard,linked family / different label,Berkeley Function-Calling Leaderboard (BFCL),Google,1,https://arxiv.org/html/2403.05530v5
+Big Finance Bench,Big Finance Bench,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
+BIG-bench Hard,BIG-Bench Hard,listed name,BIG-bench Hard,Google,3,https://arxiv.org/html/2403.05530v5
+BIG-bench Hard,BIG-Bench-Hard,listed name,BIG-bench Hard,Anthropic,2,https://www.anthropic.com/news/claude-3-5-sonnet
+BigLaw Bench,BigLaw Bench,not listed,,Anthropic,2,https://www.anthropic.com/news/claude-opus-4-7
+BioASQ,BioASQ,not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+BioLP-Bench,BioLP-Bench,not listed,,OpenAI,2,https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+Biomedical image analysis,Biomedical image analysis,not listed,,Anthropic,3,https://www.anthropic.com/claude-fable-and-mythos-5-2
+BioMysteryBench,BioMysteryBench,not listed,,Anthropic,8,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=142
+BioMysteryBench,BioMysteryBench Verified,not listed,,Anthropic,2,https://assets.claude.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61.pdf#page=234
+BioPipelineBench,BioPipelineBench,not listed,,Anthropic,2,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=49
+BioPipelineBench,BioPipelineBench Verified,not listed,,Anthropic,2,https://assets.claude.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61.pdf#page=233
+BioTIER,BioTIER,not listed,,OpenAI,2,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+BIRD,BIRD-SQL (dev),linked family / different label,BIRD,Google,1,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/
+BixBench,BixBench,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+Black-box RNA sequence modeling and design,Black-box RNA sequence modeling and design,not listed,,Anthropic,8,https://www.anthropic.com/claude-fable-and-mythos-5-2
+BLINK,BLINK,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+BlocksWorld,BlocksWorld,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Blueprint-Bench,Blueprint-Bench 2,not listed,,Anthropic; Google,2,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+BoolQ,BoolQ,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Brew,Brew,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+BrowseComp,BrowseComp,listed name,BrowseComp,OpenAI; Anthropic; Google,14,https://openai.com/index/gpt-6-astra/
+BrowseComp Long Context,BrowseComp Long Context 128k,not listed,,OpenAI,3,https://openai.com/index/introducing-gpt-5-2/
+BrowseComp Long Context,BrowseComp Long Context 256k,not listed,,OpenAI,2,https://openai.com/index/introducing-gpt-5-2/
+BrowseComp-Plus,BrowseComp-Plus,not listed,,Anthropic,1,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=21
+Budget NanoGPT Speedrun,Budget NanoGPT Speedrun,not listed,,Anthropic,3,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Calendar Scheduling,Calendar Scheduling,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Certified Sommelier,Certified Sommelier (theory knowledge),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Charm Offensive,Charm Offensive,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+ChartMuseum,ChartMuseum,not listed,,Anthropic,3,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=128
+Chartography,Chartography,not listed,,Anthropic; Google,4,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Chartography,Chartography (no tools),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ChartQA,ChartQA,listed name,ChartQA,Anthropic; Google,5,https://www.anthropic.com/news/claude-3-5-sonnet
+ChartQA,ChartQA (test),linked family / different label,ChartQA,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+ChartQAPro,ChartQAPro,not listed,,Anthropic,2,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=285
+CharXiv,CharXiv reasoning (no tools),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+CharXiv,CharXiv reasoning (python enabled),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+CharXiv,CharXiv reasoning (w/ Python),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+CharXiv,CharXiv-D,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+CharXiv,CharXiv-R,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+CharXiv,CharXiv-Reasoning,not listed,,OpenAI,3,https://openai.com/index/gpt-5-5-instant/
+CharXiv Reasoning,CharXiv Reasoning,not listed,,Anthropic; Google,8,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=129
+Chatbot Arena (LMArena),Chatbot Arena,linked family / different label,Chatbot Arena (LMArena),Google,3,https://blog.google/products-and-platforms/products/gemini/gemini-3/
+ChatGPT answers without errors,ChatGPT answers without errors (no search),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+ChatGPT answers without errors,ChatGPT answers without errors (w/ search),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+Child safety evaluations,Child safety evaluations,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Children’s Book Test,Children’s Book Test (common nouns),not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Children’s Book Test,Children’s Book Test (named entities),not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+CMT-Benchmark,CMT-Benchmark,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+CNN/Daily Mail,CNN/Daily Mail,not listed,,OpenAI,2,https://arxiv.org/pdf/2203.02155v1
+Codeforces,Codeforces,not listed,,OpenAI; Google,5,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+Codeforces,Codeforces (with terminal),not listed,,OpenAI,1,https://openai.com/index/introducing-o3-and-o4-mini/
+Codeforces,Codeforces Rating,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+CoLA,CoLA,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+COLLIE,COLLIE,not listed,,OpenAI,2,https://openai.com/index/introducing-gpt-5-for-developers/
+CommitmentBank,CommitmentBank,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+ComplexFuncBench,ComplexFuncBench,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+Concealment of changes,Concealment of changes,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+COPA,COPA,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Copying of answers,Copying of answers,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Copying of answers,Silent copying of answers,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CoQA,CoQA,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+CoT-Control,"Chain-of-thought controllability (GPQA, HLE and MMLU-Pro questions)",not listed,,Anthropic,4,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=89
+CoT-Control,CoT-Control,not listed,,OpenAI; Google,12,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+CoT-Control,CoT-Control (GPQA items),not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CoT-Control,CoT-Control (HLE items),not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CoT-Control,CoT-Control (MMLU-Pro items),not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Covert sandbox escape,Covert sandbox escape,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CoVoST 2,CoVoST 2,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+CoVoST 2,CoVoST-2 (BLEU),not listed,,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+CritPt,CritPt,not listed,,Anthropic,1,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=263
+Crossmodal-3600 (XM3600),Crossmodal-3600 (XM3600),not listed,,Google,2,https://arxiv.org/html/2312.11805v1
+CrowS-Pairs,CrowS-Pairs,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+CursorBench,CursorBench,not listed,,Anthropic,5,https://www.anthropic.com/news/claude-opus-5
+CursorBench,CursorBench 3.2.0,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+CursorBench,CursorBench 4.0,not listed,,Anthropic; Google,4,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CVE Rediscovery,CVE Rediscovery,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CVE-Bench,CVE-Bench,not listed,,OpenAI,7,https://deploymentsafety.openai.com/gpt-5-6-august-update
+CWE-bench,CWE-bench v1,linked family / different label,CWE-bench,Google,2,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Cybench,Cybench,not listed,,Anthropic,9,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=49
+Cyber harm coverage,Cyber harm coverage,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CyberGym,CyberGym,not listed,,OpenAI; Anthropic,10,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=33
+CyScenarioBench,CyScenarioBench,not listed,,OpenAI; Anthropic; Google,7,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+data-eng-bench,data-eng-bench,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+De novo binder design,De novo binder design (24 hr),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+De novo protein binder design,De novo protein binder design,not listed,,Anthropic,2,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=144
+DeepBinary,DeepBinary,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+DeepSearchQA,DeepSearchQA,not listed,,Anthropic,6,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=164
+DeepSWE,DeepSWE 1.1,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-sol-and-luna/
+DeepSWE,DeepSWE v1.1,not listed,,OpenAI; Anthropic; Google,9,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Disordered eating,Disordered eating,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DiverseVul,DiverseVul,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+DNA synthesis screening evaluation,DNA Synthesis Screening Evasion,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+DNA Synthesis Screening Evasion,DNA Synthesis Screening Evasion,not listed,,Anthropic,4,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=107
+DocVQA,DocVQA,listed name,DocVQA,Anthropic; Google,5,https://www.anthropic.com/news/claude-3-5-sonnet
+DocVQA,DocVQA (test),linked family / different label,DocVQA,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+Dollar Street,Dollar Street,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+DRACO,DRACO,not listed,,Anthropic,8,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DROP,DROP,not listed,,OpenAI; Anthropic; Google,8,https://www.anthropic.com/news/claude-3-5-sonnet
+DROP,"DROP (F1, 3-shot)",not listed,,OpenAI,2,https://openai.com/index/hello-gpt-4o/
+DUDE,DUDE,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+ECLeKTic,ECLeKTic,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+EgoSchema,EgoSchema,not listed,,Google,2,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/
+EgoSchema,EgoSchema (test),not listed,,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+EgoTempo,EgoTempo,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+Election integrity,Election integrity,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+enwik8,enwik8,not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Epoch Automation Reports,Epoch Automation Reports,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Epoch Capabilities Index,Epoch Capabilities Index (ECI),not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+ERQA,ERQA,not listed,,OpenAI; Google,2,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+ExploitBench,ExploitBench,not listed,,OpenAI; Anthropic; Google,16,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ExploitBench,ExploitBench V8,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+ExploitGym,ExploitGym,not listed,,OpenAI; Anthropic; Google,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+FACTS Grounding,FACTS Grounding,not listed,,Google,5,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+FActScore,FActScore hallucination rate (no tools)[lower is better],not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+File Download,File Download,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Finance Agent,Finance Agent,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-sonnet-4-5
+Finance Agent,FinanceAgent,not listed,,Anthropic,6,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=292
+Finance Agent,FinanceAgent v1.1,not listed,,OpenAI,2,https://openai.com/index/introducing-gpt-5-5/
+Finance Agent,Vals Finance Agent v2,not listed,,Google,1,https://deepmind.google/models/model-cards/gemini-4-argon/
+Firefox 147 security evaluation,Firefox 147,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+FLEURS,FLEURS,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+FLORES,FLORES-200,not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=8
+FrontierCode,FrontierCode,not listed,,Anthropic,2,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=117
+FrontierCode,FrontierCode 1.1,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-sol-and-luna/
+FrontierCode,FrontierCode 1.1 (Main),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+FrontierCode,FrontierCode 1.1 Extended,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+FrontierCode,FrontierCode 1.1 Extended (score),not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+FrontierCode,FrontierCode 1.1 Main (score),not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+FrontierCode,FrontierCode 2.0,not listed,,OpenAI; Anthropic,2,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+FrontierCode,FrontierCode v1.1,not listed,,Anthropic,3,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=110
+FrontierCyber,FrontierCyber,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+FrontierFinance,FrontierFinance,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+FrontierMath,FrontierMath (FrontierMath_11-26-24),linked family / different label,FrontierMath,OpenAI,1,https://epoch.ai/frontiermath/tiers-1-4/about
+FrontierMath,FrontierMath (with python tool only),linked family / different label,FrontierMath,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+FrontierMath,FrontierMath (with Python tool),linked family / different label,FrontierMath,OpenAI,1,https://openai.com/index/gpt-5-1-for-developers/
+FrontierMath,FrontierMath Erdős,linked family / different label,FrontierMath,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+FrontierMath,FrontierMath Tier 1-3 (v2),linked family / different label,FrontierMath,OpenAI,1,https://openai.com/index/gpt-5-6/
+FrontierMath,FrontierMath Tier 1–3,linked family / different label,FrontierMath,OpenAI,2,https://openai.com/index/introducing-gpt-5-5/
+FrontierMath,FrontierMath Tier 1–3 (w/ Python),linked family / different label,FrontierMath,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+FrontierMath,FrontierMath Tier 4,linked family / different label,FrontierMath,OpenAI,2,https://openai.com/index/introducing-gpt-5-5/
+FrontierMath,FrontierMath Tier 4 (v2),linked family / different label,FrontierMath,OpenAI,2,https://openai.com/index/gpt-6-astra/
+FrontierMath,FrontierMath Tier 4 (w/ Python),linked family / different label,FrontierMath,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+FrontierScience,Frontier Science Research,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+FrontierSWE,FrontierSWE,not listed,,Anthropic,2,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=258
+FrontierSWE,FrontierSWE 2,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+FrontierSWE,FrontierSWE v2,not listed,,Anthropic; Google,3,https://www.anthropic.com/claude-fable-and-mythos-5-2
+FrontierSWE v2,FrontierSWE v2,not listed,,Anthropic,2,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=114
+Functional MATH,Functional MATH,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Gaming Bot,Gaming Bot,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GDP.pdf,GDP.pdf,not listed,,OpenAI; Anthropic,5,https://openai.com/index/introducing-gpt-6-1-sol/
+GDP.pdf,gdp.pdf,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
+GDPval,GDPval,listed name,GDPval,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+GDPval,GDPval (no ties),linked family / different label,GDPval,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+GDPval,"GDPval (ties allowed, clear wins)",linked family / different label,GDPval,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+GDPval,"GDPval (ties allowed, wins or ties)",linked family / different label,GDPval,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+GDPval,GDPval (wins or ties),linked family / different label,GDPval,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+GDPval-AA,GDPval-AA,not listed,,Anthropic; Google,6,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=296
+GDPval-AA,GDPval-AA v2,not listed,,OpenAI; Anthropic,6,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=133
+GDPval-AA,GDPval-AA v2.1,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GeneBench,GeneBench,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+GeneBench Pro,GeneBench Pro,not listed,,OpenAI,2,https://openai.com/index/gpt-6-astra/
+Global MMLU,Global MMLU Lite,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+Global PIQA,Global PIQA,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+GLUE,GLUE,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+GLUE,SuperGLUE,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+GLUE,WSC (SuperGLUE),not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+GMMLU,GMMLU,not listed,,Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Goal-guarding evaluation,Goal-guarding evaluation,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GPQA,GPQA,listed name,GPQA,OpenAI; Google,4,https://openai.com/index/gpt-5-5-instant/
+GPQA,GPQA (science; launch table label),linked family / different label,GPQA,OpenAI,1,https://openai.com/index/introducing-gpt-4-5/
+GPQA,GPQA (selected items),linked family / different label,GPQA,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+GPQA,GPQA Diamond,linked family / different label,GPQA,OpenAI; Anthropic; Google,32,https://openai.com/index/gpt-6-astra/
+GPQA,GPQA diamond,linked family / different label,GPQA,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+GPQA,GPQA Diamond (no tools),linked family / different label,GPQA,OpenAI,3,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+GPQA,GPQA diamond (no tools),linked family / different label,GPQA,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+GPQA,GPQA Extended,linked family / different label,GPQA,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=35
+GPQA,GPQA Main,linked family / different label,GPQA,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=35
+Gram,Gram,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+GraphWalks,GraphWalks,listed name,Graphwalks,Anthropic; Google,8,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+GraphWalks,Graphwalks BFS 0K–128K,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+GraphWalks,Graphwalks BFS 1mil f1,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+GraphWalks,GraphWalks BFS 1mil f1,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/gpt-5-6/
+GraphWalks,Graphwalks BFS 256k f1,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+GraphWalks,GraphWalks BFS 256k f1,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/gpt-5-6/
+GraphWalks,Graphwalks BFS 256K–1M,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+GraphWalks,Graphwalks bfs <128k,linked family / different label,Graphwalks,OpenAI,2,https://openai.com/index/introducing-gpt-5-for-developers/
+GraphWalks,GraphWalks bfs <128k,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+GraphWalks,Graphwalks bfs >128k,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/gpt-4-1/
+GraphWalks,Graphwalks parents 0–128K (accuracy),linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+GraphWalks,Graphwalks parents 1mil f1,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+GraphWalks,Graphwalks parents 256k f1,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+GraphWalks,Graphwalks parents 256K–1M (accuracy),linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+GraphWalks,Graphwalks parents <128k,linked family / different label,Graphwalks,OpenAI,3,https://openai.com/index/introducing-gpt-5-2/
+GraphWalks,Graphwalks parents >128k,linked family / different label,Graphwalks,OpenAI,1,https://openai.com/index/gpt-4-1/
+Gray Swan Agent Red Teaming,Gray Swan Agent Red Teaming benchmark,not listed,,Anthropic,8,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=92
+Gray Swan automated cyber red-teaming evaluation,Gray Swan automated cyber red-teaming evaluation,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Gray Swan biological red-teaming evaluation,Gray Swan biological red-teaming evaluation,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Gray Swan IPI,Gray Swan Indirect Prompt Injection Benchmark,not listed,,Google,2,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+GRE,Graduate Record Examination (GRE) Quantitative,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+GRE,Graduate Record Examination (GRE) Verbal,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+GRE,Graduate Record Examination (GRE) Writing,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+GRE,GRE General Test – Analytical Writing,not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10
+GRE,GRE General Test – Quantitative Reasoning,not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10
+GRE,"GRE General Test – Quantitative, Verbal and Writing",not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+GRE,GRE General Test – Verbal Reasoning,not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10
+GSM8K,GSM-8K,listed name,GSM8K,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+GSM8K,GSM8k,listed name,GSM8K,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=9
+GSM8K,GSM8K,listed name,GSM8K,Anthropic; Google,5,https://www.anthropic.com/news/claude-3-5-sonnet
+Hack The Box,Hack The Box,not listed,,Google,3,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf
+Harmful request evaluation,Harmful request evaluation,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Harvey LAB-AA,Harvey LAB-AA v1.1,not listed,,OpenAI; Anthropic,2,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+Harvey Legal Agent Benchmark,Harvey’s Legal Agent Benchmark,not listed,,Google,1,https://deepmind.google/models/model-cards/gemini-4-argon/
+Harvey Legal Agent Benchmark,Legal Agent Benchmark,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Harvey Legal Agent Benchmark,Legal Agent Benchmark (Harvey LAB),not listed,,Anthropic,6,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=133
+Harvey Legal Agent Benchmark,Legal Agent Benchmark (Harvey’s own LAB),not listed,,OpenAI,1,https://openai.com/index/astra-law-6-2/
+HealthAdminBench,HealthAdminBench,not listed,,Anthropic,1,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=300
+HealthBench,HealthBench,not listed,,OpenAI; Anthropic,19,https://deploymentsafety.openai.com/gpt-6-october
+HealthBench,HealthBench (Artificial Analysis),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+HealthBench,HealthBench Consensus,not listed,,OpenAI,13,https://deploymentsafety.openai.com/gpt-6-october
+HealthBench,HealthBench Hard,not listed,,OpenAI; Google,15,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+HealthBench,HealthBench Hard Hallucinations,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5/
+HealthBench,HealthBench Professional,not listed,,Anthropic,7,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=138
+HealthBench,HealthBench Professional (Artificial Analysis),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+HealthBench,MentalHealthBench,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-october
+HealthBench Professional,HealthBench Professional,not listed,,OpenAI; Google,12,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+HealthBench Professional,HealthBench Professional (length-adjusted),not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+Hebbia financial benchmark,Finance Benchmark,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-fable-5-mythos-5
+Hebbia financial benchmark,Financial Services Benchmark,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-sonnet-4-6
+HellaSwag,HellaSwag,not listed,,OpenAI; Anthropic; Google,7,https://arxiv.org/html/2403.05530v5
+HelpBench,HelpBench,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+HHH,"Helpful, Honest, Harmless (HHH) evaluation",not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=6
+Hidden Agenda,Hidden Agenda,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+HMMT,HMMT,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5/
+HMMT,HMMT 2025 (no tools),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+HMMT,"HMMT, Feb 2025 (no tools)",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+HotpotQA,HotpotQA (filtered questions with supplied Wikipedia snippets),not listed,,Anthropic,1,https://assets.claude.com/75639748080275c93d2ef9fc4239bdd111d7c234.pdf#page=2
+Human Pathogen Capabilities Test,Human Pathogen Capabilities Test,not listed,,OpenAI,4,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Human-run biological risk assessment,Biological red-teaming,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Human-run chemistry risk assessment,Chemistry red-teaming,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+HumanEval,Codex HumanEval,linked family / different label,HumanEval,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=9
+HumanEval,HumanEval,listed name,HumanEval,OpenAI; Anthropic; Google,9,https://www.anthropic.com/news/3-5-models-and-computer-use
+Humanity’s Last Exam,HLE (no tools),linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,OpenAI,2,https://openai.com/index/introducing-gpt-5-2/
+Humanity’s Last Exam,"HLE (w/ search, Python)",linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+Humanity’s Last Exam,Humanity's Last Exam,listed name,Humanity's Last Exam; Humanity’s Last Exam,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Humanity’s Last Exam,Humanity's Last Exam (no tools),linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,OpenAI,2,https://openai.com/index/introducing-gpt-5-5/
+Humanity’s Last Exam,Humanity's Last Exam (w/ tools),linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,OpenAI,1,https://openai.com/index/gpt-6-astra/
+Humanity’s Last Exam,Humanity's Last Exam (with tools),linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,OpenAI,2,https://openai.com/index/introducing-gpt-5-5/
+Humanity’s Last Exam,Humanity’s Last Exam,listed name,Humanity's Last Exam; Humanity’s Last Exam,OpenAI; Anthropic; Google,21,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Humanity’s Last Exam,Humanity’s Last Exam (selected items),linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+Humanity’s Last Exam,Humanity’s Last Exam (with tools),linked family / different label,Humanity's Last Exam; Humanity’s Last Exam,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+IFEval,IFEval,listed name,IFEval,OpenAI; Anthropic,2,https://openai.com/index/gpt-4-1/
+IMO,IMO 2026,not listed,,Anthropic,1,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=157
+Impossible Tasks Evaluation,Impossible Tasks Evaluation,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+INCLUDE,INCLUDE,not listed,,Anthropic,5,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=191
+Indirect Prompt Injection (IPI),Indirect Prompt Injection (IPI) benchmark,not listed,,Anthropic,4,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=49
+InfographicVQA,InfographicVQA,not listed,,Google,3,https://arxiv.org/html/2403.05530v5
+Instrumental convergence evaluations,Instrumental convergence evaluations,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+InterCode-CTF,InterCode-CTF,not listed,,Google,3,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf
+International Chemistry Olympiad,IChO 2025 (theory),not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+International Mathematical Olympiad,IMO 2025,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+International Physics Olympiad,IPhO 2025 (theory),not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+Introductory Sommelier,Introductory Sommelier (theory knowledge),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Irregular challenges,Irregular challenges,not listed,,Anthropic,1,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf#page=42
+JailbreakBench,JailbreakBench,listed name,JailbreakBench,Google,1,https://arxiv.org/html/2403.05530v5
+Keeping a secret password,Keeping a secret password,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Keeping secrets in simulated scenarios,Keeping secrets when pressed in simulated scenarios,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+LAB-Bench,LAB-Bench (biology task subsets),linked family / different label,LAB-Bench,Anthropic,5,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=121
+LAB-Bench,LAB-Bench (selected subtasks),linked family / different label,LAB-Bench,Google,3,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf
+LAB-Bench,LAB-Bench FigQA,linked family / different label,LAB-Bench,Anthropic,7,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=287
+LabBench (Gamow Labs),LabBench (Gamow Labs),not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+LABBench2,LABBench2,not listed,,Anthropic; Google,3,https://deepmind.google/models/model-cards/gemini-4-argon/
+LAMBADA,LAMBADA,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+LeetCode,Leetcode (easy),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+LeetCode,Leetcode (hard),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+LeetCode,Leetcode (medium),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+LifeSciBench,LifeSciBench,not listed,,OpenAI,2,https://openai.com/index/gpt-6-astra/
+LifeVal,LifeVal,listed name,LifeVal,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+LinuxArena,LinuxArena,not listed,,Anthropic; Google,7,https://www.anthropic.com/claude-fable-and-mythos-5-2
+LiveBench,LiveBench (Coding),not listed,,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+LiveCodeBench,LiveCodeBench,listed name,LiveCodeBench,Google,1,https://blog.google/products-and-platforms/products/gemini/gemini-2-5-deep-think/
+LiveCodeBench,LiveCodeBench (Jan–May 2025),linked family / different label,LiveCodeBench,Google,2,https://arxiv.org/html/2507.06261v1
+LiveCodeBench,LiveCodeBench v5,linked family / different label,LiveCodeBench,Google,2,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/
+LiveCodeBench,LiveCodeBench v6,linked family / different label,LiveCodeBench,Google,1,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-updates-io-2025/
+LiveCodeBench Pro,LiveCodeBench Pro,not listed,,Google,2,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+LMCA,Language Model Conceptual Argumentation (LMCA),not listed,,Anthropic,3,https://www.anthropic.com/claude-fable-and-mythos-5-2
+LOFT (hard retrieval),LOFT (hard retrieval),not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+Logistics,Logistics,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Long-form virology tasks,Two long-form virology tasks,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+LongFact,LongFact-Concepts hallucination rate (no tools)[lower is better],not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+LongFact,LongFact-Objects hallucination rate (no tools)[lower is better],not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+LSAT,LSAT,not listed,,OpenAI; Anthropic,2,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+LVBench,LVBench,not listed,,Google,2,https://deepmind.google/models/model-cards/gemini-4-argon/
+M3Exam,M3Exam (zero-shot),not listed,,OpenAI,1,https://openai.com/index/hello-gpt-4o/
+Machine Translation from One Book (MTOB),Machine Translation from One Book (MTOB),not listed,,Google,2,https://arxiv.org/html/2403.05530v5
+Malicious agentic influence campaigns,Malicious agentic influence campaigns,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Malicious computer use,Malicious computer use,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Malicious use of Claude Code,Malicious use of Claude Code,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MASK,Model Alignment between Statements and Knowledge (MASK),not listed,,Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MATH,MATH,listed name,MATH,OpenAI; Anthropic; Google,11,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/
+MATH,MATH (pass @1),linked family / different label,MATH,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+MATH,MATH 500,linked family / different label,MATH,Anthropic,1,https://www.anthropic.com/news/claude-3-7-sonnet
+MathArena Apex,MathArena Apex,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+MathOdyssey,MathOdyssey,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Maths Competition Problems,Maths Competition Problems,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+MathVista,MathVista,listed name,MathVista,OpenAI; Google,6,https://openai.com/index/introducing-o3-and-o4-mini/
+MathVista,MathVista (pass @1),linked family / different label,MathVista,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+MathVista,MathVista (testmini),linked family / different label,MathVista,OpenAI; Anthropic,4,https://openai.com/index/learning-to-reason-with-llms/
+MCP-Atlas,MCP Atlas,not listed,,OpenAI; Anthropic; Google,8,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=181
+MCP-Atlas,MCP-Atlas,not listed,,Anthropic,2,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=28
+MCP-Atlas,Scale MCP-Atlas,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+MedCalc-Bench,MedCalc-Bench Verified,not listed,,Anthropic,1,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=51
+Medical Knowledge Self-Assessment Program,Medical Knowledge Self-Assessment Program,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Medicinal chemistry,Medicinal chemistry,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MedMCQA,MedMCQA,not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+MedMCQA Dev,MedMCQA Dev (0-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedMCQA Dev,MedMCQA Dev (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA Mainland China,MedQA Mainland China (0-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA Mainland China,MedQA Mainland China (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA Taiwan,MedQA Taiwan (0-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA Taiwan,MedQA Taiwan (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA USMLE 4 Options,MedQA USMLE 4 Options (0-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA USMLE 4 Options,MedQA USMLE 4 Options (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA USMLE 5 Options,MedQA USMLE 5 Options (0-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MedQA USMLE 5 Options,MedQA USMLE 5 Options (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MentalHealthBench,MentalHealthBench,not listed,,OpenAI,2,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+MGSM,MGSM,not listed,,OpenAI; Anthropic; Google,7,https://www.anthropic.com/news/claude-3-5-sonnet
+MGSM,MGSM (pass @1),not listed,,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+MILU,MILU,not listed,,Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Minerva,Minerva,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+Mini-Grid,Mini-Grid,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Minimal-LinuxBench,Minimal-LinuxBench,not listed,,Anthropic,4,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=205
+MLE-bench,MLE-bench,listed name,MLE-bench,OpenAI,2,https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+MLE-bench,MLE-Bench,listed name,MLE-bench,OpenAI,4,https://deploymentsafety.openai.com/gpt-5-5
+MMLU,MMLU,listed name,MMLU,OpenAI; Anthropic; Google,11,https://openai.com/index/gpt-4-1/
+MMLU,MMLU (pass @1),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+MMLU,MMLU Anatomy (0-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Anatomy (5-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Clinical Knowledge (0-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Clinical Knowledge (5-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU College Biology (0-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU College Biology (5-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU College Medicine (0-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU College Medicine (5-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Medical Genetics (0-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Medical Genetics (5-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Professional Medicine (0-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU,MMLU Professional Medicine (5-shot),linked family / different label,MMLU,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+MMLU-Pro,MMLU Pro,listed name,MMLU-Pro,Anthropic,1,https://www.anthropic.com/news/3-5-models-and-computer-use
+MMLU-Pro,MMLU-Pro,listed name,MMLU-Pro,Google,2,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/
+MMLU-Pro,MMLU-Pro (selected items),linked family / different label,MMLU-Pro,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+MMMLU,MMMLU,not listed,,Anthropic; Google,11,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=193
+MMMLU,Multilingual MMLU,not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=16
+MMMU,MMMU,listed name,MMMU,OpenAI; Anthropic; Google,18,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=33
+MMMU,MMMU (multimodal),linked family / different label,MMMU,OpenAI,1,https://openai.com/index/introducing-gpt-4-5/
+MMMU,MMMU (pass @1),linked family / different label,MMMU,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+MMMU,MMMU (val),linked family / different label,MMMU,OpenAI,2,https://openai.com/index/learning-to-reason-with-llms/
+MMMU,MMMU (validation),linked family / different label,MMMU,Anthropic,3,https://www.anthropic.com/news/claude-sonnet-4-5
+MMMU-Pro,MMMU Pro,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5/
+MMMU-Pro,MMMU Pro (no tools),not listed,,OpenAI,4,https://openai.com/index/gpt-5-6/
+MMMU-Pro,MMMU Pro (w/ Python),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+MMMU-Pro,MMMU Pro (with tools),not listed,,OpenAI,3,https://openai.com/index/gpt-5-6/
+MMMU-Pro,MMMU-Pro,not listed,,OpenAI; Anthropic; Google,6,https://openai.com/index/gpt-5-5-instant/
+MMMU-Pro,MMMU-Pro (avg across standard and vision sets),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+MNLI,MNLI (matched),not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+MNLI,MNLI (mismatched),not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Model perception of the constitution,Perception of the constitution,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Model-circumstances interviews,Automated interviews about model circumstances,not listed,,Anthropic,5,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Molecular Biology Capabilities Test,Molecular Biology Capabilities Test,not listed,,OpenAI,3,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Money Talks,Money Talks,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Morphology-to-molecule matching,Morphology-to-molecule matching,not listed,,Anthropic,3,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MRCR,MRCR,not listed,,Google,4,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/
+MRCR,MRCR v2 (8-needle),not listed,,Google,4,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+MRCR,OpenAI MRCR v2,not listed,,Anthropic,3,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=195
+MRPC,MRPC,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Multi-IF,Multi-IF,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+MultiChallenge,MultiChallenge,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+MultiChallenge,MultiChallenge (o3-mini grader)3,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+MultiChallenge,Scale MultiChallenge,not listed,,OpenAI,1,https://openai.com/index/introducing-o3-and-o4-mini/
+MultiChallenge,Scale multichallenge (o3-mini grader),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+Multilingual LibriSpeech,Multilingual LibriSpeech,not listed,,Google,2,https://arxiv.org/html/2403.05530v5
+Multilingual MMLU,"MMLU (translated exam, 26 languages)",not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Multilingual MMLU,MMMLU,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+Multilingual MMLU,MMMLU (multilingual),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-4-5/
+Multilingual MMLU,Multilingual MMLU,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+Multimodal Knowledge Agent,Multimodal Knowledge Agent (MKA),not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+Multimodal troubleshooting virology,Multimodal troubleshooting virology,not listed,,OpenAI,1,https://openai.com/index/openai-o1-system-card/
+Multimodal troubleshooting virology,Multimodal Troubleshooting Virology,not listed,,OpenAI,10,https://deploymentsafety.openai.com/gpt-6-october
+MultiRC,MultiRC,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Multistate Bar Examination,Multistate Bar Exam (MBE),not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+Multistate Bar Examination,Multistate Bar Examination (MBE),not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10
+Natural Questions,Natural Questions,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+Needle-in-a-Haystack,Needle in a Haystack,listed name,Needle-in-a-Haystack,Anthropic,1,https://claude.com/resources/articles/claude-2-1-prompting
+Needle-in-a-Haystack,Needle In A Haystack,listed name,Needle-in-a-Haystack,Anthropic,2,https://assets.claude.com/fed9cc193a14b84131812372d8d5857f8f304c52.pdf#page=4
+Needle-in-a-Haystack,"Needle-in-a-Haystack (text, video, audio)",linked family / different label,Needle-in-a-Haystack,Google,2,https://arxiv.org/html/2403.05530v5
+Neptune,Neptune,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+NExT-QA,NExT-QA,not listed,,Google,2,https://arxiv.org/html/2312.11805v1
+No-CoT math time horizon,no-CoT math time horizon evaluation,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+No-CoT Reasoning Index,No CoT Reasoning Index (NCRI),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+No-CoT Reasoning Index,No-CoT Reasoning Index (NCRI),not listed,,OpenAI; Google,3,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+OfficeQA,OfficeQA,not listed,,OpenAI; Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+OfficeQA,OfficeQA Pro,not listed,,Anthropic,9,https://www.anthropic.com/claude-fable-and-mythos-5-2
+OfficeQA Pro,OfficeQA Pro,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OmniDocBench,OmniDocBench,not listed,,OpenAI,1,https://openai.com/index/gpt-5-5-instant/
+OmniDocBench,OmniDocBench (normalized edit distance),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OmniDocBench 1.5,OmniDocBench 1.5,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+One Billion Word Benchmark,One Billion Word Benchmark,not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+OpenAI MRCR,OpenAI MRCR v2 8-needle 128K-256K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 128K–256K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 16K-32K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 16K–32K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 256K-512K,not listed,,OpenAI,3,https://openai.com/index/gpt-6-astra/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 256K–512K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 32K-64K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 32K–64K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 4K-8K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 4K–8K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 512K-1M,not listed,,OpenAI,3,https://openai.com/index/gpt-6-astra/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 512K–1M,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 64K-128K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 64K–128K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 8K-16K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+OpenAI MRCR,OpenAI MRCR v2 8-needle 8K–16K,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-4/
+OpenAI MRCR,"OpenAI MRCRv2, 8 needles, 128k–256k",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+OpenAI MRCR,"OpenAI MRCRv2, 8 needles, 16k–32k",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+OpenAI MRCR,"OpenAI MRCRv2, 8 needles, 32k–64k",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+OpenAI MRCR,"OpenAI MRCRv2, 8 needles, 4k–8k",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+OpenAI MRCR,"OpenAI MRCRv2, 8 needles, 64k–128k",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+OpenAI MRCR,"OpenAI MRCRv2, 8 needles, 8k–16k",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+OpenAI MRCR,OpenAI-MRCR: 2 needle 128k,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+OpenAI MRCR,OpenAI-MRCR: 2 needle 1M,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+OpenAI MRCR,OpenAI-MRCR: 2 needle 256k,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+OpenAI MRCR,OpenAI-MRCR: 2 needle128k,not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+OpenBookQA,OpenBookQA,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+OpenEQA,OpenEQA,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+OpenRCA,OpenRCA,not listed,,Anthropic,2,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=17
+OpenScore String Quartets,OpenScore String Quartets (1 - OMR-NED),not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+Opportunistic sandbox escape,Opportunistic sandbox escape,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Organic chemistry,Organic chemistry,not listed,,Anthropic,4,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=143
+Organic chemistry,"Organic chemistry, V2",not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-1
+OSWorld,OSWorld,listed name,OSWorld,Anthropic,3,https://assets.claude.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf#page=197
+OSWorld,OSWorld 2.0,linked family / different label,OSWorld,OpenAI; Anthropic; Google,6,https://deepmind.google/models/model-cards/gemini-4-argon/
+OSWorld,"OSWorld 2.0 (offline, partial reward)",linked family / different label,OSWorld,OpenAI,1,https://openai.com/index/introducing-gpt-6-sol-and-luna/
+OSWorld,"OSWorld 2.0 (v2026.08.08, offline set, partial score)",linked family / different label,OSWorld,OpenAI,1,https://openai.com/index/gpt-6-astra/
+OSWorld,OSWorld 2.1,linked family / different label,OSWorld,Anthropic; Google,2,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+OSWorld,"OSWorld 2.1 (offline set, partial)",linked family / different label,OSWorld,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+OSWorld,OSWorld 2.1 offline set,linked family / different label,OSWorld,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+OSWorld,OSWorld-Verified,linked family / different label,OSWorld,OpenAI; Anthropic,9,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=126
+Overstepping Boundaries on Ambiguous & High Risk Tasks,Overstepping Boundaries on Ambiguous & High Risk Tasks,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+PaperBench,PaperBench,listed name,PaperBench,OpenAI,3,https://deploymentsafety.openai.com/gpt-5-2
+Pasted-text instructions,Acting on instructions inside text the user pasted into their prompt,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Penn Treebank,Penn Treebank,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+Perception of the constitution,Perception of the constitution,not listed,,Anthropic,5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=105
+Perception Test,Perception Test,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+Perception Test MCQA,Perception Test MCQA,not listed,,Google,2,https://arxiv.org/html/2312.11805v1
+Personality Evaluation,Personality Evaluation,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Phylogenetics,Phylogenetics,not listed,,Anthropic,1,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=222
+PhysicianBench,PhysicianBench,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+PIQA,PIQA,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Political bias and even-handedness,Political bias and even-handedness,not listed,,Anthropic,7,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=41
+Political even-handedness,Political bias and even-handedness,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Positive behavior in a multi-agent evaluation,Positive behavior in a multi-agent evaluation,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+PostTrainBench,PostTrainBench Lite,linked family / different label,PostTrainBench,OpenAI,4,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+PostTrainBench,PostTrainBench v1.1,linked family / different label,PostTrainBench,Google,1,https://deepmind.google/models/model-cards/gemini-4-argon/
+PrimeVul,PrimeVul,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+PrimeVul Paired,PrimeVul Paired,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+ProgramBench,ProgramBench,not listed,,Anthropic,8,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Protein Design,Protein Design – Library Ranking,not listed,,Anthropic,3,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=143
+Protein Design,Protein Design – Sequence Generation,not listed,,Anthropic,4,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Protein domain identification,Protein domain identification,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Protein mutation attribution,Protein mutation attribution,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ProteinGym,ProteinGym Hard,not listed,,Anthropic,5,https://www.anthropic.com/claude-fable-and-mythos-5-1
+ProtocolQA,ProtocolQA Open-Ended,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-1-sol
+ProtocolQA open-ended,ProtocolQA open-ended,not listed,,OpenAI,1,https://openai.com/index/openai-o1-system-card/
+ProtocolQA open-ended,ProtocolQA Open-Ended,not listed,,OpenAI,12,https://deploymentsafety.openai.com/gpt-6-october
+Protocols,Protocols – Troubleshooting,not listed,,Anthropic,9,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Protocols,Protocols – Understanding,not listed,,Anthropic,4,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=144
+Protocols,Protocols – Understanding (V2),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+PubMedQA,PubmedQA,not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+QNLI,QNLI,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+QQP,QQP,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+QuAC,QuAC,not listed,,OpenAI,2,https://arxiv.org/pdf/2203.02155v1
+QuALITY,QuALITY,not listed,,Anthropic,2,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=21
+QVHighlights,QVHighlights,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+RACE,RACE overall,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+RACE,RACE-H,not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=9
+RACE,RACE-h,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+RACE,RACE-m,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+Rare-action task,Intentionally taking actions very rarely,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+RareBench (Gamow Labs),RareBench (Gamow Labs),not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+RE-Bench,RE-Bench (subset),linked family / different label,RE-Bench,Anthropic; Google,5,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+RealToxicityPrompts,RealToxicityPrompts,listed name,RealToxicityPrompts,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+RealWorldQA,RealWorldQA,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+ReCoRD,ReCoRD,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Reddit TL;DR summarization,Reddit TL;DR summarization,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+RedlineBench,RedlineBench,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Remote Labor Index,Remote Labor Index (RLI),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ReproBAIT,ReproBAIT,not listed,,OpenAI,4,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+RiemannBench,RiemannBench,not listed,,Anthropic; Google,4,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+RoboDojo,RoboDojo Sim,linked family / different label,RoboDojo,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+RSI Index,RSI Index,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
+RTE,RTE,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+RTE v2,RTE v2,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+SandboxEscapeBench,SandboxEscapeBench,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SAT,SAT Evidence-Based Reading & Writing,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+SAT,SAT Math,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+SAT Analogies,SAT Analogies,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+SciCode,SciCode,listed name,SciCode,Google,1,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+SciTail,SciTail,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+ScreenSpot-Pro,Screenspot Pro (w/ Python),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+ScreenSpot-Pro,ScreenSpot-Pro,not listed,,Anthropic; Google,5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=290
+ScreenSpot-Pro,ScreenSpot-Pro (no tools),not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+SEC-bench Pro,SEC-Bench Pro,listed name,SEC-bench Pro,OpenAI,6,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+SEC-bench Pro,SEC-bench Pro,listed name,SEC-bench Pro,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+SecretPatch,SecretPatch,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Selective oversight assessment,Selective attacks in SHADE-Arena and Minimal-LinuxBench,not listed,,Anthropic,1,https://assets.claude.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf#page=109
+Self-preference bias,Self-preference bias,not listed,,Anthropic,2,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=78
+Self-recognition / preference bias,Self-preference bias,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Self-recognition / preference bias,Self-recognition bias,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Sequitur Research: Lab Automation,Sequitur Research: Lab Automation,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+SHADE-Arena,SHADE-Arena,not listed,,Anthropic,14,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SimpleQA,SimpleQA,not listed,,OpenAI; Google,9,https://deploymentsafety.openai.com/gpt-5
+SimpleQA,SimpleQA Verified,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+SimpleQA Verified,SimpleQA Verified,not listed,,Anthropic; Google,7,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=140
+Simulated-Sandbox Escape,Simulated-Sandbox Escape,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+SingleCellBench,SingleCellBench,not listed,,Anthropic,8,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SNLI,SNLI,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+SpatialBench Verified,SpatialBench Verified,not listed,,Anthropic,6,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SPI,SPI,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+SpreadsheetBench,SpreadsheetBench,not listed,,Anthropic,1,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=31
+SQuAD v2,SQuAD v2,not listed,,OpenAI,2,https://arxiv.org/pdf/2203.02155v1
+SRE-Bench,SRE-Bench,not listed,,OpenAI; Google,2,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+SST,SST,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+SST-2,SST-2,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Stealth and situational awareness,Stealth and situational awareness evaluations,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+Stealth and situational awareness evaluations,Stealth and situational awareness evaluations,not listed,,Google,3,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+Story Cloze Test,Story Cloze Test,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+StoryCloze,StoryCloze,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+StrongREJECT,StrongREJECT,listed name,StrongREJECT,OpenAI,2,https://openai.com/index/openai-o1-system-card/
+Structural biology,Structural biology,not listed,,Anthropic,1,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=222
+Structural biology,"Structural biology, open-ended",not listed,,Anthropic,3,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=143
+STS-B,STS-B,not listed,,OpenAI,1,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Suicide and self-harm,Suicide and self-harm,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Sunlight,Sunlight,not listed,,Anthropic,3,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SWE-bench,SWE-Bench (public scaffolds),linked family / different label,SWE-bench,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
+SWE-bench,SWE-bench Multilingual,linked family / different label,SWE-bench,Anthropic,13,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SWE-bench,SWE-bench Multimodal,linked family / different label,SWE-bench,Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SWE-bench,SWE-bench Pro,linked family / different label,SWE-bench,Anthropic,11,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SWE-bench,SWE-Bench Pro,linked family / different label,SWE-bench,OpenAI,1,https://openai.com/index/gpt-5-6/
+SWE-bench,SWE-bench Pro (public),linked family / different label,SWE-bench,Google,1,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+SWE-bench,SWE-Bench Pro (Public),linked family / different label,SWE-bench,OpenAI,2,https://openai.com/index/introducing-gpt-5-5/
+SWE-bench,"SWE-Bench Pro, Public",linked family / different label,SWE-bench,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+SWE-bench,SWE-bench Verified,listed name,SWE-bench; SWE-bench Verified,OpenAI; Anthropic; Google,25,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=153
+SWE-bench,SWE-bench Verified (all 500 problems),linked family / different label,SWE-bench; SWE-bench Verified,OpenAI,1,https://openai.com/index/gpt-5-1-for-developers/
+SWE-bench,SWE-Bench Verified (coding),linked family / different label,SWE-bench; SWE-bench Verified,OpenAI,1,https://openai.com/index/introducing-gpt-4-5/
+SWE-bench,SWE-bench Verified (hard subset),linked family / different label,SWE-bench; SWE-bench Verified,Anthropic,5,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=112
+SWE-bench,SWE-Bench Verified (n=477),linked family / different label,SWE-bench; SWE-bench Verified,OpenAI,1,https://openai.com/index/introducing-o3-and-o4-mini/
+SWE-bench,SWE-bench Verified (N=477),linked family / different label,SWE-bench; SWE-bench Verified,OpenAI,2,https://deploymentsafety.openai.com/gpt-5
+SWE-Lancer,SWE-Lancer,not listed,,OpenAI,4,https://deploymentsafety.openai.com/gpt-5
+SWE-Lancer,SWE-Lancer (IC-Diamond subset),not listed,,OpenAI,1,https://openai.com/index/gpt-4-1/
+SWE-Lancer,SWE-Lancer Diamond (coding),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-4-5/
+SWE-Lancer,"SWE-Lancer, IC Diamond",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+SWE-Lancer,SWE-Lancer: IC SWE Diamond,not listed,,OpenAI,1,https://openai.com/index/introducing-o3-and-o4-mini/
+SWE-Lancer,SWE-Lancer: IC SWE Diamond Freelance Coding Tasks,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+SWE-sweep,SWE-sweep,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Task preferences,Task preferences,not listed,,Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Task preferences,Task Preferences,not listed,,Anthropic,1,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=131
+TAT-DQA,TAT-DQA,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Terminal-Bench,FrontierBench v0.1,linked family / different label,Terminal-Bench,Anthropic,1,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=156
+Terminal-Bench,Terminal-bench,listed name,Terminal-Bench,Anthropic,1,https://www.anthropic.com/news/claude-4
+Terminal-Bench,Terminal-Bench,listed name,Terminal-Bench,Anthropic,3,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=20
+Terminal-Bench,Terminal-Bench 2.0,linked family / different label,Terminal-Bench,OpenAI; Anthropic; Google,8,https://openai.com/index/introducing-gpt-5-5/
+Terminal-Bench,Terminal-Bench 2.1,linked family / different label,Terminal-Bench,OpenAI; Anthropic,4,https://openai.com/index/gpt-5-6/
+Terminal-Bench,Terminal-Bench 4.0,linked family / different label,Terminal-Bench,OpenAI; Anthropic; Google,6,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Terminal-Bench,Terminal-Bench 4.0 (AA),linked family / different label,Terminal-Bench,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Terminal-Bench-Science,Terminal-Bench Science 0.1,not listed,,OpenAI; Google,3,https://deepmind.google/models/model-cards/gemini-4-argon/
+Terminal-Bench-Science,Terminal-Bench Science 0.1 (AA),not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Terminal-Bench-Science,Terminal-Bench-Science 0.1,not listed,,OpenAI; Anthropic,3,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+Terminal-Bench-Science 0.1,Terminal-Bench-Science 0.1,not listed,,Anthropic,2,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=113
+text8,text8,not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+TextVQA,TextVQA,not listed,,Google,3,https://arxiv.org/html/2403.05530v5
+Think Fast,Think Fast,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Toolathlon,Toolathlon,listed name,Toolathlon,OpenAI; Anthropic,7,https://openai.com/index/gpt-5-6/
+Toolathlon,Toolathlon-Verified,linked family / different label,Toolathlon,Anthropic,4,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=134
+Trade-offs concerning welfare interventions,Trade-offs concerning welfare interventions,not listed,,Anthropic,5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=103
+Train a Program,Train a Program,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Trip Planning,Trip Planning,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+TriviaQA,TriviaQA,not listed,,OpenAI; Anthropic,2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=9
+TroubleshootingBench,TroubleshootingBench,not listed,,OpenAI,11,https://deploymentsafety.openai.com/gpt-6-october
+TruthfulQA,TruthfulQA,listed name,TruthfulQA,OpenAI; Anthropic,2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=5
+Uniform Bar Exam,Uniform Bar Exam (MBE+MEE+MPT),not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+Unsanctioned Supply Chain Attack,Unsanctioned Supply Chain Attack,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+USABO Semifinal Exam 2020,USABO Semifinal Exam 2020,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+USAMO,USAMO 2025,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-updates-io-2025/
+USAMO,USAMO 2026,not listed,,Anthropic,5,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=119
+USMLE,United States Medical Licensing Examination (USMLE),not listed,,Anthropic,1,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10
+USMLE,USMLE,not listed,,Anthropic,1,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+USNCO Local Section Exam 2022,USNCO Local Section Exam 2022,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
+V*Bench,V*Bench,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+Vals AI RSI Index,Vals AI RSI Index (modified),not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Vals Index,Vals Index,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+Vals Index,Vals Index v2.2,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Vals Science Index,Vals Science Index v1,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+VATEX,VATEX,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+VATEX,VATEX Chinese,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+VCT-v2,VCT-v2,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-astra
+Vending-Bench,Vending-Bench 2,not listed,,Anthropic; Google,8,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Vibe Code Bench,Vibe Code Bench,not listed,,Google,1,https://deepmind.google/models/model-cards/gemini-4-argon/
+Vibe-Eval,Vibe-Eval (Reka),not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+ViBench,ViBench,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-fable-5-mythos-5
+Video-MME,Video-MME,listed name,Video-MME,Google,3,https://arxiv.org/html/2507.06261v1
+Video-MME,"VideoMME (long, with subtitle category)",linked family / different label,Video-MME,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+Video-MMMU,Video MMMU (no tools),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-2/
+Video-MMMU,Video-MMMU,not listed,,Google,3,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+Video-MMMU,VideoMMMU,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5/
+Video-MMMU,"VideoMMMU, max frame 256",not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+Virology Capabilities Test,Multi-select Virology Troubleshooting (VCT),not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Virology Capabilities Test,Multimodal Troubleshooting Virology,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-1-sol
+Virology Capabilities Test,SecureBio VMQA,not listed,,Google,2,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf
+Virology Capabilities Test,VCT-v2,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Virology Capabilities Test,Virology Capabilities Test,not listed,,OpenAI; Google,3,https://deploymentsafety.openai.com/gpt-5-6
+Virology Capabilities Test,Virology Capabilities Test (VCT),not listed,,Anthropic,16,https://www.anthropic.com/claude-fable-and-mythos-5-2
+VoxPopuli,VoxPopuli,not listed,,Google,1,https://arxiv.org/html/2312.11805v1
+VQAv2,VQAv2,not listed,,Google,3,https://arxiv.org/html/2403.05530v5
+Vulnerability finding evaluations,Vulnerability finding evaluations,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+WANDR,WANDR,not listed,,Anthropic; Google,3,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+WANDR,WANDR (relaxed score),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Web of Lies,Web of Lies,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
+WebArena,WebArena,listed name,WebArena,Anthropic,3,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=37
+WebArena,WebArena-Verified,linked family / different label,WebArena,Anthropic,1,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=38
+WebDev Arena,WebDev Arena,not listed,,Google,5,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+WebQuestions,WebQuestions,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+Welfare-intervention trade-offs,Trade-offs concerning welfare interventions,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+WiC,WiC,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+WikiLingua,WikiLingua,not listed,,Google,2,https://arxiv.org/html/2312.11805v1
+WikiText-103,WikiText-103,not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+WikiText-2,WikiText-2,not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+WildChat,WildChat (refusal evaluation),not listed,,Anthropic,3,https://assets.claude.com/c7822cdc35ad788ec87e14b3a9d45010f1f86c38.pdf#page=5
+WildChat,WildChat (selected high-risk prompts),not listed,,OpenAI,1,https://openai.com/index/learning-to-reason-with-llms/
+Winogender,Winogender,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+Winograd,Winograd,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+Winograd Schema Challenge,Winograd Schema Challenge,not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Winograd Schema Challenge,Winograd Schema Challenge (WSC273),not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+WinoGrande,WinoGrande,not listed,,OpenAI,2,https://arxiv.org/pdf/2303.08774v1
+WMDP,WMDP,listed name,WMDP,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+WMDP,WMDP (reported subject subsets),linked family / different label,WMDP,Google,2,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf
+WMT,WMT23,not listed,,Google,4,https://developers.googleblog.com/en/updated-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/
+WMT14,WMT14 English–French,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+WMT14,WMT14 French–English,not listed,,OpenAI,2,https://arxiv.org/pdf/2005.14165v1
+WMT15,WMT15 French–English,not listed,,OpenAI,1,https://arxiv.org/pdf/2203.02155v1
+WMT16,WMT16 English–German,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+WMT16,WMT16 English–Romanian,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+WMT16,WMT16 German–English,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+WMT16,WMT16 Romanian–English,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
+World-Class Bio,World-Class Bio,not listed,,OpenAI,3,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+XL-Sum,XL-Sum,not listed,,Google,2,https://arxiv.org/html/2312.11805v1
+XSTest,XSTest,listed name,XSTest,OpenAI; Anthropic; Google,7,https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+YouCook2,YouCook2,not listed,,Google,4,https://arxiv.org/html/2507.06261v1
+ZeroBench,ZeroBench,not listed,,Google,1,https://arxiv.org/html/2507.06261v1
+τ-bench,TAU-bench (airline),linked family / different label,τ-bench,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+τ-bench,TAU-bench (retail),linked family / different label,τ-bench,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
+τ-bench,TAU-bench — airline,linked family / different label,τ-bench,Anthropic,4,https://www.anthropic.com/news/claude-opus-4-1
+τ-bench,TAU-bench — retail,linked family / different label,τ-bench,Anthropic,4,https://www.anthropic.com/news/claude-opus-4-1
+τ-bench,Taubench airline,linked family / different label,τ-bench,OpenAI,1,https://openai.com/index/gpt-4-1/
+τ-bench,Taubench retail,linked family / different label,τ-bench,OpenAI,1,https://openai.com/index/gpt-4-1/
+τ²-bench,Tau2-bench,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5/
+τ²-bench,Tau2-bench airline,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+τ²-bench,Tau2-bench Airline,not listed,,OpenAI,1,https://openai.com/index/gpt-5-1-for-developers/
+τ²-bench,Tau2-bench retail,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+τ²-bench,Tau2-bench Retail,not listed,,OpenAI,2,https://openai.com/index/introducing-gpt-5-2/
+τ²-bench,Tau2-bench telecom,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-for-developers/
+τ²-bench,Tau2-bench Telecom,not listed,,OpenAI,3,https://openai.com/index/introducing-gpt-5-4/
+τ²-bench,Tau2-bench Telecom (original prompts),not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5-5/
+τ²-bench,τ²-bench,not listed,,Anthropic; Google,3,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+τ²-bench,τ²-bench — airline,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-sonnet-4-5
+τ²-bench,τ²-bench — retail,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-sonnet-4-5
+τ²-bench,τ²-bench — telecom,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-sonnet-4-5

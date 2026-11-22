@@ -22,6 +22,7 @@ function initDirectory() {
     const box=el('div',null,'record'),left=el('div'),right=el('div',null,'links');
     left.append(el('strong',x.task),el('p',x.description),el('small','Documented '+x.date+(x.first_author_affil?' · '+x.first_author_affil:' · No first-listed affiliation recorded')));
     right.append(link('Original source',x.primary_url),link('Scoring source',x.protocol_url),link('Date evidence',x.date_source_url));
+    reportDetails(left,mapEvidence.catalog[x.slug]);
     if(x.affil_source_url)right.append(link('Affiliation evidence',x.affil_source_url));
     if(x.logo_source_url)right.append(link('Mark provenance',x.logo_source_url));
     right.append(link('Suggest a correction',issue(x.name+': correction','benchmark')));box.append(left,right);return box;
@@ -40,12 +41,14 @@ function initDirectory() {
       if(domain==='All domains'&&x.domain!==last){const cell=body.insertRow().insertCell();cell.colSpan=4;cell.className='group';cell.textContent=displayDomain(x.domain);last=x.domain;}
       const tr=body.insertRow();tr.className='data-row';const first=tr.insertCell();
       const extra=el('tr',null,'detail-row');extra.hidden=true;extra.id='record-'+x.slug;
-      const b=button(x.name,()=>{extra.hidden=!extra.hidden;b.setAttribute('aria-expanded',String(!extra.hidden));},'record-trigger');
+      const td=extra.insertCell();td.colSpan=4;
+      const b=button(x.name,()=>{extra.hidden=!extra.hidden;if(!extra.hidden&&!td.firstChild)td.append(detail(x));b.setAttribute('aria-expanded',String(!extra.hidden));},'record-trigger');
+      if(mapEvidence.catalog[x.slug]){b.classList.add('reported-record');b.setAttribute('aria-label',x.name+': reported by '+labNames(mapEvidence.reports[mapEvidence.catalog[x.slug]]));}
       b.setAttribute('aria-controls',extra.id);b.setAttribute('aria-expanded','false');first.append(b);
       for(const [label,value] of [['Input',x.input],['Output',x.output],['Scoring',x.assessment]]){
         const cell=tr.insertCell();cell.dataset.label=label;cell.textContent=value;
       }
-      const td=extra.insertCell();td.colSpan=4;td.append(detail(x));body.append(extra);
+      body.append(extra);
     }
     host.append(t);
   }

@@ -2,14 +2,16 @@
 
 Publicly defined tests reported in six focal releases through **22 November 2026**. A row records a release and evaluation configuration, not necessarily an independent benchmark. Scores are not compared across non-equivalent protocols.
 
-[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Complete CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)
+[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Two-release CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)
+
+Earlier general-purpose and reasoning-model releases: [historical sources and limits](history/README.md) · [release records](../../data/flagship_history.csv) · [family gaps](site-coverage.csv) · [exact labels vs. related editions](site-editions.csv). The homepage uses both inventories; the comparison below is deliberately limited to the two focal releases per lab.
 
 | Lab | Release | First release | Headline records | All public records | Distinct families |
 |---|---|---|---:|---:|---:|
 | OpenAI | GPT-6.2 Astra and Sol | 2026-11-17 | 12 | 40 | 39 |
 | OpenAI | GPT-6.1 Sol | 2026-09-29 | 5 | 18 | 16 |
-| Anthropic | Claude Fable 5.2 / Claude Mythos 5.2 | 2026-11-09 | 15 | 104 | 90 |
-| Anthropic | Claude Fable 5.1 / Claude Mythos 5.1 | 2026-09-01 | 9 | 79 | 66 |
+| Anthropic | Claude Fable 5.2 / Claude Mythos 5.2 | 2026-11-09 | 15 | 109 | 91 |
+| Anthropic | Claude Fable 5.1 / Claude Mythos 5.1 | 2026-09-01 | 9 | 91 | 72 |
 | Google | Gemini 4 Carbon | 2026-10-28 | 25 | 42 | 42 |
 | Google | Gemini 4 Argon | 2026-10-13 | 5 | 47 | 47 |
 
@@ -18,7 +20,7 @@ Publicly defined tests reported in six focal releases through **22 November 2026
 | Lab | Highlight families in both | Families in both full inventories | Examples in both publications |
 |---|---:|---:|---|
 | OpenAI | 2 | 9 | AutomationBench, Terminal-Bench-Science |
-| Anthropic | 4 | 56 | AutomationBench, Humanity’s Last Exam, OSWorld, Terminal-Bench-Science |
+| Anthropic | 4 | 60 | AutomationBench, Humanity’s Last Exam, OSWorld, Terminal-Bench-Science |
 | Google | 2 | 30 | Gray Swan IPI, Vals Index |
 
 “Latest only” means **reported only in the newer of these documents**, not newly created. A family can recur with different versions, subsets, graders or model configurations. Each row links the reported result and the underlying protocol. Comparator names are not treated as new focal releases.

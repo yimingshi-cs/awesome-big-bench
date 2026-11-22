@@ -24,3 +24,10 @@ A v1 date is the first arXiv submission, not necessarily the public launch. When
 | FrontierRSI | [2026-11-18](<https://x.com/quasicoh/status/2123114502065627580>) | Public project announcement. This suite tests prerequisites for AI improvement, not confirmed recursive gains. |
 
 For any correction, link the dated announcement, paper version, protocol or repository record that should replace the current evidence.
+
+### Additional task references
+
+- [Toolathlon paper](https://arxiv.org/abs/2510.25726) (29 October 2025): the original project; the [maintainers](https://github.com/hkust-nlp/Toolathlon) date Toolathlon-Verified separately. The CUA link covers both, with report versions kept distinct.
+- [APEX-Agents](https://www.mercor.com/blog/introducing-apex-agents/) (21 January 2026): Mercor's professional agent tasks, not the APEX umbrella or its tool-free assessment. See the [grading method](https://www.mercor.com/apex/methodology/).
+- [ARC-AGI-3 technical report](https://arxiv.org/abs/2603.24621) (v1, 24 March 2026): the directory classifies the interactive task as Reasoning. Its homepage shortcut is under Coding for readers building programmatic solvers; the metric is human-relative action efficiency, not code correctness.
+- [BrowseComp](https://openai.com/index/browsecomp/) (10 April 2025), [AndroidWorld](https://arxiv.org/abs/2405.14573) (paper v1, 23 May 2024) and [SciCode](https://arxiv.org/abs/2407.13168) (paper v1, 18 July 2024) cover web research, phone control and scientific coding. Of these three, only BrowseComp is a homepage field reference.

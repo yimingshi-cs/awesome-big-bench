@@ -17,7 +17,7 @@ The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can 
 | Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
 | AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
 
-The full guide compares inputs, outputs and scoring for **101 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
+The full guide compares inputs, outputs and scoring for **107 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
 
 ## Benchmark directory
 
@@ -37,6 +37,7 @@ The full guide compares inputs, outputs and scoring for **101 benchmarks across 
 | [BIRD](<https://bird-bench.github.io/>) | Database, schema, question and external knowledge | Executable SQL query | [Execution accuracy and efficiency of correct queries](<https://arxiv.org/abs/2305.03111v1>) |
 | [SWE-bench](<https://www.swebench.com/>) | Repository snapshot and corresponding GitHub issue | Patch to the repository | [Required issue-fixing and regression tests must pass](<https://github.com/SWE-bench/SWE-bench/blob/main/swebench/harness/grading.py>) |
 | [LiveCodeBench](<https://livecodebench.github.io/>) | Dated contest problem, code or execution example | Program, repair, execution result or predicted output | [Test-case success or answer matching, by subtask](<https://arxiv.org/pdf/2403.07974v1>) |
+| [SciCode](<https://scicode-bench.github.io/>) | A scientific problem and its component specifications | Executable Python code | [Scientist-authored test cases assess subproblems and full solutions](<https://github.com/scicode-bench/SciCode>) |
 | [SWE-bench Verified](<https://openai.com/index/introducing-swe-bench-verified/>) | Human-validated issue and matching repository snapshot | Patch to the repository | [Same test-based resolution criterion, on 500 validated issues](<https://openai.com/index/introducing-swe-bench-verified/>) |
 | [Terminal-Bench](<https://www.tbench.ai/news/announcement>) | Terminal task instruction and a prepared container | Shell actions and resulting files or system state | [Task-specific tests determine completion](<https://www.tbench.ai/news/announcement>) |
 | [CWE-bench v2](<https://cwe-bench.com/>) | Repository and defensive audit task | Code changes resolving the identified weakness | [Programmatic security and regression checks](<https://cwe-bench.com/v2>) |
@@ -55,7 +56,10 @@ The full guide compares inputs, outputs and scoring for **101 benchmarks across 
 | [GAIA](<https://arxiv.org/abs/2311.12983>) | Real-world question, sometimes with an attached file | Short text, number or list | [Normalized final answer matched against the reference](<https://huggingface.co/spaces/gaia-benchmark/leaderboard/blob/main/scorer.py>) |
 | [Berkeley Function-Calling Leaderboard (BFCL)](<https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html>) | User request and available function signatures | Function calls with arguments, or no call | [Syntax-tree matching or execution checks by category](<https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html>) |
 | [OSWorld](<https://os-world.github.io/>) | Natural-language instruction and initialized desktop environment | Desktop actions that change applications or files | [Task-specific execution checks on the resulting state](<https://arxiv.org/pdf/2404.07972v1>) |
+| [AndroidWorld](<https://google-research.github.io/android_world/>) | A user instruction and a configured Android device | UI actions that complete the requested task | [Task-specific checks of the resulting device state](<https://github.com/google-research/android_world>) |
 | [τ-bench](<https://github.com/sierra-research/tau-bench>) | Simulated customer, domain policy, tools and database | Tool actions and messages to the customer | [Final database state and required reply contents checked](<https://github.com/sierra-research/tau-bench/blob/main/tau_bench/envs/base.py>) |
+| [BrowseComp](<https://openai.com/index/browsecomp/>) | A question and access to the web | A concise factual answer | [Answer correctness against a reference, using the documented grader](<https://cdn.openai.com/pdf/5e10f4ab-d6f7-442e-9508-59515c65e35d/browsecomp.pdf>) |
+| [Toolathlon](<https://github.com/hkust-nlp/Toolathlon>) | A task and an initialized software workspace | Tool actions and a completed workspace task | [Task-specific scripts verify the outcome](<https://github.com/hkust-nlp/Toolathlon>) |
 | [AutomationBench](<https://zapier.com/benchmarks>) | Business request and starting application state | Tool actions and final state across apps | [Assertions check outcomes and policy compliance](<https://arxiv.org/abs/2604.18934>) |
 
 <a id="domain-reasoning"></a>
@@ -71,6 +75,7 @@ The full guide compares inputs, outputs and scoring for **101 benchmarks across 
 | [OlympiadBench](<https://arxiv.org/abs/2402.14008>) | Olympiad problem, sometimes with a diagram | Mathematical or physical answer; some problems request proof | [Reported automatic accuracy covers non-proof final answers](<https://arxiv.org/abs/2402.14008v1>) |
 | [FrontierMath](<https://epoch.ai/frontiermath>) | Original advanced mathematics problem | Numerical answer or specified mathematical object | [Verification script checks the answer or its properties](<https://epoch.ai/frontiermath/tiers-1-4/the-benchmark>) |
 | [ARC-AGI-2](<https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025>) | Example input/output grid pairs and a test input | Predicted output grid | [Dimensions and every cell must match the target](<https://arxiv.org/pdf/2505.11831v1>) |
+| [ARC-AGI-3](<https://arcprize.org/arc-agi/3>) | Observations from an unfamiliar interactive environment | Actions that reach the level goals | [Relative Human Action Efficiency (RHAE), using human action baselines](<https://arcprize.org/media/ARC_AGI_3_Technical_Report.pdf>) |
 
 <a id="domain-multimodal"></a>
 ### Multimodal
@@ -182,6 +187,7 @@ The full guide compares inputs, outputs and scoring for **101 benchmarks across 
 | [MMLU-Pro](<https://github.com/TIGER-AI-Lab/MMLU-Pro>) | Multisubject question with up to ten options | Selected answer choice | [Accuracy against answer keys across subjects](<https://arxiv.org/abs/2406.01574v1>) |
 | [Humanity's Last Exam](<https://www.lastexam.ai/>) | Expert question, sometimes with an image | Selected or short answer with stated confidence | [Paper reports model-judged accuracy and RMS calibration error](<https://arxiv.org/pdf/2501.14249v1>) |
 | [GDPval](<https://openai.com/index/gdpval/>) | Work brief and reference materials | A professional work product | [Expert blind comparisons of model and human deliverables](<https://openai.com/index/gdpval/>) |
+| [APEX-Agents](<https://www.mercor.com/blog/introducing-apex-agents/>) | A professional brief, files and workplace applications | A client-ready answer or work product | [Expert rubrics: full-task pass rate and mean criterion score](<https://www.mercor.com/apex/methodology/>) |
 | [LifeVal](<https://openai.com/index/lifeval/>) | Personal task, context, reference files and tools | Personalized outcome or artifact | [Rubric-based grading against the task and starting state](<https://cdn.openai.com/pdf/lifeval.pdf>) |
 
 [Source table](data/famous.csv) · [Documented dates](verification/catalog.md) · [Candidates not yet in the guide](data/candidates_unverified.csv). A date identifies the event supported by its source, such as a v1 submission or public release. A project, a call for tasks and a finished release can have different dates.

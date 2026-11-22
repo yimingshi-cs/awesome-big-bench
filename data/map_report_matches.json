@@ -1,5 +1,7 @@
 [
   {"family":"SWE-bench","cell":["SWE","Bench"]},
+  {"family":"SWE-bench","catalog":"swe-bench","exactLabelOnly":true},
+  {"family":"SWE-bench","catalog":"swe-bench-verified","versionPattern":"^SWE[- ]?bench[ -]Verified\\b"},
   {"family":"Terminal-Bench","cell":["Terminal","Bench"]},
   {"family":"CWE-bench","cell":["CWE","Bench"]},
   {"family":"Agents’ Last Exam","cell":["Agent","Last Exam"]},
@@ -9,7 +11,9 @@
   {"family":"LifeVal","cell":["Life","val"]},
   {"family":"Humanity’s Last Exam","cell":["Humanity","Last Exam"]},
   {"family":"OSWorld","landmark":"osworld"},
-  {"family":"ARC-AGI","landmark":"arc-agi-2","variant":"ARC-AGI-2"},
+  {"family":"ARC-AGI","catalog":"arc-agi","versionPattern":"^ARC[- ]AGI(?:[- ]1)?(?:$| \\()"},
+  {"family":"ARC-AGI","landmark":"arc-agi-2","versionPattern":"^ARC[- ]AGI[- ]2(?:$|[ (])"},
+  {"family":"ARC-AGI","landmark":"arc-agi-3","versionPattern":"^ARC[- ]AGI[- ]3(?:$|[ (])"},
   {"family":"FrontierMath","landmark":"frontiermath"},
   {"family":"GraphWalks","landmark":"graphwalks"},
   {"family":"SEC-bench Pro","landmark":"sec-bench-pro"}
