@@ -3,6 +3,7 @@ import argparse
 import base64
 from collections import defaultdict
 from itertools import product
+from flagship_reports import reports
 from urllib.parse import quote
 import csv
 import json
@@ -140,8 +141,23 @@ def render():
     # No remote fetches, fonts or trackers, so the downloaded file also works via file://.
     fields=['name','slug','date','date_source_url','first_author_affil','affil_source_url','domain',
             'logo_source_url','task','description','primary_url','input','output','assessment','protocol_url']
-    payload = dict(repo=REPO,domains=DOMAINS,nameGroups=groups,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
-    scripts = ('app.js','directory.js','names.js','trends.js','route.js')
+    landmarks = json.loads((ROOT/'data/field_landmarks.json').read_text())
+    for group, slugs in landmarks.items():
+        if group not in groups['fields'] or not set(slugs) <= cat.keys():
+            raise ValueError('Unresolved field landmark: '+group)
+    releases = read_csv('flagship_evaluations.csv')
+    for r in releases:
+        if not all(r.get(k) for k in ('vendor','release','generation','date','benchmark','family','tier','location','release_url','protocol_url')):
+            raise ValueError('Flagship result is missing attribution')
+        if r['tier'] not in ('headline','extended') or r['generation'] not in ('current','previous'):
+            raise ValueError('Bad release scope')
+        date.fromisoformat(r['date'])
+        check_url(r['release_url']); check_url(r['protocol_url'])
+    observed = {(r['vendor'], r['generation']) for r in releases}
+    if observed != set(product(('OpenAI','Anthropic','Google'),('current','previous'))):
+        raise ValueError('Expected two generations per vendor')
+    payload = dict(repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,flagshipRecords=releases,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
+    scripts = ('app.js','directory.js','names.js','trends.js','flagships.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()
@@ -175,6 +191,7 @@ def render():
                 links.append(link(label,rec['query_url']))
             lines.extend(['Queries: '+' · '.join(links),''])
         outputs['verification/matrix/'+slug(prefix)+'.md']='\n'.join(lines)
+    outputs.update(reports(releases))
     return outputs
 
 

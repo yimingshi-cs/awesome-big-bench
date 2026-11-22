@@ -6,7 +6,7 @@
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
 
-**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Contribute](CONTRIBUTING.md)**
+**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Flagship evals](https://yiming-shi.com/awesome-big-bench/#releases)** · **[Contribute](CONTRIBUTING.md)**
 
 ## Where to start
 

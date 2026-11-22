@@ -24,6 +24,15 @@ This runnable model evaluation applies fixed inputs and classifies responses as 
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AlignmentEval%22%7C%22Alignment-Eval%22%7C%22Alignment+Eval%22%7C%22Alignment%27s+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AlignmentEval&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=AlignmentEval&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=alignment-eval+in%3Aname&per_page=60>)
 
+<a name="val"></a>
+## Alignmentval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Alignmentval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Alignmentval%22%7C%22Alignment-val%22%7C%22Alignment+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Alignmentval%22+OR+TITLE%3A%22Alignment-val%22+OR+TITLE%3A%22Alignment+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Alignmentval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Alignment-Exam
 
@@ -32,15 +41,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AlignmentExam%22%7C%22Alignment-Exam%22%7C%22Alignment+Exam%22%7C%22Alignment%27s+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AlignmentExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=AlignmentExam&limit=50>)
-
-<a name="mock"></a>
-## Alignment-Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AlignmentMock%22%7C%22Alignment-Mock%22%7C%22Alignment+Mock%22%7C%22Alignment%27s+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AlignmentMock&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=AlignmentMock&limit=50>)
 
 <a name="first-exam"></a>
 ## Alignment’s First Exam
@@ -59,15 +59,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AlignmentLastExam%22%7C%22Alignment-Last-Exam%22%7C%22Alignment+Last+Exam%22%7C%22Alignment%27s+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AlignmentLastExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=AlignmentLastExam&limit=50>)
-
-<a name="last-code-exam"></a>
-## Alignment’s Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AlignmentLastCodeExam%22%7C%22Alignment-Last-Code-Exam%22%7C%22Alignment+Last+Code+Exam%22%7C%22Alignment%27s+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AlignmentLastCodeExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=AlignmentLastCodeExam&limit=50>)
 
 <a name="dojo"></a>
 ## Alignment-Dojo

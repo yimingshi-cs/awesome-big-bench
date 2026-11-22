@@ -24,6 +24,15 @@ A bimanual manipulation benchmark with task families and published success and d
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22RoboEval%22%7C%22Robo-Eval%22%7C%22Robo+Eval%22%7C%22Robo%27s+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=RoboEval&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=RoboEval&limit=50>)
 
+<a name="val"></a>
+## Roboval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Roboval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Roboval%22%7C%22Robo-val%22%7C%22Robo+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Roboval%22+OR+TITLE%3A%22Robo-val%22+OR+TITLE%3A%22Robo+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Roboval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Robo-Exam
 
@@ -32,15 +41,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22RoboExam%22%7C%22Robo-Exam%22%7C%22Robo+Exam%22%7C%22Robo%27s+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=RoboExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=RoboExam&limit=50>)
-
-<a name="mock"></a>
-## Robo-Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22RoboMock%22%7C%22Robo-Mock%22%7C%22Robo+Mock%22%7C%22Robo%27s+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=RoboMock&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=RoboMock&limit=50>)
 
 <a name="first-exam"></a>
 ## Robo First Exam
@@ -59,15 +59,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22RoboLastExam%22%7C%22Robo-Last-Exam%22%7C%22Robo+Last+Exam%22%7C%22Robo%27s+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=RoboLastExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=RoboLastExam&limit=50>)
-
-<a name="last-code-exam"></a>
-## Robo Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22RoboLastCodeExam%22%7C%22Robo-Last-Code-Exam%22%7C%22Robo+Last+Code+Exam%22%7C%22Robo%27s+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=RoboLastCodeExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=RoboLastCodeExam&limit=50>)
 
 <a name="dojo"></a>
 ## RoboDojo

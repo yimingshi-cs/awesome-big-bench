@@ -20,6 +20,15 @@ No exact-named AI benchmark or protocol-defined evaluation suite was identified 
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MathematiciansEval%22%7C%22Mathematicians-Eval%22%7C%22Mathematicians+Eval%22%7C%22Mathematicians%27+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MathematiciansEval&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MathematiciansEval&limit=50>)
 
+<a name="val"></a>
+## Mathematiciansval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Mathematiciansval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Mathematiciansval%22%7C%22Mathematicians-val%22%7C%22Mathematicians+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Mathematiciansval%22+OR+TITLE%3A%22Mathematicians-val%22+OR+TITLE%3A%22Mathematicians+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Mathematiciansval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Mathematicians’ Exam
 
@@ -28,15 +37,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MathematiciansExam%22%7C%22Mathematicians-Exam%22%7C%22Mathematicians+Exam%22%7C%22Mathematicians%27+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MathematiciansExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MathematiciansExam&limit=50>)
-
-<a name="mock"></a>
-## Mathematicians’ Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MathematiciansMock%22%7C%22Mathematicians-Mock%22%7C%22Mathematicians+Mock%22%7C%22Mathematicians%27+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MathematiciansMock&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MathematiciansMock&limit=50>)
 
 <a name="first-exam"></a>
 ## Mathematicians’ First Exam
@@ -55,15 +55,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MathematiciansLastExam%22%7C%22Mathematicians-Last-Exam%22%7C%22Mathematicians+Last+Exam%22%7C%22Mathematicians%27+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MathematiciansLastExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MathematiciansLastExam&limit=50>)
-
-<a name="last-code-exam"></a>
-## Mathematicians’ Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MathematiciansLastCodeExam%22%7C%22Mathematicians-Last-Code-Exam%22%7C%22Mathematicians+Last+Code+Exam%22%7C%22Mathematicians%27+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MathematiciansLastCodeExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MathematiciansLastCodeExam&limit=50>)
 
 <a name="dojo"></a>
 ## Mathematicians’ Dojo

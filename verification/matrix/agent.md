@@ -24,6 +24,17 @@ AgentGym includes the named AgentEval suite for evaluating agents on environment
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22AgentEval%22+OR+%22Agent-Eval%22+OR+%22Agent+Eval%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AgentEval&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AgentEval%22%7C%22Agent-Eval%22%7C%22Agent+Eval%22%7C%22Agent%27s+Eval%22%7C%22Agents%27+Eval%22%7C%22Agents+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentEval%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-Eval%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+Eval%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+Eval%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+Eval%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+Eval%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Agent+Eval&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=AgentEval+OR+Agent-Eval+in%3Aname+is%3Apublic&per_page=100>) · [GitHub repositories (recheck)](<https://api.github.com/search/repositories?q=AgentEval+in%3Aname+is%3Apublic&per_page=100>)
 
+<a name="val"></a>
+## Agentval
+
+**No exact match found** · 2026-11-23
+
+The project supplies test tools for user-defined workflows, not a fixed benchmark of this name.
+
+[Related source (not a match)](<https://pypi.org/project/agentval/>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Agentval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Agentval%22%7C%22Agent-val%22%7C%22Agent+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Agentval%22+OR+TITLE%3A%22Agent-val%22+OR+TITLE%3A%22Agent+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Agentval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## AgentExam
 
@@ -34,17 +45,6 @@ An implemented coding-agent evaluation protocol records runs and resolved task o
 [Primary source](<https://github.com/anphuchoang5-sys/agent-exam>)
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22AgentExam%22+OR+%22Agent-Exam%22+OR+%22Agent+Exam%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AgentExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AgentExam%22%7C%22Agent-Exam%22%7C%22Agent+Exam%22%7C%22Agent%27s+Exam%22%7C%22Agents%27+Exam%22%7C%22Agents+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Agent+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=AgentExam+OR+Agent-Exam+in%3Aname+is%3Apublic&per_page=100>)
-
-<a name="mock"></a>
-## Agent-Mock
-
-**No exact match found** · 2026-11-22
-
-AgentMock is used by software testing repositories; no named AI benchmark was found.
-
-[Related source (not a match)](<https://github.com/yifzhang/AgentMock>)
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22AgentMock%22+OR+%22Agent-Mock%22+OR+%22Agent+Mock%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AgentMock&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AgentMock%22%7C%22Agent-Mock%22%7C%22Agent+Mock%22%7C%22Agent%27s+Mock%22%7C%22Agents%27+Mock%22%7C%22Agents+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentMock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+Mock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+Mock%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+Mock%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+Mock%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Agent+Mock&rows=12&select=title%2CDOI>)
 
 <a name="first-exam"></a>
 ## Agents’ First Exam
@@ -67,15 +67,6 @@ Berkeley RDI evaluates computer-use agents on multi-application tasks.
 [Primary source](<https://github.com/rdi-berkeley/agents-last-exam>)
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22Agent+Last+Exam%22+OR+%22Agent%27s+Last+Exam%22+OR+%22Agents%27+Last+Exam%22+OR+%22AgentLastExam%22+AI+benchmark+evaluation+model>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AgentLastExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AgentLastExam%22%7C%22Agent-Last-Exam%22%7C%22Agent+Last+Exam%22%7C%22Agent%27s+Last+Exam%22%7C%22Agents%27+Last+Exam%22%7C%22Agents+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentLastExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-Last-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+Last+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+Last+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+Last+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Agent+Last+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=AgentLastExam+OR+Agent-Last-Exam+OR+agents-Last-Exam+in%3Aname+is%3Apublic&per_page=100>)
-
-<a name="last-code-exam"></a>
-## Agents’ Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22Agent+Last+Code+Exam%22+OR+%22Agent%27s+Last+Code+Exam%22+OR+%22Agents%27+Last+Code+Exam%22+OR+%22AgentLastCodeExam%22+AI+benchmark+evaluation+model>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AgentLastCodeExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AgentLastCodeExam%22%7C%22Agent-Last-Code-Exam%22%7C%22Agent+Last+Code+Exam%22%7C%22Agent%27s+Last+Code+Exam%22%7C%22Agents%27+Last+Code+Exam%22%7C%22Agents+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentLastCodeExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-Last-Code-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+Last+Code+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+Last+Code+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+Last+Code+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+Last+Code+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Agent+Last+Code+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=AgentLastCodeExam+OR+Agent-Last-Code-Exam+OR+agents-Last-Code-Exam+in%3Aname+is%3Apublic&per_page=100>)
 
 <a name="dojo"></a>
 ## AgentDojo

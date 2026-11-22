@@ -24,6 +24,15 @@ This suite compares four conversational memory architectures across seven dimens
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MemoryEval%22%7C%22Memory-Eval%22%7C%22Memory+Eval%22%7C%22Memory%27s+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MemoryEval&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MemoryEval&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=memory-eval+in%3Aname&per_page=60>)
 
+<a name="val"></a>
+## Memoryval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Memoryval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Memoryval%22%7C%22Memory-val%22%7C%22Memory+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Memoryval%22+OR+TITLE%3A%22Memory-val%22+OR+TITLE%3A%22Memory+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Memoryval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Memory-Exam
 
@@ -34,15 +43,6 @@ A human memory-assessment site uses the name; the AI benchmark M³Exam uses a di
 [Related source (not a match)](<https://memoryexam.com/>)
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MemoryExam%22%7C%22Memory-Exam%22%7C%22Memory+Exam%22%7C%22Memory%27s+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MemoryExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MemoryExam&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=memory-exam+in%3Aname&per_page=60>)
-
-<a name="mock"></a>
-## Memory-Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MemoryMock%22%7C%22Memory-Mock%22%7C%22Memory+Mock%22%7C%22Memory%27s+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MemoryMock&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MemoryMock&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=memory-mock+in%3Aname&per_page=60>)
 
 <a name="first-exam"></a>
 ## Memory’s First Exam
@@ -61,15 +61,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MemoryLastExam%22%7C%22Memory-Last-Exam%22%7C%22Memory+Last+Exam%22%7C%22Memory%27s+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MemoryLastExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MemoryLastExam&limit=50>)
-
-<a name="last-code-exam"></a>
-## Memory’s Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MemoryLastCodeExam%22%7C%22Memory-Last-Code-Exam%22%7C%22Memory+Last+Code+Exam%22%7C%22Memory%27s+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MemoryLastCodeExam&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MemoryLastCodeExam&limit=50>)
 
 <a name="dojo"></a>
 ## MemoryDojo

@@ -31,17 +31,20 @@ function initNames(){
     const selected=fields.filter(([f])=>!chooser.value||chooser.value===f);
     rowOrder=selected.flatMap(([,ps])=>ps);cells=[];table.replaceChildren();
     const cap=table.createCaption();cap.className='sr-only';cap.textContent='Benchmark names by prefix and ending. Green: same-name AI benchmark. Grey: no exact match found.';
-    const cg=el('colgroup');cg.append(el('col',null,'field-col'),el('col',null,'prefix-col'));table.append(cg);
+    const cg=el('colgroup');cg.append(el('col',null,'prefix-col'));table.append(cg);
     for(const [,ss] of families){const cols=el('colgroup');cols.span=ss.length;table.append(cols);}
     const head=table.createTHead(),a=head.insertRow(),b=head.insertRow();
-    for(const [title,cls] of [['Field','field-label'],['Prefix','prefix-label']]){const th=el('th',title,cls);th.rowSpan=2;th.scope='col';a.append(th);}
+    for(const [title,cls] of [['Prefix','prefix-label']]){const th=el('th',title,cls);th.rowSpan=2;th.scope='col';a.append(th);}
     for(const [g,ss] of families){const h=el('th',g,'family-head');h.colSpan=ss.length;h.scope='colgroup';a.append(h);
       ss.forEach((s,i)=>{const e=el('th',s,i===0?'family-start':'');e.scope='col';b.append(e);});}
     for(const [f,ps] of selected){
       const body=table.createTBody();
-      ps.forEach((p,i)=>{
-        const tr=body.insertRow();if(i===0){tr.className='starts-field';const group=el('th',f,'field-label');group.scope='rowgroup';group.rowSpan=ps.length;tr.append(group);}
-        const prefix=el('th',null,'prefix-label');prefix.scope='row';if(!i)prefix.append(el('small',f,'mobile-field'));prefix.append(document.createTextNode(p));tr.append(prefix);
+      const band=body.insertRow(),group=el('th',null,'field-band');group.colSpan=endings.length+1;group.scope='rowgroup';
+      const wrap=el('div',null,'field-landmarks');wrap.append(el('strong',f));const peers=el('span');
+      for(const id of fieldLandmarks[f]||[]){const x=catalog.find(r=>r.slug===id);peers.append(link(x.name,'#browse?domain='+encodeURIComponent(x.domain)+'&q='+encodeURIComponent(x.name)));}
+      wrap.append(peers);group.append(wrap);band.append(group);
+      ps.forEach(p=>{
+        const tr=body.insertRow();const prefix=el('th',p,'prefix-label');prefix.scope='row';tr.append(prefix);
         for(const [,ss] of families){ss.forEach((s,j)=>{
           const n=map.get(p+'|'+s),td=tr.insertCell();if(!j)td.className='family-start';const used=n.status==='used';
           const c=button(null,()=>open(n,c),'map-cell '+(used?'yes':'no'));c.dataset.prefix=p;c.dataset.suffix=s;c.tabIndex=-1;

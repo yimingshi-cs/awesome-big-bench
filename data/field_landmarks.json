@@ -1,0 +1,12 @@
+{
+  "Coding": ["cwe-bench-v2", "humaneval"],
+  "CUA": ["osworld", "automationbench"],
+  "Reasoning": ["frontiermath", "arc-agi-2"],
+  "Multimodal": ["mmmu", "video-mme"],
+  "Embodied": ["libero"],
+  "Safety": ["sec-bench-pro", "webexploitbench-v12"],
+  "Long-context & Memory": ["graphwalks", "needle-in-a-haystack"],
+  "AutoResearch": ["paperbench", "re-bench"],
+  "RSI": ["frontier-rsi"],
+  "General": ["mmlu", "humanitys-last-exam"]
+}

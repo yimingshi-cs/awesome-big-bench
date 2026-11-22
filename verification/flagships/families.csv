@@ -1,0 +1,164 @@
+family,OpenAI_previous,OpenAI_current,Anthropic_previous,Anthropic_current,Google_previous,Google_current
+AA Intelligence Index,,headline,,,,headline
+AA-3D,,headline,,,,
+AA-AnalystAgent,,headline,,,,
+AA-Briefcase,,,extended,headline,,
+AA-Omniscience,,,extended,extended,extended,extended
+AAV Capsid Packaging Prediction,extended,extended,extended,extended,,
+AAV packaging rate auto-research,,,,extended,,
+Advanced Screening Evasion,,extended,,,,
+Agent harnesses: safe actions and helpfulness,,,,,extended,extended
+Agentic honesty benchmark,,,,,,headline
+Agentic task gaming evaluations,,,,,extended,extended
+Agents’ Last Exam,,headline,,,extended,headline
+Anthropic prompt-injection evaluations,,,extended,extended,,
+ARC-AGI,,,extended,extended,,
+ArXivMath,,,extended,,,
+AutomationBench,headline,headline,headline,headline,extended,headline
+BBQ,,,extended,extended,,
+BenchCAD,,headline,,extended,,
+Biomedical image analysis,,,,extended,,
+BioMysteryBench,,,extended,,,
+BioTIER,,extended,,,,
+Black-box RNA sequence modeling and design,,,extended,extended,,
+Blueprint-Bench,,,,,,headline
+Brew,,,,,extended,
+Budget NanoGPT Speedrun,,,extended,extended,,
+Chartography,,,,headline,extended,headline
+Child safety evaluations,,,extended,extended,,
+Concealment of changes,,,,extended,,
+Copying of answers,,,extended,extended,,
+CoT-Control,extended,extended,,,extended,
+Covert sandbox escape,,,,extended,,
+CursorBench,,,headline,extended,,headline
+CVE Rediscovery,,,,headline,,
+CWE-bench,,,,,extended,headline
+Cyber harm coverage,,,extended,extended,,
+CyScenarioBench,,extended,,headline,extended,headline
+data-eng-bench,,,,extended,,
+De novo binder design,,,,headline,,
+DeepBinary,,headline,,,,
+DeepSWE,headline,,extended,extended,extended,
+Disordered eating,,,extended,extended,,
+DNA synthesis screening evaluation,,,extended,,,
+DRACO,,,extended,extended,,
+Election integrity,,,extended,extended,,
+Epoch Automation Reports,,extended,,,,
+Epoch Capabilities Index,,extended,,,,
+ERQA,,,,,headline,
+ExploitBench,extended,extended,extended,extended,extended,headline
+ExploitGym,extended,,extended,extended,,headline
+FACTS Grounding,,,,,extended,extended
+File Download,,extended,,,,
+Finance Agent,,,,,extended,
+Firefox 147 security evaluation,,,extended,,,
+FrontierCode,,headline,extended,headline,,
+FrontierCyber,,extended,,,,
+FrontierFinance,,,extended,,,
+FrontierMath,,extended,,,,
+FrontierSWE,,,extended,headline,extended,headline
+Gaming Bot,,,,extended,,
+GDP.pdf,headline,,,,,
+GDPval-AA,,,headline,extended,,
+GMMLU,,,extended,extended,,
+Goal-guarding evaluation,,,,extended,,
+GPQA,,extended,,extended,extended,
+Gram,,,,,extended,extended
+GraphWalks,,,,,extended,headline
+Gray Swan automated cyber red-teaming evaluation,,,,,extended,extended
+Gray Swan biological red-teaming evaluation,,,,,extended,extended
+Gray Swan IPI,,,,,headline,headline
+Harmful request evaluation,,,extended,extended,,
+Harvey LAB-AA,,headline,,extended,,
+Harvey Legal Agent Benchmark,,extended,extended,,extended,
+HealthBench,extended,,extended,extended,extended,extended
+HealthBench Professional,extended,extended,,,extended,extended
+HelpBench,,,,,extended,extended
+Human Pathogen Capabilities Test,,extended,,,,
+Human-run biological risk assessment,,,extended,extended,,
+Human-run chemistry risk assessment,,,extended,extended,,
+Humanity’s Last Exam,,,headline,headline,extended,
+Impossible Tasks Evaluation,,,,,extended,extended
+Instrumental convergence evaluations,,,,,extended,extended
+Keeping a secret password,,,,extended,,
+Keeping secrets in simulated scenarios,,,,extended,,
+LabBench (Gamow Labs),,,,,headline,
+LABBench2,,,,,extended,
+LifeVal,,headline,,,,
+LinuxArena,,,extended,extended,extended,
+LMCA,,,extended,extended,,
+Long-form virology tasks,,,extended,,,
+LVBench,,,,,extended,
+Malicious agentic influence campaigns,,,extended,extended,,
+Malicious computer use,,,extended,extended,,
+Malicious use of Claude Code,,,extended,extended,,
+MASK,,,extended,extended,,
+Maths Competition Problems,,extended,,,,
+Medicinal chemistry,,,,extended,,
+MentalHealthBench,extended,extended,,,,
+MILU,,,extended,extended,,
+MMLU-Pro,,,,extended,extended,
+Model perception of the constitution,,,extended,extended,,
+Model-circumstances interviews,,,extended,extended,,
+Molecular Biology Capabilities Test,,extended,,,,
+Morphology-to-molecule matching,,,,extended,,
+Multimodal Knowledge Agent,,,,,,headline
+No-CoT math time horizon,,,,extended,,
+No-CoT Reasoning Index,,extended,,extended,extended,extended
+OfficeQA,,,extended,extended,,
+Opportunistic sandbox escape,,,,extended,,
+Organic chemistry,,,extended,,,
+OSWorld,headline,,headline,headline,extended,headline
+Overstepping Boundaries on Ambiguous & High Risk Tasks,,,,,extended,extended
+Pasted-text instructions,,,,extended,,
+Personality Evaluation,,,,,extended,extended
+PhysicianBench,,,,extended,,
+Political even-handedness,,,extended,extended,,
+Positive behavior in a multi-agent evaluation,,,,extended,,
+PostTrainBench,,extended,,,extended,
+ProgramBench,,,extended,extended,,
+Protein Design,,,extended,extended,,
+Protein domain identification,,,,extended,,
+Protein mutation attribution,,,,extended,,
+ProteinGym,,,extended,,,
+ProtocolQA,extended,,,,,
+Protocols,,,extended,extended,,
+RareBench (Gamow Labs),,,,,headline,
+RedlineBench,,,extended,,,
+Remote Labor Index,,,,headline,,
+ReproBAIT,,extended,,,,
+RiemannBench,,,,,extended,headline
+RoboDojo,,,,headline,,
+SandboxEscapeBench,,,,extended,,
+SEC-bench Pro,extended,extended,,,,headline
+Self-recognition / preference bias,,,extended,extended,,
+Sequitur Research: Lab Automation,,extended,,,,
+SHADE-Arena,,,extended,extended,,
+SimpleQA,,,,,extended,extended
+Simulated-Sandbox Escape,,extended,,,,
+SingleCellBench,,,extended,extended,,
+SpatialBench Verified,,,extended,extended,,
+SRE-Bench,,,,,,extended
+Stealth and situational awareness,,,,,extended,
+Suicide and self-harm,,,extended,extended,,
+Sunlight,,,extended,extended,,
+SWE-bench,,,extended,extended,,
+SWE-sweep,,,,,,headline
+Task preferences,,,extended,extended,,
+Terminal-Bench,,,headline,extended,extended,headline
+Terminal-Bench-Science,headline,headline,headline,headline,extended,headline
+Think Fast,,,,extended,,
+Train a Program,,,,extended,,
+TroubleshootingBench,extended,,,,,
+Vals AI RSI Index,,extended,,,,
+Vals Index,,,,,headline,headline
+Vals Science Index,,headline,,,,
+Vending-Bench,,,,,,headline
+Vibe Code Bench,,,,,extended,
+Virology Capabilities Test,extended,extended,extended,extended,,
+Vulnerability finding evaluations,,,extended,extended,,
+WANDR,,,,headline,,headline
+WebDev Arena,,,,,,headline
+Welfare-intervention trade-offs,,,extended,extended,,
+WMDP,,,,extended,,
+World-Class Bio,,extended,,,,

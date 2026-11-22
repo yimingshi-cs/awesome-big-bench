@@ -24,6 +24,15 @@ VideoEval scores video foundation models on a low-cost suite of vision tasks.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22VideoEval%22+OR+%22Video-Eval%22+OR+%22Video+Eval%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=VideoEval&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22VideoEval%22%7C%22Video-Eval%22%7C%22Video+Eval%22%7C%22Video%27s+Eval%22%7C%22Videos%27+Eval%22%7C%22Videos+Eval%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22VideoEval%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Video-Eval%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Video+Eval%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Video%27s+Eval%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Videos%27+Eval%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Videos+Eval%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Video+Eval&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=VideoEval+OR+Video-Eval+in%3Aname+is%3Apublic&per_page=100>)
 
+<a name="val"></a>
+## Videoval
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark identified in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=Videoval&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22Videoval%22%7C%22Video-val%22%7C%22Video+val%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Videoval%22+OR+TITLE%3A%22Video-val%22+OR+TITLE%3A%22Video+val%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=Videoval+in%3Aname&per_page=35>)
+
 <a name="exam"></a>
 ## Video-Exam
 
@@ -32,15 +41,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22VideoExam%22+OR+%22Video-Exam%22+OR+%22Video+Exam%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=VideoExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22VideoExam%22%7C%22Video-Exam%22%7C%22Video+Exam%22%7C%22Video%27s+Exam%22%7C%22Videos%27+Exam%22%7C%22Videos+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22VideoExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Video-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Video+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Video%27s+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Videos%27+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Videos+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Video+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=VideoExam+OR+Video-Exam+in%3Aname+is%3Apublic&per_page=100>)
-
-<a name="mock"></a>
-## Video-Mock
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22VideoMock%22+OR+%22Video-Mock%22+OR+%22Video+Mock%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=VideoMock&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22VideoMock%22%7C%22Video-Mock%22%7C%22Video+Mock%22%7C%22Video%27s+Mock%22%7C%22Videos%27+Mock%22%7C%22Videos+Mock%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22VideoMock%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Video-Mock%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Video+Mock%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Video%27s+Mock%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Videos%27+Mock%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Videos+Mock%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Video+Mock&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=VideoMock+OR+Video-Mock+in%3Aname+is%3Apublic&per_page=100>)
 
 <a name="first-exam"></a>
 ## Video’s First Exam
@@ -59,15 +59,6 @@ Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bo
 No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22Video+Last+Exam%22+OR+%22Video%27s+Last+Exam%22+OR+%22Videos%27+Last+Exam%22+OR+%22VideoLastExam%22+AI+benchmark+evaluation+model>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=VideoLastExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22VideoLastExam%22%7C%22Video-Last-Exam%22%7C%22Video+Last+Exam%22%7C%22Video%27s+Last+Exam%22%7C%22Videos%27+Last+Exam%22%7C%22Videos+Last+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22VideoLastExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Video-Last-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Video+Last+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Video%27s+Last+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Videos%27+Last+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Videos+Last+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Video+Last+Exam&rows=12&select=title%2CDOI>)
-
-<a name="last-code-exam"></a>
-## Video’s Last Code Exam
-
-**No exact match found** · 2026-11-22
-
-No exact-named AI benchmark or protocol-defined evaluation suite was identified in the recorded searches.
-
-Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22Video+Last+Code+Exam%22+OR+%22Video%27s+Last+Code+Exam%22+OR+%22Videos%27+Last+Code+Exam%22+OR+%22VideoLastCodeExam%22+AI+benchmark+evaluation+model>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=VideoLastCodeExam&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22VideoLastCodeExam%22%7C%22Video-Last-Code-Exam%22%7C%22Video+Last+Code+Exam%22%7C%22Video%27s+Last+Code+Exam%22%7C%22Videos%27+Last+Code+Exam%22%7C%22Videos+Last+Code+Exam%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22VideoLastCodeExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Video-Last-Code-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Video+Last+Code+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Video%27s+Last+Code+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Videos%27+Last+Code+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Videos+Last+Code+Exam%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Video+Last+Code+Exam&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=VideoLastCodeExam+OR+Video-Last-Code-Exam+OR+videos-Last-Code-Exam+in%3Aname+is%3Apublic&per_page=100>)
 
 <a name="dojo"></a>
 ## Video-Dojo
