@@ -11,13 +11,14 @@
 <div class="map-intro"><h1>The benchmark <em>index.</em></h1>
 <a class="trend-teaser" href="#trends" aria-label="View the trend in arXiv CS titles"><span>“Bench” in arXiv CS titles</span><span class="slope" id="slope"></span></a></div>
 <div class="map-tools"><h2>Benchmark names</h2><div class="map-actions"><label><span class="sr-only">Filter name map by field</span><select id="names-field"></select></label><button class="action" id="pick-name" type="button"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><g fill="currentColor"><circle cx="6" cy="6" r="1.3"/><circle cx="14" cy="6" r="1.3"/><circle cx="10" cy="10" r="1.3"/><circle cx="6" cy="14" r="1.3"/><circle cx="14" cy="14" r="1.3"/></g></svg>Pick a name</button></div></div>
-<div class="map-legend" aria-label="Name map key"><span><i class="key no" aria-hidden="true"></i>Looks open</span><span><i class="key yes" aria-hidden="true"></i>Taken</span><span title="Public evaluations in the last two flagship releases reviewed per lab"><i class="key reported" aria-hidden="true"></i>Used by OpenAI, Anthropic or Google</span></div>
+<div class="map-legend" aria-label="Name map key"><span><i class="key no" aria-hidden="true"></i>Looks open</span><span><i class="key yes" aria-hidden="true"></i>Taken</span><span title="Public evaluations in general-purpose flagship and reasoning-model reports, including earlier releases"><i class="key reported" aria-hidden="true"></i>In OpenAI, Anthropic or Google releases</span></div>
 <div class="map-scroll" tabindex="0" aria-label="Scrollable benchmark name map"><table id="name-map"><caption class="sr-only">AI benchmark names by prefix and ending. Select a name for evidence or to report a correction.</caption></table></div>
 <p id="map-meta" class="fine"></p>
 <dialog id="cell-dialog" aria-labelledby="cell-title"><button type="button" class="close" aria-label="Close name details">×</button><div id="cell-info"></div></dialog>
 </section>
 <section id="directory" class="page" hidden>
 <div class="page-head"><h1>Benchmark <em>directory.</em></h1><label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="query" type="search" placeholder="Search" aria-label="Search benchmarks and tasks"></label></div>
+<div class="directory-key"><i class="key reported" aria-hidden="true"></i>In OpenAI, Anthropic or Google releases</div>
 <div class="directory-layout"><aside class="filters"><div id="domains"></div><label class="mobile-domain">Field <select id="mobile-domain"></select></label></aside><div class="results"><span id="count" class="sr-only" aria-live="polite"></span><div id="entries"></div></div></div></section>
 <section id="trends" class="page" hidden>
 <div class="page-head"><h1>“Bench” in <em>paper titles.</em></h1></div><div id="comparison" class="comparison"></div>

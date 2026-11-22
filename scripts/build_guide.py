@@ -3,7 +3,8 @@ import argparse
 import base64
 from collections import defaultdict
 from itertools import product
-from flagship_reports import map_evidence, reports
+from flagship_reports import history_overview, reports
+from historical_evidence import index_reports
 from urllib.parse import quote
 import csv
 import json
@@ -23,7 +24,10 @@ STATES = {"used": "Same-name AI benchmark", "no_match": "No exact match found"}
 
 def read_csv(file):
     with (ROOT / 'data' / file).open(encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+        if any(None in r or None in r.values() for r in rows):
+            raise ValueError('CSV field count differs from header: '+file)
+        return rows
 
 
 def unique(rows, key):
@@ -170,7 +174,14 @@ def render():
     if observed != set(product(('OpenAI','Anthropic','Google'),('current','previous'))):
         raise ValueError('Expected two generations per vendor')
     matches = json.loads((ROOT/'data/map_report_matches.json').read_text())
-    evidence = map_evidence(matches, releases, matrix, landmarks)
+    history = read_csv('flagship_history.csv')
+    for r in history:
+        if r['vendor'] not in ('OpenAI','Anthropic','Google') or not all(r.get(k) for k in ('release','benchmark','family','location','source_url')):
+            raise ValueError('History needs a focal model, named evaluation and report location')
+        date.fromisoformat(r['date']); check_url(r['source_url'])
+        r['release_url'] = r['source_url']
+    aliases = json.loads((ROOT/'data/release_family_aliases.json').read_text())
+    evidence, coverage_csv, editions_csv = index_reports([*releases,*history], matches, matrix, landmarks, cat, aliases)
     payload = dict(repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,mapEvidence=evidence,mapCatalog=catalog_cells,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
     scripts = ('app.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
@@ -207,6 +218,9 @@ def render():
             lines.extend(['Queries: '+' · '.join(links),''])
         outputs['verification/matrix/'+slug(prefix)+'.md']='\n'.join(lines)
     outputs.update(reports(releases))
+    outputs['verification/flagships/history/README.md'] = history_overview(history, releases, evidence)
+    outputs['verification/flagships/site-coverage.csv'] = coverage_csv
+    outputs['verification/flagships/site-editions.csv'] = editions_csv
     return outputs
 
 

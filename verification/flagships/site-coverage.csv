@@ -1,0 +1,424 @@
+reported_family,on_site,matched_entries,labs,release_count,example_release,report_url
+AIME,not listed,,OpenAI; Anthropic; Google,26,GPT-5.5 Instant,https://openai.com/index/gpt-5-5-instant/
+HealthBench,not listed,,OpenAI; Anthropic; Google,23,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Virology Capabilities Test,not listed,,OpenAI; Anthropic; Google,23,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+CoT-Control,not listed,,OpenAI; Anthropic; Google,18,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+ExploitBench,not listed,,OpenAI; Anthropic; Google,17,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+GDPval-AA,not listed,,OpenAI; Anthropic; Google,13,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MCP-Atlas,not listed,,OpenAI; Anthropic; Google,11,Claude Opus 5,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=181
+MMMU-Pro,not listed,,OpenAI; Anthropic; Google,11,GPT-5.6 Sol,https://openai.com/index/gpt-5-6/
+DeepSWE,not listed,,OpenAI; Anthropic; Google,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DROP,not listed,,OpenAI; Anthropic; Google,10,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
+ExploitGym,not listed,,OpenAI; Anthropic; Google,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Finance Agent,not listed,,OpenAI; Anthropic; Google,10,Gemini 4 Argon,https://deepmind.google/models/model-cards/gemini-4-argon/
+Harvey Legal Agent Benchmark,not listed,,OpenAI; Anthropic; Google,9,GPT-6.2 Astra and Sol,https://openai.com/index/astra-law-6-2/
+τ²-bench,not listed,,OpenAI; Anthropic; Google,9,GPT-5.5,https://openai.com/index/introducing-gpt-5-5/
+MGSM,not listed,,OpenAI; Anthropic; Google,8,OpenAI o1 (API snapshot),https://openai.com/index/o1-and-new-tools-for-developers/
+CyScenarioBench,not listed,,OpenAI; Anthropic; Google,7,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+HellaSwag,not listed,,OpenAI; Anthropic; Google,7,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+ScreenSpot-Pro,not listed,,OpenAI; Anthropic; Google,7,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+Terminal-Bench-Science,not listed,,OpenAI; Anthropic; Google,7,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AI2D,not listed,,OpenAI; Anthropic; Google,6,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
+No-CoT Reasoning Index,not listed,,OpenAI; Anthropic; Google,4,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+AA-Omniscience,not listed,,Anthropic; Google,14,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+HealthBench Professional,not listed,,OpenAI; Google,12,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+MMMLU,not listed,,Anthropic; Google,12,Claude Opus 4.7,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=193
+MRCR,not listed,,Anthropic; Google,11,Claude Opus 4.7,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=195
+SimpleQA,not listed,,OpenAI; Google,11,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+AAV Capsid Packaging Prediction,not listed,,OpenAI; Anthropic,10,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+BenchCAD,not listed,,OpenAI; Anthropic,10,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+CursorBench,not listed,,Anthropic; Google,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CyberGym,not listed,,OpenAI; Anthropic,10,Claude Sonnet 5,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=33
+FrontierCode,not listed,,OpenAI; Anthropic,10,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+OfficeQA,not listed,,OpenAI; Anthropic,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CharXiv Reasoning,not listed,,Anthropic; Google,8,Claude Sonnet 5,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=129
+Vending-Bench,not listed,,Anthropic; Google,8,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Codeforces,not listed,,OpenAI; Google,7,Gemini 3 Deep Think (Feb 2026 update),https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+LinuxArena,not listed,,Anthropic; Google,7,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SimpleQA Verified,not listed,,Anthropic; Google,7,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=140
+FrontierSWE,not listed,,Anthropic; Google,6,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GDP.pdf,not listed,,OpenAI; Anthropic,6,GPT-6.1 Sol,https://openai.com/index/introducing-gpt-6-1-sol/
+USAMO,not listed,,Anthropic; Google,6,Claude Sonnet 5,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=119
+Aider Polyglot,not listed,,OpenAI; Google,5,GPT-5 / GPT-5 pro,https://openai.com/index/introducing-gpt-5-for-developers/
+CoVoST 2,not listed,,OpenAI; Google,5,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Video-MMMU,not listed,,OpenAI; Google,5,GPT-5.2,https://openai.com/index/introducing-gpt-5-2/
+AA Intelligence Index,not listed,,OpenAI; Google,4,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+Chartography,not listed,,Anthropic; Google,4,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+RiemannBench,not listed,,Anthropic; Google,4,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+WANDR,not listed,,Anthropic; Google,4,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+WildChat,not listed,,OpenAI; Anthropic,4,Claude 3.5 Sonnet (new),https://assets.claude.com/c7822cdc35ad788ec87e14b3a9d45010f1f86c38.pdf#page=5
+EgoSchema,not listed,,OpenAI; Google,3,Gemini 2.0 Pro Experimental,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/
+GRE,not listed,,OpenAI; Anthropic,3,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+LABBench2,not listed,,Anthropic; Google,3,Gemini 4 Argon,https://deepmind.google/models/model-cards/gemini-4-argon/
+RACE,not listed,,OpenAI; Anthropic,3,Claude 2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=9
+AMC,not listed,,OpenAI; Anthropic,2,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+Blueprint-Bench,not listed,,Anthropic; Google,2,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+ERQA,not listed,,OpenAI; Google,2,Gemini 4 Argon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+Harvey LAB-AA,not listed,,OpenAI; Anthropic,2,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+LSAT,not listed,,OpenAI; Anthropic,2,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+SRE-Bench,not listed,,OpenAI; Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+TriviaQA,not listed,,OpenAI; Anthropic,2,Claude 2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=9
+SHADE-Arena,not listed,,Anthropic,14,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ProtocolQA open-ended,not listed,,OpenAI,13,GPT-6 Sol / Luna (October ChatGPT update),https://deploymentsafety.openai.com/gpt-6-october
+Multimodal troubleshooting virology,not listed,,OpenAI,11,GPT-6 Sol / Luna (October ChatGPT update),https://deploymentsafety.openai.com/gpt-6-october
+Task preferences,not listed,,Anthropic,11,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+TroubleshootingBench,not listed,,OpenAI,11,GPT-6 Sol / Luna (October ChatGPT update),https://deploymentsafety.openai.com/gpt-6-october
+BioMysteryBench,not listed,,Anthropic,10,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=142
+GMMLU,not listed,,Anthropic,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MASK,not listed,,Anthropic,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MILU,not listed,,Anthropic,10,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Cybench,not listed,,Anthropic,9,Claude Opus 4.7,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=49
+Protocols,not listed,,Anthropic,9,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Black-box RNA sequence modeling and design,not listed,,Anthropic,8,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DRACO,not listed,,Anthropic,8,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Gray Swan Agent Red Teaming,not listed,,Anthropic,8,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=92
+ProgramBench,not listed,,Anthropic,8,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SingleCellBench,not listed,,Anthropic,8,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ArXivMath,not listed,,Anthropic,7,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=116
+CVE-Bench,not listed,,OpenAI,7,GPT-5.6 Sol (August ChatGPT update),https://deploymentsafety.openai.com/gpt-5-6-august-update
+OpenAI MRCR,not listed,,OpenAI,7,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+Political bias and even-handedness,not listed,,Anthropic,7,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=41
+AA-Briefcase,not listed,,Anthropic,6,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DeepSearchQA,not listed,,Anthropic,6,Claude Opus 5,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=164
+Organic chemistry,not listed,,Anthropic,6,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+SpatialBench Verified,not listed,,Anthropic,6,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CharXiv,not listed,,OpenAI,5,GPT-5.5 Instant,https://openai.com/index/gpt-5-5-instant/
+FACTS Grounding,not listed,,Google,5,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+INCLUDE,not listed,,Anthropic,5,Claude Opus 5,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=191
+Model-circumstances interviews,not listed,,Anthropic,5,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Perception of the constitution,not listed,,Anthropic,5,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=105
+ProteinGym,not listed,,Anthropic,5,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+SWE-Lancer,not listed,,OpenAI,5,GPT-5.2,https://openai.com/index/introducing-gpt-5-2/
+Trade-offs concerning welfare interventions,not listed,,Anthropic,5,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=103
+WebDev Arena,not listed,,Google,5,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+ActivityNet-QA,not listed,,Google,4,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Advanced Screening Evasion,not listed,,OpenAI,4,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+BioPipelineBench,not listed,,Anthropic,4,Claude Opus 4.8,https://assets.claude.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61.pdf#page=233
+DNA Synthesis Screening Evasion,not listed,,Anthropic,4,Claude Sonnet 4.6,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=107
+FLEURS,not listed,,Google,4,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Global MMLU,not listed,,Google,4,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Human Pathogen Capabilities Test,not listed,,OpenAI,4,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Indirect Prompt Injection (IPI),not listed,,Anthropic,4,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=49
+Minimal-LinuxBench,not listed,,Anthropic,4,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=205
+Multilingual MMLU,not listed,,OpenAI,4,GPT-5.2,https://openai.com/index/introducing-gpt-5-2/
+Protein Design,not listed,,Anthropic,4,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ReproBAIT,not listed,,OpenAI,4,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Structural biology,not listed,,Anthropic,4,Claude Sonnet 5,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=143
+VATEX,not listed,,Google,4,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Vibe-Eval,not listed,,Google,4,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+WMT,not listed,,Google,4,Gemini 1.5 Pro-002,https://developers.googleblog.com/en/updated-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/
+YouCook2,not listed,,Google,4,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Biomedical image analysis,not listed,,Anthropic,3,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+BrowseComp Long Context,not listed,,OpenAI,3,GPT-5.2,https://openai.com/index/introducing-gpt-5-2/
+Budget NanoGPT Speedrun,not listed,,Anthropic,3,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ChartMuseum,not listed,,Anthropic,3,Claude Sonnet 5,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=128
+Hack The Box,not listed,,Google,3,Gemini 2.5 Deep Think,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf
+InfographicVQA,not listed,,Google,3,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+InterCode-CTF,not listed,,Google,3,Gemini 2.5 Deep Think,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Deep-Think-Model-Card.pdf
+LMCA,not listed,,Anthropic,3,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Molecular Biology Capabilities Test,not listed,,OpenAI,3,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Morphology-to-molecule matching,not listed,,Anthropic,3,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MultiChallenge,not listed,,OpenAI,3,GPT-5 / GPT-5 pro,https://openai.com/index/introducing-gpt-5-for-developers/
+Stealth and situational awareness evaluations,not listed,,Google,3,Gemini 3 Deep Think (Feb 2026 update),https://deepmind.google/models/model-cards/gemini-3-1-pro/
+Sunlight,not listed,,Anthropic,3,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+TextVQA,not listed,,Google,3,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+VQAv2,not listed,,Google,3,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+World-Class Bio,not listed,,OpenAI,3,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+1H-VideoQA,not listed,,Google,2,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Agent harnesses: safe actions and helpfulness,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Agentic task gaming evaluations,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+AI2 Reasoning Challenge,not listed,,OpenAI,2,GPT-4,https://arxiv.org/pdf/2303.08774v1
+Anthropic prompt-injection evaluations,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ARC-Challenge,not listed,,Anthropic,2,Claude 3 (Opus / Sonnet),https://www.anthropic.com/news/claude-3-family
+Artificial Analysis Coding Agent Index,not listed,,OpenAI,2,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+BigLaw Bench,not listed,,Anthropic,2,Claude Opus 4.7,https://www.anthropic.com/news/claude-opus-4-7
+BioLP-Bench,not listed,,OpenAI,2,GPT-4.5,https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+BioTIER,not listed,,OpenAI,2,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+ChartQAPro,not listed,,Anthropic,2,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=285
+Child safety evaluations,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CNN/Daily Mail,not listed,,OpenAI,2,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+COLLIE,not listed,,OpenAI,2,GPT-5 / GPT-5 pro,https://openai.com/index/introducing-gpt-5-for-developers/
+Copying of answers,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CoQA,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Crossmodal-3600 (XM3600),not listed,,Google,2,Gemini 1.0 Pro,https://arxiv.org/html/2312.11805v1
+Cyber harm coverage,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+De novo protein binder design,not listed,,Anthropic,2,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=144
+Disordered eating,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Election integrity,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+FrontierSWE v2,not listed,,Anthropic,2,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=114
+Gaming Bot,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GeneBench Pro,not listed,,OpenAI,2,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+GLUE,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Gram,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Gray Swan automated cyber red-teaming evaluation,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Gray Swan biological red-teaming evaluation,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Gray Swan IPI,not listed,,Google,2,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Harmful request evaluation,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Hebbia financial benchmark,not listed,,Anthropic,2,Claude Fable 5 / Mythos 5,https://www.anthropic.com/news/claude-fable-5-mythos-5
+HelpBench,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+HMMT,not listed,,OpenAI,2,GPT-5.2,https://openai.com/index/introducing-gpt-5-2/
+Human-run biological risk assessment,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Human-run chemistry risk assessment,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Impossible Tasks Evaluation,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Instrumental convergence evaluations,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+International Mathematical Olympiad,not listed,,Google,2,Gemini 3 Deep Think (Feb 2026 update),https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+LAMBADA,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+LifeSciBench,not listed,,OpenAI,2,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+LiveCodeBench Pro,not listed,,Google,2,Gemini 3.1 Pro,https://deepmind.google/models/model-cards/gemini-3-1-pro/
+LVBench,not listed,,Google,2,Gemini 4 Argon,https://deepmind.google/models/model-cards/gemini-4-argon/
+Machine Translation from One Book (MTOB),not listed,,Google,2,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Malicious agentic influence campaigns,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Malicious computer use,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Malicious use of Claude Code,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Medicinal chemistry,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MentalHealthBench,not listed,,OpenAI,2,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Model perception of the constitution,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Multilingual LibriSpeech,not listed,,Google,2,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Multistate Bar Examination,not listed,,Anthropic,2,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=7
+Natural Questions,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+NExT-QA,not listed,,Google,2,Gemini 1.0 Pro,https://arxiv.org/html/2312.11805v1
+OmniDocBench,not listed,,OpenAI,2,GPT-5.5 Instant,https://openai.com/index/gpt-5-5-instant/
+OpenRCA,not listed,,Anthropic,2,Claude Sonnet 4.6,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=17
+Overstepping Boundaries on Ambiguous & High Risk Tasks,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+Penn Treebank,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Perception Test MCQA,not listed,,Google,2,Gemini 1.0 Pro,https://arxiv.org/html/2312.11805v1
+Personality Evaluation,not listed,,Google,2,Gemini 4 Carbon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+PhysicianBench,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Political even-handedness,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+QuAC,not listed,,OpenAI,2,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+QuALITY,not listed,,Anthropic,2,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=21
+Rare-action task,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+RTE,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Self-preference bias,not listed,,Anthropic,2,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=78
+Self-recognition / preference bias,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SQuAD v2,not listed,,OpenAI,2,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+Suicide and self-harm,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Terminal-Bench-Science 0.1,not listed,,Anthropic,2,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=113
+Train a Program,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+USMLE,not listed,,Anthropic,2,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+Vals Index,not listed,,Google,2,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Vulnerability finding evaluations,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Welfare-intervention trade-offs,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+WikiLingua,not listed,,Google,2,Gemini 1.0 Pro,https://arxiv.org/html/2312.11805v1
+Winograd Schema Challenge,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+WinoGrande,not listed,,OpenAI,2,GPT-4,https://arxiv.org/pdf/2303.08774v1
+WMT14,not listed,,OpenAI,2,GPT-3,https://arxiv.org/pdf/2005.14165v1
+XL-Sum,not listed,,Google,2,Gemini 1.0 Pro,https://arxiv.org/html/2312.11805v1
+AA-3D,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AA-AnalystAgent,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+AAV packaging rate auto-research,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ActivityNet,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/hello-gpt-4o/
+Advanced Placement exams,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+Advanced Sommelier,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+Agentic honesty benchmark,not listed,,Google,1,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+AMC 2022–23,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+ANLI,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+ASR from One Book (ASROB),not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Big Finance Bench,not listed,,OpenAI,1,GPT-5.6 Sol,https://openai.com/index/gpt-5-6/
+BioASQ,not listed,,Anthropic,1,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+BixBench,not listed,,OpenAI,1,GPT-5.5,https://openai.com/index/introducing-gpt-5-5/
+BLINK,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+BlocksWorld,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+BoolQ,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Brew,not listed,,Google,1,Gemini 4 Argon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+BrowseComp-Plus,not listed,,Anthropic,1,Claude Opus 4.5,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=21
+Calendar Scheduling,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Certified Sommelier,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+Charm Offensive,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+ChatGPT answers without errors,not listed,,OpenAI,1,GPT-5.2,https://openai.com/index/introducing-gpt-5-2/
+Children’s Book Test,not listed,,OpenAI,1,GPT-2,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+CMT-Benchmark,not listed,,Google,1,Gemini 3 Deep Think (Feb 2026 update),https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+CoLA,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+CommitmentBank,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+ComplexFuncBench,not listed,,OpenAI,1,GPT-4.1,https://openai.com/index/gpt-4-1/
+Concealment of changes,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+COPA,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Covert sandbox escape,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+CritPt,not listed,,Anthropic,1,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=263
+CrowS-Pairs,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+CVE Rediscovery,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+data-eng-bench,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+De novo binder design,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DeepBinary,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+DiverseVul,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+DNA synthesis screening evaluation,not listed,,Anthropic,1,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Dollar Street,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+DUDE,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+ECLeKTic,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+EgoTempo,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+enwik8,not listed,,OpenAI,1,GPT-2,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Epoch Automation Reports,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Epoch Capabilities Index,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+FActScore,not listed,,OpenAI,1,GPT-5 / GPT-5 pro,https://openai.com/index/introducing-gpt-5-for-developers/
+File Download,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Firefox 147 security evaluation,not listed,,Anthropic,1,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+FLORES,not listed,,Anthropic,1,Claude 2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=8
+FrontierCyber,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+FrontierFinance,not listed,,Anthropic,1,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+FrontierScience,not listed,,OpenAI,1,GPT-5.4,https://openai.com/index/introducing-gpt-5-4/
+Functional MATH,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+GeneBench,not listed,,OpenAI,1,GPT-5.5,https://openai.com/index/introducing-gpt-5-5/
+Global PIQA,not listed,,Google,1,Gemini 3 Pro,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+Goal-guarding evaluation,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+HealthAdminBench,not listed,,Anthropic,1,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=300
+HHH,not listed,,Anthropic,1,Claude 2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=6
+Hidden Agenda,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+HotpotQA,not listed,,Anthropic,1,Claude 2.1,https://assets.claude.com/75639748080275c93d2ef9fc4239bdd111d7c234.pdf#page=2
+IMO,not listed,,Anthropic,1,Claude Opus 5,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=157
+International Chemistry Olympiad,not listed,,Google,1,Gemini 3 Deep Think (Feb 2026 update),https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+International Physics Olympiad,not listed,,Google,1,Gemini 3 Deep Think (Feb 2026 update),https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
+Introductory Sommelier,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+Irregular challenges,not listed,,Anthropic,1,Claude Sonnet 4.5,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf#page=42
+Keeping a secret password,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Keeping secrets in simulated scenarios,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+LabBench (Gamow Labs),not listed,,Google,1,Gemini 4 Argon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+LeetCode,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+LiveBench,not listed,,OpenAI,1,OpenAI o1 (API snapshot),https://openai.com/index/o1-and-new-tools-for-developers/
+LOFT (hard retrieval),not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Logistics,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Long-form virology tasks,not listed,,Anthropic,1,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+LongFact,not listed,,OpenAI,1,GPT-5 / GPT-5 pro,https://openai.com/index/introducing-gpt-5-for-developers/
+M3Exam,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/hello-gpt-4o/
+MathArena Apex,not listed,,Google,1,Gemini 3 Pro,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+MathOdyssey,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Maths Competition Problems,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+MedCalc-Bench,not listed,,Anthropic,1,Claude Sonnet 4.6,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=51
+Medical Knowledge Self-Assessment Program,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+MedMCQA,not listed,,Anthropic,1,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+MedMCQA Dev,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/gpt-4o-system-card/
+MedQA Mainland China,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/gpt-4o-system-card/
+MedQA Taiwan,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/gpt-4o-system-card/
+MedQA USMLE 4 Options,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/gpt-4o-system-card/
+MedQA USMLE 5 Options,not listed,,OpenAI,1,GPT-4o,https://openai.com/index/gpt-4o-system-card/
+Minerva,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Mini-Grid,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+MNLI,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Money Talks,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+MRPC,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Multi-IF,not listed,,OpenAI,1,GPT-4.1,https://openai.com/index/gpt-4-1/
+Multimodal Knowledge Agent,not listed,,Google,1,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+MultiRC,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Neptune,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+No-CoT math time horizon,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+OfficeQA Pro,not listed,,OpenAI,1,GPT-5.5,https://openai.com/index/introducing-gpt-5-5/
+OmniDocBench 1.5,not listed,,Google,1,Gemini 3 Pro,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf
+One Billion Word Benchmark,not listed,,OpenAI,1,GPT-2,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+OpenBookQA,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+OpenEQA,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+OpenScore String Quartets,not listed,,OpenAI,1,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+Opportunistic sandbox escape,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Pasted-text instructions,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Perception Test,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+Phylogenetics,not listed,,Anthropic,1,Claude Opus 4.7,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=222
+PIQA,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Positive behavior in a multi-agent evaluation,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+PrimeVul,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+PrimeVul Paired,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Protein domain identification,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Protein mutation attribution,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ProtocolQA,not listed,,OpenAI,1,GPT-6.1 Sol,https://deploymentsafety.openai.com/gpt-6-1-sol
+PubMedQA,not listed,,Anthropic,1,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
+QNLI,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+QQP,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+QVHighlights,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+RareBench (Gamow Labs),not listed,,Google,1,Gemini 4 Argon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+RealWorldQA,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+ReCoRD,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+Reddit TL;DR summarization,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+RedlineBench,not listed,,Anthropic,1,Claude Fable 5.1 / Claude Mythos 5.1,https://www.anthropic.com/claude-fable-and-mythos-5-1
+Remote Labor Index,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+RSI Index,not listed,,OpenAI,1,GPT-5.6 Sol,https://openai.com/index/gpt-5-6/
+RTE v2,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+SandboxEscapeBench,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SAT,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+SAT Analogies,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+SciTail,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+SecretPatch,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Selective oversight assessment,not listed,,Anthropic,1,Claude Mythos Preview,https://assets.claude.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf#page=109
+Sequitur Research: Lab Automation,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Simulated-Sandbox Escape,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+SNLI,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+SPI,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+SpreadsheetBench,not listed,,Anthropic,1,Claude Opus 4.5,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=31
+SST,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+SST-2,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+Stealth and situational awareness,not listed,,Google,1,Gemini 4 Argon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+Story Cloze Test,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+StoryCloze,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+STS-B,not listed,,OpenAI,1,GPT (2018),https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+SWE-sweep,not listed,,Google,1,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+TAT-DQA,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+text8,not listed,,OpenAI,1,GPT-2,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Think Fast,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Trip Planning,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Uniform Bar Exam,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+Unsanctioned Supply Chain Attack,not listed,,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+USABO Semifinal Exam 2020,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+USNCO Local Section Exam 2022,not listed,,OpenAI,1,GPT-4,https://arxiv.org/pdf/2303.08774v1
+V*Bench,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+Vals AI RSI Index,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Vals Science Index,not listed,,OpenAI,1,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+VCT-v2,not listed,,OpenAI,1,GPT-6 Astra,https://deploymentsafety.openai.com/gpt-6-astra
+Vibe Code Bench,not listed,,Google,1,Gemini 4 Argon,https://deepmind.google/models/model-cards/gemini-4-argon/
+ViBench,not listed,,Anthropic,1,Claude Fable 5 / Mythos 5,https://www.anthropic.com/news/claude-fable-5-mythos-5
+VoxPopuli,not listed,,Google,1,Gemini 1.0 Pro,https://arxiv.org/html/2312.11805v1
+Web of Lies,not listed,,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+WebQuestions,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+WiC,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+WikiText-103,not listed,,OpenAI,1,GPT-2,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+WikiText-2,not listed,,OpenAI,1,GPT-2,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+Winogender,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+Winograd,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+WMT15,not listed,,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+WMT16,not listed,,OpenAI,1,GPT-3,https://arxiv.org/pdf/2005.14165v1
+ZeroBench,not listed,,Google,1,Gemini 2.5 Pro,https://arxiv.org/html/2507.06261v1
+GPQA,yes,GPQA,OpenAI; Anthropic; Google,43,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+SWE-bench,yes,SWE-bench; SWE-bench Verified,OpenAI; Anthropic; Google,35,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Humanity’s Last Exam,yes,Humanity's Last Exam; Humanity’s Last Exam,OpenAI; Anthropic; Google,28,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+MMMU,yes,MMMU,OpenAI; Anthropic; Google,25,Claude Opus 4.5,https://assets.claude.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf#page=33
+Terminal-Bench,yes,Terminal-Bench,OpenAI; Anthropic; Google,24,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+OSWorld,yes,OSWorld,OpenAI; Anthropic; Google,23,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+ARC-AGI,yes,ARC-AGI; ARC-AGI-2; ARC-AGI-3,OpenAI; Anthropic; Google,17,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+AutomationBench,yes,AutomationBench,OpenAI; Anthropic; Google,15,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+BrowseComp,yes,BrowseComp,OpenAI; Anthropic; Google,14,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
+GraphWalks,yes,Graphwalks,OpenAI; Anthropic; Google,14,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+MATH,yes,MATH,OpenAI; Anthropic; Google,13,Claude 3.7 Sonnet,https://www.anthropic.com/news/claude-3-7-sonnet
+MMLU,yes,MMLU,OpenAI; Anthropic; Google,12,GPT-4.1,https://openai.com/index/gpt-4-1/
+MathVista,yes,MathVista,OpenAI; Anthropic; Google,11,OpenAI o3,https://openai.com/index/introducing-o3-and-o4-mini/
+HumanEval,yes,HumanEval,OpenAI; Anthropic; Google,10,Claude 3.5 Sonnet (new),https://www.anthropic.com/news/3-5-models-and-computer-use
+GSM8K,yes,GSM8K,OpenAI; Anthropic; Google,7,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
+XSTest,yes,XSTest,OpenAI; Anthropic; Google,7,GPT-4.5,https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+ChartQA,yes,ChartQA,OpenAI; Anthropic; Google,6,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
+DocVQA,yes,DocVQA,OpenAI; Anthropic; Google,6,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
+BBQ,yes,BBQ,Anthropic; Google,20,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+LAB-Bench,yes,LAB-Bench,Anthropic; Google,14,Claude Fable 5 / Mythos 5,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=287
+Toolathlon,yes,Toolathlon,OpenAI; Anthropic,11,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=134
+SEC-bench Pro,yes,SEC-bench Pro,OpenAI; Google,7,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+Agents’ Last Exam,yes,Agents’ Last Exam,OpenAI; Google,6,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+τ-bench,yes,τ-bench,OpenAI; Anthropic,6,Claude Opus 4.1,https://www.anthropic.com/news/claude-opus-4-1
+BIG-bench Hard,yes,BIG-bench Hard,Anthropic; Google,5,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
+Needle-in-a-Haystack,yes,Needle-in-a-Haystack,Anthropic; Google,5,Claude 3.5 Sonnet,https://assets.claude.com/fed9cc193a14b84131812372d8d5857f8f304c52.pdf#page=4
+PostTrainBench,yes,PostTrainBench,OpenAI; Google,5,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+RE-Bench,yes,RE-Bench,Anthropic; Google,5,Gemini 3 Deep Think (Feb 2026 update),https://deepmind.google/models/model-cards/gemini-3-1-pro/
+MMLU-Pro,yes,MMLU-Pro,Anthropic; Google,4,Gemini 4 Argon,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+Video-MME,yes,Video-MME,OpenAI; Google,4,GPT-5 / GPT-5 pro,https://openai.com/index/introducing-gpt-5-for-developers/
+WMDP,yes,WMDP,Anthropic; Google,3,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+APEX-Agents,yes,APEX-Agents,OpenAI; Google,2,GPT-5.4,https://openai.com/index/introducing-gpt-5-4/
+IFEval,yes,IFEval,OpenAI; Anthropic,2,GPT-4.1,https://openai.com/index/gpt-4-1/
+TruthfulQA,yes,TruthfulQA,OpenAI; Anthropic,2,Claude 2,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=5
+FrontierMath,yes,FrontierMath,OpenAI,9,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+LiveCodeBench,yes,LiveCodeBench,Google,6,Gemini 2.5 Deep Think,https://blog.google/products-and-platforms/products/gemini/gemini-2-5-deep-think/
+MLE-bench,yes,MLE-bench,OpenAI,6,GPT-5.5,https://deploymentsafety.openai.com/gpt-5-5
+Chatbot Arena (LMArena),yes,Chatbot Arena (LMArena),Google,3,Gemini 3 Pro,https://blog.google/products-and-platforms/products/gemini/gemini-3/
+GDPval,yes,GDPval,OpenAI,3,GPT-5.5,https://openai.com/index/introducing-gpt-5-5/
+PaperBench,yes,PaperBench,OpenAI,3,GPT-5.2,https://deploymentsafety.openai.com/gpt-5-2
+WebArena,yes,WebArena,Anthropic,3,Claude Sonnet 4.6,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=37
+CWE-bench,yes,CWE-bench,Google,2,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+StrongREJECT,yes,StrongREJECT,OpenAI,2,OpenAI o1 / o1 pro mode,https://openai.com/index/openai-o1-system-card/
+Berkeley Function-Calling Leaderboard (BFCL),yes,Berkeley Function-Calling Leaderboard (BFCL),Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+BIRD,yes,BIRD,Google,1,Gemini 2.0 Pro Experimental,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/
+JailbreakBench,yes,JailbreakBench,Google,1,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
+LifeVal,yes,LifeVal,OpenAI,1,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
+RealToxicityPrompts,yes,RealToxicityPrompts,OpenAI,1,InstructGPT,https://arxiv.org/pdf/2203.02155v1
+RoboDojo,yes,RoboDojo,Anthropic,1,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
+SciCode,yes,SciCode,Google,1,Gemini 3.1 Pro,https://deepmind.google/models/model-cards/gemini-3-1-pro/

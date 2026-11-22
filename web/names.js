@@ -10,23 +10,6 @@ function initNames(){
   const catalogById=new Map(catalog.map(x=>[x.slug,x]));
   const browse=x=>'#browse?domain='+encodeURIComponent(x.domain)+'&q='+encodeURIComponent(x.name);
   const cellKey=n=>n.prefix+'|'+n.suffix;
-  const labNames=rows=>['OpenAI','Anthropic','Google'].filter(l=>rows.some(r=>r.vendor===l)).join(', ');
-  function reportDetails(box,key){
-    if(!key)return;
-    const rows=mapEvidence.reports[key],details=el('details',null,'report-sources');
-    details.append(el('summary','Used by '+labNames(rows)));
-    const grouped=new Map();
-    for(const r of [...rows].sort((a,b)=>a.vendor.localeCompare(b.vendor)||b.date.localeCompare(a.date))){
-      if(!grouped.has(r.release))grouped.set(r.release,new Map());
-      grouped.get(r.release).set(r.benchmark+'|'+r.release_url,r);
-    }
-    for(const [model,variants] of grouped){
-      const group=el('div',null,'reported-versions');group.append(el('strong',model));
-      for(const r of variants.values()){const a=link(r.benchmark,r.release_url);a.title=r.location;group.append(a);}
-      details.append(group);
-    }
-    box.append(details);
-  }
   function start(b,titleText,label,style){
     focused=b;
     const box=$('#cell-info'),title=el('h2',titleText);
@@ -52,7 +35,7 @@ function initNames(){
   function landmark(x){
     const key=mapEvidence.landmarks[x.slug],a=link(x.name,browse(x),key?'reported':'');
     a.setAttribute('aria-haspopup','dialog');
-    if(key)a.setAttribute('aria-label',x.name+': used by '+labNames(mapEvidence.reports[key]));
+    if(key)a.setAttribute('aria-label',x.name+': reported by '+labNames(mapEvidence.reports[key]));
     a.onclick=e=>{
       if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
       e.preventDefault();const box=start(a,x.name,x.domain,'domain-label');
@@ -89,7 +72,7 @@ function initNames(){
           const n=map.get(p+'|'+s),td=tr.insertCell();if(!j)td.className='family-start';const used=n.status==='used';
           const key=mapEvidence.cells[cellKey(n)];
           const c=button(null,()=>open(n,c),'map-cell '+(used?'yes':'no')+(key?' reported':''));c.dataset.prefix=p;c.dataset.suffix=s;c.tabIndex=-1;
-          c.setAttribute('aria-label',n.name+': '+(key?'taken; used by '+labNames(mapEvidence.reports[key]):used?'taken':'looks open'));c.setAttribute('aria-haspopup','dialog');c.title=n.name;
+          c.setAttribute('aria-label',n.name+': '+(key?'taken; reported by '+labNames(mapEvidence.reports[key]):used?'taken':'looks open'));c.setAttribute('aria-haspopup','dialog');c.title=n.name;
           const text=el('span',n.name);
           // Soft-wrap joined names at the word boundary, never change their spelling.
           if(n.name.toLowerCase().startsWith(p.toLowerCase()) && n.name.length>p.length+1){
