@@ -1,24 +1,74 @@
 {
   "fields": {
-    "Coding": ["SWE", "Coders"],
-    "Agents & tools": ["Agent", "GUI", "Tool"],
-    "Vision & video": ["MM", "Vision", "Video"],
-    "Robotics": ["Embodied", "Robo", "Robots"],
-    "Reasoning & math": ["Reasoning", "Mathematicians"],
-    "Memory": ["Memory"],
-    "Safety": ["Alignment"],
-    "Research & science": ["Research", "Researchers", "Scientists"],
-    "Meta-evaluation": ["Bench", "BenchBench", "Benchmark", "Benchmarks", "Benches", "Meta"],
-    "General": ["Frontier", "Humanity", "Awesome"]
+    "Coding": [
+      "SWE",
+      "Coders"
+    ],
+    "CUA": [
+      "Agent",
+      "GUI",
+      "Tool"
+    ],
+    "Reasoning": [
+      "Reasoning",
+      "Mathematicians"
+    ],
+    "Multimodal": [
+      "MM",
+      "Vision",
+      "Video"
+    ],
+    "Embodied": [
+      "Embodied",
+      "Robo",
+      "Robots"
+    ],
+    "Safety": [
+      "Alignment"
+    ],
+    "Long-context & Memory": [
+      "Memory"
+    ],
+    "AutoResearch": [
+      "Research",
+      "Researchers",
+      "Scientists"
+    ],
+    "General": [
+      "Frontier",
+      "Humanity",
+      "Awesome",
+      "Meta",
+      "Bench",
+      "Benchmark",
+      "BenchBench",
+      "Benchmarks",
+      "Benches"
+    ]
   },
   "endings": {
-    "Tests": ["Bench", "Eval"],
-    "Exams": ["Exam", "Mock", "First Exam", "Last Exam", "Last Code Exam"],
-    "Practice": ["Dojo", "Gym"],
-    "Other": ["²", "RSI"]
+    "Tests": [
+      "Bench",
+      "Eval"
+    ],
+    "Exams": [
+      "Exam",
+      "Mock",
+      "First Exam",
+      "Last Exam",
+      "Last Code Exam"
+    ],
+    "Practice": [
+      "Dojo",
+      "Gym"
+    ],
+    "Other": [
+      "²",
+      "RSI"
+    ]
   },
   "exceptions": {
     "Humanity|Last Code Exam": "Coding",
-    "Frontier|RSI": "Research & science"
+    "Frontier|RSI": "RSI"
   }
 }

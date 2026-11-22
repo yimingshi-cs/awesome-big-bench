@@ -6,7 +6,7 @@
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
 
-**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Contribute](CONTRIBUTING.md)**
+**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Contribute](CONTRIBUTING.md)**
 
 ## Where to start
 
@@ -31,11 +31,11 @@ The full guide compares inputs, outputs and scoring for **@@COUNT@@ benchmarks a
 
 **Even BenchBench is taken twice.** The [2024 paper](https://arxiv.org/abs/2407.13696) asks whether benchmarks agree; the [2026 paper](https://arxiv.org/abs/2603.20807) evaluates automated benchmark generation. Same name, different test.
 
-Some names have no exact benchmark match in the sources checked:
+Examples with no exact AI benchmark match in the sources checked:
 
 @@GRID@@
 
-[Names by field](https://yiming-shi.com/awesome-big-bench/#names) · [Search records and dates](verification/names.md) · [Report a match](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). Unsearched combinations are not suggestions.
+[Names by field](https://yiming-shi.com/awesome-big-bench/#names) · [Search records and dates](verification/names.md) · [Report a match](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). The map opens with every checked combination.
 
 ## “Bench” in arXiv titles
 

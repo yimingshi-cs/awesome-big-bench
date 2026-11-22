@@ -1,110 +1,77 @@
-// A recorded negative search and an unsearched combination never share a result list.
+// Complete matrix: absence of a data row is a build error, not a grey verdict.
 function initNames(){
-  const byPair=new Map(names.map(n=>[n.prefix+'|'+n.suffix,n]));
-  const fields=Object.entries(nameGroups.fields);
-  const endings=Object.entries(nameGroups.endings);
-  const prefixes=fields.flatMap(([,items])=>items).filter(p=>names.some(n=>n.prefix===p));
-  const suffixes=endings.flatMap(([,items])=>items).filter(s=>names.some(n=>n.suffix===s));
-  const get=(p,s)=>byPair.get(p+'|'+s)||{prefix:p,suffix:s,name:p+' × '+s,status:'unchecked'};
-  const fieldOf=n=>nameGroups.exceptions[n.prefix+'|'+n.suffix]||fields.find(([,ps])=>ps.includes(n.prefix))[0];
-  const availableFields=fields.map(([f])=>f).filter(f=>names.some(n=>fieldOf(n)===f));
-  const select=$('#names-field'),host=$('#field-list'),more=$('#patterns');
-  select.add(new Option('All fields',''));availableFields.forEach(f=>select.add(new Option(f,f)));
-  const verdicts=['no_match','near','used'];
-  const labels={no_match:'No exact match',near:'Similar names',used:'Already in use'};
-  let selected=null,field='',full=false,patternSelected=null;
-  const selectedNames=()=>names.filter(n=>(!field||fieldOf(n)===field)&&verdicts.includes(n.status));
-  function evidence(n,withStatus=false){
-    const panel=el('div',null,'name-evidence');
-    panel.append(el('strong',n.name));if(withStatus)panel.append(el('span',states[n.status],'verdict '+n.status));
-    if(n.checked_on)panel.append(el('time','Checked '+n.checked_on));
-    if(n.status!=='no_match'&&n.note)panel.append(el('p',n.note));
-    const links=el('div',null,'links');
-    if(n.source_url)links.append(link(n.status==='near'?'Similar project':'Project',n.source_url));
-    if(n.search_url)links.append(link('Repeat search',n.search_url));
-    if(n.status!=='unchecked')links.append(link('Sources checked',gh('verification/names.md')));
-    links.append(link(n.status==='unchecked'?'Submit a finding':'Suggest a correction',issue(n.name+': name check','name')));
-    panel.append(links);return panel;
+  const fields=Object.entries(nameGroups.fields), families=Object.entries(nameGroups.endings);
+  const endings=families.flatMap(([,items])=>items), map=new Map(names.map(n=>[n.prefix+'|'+n.suffix,n]));
+  const chooser=$('#names-field'), table=$('#name-map'), dialog=$('#cell-dialog');
+  let focused=null, lastPick=null, cells=[], rowOrder=[];
+  chooser.add(new Option('All fields',''));for(const [f] of fields)chooser.add(new Option(f,f));
+  const slug=x=>x==='²'?'squared':x.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  const detailFor=n=>gh('verification/matrix/'+slug(n.prefix)+'.md#'+slug(n.suffix));
+  function open(n,b){
+    focused=b;lastPick=n;
+    const has=n.status==='used', box=$('#cell-info');box.replaceChildren();
+    const verdict=el('span',has?'Same-name AI benchmark':'No exact match found','badge '+(has?'yes':'no'));
+    const title=el('h2',n.name);title.id='cell-title';box.append(verdict,title);
+    if(n.note && (has||n.source_url))box.append(el('p',n.note,'evidence-note'));
+    box.append(el('small','Checked '+n.checked_on));
+    const actions=el('div',null,'links');
+    if(n.source_url)actions.append(link(has?'Original source':'Other use / related source',n.source_url));
+    actions.append(link('Search record',detailFor(n)));
+    const correction=link(has?'Suggest a correction':'Found a match?',issue(n.name+': name check','name'),'action');
+    const suggested='**Name:** '+n.name+'\n**Combination:** '+n.prefix+' × '+n.suffix+'\n**Listed as:** '+(has?'same-name AI benchmark':'no exact AI benchmark found')+'\n\n**Primary source:**\n\n**What should change?**\n';
+    correction.href+='&body='+encodeURIComponent(suggested);
+    box.append(actions,correction);
+    dialog.showModal();
   }
-  function choose(n,fromRoll=false){
-    selected=selected===n&&!fromRoll?null:n;drawList();
-    const b=host.querySelector('[aria-expanded="true"]');
-    if(b){b.focus({preventScroll:true});if(fromRoll)b.scrollIntoView({block:'nearest'});}
-  }
-  function drawList(){
-    host.replaceChildren();
-    const rows=selectedNames(),shownFields=availableFields.filter(f=>!field||field===f);
-    const headings=el('div',null,'name-table-head');
-    headings.append(el('span','Field'));const cols=el('div',null,'name-columns');
-    for(const k of verdicts)cols.append(el('b',labels[k],'head-'+k));headings.append(cols);host.append(headings);
-    for(const f of shownFields){
-      const data=rows.filter(x=>fieldOf(x)===f);
-      if(!data.length)continue;
-      const group=el('section',null,'name-group'),h=el('h2',f);group.append(h);
-      const board=el('div',null,'name-columns');
-      for(const k of verdicts){
-        const arr=data.filter(x=>x.status===k).sort((a,b)=>prefixes.indexOf(a.prefix)-prefixes.indexOf(b.prefix)||suffixes.indexOf(a.suffix)-suffixes.indexOf(b.suffix));
-        const col=el('div',null,'name-column '+k),heading=el('h3',labels[k]);col.append(heading);
-        if(!arr.length){const none=el('span','—','nothing');none.setAttribute('aria-label','No records');col.append(none);}
-        for(const n of arr){
-          const b=button(n.name,()=>choose(n),'name-choice');b.setAttribute('aria-expanded',String(selected===n));col.append(b);
-        }
-        board.append(col);
-      }
-      group.append(board);if(selected&&data.includes(selected))group.append(evidence(selected));host.append(group);
-    }
-    $('#pick-name').disabled=!rows.some(n=>n.status==='no_match');
-  }
-  const random=(pool,last)=>{const p=pool.length>1?pool.filter(x=>x.name!==last?.name):pool;return p.length?p[Math.floor(Math.random()*p.length)]:null;};
-  select.onchange=()=>{field=select.value;selected=null;patternSelected=null;drawList();if(more.open)drawGrid();};
-  $('#pick-name').onclick=()=>{const n=random(selectedNames().filter(n=>n.status==='no_match'),selected);if(n)choose(n,true);};
-  let rowFocus=['SWE','MM','Embodied'],colFocus=['Bench','Exam','Dojo'];
-  function groups(options,allowed){return options.map(([label,items])=>[label,items.filter(x=>allowed.includes(x))]).filter(([,items])=>items.length);}
-  function selector(chosen,i,parts,label){
-    const s=el('select');s.setAttribute('aria-label',label+' '+(i+1));
-    for(const [g,items] of parts){const og=el('optgroup');og.label=g;items.forEach(v=>og.append(new Option(v,v)));s.append(og);}
-    s.value=chosen[i];s.onchange=()=>{const j=chosen.indexOf(s.value);if(j!==-1)chosen[j]=chosen[i];chosen[i]=s.value;patternSelected=null;drawGrid();$('#matrix select[aria-label="'+label+' '+(i+1)+'"]').focus();};return s;
-  }
-  function drawGrid(){
-    const possible=prefixes.filter(p=>!field||nameGroups.fields[field].includes(p)||names.some(n=>n.prefix===p&&fieldOf(n)===field));
-    rowFocus=[...new Set([...rowFocus,...possible])].filter(p=>possible.includes(p)).slice(0,3);
-    const rr=full?possible:rowFocus,cc=full?suffixes:colFocus;
-    const filterFields=groups(fields,possible),filterEndings=groups(endings,suffixes);
-    const tab=el('table',null,'pattern-table '+(full?'atlas':'focus'));tab.setAttribute('aria-label',full?'All name combinations':'Three by three name grid');
-    const thead=tab.createTHead();
-    if(full){const r=thead.insertRow();r.append(el('th',''));for(const [g,a] of filterEndings){const th=el('th',g);th.scope='colgroup';th.colSpan=a.length;r.append(th);}}
-    const head=thead.insertRow();head.append(el('th',''));
-    cc.forEach((v,i)=>{const th=el('th');th.scope='col';th.append(full?document.createTextNode(v):selector(colFocus,i,filterEndings,'Ending'));head.append(th);});
-    const tbody=tab.createTBody();let prior='';
-    rr.forEach((p,ri)=>{
-      const g=fields.find(([,a])=>a.includes(p))[0];
-      if(full&&g!==prior){const heading=tbody.insertRow().insertCell();heading.colSpan=cc.length+1;heading.className='pattern-field';heading.textContent=g;prior=g;}
-      const tr=tbody.insertRow(),th=el('th');th.scope='row';th.append(full?document.createTextNode(p):selector(rowFocus,ri,filterFields,'Prefix'));tr.append(th);
-      cc.forEach(s=>{const n=get(p,s),td=tr.insertCell();
-        let ctl;
-        if(n.status==='unchecked'){
-          ctl=button('Not checked',()=>show(n),'pattern-cell unchecked');
-        }else{
-          ctl=button(null,()=>show(n),'pattern-cell '+n.status);
-          ctl.append(el('b',n.name),el('span',states[n.status]));
-        }
-        ctl.setAttribute('aria-label',n.name+': '+states[n.status]);
-        if(n.prefix===patternSelected?.prefix&&n.suffix===patternSelected?.suffix)ctl.setAttribute('aria-pressed','true');
-        td.append(ctl);
+  dialog.querySelector('.close').onclick=()=>dialog.close();
+  dialog.onclick=e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();};
+  dialog.addEventListener('close',()=>focused?.focus({preventScroll:true}));
+  function tabStop(b){for(const x of cells)x.tabIndex=x===b?0:-1;}
+  function draw(){
+    const selected=fields.filter(([f])=>!chooser.value||chooser.value===f);
+    rowOrder=selected.flatMap(([,ps])=>ps);cells=[];table.replaceChildren();
+    const cap=table.createCaption();cap.className='sr-only';cap.textContent='Benchmark names by prefix and ending. Green: same-name AI benchmark. Grey: no exact match found.';
+    const cg=el('colgroup');cg.append(el('col',null,'field-col'),el('col',null,'prefix-col'));table.append(cg);
+    for(const [,ss] of families){const cols=el('colgroup');cols.span=ss.length;table.append(cols);}
+    const head=table.createTHead(),a=head.insertRow(),b=head.insertRow();
+    for(const [title,cls] of [['Field','field-label'],['Prefix','prefix-label']]){const th=el('th',title,cls);th.rowSpan=2;th.scope='col';a.append(th);}
+    for(const [g,ss] of families){const h=el('th',g,'family-head');h.colSpan=ss.length;h.scope='colgroup';a.append(h);
+      ss.forEach((s,i)=>{const e=el('th',s,i===0?'family-start':'');e.scope='col';b.append(e);});}
+    for(const [f,ps] of selected){
+      const body=table.createTBody();
+      ps.forEach((p,i)=>{
+        const tr=body.insertRow();if(i===0){tr.className='starts-field';const group=el('th',f,'field-label');group.scope='rowgroup';group.rowSpan=ps.length;tr.append(group);}
+        const prefix=el('th',null,'prefix-label');prefix.scope='row';if(!i)prefix.append(el('small',f,'mobile-field'));prefix.append(document.createTextNode(p));tr.append(prefix);
+        for(const [,ss] of families){ss.forEach((s,j)=>{
+          const n=map.get(p+'|'+s),td=tr.insertCell();if(!j)td.className='family-start';const used=n.status==='used';
+          const c=button(null,()=>open(n,c),'map-cell '+(used?'yes':'no'));c.dataset.prefix=p;c.dataset.suffix=s;c.tabIndex=-1;
+          c.setAttribute('aria-label',n.name+': '+(used?'same-name AI benchmark':'no exact match found'));c.setAttribute('aria-haspopup','dialog');c.title=n.name;
+          const text=el('span',n.name);
+          // Soft-wrap joined names at the word boundary, never change their spelling.
+          if(n.name.toLowerCase().startsWith(p.toLowerCase()) && n.name.length>p.length+1){
+            text.replaceChildren(document.createTextNode(n.name.slice(0,p.length)),el('wbr'),document.createTextNode(n.name.slice(p.length)));
+          }
+          if(used){const tick=el('i','✓');tick.setAttribute('aria-hidden','true');c.append(tick);}
+          c.append(text);td.append(c);cells.push(c);
+        });}
       });
-    });
-    $('#matrix').replaceChildren(tab);
-    $('#pattern-detail').replaceChildren(...(patternSelected?[evidence(patternSelected,true)]:[]));
-    setPressed($('#view-focus'),!full);setPressed($('#view-full'),full);
+    }
+    if(cells.length)cells[0].tabIndex=0;
+    $('#pick-name').disabled=!cells.some(c=>c.classList.contains('no'));
   }
-  function show(n){patternSelected=n;drawGrid();$('#pattern-detail').scrollIntoView({block:'nearest'});}
-  $('#view-focus').onclick=()=>{full=false;drawGrid();};$('#view-full').onclick=()=>{full=true;drawGrid();};
-  $('#pick-unchecked').onclick=()=>{
-    const ps=field?nameGroups.fields[field].filter(p=>prefixes.includes(p)):prefixes;
-    const pool=ps.flatMap(p=>suffixes.map(s=>get(p,s))).filter(x=>x.status==='unchecked');
-    const n=random(pool,patternSelected);if(!n){$('#pattern-detail').textContent='Every combination in this field has been checked.';return;}
-    full=false;rowFocus=[n.prefix,...rowFocus.filter(x=>x!==n.prefix)].slice(0,3);colFocus=[n.suffix,...colFocus.filter(x=>x!==n.suffix)].slice(0,3);show(n);
+  table.addEventListener('focusin',e=>{if(e.target.matches('.map-cell'))tabStop(e.target);});
+  table.addEventListener('keydown',e=>{
+    if(!e.target.matches('.map-cell'))return;
+    const i=cells.indexOf(e.target),w=endings.length,base=Math.floor(i/w)*w;
+    const go={ArrowRight:Math.min(base+w-1,i+1),ArrowLeft:Math.max(base,i-1),ArrowDown:Math.min(cells.length-1,i+w),ArrowUp:Math.max(0,i-w),Home:base,End:base+w-1}[e.key];
+    if(go===undefined)return;e.preventDefault();cells[go].focus();
+  });
+  chooser.onchange=draw;
+  $('#pick-name').onclick=()=>{
+    const pool=cells.filter(b=>b.classList.contains('no'));
+    const alternatives=pool.filter(b=>b.dataset.prefix!==lastPick?.prefix||b.dataset.suffix!==lastPick?.suffix);
+    const from=alternatives.length?alternatives:pool;if(!from.length)return;
+    const b=from[Math.floor(Math.random()*from.length)];open(map.get(b.dataset.prefix+'|'+b.dataset.suffix),b);
   };
-  more.ontoggle=()=>{if(more.open)drawGrid();};
-  drawList();
+  draw();$('#map-meta').append(link('Search criteria and sources',gh('verification/names.md')));
 }

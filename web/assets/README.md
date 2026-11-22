@@ -1,0 +1,1 @@
+Manrope (Latin, variable weight) is bundled locally for offline and privacy-friendly rendering. Source: [Fontsource 5.3.0](https://www.npmjs.com/package/@fontsource-variable/manrope/v/5.3.0), from the [Manrope project](https://github.com/sharanda/manrope). The unmodified font is distributed under the [SIL Open Font License](Manrope-OFL.txt).
