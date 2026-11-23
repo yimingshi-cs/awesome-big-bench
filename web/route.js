@@ -1,4 +1,4 @@
-renderCover();
+renderTrendComparison();
 const renderDirectory=initDirectory();
 initNames();
 initTrends();

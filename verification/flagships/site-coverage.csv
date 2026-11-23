@@ -17,7 +17,6 @@ MGSM,not listed,,OpenAI; Anthropic; Google,8,OpenAI o1 (API snapshot),https://op
 CyScenarioBench,not listed,,OpenAI; Anthropic; Google,7,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
 HellaSwag,not listed,,OpenAI; Anthropic; Google,7,Gemini 1.5 Pro (May update),https://arxiv.org/html/2403.05530v5
 ScreenSpot-Pro,not listed,,OpenAI; Anthropic; Google,7,GPT-6 Astra,https://openai.com/index/gpt-6-astra/
-Terminal-Bench-Science,not listed,,OpenAI; Anthropic; Google,7,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 AI2D,not listed,,OpenAI; Anthropic; Google,6,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
 No-CoT Reasoning Index,not listed,,OpenAI; Anthropic; Google,4,GPT-6.2 Astra and Sol,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
 AA-Omniscience,not listed,,Anthropic; Google,14,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
@@ -193,7 +192,6 @@ Self-preference bias,not listed,,Anthropic,2,Claude Sonnet 5.5,https://assets.cl
 Self-recognition / preference bias,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
 SQuAD v2,not listed,,OpenAI,2,InstructGPT,https://arxiv.org/pdf/2203.02155v1
 Suicide and self-harm,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
-Terminal-Bench-Science 0.1,not listed,,Anthropic,2,Claude Sonnet 5.5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=113
 Train a Program,not listed,,Anthropic,2,Claude Fable 5.2 / Claude Mythos 5.2,https://www.anthropic.com/claude-fable-and-mythos-5-2
 USMLE,not listed,,Anthropic,2,Claude 3 (Opus / Sonnet),https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25
 Vals Index,not listed,,Google,2,Gemini 4 Carbon,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
@@ -386,6 +384,7 @@ MATH,yes,MATH,OpenAI; Anthropic; Google,13,Claude 3.7 Sonnet,https://www.anthrop
 MMLU,yes,MMLU,OpenAI; Anthropic; Google,12,GPT-4.1,https://openai.com/index/gpt-4-1/
 MathVista,yes,MathVista,OpenAI; Anthropic; Google,11,OpenAI o3,https://openai.com/index/introducing-o3-and-o4-mini/
 HumanEval,yes,HumanEval,OpenAI; Anthropic; Google,10,Claude 3.5 Sonnet (new),https://www.anthropic.com/news/3-5-models-and-computer-use
+Terminal-Bench-Science,yes,Terminal-Bench-Science,OpenAI; Anthropic; Google,9,GPT-6.2 Astra and Sol,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 GSM8K,yes,GSM8K,OpenAI; Anthropic; Google,7,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
 XSTest,yes,XSTest,OpenAI; Anthropic; Google,7,GPT-4.5,https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
 ChartQA,yes,ChartQA,OpenAI; Anthropic; Google,6,Claude 3.5 Sonnet,https://www.anthropic.com/news/claude-3-5-sonnet
