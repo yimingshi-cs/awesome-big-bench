@@ -17,7 +17,7 @@ The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can 
 | Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
 | AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
 
-The full guide compares inputs, outputs and scoring for **107 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
+The full guide compares inputs, outputs and scoring for **108 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
 
 ## Benchmark directory
 
@@ -164,6 +164,7 @@ The full guide compares inputs, outputs and scoring for **107 benchmarks across 
 | [MLE-bench](<https://github.com/openai/mle-bench>) | Competition brief, dataset and submission specification | Submission file with test-set predictions | [Competition metric and medal thresholds from human standings](<https://github.com/openai/mle-bench>) |
 | [RE-Bench](<https://github.com/METR/RE-Bench>) | Open-ended ML engineering goal and timed environment | Working solution in the task environment | [Normalized task-specific scores compared with time-budgeted human attempts](<https://arxiv.org/pdf/2411.15114v1>) |
 | [PaperBench](<https://openai.com/index/paperbench/>) | ML paper, clarifications and a replication environment | Code, execution instructions and resulting research artifacts | [Model grader scores weighted, author-developed rubric items](<https://arxiv.org/pdf/2504.01848v1>) |
+| [Terminal-Bench-Science](<https://www.terminal-bench-science.ai/announcement>) | A research task, its input files and a configured terminal | A task-specific artifact such as a reconstructed image or a fitted model | [Resolution rate: share of tasks whose required checks all pass](<https://www.terminal-bench-science.ai/announcement>) |
 
 <a id="domain-rsi"></a>
 ### RSI

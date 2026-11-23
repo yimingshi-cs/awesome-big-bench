@@ -159,6 +159,9 @@ def render():
         if slug not in cat or matrix[tuple(pair.split('|'))]['status'] != 'used':
             raise ValueError('Invalid catalog version link: '+pair)
         catalog_cells[pair] = slug
+    for pair, slugs in groups['relatedCatalog'].items():
+        if pair not in catalog_cells or not set(slugs) <= cat.keys() or catalog_cells[pair] in slugs:
+            raise ValueError('Invalid related catalog reference: '+pair)
     duplicated = set(catalog_cells.values()) & {s for ids in landmarks.values() for s in ids}
     if duplicated:
         raise ValueError('A field landmark repeats a name cell: '+str(duplicated))

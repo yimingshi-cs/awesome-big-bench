@@ -75,5 +75,10 @@
   },
   "catalogVersions": {
     "CWE|Bench": "cwe-bench-v2"
+  },
+  "relatedCatalog": {
+    "Terminal|Bench": [
+      "terminal-bench-science"
+    ]
   }
 }

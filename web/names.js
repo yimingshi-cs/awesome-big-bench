@@ -26,6 +26,9 @@ function initNames(){
     const actions=el('div',null,'links'),entry=catalogById.get(mapCatalog[pair]);
     if(n.source_url)actions.append(link(used?'Original source':'Related project',n.source_url));
     if(entry)actions.append(link(entry.name.toLowerCase()===n.name.toLowerCase()?'Task & scoring':entry.name,browse(entry)));
+    for(const id of nameGroups.relatedCatalog[pair]||[]){
+      const other=catalogById.get(id);actions.append(link('Compare: '+other.name,browse(other)));
+    }
     actions.append(link('Search record',detailFor(n)));
     const correction=link(used?'Suggest a correction':'Found a match?',issue(n.name+': name check','name'),'action');
     const suggested='**Name:** '+n.name+'\n**Combination:** '+n.prefix+' × '+n.suffix+'\n**Listed as:** '+(used?'same-name AI benchmark':'no exact AI benchmark found')+'\n\n**Primary source:**\n\n**What should change?**\n';

@@ -21,21 +21,13 @@ const displayDomain = d => d;
 const fmt = n => n.toLocaleString('en-US');
 const setPressed = (node,on) => node.setAttribute('aria-pressed',String(on));
 
-function renderCover(){
+function renderTrendComparison(){
   function period(year){
     const selected=months.filter(m=>m.month.startsWith(year+'-')&&Number(m.month.slice(5))<=9);
     const hits=selected.reduce((a,m)=>a+m.hits,0),total=selected.reduce((a,m)=>a+m.total,0);
     return {year,hits,total,share:100*hits/total};
   }
   const a=period('2020'),b=period('2026');
-  for(const part of [a,b]){
-    const t=el('span',null,'slope-stop');t.append(el('strong',part.share.toFixed(2)+'%'),el('small',part.year));$('#slope').append(t);
-    if(part===a){
-      const svg=svgNode('svg',{viewBox:'0 0 71 25','aria-hidden':'true'});
-      svg.append(svgNode('path',{d:'M2 21 L69 4',fill:'none',stroke:'currentColor','stroke-width':2,'stroke-linecap':'round'}));
-      $('#slope').append(svg);
-    }
-  }
   for(const part of [a,b]){
     const cell=el('div');cell.append(el('span','Jan–Sep '+part.year),el('b',part.share.toFixed(2)+'%'),el('small',fmt(part.hits)+' of '+fmt(part.total)+' CS papers'));$('#comparison').append(cell);
   }
