@@ -1,0 +1,497 @@
+[
+  {
+    "slug": "terminal-bench",
+    "name": "Terminal-Bench 1.0",
+    "family": "Terminal-Bench",
+    "domain": "Coding",
+    "date": "2025-05-19",
+    "date_basis": "released",
+    "date_url": "https://www.tbench.ai/news/announcement",
+    "primary_url": "https://www.tbench.ai/news/announcement",
+    "protocol_url": "https://www.tbench.ai/news/announcement",
+    "task": "Terminal tasks",
+    "description": "Complete multi-step tasks in a terminal; task-specific tests inspect the final environment.",
+    "input": "Terminal task instruction and a prepared container",
+    "output": "Shell actions and resulting files or system state",
+    "assessment": "Task-specific tests determine completion",
+    "input_modality": "Text",
+    "existing": true,
+    "reported_labels": [
+      "Terminal-Bench 1.0",
+      "Terminal-Bench-Core-v0"
+    ],
+    "aliases": [
+      "Terminal-Bench",
+      "Core-v0"
+    ],
+    "date_note": "The May announcement calls the original suite Core-v0; the 2.0 announcement calls the May release 1.0. These are not separate launch dates.",
+    "identity_source": "https://www.tbench.ai/news/announcement-2-0",
+    "map_label": "Terminal-Bench"
+  },
+  {
+    "slug": "terminal-bench-2-0",
+    "name": "Terminal-Bench 2.0",
+    "family": "Terminal-Bench",
+    "domain": "Coding",
+    "date": "2025-11-07",
+    "date_basis": "released",
+    "date_url": "https://www.tbench.ai/news/announcement-2-0",
+    "primary_url": "https://www.tbench.ai/news/announcement-2-0",
+    "protocol_url": "https://www.tbench.ai/news/announcement-2-0",
+    "task": "Terminal task completion",
+    "description": "Complete harder terminal tasks with independently checked final outcomes. The 2.0 release introduced a new task suite and Harbor.",
+    "input": "A task brief and a configured terminal environment",
+    "output": "Files, program outputs or a changed environment",
+    "assessment": "Share of tasks completed under their task-specific verifiers.",
+    "input_modality": "Text + files",
+    "existing": false,
+    "reported_labels": [
+      "Terminal-Bench 2.0"
+    ],
+    "aliases": [],
+    "date_note": "Project release announcement, as dated in its official news index.",
+    "date_index_url": "https://www.tbench.ai/news"
+  },
+  {
+    "slug": "terminal-bench-2-1",
+    "name": "Terminal-Bench 2.1",
+    "family": "Terminal-Bench",
+    "domain": "Coding",
+    "date": "2026-05-06",
+    "date_basis": "released",
+    "date_url": "https://www.tbench.ai/news/terminal-bench-2-1",
+    "primary_url": "https://www.tbench.ai/news/terminal-bench-2-1",
+    "protocol_url": "https://www.tbench.ai/news/terminal-bench-2-1",
+    "task": "Terminal task completion",
+    "description": "Run the revised 2.0 suite. The authors corrected 28 of its 89 tasks, so matching the model alone does not make scores comparable.",
+    "input": "An 89-task terminal suite with corrected task definitions",
+    "output": "Required files or environment changes",
+    "assessment": "Task completion under the corrected instructions and verifiers.",
+    "input_modality": "Text + files",
+    "existing": false,
+    "reported_labels": [
+      "Terminal-Bench 2.1"
+    ],
+    "aliases": [],
+    "date_note": "Project release announcement, as dated in its official news index.",
+    "date_index_url": "https://www.tbench.ai/news"
+  },
+  {
+    "slug": "terminal-bench-3-0",
+    "name": "Terminal-Bench 3.0",
+    "family": "Terminal-Bench",
+    "domain": "Coding",
+    "date": "2026-07-30",
+    "date_basis": "released",
+    "date_url": "https://www.tbench.ai/news/terminal-bench-3-0",
+    "primary_url": "https://www.tbench.ai/news/terminal-bench-3-0",
+    "protocol_url": "https://www.tbench.ai/news/terminal-bench-3-0",
+    "task": "Terminal task completion",
+    "description": "Complete 74 challenging terminal workflows drawn from seven domains in the first 3.0 task set.",
+    "input": "A work request and a configured terminal environment",
+    "output": "A verified artifact or state change",
+    "assessment": "Pass rate under the 3.0 task verifiers.",
+    "input_modality": "Text + files",
+    "existing": false,
+    "reported_labels": [
+      "Terminal-Bench 3.0"
+    ],
+    "aliases": [],
+    "date_note": "Project release announcement, as dated in its official news index.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2026-07-23",
+        "date_basis": "tag",
+        "url": "https://github.com/harbor-framework/terminal-bench/releases/tag/v3.0.0",
+        "note": "GitHub release published_at (UTC); the project announcement has its own later date."
+      }
+    ],
+    "date_index_url": "https://www.tbench.ai/news"
+  },
+  {
+    "slug": "terminal-bench-4-0",
+    "name": "Terminal-Bench 4.0",
+    "family": "Terminal-Bench",
+    "domain": "Coding",
+    "date": "2026-08-28",
+    "date_basis": "released",
+    "date_url": "https://www.tbench.ai/news/terminal-bench-4-0",
+    "primary_url": "https://www.tbench.ai/news/terminal-bench-4-0",
+    "protocol_url": "https://www.tbench.ai/news/terminal-bench-4-0",
+    "task": "Terminal task completion",
+    "description": "The 4.0 release removes eight 3.0 tasks, fixes others and recalibrates compute and time limits.",
+    "input": "The 66-task terminal suite and its 4.0 resource settings",
+    "output": "Task-specific artifacts or state changes",
+    "assessment": "Share of tasks passing the 4.0 checks under the specified resources.",
+    "input_modality": "Text + files",
+    "existing": false,
+    "reported_labels": [
+      "Terminal-Bench 4.0",
+      "Terminal-Bench 4.0 (AA)"
+    ],
+    "aliases": [],
+    "date_note": "Project release announcement, as dated in its official news index.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2026-08-26",
+        "date_basis": "tag",
+        "url": "https://github.com/harbor-framework/terminal-bench/releases/tag/v4.0.0",
+        "note": "GitHub release published_at (UTC); the project announcement has its own later date."
+      }
+    ],
+    "date_index_url": "https://www.tbench.ai/news"
+  },
+  {
+    "slug": "terminal-bench-4-1",
+    "name": "Terminal-Bench 4.1",
+    "family": "Terminal-Bench",
+    "domain": "Coding",
+    "date": "2026-11-09",
+    "date_basis": "released",
+    "date_url": "https://www.tbench.ai/news/terminal-bench-4-1",
+    "primary_url": "https://www.tbench.ai/news/terminal-bench-4-1",
+    "protocol_url": "https://www.tbench.ai/news/terminal-bench-4-1",
+    "task": "Terminal task completion",
+    "description": "The agent-facing 4.0 tasks remain the same; revised verifiers regrade the resulting artifacts.",
+    "input": "The same 66 agent-facing terminal tasks as 4.0",
+    "output": "Task-specific artifacts or state changes",
+    "assessment": "Share passing the revised 4.1 verifiers; saved 4.0 outputs can be regraded.",
+    "input_modality": "Text + files",
+    "existing": false,
+    "reported_labels": [
+      "Terminal-Bench 4.1"
+    ],
+    "aliases": [],
+    "date_note": "Project release announcement, as dated in its official news index.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2026-11-03",
+        "date_basis": "tag",
+        "url": "https://github.com/harbor-framework/terminal-bench/releases/tag/v4.1.0",
+        "note": "GitHub release published_at (UTC); the project announcement has its own later date."
+      }
+    ],
+    "date_index_url": "https://www.tbench.ai/news"
+  },
+  {
+    "slug": "tau-bench",
+    "name": "τ-bench",
+    "family": "τ-bench",
+    "domain": "CUA",
+    "date": "2024-06-17",
+    "date_basis": "released",
+    "date_url": "https://sierra.ai/resources/research/tau-bench",
+    "primary_url": "https://github.com/sierra-research/tau-bench",
+    "protocol_url": "https://github.com/sierra-research/tau-bench/blob/main/tau_bench/envs/base.py",
+    "task": "Policy-constrained tool use",
+    "description": "Converse with a simulated customer and call tools; check the final database state against the goal.",
+    "input": "Simulated customer, domain policy, tools and database",
+    "output": "Tool actions and messages to the customer",
+    "assessment": "Final database state and required reply contents checked",
+    "input_modality": "Text",
+    "existing": true,
+    "reported_labels": [
+      "τ-bench",
+      "TAU-bench (airline)",
+      "TAU-bench (retail)",
+      "τ-bench — airline",
+      "τ-bench — retail",
+      "Taubench airline",
+      "Taubench retail"
+    ],
+    "aliases": [],
+    "date_note": ""
+  },
+  {
+    "slug": "tau2-bench",
+    "name": "τ²-bench",
+    "family": "τ-bench",
+    "domain": "CUA",
+    "date": "2025-06-10",
+    "date_basis": "released",
+    "date_url": "https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios",
+    "primary_url": "https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios",
+    "protocol_url": "https://arxiv.org/abs/2506.07982",
+    "task": "Collaborative tool use",
+    "description": "Coordinate with a simulated user who can also change the environment. The original τ² release adds a dual-control telecom domain.",
+    "input": "A support request, domain policies, tools and a simulated user",
+    "output": "A conversation and tool actions that complete the task",
+    "assessment": "End-state checks and required outputs; pass^k measures consistent success across repeated attempts.",
+    "input_modality": "Text",
+    "existing": false,
+    "reported_labels": [
+      "Tau2-bench",
+      "Tau2-bench Airline",
+      "Tau2-bench Retail",
+      "Tau2-bench Telecom",
+      "Tau2-bench Telecom (original prompts)",
+      "Tau2-bench airline",
+      "Tau2-bench retail",
+      "Tau2-bench telecom",
+      "τ²-bench",
+      "τ²-bench — airline",
+      "τ²-bench — retail",
+      "τ²-bench — telecom"
+    ],
+    "aliases": [
+      "Tau2-Bench",
+      "τ²-Bench (original)"
+    ],
+    "date_note": "Sierra announcement. This is not the October 2026 release called τ-bench 2.0.0.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2025-06-09",
+        "date_basis": "paper",
+        "url": "https://arxiv.org/abs/2506.07982",
+        "note": "arXiv v1 submission before the June 10 announcement."
+      }
+    ]
+  },
+  {
+    "slug": "tau2-bench-0-1-3",
+    "name": "τ²-bench 0.1.3",
+    "family": "τ-bench",
+    "domain": "CUA",
+    "date": "2025-08-26",
+    "date_basis": "tag",
+    "date_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v0.1.3",
+    "primary_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v0.1.3",
+    "protocol_url": "https://github.com/sierra-research/tau2-bench/blob/v2.0.0/CHANGELOG.md#013---2025-08-26",
+    "task": "Collaborative tool use",
+    "description": "A τ² revision that removes default natural-language assertion checks. Specify the grading version when comparing results that depend on those checks.",
+    "input": "A policy, support request and interactive tool environment",
+    "output": "Conversation and task-state changes",
+    "assessment": "State and tool checks under the 0.1.3 defaults; natural-language assertions no longer run by default.",
+    "input_modality": "Text",
+    "existing": false,
+    "reported_labels": [],
+    "aliases": [],
+    "date_note": "GitHub published release; the changelog documents the grading default."
+  },
+  {
+    "slug": "tau3-bench",
+    "name": "τ³-bench",
+    "family": "τ-bench",
+    "domain": "CUA",
+    "date": "2026-03-18",
+    "date_basis": "released",
+    "date_url": "https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice",
+    "primary_url": "https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice",
+    "protocol_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.0",
+    "task": "Knowledge and voice agents",
+    "description": "Extend agent–user tasks to support-document retrieval and real-time spoken interaction. This public suite corresponds to repository release v1.0.0.",
+    "input": "A text or spoken support request, domain tools and policies or a knowledge base",
+    "output": "A response and effective changes in the customer-support environment",
+    "assessment": "Task-specific completion checks and repeated-run reliability, reported by domain and interface.",
+    "input_modality": "Text / audio",
+    "existing": false,
+    "reported_labels": [],
+    "aliases": [
+      "τ-bench v1.0.0 (2026)",
+      "Tau3-Bench"
+    ],
+    "date_note": "Sierra announcement and matching GitHub release; not the original 2024 τ-bench."
+  },
+  {
+    "slug": "tau-bench-1-0-1",
+    "name": "τ-bench 1.0.1",
+    "family": "τ-bench",
+    "domain": "CUA",
+    "date": "2026-07-22",
+    "date_basis": "tag",
+    "date_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.1",
+    "primary_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.1",
+    "protocol_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.1",
+    "task": "Knowledge and voice agents",
+    "description": "A grading revision to the τ³ generation. It corrects banking knowledge task data and evaluation; the authors say the other domains are unaffected.",
+    "input": "A support interaction with domain tools; banking tasks also have a policy corpus",
+    "output": "Responses and tool-driven environment changes",
+    "assessment": "Revised banking task and rubric checks. Pre-1.0.1 banking scores are not directly comparable.",
+    "input_modality": "Text / audio",
+    "existing": false,
+    "reported_labels": [],
+    "aliases": [],
+    "date_note": "Public GitHub release dated July 22 UTC. Some fixes reached main on July 14–15 without a version bump; this row dates the named release, not an individual fix."
+  },
+  {
+    "slug": "tau-bench-2-0-0",
+    "name": "τ-bench 2.0.0",
+    "family": "τ-bench",
+    "domain": "CUA",
+    "date": "2026-10-19",
+    "date_basis": "released",
+    "date_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v2.0.0",
+    "primary_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v2.0.0",
+    "protocol_url": "https://github.com/sierra-research/tau2-bench/releases/tag/v2.0.0",
+    "task": "Multilingual support agents",
+    "description": "Evaluate text and voice interactions across languages using pinned task manifests. The official release changes task prompts, judging and caller configuration.",
+    "input": "A text or voice support request, domain tools and a language-specific environment",
+    "output": "A dialogue and task-specific environment updates",
+    "assessment": "Completion and consistency on the named text or voice manifest; 1.x scores are not interchangeable.",
+    "input_modality": "Text / audio",
+    "existing": false,
+    "reported_labels": [],
+    "aliases": [
+      "τ-bench 2.0.0 — Multilingual and Voice"
+    ],
+    "date_note": "Maintainer-declared release date; not 2025’s τ²-bench.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2026-10-20",
+        "date_basis": "tag",
+        "url": "https://github.com/sierra-research/tau2-bench/releases/tag/v2.0.0",
+        "note": "GitHub published_at is Oct 20 00:28 UTC. The release body and dated changelog state October 19."
+      }
+    ]
+  },
+  {
+    "slug": "arc-agi",
+    "name": "ARC-AGI-1",
+    "family": "ARC-AGI",
+    "domain": "Reasoning",
+    "date": "2019-11-05",
+    "date_basis": "paper",
+    "date_url": "https://arxiv.org/abs/1911.01547",
+    "primary_url": "https://github.com/fchollet/ARC-AGI",
+    "protocol_url": "https://arxiv.org/abs/1911.01547v1",
+    "task": "Abstract visual reasoning",
+    "description": "Infer a new transformation rule from example grids; reproduce the target grid without a written instruction.",
+    "input": "Example input/output grid pairs and a test grid",
+    "output": "Predicted output grid",
+    "assessment": "Grid dimensions and all cell values must match",
+    "input_modality": "Grid",
+    "existing": true,
+    "reported_labels": [
+      "ARC-AGI-1"
+    ],
+    "aliases": [
+      "ARC-AGI (2019)",
+      "Abstraction and Reasoning Corpus"
+    ],
+    "date_note": "Original paper v1; ARC-AGI-1 is the later official name for this edition.",
+    "identity_source": "https://arcprize.org/arc-agi/1"
+  },
+  {
+    "slug": "arc-agi-2",
+    "name": "ARC-AGI-2",
+    "family": "ARC-AGI",
+    "domain": "Reasoning",
+    "date": "2025-03-24",
+    "date_basis": "released",
+    "date_url": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
+    "primary_url": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
+    "protocol_url": "https://arxiv.org/pdf/2505.11831v1",
+    "task": "Abstract visual reasoning",
+    "description": "Infer a transformation rule from example grid pairs and apply it to a new grid.",
+    "input": "Example input/output grid pairs and a test input",
+    "output": "Predicted output grid",
+    "assessment": "Dimensions and every cell must match the target",
+    "input_modality": "Grid",
+    "existing": true,
+    "reported_labels": [
+      "ARC-AGI-2"
+    ],
+    "aliases": [],
+    "date_note": ""
+  },
+  {
+    "slug": "arc-agi-3-preview",
+    "name": "ARC-AGI-3 Preview",
+    "family": "ARC-AGI",
+    "domain": "Reasoning",
+    "date": "2025-07-17",
+    "date_basis": "released",
+    "date_url": "https://arcprize.org/blog/arc-agi-3-preview-30-day-learnings",
+    "primary_url": "https://arcprize.org/blog/arc-agi-3-preview-30-day-learnings",
+    "protocol_url": "https://arcprize.org/competitions/arc-agi-3-preview-agents/archive",
+    "task": "Interactive reasoning",
+    "description": "Explore an early set of interactive games and infer their rules. This developer preview and its competition are distinct from the full 2026 benchmark.",
+    "input": "Grid observations from the preview games",
+    "output": "A sequence of legal game actions",
+    "assessment": "The preview competition ranked performance on held-back games by levels completed, with tie-breaks; not the full 2026 RHAE score.",
+    "input_modality": "Interactive grid",
+    "existing": false,
+    "reported_labels": [],
+    "aliases": [],
+    "date_note": "Retrospective from the maintainer explicitly dates the public preview to July 17. The competition kickoff was July 18."
+  },
+  {
+    "slug": "arc-agi-3",
+    "name": "ARC-AGI-3",
+    "family": "ARC-AGI",
+    "domain": "Reasoning",
+    "date": "2026-03-25",
+    "date_basis": "released",
+    "date_url": "https://arcprize.org/blog/arc-agi-3-launch",
+    "primary_url": "https://arcprize.org/arc-agi/3",
+    "protocol_url": "https://arcprize.org/media/ARC_AGI_3_Technical_Report.pdf",
+    "task": "Interactive reasoning",
+    "description": "Explore an unfamiliar game, infer its goals and advance through levels. A solver can write code, but the benchmark grades its actions, not its source code.",
+    "input": "Observations from an unfamiliar interactive environment",
+    "output": "Actions that reach the level goals",
+    "assessment": "Relative Human Action Efficiency (RHAE), using human action baselines",
+    "input_modality": "Interactive grid",
+    "existing": true,
+    "reported_labels": [
+      "ARC-AGI-3"
+    ],
+    "aliases": [],
+    "date_note": "Official full benchmark launch on March 25. The technical report was submitted March 24; the preview was released July 17, 2025.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2026-03-24",
+        "date_basis": "paper",
+        "url": "https://arxiv.org/abs/2603.24621",
+        "note": "arXiv v1 submission, not the full launch event."
+      }
+    ]
+  },
+  {
+    "slug": "apex-agents",
+    "name": "APEX-Agents 1.0",
+    "family": "APEX-Agents",
+    "domain": "General",
+    "date": "2026-01-21",
+    "date_basis": "released",
+    "date_url": "https://www.mercor.com/blog/introducing-apex-agents/",
+    "primary_url": "https://www.mercor.com/blog/introducing-apex-agents/",
+    "protocol_url": "https://www.mercor.com/apex/methodology/",
+    "task": "Professional knowledge work",
+    "description": "Produce a professional deliverable in a shared workspace for a banking, consulting or legal assignment. This is the agent benchmark, not the tool-free APEX suite.",
+    "input": "A professional brief, files and workplace applications",
+    "output": "A client-ready answer or work product",
+    "assessment": "Expert rubrics: full-task pass rate and mean criterion score",
+    "input_modality": "Text + documents",
+    "existing": true,
+    "reported_labels": [
+      "APEX-Agents"
+    ],
+    "aliases": [
+      "APEX-Agents (original)"
+    ],
+    "date_note": "Original launch of APEX-Agents; distinct from the APEX umbrella and tool-free APEX-1."
+  },
+  {
+    "slug": "apex-agents-1-1",
+    "name": "APEX-Agents 1.1",
+    "family": "APEX-Agents",
+    "domain": "General",
+    "date": "2026-09-08",
+    "date_basis": "released",
+    "date_url": "https://www.mercor.com/blog/introducing-apex-agents-1-1/",
+    "primary_url": "https://www.mercor.com/blog/introducing-apex-agents-1-1/",
+    "protocol_url": "https://huggingface.co/datasets/mercor/apex-agents-v1.1",
+    "task": "Professional knowledge work",
+    "description": "Deliver professional work from a document-rich environment. Version 1.1 refines the tasks and judges ambiguous or contradictory answers differently.",
+    "input": "A work brief, reference files and workplace tools",
+    "output": "A client-ready response or artifact",
+    "assessment": "Expert-authored rubric criteria; report mean rubric score or full-task pass rate with the 1.1 grading protocol.",
+    "input_modality": "Text + documents",
+    "existing": false,
+    "reported_labels": [],
+    "aliases": [
+      "APEX-Agents v1.1"
+    ],
+    "date_note": ""
+  }
+]

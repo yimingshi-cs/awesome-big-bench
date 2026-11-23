@@ -90,6 +90,17 @@ The original platform includes a benchmark suite and reports agent evaluations, 
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22AgentGym%22+OR+%22Agent-Gym%22+OR+%22Agent+Gym%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AgentGym&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AgentGym%22%7C%22Agent-Gym%22%7C%22Agent+Gym%22%7C%22Agent%27s+Gym%22%7C%22Agents%27+Gym%22%7C%22Agents+Gym%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentGym%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-Gym%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+Gym%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+Gym%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+Gym%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+Gym%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=Agent+Gym&rows=12&select=title%2CDOI>)
 
+<a name="arena"></a>
+## Agent Arena
+
+**Same-name AI benchmark** · 2026-11-23
+
+Arena reports real-world agent outcomes under this name. An unrelated robotics evaluation framework is also published as Agent-Arena.
+
+[Primary source](<https://arena.ai/blog/agent-arena-methodology>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=AgentArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Agent-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=AgentArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Agent-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=AgentArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Agent-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22AgentArena%22+OR+%22Agent-Arena%22+OR+%22Agent+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## agent squared
 

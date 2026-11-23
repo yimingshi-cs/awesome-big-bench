@@ -80,6 +80,17 @@ The authors call the evaluation “Alignment Gym” and specify language, person
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22AlignmentGym%22%7C%22Alignment-Gym%22%7C%22Alignment+Gym%22%7C%22Alignment%27s+Gym%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=AlignmentGym&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=AlignmentGym&limit=50>) · [GitHub repositories](<https://api.github.com/search/repositories?q=alignment-gym+in%3Aname&per_page=60>)
 
+<a name="arena"></a>
+## Alignment Arena
+
+**Same-name AI benchmark** · 2026-11-23
+
+A published dataset and scoring pipeline compare social bias in masked language models.
+
+[Primary source](<https://github.com/iamhamidrezaee/Alignment-Arena>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=AlignmentArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Alignment-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=AlignmentArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Alignment-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=AlignmentArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Alignment-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22AlignmentArena%22+OR+%22Alignment-Arena%22+OR+%22Alignment+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## Alignment²
 

@@ -82,6 +82,17 @@ The paper explicitly introduces ResearchGym for evaluating language-model agents
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ResearchGym%22%7C%22Research-Gym%22%7C%22Research+Gym%22%7C%22Research%27s+Gym%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ResearchGym&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ResearchGym&limit=50>)
 
+<a name="arena"></a>
+## ResearchArena
+
+**Same-name AI benchmark** · 2026-11-23
+
+This benchmark measures finding, selecting and organizing research literature. A separate evaluation of research agents also uses ResearchArena.
+
+[Primary source](<https://arxiv.org/abs/2406.10291>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=ResearchArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Research-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=ResearchArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Research-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=ResearchArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Research-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22ResearchArena%22+OR+%22Research-Arena%22+OR+%22Research+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## Research²
 

@@ -13,7 +13,7 @@ def norm(value):
                    if c.isalnum() or c=='+')
 
 
-def index_reports(rows, selectors, matrix, landmarks, catalog, aliases):
+def index_reports(rows, selectors, matrix, landmarks, catalog, aliases, edition_matches=None):
     """A generic family can show named variants. A version-specific entry must match its variant."""
     cells = {'|'.join(pair): r['name'] for pair,r in matrix.items() if r['status']=='used'}
     landmark_ids = {slug for slugs in landmarks.values() for slug in slugs}
@@ -53,6 +53,20 @@ def index_reports(rows, selectors, matrix, landmarks, catalog, aliases):
             if not k: continue
             if k not in targets[kind]: raise ValueError('Release highlight not in catalog/map: '+k)
             targets[kind][k] = targets[kind][k] | keys if m.get('also') else set(keys)
+    if edition_matches:
+        # A family name may be known while its tested edition is not. Do not
+        # inherit broad family evidence or a successor's report for a dated row.
+        for slug, spec in edition_matches.items():
+            names = {norm(n) for n in spec['labels']}
+            matched = set()
+            for family in spec['families']:
+                for i in by_family[norm(family)]:
+                    n = rows[i]['benchmark']
+                    if norm(n)==spec.get('unversioned_label') and rows[i]['date']>=spec.get('unversioned_before','9999'):
+                        continue
+                    if norm(n) in names or (spec.get('pattern') and re.search(spec['pattern'],n,re.I)):
+                        matched.add(i)
+            targets['catalog'][slug] = matched
     payload = {'cells':{},'landmarks':{},'catalog':{},'reports':{}}
     projected, located, by_record = {},defaultdict(set),defaultdict(set)
     for kind,entries in targets.items():

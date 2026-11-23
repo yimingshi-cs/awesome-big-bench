@@ -4,7 +4,9 @@ import base64
 from collections import defaultdict
 from itertools import product
 from flagship_reports import history_overview, reports
-from historical_evidence import index_reports
+from historical_evidence import index_reports, norm
+from directory_catalog import assemble_directory
+import io
 from urllib.parse import quote
 import csv
 import json
@@ -187,7 +189,35 @@ def render():
         date.fromisoformat(r['date']); check_url(r['source_url'])
         r['release_url'] = r['source_url']
     aliases = json.loads((ROOT/'data/release_family_aliases.json').read_text())
-    evidence, coverage_csv, editions_csv = index_reports([*releases,*history], matches, matrix, landmarks, cat, aliases)
+    # Keep the curated README and historical coverage indicators stable. The
+    # complete web directory also includes short, attributed release references.
+    rows = [*releases,*history]
+    _, coverage_csv, editions_csv = index_reports(rows, matches, matrix, landmarks, cat, aliases)
+    profiles=read_csv('directory_profiles.csv'); reported=read_csv('reported_directory.csv')
+    recorded = {norm(r['reported_family']) for r in csv.DictReader(io.StringIO(coverage_csv))}
+    profiled = {norm(r['reported_family']) for r in reported}
+    if recorded != profiled: raise ValueError('Update release-directory profiles: '+str(recorded ^ profiled))
+    edition_records = [r for source in sorted((ROOT/'data/editions').glob('*.json')) for r in json.loads(source.read_text())]
+    arena_records=read_csv('arena_directory.csv')
+    directory,strict,placements = assemble_directory(cat,profiles,reported,edition_records,DOMAINS,check_url,arena_records)
+    arena_by_pair={r['prefix']+'|Arena':r for r in arena_records}
+    positive_arena={r['prefix']+'|Arena' for r in names if r['suffix']=='Arena' and r['status']=='used'}
+    if arena_by_pair.keys()!=positive_arena:raise ValueError('Arena directory is missing a checked name')
+    for pair,ar in arena_by_pair.items(): catalog_cells[pair]=ar['slug']
+    evidence, _, _ = index_reports(rows,matches,matrix,landmarks,directory,aliases,strict)
+    # For the bibliography, preserve the focal release attribution, not an
+    # operational how-to. Do not turn risk assessments into task recipes.
+    restricted={evidence['catalog'][k] for k,x in directory.items()
+                if x['origin']=='report' and x['domain']=='Safety' and k in evidence['catalog']}
+    for key in restricted:
+        evidence['reports'][key]=[{a:(v.split('#')[0] if a=='release_url' else v) for a,v in r.items()
+                                   if a not in ('location','qualifier')} for r in evidence['reports'][key]]
+    out=io.StringIO(newline='');writer=csv.writer(out,lineterminator='\n')
+    writer.writerow(['reported_family','directory_entries','directory_slugs','profile'])
+    for f,slugs in sorted(placements.items(),key=lambda it:it[0].casefold()):
+        writer.writerow([f,'; '.join(directory[k]['display_name'] for k in slugs),'; '.join(slugs),
+                         'release reference' if all(directory[k]['origin']=='report' for k in slugs) else 'task or edition'])
+    directory_coverage=out.getvalue()
     guidance = json.loads((ROOT/'data/reading_notes.json').read_text())
     for slug, note in guidance.items():
         if slug not in cat or not note.get('reading') or not note.get('url'):
@@ -199,7 +229,19 @@ def render():
             for f in note['facts']: check_url(f.get('url'))
         if 'compare' in note and (note['compare'] not in cat or note['compare'] == slug or not note.get('contrast')):
             raise ValueError('Invalid comparison: '+slug)
-    payload = dict(readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,mapEvidence=evidence,mapCatalog=catalog_cells,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
+    mark_manifest=ROOT/'web/assets/marks/manifest.json'
+    marks={}
+    if mark_manifest.exists():
+        for k,item in json.loads(mark_manifest.read_text()).items():
+            asset=mark_manifest.parent/item['file']
+            if asset.suffix.lower() not in ('.png','.svg','.webp') or asset.resolve().parent!=mark_manifest.parent.resolve():
+                raise ValueError('Unknown mark format/location: '+str(asset))
+            check_url(item['source']);check_url(item['license_url'])
+            mime={'.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp'}[asset.suffix.lower()]
+            marks[k]={**item,'uri':'data:'+mime+';base64,'+base64.b64encode(asset.read_bytes()).decode()}
+    directory_fields=fields+['series','modalities','date_basis','date_note','display_name','display_date','edition_order','origin','aliases','reported_family','alternative_dates']
+    payload = dict(readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
+                   mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
     scripts = ('app.js','cards.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
@@ -238,6 +280,7 @@ def render():
     outputs['verification/flagships/history/README.md'] = history_overview(history, releases, evidence)
     outputs['verification/flagships/site-coverage.csv'] = coverage_csv
     outputs['verification/flagships/site-editions.csv'] = editions_csv
+    outputs['verification/flagships/directory-coverage.csv'] = directory_coverage
     return outputs
 
 

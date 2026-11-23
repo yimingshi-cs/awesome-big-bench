@@ -76,6 +76,17 @@ No same-name AI benchmark identified in the checked sources.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [HF datasets](<https://huggingface.co/api/datasets?search=PostTrainGym&limit=100>) · [OpenAlex titles](<https://api.openalex.org/works?filter=title.search%3A%22PostTrainGym%22%7C%22PostTrain-Gym%22%7C%22PostTrain+Gym%22&select=id%2Ctitle%2Cdoi&per_page=40>) · [Europe PMC titles](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22PostTrainGym%22+OR+TITLE%3A%22PostTrain-Gym%22+OR+TITLE%3A%22PostTrain+Gym%22&format=json&pageSize=35>) · [GitHub repository names](<https://api.github.com/search/repositories?q=PostTrainGym+in%3Aname&per_page=35>)
 
+<a name="arena"></a>
+## PostTrain Arena
+
+**Same-name AI benchmark** · 2026-11-23
+
+Measures how much a collection of training environments changes a fixed model’s performance on a held-out suite. Distinct from PostTrainBench.
+
+[Primary source](<https://posttrain.com/>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=PostTrainArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=PostTrain-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=PostTrainArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=PostTrain-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=PostTrainArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=PostTrain-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22PostTrainArena%22+OR+%22PostTrain-Arena%22+OR+%22PostTrain+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## PostTrain²
 

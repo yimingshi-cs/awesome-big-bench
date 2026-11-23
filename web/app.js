@@ -1,5 +1,5 @@
 'use strict';
-const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks} = JSON.parse(document.querySelector('#payload').textContent);
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
   const node = document.createElement(tag);
@@ -53,7 +53,7 @@ function reportDetails(box,key,label='Release reports'){
     for(const [model,variants] of list){
       const row=el('div',null,'reported-versions');row.append(el('strong',model));
       for(const r of variants.values()){
-        const a=link(r.benchmark,r.release_url);a.title=r.location;row.append(a);
+        const a=link(r.benchmark,r.release_url);if(r.location)a.title=r.location;row.append(a);
         if(r.qualifier)row.append(el('small',r.qualifier));
         if(/Mercor|third.party|third party|cited measurement|partner evaluation/i.test(r.location))row.append(el('small',r.location));
       }

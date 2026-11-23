@@ -15,9 +15,9 @@
 <p id="map-meta" class="fine"></p>
 </section>
 <section id="directory" class="page" hidden>
-<div class="page-head"><h1>Benchmark <em>directory.</em></h1><label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="query" type="search" placeholder="Search" aria-label="Search benchmarks and tasks"></label></div>
-<div class="directory-key"><i class="key reported" aria-hidden="true"></i>In OpenAI, Anthropic or Google releases</div>
-<div class="directory-layout"><aside class="filters"><div id="domains"></div><label class="mobile-domain">Field <select id="mobile-domain"></select></label></aside><div class="results"><span id="count" class="sr-only" aria-live="polite"></span><div id="entries"></div></div></div></section>
+<div class="page-head directory-head"><h1>Benchmark <em>directory.</em></h1><div class="directory-tools"><label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="query" type="search" placeholder="Search" aria-label="Search benchmarks and tasks"></label><select id="directory-order" aria-label="Directory order"><option value="group">By field &amp; series</option><option value="new">Newest first</option></select></div></div>
+
+<div class="directory-layout"><aside class="filters"><div id="domains"></div><label class="mobile-domain">Field <select id="mobile-domain"></select></label></aside><div class="results"><div class="directory-key"><i aria-hidden="true"></i>In OpenAI, Anthropic or Google releases</div><span id="count" class="sr-only" aria-live="polite"></span><div id="entries"></div></div></div></section>
 <section id="trends" class="page" hidden>
 <div class="page-head"><h1>“Bench” in <em>paper titles.</em></h1></div><div id="comparison" class="comparison"></div>
 <div class="chart-heading"><h2>Share of arXiv CS papers</h2><label>Period <select id="trend-window"><option value="all">Full series</option><option value="since">Since Jan 2024</option><option value="recent">Last 12 complete months</option></select></label></div>

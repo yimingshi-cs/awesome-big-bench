@@ -1,0 +1,502 @@
+[
+  {
+    "slug": "osworld",
+    "name": "OSWorld",
+    "family": "OSWorld",
+    "domain": "CUA",
+    "date": "2024-04-11",
+    "date_basis": "paper",
+    "date_url": "https://arxiv.org/abs/2404.07972",
+    "primary_url": "https://os-world.github.io/",
+    "protocol_url": "https://arxiv.org/pdf/2404.07972v1",
+    "task": "Desktop tasks",
+    "description": "Operate real desktop applications and verify the resulting operating-system or application state.",
+    "input": "Natural-language instruction and initialized desktop environment",
+    "output": "Desktop actions that change applications or files",
+    "assessment": "Task-specific execution checks on the resulting state",
+    "input_modality": "Text / screenshot",
+    "existing": true,
+    "reported_labels": [
+      "OSWorld"
+    ],
+    "aliases": [],
+    "date_note": "Existing entry and stable slug; bare family labels need source context before assigning an edition result."
+  },
+  {
+    "slug": "swe-bench",
+    "name": "SWE-bench",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2023-10-10",
+    "date_basis": "paper",
+    "date_url": "https://arxiv.org/abs/2310.06770",
+    "primary_url": "https://www.swebench.com/",
+    "protocol_url": "https://github.com/SWE-bench/SWE-bench/blob/main/swebench/harness/grading.py",
+    "task": "Repository issue repair",
+    "description": "Modify a real Python repository to resolve a GitHub issue; regression tests judge the patch.",
+    "input": "Repository snapshot and corresponding GitHub issue",
+    "output": "Patch to the repository",
+    "assessment": "Required issue-fixing and regression tests must pass",
+    "input_modality": "Text + code",
+    "existing": true,
+    "reported_labels": [
+      "SWE-bench"
+    ],
+    "aliases": [],
+    "date_note": "Existing entry and stable slug; bare family labels need source context before assigning an edition result."
+  },
+  {
+    "slug": "swe-bench-verified",
+    "name": "SWE-bench Verified",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2024-08-13",
+    "date_basis": "released",
+    "date_url": "https://openai.com/index/introducing-swe-bench-verified/",
+    "primary_url": "https://openai.com/index/introducing-swe-bench-verified/",
+    "protocol_url": "https://openai.com/index/introducing-swe-bench-verified/",
+    "task": "Repository issue repair",
+    "description": "Run the SWE-bench repair task on a human-validated subset of 500 issues.",
+    "input": "Human-validated issue and matching repository snapshot",
+    "output": "Patch to the repository",
+    "assessment": "Same test-based resolution criterion, on 500 validated issues",
+    "input_modality": "Text + code",
+    "existing": true,
+    "reported_labels": [
+      "SWE-bench Verified"
+    ],
+    "aliases": [],
+    "date_note": "Existing entry and stable slug; bare family labels need source context before assigning an edition result.",
+    "report_pattern": "^SWE[- ]?bench[ -]Verified(?:$| \\()"
+  },
+  {
+    "slug": "osworld-verified",
+    "name": "OSWorld-Verified",
+    "family": "OSWorld",
+    "domain": "CUA",
+    "date": "2025-07-28",
+    "date_basis": "released",
+    "date_url": "https://xlang.ai/blog/osworld-verified",
+    "primary_url": "https://xlang.ai/blog/osworld-verified",
+    "protocol_url": "https://github.com/xlang-ai/OSWorld",
+    "task": "Desktop computer use",
+    "description": "The maintainers corrected task definitions, starting states and evaluators in the original computer-use benchmark. This named release is not an arbitrary verified submission.",
+    "input": "Desktop observation and a task instruction",
+    "output": "Actions that change application or system state",
+    "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
+    "input_modality": "Text / screenshot",
+    "existing": false,
+    "reported_labels": [
+      "OSWorld-Verified",
+      "OSWorld Verified"
+    ],
+    "aliases": [],
+    "date_note": ""
+  },
+  {
+    "slug": "osworld-2",
+    "name": "OSWorld 2.0",
+    "family": "OSWorld",
+    "domain": "CUA",
+    "date": "2026-06-26",
+    "date_basis": "released",
+    "date_url": "https://github.com/xlang-ai/OSWorld-V2#-updates",
+    "primary_url": "https://osworld-v2.xlang.ai/",
+    "protocol_url": "https://github.com/xlang-ai/OSWorld-V2/blob/main/benchmark_releases/osworld-v2-2026.06.24.json",
+    "task": "Desktop computer use",
+    "description": "A new long-horizon suite in realistic desktop environments. The first public V2 release pinned its task, asset and environment snapshots.",
+    "input": "Desktop observation and a task instruction",
+    "output": "Actions that change application or system state",
+    "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
+    "input_modality": "Text / screenshot",
+    "existing": false,
+    "reported_labels": [
+      "OSWorld 2.0",
+      "OSWorld 2.0 (offline, partial reward)"
+    ],
+    "aliases": [],
+    "date_note": "Maintainer README explicitly announces launch June 26. The initial snapshot is named 2026.06.24; its name is not the announcement date. Untimed OSWorld 2.0 results do not identify which later snapshot was used."
+  },
+  {
+    "slug": "osworld-2-2026-08-08",
+    "name": "OSWorld 2.0 (2026.08.08)",
+    "family": "OSWorld",
+    "domain": "CUA",
+    "date": "2026-08-08",
+    "date_basis": "released",
+    "date_url": "https://github.com/xlang-ai/OSWorld-V2#-updates",
+    "primary_url": "https://osworld-v2.xlang.ai/",
+    "protocol_url": "https://github.com/xlang-ai/OSWorld-V2/releases/tag/v2026.08.08",
+    "task": "Desktop computer use",
+    "description": "The August 2.0 snapshot revises task evaluators and website assets. The release notes identify both task hardening and fairness fixes; the VM images remain from June.",
+    "input": "Desktop observation and a task instruction",
+    "output": "Actions that change application or system state",
+    "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
+    "input_modality": "Text / screenshot",
+    "existing": false,
+    "reported_labels": [
+      "osworld-v2-2026.08.08",
+      "OSWorld 2.0 (2026.08.08)",
+      "OSWorld 2.0 (v2026.08.08, offline set, partial score)"
+    ],
+    "aliases": [],
+    "date_note": ""
+  },
+  {
+    "slug": "osworld-2-1",
+    "name": "OSWorld 2.1",
+    "family": "OSWorld",
+    "domain": "CUA",
+    "date": "2026-09-16",
+    "date_basis": "released",
+    "date_url": "https://github.com/xlang-ai/OSWorld-V2/releases/tag/osworld-v2.1",
+    "primary_url": "https://osworld-v2.xlang.ai/",
+    "protocol_url": "https://github.com/xlang-ai/OSWorld-V2/blob/main/benchmark_releases/osworld-v2.1.json",
+    "task": "Desktop computer use",
+    "description": "A named release with revised tasks, task assets, evaluation workflows and mocked websites. Frozen component versions define the score’s environment.",
+    "input": "Desktop observation and a task instruction",
+    "output": "Actions that change application or system state",
+    "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
+    "input_modality": "Text / screenshot",
+    "existing": false,
+    "reported_labels": [
+      "OSWorld 2.1",
+      "OSWorld 2.1 (offline set, partial)",
+      "OSWorld 2.1 offline set"
+    ],
+    "aliases": [],
+    "date_note": "Retain the offline-set or partial-set qualifier; those do not mean a full-suite result."
+  },
+  {
+    "slug": "swe-bench-lite",
+    "name": "SWE-bench Lite",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2024-03-19",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite/commit/113d798e3a89754d543d96a4e85276f4ec106c6f",
+    "primary_url": "https://www.swebench.com/lite.html",
+    "protocol_url": "https://www.swebench.com/lite.html",
+    "task": "Repository-level software engineering",
+    "description": "A 300-task test subset selected for cost-effective evaluation on self-contained repository issues.",
+    "input": "An issue description and its repository snapshot",
+    "output": "A proposed repository patch",
+    "assessment": "Fraction of selected issues resolved by the test harness.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "SWE-bench Lite"
+    ],
+    "aliases": [],
+    "date_note": "The project dates Lite to March 2024; this is the author’s dated full dataset upload, not an empty repository creation event."
+  },
+  {
+    "slug": "swe-bench-multimodal",
+    "name": "SWE-bench Multimodal",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2024-10-04",
+    "date_basis": "paper",
+    "date_url": "https://arxiv.org/abs/2410.03859",
+    "primary_url": "https://www.swebench.com/multimodal.html",
+    "protocol_url": "https://arxiv.org/abs/2410.03859",
+    "task": "Repository-level software engineering",
+    "description": "The initial multimodal software engineering release uses 517 issues with visual evidence from JavaScript projects.",
+    "input": "A repository, issue description and associated visual evidence",
+    "output": "A proposed repository patch",
+    "assessment": "Fraction of issues resolved on the original evaluation split.",
+    "input_modality": "Text / image / code",
+    "existing": false,
+    "reported_labels": [
+      "SWE-bench Multimodal"
+    ],
+    "aliases": [],
+    "date_note": "Original paper v1. An unversioned result reported after September 1, 2026 does not by itself establish use of the v2 test split."
+  },
+  {
+    "slug": "swe-bench-multimodal-v2",
+    "name": "SWE-bench Multimodal V2",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2026-09-01",
+    "date_basis": "released",
+    "date_url": "https://www.swebench.com/multimodal.html",
+    "primary_url": "https://www.swebench.com/multimodal.html",
+    "protocol_url": "https://www.swebench.com/multimodal.html",
+    "task": "Repository-level software engineering",
+    "description": "The V2 edition keeps 480 reproducible issues, drops flaky or ungradeable tests, and publishes its full test split and tooling.",
+    "input": "A repository, issue description and associated visual evidence",
+    "output": "A proposed repository patch",
+    "assessment": "Fraction of the V2 issues resolved, using the revised visual-asset and JavaScript evaluation pipeline.",
+    "input_modality": "Text / image / code",
+    "existing": false,
+    "reported_labels": [
+      "SWE-bench Multimodal V2"
+    ],
+    "aliases": [],
+    "date_note": ""
+  },
+  {
+    "slug": "swe-bench-multilingual",
+    "name": "SWE-bench Multilingual",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2025-04-29",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual/commit/7566cd247075886ef34453ff5582908c0255f5e6",
+    "primary_url": "https://www.swebench.com/multilingual.html",
+    "protocol_url": "https://www.swebench.com/multilingual.html",
+    "task": "Repository-level software engineering",
+    "description": "Evaluate repository patches on 300 tasks drawn from 42 repositories in nine programming languages. It is not Multi-SWE-bench.",
+    "input": "An issue description and project files in the task’s programming language",
+    "output": "A proposed repository patch",
+    "assessment": "Fraction of instances passing the task’s repository tests.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "SWE-bench Multilingual"
+    ],
+    "aliases": [],
+    "date_note": "First substantive maintainer dataset upload located. “Multilingual” refers to programming languages, not translations of the same prompts."
+  },
+  {
+    "slug": "swe-bench-pro",
+    "name": "SWE-Bench Pro",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2025-09-19",
+    "date_basis": "released",
+    "date_url": "https://scale.com/blog/swe-bench-pro",
+    "primary_url": "https://labs.scale.com/papers/swe-bench-pro",
+    "protocol_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
+    "task": "Repository-level software engineering",
+    "description": "Scale’s independently produced suite tests long-horizon engineering work. Public, held-out and commercial splits are not interchangeable.",
+    "input": "A repository snapshot and engineering requirement",
+    "output": "A proposed repository patch",
+    "assessment": "Task resolution under the specified split and repository test harness.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "SWE-bench Pro",
+      "SWE-bench Pro (public)"
+    ],
+    "aliases": [],
+    "date_note": "Scale’s Pro suite is distinct from the original Princeton-led dataset. Preserve public/held-out qualifiers; unsuffixed later reports need version evidence."
+  },
+  {
+    "slug": "swe-bench-pro-v2",
+    "name": "SWE-Bench Pro V2",
+    "family": "SWE-bench",
+    "domain": "Coding",
+    "date": "2026-09-22",
+    "date_basis": "released",
+    "date_url": "https://labs.scale.com/blog/swe-bench-pro-v2",
+    "primary_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2",
+    "protocol_url": "https://labs.scale.com/blog/swe-bench-pro-v2",
+    "task": "Repository-level software engineering",
+    "description": "Scale refreshes the public Pro split and its execution protocol, including validated checks and network-restricted evaluation.",
+    "input": "A repository snapshot and Pro V2 task specification",
+    "output": "A proposed repository patch",
+    "assessment": "Task resolution on the V2 public split under its published run protocol.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "SWE-Bench Pro V2",
+      "SWE-Bench Pro v2 (public)"
+    ],
+    "aliases": [],
+    "date_note": ""
+  },
+  {
+    "slug": "livecodebench",
+    "name": "LiveCodeBench v1",
+    "family": "LiveCodeBench",
+    "domain": "Coding",
+    "date": "2024-03-12",
+    "date_basis": "paper",
+    "date_url": "https://arxiv.org/abs/2403.07974",
+    "primary_url": "https://livecodebench.github.io/",
+    "protocol_url": "https://github.com/LiveCodeBench/LiveCodeBench#dataset-versions",
+    "task": "Competition programming",
+    "description": "The cumulative code-generation snapshot contains 400 problems from May 2023 through Mar 2024. A narrower contest-date filter selects a different evaluation.",
+    "input": "A contest problem statement and examples",
+    "output": "A program implementing the solution",
+    "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
+    "input_modality": "Text + code",
+    "existing": true,
+    "reported_labels": [
+      "LiveCodeBench v1",
+      "LiveCodeBench release_v1"
+    ],
+    "aliases": [],
+    "date_note": "Original public paper and substantive data upload share March 12 UTC.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2024-03-12",
+        "url": "https://huggingface.co/datasets/livecodebench/code_generation/commit/26e8134ece0d80c601f86fb22724b155ed6f070c",
+        "date_basis": "available_by",
+        "note": "Publisher dataset commit identifying the edition."
+      }
+    ]
+  },
+  {
+    "slug": "livecodebench-v2",
+    "name": "LiveCodeBench v2",
+    "family": "LiveCodeBench",
+    "domain": "Coding",
+    "date": "2024-06-02",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/356356a5c3a6baf7748838d82c5c36c62235ca50",
+    "primary_url": "https://livecodebench.github.io/",
+    "protocol_url": "https://github.com/LiveCodeBench/LiveCodeBench#dataset-versions",
+    "task": "Competition programming",
+    "description": "The cumulative code-generation snapshot contains 511 problems from May 2023 through May 2024. A narrower contest-date filter selects a different evaluation.",
+    "input": "A contest problem statement and examples",
+    "output": "A program implementing the solution",
+    "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "LiveCodeBench v2",
+      "LiveCodeBench release_v2"
+    ],
+    "aliases": [],
+    "date_note": "This date is the publisher’s versioned dataset commit, not the last contest date in the problem window.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2024-06-02",
+        "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/356356a5c3a6baf7748838d82c5c36c62235ca50",
+        "date_basis": "available_by",
+        "note": "Publisher dataset commit identifying the edition."
+      }
+    ]
+  },
+  {
+    "slug": "livecodebench-v3",
+    "name": "LiveCodeBench v3",
+    "family": "LiveCodeBench",
+    "domain": "Coding",
+    "date": "2024-08-12",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/b9e169151fc9cb803690a6b1a72f2f11a7da6334",
+    "primary_url": "https://livecodebench.github.io/",
+    "protocol_url": "https://github.com/LiveCodeBench/LiveCodeBench#dataset-versions",
+    "task": "Competition programming",
+    "description": "The cumulative code-generation snapshot contains 612 problems from May 2023 through Jul 2024. A narrower contest-date filter selects a different evaluation.",
+    "input": "A contest problem statement and examples",
+    "output": "A program implementing the solution",
+    "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "LiveCodeBench v3",
+      "LiveCodeBench release_v3"
+    ],
+    "aliases": [],
+    "date_note": "This date is the publisher’s versioned dataset commit, not the last contest date in the problem window.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2024-08-12",
+        "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/b9e169151fc9cb803690a6b1a72f2f11a7da6334",
+        "date_basis": "available_by",
+        "note": "Publisher dataset commit identifying the edition."
+      }
+    ]
+  },
+  {
+    "slug": "livecodebench-v4",
+    "name": "LiveCodeBench v4",
+    "family": "LiveCodeBench",
+    "domain": "Coding",
+    "date": "2024-10-06",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/ba046641bd2267166bf09d58c8594140c018cdfa",
+    "primary_url": "https://livecodebench.github.io/",
+    "protocol_url": "https://github.com/LiveCodeBench/LiveCodeBench#dataset-versions",
+    "task": "Competition programming",
+    "description": "The cumulative code-generation snapshot contains 713 problems from May 2023 through Sep 2024. A narrower contest-date filter selects a different evaluation.",
+    "input": "A contest problem statement and examples",
+    "output": "A program implementing the solution",
+    "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "LiveCodeBench v4",
+      "LiveCodeBench release_v4"
+    ],
+    "aliases": [],
+    "date_note": "This date is the publisher’s versioned dataset commit, not the last contest date in the problem window.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2024-10-06",
+        "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/ba046641bd2267166bf09d58c8594140c018cdfa",
+        "date_basis": "available_by",
+        "note": "Publisher dataset commit identifying the edition."
+      }
+    ]
+  },
+  {
+    "slug": "livecodebench-v5",
+    "name": "LiveCodeBench v5",
+    "family": "LiveCodeBench",
+    "domain": "Coding",
+    "date": "2025-01-14",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/0687ab61843a90a0cc864a2b67db729861cd0ae5",
+    "primary_url": "https://livecodebench.github.io/",
+    "protocol_url": "https://github.com/LiveCodeBench/LiveCodeBench#dataset-versions",
+    "task": "Competition programming",
+    "description": "The cumulative code-generation snapshot contains 880 problems from May 2023 through Jan 2025. A narrower contest-date filter selects a different evaluation.",
+    "input": "A contest problem statement and examples",
+    "output": "A program implementing the solution",
+    "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "LiveCodeBench v5",
+      "LiveCodeBench release_v5"
+    ],
+    "aliases": [],
+    "date_note": "This date is the publisher’s versioned dataset commit, not the last contest date in the problem window.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2025-01-14",
+        "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/0687ab61843a90a0cc864a2b67db729861cd0ae5",
+        "date_basis": "available_by",
+        "note": "Publisher dataset commit identifying the edition."
+      }
+    ]
+  },
+  {
+    "slug": "livecodebench-v6",
+    "name": "LiveCodeBench v6",
+    "family": "LiveCodeBench",
+    "domain": "Coding",
+    "date": "2025-04-21",
+    "date_basis": "available_by",
+    "date_url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/819a13a5c0347c1bd2f5600a35bc9ac9695d461b",
+    "primary_url": "https://livecodebench.github.io/",
+    "protocol_url": "https://github.com/LiveCodeBench/LiveCodeBench#dataset-versions",
+    "task": "Competition programming",
+    "description": "The cumulative code-generation snapshot contains 1,055 problems from May 2023 through Apr 2025. A narrower contest-date filter selects a different evaluation.",
+    "input": "A contest problem statement and examples",
+    "output": "A program implementing the solution",
+    "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
+    "input_modality": "Text + code",
+    "existing": false,
+    "reported_labels": [
+      "LiveCodeBench v6",
+      "LiveCodeBench release_v6"
+    ],
+    "aliases": [],
+    "date_note": "This date is the publisher’s versioned dataset commit, not the last contest date in the problem window.",
+    "alternative_dated_evidence": [
+      {
+        "date": "2025-04-21",
+        "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/commit/819a13a5c0347c1bd2f5600a35bc9ac9695d461b",
+        "date_basis": "available_by",
+        "note": "Publisher dataset commit identifying the edition."
+      }
+    ]
+  }
+]

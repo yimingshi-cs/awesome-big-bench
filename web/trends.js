@@ -53,8 +53,9 @@ function initTrends(){
   }
   range.oninput=()=>displayPoint(+range.value);one.onchange=draw;two.onchange=draw;win.onchange=draw;matchMedia('(max-width:640px)').addEventListener('change',draw);
   $('#trend-links').append(link('Download monthly counts',gh('data/monthly.csv')),link('Charts',repo+'/tree/main/figures'));
-  const ypick=$('#year-select');[...new Set(catalog.map(x=>x.date.slice(0,4)))].sort().reverse().forEach(y=>ypick.add(new Option(y,y)));
-  function milestones(){const host=$('#milestone-list');host.replaceChildren();for(const x of catalog.filter(x=>x.date.startsWith(ypick.value)).sort((a,b)=>a.date.localeCompare(b.date))){
+  const timeline=catalog.filter(x=>x.origin!=='report'&&x.date_basis!=='available_by');
+  const ypick=$('#year-select');[...new Set(timeline.map(x=>x.date.slice(0,4)))].sort().reverse().forEach(y=>ypick.add(new Option(y,y)));
+  function milestones(){const host=$('#milestone-list');host.replaceChildren();for(const x of timeline.filter(x=>x.date.startsWith(ypick.value)).sort((a,b)=>a.date.localeCompare(b.date))){
     const row=el('div',null,'milestone-row'),left=el('div');left.append(el('span',x.date,'date'),link(x.name,x.primary_url),el('small',displayDomain(x.domain)));row.append(left);
     const i=months.findIndex(m=>m.month===x.date.slice(0,7));if(i>=0)row.append(button('Show month',()=>{win.value='all';pos=i;draw();$('.plotbox').scrollIntoView({block:'center'});range.focus({preventScroll:true});},'subtle'));host.append(row);
   }}

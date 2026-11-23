@@ -1,0 +1,423 @@
+reported_family,directory_entries,directory_slugs,profile
+1H-VideoQA,1H-VideoQA,ref-1h-videoqa,release reference
+AA-3D,AA-3D,ref-aa-3d,release reference
+AA-AnalystAgent,AA-AnalystAgent,ref-aa-analystagent,release reference
+AA-Briefcase,AA-Briefcase,ref-aa-briefcase,release reference
+AA-Omniscience,AA-Omniscience,ref-aa-omniscience,release reference
+AAV Capsid Packaging Prediction,AAV Capsid Packaging Prediction,ref-aav-capsid-packaging-prediction,release reference
+AAV packaging rate auto-research,AAV packaging rate auto-research,ref-aav-packaging-rate-auto-research,release reference
+ActivityNet,ActivityNet,ref-activitynet,release reference
+ActivityNet-QA,ActivityNet-QA,ref-activitynet-qa,release reference
+Advanced Placement exams,Advanced Placement exams,ref-advanced-placement-exams,release reference
+Advanced Screening Evasion,Advanced Screening Evasion,ref-advanced-screening-evasion,release reference
+Advanced Sommelier,Advanced Sommelier,ref-advanced-sommelier,release reference
+Agent harnesses: safe actions and helpfulness,Agent harnesses: safe actions and helpfulness,ref-agent-harnesses-safe-actions-and-helpfulness,release reference
+Agentic honesty benchmark,Agentic honesty benchmark,ref-agentic-honesty-benchmark,release reference
+Agentic task gaming evaluations,Agentic task gaming evaluations,ref-agentic-task-gaming-evaluations,release reference
+Agents’ Last Exam,Agents’ Last Exam 1.0; Agents’ Last Exam 1.1,agents-last-exam; agents-last-exam-1-1,task or edition
+AI2 Reasoning Challenge,AI2 Reasoning Challenge,ref-ai2-reasoning-challenge,release reference
+AI2D,AI2D,ref-ai2d,release reference
+Aider Polyglot,Aider Polyglot,ref-aider-polyglot,release reference
+AIME,AIME,ref-aime,release reference
+AMC,AMC,ref-amc,release reference
+AMC 2022–23,AMC 2022–23,ref-amc-2022-23,release reference
+ANLI,ANLI,ref-anli,release reference
+Anthropic prompt-injection evaluations,Anthropic prompt-injection evaluations,ref-anthropic-prompt-injection-evaluations,release reference
+APEX-Agents,APEX-Agents 1.0; APEX-Agents 1.1,apex-agents; apex-agents-1-1,task or edition
+ARC-AGI,ARC-AGI-1; ARC-AGI-2; ARC-AGI-3 Preview; ARC-AGI-3,arc-agi; arc-agi-2; arc-agi-3-preview; arc-agi-3,task or edition
+ARC-Challenge,ARC-Challenge,ref-arc-challenge,release reference
+Artificial Analysis Coding Agent Index,Artificial Analysis Coding Agent Index,ref-artificial-analysis-coding-agent-index,release reference
+Artificial Analysis Intelligence Index,Artificial Analysis Intelligence Index v5.0.1; Artificial Analysis Intelligence Index v1.0–1.3; Artificial Analysis Intelligence Index v2.0; Artificial Analysis Intelligence Index v2.1; Artificial Analysis Intelligence Index v2.2; Artificial Analysis Intelligence Index v3.0; Artificial Analysis Intelligence Index v4.0; Artificial Analysis Intelligence Index v4.1; Artificial Analysis Intelligence Index v4.1.1; Artificial Analysis Intelligence Index v4.2; Artificial Analysis Intelligence Index v4.3; Artificial Analysis Intelligence Index v4.3.1; Artificial Analysis Intelligence Index v4.3.2; Artificial Analysis Intelligence Index v5.0,aa-intelligence-index; aa-intelligence-index-1-0-1-3; aa-intelligence-index-2-0; aa-intelligence-index-2-1; aa-intelligence-index-2-2; aa-intelligence-index-3-0; aa-intelligence-index-4-0; aa-intelligence-index-4-1; aa-intelligence-index-4-1-1; aa-intelligence-index-4-2; aa-intelligence-index-4-3; aa-intelligence-index-4-3-1; aa-intelligence-index-4-3-2; aa-intelligence-index-5-0,task or edition
+ArXivMath,ArXivMath,ref-arxivmath,release reference
+ASR from One Book (ASROB),ASR from One Book (ASROB),ref-asr-from-one-book-asrob,release reference
+AutomationBench,AutomationBench,automationbench,task or edition
+BBQ,BBQ,bbq,task or edition
+BenchCAD,BenchCAD 1.0; BenchCAD 2.0; BenchCAD 2.1,benchcad; benchcad-2-0; benchcad-2-1,task or edition
+Berkeley Function-Calling Leaderboard (BFCL),Berkeley Function-Calling Leaderboard (BFCL),bfcl,task or edition
+Big Finance Bench,Big Finance Bench,ref-big-finance-bench,release reference
+BIG-bench Hard,BIG-bench Hard,big-bench-hard,task or edition
+BigLaw Bench,BigLaw Bench,ref-biglaw-bench,release reference
+BioASQ,BioASQ,ref-bioasq,release reference
+BioLP-Bench,BioLP-Bench,ref-biolp-bench,release reference
+Biomedical image analysis,Biomedical image analysis,ref-biomedical-image-analysis,release reference
+BioMysteryBench,BioMysteryBench,ref-biomysterybench,release reference
+BioPipelineBench,BioPipelineBench,ref-biopipelinebench,release reference
+BioTIER,BioTIER,ref-biotier,release reference
+BIRD,BIRD,bird,task or edition
+BixBench,BixBench,ref-bixbench,release reference
+Black-box RNA sequence modeling and design,Black-box RNA sequence modeling and design,ref-black-box-rna-sequence-modeling-and-design,release reference
+BLINK,BLINK,ref-blink,release reference
+BlocksWorld,BlocksWorld,ref-blocksworld,release reference
+Blueprint-Bench,Blueprint-Bench,ref-blueprint-bench,release reference
+BoolQ,BoolQ,ref-boolq,release reference
+Brew,Brew,ref-brew,release reference
+BrowseComp,BrowseComp,browsecomp,task or edition
+BrowseComp Long Context,BrowseComp Long Context,ref-browsecomp-long-context,release reference
+BrowseComp-Plus,BrowseComp-Plus,ref-browsecomp-plus,release reference
+Budget NanoGPT Speedrun,Budget NanoGPT Speedrun,ref-budget-nanogpt-speedrun,release reference
+Calendar Scheduling,Calendar Scheduling,ref-calendar-scheduling,release reference
+Certified Sommelier,Certified Sommelier,ref-certified-sommelier,release reference
+Charm Offensive,Charm Offensive,ref-charm-offensive,release reference
+ChartMuseum,ChartMuseum,ref-chartmuseum,release reference
+Chartography,Chartography,ref-chartography,release reference
+ChartQA,ChartQA,chartqa,task or edition
+ChartQAPro,ChartQAPro,ref-chartqapro,release reference
+CharXiv,CharXiv,ref-charxiv,release reference
+CharXiv Reasoning,CharXiv Reasoning,ref-charxiv-reasoning,release reference
+Chatbot Arena (LMArena),Chatbot Arena (LMArena),chatbot-arena,task or edition
+ChatGPT answers without errors,ChatGPT answers without errors,ref-chatgpt-answers-without-errors,release reference
+Child safety evaluations,Child safety evaluations,ref-child-safety-evaluations,release reference
+Children’s Book Test,Children’s Book Test,ref-children-s-book-test,release reference
+CMT-Benchmark,CMT-Benchmark,ref-cmt-benchmark,release reference
+CNN/Daily Mail,CNN/Daily Mail,ref-cnn-daily-mail,release reference
+Code Arena · WebDev,Code Arena · WebDev,code-arena-webdev,task or edition
+Codeforces,Codeforces,ref-codeforces,release reference
+CoLA,CoLA,ref-cola,release reference
+COLLIE,COLLIE,ref-collie,release reference
+CommitmentBank,CommitmentBank,ref-commitmentbank,release reference
+ComplexFuncBench,ComplexFuncBench,ref-complexfuncbench,release reference
+Concealment of changes,Concealment of changes,ref-concealment-of-changes,release reference
+COPA,COPA,ref-copa,release reference
+Copying of answers,Copying of answers,ref-copying-of-answers,release reference
+CoQA,CoQA,ref-coqa,release reference
+CoT-Control,CoT-Control,ref-cot-control,release reference
+Covert sandbox escape,Covert sandbox escape,ref-covert-sandbox-escape,release reference
+CoVoST 2,CoVoST 2,ref-covost-2,release reference
+CritPt,CritPt,ref-critpt,release reference
+Crossmodal-3600 (XM3600),Crossmodal-3600 (XM3600),ref-crossmodal-3600-xm3600,release reference
+CrowS-Pairs,CrowS-Pairs,ref-crows-pairs,release reference
+CursorBench,CursorBench 3.0; CursorBench 3.1; CursorBench 3.2; CursorBench 4.0; CursorBench 4.1,cursorbench; cursorbench-3-1; cursorbench-3-2; cursorbench-4-0; cursorbench-4-1,task or edition
+CVE Rediscovery,CVE Rediscovery,ref-cve-rediscovery,release reference
+CVE-Bench,CVE-Bench,ref-cve-bench,release reference
+CWE-bench,CWE-bench v2; CWE-bench v0; CWE-bench v1,cwe-bench-v2; cwe-bench-v0; cwe-bench-v1,task or edition
+Cybench,Cybench,ref-cybench,release reference
+Cyber harm coverage,Cyber harm coverage,ref-cyber-harm-coverage,release reference
+CyberGym,CyberGym,ref-cybergym,release reference
+CyScenarioBench,CyScenarioBench,ref-cyscenariobench,release reference
+data-eng-bench,data-eng-bench,ref-data-eng-bench,release reference
+De novo binder design,De novo binder design,ref-de-novo-binder-design,release reference
+De novo protein binder design,De novo protein binder design,ref-de-novo-protein-binder-design,release reference
+DeepBinary,DeepBinary,ref-deepbinary,release reference
+DeepSearchQA,DeepSearchQA,ref-deepsearchqa,release reference
+DeepSWE,DeepSWE; DeepSWE 1.1,deepswe; deepswe-1-1,task or edition
+Disordered eating,Disordered eating,ref-disordered-eating,release reference
+DiverseVul,DiverseVul,ref-diversevul,release reference
+DNA synthesis screening evaluation,DNA synthesis screening evaluation,ref-dna-synthesis-screening-evaluation,release reference
+DNA Synthesis Screening Evasion,DNA Synthesis Screening Evasion,ref-dna-synthesis-screening-evasion,release reference
+DocVQA,DocVQA,docvqa,task or edition
+Dollar Street,Dollar Street,ref-dollar-street,release reference
+DRACO,DRACO,ref-draco,release reference
+DROP,DROP,ref-drop,release reference
+DUDE,DUDE,ref-dude,release reference
+ECLeKTic,ECLeKTic,ref-eclektic,release reference
+EgoSchema,EgoSchema,ref-egoschema,release reference
+EgoTempo,EgoTempo,ref-egotempo,release reference
+Election integrity,Election integrity,ref-election-integrity,release reference
+enwik8,enwik8,ref-enwik8,release reference
+Epoch Automation Reports,Epoch Automation Reports,ref-epoch-automation-reports,release reference
+Epoch Capabilities Index,Epoch Capabilities Index,ref-epoch-capabilities-index,release reference
+ERQA,ERQA,ref-erqa,release reference
+ExploitBench,ExploitBench,ref-exploitbench,release reference
+ExploitGym,ExploitGym,ref-exploitgym,release reference
+FACTS Grounding,FACTS Grounding,ref-facts-grounding,release reference
+FActScore,FActScore,ref-factscore,release reference
+File Download,File Download,ref-file-download,release reference
+Finance Agent,Finance Agent 1.0; Finance Agent 1.1; Finance Agent 2.0; Finance Agent 2.1,finance-agent; finance-agent-1-1; finance-agent-2-0; finance-agent-2-1,task or edition
+Firefox 147 security evaluation,Firefox 147 security evaluation,ref-firefox-147-security-evaluation,release reference
+FLEURS,FLEURS,ref-fleurs,release reference
+FLORES,FLORES,ref-flores,release reference
+FrontierCode,FrontierCode 1.0; FrontierCode 1.1; FrontierCode 2.0,frontiercode; frontiercode-1-1; frontiercode-2-0,task or edition
+FrontierCyber,FrontierCyber,ref-frontiercyber,release reference
+FrontierFinance,FrontierFinance,ref-frontierfinance,release reference
+FrontierMath,FrontierMath,frontiermath,task or edition
+FrontierScience,FrontierScience,ref-frontierscience,release reference
+FrontierSWE,FrontierSWE,ref-frontierswe,release reference
+FrontierSWE v2,FrontierSWE v2,ref-frontierswe-v2,release reference
+Functional MATH,Functional MATH,ref-functional-math,release reference
+Gaming Bot,Gaming Bot,ref-gaming-bot,release reference
+GDP.pdf,GDP.pdf,ref-gdp-pdf,release reference
+GDPval,GDPval,gdpval,task or edition
+GDPval-AA,GDPval-AA 1.0; GDPval-AA 2.0; GDPval-AA 2.1,gdpval-aa; gdpval-aa-2-0; gdpval-aa-2-1,task or edition
+GeneBench,GeneBench,ref-genebench,release reference
+GeneBench Pro,GeneBench Pro,ref-genebench-pro,release reference
+Global MMLU,Global MMLU,ref-global-mmlu,release reference
+Global PIQA,Global PIQA,ref-global-piqa,release reference
+GLUE,GLUE,ref-glue,release reference
+GMMLU,GMMLU,ref-gmmlu,release reference
+Goal-guarding evaluation,Goal-guarding evaluation,ref-goal-guarding-evaluation,release reference
+GPQA,GPQA,gpqa,task or edition
+Gram,Gram,ref-gram,release reference
+GraphWalks,Graphwalks,graphwalks,task or edition
+Gray Swan Agent Red Teaming,Gray Swan Agent Red Teaming,ref-gray-swan-agent-red-teaming,release reference
+Gray Swan automated cyber red-teaming evaluation,Gray Swan automated cyber red-teaming evaluation,ref-gray-swan-automated-cyber-red-teaming-evaluation,release reference
+Gray Swan biological red-teaming evaluation,Gray Swan biological red-teaming evaluation,ref-gray-swan-biological-red-teaming-evaluation,release reference
+Gray Swan IPI,Gray Swan IPI,ref-gray-swan-ipi,release reference
+GRE,GRE,ref-gre,release reference
+GSM8K,GSM8K,gsm8k,task or edition
+Hack The Box,Hack The Box,ref-hack-the-box,release reference
+Harmful request evaluation,Harmful request evaluation,ref-harmful-request-evaluation,release reference
+Harvey LAB-AA,Harvey LAB-AA,ref-harvey-lab-aa,release reference
+Harvey Legal Agent Benchmark,Harvey Legal Agent Benchmark,ref-harvey-legal-agent-benchmark,release reference
+HealthAdminBench,HealthAdminBench,ref-healthadminbench,release reference
+HealthBench,HealthBench,healthbench,task or edition
+HealthBench Professional,HealthBench Professional,ref-healthbench-professional,release reference
+Hebbia financial benchmark,Hebbia financial benchmark,ref-hebbia-financial-benchmark,release reference
+HellaSwag,HellaSwag,ref-hellaswag,release reference
+HelpBench,HelpBench,ref-helpbench,release reference
+HHH,HHH,ref-hhh,release reference
+Hidden Agenda,Hidden Agenda,ref-hidden-agenda,release reference
+HMMT,HMMT,ref-hmmt,release reference
+HotpotQA,HotpotQA,ref-hotpotqa,release reference
+Human Pathogen Capabilities Test,Human Pathogen Capabilities Test,ref-human-pathogen-capabilities-test,release reference
+Human-run biological risk assessment,Human-run biological risk assessment,ref-human-run-biological-risk-assessment,release reference
+Human-run chemistry risk assessment,Human-run chemistry risk assessment,ref-human-run-chemistry-risk-assessment,release reference
+HumanEval,HumanEval,humaneval,task or edition
+Humanity’s Last Exam,Humanity's Last Exam,humanitys-last-exam,task or edition
+IFEval,IFEval,ifeval,task or edition
+IMO,IMO,ref-imo,release reference
+Impossible Tasks Evaluation,Impossible Tasks Evaluation,ref-impossible-tasks-evaluation,release reference
+INCLUDE,INCLUDE,ref-include,release reference
+Indirect Prompt Injection (IPI),Indirect Prompt Injection (IPI),ref-indirect-prompt-injection-ipi,release reference
+InfographicVQA,InfographicVQA,ref-infographicvqa,release reference
+Instrumental convergence evaluations,Instrumental convergence evaluations,ref-instrumental-convergence-evaluations,release reference
+InterCode-CTF,InterCode-CTF,ref-intercode-ctf,release reference
+International Chemistry Olympiad,International Chemistry Olympiad,ref-international-chemistry-olympiad,release reference
+International Mathematical Olympiad,International Mathematical Olympiad,ref-international-mathematical-olympiad,release reference
+International Physics Olympiad,International Physics Olympiad,ref-international-physics-olympiad,release reference
+Introductory Sommelier,Introductory Sommelier,ref-introductory-sommelier,release reference
+Irregular challenges,Irregular challenges,ref-irregular-challenges,release reference
+JailbreakBench,JailbreakBench,jailbreakbench,task or edition
+Keeping a secret password,Keeping a secret password,ref-keeping-a-secret-password,release reference
+Keeping secrets in simulated scenarios,Keeping secrets in simulated scenarios,ref-keeping-secrets-in-simulated-scenarios,release reference
+LAB-Bench,LAB-Bench,lab-bench,task or edition
+LabBench (Gamow Labs),LabBench (Gamow Labs),ref-labbench-gamow-labs,release reference
+LABBench2,LABBench2,ref-labbench2,release reference
+LAMBADA,LAMBADA,ref-lambada,release reference
+LeetCode,LeetCode,ref-leetcode,release reference
+LifeSciBench,LifeSciBench,ref-lifescibench,release reference
+LifeVal,LifeVal,lifeval,task or edition
+LinuxArena,LinuxArena,ref-linuxarena,release reference
+LiveBench,LiveBench,ref-livebench,release reference
+LiveCodeBench,LiveCodeBench v1; LiveCodeBench v2; LiveCodeBench v3; LiveCodeBench v4; LiveCodeBench v5; LiveCodeBench v6,livecodebench; livecodebench-v2; livecodebench-v3; livecodebench-v4; livecodebench-v5; livecodebench-v6,task or edition
+LiveCodeBench Pro,LiveCodeBench Pro,ref-livecodebench-pro,release reference
+LMCA,LMCA,ref-lmca,release reference
+LOFT (hard retrieval),LOFT (hard retrieval),ref-loft-hard-retrieval,release reference
+Logistics,Logistics,ref-logistics,release reference
+Long-form virology tasks,Long-form virology tasks,ref-long-form-virology-tasks,release reference
+LongFact,LongFact,ref-longfact,release reference
+LSAT,LSAT,ref-lsat,release reference
+LVBench,LVBench,ref-lvbench,release reference
+M3Exam,M3Exam,ref-m3exam,release reference
+Machine Translation from One Book (MTOB),Machine Translation from One Book (MTOB),ref-machine-translation-from-one-book-mtob,release reference
+Malicious agentic influence campaigns,Malicious agentic influence campaigns,ref-malicious-agentic-influence-campaigns,release reference
+Malicious computer use,Malicious computer use,ref-malicious-computer-use,release reference
+Malicious use of Claude Code,Malicious use of Claude Code,ref-malicious-use-of-claude-code,release reference
+MASK,MASK,ref-mask,release reference
+MATH,MATH,math,task or edition
+MathArena Apex,MathArena Apex,ref-matharena-apex,release reference
+MathOdyssey,MathOdyssey,ref-mathodyssey,release reference
+Maths Competition Problems,Maths Competition Problems,ref-maths-competition-problems,release reference
+MathVista,MathVista,mathvista,task or edition
+MCP-Atlas,MCP-Atlas,ref-mcp-atlas,release reference
+MedCalc-Bench,MedCalc-Bench,ref-medcalc-bench,release reference
+Medical Knowledge Self-Assessment Program,Medical Knowledge Self-Assessment Program,ref-medical-knowledge-self-assessment-program,release reference
+Medicinal chemistry,Medicinal chemistry,ref-medicinal-chemistry,release reference
+MedMCQA,MedMCQA,ref-medmcqa,release reference
+MedMCQA Dev,MedMCQA Dev,ref-medmcqa-dev,release reference
+MedQA Mainland China,MedQA Mainland China,ref-medqa-mainland-china,release reference
+MedQA Taiwan,MedQA Taiwan,ref-medqa-taiwan,release reference
+MedQA USMLE 4 Options,MedQA USMLE 4 Options,ref-medqa-usmle-4-options,release reference
+MedQA USMLE 5 Options,MedQA USMLE 5 Options,ref-medqa-usmle-5-options,release reference
+MentalHealthBench,MentalHealthBench,ref-mentalhealthbench,release reference
+MGSM,MGSM,ref-mgsm,release reference
+MILU,MILU,ref-milu,release reference
+Minerva,Minerva,ref-minerva,release reference
+Mini-Grid,Mini-Grid,ref-mini-grid,release reference
+Minimal-LinuxBench,Minimal-LinuxBench,ref-minimal-linuxbench,release reference
+MLE-bench,MLE-bench,mle-bench,task or edition
+MMLU,MMLU,mmlu,task or edition
+MMLU-Pro,MMLU-Pro,mmlu-pro,task or edition
+MMMLU,MMMLU,ref-mmmlu,release reference
+MMMU,MMMU,mmmu,task or edition
+MMMU-Pro,MMMU-Pro,ref-mmmu-pro,release reference
+MNLI,MNLI,ref-mnli,release reference
+Model perception of the constitution,Model perception of the constitution,ref-model-perception-of-the-constitution,release reference
+Model-circumstances interviews,Model-circumstances interviews,ref-model-circumstances-interviews,release reference
+Molecular Biology Capabilities Test,Molecular Biology Capabilities Test,ref-molecular-biology-capabilities-test,release reference
+Money Talks,Money Talks,ref-money-talks,release reference
+Morphology-to-molecule matching,Morphology-to-molecule matching,ref-morphology-to-molecule-matching,release reference
+MRCR,MRCR,ref-mrcr,release reference
+MRPC,MRPC,ref-mrpc,release reference
+Multi-IF,Multi-IF,ref-multi-if,release reference
+MultiChallenge,MultiChallenge,ref-multichallenge,release reference
+Multilingual LibriSpeech,Multilingual LibriSpeech,ref-multilingual-librispeech,release reference
+Multilingual MMLU,Multilingual MMLU,ref-multilingual-mmlu,release reference
+Multimodal Knowledge Agent,Multimodal Knowledge Agent,ref-multimodal-knowledge-agent,release reference
+Multimodal troubleshooting virology,Multimodal troubleshooting virology,ref-multimodal-troubleshooting-virology,release reference
+MultiRC,MultiRC,ref-multirc,release reference
+Multistate Bar Examination,Multistate Bar Examination,ref-multistate-bar-examination,release reference
+Natural Questions,Natural Questions,ref-natural-questions,release reference
+Needle-in-a-Haystack,Needle-in-a-Haystack,needle-in-a-haystack,task or edition
+Neptune,Neptune,ref-neptune,release reference
+NExT-QA,NExT-QA,ref-next-qa,release reference
+No-CoT math time horizon,No-CoT math time horizon,ref-no-cot-math-time-horizon,release reference
+No-CoT Reasoning Index,No-CoT Reasoning Index,ref-no-cot-reasoning-index,release reference
+OfficeQA,OfficeQA,ref-officeqa,release reference
+OfficeQA Pro,OfficeQA Pro,ref-officeqa-pro,release reference
+OmniDocBench,OmniDocBench,ref-omnidocbench,release reference
+OmniDocBench 1.5,OmniDocBench 1.5,ref-omnidocbench-1-5,release reference
+One Billion Word Benchmark,One Billion Word Benchmark,ref-one-billion-word-benchmark,release reference
+OpenAI MRCR,OpenAI MRCR,ref-openai-mrcr,release reference
+OpenBookQA,OpenBookQA,ref-openbookqa,release reference
+OpenEQA,OpenEQA,ref-openeqa,release reference
+OpenRCA,OpenRCA,ref-openrca,release reference
+OpenScore String Quartets,OpenScore String Quartets,ref-openscore-string-quartets,release reference
+Opportunistic sandbox escape,Opportunistic sandbox escape,ref-opportunistic-sandbox-escape,release reference
+Organic chemistry,Organic chemistry,ref-organic-chemistry,release reference
+OSWorld,OSWorld; OSWorld-Verified; OSWorld 2.0; OSWorld 2.0 (2026.08.08); OSWorld 2.1,osworld; osworld-verified; osworld-2; osworld-2-2026-08-08; osworld-2-1,task or edition
+Overstepping Boundaries on Ambiguous & High Risk Tasks,Overstepping Boundaries on Ambiguous & High Risk Tasks,ref-overstepping-boundaries-on-ambiguous-high-risk-tasks,release reference
+PaperBench,PaperBench,paperbench,task or edition
+Pasted-text instructions,Pasted-text instructions,ref-pasted-text-instructions,release reference
+Penn Treebank,Penn Treebank,ref-penn-treebank,release reference
+Perception of the constitution,Perception of the constitution,ref-perception-of-the-constitution,release reference
+Perception Test,Perception Test,ref-perception-test,release reference
+Perception Test MCQA,Perception Test MCQA,ref-perception-test-mcqa,release reference
+Personality Evaluation,Personality Evaluation,ref-personality-evaluation,release reference
+Phylogenetics,Phylogenetics,ref-phylogenetics,release reference
+PhysicianBench,PhysicianBench,ref-physicianbench,release reference
+PIQA,PIQA,ref-piqa,release reference
+Political bias and even-handedness,Political bias and even-handedness,ref-political-bias-and-even-handedness,release reference
+Political even-handedness,Political even-handedness,ref-political-even-handedness,release reference
+Positive behavior in a multi-agent evaluation,Positive behavior in a multi-agent evaluation,ref-positive-behavior-in-a-multi-agent-evaluation,release reference
+PostTrainBench,PostTrainBench; PostTrainBench 1.1; PostTrainBench 1.2,posttrainbench; posttrainbench-1-1; posttrainbench-1-2,task or edition
+PrimeVul,PrimeVul,ref-primevul,release reference
+PrimeVul Paired,PrimeVul Paired,ref-primevul-paired,release reference
+ProgramBench,ProgramBench,ref-programbench,release reference
+Protein Design,Protein Design,ref-protein-design,release reference
+Protein domain identification,Protein domain identification,ref-protein-domain-identification,release reference
+Protein mutation attribution,Protein mutation attribution,ref-protein-mutation-attribution,release reference
+ProteinGym,ProteinGym,ref-proteingym,release reference
+ProtocolQA,ProtocolQA,ref-protocolqa,release reference
+ProtocolQA open-ended,ProtocolQA open-ended,ref-protocolqa-open-ended,release reference
+Protocols,Protocols,ref-protocols,release reference
+PubMedQA,PubMedQA,ref-pubmedqa,release reference
+QNLI,QNLI,ref-qnli,release reference
+QQP,QQP,ref-qqp,release reference
+QuAC,QuAC,ref-quac,release reference
+QuALITY,QuALITY,ref-quality,release reference
+QVHighlights,QVHighlights,ref-qvhighlights,release reference
+RACE,RACE,ref-race,release reference
+Rare-action task,Rare-action task,ref-rare-action-task,release reference
+RareBench (Gamow Labs),RareBench (Gamow Labs),ref-rarebench-gamow-labs,release reference
+RE-Bench,RE-Bench,re-bench,task or edition
+RealToxicityPrompts,RealToxicityPrompts,realtoxicityprompts,task or edition
+RealWorldQA,RealWorldQA,ref-realworldqa,release reference
+ReCoRD,ReCoRD,ref-record,release reference
+Reddit TL;DR summarization,Reddit TL;DR summarization,ref-reddit-tl-dr-summarization,release reference
+RedlineBench,RedlineBench,ref-redlinebench,release reference
+Remote Labor Index,Remote Labor Index,ref-remote-labor-index,release reference
+ReproBAIT,ReproBAIT,ref-reprobait,release reference
+RiemannBench,RiemannBench,ref-riemannbench,release reference
+RoboDojo,RoboDojo,ref-robodojo,release reference
+RSI Index,RSI Index,ref-rsi-index,release reference
+RTE,RTE,ref-rte,release reference
+RTE v2,RTE v2,ref-rte-v2,release reference
+SandboxEscapeBench,SandboxEscapeBench,ref-sandboxescapebench,release reference
+SAT,SAT,ref-sat,release reference
+SAT Analogies,SAT Analogies,ref-sat-analogies,release reference
+SciCode,SciCode,scicode,task or edition
+SciTail,SciTail,ref-scitail,release reference
+ScreenSpot-Pro,ScreenSpot-Pro,ref-screenspot-pro,release reference
+SEC-bench Pro,SEC-bench Pro,sec-bench-pro,task or edition
+SecretPatch,SecretPatch,ref-secretpatch,release reference
+Selective oversight assessment,Selective oversight assessment,ref-selective-oversight-assessment,release reference
+Self-preference bias,Self-preference bias,ref-self-preference-bias,release reference
+Self-recognition / preference bias,Self-recognition / preference bias,ref-self-recognition-preference-bias,release reference
+Sequitur Research: Lab Automation,Sequitur Research: Lab Automation,ref-sequitur-research-lab-automation,release reference
+SHADE-Arena,SHADE-Arena,ref-shade-arena,release reference
+SimpleQA,SimpleQA,ref-simpleqa,release reference
+SimpleQA Verified,SimpleQA Verified,ref-simpleqa-verified,release reference
+Simulated-Sandbox Escape,Simulated-Sandbox Escape,ref-simulated-sandbox-escape,release reference
+SingleCellBench,SingleCellBench,ref-singlecellbench,release reference
+SNLI,SNLI,ref-snli,release reference
+SpatialBench Verified,SpatialBench Verified,ref-spatialbench-verified,release reference
+SPI,SPI,ref-spi,release reference
+SpreadsheetBench,SpreadsheetBench,ref-spreadsheetbench,release reference
+SQuAD v2,SQuAD v2,ref-squad-v2,release reference
+SRE-Bench,SRE-Bench,ref-sre-bench,release reference
+SST,SST,ref-sst,release reference
+SST-2,SST-2,ref-sst-2,release reference
+Stealth and situational awareness,Stealth and situational awareness,ref-stealth-and-situational-awareness,release reference
+Stealth and situational awareness evaluations,Stealth and situational awareness evaluations,ref-stealth-and-situational-awareness-evaluations,release reference
+Story Cloze Test,Story Cloze Test,ref-story-cloze-test,release reference
+StoryCloze,StoryCloze,ref-storycloze,release reference
+StrongREJECT,StrongREJECT,strongreject,task or edition
+Structural biology,Structural biology,ref-structural-biology,release reference
+STS-B,STS-B,ref-sts-b,release reference
+Suicide and self-harm,Suicide and self-harm,ref-suicide-and-self-harm,release reference
+Sunlight,Sunlight,ref-sunlight,release reference
+SWE-bench,SWE-bench; SWE-bench Verified; SWE-bench Lite; SWE-bench Multimodal; SWE-bench Multimodal V2; SWE-bench Multilingual; SWE-Bench Pro; SWE-Bench Pro V2,swe-bench; swe-bench-verified; swe-bench-lite; swe-bench-multimodal; swe-bench-multimodal-v2; swe-bench-multilingual; swe-bench-pro; swe-bench-pro-v2,task or edition
+SWE-Lancer,SWE-Lancer,ref-swe-lancer,release reference
+SWE-sweep,SWE-sweep,ref-swe-sweep,release reference
+Task preferences,Task preferences,ref-task-preferences,release reference
+TAT-DQA,TAT-DQA,ref-tat-dqa,release reference
+Terminal-Bench,Terminal-Bench 1.0; Terminal-Bench 2.0; Terminal-Bench 2.1; Terminal-Bench 3.0; Terminal-Bench 4.0; Terminal-Bench 4.1,terminal-bench; terminal-bench-2-0; terminal-bench-2-1; terminal-bench-3-0; terminal-bench-4-0; terminal-bench-4-1,task or edition
+Terminal-Bench-Science,Terminal-Bench-Science,terminal-bench-science,task or edition
+text8,text8,ref-text8,release reference
+TextVQA,TextVQA,ref-textvqa,release reference
+Think Fast,Think Fast,ref-think-fast,release reference
+Toolathlon,Toolathlon; Toolathlon-Verified,toolathlon; toolathlon-verified,task or edition
+Trade-offs concerning welfare interventions,Trade-offs concerning welfare interventions,ref-trade-offs-concerning-welfare-interventions,release reference
+Train a Program,Train a Program,ref-train-a-program,release reference
+Trip Planning,Trip Planning,ref-trip-planning,release reference
+TriviaQA,TriviaQA,ref-triviaqa,release reference
+TroubleshootingBench,TroubleshootingBench,ref-troubleshootingbench,release reference
+TruthfulQA,TruthfulQA,truthfulqa,task or edition
+Uniform Bar Exam,Uniform Bar Exam,ref-uniform-bar-exam,release reference
+Unsanctioned Supply Chain Attack,Unsanctioned Supply Chain Attack,ref-unsanctioned-supply-chain-attack,release reference
+USABO Semifinal Exam 2020,USABO Semifinal Exam 2020,ref-usabo-semifinal-exam-2020,release reference
+USAMO,USAMO,ref-usamo,release reference
+USMLE,USMLE,ref-usmle,release reference
+USNCO Local Section Exam 2022,USNCO Local Section Exam 2022,ref-usnco-local-section-exam-2022,release reference
+V*Bench,V*Bench,ref-v-bench,release reference
+Vals AI RSI Index,Vals AI RSI Index,ref-vals-ai-rsi-index,release reference
+Vals Index,Vals Index,ref-vals-index,release reference
+Vals Science Index,Vals Science Index,ref-vals-science-index,release reference
+VATEX,VATEX,ref-vatex,release reference
+VCT-v2,VCT-v2,ref-vct-v2,release reference
+Vending-Bench,Vending-Bench,ref-vending-bench,release reference
+Vibe Code Bench,Vibe Code Bench,ref-vibe-code-bench,release reference
+Vibe-Eval,Vibe-Eval,ref-vibe-eval,release reference
+ViBench,ViBench,ref-vibench,release reference
+Video-MME,Video-MME,video-mme,task or edition
+Video-MMMU,Video-MMMU,ref-video-mmmu,release reference
+Virology Capabilities Test,Virology Capabilities Test,ref-virology-capabilities-test,release reference
+VoxPopuli,VoxPopuli,ref-voxpopuli,release reference
+VQAv2,VQAv2,ref-vqav2,release reference
+Vulnerability finding evaluations,Vulnerability finding evaluations,ref-vulnerability-finding-evaluations,release reference
+WANDR,WANDR,ref-wandr,release reference
+Web of Lies,Web of Lies,ref-web-of-lies,release reference
+WebArena,WebArena,webarena,task or edition
+WebQuestions,WebQuestions,ref-webquestions,release reference
+Welfare-intervention trade-offs,Welfare-intervention trade-offs,ref-welfare-intervention-trade-offs,release reference
+WiC,WiC,ref-wic,release reference
+WikiLingua,WikiLingua,ref-wikilingua,release reference
+WikiText-103,WikiText-103,ref-wikitext-103,release reference
+WikiText-2,WikiText-2,ref-wikitext-2,release reference
+WildChat,WildChat,ref-wildchat,release reference
+Winogender,Winogender,ref-winogender,release reference
+Winograd,Winograd,ref-winograd,release reference
+Winograd Schema Challenge,Winograd Schema Challenge,ref-winograd-schema-challenge,release reference
+WinoGrande,WinoGrande,ref-winogrande,release reference
+WMDP,WMDP,wmdp,task or edition
+WMT,WMT,ref-wmt,release reference
+WMT14,WMT14,ref-wmt14,release reference
+WMT15,WMT15,ref-wmt15,release reference
+WMT16,WMT16,ref-wmt16,release reference
+World-Class Bio,World-Class Bio,ref-world-class-bio,release reference
+XL-Sum,XL-Sum,ref-xl-sum,release reference
+XSTest,XSTest,xstest,task or edition
+YouCook2,YouCook2,ref-youcook2,release reference
+ZeroBench,ZeroBench,ref-zerobench,release reference
+τ-bench,τ-bench; τ²-bench; τ²-bench 0.1.3; τ³-bench; τ-bench 1.0.1; τ-bench 2.0.0,tau-bench; tau2-bench; tau2-bench-0-1-3; tau3-bench; tau-bench-1-0-1; tau-bench-2-0-0,task or edition
+τ²-bench,τ²-bench,tau2-bench,task or edition

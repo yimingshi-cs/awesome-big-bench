@@ -1,0 +1,114 @@
+slug,series,modalities,date_basis
+arc-agi,ARC-AGI,Visual grids,paper
+alfred,ALFRED,Text + vision + state,paper
+docvqa,DocVQA,Text + image,public_record
+mmlu,MMLU,Text,paper
+realtoxicityprompts,RealToxicityPrompts,Text,paper
+codexglue,CodeXGLUE,Text + code,public_record
+math,MATH,Text,paper
+big-bench,BIG-bench,Text,public_record
+apps,APPS,Text + code,paper
+humaneval,HumanEval,Text + code,paper
+mbpp,MBPP,Text,paper
+truthfulqa,TruthfulQA,Text,paper
+bbq,BBQ,Text,paper
+gsm8k,GSM8K,Text,paper
+calvin,CALVIN,Text + vision + state,paper
+codecontests,CodeContests,Text + code,public_record
+toxigen,ToxiGen,Text,paper
+chartqa,ChartQA,Text + image,paper
+webshop,WebShop,Text + environment,paper
+behavior-1k,BEHAVIOR-1K,Vision + state,paper
+maniskill2,ManiSkill2,Vision + state,tag
+scienceqa,ScienceQA,Text + image,paper
+vima,VIMA-Bench,Text + vision + state,paper
+big-bench-hard,BIG-bench,Text,paper
+helm,HELM,Text,paper
+machiavelli,MACHIAVELLI,Text + environment,paper
+agieval,AGIEval,Text,paper
+api-bank,API-Bank,Text + tools,paper
+evalplus,EvalPlus,Text,paper
+chatbot-arena,Chatbot Arena (LMArena),Text,public_record
+bird,BIRD,Text + tables,paper
+pope,POPE,Text + image,paper
+furniturebench,FurnitureBench,Vision + state,paper
+libero,LIBERO,Text + vision + state,paper
+mind2web,Mind2Web,Text + environment,paper
+decodingtrust,DecodingTrust,Text,paper
+mme,MME,Text + image,paper
+mmbench,MMBench,Text + image,paper
+l-eval,L-Eval,Text,paper
+webarena,WebArena,Text + environment,paper
+longbench,LongBench,Text,available_by
+toolbench,ToolBench,Text + tools,paper
+xstest,XSTest,Text,paper
+agentbench,AgentBench,Text + environment,paper
+safetybench,SafetyBench,Text,paper
+mathvista,MathVista,Text + image,paper
+mlagentbench,MLAgentBench,Text + files,paper
+swe-bench,SWE-bench,Text + code,paper
+needle-in-a-haystack,Needle-in-a-Haystack,Text,announcement
+ifeval,IFEval,Text,paper
+gpqa,GPQA,Text,paper
+gaia,GAIA,Text + files,paper
+mmmu,MMMU,Text + image,paper
+mvbench,MVBench,Text + video,paper
+cyberseceval,CyberSecEval,Text,paper
+harmbench,HarmBench,Text,paper
+salad-bench,SALAD-Bench,Text,paper
+strongreject,StrongREJECT,Text,paper
+infinitebench,InfiniteBench,Text,paper
+olympiadbench,OlympiadBench,Text + image,paper
+bfcl,Berkeley Function-Calling Leaderboard (BFCL),Text + tools,announcement
+locomo,LoCoMo,Text,paper
+wmdp,WMDP,Text,paper
+livecodebench,LiveCodeBench,Text + code,paper
+jailbreakbench,JailbreakBench,Text,paper
+ruler,RULER,Text,paper
+osworld,OSWorld,Text + environment,paper
+androidworld,AndroidWorld,Text + environment,paper
+video-mme,Video-MME,Text + video + audio,paper
+mmlu-pro,MMLU,Text,paper
+robocasa,RoboCasa,Text + vision + state,paper
+discoveryworld,DiscoveryWorld,Text + environment,paper
+babilong,BABILong,Text,paper
+tau-bench,τ-bench,Text + tools,paper
+discoverybench,DiscoveryBench,Text + files,paper
+lab-bench,LAB-Bench,Text,paper
+scicode,SciCode,Text + code,paper
+swe-bench-verified,SWE-bench,Text + code,announcement
+dsbench,DSBench,Text + tables,paper
+core-bench,CORE-Bench,Text + files,paper
+helmet,HELMET,Text,paper
+scienceagentbench,ScienceAgentBench,Text + files,paper
+mle-bench,MLE-bench,Text + files,paper
+longmemeval,LongMemEval,Text,paper
+frontiermath,FrontierMath,Text,paper
+re-bench,RE-Bench,Text + environment,paper
+code-arena-webdev,Code Arena · WebDev,Text,public_record
+longbench-v2,LongBench,Text,paper
+vlabench,VLABench,Text + vision + state,paper
+humanitys-last-exam,Humanity's Last Exam,Text + image,announcement
+aa-intelligence-index,Artificial Analysis Intelligence Index,Evaluation scores,available_by
+embodiedbench,EmbodiedBench,Text + vision + state,paper
+arc-agi-2,ARC-AGI,Visual grids,announcement
+paperbench,PaperBench,Text + files,paper
+browsecomp,BrowseComp,Text,announcement
+graphwalks,Graphwalks,Text + graphs,available_by
+healthbench,HealthBench,Text,announcement
+terminal-bench,Terminal-Bench,Text + environment,public_record
+gdpval,GDPval,Text + files,public_record
+toolathlon,Toolathlon,Text + tools,announcement
+apex-agents,APEX-Agents,Text + files,announcement
+lifeeval,LifeEval,Text + video,paper
+posttrainbench,PostTrainBench,Text + model,paper
+arc-agi-3,ARC-AGI,Interactive grids,paper
+automationbench,AutomationBench,Text + files,public_record
+sec-bench-pro,SEC-bench Pro,Text + environment,public_record
+deepswe,DeepSWE,Text + code,public_record
+gamecraft-bench,GameCraft-Bench,Text,paper
+terminal-bench-science,Terminal-Bench-Science,Text + environment,announcement
+lifeval,LifeVal,Text + files,public_record
+cwe-bench-v2,CWE-bench,Text + code,announcement
+frontier-rsi,FrontierRSI,Text + environment,public_record
+webexploitbench-v12,WebExploitBench v1.2,Text + environment,available_by
