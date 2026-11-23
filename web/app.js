@@ -1,5 +1,5 @@
 'use strict';
-const {catalog, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog} = JSON.parse(document.querySelector('#payload').textContent);
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
   const node = document.createElement(tag);
@@ -35,10 +35,10 @@ function renderTrendComparison(){
 }
 
 const labNames=rows=>['OpenAI','Anthropic','Google'].filter(l=>rows.some(r=>r.vendor===l)).join(', ');
-function reportDetails(box,key){
+function reportDetails(box,key,label='Release reports'){
   if(!key)return;
   const rows=mapEvidence.reports[key],details=el('details',null,'report-sources');
-  details.append(el('summary','Release reports · '+labNames(rows)));
+  details.append(el('summary',label+' · '+labNames(rows)));
   for(const lab of ['OpenAI','Anthropic','Google']){
     const own=rows.filter(r=>r.vendor===lab).sort((a,b)=>b.date.localeCompare(a.date));
     if(!own.length)continue;
@@ -52,10 +52,9 @@ function reportDetails(box,key){
     if(long)group.append(el('summary',lab+' · '+list.size+(list.size===1?' release':' releases')));
     for(const [model,variants] of list){
       const row=el('div',null,'reported-versions');row.append(el('strong',model));
-      const labels=[...variants.values()].map(r=>r.benchmark);
       for(const r of variants.values()){
         const a=link(r.benchmark,r.release_url);a.title=r.location;row.append(a);
-        if(r.qualifier && labels.filter(s=>s===r.benchmark).length>1)row.append(el('small',r.qualifier));
+        if(r.qualifier)row.append(el('small',r.qualifier));
         if(/Mercor|third.party|third party|cited measurement|partner evaluation/i.test(r.location))row.append(el('small',r.location));
       }
       group.append(row);

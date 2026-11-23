@@ -10,8 +10,8 @@ Earlier general-purpose and reasoning-model releases: [historical sources and li
 |---|---|---|---:|---:|---:|
 | OpenAI | GPT-6.2 Astra and Sol | 2026-11-17 | 12 | 40 | 39 |
 | OpenAI | GPT-6.1 Sol | 2026-09-29 | 5 | 18 | 16 |
-| Anthropic | Claude Fable 5.2 / Claude Mythos 5.2 | 2026-11-09 | 15 | 109 | 91 |
-| Anthropic | Claude Fable 5.1 / Claude Mythos 5.1 | 2026-09-01 | 9 | 91 | 72 |
+| Anthropic | Claude Fable 5.2 / Claude Mythos 5.2 | 2026-11-09 | 15 | 109 | 92 |
+| Anthropic | Claude Fable 5.1 / Claude Mythos 5.1 | 2026-09-01 | 9 | 91 | 73 |
 | Google | Gemini 4 Carbon | 2026-10-28 | 25 | 42 | 42 |
 | Google | Gemini 4 Argon | 2026-10-13 | 5 | 47 | 47 |
 
@@ -20,7 +20,7 @@ Earlier general-purpose and reasoning-model releases: [historical sources and li
 | Lab | Highlight families in both | Families in both full inventories | Examples in both publications |
 |---|---:|---:|---|
 | OpenAI | 2 | 9 | AutomationBench, Terminal-Bench-Science |
-| Anthropic | 4 | 60 | AutomationBench, Humanity’s Last Exam, OSWorld, Terminal-Bench-Science |
+| Anthropic | 4 | 61 | AutomationBench, Humanity’s Last Exam, OSWorld, Terminal-Bench-Science |
 | Google | 2 | 30 | Gray Swan IPI, Vals Index |
 
 “Latest only” means **reported only in the newer of these documents**, not newly created. A family can recur with different versions, subsets, graders or model configurations. Each row links the reported result and the underlying protocol. Comparator names are not treated as new focal releases.

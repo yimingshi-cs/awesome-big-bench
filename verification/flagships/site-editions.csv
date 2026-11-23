@@ -1,9 +1,5 @@
 family,reported_label,site_status,site_entries,labs,releases,example_source
 1H-VideoQA,1H-VideoQA,not listed,,Google,2,https://arxiv.org/html/2507.06261v1
-AA Intelligence Index,Artificial Analysis Intelligence Index v4.1,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
-AA Intelligence Index,Artificial Analysis Intelligence Index v4.1.1,not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
-AA Intelligence Index,Artificial Analysis Intelligence Index v5.0,not listed,,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
-AA Intelligence Index,Artificial Analysis Intelligence Index v5.0.1,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 AA-3D,AA-3D,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 AA-AnalystAgent,AA-AnalystAgent,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 AA-Briefcase,AA-Briefcase,not listed,,Anthropic,5,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=134
@@ -71,6 +67,10 @@ ARC-AGI,ARC-AGI-3,listed name,ARC-AGI-3,OpenAI; Anthropic,4,https://www.anthropi
 ARC-Challenge,ARC-Challenge,not listed,,Anthropic,2,https://www.anthropic.com/news/claude-3-family
 Artificial Analysis Coding Agent Index,Artificial Analysis Coding Agent Index v1.1,not listed,,OpenAI,1,https://openai.com/index/gpt-5-6/
 Artificial Analysis Coding Agent Index,Artificial Analysis Coding Agent Index v1.4,not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
+Artificial Analysis Intelligence Index,Artificial Analysis Intelligence Index v4.1,linked family / different label,Artificial Analysis Intelligence Index,OpenAI,1,https://openai.com/index/gpt-5-6/
+Artificial Analysis Intelligence Index,Artificial Analysis Intelligence Index v4.1.1,linked family / different label,Artificial Analysis Intelligence Index,OpenAI,1,https://openai.com/index/gpt-6-astra/
+Artificial Analysis Intelligence Index,Artificial Analysis Intelligence Index v5.0,linked family / different label,Artificial Analysis Intelligence Index,Google,1,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+Artificial Analysis Intelligence Index,Artificial Analysis Intelligence Index v5.0.1,linked family / different label,Artificial Analysis Intelligence Index,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 ArXivMath,ArXivMath,not listed,,Anthropic,7,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=116
 ASR from One Book (ASROB),ASR from One Book (ASROB),not listed,,Google,1,https://arxiv.org/html/2403.05530v5
 AutomationBench,AutomationBench,listed name,AutomationBench,OpenAI; Anthropic; Google,12,https://www.anthropic.com/claude-fable-and-mythos-5-2
@@ -132,6 +132,7 @@ Children’s Book Test,Children’s Book Test (common nouns),not listed,,OpenAI,
 Children’s Book Test,Children’s Book Test (named entities),not listed,,OpenAI,1,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 CMT-Benchmark,CMT-Benchmark,not listed,,Google,1,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
 CNN/Daily Mail,CNN/Daily Mail,not listed,,OpenAI,2,https://arxiv.org/pdf/2203.02155v1
+Code Arena · WebDev,WebDev Arena,linked family / different label,Code Arena · WebDev,Google,5,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
 Codeforces,Codeforces,not listed,,OpenAI; Google,5,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf
 Codeforces,Codeforces (with terminal),not listed,,OpenAI,1,https://openai.com/index/introducing-o3-and-o4-mini/
 Codeforces,Codeforces Rating,not listed,,OpenAI,1,https://arxiv.org/pdf/2303.08774v1
@@ -170,8 +171,8 @@ De novo binder design,De novo binder design (24 hr),not listed,,Anthropic,1,http
 De novo protein binder design,De novo protein binder design,not listed,,Anthropic,2,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=144
 DeepBinary,DeepBinary,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-2-astra-sol/
 DeepSearchQA,DeepSearchQA,not listed,,Anthropic,6,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=164
-DeepSWE,DeepSWE 1.1,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-6-sol-and-luna/
-DeepSWE,DeepSWE v1.1,not listed,,OpenAI; Anthropic; Google,9,https://www.anthropic.com/claude-fable-and-mythos-5-2
+DeepSWE,DeepSWE 1.1,linked family / different label,DeepSWE,OpenAI,1,https://openai.com/index/introducing-gpt-6-sol-and-luna/
+DeepSWE,DeepSWE v1.1,linked family / different label,DeepSWE,OpenAI; Anthropic; Google,9,https://www.anthropic.com/claude-fable-and-mythos-5-2
 Disordered eating,Disordered eating,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
 DiverseVul,DiverseVul,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
 DNA synthesis screening evaluation,DNA Synthesis Screening Evasion,not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-1
@@ -299,15 +300,13 @@ Harvey Legal Agent Benchmark,Legal Agent Benchmark,not listed,,Anthropic,1,https
 Harvey Legal Agent Benchmark,Legal Agent Benchmark (Harvey LAB),not listed,,Anthropic,6,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=133
 Harvey Legal Agent Benchmark,Legal Agent Benchmark (Harvey’s own LAB),not listed,,OpenAI,1,https://openai.com/index/astra-law-6-2/
 HealthAdminBench,HealthAdminBench,not listed,,Anthropic,1,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=300
-HealthBench,HealthBench,not listed,,OpenAI; Anthropic,19,https://deploymentsafety.openai.com/gpt-6-october
-HealthBench,HealthBench (Artificial Analysis),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
-HealthBench,HealthBench Consensus,not listed,,OpenAI,13,https://deploymentsafety.openai.com/gpt-6-october
-HealthBench,HealthBench Hard,not listed,,OpenAI; Google,15,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
-HealthBench,HealthBench Hard Hallucinations,not listed,,OpenAI,1,https://openai.com/index/introducing-gpt-5/
-HealthBench,HealthBench Professional,not listed,,Anthropic,7,https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf#page=138
-HealthBench,HealthBench Professional (Artificial Analysis),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
-HealthBench,MentalHealthBench,not listed,,OpenAI,1,https://deploymentsafety.openai.com/gpt-6-october
-HealthBench Professional,HealthBench Professional,not listed,,OpenAI; Google,12,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+HealthBench,HealthBench,listed name,HealthBench,OpenAI; Anthropic,19,https://deploymentsafety.openai.com/gpt-6-october
+HealthBench,HealthBench (Artificial Analysis),linked family / different label,HealthBench,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
+HealthBench,HealthBench Consensus,linked family / different label,HealthBench,OpenAI,13,https://deploymentsafety.openai.com/gpt-6-october
+HealthBench,HealthBench Hard,linked family / different label,HealthBench,OpenAI; Google,15,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+HealthBench,HealthBench Hard Hallucinations,linked family / different label,HealthBench,OpenAI,1,https://openai.com/index/introducing-gpt-5/
+HealthBench Professional,HealthBench Professional,not listed,,OpenAI; Anthropic; Google,19,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+HealthBench Professional,HealthBench Professional (Artificial Analysis),not listed,,Anthropic,1,https://www.anthropic.com/claude-fable-and-mythos-5-2
 HealthBench Professional,HealthBench Professional (length-adjusted),not listed,,OpenAI,1,https://openai.com/index/gpt-6-astra/
 Hebbia financial benchmark,Finance Benchmark,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-fable-5-mythos-5
 Hebbia financial benchmark,Financial Services Benchmark,not listed,,Anthropic,1,https://www.anthropic.com/news/claude-sonnet-4-6
@@ -407,7 +406,7 @@ MedQA USMLE 4 Options,MedQA USMLE 4 Options (0-shot),not listed,,OpenAI,1,https:
 MedQA USMLE 4 Options,MedQA USMLE 4 Options (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
 MedQA USMLE 5 Options,MedQA USMLE 5 Options (0-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
 MedQA USMLE 5 Options,MedQA USMLE 5 Options (5-shot),not listed,,OpenAI,1,https://openai.com/index/gpt-4o-system-card/
-MentalHealthBench,MentalHealthBench,not listed,,OpenAI,2,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+MentalHealthBench,MentalHealthBench,not listed,,OpenAI,3,https://deploymentsafety.openai.com/gpt-6-2-astra-sol
 MGSM,MGSM,not listed,,OpenAI; Anthropic; Google,7,https://www.anthropic.com/news/claude-3-5-sonnet
 MGSM,MGSM (pass @1),not listed,,OpenAI,1,https://openai.com/index/o1-and-new-tools-for-developers/
 MILU,MILU,not listed,,Anthropic,10,https://www.anthropic.com/claude-fable-and-mythos-5-2
@@ -711,7 +710,6 @@ WANDR,WANDR (relaxed score),not listed,,Anthropic,1,https://www.anthropic.com/cl
 Web of Lies,Web of Lies,not listed,,Google,1,https://arxiv.org/html/2403.05530v5
 WebArena,WebArena,listed name,WebArena,Anthropic,3,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=37
 WebArena,WebArena-Verified,linked family / different label,WebArena,Anthropic,1,https://assets.claude.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf#page=38
-WebDev Arena,WebDev Arena,not listed,,Google,5,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
 WebQuestions,WebQuestions,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1
 Welfare-intervention trade-offs,Trade-offs concerning welfare interventions,not listed,,Anthropic,2,https://www.anthropic.com/claude-fable-and-mythos-5-2
 WiC,WiC,not listed,,OpenAI,1,https://arxiv.org/pdf/2005.14165v1

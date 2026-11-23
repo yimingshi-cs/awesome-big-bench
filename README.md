@@ -17,7 +17,7 @@ The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can 
 | Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
 | AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
 
-The full guide compares inputs, outputs and scoring for **108 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
+The full guide compares inputs, outputs and scoring for **113 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
 
 ## Benchmark directory
 
@@ -39,7 +39,10 @@ The full guide compares inputs, outputs and scoring for **108 benchmarks across 
 | [LiveCodeBench](<https://livecodebench.github.io/>) | Dated contest problem, code or execution example | Program, repair, execution result or predicted output | [Test-case success or answer matching, by subtask](<https://arxiv.org/pdf/2403.07974v1>) |
 | [SciCode](<https://scicode-bench.github.io/>) | A scientific problem and its component specifications | Executable Python code | [Scientist-authored test cases assess subproblems and full solutions](<https://github.com/scicode-bench/SciCode>) |
 | [SWE-bench Verified](<https://openai.com/index/introducing-swe-bench-verified/>) | Human-validated issue and matching repository snapshot | Patch to the repository | [Same test-based resolution criterion, on 500 validated issues](<https://openai.com/index/introducing-swe-bench-verified/>) |
+| [Code Arena · WebDev](<https://arena.ai/leaderboard/code/webdev>) | The same user-supplied web development brief for two models | Two runnable web apps for side-by-side comparison | [Pairwise user votes are aggregated into Bradley–Terry ratings; there is no fixed pass mark.](<https://arena.ai/blog/webdev-arena>) |
 | [Terminal-Bench](<https://www.tbench.ai/news/announcement>) | Terminal task instruction and a prepared container | Shell actions and resulting files or system state | [Task-specific tests determine completion](<https://www.tbench.ai/news/announcement>) |
+| [DeepSWE](<https://deepswe.datacurve.ai/>) | A repository at a fixed revision and an engineering brief | A committed code change | [Pass rate under task-specific behavioral tests; v1.1 grades the submitted patch in a clean environment.](<https://deepswe.datacurve.ai/blog/deepswe-v1-1>) |
+| [GameCraft-Bench](<https://tongxuluo.github.io/gamecraft-bench-website/>) | A game specification, Godot workspace and shared assets | A complete game project and replayable input traces | [A judge scores the replay for game mechanics, content depth, visual feedback and presentation.](<https://arxiv.org/html/2606.17861v1>) |
 | [CWE-bench v2](<https://cwe-bench.com/>) | Repository and defensive audit task | Code changes resolving the identified weakness | [Programmatic security and regression checks](<https://cwe-bench.com/v2>) |
 
 <a id="domain-cua"></a>
@@ -187,6 +190,8 @@ The full guide compares inputs, outputs and scoring for **108 benchmarks across 
 | [IFEval](<https://github.com/google-research/google-research/tree/master/instruction_following_eval>) | Prompt with one or more verifiable constraints | One generated text response | [Rule checks; strict/loose prompt- and instruction-level accuracy](<https://arxiv.org/abs/2311.07911v1>) |
 | [MMLU-Pro](<https://github.com/TIGER-AI-Lab/MMLU-Pro>) | Multisubject question with up to ten options | Selected answer choice | [Accuracy against answer keys across subjects](<https://arxiv.org/abs/2406.01574v1>) |
 | [Humanity's Last Exam](<https://www.lastexam.ai/>) | Expert question, sometimes with an image | Selected or short answer with stated confidence | [Paper reports model-judged accuracy and RMS calibration error](<https://arxiv.org/pdf/2501.14249v1>) |
+| [Artificial Analysis Intelligence Index](<https://artificialanalysis.ai/methodology/intelligence-benchmarking>) | A model’s results on the component evaluations for one index version | One composite index score | [In v5.0.1, nine evaluations feed four categories weighted 25% each; normalization and within-category weights are version-specific.](<https://artificialanalysis.ai/methodology/intelligence-benchmarking>) |
+| [HealthBench](<https://openai.com/index/healthbench/>) | A health conversation ending in a user or clinician message | One free-text response | [A model grader checks weighted physician-written criteria; scores are averaged across conversations.](<https://arxiv.org/pdf/2505.08775v1>) |
 | [GDPval](<https://openai.com/index/gdpval/>) | Work brief and reference materials | A professional work product | [Expert blind comparisons of model and human deliverables](<https://openai.com/index/gdpval/>) |
 | [APEX-Agents](<https://www.mercor.com/blog/introducing-apex-agents/>) | A professional brief, files and workplace applications | A client-ready answer or work product | [Expert rubrics: full-task pass rate and mean criterion score](<https://www.mercor.com/apex/methodology/>) |
 | [LifeVal](<https://openai.com/index/lifeval/>) | Personal task, context, reference files and tools | Personalized outcome or artifact | [Rubric-based grading against the task and starting state](<https://cdn.openai.com/pdf/lifeval.pdf>) |
