@@ -9,7 +9,7 @@ The two successive top-capability, general-purpose Claude generations were **Fab
 | Scope | 5.2: configurations / families | 5.1: configurations / families | Families in both |
 |---|---:|---:|---:|
 | Main launch comparison table only | 15 / 14 | 9 / 7 | 4 |
-| Launches, attributed named partner results and system-card assessments | 109 / 91 | 91 / 72 | 60 |
+| Launches, attributed named partner results and system-card assessments | 109 / 92 | 91 / 73 | 61 |
 
 The four families that occur **in both main launch tables** are **AutomationBench, Humanity’s Last Exam, OSWorld and Terminal-Bench-Science**. OSWorld is 2.0 in the 5.1 launch and the 2.1 offline subset in the 5.2 launch. Sharing a family does not mean identical tasks, scaffolds, graders, or eligibility for a score comparison. Likewise, leaving the headline table does not mean a test was dropped: CursorBench moved from the 5.1 lead table to the full 5.2 system card, and the version changed.
 

@@ -3,6 +3,7 @@ const renderDirectory=initDirectory();
 initNames();
 initTrends();
 function route(first=false){
+  dismissCard();
   const [key,qs]=(location.hash.slice(1)||'names').split('?');
   // Older shared links now open the name map, not a retired section.
   if(key==='releases')history.replaceState(history.state,'','#names');

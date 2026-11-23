@@ -6,6 +6,8 @@
 
 Edit `data/famous.csv` and `data/catalog_tasks.csv` using the same slug. Distinguish a launch from a paper or software release. Describe the input, expected output and scoring rule, and link the corresponding protocol. Keep unconfirmed candidates out of the accepted directory. For artwork, link to the owner’s source; do not add third-party logos or populate the reserved local-image field.
 
+The details shown from the name map and directory use the same task record. If a score needs interpretation, add a short note to `data/reading_notes.json`: source the distinction, state what a result establishes, and link a genuinely different alternative when it helps someone choose. Distinguish a composite index, a live preference arena and an interactive task suite. The name alone does not identify the scoring method. The card hierarchy draws on [Epoch AI’s benchmark reviews](https://epoch.ai/benchmarks/swe-bench-verified/review) and the [GOV.UK summary list](https://design-system.service.gov.uk/components/summary-list/): show the decision-making information first; keep provenance and dates available on demand.
+
 ## Names
 
 Edit `data/names.csv` and append dated, repeatable checks to `verification/names/matrix-searches.csv`. Use `used` only for an exact-named AI benchmark or reusable AI evaluation suite with a primary source. A namesake tool, company, course, model, or environment alone does not qualify. Use `no_match` after successful checks found no qualifying benchmark. Keep related projects in the note, not in a third state. A failed lookup is not a negative result. When adding an axis entry to `data/name_groups.json`, research the new combinations before publishing them.

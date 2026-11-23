@@ -146,6 +146,9 @@ def render():
     fields=['name','slug','date','date_source_url','first_author_affil','affil_source_url','domain',
             'logo_source_url','task','description','primary_url','input','output','assessment','protocol_url']
     landmarks = json.loads((ROOT/'data/field_landmarks.json').read_text())
+    placed = [slug for slugs in landmarks.values() for slug in slugs]
+    if len(placed) != len(set(placed)):
+        raise ValueError('A project repeats in homepage field headers')
     for group, slugs in landmarks.items():
         if group not in groups['fields'] or not set(slugs) <= cat.keys():
             raise ValueError('Unresolved field landmark: '+group)
@@ -185,8 +188,19 @@ def render():
         r['release_url'] = r['source_url']
     aliases = json.loads((ROOT/'data/release_family_aliases.json').read_text())
     evidence, coverage_csv, editions_csv = index_reports([*releases,*history], matches, matrix, landmarks, cat, aliases)
-    payload = dict(repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,mapEvidence=evidence,mapCatalog=catalog_cells,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
-    scripts = ('app.js','directory.js','names.js','trends.js','route.js')
+    guidance = json.loads((ROOT/'data/reading_notes.json').read_text())
+    for slug, note in guidance.items():
+        if slug not in cat or not note.get('reading') or not note.get('url'):
+            raise ValueError('Unresolved or unsourced reading note: '+slug)
+        check_url(note['url'])
+        if 'facts' in note:
+            if len(note['facts'])!=2 or not all(f.get('label') and f.get('value') for f in note['facts']):
+                raise ValueError('A fact pair needs two labeled values: '+slug)
+            for f in note['facts']: check_url(f.get('url'))
+        if 'compare' in note and (note['compare'] not in cat or note['compare'] == slug or not note.get('contrast')):
+            raise ValueError('Invalid comparison: '+slug)
+    payload = dict(readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,mapEvidence=evidence,mapCatalog=catalog_cells,catalog=[{k:x[k] for k in fields} for x in cat_rows],names=names,months=months)
+    scripts = ('app.js','cards.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()

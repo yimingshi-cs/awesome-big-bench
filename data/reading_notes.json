@@ -1,0 +1,208 @@
+{
+  "browsecomp": {
+    "reading": "A correct short answer earns the point; the score does not tell you whether the agent can write a well-supported research report.",
+    "url": "https://openai.com/index/browsecomp/",
+    "compare": "webarena",
+    "contrast": "finish a transaction or change a website, rather than find an answer.",
+    "facts": [
+      {
+        "label": "Original release",
+        "value": "1,266 questions with hard-to-find answers."
+      },
+      {
+        "label": "What the model submits",
+        "value": "A short factual answer, not a research report."
+      }
+    ]
+  },
+  "osworld": {
+    "reading": "Opening the right application is not enough: if the requested file or setting is still unchanged, the agent has not completed the task.",
+    "url": "https://os-world.github.io/",
+    "compare": "toolathlon",
+    "contrast": "coordinate applications through tools rather than desktop controls."
+  },
+  "apex-agents": {
+    "reading": "A deliverable can satisfy most rubric criteria and still fail the task: mean score gives partial credit, while Pass@1 requires the whole rubric.",
+    "url": "https://www.mercor.space/apex/apex-agents-leaderboard/",
+    "compare": "gdpval",
+    "contrast": "compare a finished deliverable with a professional’s work."
+  },
+  "arc-agi-3": {
+    "reading": "Two agents can clear the same levels and score differently: actions spent discovering the rules count against efficiency relative to humans.",
+    "url": "https://arcprize.org/media/ARC_AGI_3_Technical_Report.pdf",
+    "compare": "arc-agi-2",
+    "contrast": "infer the rule from static examples, without interacting with an environment."
+  },
+  "arc-agi-2": {
+    "reading": "A nearly right transformation still misses the task if the output grid has the wrong shape or even one wrong cell.",
+    "url": "https://arxiv.org/abs/2505.11831",
+    "compare": "arc-agi-3",
+    "contrast": "test how efficiently an agent discovers rules by acting."
+  },
+  "humaneval": {
+    "reading": "Pass@k asks whether at least one of k candidate functions passes the tests; compare pass@1 when a user only gets the first answer.",
+    "url": "https://arxiv.org/abs/2107.03374",
+    "compare": "swe-bench",
+    "contrast": "repair an existing repository instead of writing an isolated function.",
+    "action": "Open repository"
+  },
+  "swe-bench": {
+    "reading": "A patch need not match the maintainer’s code: it must fix the targeted failures without breaking the designated regression tests.",
+    "url": "https://github.com/SWE-bench/SWE-bench/blob/main/swebench/harness/grading.py",
+    "compare": "humaneval",
+    "contrast": "test function writing without repository navigation."
+  },
+  "terminal-bench": {
+    "reading": "The verifier checks what the commands leave behind, so a plausible shell transcript is not evidence that the task succeeded.",
+    "url": "https://www.tbench.ai/news/announcement",
+    "compare": "terminal-bench-science",
+    "contrast": "require an analysis or simulation to meet scientific checks."
+  },
+  "terminal-bench-science": {
+    "reading": "A workflow can run to completion and still fail if its output misses a scientific check; the score measures delivery of a defined result, not selection of a research question.",
+    "url": "https://www.terminal-bench-science.ai/announcement",
+    "compare": "paperbench",
+    "contrast": "reproduce a paper and its experiments rather than finish one assigned workflow.",
+    "facts": [
+      {
+        "label": "Version 0.1",
+        "value": "70 researcher-contributed workflows."
+      },
+      {
+        "label": "What gets checked",
+        "value": "The resulting artifact: an analysis, simulation, proof or other research output."
+      }
+    ]
+  },
+  "paperbench": {
+    "reading": "A replication score of 50% means half the weighted rubric credit, not that half the papers were reproduced in full.",
+    "url": "https://openai.com/index/paperbench/",
+    "compare": "re-bench",
+    "contrast": "measure research engineering progress against experts on a time budget."
+  },
+  "re-bench": {
+    "reading": "The time budget can change which side leads: the original study found different human–agent comparisons at two hours and at eight.",
+    "url": "https://arxiv.org/abs/2411.15114",
+    "compare": "paperbench",
+    "contrast": "replicate a paper instead of optimizing a task metric."
+  },
+  "toolathlon": {
+    "reading": "A sequence of valid tool calls can still score zero if it leaves the applications in the wrong state.",
+    "url": "https://arxiv.org/abs/2510.25726",
+    "compare": "osworld",
+    "contrast": "test operating a desktop rather than making tool calls."
+  },
+  "webarena": {
+    "reading": "The agent uses functional websites to finish assigned tasks; despite the name, users are not voting on which website looks better.",
+    "url": "https://arxiv.org/abs/2307.13854",
+    "compare": "browsecomp",
+    "contrast": "find a fact on the open web instead of changing a website.",
+    "kind": "Interactive task suite"
+  },
+  "gdpval": {
+    "reading": "A win means a professional preferred the model’s deliverable to the human comparison; it is not a measure of the share of a job the model can do.",
+    "url": "https://openai.com/index/gdpval/",
+    "compare": "apex-agents",
+    "contrast": "grade multi-step work inside a professional workspace."
+  },
+  "graphwalks": {
+    "reading": "The answer is a set of nodes reached by following edges: spotting one relevant line in a long prompt will not solve a multi-hop query.",
+    "url": "https://huggingface.co/datasets/openai/graphwalks",
+    "compare": "needle-in-a-haystack",
+    "contrast": "test retrieval of a planted fact without graph traversal.",
+    "action": "Open dataset"
+  },
+  "needle-in-a-haystack": {
+    "reading": "In the single-needle test, a hit shows the model recovered one planted fact at that length and position—not that it connected evidence across the document.",
+    "url": "https://github.com/gkamradt/needle-in-a-haystack",
+    "compare": "graphwalks",
+    "contrast": "follow relationships across the input rather than retrieve one item."
+  },
+  "healthbench": {
+    "kind": "Task suite",
+    "reading": "Physicians wrote the rubrics; a model grades each response. The score is not the share of answers approved by a doctor.",
+    "url": "https://openai.com/index/healthbench/",
+    "action": "View benchmark",
+    "facts": [
+      {
+        "label": "Original release",
+        "value": "5,000 health conversations."
+      },
+      {
+        "label": "Rubric authors",
+        "value": "262 physicians across 60 countries."
+      }
+    ]
+  },
+  "deepswe": {
+    "kind": "Task suite",
+    "reading": "A change that works only in the agent’s workspace can fail: v1.1 applies the committed patch in a clean environment before grading.",
+    "url": "https://deepswe.datacurve.ai/blog/deepswe-v1-1",
+    "compare": "swe-bench",
+    "contrast": "compare against issue-driven repository repairs.",
+    "action": "View benchmark"
+  },
+  "aa-intelligence-index": {
+    "kind": "Composite index",
+    "reading": "Compare scores from the same index version. A change in tasks, graders or weights can move the number without any change to the model.",
+    "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+    "compare": "helm",
+    "contrast": "inspect separate scenario metrics instead of a composite ranking.",
+    "action": "Index methodology",
+    "facts": [
+      {
+        "label": "Coverage",
+        "value": "Knowledge work, coding, science and general tasks."
+      },
+      {
+        "label": "Test access",
+        "value": "Some component tests or answers are held out."
+      }
+    ]
+  },
+  "code-arena-webdev": {
+    "kind": "Live arena",
+    "reading": "A higher rating means users preferred those apps in this pool of matchups. It is not the percentage of the brief implemented correctly.",
+    "url": "https://arena.ai/blog/webdev-arena",
+    "compare": "webarena",
+    "contrast": "test an agent using a website, rather than building one.",
+    "action": "View leaderboard",
+    "facts": [
+      {
+        "label": "Evaluation",
+        "value": "Live head-to-head votes, not a fixed test set."
+      },
+      {
+        "label": "Inspect the evidence",
+        "value": "Published app pairs and votes",
+        "url": "https://huggingface.co/datasets/lmarena-ai/arena-webdev-preferences"
+      }
+    ]
+  },
+  "gamecraft-bench": {
+    "kind": "Task suite",
+    "reading": "No launch or usable replay means zero credit. A high score shows the requested gameplay was demonstrated, not that players enjoyed it.",
+    "url": "https://arxiv.org/html/2606.17861v1",
+    "compare": "code-arena-webdev",
+    "contrast": "ask people which generated web app they prefer, rather than score a Godot replay.",
+    "action": "Explore the games",
+    "facts": [
+      {
+        "label": "Original release",
+        "value": "140 tasks across 15 game families."
+      },
+      {
+        "label": "Inspect the evidence",
+        "value": "Game projects and evaluation code",
+        "url": "https://github.com/FreedomIntelligence/gamecraft-bench"
+      }
+    ]
+  },
+  "chatbot-arena": {
+    "kind": "Live arena",
+    "reading": "Ratings reflect which response people preferred in anonymous matchups, not the proportion of prompts answered correctly.",
+    "url": "https://www.lmsys.org/blog/2023-05-03-arena/",
+    "compare": "code-arena-webdev",
+    "contrast": "compare working web apps rather than chat responses."
+  }
+}
