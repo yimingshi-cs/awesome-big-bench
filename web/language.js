@@ -4,4 +4,3 @@ function T(key,values={}){
   if(template===undefined)throw new Error('Missing UI translation: '+key);
   return template.replace(/\{(\w+)\}/g,(_,k)=>String(values[k]));
 }
-
