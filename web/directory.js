@@ -5,7 +5,7 @@ function initDirectory(){
   const inDomain=(x,d)=>d==='All domains'||(d==='Cybersecurity'?security.has(x.slug):x.domain===d);
   const available=['All domains',...domains,'Cybersecurity'],domButtons=new Map();
   const searchText=s=>s.normalize('NFKC').toLowerCase().replace(/τ/g,'tau').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-  const text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.description,x.domain,x.modalities,x.input,x.output,x.assessment,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
+  const text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.input,x.output,x.assessment,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
   const seriesNames=new Set(catalog.map(x=>searchText(x.series)));
   const counts=Object.fromEntries(available.map(d=>[d,catalog.filter(x=>inDomain(x,d)).length]));
   const order=$('#directory-order'),state=()=>{
@@ -29,16 +29,16 @@ function initDirectory(){
     const query=searchText($('#query').value),words=query.split(/\s+/).filter(Boolean),host=$('#entries');host.replaceChildren();
     $('#mobile-domain').value=domain;for(const [d,b] of domButtons)setPressed(b,d===domain);
     const found=catalog.filter(x=>inDomain(x,domain)&&(seriesNames.has(query)?searchText(x.series)===query:words.every(w=>text.get(x.slug).includes(w)))).sort(order.value==='new'?recent:grouped);
-    $('#count').textContent=found.length+' '+(found.length===1?'entry':'entries');
+    $('#count').textContent=T(found.length===1?'{n} entry':'{n} entries',{n:found.length});
     if(!found.length){
       const actions=el('div',null,'links empty-actions');
-      const add=button('Add it with your agent',()=>showContribution(query?'Directory search with no matching results: '+$('#query').value.trim():'',add,'add'),'action');
-      actions.append(add,button('Clear filters',()=>choose('All domains'),'subtle'));
-      host.append(el('p','No matching benchmarks.','small'),actions);return;
+      const add=button(T('Add it with your agent'),()=>showContribution(query?T('Directory search with no matching results: ')+$('#query').value.trim():'',add,'add'),'action');
+      actions.append(add,button(T('Clear filters'),()=>choose('All domains'),'subtle'));
+      host.append(el('p',T('No matching benchmarks.'),'small'),actions);return;
     }
-    const t=el('table',null,'directory-table');t.setAttribute('aria-label','Benchmark directory');const head=t.createTHead().insertRow();
+    const t=el('table',null,'directory-table');t.setAttribute('aria-label',T('Benchmark directory'));const head=t.createTHead().insertRow();
     for(const label of ['Benchmark','Task','Input','Release date']){
-      const th=el('th',label);th.scope='col';if(label==='Release date')th.title='The link identifies the announcement, paper, release tag or dated evidence of availability.';head.append(th);
+      const th=el('th',T(label));th.scope='col';if(label==='Release date')th.title=T('The link identifies the announcement, paper, release tag or dated evidence of availability.');head.append(th);
     }
     const body=t.createTBody();let last='';
     for(const x of found){
@@ -50,7 +50,7 @@ function initDirectory(){
       const reported=mapEvidence.catalog[x.slug],mark=directoryMark(x);
       const slot=el('span',null,'mark-slot');slot.setAttribute('aria-hidden','true');if(mark?.placement==='row')slot.append(markImage(mark));
       const label=el('span',x.display_name,'directory-label');b.append(slot,label);b.setAttribute('aria-haspopup','dialog');
-      if(reported){b.classList.add('is-reported');b.setAttribute('aria-label',x.display_name+': reported by '+labNames(mapEvidence.reports[reported]));}
+      if(reported){b.classList.add('is-reported');b.setAttribute('aria-label',T('{n}: reported by {labs}',{n:x.display_name,labs:labNames(mapEvidence.reports[reported])}));}
       cell.append(b);
       const task=row.insertCell();task.className='directory-task';task.textContent=x.task||'—';
       const mod=row.insertCell();mod.className='directory-modality';mod.textContent=x.modalities;
@@ -62,6 +62,6 @@ function initDirectory(){
     domain=available.includes(params.get('domain'))?params.get('domain'):'All domains';$('#query').value=params.get('q')||'';
     order.value=params.get('order')==='new'?'new':'group';draw();
     const x=recordsById.get(params.get('entry'));
-    if(x){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);if(opener)presentCard(catalogCard(x),opener);}
+    if(x){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);presentCard(catalogCard(x),opener||$('#query'));}
   };
 }

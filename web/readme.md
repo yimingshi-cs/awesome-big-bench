@@ -2,6 +2,8 @@
 
 **Is that benchmark name taken?** Two different papers already use *BenchBench*: one [compares how benchmarks rank models](https://arxiv.org/abs/2407.13696); the other [tests how models design benchmarks](https://arxiv.org/abs/2603.20807).
 
+[中文网站](https://yiming-shi.com/awesome-big-bench/zh/) · [English website](https://yiming-shi.com/awesome-big-bench/)
+
 **[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
 
 The **name map** checks @@COMBINATIONS@@ prefix–ending pairs. @@TAKEN@@ have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).

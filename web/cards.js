@@ -13,7 +13,7 @@ function markImage(mark){
 function dateLink(x){
   const d=x.display_date||x.date,upper=x.date_basis==='available_by'&&!x.display_date?.match(/^\d{4}-\d{2}$/);
   const human={paper:'First public paper',tag:'Version tag',available_by:'Documented publicly by',public_record:'Dated public record',released:'Public release',announcement:'Public announcement'};
-  const a=link((upper?'By ':'')+d,x.date_source_url,'entry-date');a.title=(human[x.date_basis]||'Dated evidence')+': '+d;return a;
+  const a=link(upper?T('By {date}',{date:d}):d,x.date_source_url,'entry-date');a.title=T(human[x.date_basis]||'Dated evidence')+': '+d;return a;
 }
 function cardHead(group,title,lead){
   const h=el('div',null,'card-head'),name=el('h2',title);name.id='cell-title';
@@ -22,7 +22,7 @@ function cardHead(group,title,lead){
 }
 function meta(parts,mark){
   const b=el('div',null,'card-meta');
-  if(mark)b.append(el('span',mark==='no'?'Looks open':'Taken','badge '+mark));
+  if(mark)b.append(el('span',T(mark==='no'?'Looks open':'Taken'),'badge '+mark));
   for(const part of parts.filter(Boolean))b.append(el('span',part));
   return b;
 }
@@ -34,39 +34,40 @@ function cardFooter(main,edit){
 }
 function compareLine(x,text){
   const line=el('p',null,'compare-line');
-  line.append(el('span','Compare ','compare-label'),link(x.name,recordUrl(x)));
+  line.append(el('span',T('Compare '),'compare-label'),link(x.name,recordUrl(x)));
   if(text)line.append(document.createTextNode(' — '+text));
   return line;
 }
 function sourceNotes(x,n,primary,guide,extra=null){
-  const d=el('details',null,'card-sources');d.append(el('summary',extra?'Protocol & sources':'Sources'));
-  const facts=el('p',null,'source-facts');facts.append(document.createTextNode('Date evidence: '),dateLink(x));
+  const d=el('details',null,'card-sources');d.append(el('summary',T(extra?'Protocol & sources':'Sources')));
+  const facts=el('p',null,'source-facts');facts.append(document.createTextNode(T('Date evidence: ')),dateLink(x));
   if(x.date_note)facts.append(document.createTextNode(' · '+x.date_note));
   if(x.first_author_affil)facts.append(document.createTextNode(' · '+x.first_author_affil));
   if(extra)d.append(extra);d.append(facts);
+  if(x.source_title)d.append(link(x.source_title,x.primary_url,'original-title'));
   const mark=directoryMark(x);
   if(mark){
-    const credit=el('p',null,'source-facts');credit.append(document.createTextNode(mark.kind+': '),link(mark.credit,mark.credit_url),document.createTextNode(' · '),link(mark.license,mark.license_url),document.createTextNode(' · '+mark.changes));d.append(credit);
+    const credit=el('p',null,'source-facts');credit.append(document.createTextNode(T(mark.kind)+': '),link(mark.credit,mark.credit_url),document.createTextNode(' · '),link(mark.license,mark.license_url),document.createTextNode(' · '+T(mark.changes)));d.append(credit);
   }
   if(n?.note)d.append(el('p',n.note,'source-facts'));
   const links=new Map();
   function add(label,url){if(!url||url===primary)return;if(!links.has(url))links.set(url,[]);links.get(url).push(label);}
-  add('Scoring',x.protocol_url);add('Date',x.date_source_url);add('Affiliation',x.affil_source_url);
-  for(const ev of x.alternative_dates||[]){add((ev.date_basis==='tag'?'Tag': 'Dated record')+' · '+ev.date,ev.url);}
-  add('Mark provenance',x.logo_source_url);if(guide)add('Interpretation',guide.url);
-  if(n){add('Name source',n.source_url);add('Name check · '+n.checked_on,nameEvidence(n));}
+  add(T('Scoring'),x.protocol_url);add(T('Date'),x.date_source_url);add(T('Affiliation'),x.affil_source_url);
+  for(const ev of x.alternative_dates||[]){add(T(ev.date_basis==='tag'?'Tag': 'Dated record')+' · '+ev.date,ev.url);}
+  add(T('Mark provenance'),x.logo_source_url);if(guide)add(T('Interpretation'),guide.url);
+  if(n){add(T('Name source'),n.source_url);add(T('Name check · {date}',{date:n.checked_on}),nameEvidence(n));}
   {
-    const items=el('div',null,'source-list');items.append(link('Link to this card',recordUrl(x)));
+    const items=el('div',null,'source-list');items.append(link(T('Link to this card'),recordUrl(x)));
     for(const [url,labels] of links)items.append(link(labels.join(' / '),url));
     d.append(items);
   }
   return d;
 }
 function catalogCard(x,n=null){
-  const box=el('div',null,'detail-sheet'),guide=readingNotes[x.slug],pair=n&&namePair(n);
+  const box=el('div',null,'detail-sheet');box.dataset.entry=x.slug;const guide=readingNotes[x.slug],pair=n&&namePair(n);
   const key=n?mapEvidence.cells[pair]:mapEvidence.catalog[x.slug];
   const title=x.display_name||x.name;
-  const top=meta([x.domain,guide?.kind&&guide.kind!=='Task suite'?guide.kind:''],n?(key?'reported':'yes'):null);
+  const top=meta([displayDomain(x.domain),guide?.kind&&!['Task suite','任务集','任务套件'].includes(guide.kind)?guide.kind:''],n?(key?'reported':'yes'):null);
   const header=cardHead(top,title,x.description&&x.description!==title?x.description:null);
   const mark=directoryMark(x);
   if(mark){const signature=el('div',null,'card-signature');signature.append(markImage(mark));header.prepend(signature);}
@@ -75,8 +76,8 @@ function catalogCard(x,n=null){
   let protocol=null;
   if(x.origin!=='report'){
     protocol=el('dl',null,'task-pair');
-    for(const fact of guide?.facts||[{label:'Given',value:x.input},{label:'Result',value:x.output}])protocol.append(field(fact.label,fact.value,fact.url));
-    const score=el('section',null,'score-note');score.append(el('h3','Scoring'),el('p',x.assessment,'score-rule'));
+    for(const fact of guide?.facts||[{label:T('Given'),value:x.input},{label:T('Result'),value:x.output}])protocol.append(field(fact.label,fact.value,fact.url));
+    const score=el('section',null,'score-note');score.append(el('h3',T('Scoring')),el('p',x.assessment,'score-rule'));
     if(guide?.reading)score.append(el('p',guide.reading,'interpretation'));box.append(score);
   }else if(!x.description&&x.task){header.append(el('p',x.task,'card-lead'));}
   if(guide?.compare)box.append(compareLine(recordsById.get(guide.compare),guide.contrast));
@@ -86,7 +87,7 @@ function catalogCard(x,n=null){
   box.append(benchmarkBallot(x,ballotConfig));
   reportDetails(box,key,n?'Family release reports':'Release reports');
   box.append(sourceNotes(x,n,x.primary_url,guide,protocol));
-  box.append(cardFooter(link(x.origin==='report'?(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||'Original source'),x.primary_url),contributionButton(x,n)));
+  box.append(cardFooter(link(x.origin==='report'?T(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||T('Original source')),x.primary_url),contributionButton(x,n)));
   return box;
 }
 function nameCard(n,x){
@@ -95,23 +96,23 @@ function nameCard(n,x){
   if(x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&catalog.filter(r=>r.series===x.series).length>1){
     const box=el('div',null,'detail-sheet name-sheet');
     box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':'yes'),n.name,n.note));
-    box.append(link('Browse '+x.series+' editions','#browse?'+new URLSearchParams({domain:x.domain,q:x.series}),'related-use'));
+    box.append(link(T('Browse {series} editions',{series:x.series}),'#browse?'+new URLSearchParams({domain:x.domain,q:x.series}),'related-use'));
     for(const id of nameGroups.relatedCatalog[pair]||[])box.append(compareLine(recordsById.get(id)));
     reportDetails(box,key,'Family release reports');
-    const check=el('p',null,'checked-date');check.append(link('Name checked '+n.checked_on,nameEvidence(n)));box.append(check);
-    box.append(cardFooter(link('Original source',n.source_url),contributionButton(null,n)));return box;
+    const check=el('p',null,'checked-date');check.append(link(T('Name checked {date}',{date:n.checked_on}),nameEvidence(n)));box.append(check);
+    box.append(cardFooter(link(T('Original source'),n.source_url),contributionButton(null,n)));return box;
   }
   // A version in the directory may be related without being the exact named test.
   if(x&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'"))return catalogCard(x,n);
   const box=el('div',null,'detail-sheet name-sheet');
-  const lead=n.note||(used?'A same-name AI evaluation is documented.':'No same-name AI evaluation found in the recorded searches.');
+  const lead=n.note||(T(used?'A same-name AI evaluation is documented.':'No same-name AI evaluation found in the recorded searches.'));
   box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':used?'yes':'no'),n.name,lead));
-  const date=el('p','Checked '+n.checked_on,'checked-date');box.append(date);
-  if(x)box.append(compareLine(x,'See the documented edition and its scoring.'));
-  if(!used&&n.source_url)box.append(link('Related use',n.source_url,'related-use'));
+  const date=el('p',T('Checked {date}',{date:n.checked_on}),'checked-date');box.append(date);
+  if(x)box.append(compareLine(x,T('See the documented edition and its scoring.')));
+  if(!used&&n.source_url)box.append(link(T('Related use'),n.source_url,'related-use'));
   reportDetails(box,key,'Family release reports');
-  if(used)box.append(link('Search record',nameEvidence(n),'related-use'));
-  box.append(cardFooter(link(used?'Original source':'Search record',used?n.source_url:nameEvidence(n)),
+  if(used)box.append(link(T('Search record'),nameEvidence(n),'related-use'));
+  box.append(cardFooter(link(T(used?'Original source':'Search record'),used?n.source_url:nameEvidence(n)),
     contributionButton(null,n)));
   return box;
 }
@@ -119,7 +120,7 @@ const cardDialog=$('#cell-dialog');
 let cardTrigger=null;
 function presentCard(content,trigger){
   cardTrigger=trigger||null;$('#cell-info').replaceChildren(content);
-  cardDialog.scrollTop=0;if(!cardDialog.open)cardDialog.showModal();
+  cardDialog.scrollTop=0;if(!cardDialog.open)cardDialog.showModal();syncLanguageLinks();
 }
 function dismissCard(){if(cardDialog.open)cardDialog.close();}
 cardDialog.querySelector('.close').onclick=dismissCard;
@@ -132,7 +133,9 @@ cardDialog.addEventListener('close',()=>{
   if(cardDialog.open)return;
   if(cardTrigger?.isConnected)cardTrigger.focus({preventScroll:true});
   const [page,qs]=location.hash.slice(1).split('?'),params=new URLSearchParams(qs);
-  if(page==='browse'&&params.has('entry')){
-    params.delete('entry');history.replaceState(null,'','#browse'+(params.size?'?'+params:''));
+  if((page==='browse'&&params.has('entry'))||(page==='names'&&params.has('prefix'))){
+    for(const k of ['entry','prefix','suffix','contribute'])params.delete(k);
+    history.replaceState(null,'','#'+page+(params.size?'?'+params:''));
   }
+  syncLanguageLinks();
 });

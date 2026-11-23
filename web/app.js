@@ -1,5 +1,5 @@
 'use strict';
-const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks, agentPrompt, ballotConfig} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks, agentPrompt, ballotConfig, ui} = JSON.parse(document.querySelector('#payload').textContent);
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
   const node = document.createElement(tag);
@@ -16,7 +16,8 @@ function svgNode(tag, attrs, text) {
   return n;
 }
 const gh = path => repo+'/blob/main/'+path;
-const displayDomain = d => d;
+const displayDomain = d => T(d);
+const publicBase='https://yiming-shi.com/awesome-big-bench/'+(zh?'zh/':'');
 const fmt = n => n.toLocaleString('en-US');
 const setPressed = (node,on) => node.setAttribute('aria-pressed',String(on));
 
@@ -28,16 +29,16 @@ function renderTrendComparison(){
   }
   const a=period('2020'),b=period('2026');
   for(const part of [a,b]){
-    const cell=el('div');cell.append(el('span','Jan–Sep '+part.year),el('b',part.share.toFixed(2)+'%'),el('small',fmt(part.hits)+' of '+fmt(part.total)+' CS papers'));$('#comparison').append(cell);
+    const cell=el('div');cell.append(el('span',T('Jan–Sep {year}',part)),el('b',part.share.toFixed(2)+'%'),el('small',T('{hits} of {total} CS papers',{hits:fmt(part.hits),total:fmt(part.total)})));$('#comparison').append(cell);
   }
-  const delta=el('div',null,'factor');delta.append(el('span','2026 vs. 2020'),el('b',(b.share/a.share).toFixed(2)+'×'),el('small','Jan–Sep share ratio'));$('#comparison').append(delta);
+  const delta=el('div',null,'factor');delta.append(el('span',T('2026 vs. 2020')),el('b',(b.share/a.share).toFixed(2)+'×'),el('small',T('Jan–Sep share ratio')));$('#comparison').append(delta);
 }
 
 const labNames=rows=>['OpenAI','Anthropic','Google'].filter(l=>rows.some(r=>r.vendor===l)).join(', ');
 function reportDetails(box,key,label='Release reports'){
   if(!key)return;
   const rows=mapEvidence.reports[key],details=el('details',null,'report-sources');
-  details.append(el('summary',label+' · '+labNames(rows)));
+  details.append(el('summary',T(label)+' · '+labNames(rows)));
   for(const lab of ['OpenAI','Anthropic','Google']){
     const own=rows.filter(r=>r.vendor===lab).sort((a,b)=>b.date.localeCompare(a.date));
     if(!own.length)continue;
@@ -48,13 +49,13 @@ function reportDetails(box,key,label='Release reports'){
     }
     const long=rows.length>8;
     const group=long?el('details',null,'report-lab'):el('div');
-    if(long)group.append(el('summary',lab+' · '+list.size+(list.size===1?' release':' releases')));
+    if(long)group.append(el('summary',lab+' · '+T(list.size===1?'{n} release':'{n} releases',{n:list.size})));
     for(const [model,variants] of list){
       const row=el('div',null,'reported-versions');row.append(el('strong',model));
       for(const r of variants.values()){
         const a=link(r.benchmark,r.release_url);if(r.location)a.title=r.location;row.append(a);
         if(r.qualifier)row.append(el('small',r.qualifier));
-        if(/Mercor|third.party|third party|cited measurement|partner evaluation/i.test(r.location))row.append(el('small',r.location));
+        if(r.show_location||/Mercor|third.party|third party|cited measurement|partner evaluation/i.test(r.location))row.append(el('small',r.location));
       }
       group.append(row);
     }

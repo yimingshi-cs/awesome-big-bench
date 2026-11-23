@@ -114,3 +114,19 @@ select{appearance:none;padding:7px 29px 7px 11px;border:1px solid #b3c2bb;border
 #agent-prompt{box-sizing:border-box;display:block;width:100%;height:13em;max-height:38dvh;padding:10px;resize:vertical;border:1px solid var(--rule);background:#f7faf8;color:var(--ink);font:14px/1.45 var(--sans)}
 #contribute-dialog #contribute-status{font-size:14px;margin:6px 0}#contribute-status:empty{display:none}
 .empty-actions{margin-top:10px}
+
+/* The other edition is a normal link: shareable, keyboard-accessible, no language gate. */
+.language-switch{color:var(--deep);font:650 14px/1.4 var(--sans);text-decoration:none;white-space:nowrap}
+.language-switch:hover,.language-switch:focus-visible{text-decoration:underline}
+.top>.language-switch{padding:6px 0}
+.dialog-language{position:absolute;z-index:1;top:22px;right:60px}
+.card-meta{padding-right:95px}
+#contribute-dialog>.language-switch{float:right;margin:5px 11px 0 0}
+#contribute-dialog h2{padding-right:97px}
+html:lang(zh){--sans:Manrope,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;--serif:Georgia,"Songti SC","Noto Serif CJK SC","SimSun",serif}
+html:lang(zh) h1,html:lang(zh) h2,html:lang(zh) h3,html:lang(zh) .directory-section{letter-spacing:-.025em}
+html:lang(zh) h1 em{font-style:normal}
+html:lang(zh) .card-lead,html:lang(zh) .interpretation,html:lang(zh) .source-facts{line-height:1.65}
+@media(max-width:650px){.top>.language-switch{margin-left:auto}.dialog-language{top:18px;right:58px}.card-meta{padding-right:85px}}
+
+.original-title{display:block;width:fit-content;margin:4px 0 10px;line-height:1.45}
