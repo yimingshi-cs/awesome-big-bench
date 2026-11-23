@@ -76,6 +76,17 @@ No qualifying same-name AI benchmark identified in the checked sources.
 
 Queries: [arXiv metadata titles (local scan)](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository search](<https://api.github.com/search/repositories?q=BenchmarkGym+OR+Benchmark-Gym+in%3Aname&per_page=60>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=BenchmarkGym&limit=40>) · [Europe PMC title index](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE%3A%22BenchGym%22+OR+TITLE%3A%22Bench-Gym%22+OR+TITLE%3A%22Bench+Gym%22%29+OR+%28TITLE%3A%22BenchBenchGym%22+OR+TITLE%3A%22BenchBench-Gym%22+OR+TITLE%3A%22BenchBench+Gym%22%29+OR+%28TITLE%3A%22BenchmarkGym%22+OR+TITLE%3A%22Benchmark-Gym%22+OR+TITLE%3A%22Benchmark+Gym%22%29+OR+%28TITLE%3A%22BenchmarksGym%22+OR+TITLE%3A%22Benchmarks-Gym%22+OR+TITLE%3A%22Benchmarks+Gym%22%29+OR+%28TITLE%3A%22BenchesGym%22+OR+TITLE%3A%22Benches-Gym%22+OR+TITLE%3A%22Benches+Gym%22%29+OR+%28TITLE%3A%22MetaGym%22+OR+TITLE%3A%22Meta-Gym%22+OR+TITLE%3A%22Meta+Gym%22%29+OR+%28TITLE%3A%22FrontierGym%22+OR+TITLE%3A%22Frontier-Gym%22+OR+TITLE%3A%22Frontier+Gym%22%29+OR+%28TITLE%3A%22HumanityGym%22+OR+TITLE%3A%22Humanity-Gym%22+OR+TITLE%3A%22Humanity+Gym%22+OR+TITLE%3A%22Humanity%27s+Gym%22%29+OR+%28TITLE%3A%22AwesomeGym%22+OR+TITLE%3A%22Awesome-Gym%22+OR+TITLE%3A%22Awesome+Gym%22%29&format=json&pageSize=250&resultType=lite>)
 
+<a name="arena"></a>
+## Benchmark Arena
+
+**No exact match found** · 2026-11-23
+
+A Benchmark Arena repository aggregates existing benchmarks. The reviewed sources did not establish a distinct, scored suite using that exact name.
+
+[Related source (not a match)](<https://github.com/CorpoSense/benchmark_arena>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=BenchmarkArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Benchmark-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=BenchmarkArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Benchmark-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=BenchmarkArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Benchmark-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22BenchmarkArena%22+OR+%22Benchmark-Arena%22+OR+%22Benchmark+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>) · [Related source: not a qualifying match](<https://github.com/CorpoSense/benchmark_arena>)
+
 <a name="squared"></a>
 ## Benchmark²
 

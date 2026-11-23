@@ -26,7 +26,7 @@ def reports(records):
     s=['# Which benchmarks did the flagship releases report?', '',
        'Publicly defined tests reported in six focal releases through **22 November 2026**. A row records a release and evaluation configuration, not necessarily an independent benchmark. Scores are not compared across non-equivalent protocols.', '',
        '[Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Two-release CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)', '',
-       'Earlier general-purpose and reasoning-model releases: [historical sources and limits](history/README.md) · [release records](../../data/flagship_history.csv) · [family gaps](site-coverage.csv) · [exact labels vs. related editions](site-editions.csv). The homepage uses both inventories; the comparison below is deliberately limited to the two focal releases per lab.', '',
+       'Earlier general-purpose and reasoning-model releases: [historical sources and limits](history/README.md) · [release records](../../data/flagship_history.csv) · [curation gaps](site-coverage.csv) · [complete web directory](directory-coverage.csv) · [exact labels vs. related editions](site-editions.csv). The homepage uses both inventories; the comparison below is deliberately limited to the two focal releases per lab.', '',
        '| Lab | Release | First release | Headline records | All public records | Distinct families |',
        '|---|---|---|---:|---:|---:|']
     for lab in LABS:
@@ -77,7 +77,8 @@ def history_overview(history, focal, evidence):
            'A partner result explicitly reported by the focal lab is attributed to the assessor where identified; a benchmark owner independently testing a model is not enough. '
            'A private runner is not automatically a private test set. A disguised private fork, an unavailable result, an illustrative mention, or another model’s comparison column does not qualify.','',
            '## What is missing?','',
-           'Use **not listed** in the [family table](../site-coverage.csv) to find a reported family with no standalone directory or name-map match. '
+           'Use **not listed** in the [family table](../site-coverage.csv) to find a reported family with no baseline curated-task or name-map match. '
+           'All audited families now have a [complete web-directory reference](../directory-coverage.csv); the older comparison tables still measure baseline editorial coverage. '
            'The [edition table](../site-editions.csv) distinguishes an exact name from a related family or a different reported edition. '
            'For example, GDPval-AA is not GDPval, ARC-AGI-3 is not ARC-AGI-2, and Terminal-Bench-Science is not Terminal-Bench 4.0. '
            'Repetition in model reports is a useful lead, not a ranking or an automatic reason to create a new row or column.','']

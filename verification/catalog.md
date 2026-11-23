@@ -2,7 +2,7 @@
 
 The [directory](../data/famous.csv) records a documented date for each benchmark. The [task table](../data/catalog_tasks.csv) records its input, output, scoring method and primary protocol. Join by slug. Candidates are kept in [a separate table](../data/candidates_unverified.csv).
 
-A v1 date is the first arXiv submission, not necessarily the public launch. When a different event has stronger dated evidence, its type is recorded below. An affiliation is shown only if the source supports the first-listed person's attribution; a publisher, host or email address is not an affiliation. The project links identify resources; this repository does not distribute their logos.
+A v1 date is the first arXiv submission, not necessarily the public launch. When a different event has stronger dated evidence, its type is recorded below. An affiliation is shown only if the source supports the first-listed person's attribution; a publisher, host or email address is not an affiliation. Project links identify resources; the only embedded third-party marks are documented in the [identification mark allowlist](../web/assets/marks/README.md).
 
 | Benchmark | Dated event | What happened |
 |---|---|---|
@@ -20,14 +20,14 @@ A v1 date is the first arXiv submission, not necessarily the public launch. When
 | SWE-bench Verified | [2024-08-13](<https://openai.com/index/introducing-swe-bench-verified/>) | Public release of the 500-item human-validated subset, not new human grading of patches. |
 | Humanity's Last Exam | [2025-01-23](<https://scale.com/blog/humanitys-last-exam-results>) | Release of the exam and results, one day before the arXiv v1 submission. |
 | ARC-AGI-2 | [2025-03-24](<https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025>) | Benchmark launch, before the technical paper. |
-| Terminal-Bench | [2025-05-19](<https://www.tbench.ai/news/announcement>) | Core-v0 announcement, not the v1.0 or v2.0 release. |
+| Terminal-Bench | [2025-05-19](<https://www.tbench.ai/news/announcement>) | Launch of Core-v0, retrospectively called 1.0 by the authors in their [2.0 release](https://www.tbench.ai/news/announcement-2-0). |
 | FrontierRSI | [2026-11-18](<https://x.com/quasicoh/status/2123114502065627580>) | Public project announcement. This suite tests prerequisites for AI improvement, not confirmed recursive gains. |
 
 For any correction, link the dated announcement, paper version, protocol or repository record that should replace the current evidence.
 
 ### Additional task references
 
-- [Toolathlon paper](https://arxiv.org/abs/2510.25726) (29 October 2025): the original project; the [maintainers](https://github.com/hkust-nlp/Toolathlon) date Toolathlon-Verified separately. The CUA link covers both, with report versions kept distinct.
+- [Toolathlon paper](https://arxiv.org/abs/2510.25726) (29 October 2025): the original project; the [maintainers](https://github.com/hkust-nlp/Toolathlon) date Toolathlon-Verified separately. See the edition registry for version-specific rows and dated sources.
 - [APEX-Agents](https://www.mercor.com/blog/introducing-apex-agents/) (21 January 2026): Mercor's professional agent tasks, not the APEX umbrella or its tool-free assessment. See the [grading method](https://www.mercor.com/apex/methodology/).
 - [ARC-AGI-3 technical report](https://arxiv.org/abs/2603.24621) (v1, 24 March 2026): the directory classifies the interactive task as Reasoning. Its homepage shortcut is under Coding for readers building programmatic solvers; the metric is human-relative action efficiency, not code correctness.
 - [BrowseComp](https://openai.com/index/browsecomp/) (10 April 2025), [AndroidWorld](https://arxiv.org/abs/2405.14573) (paper v1, 23 May 2024) and [SciCode](https://arxiv.org/abs/2407.13168) (paper v1, 18 July 2024) cover web research, phone control and scientific coding. Of these three, only BrowseComp is a homepage field reference.
@@ -37,3 +37,5 @@ For any correction, link the dated announcement, paper version, protocol or repo
 - The [Artificial Analysis Intelligence Index version history](https://artificialanalysis.ai/methodology/intelligence-benchmarking) places v1 in January 2024 without an exact start day. The directory date is the documented v2 boundary (11 February 2025), not the birth of the index. The task card describes v5.0.1, not earlier weights.
 - [Arena’s WebDev methodology](https://arena.ai/blog/webdev-arena) links to the [10 December 2024 launch post](https://x.com/aryanvichare10/status/1866561638712881172). The [WebDev leaderboard](https://arena.ai/leaderboard/code/webdev) is one Code Arena track; its votes and rankings are not results from the text-only coding category.
 - [GameCraft-Bench](https://arxiv.org/abs/2606.17861) was first submitted on 16 June 2026. Its [evaluation protocol](https://arxiv.org/html/2606.17861v1) requires a game project and replay traces; the resulting playability score is not a human preference rating.
+
+The curated sources above are complemented by [edition histories](../data/editions/), [dated release-family references](../data/reported_directory.csv), and a [complete directory crosswalk](flagships/directory-coverage.csv). On the website, “By” identifies a public-availability bound; the link documents the event. Paper and release/tag dates are not interchangeable.

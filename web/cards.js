@@ -5,6 +5,16 @@ const namePair=n=>n.prefix+'|'+n.suffix;
 const nameAnchor=s=>s==='²'?'squared':s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const nameEvidence=n=>gh('verification/matrix/'+nameAnchor(n.prefix)+'.md#'+nameAnchor(n.suffix));
 
+const marksBySeries=new Map(catalog.filter(x=>marks[x.slug]).map(x=>[x.series,marks[x.slug]]));
+function directoryMark(x){return marks[x.slug]||marksBySeries.get(x.series);}
+function markImage(mark){
+  const img=el('img');img.src=mark.uri;img.alt='';img.width=mark.width;img.height=mark.height;return img;
+}
+function dateLink(x){
+  const d=x.display_date||x.date,upper=x.date_basis==='available_by'&&!x.display_date?.match(/^\d{4}-\d{2}$/);
+  const human={paper:'First public paper',tag:'Version tag',available_by:'Documented publicly by',public_record:'Dated public record',released:'Public release',announcement:'Public announcement'};
+  const a=link((upper?'By ':'')+d,x.date_source_url,'entry-date');a.title=(human[x.date_basis]||'Dated evidence')+': '+d;return a;
+}
 function nameCorrection(n){
   const used=n.status==='used';
   const body='**Name:** '+n.name+'\n**Combination:** '+n.prefix+' × '+n.suffix+'\n**Listed as:** '+(used?'same-name AI benchmark':'no exact AI benchmark found')+'\n\n**Primary source:**\n\n**What should change?**\n';
@@ -33,15 +43,21 @@ function compareLine(x,text){
   if(text)line.append(document.createTextNode(' — '+text));
   return line;
 }
-function sourceNotes(x,n,primary,guide){
-  const d=el('details',null,'card-sources');d.append(el('summary','Sources & dates'));
-  const facts=el('p',null,'source-facts');facts.append(el('time','Documented '+x.date));
+function sourceNotes(x,n,primary,guide,extra=null){
+  const d=el('details',null,'card-sources');d.append(el('summary',extra?'Protocol & sources':'Sources'));
+  const facts=el('p',null,'source-facts');facts.append(document.createTextNode('Date evidence: '),dateLink(x));
+  if(x.date_note)facts.append(document.createTextNode(' · '+x.date_note));
   if(x.first_author_affil)facts.append(document.createTextNode(' · '+x.first_author_affil));
-  d.append(facts);
+  if(extra)d.append(extra);d.append(facts);
+  const mark=directoryMark(x);
+  if(mark){
+    const credit=el('p',null,'source-facts');credit.append(document.createTextNode(mark.kind+': '),link(mark.credit,mark.credit_url),document.createTextNode(' · '),link(mark.license,mark.license_url),document.createTextNode(' · '+mark.changes));d.append(credit);
+  }
   if(n?.note)d.append(el('p',n.note,'source-facts'));
   const links=new Map();
   function add(label,url){if(!url||url===primary)return;if(!links.has(url))links.set(url,[]);links.get(url).push(label);}
   add('Scoring',x.protocol_url);add('Date',x.date_source_url);add('Affiliation',x.affil_source_url);
+  for(const ev of x.alternative_dates||[]){add((ev.date_basis==='tag'?'Tag': 'Dated record')+' · '+ev.date,ev.url);}
   add('Mark provenance',x.logo_source_url);if(guide)add('Interpretation',guide.url);
   if(n){add('Name source',n.source_url);add('Name check · '+n.checked_on,nameEvidence(n));}
   {
@@ -54,26 +70,42 @@ function sourceNotes(x,n,primary,guide){
 function catalogCard(x,n=null){
   const box=el('div',null,'detail-sheet'),guide=readingNotes[x.slug],pair=n&&namePair(n);
   const key=n?mapEvidence.cells[pair]:mapEvidence.catalog[x.slug];
-  const subtitle=guide?.kind&&guide.kind!=='Task suite'?guide.kind:x.task;
-  box.append(cardHead(meta([x.domain,subtitle],n?(key?'reported':'yes'):null),x.name,x.description));
-  const io=el('dl',null,'task-pair');
-  const facts=guide?.facts||[{label:'Given',value:x.input},{label:'Must produce',value:x.output}];
-  for(const fact of facts)io.append(field(fact.label,fact.value,fact.url));
-  box.append(io);
-  const score=el('section',null,'score-note');score.append(el('h3','Reading the score'),el('p',x.assessment,'score-rule'));
-  if(guide?.reading)score.append(el('p',guide.reading,'interpretation'));box.append(score);
+  const title=x.display_name||x.name;
+  const top=meta([x.domain,guide?.kind&&guide.kind!=='Task suite'?guide.kind:''],n?(key?'reported':'yes'):null);
+  const header=cardHead(top,title,x.description&&x.description!==title?x.description:null);
+  const mark=directoryMark(x);
+  if(mark){const signature=el('div',null,'card-signature');signature.append(markImage(mark));header.prepend(signature);}
+  const when=el('div',null,'card-date');when.append(dateLink(x));top.append(when);
+  box.append(header);
+  let protocol=null;
+  if(x.origin!=='report'){
+    protocol=el('dl',null,'task-pair');
+    for(const fact of guide?.facts||[{label:'Given',value:x.input},{label:'Result',value:x.output}])protocol.append(field(fact.label,fact.value,fact.url));
+    const score=el('section',null,'score-note');score.append(el('h3','Scoring'),el('p',x.assessment,'score-rule'));
+    if(guide?.reading)score.append(el('p',guide.reading,'interpretation'));box.append(score);
+  }else if(!x.description&&x.task){header.append(el('p',x.task,'card-lead'));}
   if(guide?.compare)box.append(compareLine(recordsById.get(guide.compare),guide.contrast));
   for(const id of (pair&&nameGroups.relatedCatalog[pair])||[]){
     if(guide?.compare!==id)box.append(compareLine(recordsById.get(id)));
   }
   reportDetails(box,key,n?'Family release reports':'Release reports');
-  box.append(sourceNotes(x,n,x.primary_url,guide));
+  box.append(sourceNotes(x,n,x.primary_url,guide,protocol));
   const edit=n?nameCorrection(n):issue(x.name+': correction','benchmark');
-  box.append(cardFooter(link(guide?.action||'Original source',x.primary_url),link('Suggest a correction',edit)));
+  box.append(cardFooter(link(x.origin==='report'?(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||'Original source'),x.primary_url),link('Suggest a correction',edit)));
   return box;
 }
 function nameCard(n,x){
   const pair=namePair(n),used=n.status==='used',key=mapEvidence.cells[pair];
+  // A naming cell is evidence for a family, not proof of using every release.
+  if(x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&catalog.filter(r=>r.series===x.series).length>1){
+    const box=el('div',null,'detail-sheet name-sheet');
+    box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':'yes'),n.name,n.note));
+    box.append(link('Browse '+x.series+' editions','#browse?'+new URLSearchParams({domain:x.domain,q:x.series}),'related-use'));
+    for(const id of nameGroups.relatedCatalog[pair]||[])box.append(compareLine(recordsById.get(id)));
+    reportDetails(box,key,'Family release reports');
+    const check=el('p',null,'checked-date');check.append(link('Name checked '+n.checked_on,nameEvidence(n)));box.append(check);
+    box.append(cardFooter(link('Original source',n.source_url),link('Suggest a correction',nameCorrection(n))));return box;
+  }
   // A version in the directory may be related without being the exact named test.
   if(x&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'"))return catalogCard(x,n);
   const box=el('div',null,'detail-sheet name-sheet');

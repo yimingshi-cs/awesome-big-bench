@@ -4,7 +4,7 @@ Publicly defined tests reported in six focal releases through **22 November 2026
 
 [Homepage name map](https://yiming-shi.com/awesome-big-bench/) · [Two-release CSV](../../data/flagship_evaluations.csv) · [Family comparison](families.csv)
 
-Earlier general-purpose and reasoning-model releases: [historical sources and limits](history/README.md) · [release records](../../data/flagship_history.csv) · [family gaps](site-coverage.csv) · [exact labels vs. related editions](site-editions.csv). The homepage uses both inventories; the comparison below is deliberately limited to the two focal releases per lab.
+Earlier general-purpose and reasoning-model releases: [historical sources and limits](history/README.md) · [release records](../../data/flagship_history.csv) · [curation gaps](site-coverage.csv) · [complete web directory](directory-coverage.csv) · [exact labels vs. related editions](site-editions.csv). The homepage uses both inventories; the comparison below is deliberately limited to the two focal releases per lab.
 
 | Lab | Release | First release | Headline records | All public records | Distinct families |
 |---|---|---|---:|---:|---:|

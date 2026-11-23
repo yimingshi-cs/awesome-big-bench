@@ -17,7 +17,7 @@ The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can 
 | Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
 | AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
 
-The full guide compares inputs, outputs and scoring for **113 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries are selected for distinct tasks and useful comparisons, not ranked by popularity.
+The curated tables below compare inputs, outputs and scoring for **113 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries here are selected for distinct tasks. The [full web directory](https://yiming-shi.com/awesome-big-bench/#directory) also includes release-specific editions and every publicly documented family in our three-lab survey. [Coverage crosswalk](verification/flagships/directory-coverage.csv).
 
 ## Benchmark directory
 
@@ -236,4 +236,4 @@ Compare the **same nine months** in the pinned arXiv metadata snapshot:
 
 Found two papers with the same name, a better starting point for a task, or an incorrect date? [Open an issue](https://github.com/yimingshi-cs/awesome-big-bench/issues/new/choose) with the exact spelling and a primary source. PRs are welcome; [here is how to update both editions](CONTRIBUTING.md).
 
-Compiled with AI assistance; corrections backed by primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and linked artwork belong to their respective owners; third-party logos are not bundled.
+Compiled with AI assistance; corrections backed by primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and marks belong to their owners. Only the [credited identification marks](web/assets/marks/) are bundled, under their respective licenses or brand permissions.

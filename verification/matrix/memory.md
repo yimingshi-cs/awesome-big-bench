@@ -84,6 +84,17 @@ Procedurally generated partially observable tasks evaluate memory-dependent agen
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MemoryGym%22%7C%22Memory-Gym%22%7C%22Memory+Gym%22%7C%22Memory%27s+Gym%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MemoryGym&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=MemoryGym&limit=50>)
 
+<a name="arena"></a>
+## MemoryArena
+
+**Same-name AI benchmark** · 2026-11-23
+
+An agent must reuse memory from an earlier session to complete a later, dependent task.
+
+[Primary source](<https://arxiv.org/abs/2602.16313>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=MemoryArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Memory-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=MemoryArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Memory-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=MemoryArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Memory-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22MemoryArena%22+OR+%22Memory-Arena%22+OR+%22Memory+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## Memory²
 

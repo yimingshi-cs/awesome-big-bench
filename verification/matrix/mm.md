@@ -82,6 +82,17 @@ No exact-named AI benchmark or protocol-defined evaluation suite was identified 
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [Web discovery (query replay link)](<https://www.google.com/search?q=%22MMGym%22+OR+%22MM-Gym%22+OR+%22MM+Gym%22+AI+benchmark+evaluation+project>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=MMGym&limit=100>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22MMGym%22%7C%22MM-Gym%22%7C%22MM+Gym%22%7C%22MM%27s+Gym%22%7C%22MMs%27+Gym%22%7C%22MMs+Gym%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [arXiv advanced live](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22MMGym%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22MM-Gym%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22MM+Gym%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22MM%27s+Gym%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22MMs%27+Gym%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22MMs+Gym%22&terms-5-field=all&size=50>) · [Crossref title](<https://api.crossref.org/works?query.title=MM+Gym&rows=12&select=title%2CDOI>) · [GitHub repositories](<https://api.github.com/search/repositories?q=MMGym+OR+MM-Gym+in%3Aname+is%3Apublic&per_page=100>)
 
+<a name="arena"></a>
+## mm-arena
+
+**Same-name AI benchmark** · 2026-11-23
+
+Market-making games compare language agents with a Bayesian reference. Here “mm” means market making, not multimodal; the exact name is still taken.
+
+[Primary source](<https://github.com/h-a-forster/mm-arena>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=MMArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=MM-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=MMArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=MM-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=MMArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=MM-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22MMArena%22+OR+%22MM-Arena%22+OR+%22MM+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## MM²
 

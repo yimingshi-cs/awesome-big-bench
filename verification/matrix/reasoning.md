@@ -80,6 +80,17 @@ Procedural reasoning tasks have verifiable answers and task-specific scoring.
 
 Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [OpenAlex title](<https://api.openalex.org/works?filter=title.search%3A%22ReasoningGym%22%7C%22Reasoning-Gym%22%7C%22Reasoning+Gym%22%7C%22Reasoning%27s+Gym%22&select=id%2Ctitle%2Cdoi%2Cprimary_location&per_page=50>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=ReasoningGym&limit=100>) · [Hugging Face Spaces](<https://huggingface.co/api/spaces?search=ReasoningGym&limit=50>)
 
+<a name="arena"></a>
+## reasoning-arena
+
+**Same-name AI benchmark** · 2026-11-23
+
+A public multi-provider benchmark grades reasoning tasks, tracking accuracy, latency and cost. The paper about a same-name trace-tournament training method is not the basis for this match.
+
+[Primary source](<https://github.com/andrewbondman/reasoning-arena>)
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=ReasoningArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Reasoning-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=ReasoningArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Reasoning-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=ReasoningArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Reasoning-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22ReasoningArena%22+OR+%22Reasoning-Arena%22+OR+%22Reasoning+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## Reasoning²
 

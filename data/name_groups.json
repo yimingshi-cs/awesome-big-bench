@@ -61,9 +61,10 @@
       "First Exam",
       "Last Exam"
     ],
-    "Practice": [
+    "Venues": [
       "Dojo",
-      "Gym"
+      "Gym",
+      "Arena"
     ],
     "Other": [
       "²",

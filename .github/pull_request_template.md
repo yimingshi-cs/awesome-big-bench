@@ -1,3 +1,3 @@
 - What should readers see differently?
-- Primary sources (link the version or date that supports the change):
-- For directory, naming or trend data edits, run `python3 scripts/build_guide.py` and include the refreshed README and offline page. For trend data, run the trend audit and refresh affected figures.
+- Primary sources (link the specific edition and dated public event that supports the change):
+- For directory, naming or trend data edits, run `python3 scripts/build_guide.py` then run `python3 scripts/build_guide.py --check` and `python3 -m unittest discover -s tests`. Include the refreshed page, README and affected crosswalks. Every new release family must resolve in the web directory; display the original date precision. For trend data, run the trend audit and refresh affected figures.

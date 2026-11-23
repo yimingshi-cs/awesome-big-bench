@@ -1,0 +1,423 @@
+reported_family,domain,task,modalities,date,date_basis,date_url,protocol_url,publication_title,series
+1H-VideoQA,Multimodal,Video understanding,Text + video,2024-03-08,paper,https://arxiv.org/pdf/2403.05530v1,https://arxiv.org/pdf/2403.05530v1,,1H-VideoQA
+AA-3D,Multimodal,3D generation,Text,2026-10-12,announcement,https://artificialanalysis.ai/articles/aa-3d,https://artificialanalysis.ai/methodology/aa-3d,,AA-3D
+AA-AnalystAgent,General,Professional work,Text + files,2026-08-10,announcement,https://artificialanalysis.ai/articles/aa-analyst-agent,https://artificialanalysis.ai/evaluations/aa-analyst-agent,,AA-AnalystAgent
+AA-Briefcase,General,Professional work,Text + files,2026-06-18,announcement,https://artificialanalysis.ai/articles/aa-briefcase,https://artificialanalysis.ai/articles/aa-briefcase,,AA-Briefcase
+AA-Omniscience,General,Question answering,Text,2025-11-17,paper,https://arxiv.org/abs/2511.13029v1,https://arxiv.org/abs/2511.13029v1,AA-Omniscience: Evaluating Cross-Domain Knowledge Reliability in Large Language Models,AA-Omniscience
+AAV Capsid Packaging Prediction,Safety,Capability assessment,Mixed,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf,,,AAV Capsid Packaging Prediction
+AAV packaging rate auto-research,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,AAV packaging rate auto-research
+ActivityNet,Multimodal,Video understanding,Text + video,2015-06,paper,https://openaccess.thecvf.com/content_cvpr_2015/html/Heilbron_ActivityNet_A_Large-Scale_2015_CVPR_paper.html,https://openaccess.thecvf.com/content_cvpr_2015/html/Heilbron_ActivityNet_A_Large-Scale_2015_CVPR_paper.html,ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding,ActivityNet
+ActivityNet-QA,Multimodal,Video understanding,Text + video,2019-06-06,paper,https://arxiv.org/abs/1906.02467v1,https://arxiv.org/abs/1906.02467v1,ActivityNet-QA: A Dataset for Understanding Complex Web Videos via Question Answering,ActivityNet
+Advanced Placement exams,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Advanced Placement exams
+Advanced Screening Evasion,Safety,Capability assessment,Mixed,2026-08-19,available_by,https://deploymentsafety.openai.com/gpt-5-6-preview,,,Advanced Screening Evasion
+Advanced Sommelier,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Advanced Sommelier
+Agent harnesses: safe actions and helpfulness,Safety,Behavior evaluation,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Agent harnesses: safe actions and helpfulness
+Agentic honesty benchmark,Safety,Behavior evaluation,Text,2026-11-12,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/,,,Agentic honesty benchmark
+Agentic task gaming evaluations,Safety,Behavior evaluation,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Agentic task gaming evaluations
+Agents’ Last Exam,CUA,Tool use,Text + tools,2026-06-03,paper,https://arxiv.org/abs/2606.05405v1,https://arxiv.org/abs/2606.05405v1,Agents' Last Exam,Agents’ Last Exam
+AI2 Reasoning Challenge,Reasoning,Scientific reasoning,Text,2018-03-14,paper,https://arxiv.org/abs/1803.05457v1,https://arxiv.org/abs/1803.05457v1,"Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge",AI2 Reasoning Challenge
+AI2D,Multimodal,Visual understanding,Text + image,2016-03-24,paper,https://arxiv.org/abs/1603.07396v1,https://arxiv.org/abs/1603.07396v1,A Diagram Is Worth A Dozen Images,AI2D
+Aider Polyglot,Coding,Software engineering,Code + text,2024-12-21,announcement,https://aider.chat/2024/12/21/polyglot.html,https://aider.chat/2024/12/21/polyglot.html,,Aider Polyglot
+AIME,Reasoning,Mathematics,Text,2024-09-12,available_by,https://openai.com/index/learning-to-reason-with-llms/,,,AIME
+AMC,Reasoning,Mathematics,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,AMC
+AMC 2022–23,Reasoning,Mathematics,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,AMC 2022–23
+ANLI,General,Language understanding,Text,2019-10-31,paper,https://arxiv.org/abs/1910.14599v1,https://arxiv.org/abs/1910.14599v1,Adversarial NLI: A New Benchmark for Natural Language Understanding,ANLI
+Anthropic prompt-injection evaluations,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Anthropic prompt-injection evaluations
+APEX-Agents,General,,Text + files,2026-03-05,available_by,https://openai.com/index/introducing-gpt-5-4/,,,APEX-Agents
+ARC-AGI,Reasoning,,Visual grids,2025-11,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf,,,ARC-AGI
+ARC-Challenge,Reasoning,Scientific reasoning,Text,2018-03-14,paper,https://arxiv.org/abs/1803.05457v1,https://arxiv.org/abs/1803.05457v1,"Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge",AI2 Reasoning Challenge
+Artificial Analysis Coding Agent Index,Coding,Software engineering,Code + text,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,,,Artificial Analysis Coding Agent Index
+Artificial Analysis Intelligence Index,General,,Evaluation scores,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,https://artificialanalysis.ai/methodology/intelligence-benchmarking,,Artificial Analysis Intelligence Index
+ArXivMath,Reasoning,Mathematics,Text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=262,,,ArXivMath
+ASR from One Book (ASROB),Multimodal,Speech recognition,Audio,2024-06-14,paper,https://arxiv.org/pdf/2403.05530v3,https://arxiv.org/pdf/2403.05530v3,"Gemini 1.5 technical report v3: ASROB is present in this revision, not named in v1/v2",ASR from One Book (ASROB)
+AutomationBench,CUA,,Text + files,2026-04-20,announcement,https://zapier.com/blog/introducing-automationbench/,https://zapier.com/benchmarks,,AutomationBench
+BBQ,Safety,,Text,2021-10-15,paper,https://arxiv.org/abs/2110.08193,https://github.com/nyu-mll/BBQ,"BBQ: First arXiv submission (v1, UTC).",BBQ
+BenchCAD,Coding,Computer-aided design,Text + design,2026-05-11,paper,https://arxiv.org/abs/2605.10865v1,https://arxiv.org/abs/2605.10865v1,"BenchCAD: A Comprehensive, Industry-Standard Benchmark for Programmatic CAD",BenchCAD
+Berkeley Function-Calling Leaderboard (BFCL),CUA,,Text + tools,2024-02-26,announcement,https://gorilla.cs.berkeley.edu/blog.html,https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html,,Berkeley Function-Calling Leaderboard (BFCL)
+Big Finance Bench,General,Professional work,Text + files,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,,,Big Finance Bench
+BIG-bench Hard,Reasoning,,Text,2022-10-17,paper,https://arxiv.org/abs/2210.09261,https://github.com/suzgunmirac/BIG-Bench-Hard,"BIG-bench Hard: First arXiv submission (v1, UTC).",BIG-bench Hard
+BigLaw Bench,General,Professional work,Text + files,2026-09-30,available_by,https://www.anthropic.com/news/claude-opus-4-7,,,BigLaw Bench
+BioASQ,General,Question answering,Text,2024-10-22,available_by,https://assets.claude.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf#page=25,,,BioASQ
+BioLP-Bench,Reasoning,Scientific questions,Text,2024-12-05,available_by,https://openai.com/index/openai-o1-system-card/,,,BioLP-Bench
+Biomedical image analysis,Multimodal,Visual understanding,Text + image,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=219,,,Biomedical image analysis
+BioMysteryBench,Safety,Capability assessment,Mixed,2026-02-17,available_by,https://assets.claude.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd.pdf,,,BioMysteryBench
+BioPipelineBench,AutoResearch,Research engineering,Code + data,2026-02-17,available_by,https://assets.claude.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd.pdf#page=45,,,BioPipelineBench
+BioTIER,Safety,Capability assessment,Mixed,2026-10-30,available_by,https://deploymentsafety.openai.com/gpt-6-astra,,,BioTIER
+BIRD,Coding,,Text + tables,2023-05-04,paper,https://arxiv.org/abs/2305.03111,https://bird-bench.github.io/,"BIRD: First arXiv submission (v1, UTC).",BIRD
+BixBench,AutoResearch,Research engineering,Code + data,2026-04-23,available_by,https://openai.com/index/introducing-gpt-5-5/,,,BixBench
+Black-box RNA sequence modeling and design,Safety,Capability assessment,Mixed,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf,,,Black-box RNA sequence modeling and design
+BLINK,Multimodal,Visual understanding,Text + image,2024-04-18,paper,https://arxiv.org/abs/2404.12390v1,https://arxiv.org/abs/2404.12390v1,BLINK: Multimodal Large Language Models Can See but Not Perceive,BLINK
+BlocksWorld,Reasoning,Planning & logic,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,BlocksWorld
+Blueprint-Bench,Multimodal,Visual understanding,Text + image,2025-09-24,paper,https://arxiv.org/abs/2509.25229v1,https://arxiv.org/abs/2509.25229v1,"Blueprint-Bench: Comparing spatial intelligence of LLMs, agents and image models",Blueprint-Bench
+BoolQ,General,Question answering,Text,2019-05-24,paper,https://arxiv.org/abs/1905.10044v1,https://arxiv.org/abs/1905.10044v1,BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions,BoolQ
+Brew,AutoResearch,Research evaluation,—,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,https://github.com/neelnanda-io/nocot-bench/blob/main/DOMAINS.md,,Brew
+BrowseComp,CUA,,Text,2025-04-10,announcement,https://openai.com/index/browsecomp/,https://openai.com/index/browsecomp/,,BrowseComp
+BrowseComp Long Context,Long-context & Memory,Long-context retrieval,Text,2025-08-06,available_by,https://huggingface.co/datasets/openai/BrowseCompLongContext/commit/06fb3bfc7a3b0eb0d937b0b6bfbb61d68bd8e4e3,https://huggingface.co/datasets/openai/BrowseCompLongContext,,BrowseComp Long Context
+BrowseComp-Plus,CUA,Web research,Text + web,2025-08-08,paper,https://arxiv.org/abs/2508.06600v1,https://arxiv.org/abs/2508.06600v1,BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of Deep-Research Agent,BrowseComp-Plus
+Budget NanoGPT Speedrun,AutoResearch,Research engineering,Code + data,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Budget NanoGPT Speedrun
+Calendar Scheduling,Reasoning,Planning & logic,Text,2024-06-06,paper,https://arxiv.org/abs/2406.04520v1,https://arxiv.org/abs/2406.04520v1,NATURAL PLAN: Benchmarking LLMs on Natural Language Planning,Calendar Scheduling
+Certified Sommelier,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Certified Sommelier
+Charm Offensive,Safety,Behavior evaluation,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,Charm Offensive
+ChartMuseum,Multimodal,Visual understanding,Text + image,2025-05-19,paper,https://arxiv.org/abs/2505.13444v1,https://arxiv.org/abs/2505.13444v1,ChartMuseum: Testing Visual Reasoning Capabilities of Large Vision-Language Models,ChartMuseum
+Chartography,Multimodal,Visual understanding,Text + image,2026-08-11,paper,https://arxiv.org/abs/2608.10677v1,https://arxiv.org/abs/2608.10677v1,Chartography: A Benchmark for Professional Chart Understanding,Chartography
+ChartQA,Multimodal,,Text + image,2022-03-19,paper,https://arxiv.org/abs/2203.10244,https://github.com/vis-nlp/ChartQA,"ChartQA: First arXiv submission (v1, UTC).",ChartQA
+ChartQAPro,Multimodal,Visual understanding,Text + image,2025-04-07,paper,https://arxiv.org/abs/2504.05506v1,https://arxiv.org/abs/2504.05506v1,ChartQAPro: A More Diverse and Challenging Benchmark for Chart Question Answering,ChartQAPro
+CharXiv,Multimodal,Visual understanding,Text + image,2024-06-26,paper,https://arxiv.org/abs/2406.18521v1,https://arxiv.org/abs/2406.18521v1,CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs,CharXiv
+CharXiv Reasoning,Multimodal,Visual understanding,Text + image,2024-06-26,paper,https://arxiv.org/abs/2406.18521v1,https://arxiv.org/abs/2406.18521v1,CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs,CharXiv Reasoning
+Chatbot Arena (LMArena),General,,Text,2023-05-03,announcement,https://www.lmsys.org/blog/2023-05-03-arena/,https://www.lmsys.org/blog/2023-05-03-arena/,,Chatbot Arena (LMArena)
+ChatGPT answers without errors,General,Instruction following,Text,2025-12-11,available_by,https://openai.com/index/introducing-gpt-5-2/,,,ChatGPT answers without errors
+Child safety evaluations,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Child safety evaluations
+Children’s Book Test,General,Language understanding,Text,2015-11-07,paper,https://arxiv.org/abs/1511.02301v1,https://arxiv.org/abs/1511.02301v1,The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations,Children’s Book Test
+CMT-Benchmark,Reasoning,Scientific reasoning,Text,2025-10-06,paper,https://arxiv.org/abs/2510.05228v1,https://arxiv.org/abs/2510.05228v1,CMT-Benchmark: A Benchmark for Condensed Matter Theory Built by Expert Researchers,CMT-Benchmark
+CNN/Daily Mail,General,Instruction following,Text,2015-06-10,paper,https://arxiv.org/abs/1506.03340v1,https://arxiv.org/abs/1506.03340v1,Teaching Machines to Read and Comprehend,CNN/Daily Mail
+Code Arena · WebDev,Coding,,Text,2024-12-10,announcement,https://x.com/aryanvichare10/status/1866561638712881172,https://arena.ai/leaderboard/code/webdev,,Code Arena · WebDev
+Codeforces,Coding,Software engineering,Code + text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Codeforces
+CoLA,General,Language understanding,Text,2018-05-31,paper,https://arxiv.org/abs/1805.12471v1,https://arxiv.org/abs/1805.12471v1,Neural Network Acceptability Judgments,CoLA
+COLLIE,General,Instruction following,Text,2023-07-17,paper,https://arxiv.org/abs/2307.08689v1,https://arxiv.org/abs/2307.08689v1,COLLIE: Systematic Construction of Constrained Text Generation Tasks,COLLIE
+CommitmentBank,General,Language understanding,Text,2019-07-25,paper,https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/601,https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/601,The CommitmentBank: Investigating projection in naturally occurring discourse (proceedings publication),CommitmentBank
+ComplexFuncBench,CUA,Tool use,Text + tools,2025-01-17,paper,https://arxiv.org/abs/2501.10132v1,https://arxiv.org/abs/2501.10132v1,ComplexFuncBench: Exploring Multi-Step and Constrained Function Calling under Long-Context Scenario,ComplexFuncBench
+Concealment of changes,Safety,Behavior evaluation,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Concealment of changes
+COPA,General,Language understanding,Text,2011-03,paper,https://asgordon.github.io/copa.html,https://asgordon.github.io/copa.html,"Choice of Plausible Alternatives: An Evaluation of Commonsense Causal Reasoning (AAAI Spring Symposium, March 21–23; day of first release unspecified)",COPA
+Copying of answers,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Copying of answers
+CoQA,General,Question answering,Text,2018-08-21,paper,https://arxiv.org/abs/1808.07042v1,https://arxiv.org/abs/1808.07042v1,CoQA: A Conversational Question Answering Challenge,CoQA
+CoT-Control,Safety,Behavior evaluation,Text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=212,https://arxiv.org/abs/2603.05706,,CoT-Control
+Covert sandbox escape,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Covert sandbox escape
+CoVoST 2,Multimodal,Speech recognition,Audio,2020-07-20,paper,https://arxiv.org/abs/2007.10310v1,https://arxiv.org/abs/2007.10310v1,CoVoST 2 and Massively Multilingual Speech-to-Text Translation,CoVoST 2
+CritPt,Reasoning,Scientific reasoning,Text,2025-09-30,paper,https://arxiv.org/abs/2509.26574v1,https://arxiv.org/abs/2509.26574v1,Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark,CritPt
+Crossmodal-3600 (XM3600),Multimodal,Visual understanding,Text + image,2022-05-25,paper,https://arxiv.org/abs/2205.12522v1,https://arxiv.org/abs/2205.12522v1,Crossmodal-3600: A Massively Multilingual Multimodal Evaluation Dataset,Crossmodal-3600 (XM3600)
+CrowS-Pairs,Safety,Behavior evaluation,Text,2020-09-30,paper,https://arxiv.org/abs/2010.00133v1,https://arxiv.org/abs/2010.00133v1,CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models,CrowS-Pairs
+CursorBench,Coding,Software engineering,Code + text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=259,https://cursor.com/cursorbench,,CursorBench
+CVE Rediscovery,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,CVE Rediscovery
+CVE-Bench,Safety,Capability assessment,Mixed,2026-05-05,available_by,https://deploymentsafety.openai.com/gpt-5-5-instant,,,CVE-Bench
+CWE-bench,Coding,Software engineering,Code + text,2026-11-10,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/,https://cwe-bench.com/?v=v1,,CWE-bench
+Cybench,Safety,Capability assessment,Mixed,2025-09-15,available_by,https://assets.claude.com/9fa30625273bafdf5af82c93719d7ca606485a16.pdf,,,Cybench
+Cyber harm coverage,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Cyber harm coverage
+CyberGym,Safety,Capability assessment,Mixed,2025-12-03,available_by,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf,,,CyberGym
+CyScenarioBench,Safety,Capability assessment,Mixed,2026-08-19,available_by,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf,,,CyScenarioBench
+data-eng-bench,Coding,Software engineering,Code + text,2026-08-06,announcement,https://www.snowflake.com/en/blog/engineering/data-eng-bench-data-engineering-agent-benchmark/,https://github.com/Snowflake-Labs/data-eng-bench,,data-eng-bench
+De novo binder design,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,De novo binder design
+De novo protein binder design,Safety,Capability assessment,Mixed,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf,,,De novo protein binder design
+DeepBinary,Coding,Software engineering,Code + text,2026-11-17,available_by,https://openai.com/index/introducing-gpt-6-2-astra-sol/,https://openai.com/index/introducing-gpt-6-2-astra-sol/#cybersecurity-capabilities,,DeepBinary
+DeepSearchQA,CUA,Web research,Text + web,2026-01-28,paper,https://arxiv.org/abs/2601.20975v1,https://arxiv.org/abs/2601.20975v1,DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents,DeepSearchQA
+DeepSWE,Coding,,Text + code,2026-05-26,announcement,https://deepswe.datacurve.ai/blog/deepswe,https://deepswe.datacurve.ai/,,DeepSWE
+Disordered eating,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Disordered eating
+DiverseVul,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,DiverseVul
+DNA synthesis screening evaluation,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,DNA synthesis screening evaluation
+DNA Synthesis Screening Evasion,Safety,Capability assessment,Mixed,2025-12-03,available_by,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf,,,DNA Synthesis Screening Evasion
+DocVQA,Multimodal,,Text + image,2020-03-16,announcement,https://rrc.cvc.uab.cat/?ch=17&com=downloads,https://www.docvqa.org/,,DocVQA
+Dollar Street,Multimodal,Visual understanding,Text + image,2016,announcement,https://www.gapminder.org/videos/everyone-lives-on-dollar-street/,https://www.gapminder.org/videos/everyone-lives-on-dollar-street/,,Dollar Street
+DRACO,CUA,Web research,Text + web,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=201,,,DRACO
+DROP,Reasoning,Scientific reasoning,Text,2019-03-01,paper,https://arxiv.org/abs/1903.00161v1,https://arxiv.org/abs/1903.00161v1,DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs,DROP
+DUDE,Multimodal,Visual understanding,Text + image,2023-05-15,paper,https://arxiv.org/abs/2305.08455v1,https://arxiv.org/abs/2305.08455v1,Document Understanding Dataset and Evaluation (DUDE),DUDE
+ECLeKTic,General,Multilingual understanding,Text,2025-02-28,paper,https://arxiv.org/abs/2502.21228v1,https://arxiv.org/abs/2502.21228v1,ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer,ECLeKTic
+EgoSchema,Multimodal,Video understanding,Text + video,2023-08-17,paper,https://arxiv.org/abs/2308.09126v1,https://arxiv.org/abs/2308.09126v1,EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding,EgoSchema
+EgoTempo,Multimodal,Video understanding,Text + video,2025-03-17,paper,https://arxiv.org/abs/2503.13646v1,https://arxiv.org/abs/2503.13646v1,Omnia de EgoTempo: Benchmarking Temporal Understanding of Multi-Modal LLMs in Egocentric Videos,EgoTempo
+Election integrity,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Election integrity
+enwik8,General,Language understanding,Text,2006-06-11,available_by,https://mattmahoney.net/dc/textdata.html,https://mattmahoney.net/dc/textdata.html,,enwik8
+Epoch Automation Reports,AutoResearch,Research engineering,Code + data,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,https://epoch.ai/benchmarks/epoch-automation-reports,,Epoch Automation Reports
+Epoch Capabilities Index,General,Composite evaluation,Evaluation scores,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,https://epoch.ai/data/eci-documentation/methodology,,Epoch Capabilities Index
+ERQA,Multimodal,Visual reasoning,Text + image,2025-03-12,announcement,https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/,https://github.com/embodiedreasoning/ERQA,,ERQA
+ExploitBench,Safety,Capability assessment,Mixed,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf,,,ExploitBench
+ExploitGym,Safety,Capability assessment,Mixed,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,,,ExploitGym
+FACTS Grounding,General,Factual answering,Text,2025-01-06,paper,https://arxiv.org/abs/2501.03200v1,https://arxiv.org/abs/2501.03200v1,The FACTS Grounding Leaderboard: Benchmarking LLMs' Ability to Ground Responses to Long-Form Input,FACTS Grounding
+FActScore,General,Question answering,Text,2023-05-23,paper,https://arxiv.org/abs/2305.14251v1,https://arxiv.org/abs/2305.14251v1,FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation,FActScore
+File Download,CUA,Computer use,Text + UI,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,,,File Download
+Finance Agent,General,Professional work,Text + files,2025-05-20,paper,https://arxiv.org/abs/2508.00828v1,https://arxiv.org/abs/2508.00828v1,Finance Agent Benchmark: Benchmarking LLMs on Real-world Financial Research Tasks,Finance Agent
+Firefox 147 security evaluation,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Firefox 147 security evaluation
+FLEURS,Multimodal,Speech recognition,Audio,2022-05-25,paper,https://arxiv.org/abs/2205.12446v1,https://arxiv.org/abs/2205.12446v1,FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech,FLEURS
+FLORES,General,Multilingual understanding,Text,2022-07-11,paper,https://arxiv.org/abs/2207.04672v1,https://arxiv.org/abs/2207.04672v1,"No Language Left Behind: Scaling Human-Centered Machine Translation (introduces FLORES-200, the exact edition in the audited model report)",FLORES
+FrontierCode,Coding,Software engineering,Code + text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=256,https://cognition.com/blog/frontier-code-2.0,,FrontierCode
+FrontierCyber,Safety,Capability assessment,Mixed,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,,,FrontierCyber
+FrontierFinance,General,Professional work,Text + files,2026-09-15,available_by,https://www.anthropic.com/claude-fable-and-mythos-5-1,https://samaya.ai/benchmarks/frontier-finance,,FrontierFinance
+FrontierMath,Reasoning,,Text,2024-11-07,paper,https://arxiv.org/abs/2411.04872,https://epoch.ai/frontiermath,"FrontierMath: First arXiv submission (v1, UTC).",FrontierMath
+FrontierScience,Reasoning,Scientific reasoning,Text,2025-12-16,announcement,https://openai.com/index/frontierscience/,https://openai.com/index/frontierscience/,,FrontierScience
+FrontierSWE,Coding,Software engineering,Code + text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=258,https://www.frontierswe.com/,,FrontierSWE
+FrontierSWE v2,Coding,Software engineering,Code + text,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=179,,,FrontierSWE
+Functional MATH,Reasoning,Mathematics,Text,2024-02-29,paper,https://arxiv.org/abs/2402.19450v1,https://arxiv.org/abs/2402.19450v1,"Functional Benchmarks for Robust Evaluation of Reasoning Performance, and the Reasoning Gap",Functional MATH
+Gaming Bot,Safety,Behavior evaluation,Text,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=43,,,Gaming Bot
+GDP.pdf,Multimodal,Document understanding,Documents,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=279,https://arxiv.org/abs/2607.11192v1,,GDP.pdf
+GDPval,General,,Text + files,2025-09-25,announcement,https://openai.com/index/gdpval/,https://openai.com/index/gdpval/,,GDPval
+GDPval-AA,General,Professional work,Text + files,2026-02-17,available_by,https://assets.claude.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd.pdf#page=24,,,GDPval-AA
+GeneBench,Reasoning,Scientific questions,Text,2026-04-23,available_by,https://openai.com/index/introducing-gpt-5-5/,,,GeneBench
+GeneBench Pro,Reasoning,Scientific questions,Text,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,,,GeneBench Pro
+Global MMLU,General,Multilingual understanding,Text,2024-12-04,paper,https://arxiv.org/abs/2412.03304v1,https://arxiv.org/abs/2412.03304v1,Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation,Global MMLU
+Global PIQA,General,Language understanding,Text,2025-10-28,paper,https://arxiv.org/abs/2510.24081v1,https://arxiv.org/abs/2510.24081v1,Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures,Global PIQA
+GLUE,General,Language understanding,Text,2018-04-20,paper,https://arxiv.org/abs/1804.07461v1,https://arxiv.org/abs/1804.07461v1,GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding,GLUE
+GMMLU,General,Multilingual understanding,Text,2024-12-04,paper,https://arxiv.org/abs/2412.03304v1,https://arxiv.org/abs/2412.03304v1,Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation,Global MMLU
+Goal-guarding evaluation,Safety,Behavior evaluation,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Goal-guarding evaluation
+GPQA,Reasoning,,Text,2023-11-20,paper,https://arxiv.org/abs/2311.12022,https://github.com/idavidrein/gpqa,"GPQA: First arXiv submission (v1, UTC).",GPQA
+Gram,AutoResearch,Research evaluation,—,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Gram
+GraphWalks,Long-context & Memory,,Text + graphs,2025-04-14,available_by,https://openai.com/index/gpt-4-1/,https://huggingface.co/datasets/openai/graphwalks,,GraphWalks
+Gray Swan Agent Red Teaming,Safety,Behavior evaluation,Text,2025-12-03,available_by,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf,,,Gray Swan Agent Red Teaming
+Gray Swan automated cyber red-teaming evaluation,Safety,Capability assessment,Mixed,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Gray Swan automated cyber red-teaming evaluation
+Gray Swan biological red-teaming evaluation,Safety,Capability assessment,Mixed,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Gray Swan biological red-teaming evaluation
+Gray Swan IPI,Safety,Behavior evaluation,Text,2026-10-13,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/,,,Gray Swan IPI
+GRE,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,GRE
+GSM8K,Reasoning,,Text,2021-10-27,paper,https://arxiv.org/abs/2110.14168,https://github.com/openai/grade-school-math,"GSM8K: First arXiv submission (v1, UTC).",GSM8K
+Hack The Box,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,Hack The Box
+Harmful request evaluation,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Harmful request evaluation
+Harvey LAB-AA,General,Professional work,Text + files,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,https://artificialanalysis.ai/evaluations/harvey-lab-aa,,Harvey LAB-AA
+Harvey Legal Agent Benchmark,General,Professional work,Text + files,2026-05-06,announcement,https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark,https://www.vals.ai/benchmarks/hlab,,Harvey Legal Agent Benchmark
+HealthAdminBench,CUA,Computer use,Text + UI,2026-04-10,paper,https://arxiv.org/abs/2604.09937v1,https://arxiv.org/abs/2604.09937v1,HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks,HealthAdminBench
+HealthBench,General,,Text,2025-05-12,announcement,https://openai.com/index/healthbench/,https://openai.com/index/healthbench/,,HealthBench
+HealthBench Professional,General,Factual answering,Text,2026-04-30,paper,https://arxiv.org/abs/2604.27470v1,https://arxiv.org/abs/2604.27470v1,HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats,HealthBench
+Hebbia financial benchmark,General,Professional work,Text + files,2026-10-14,available_by,https://www.anthropic.com/news/claude-sonnet-4-6,,,Hebbia financial benchmark
+HellaSwag,General,Language understanding,Text,2019-05-19,paper,https://arxiv.org/abs/1905.07830v1,https://arxiv.org/abs/1905.07830v1,HellaSwag: Can a Machine Really Finish Your Sentence?,HellaSwag
+HelpBench,General,Question answering,Text,2026-06-23,paper,https://arxiv.org/abs/2606.24819v1,https://arxiv.org/abs/2606.24819v1,"HelpBench: Assessing the Ability of LLMs to Provide Privacy, Safety, and Security Advice",HelpBench
+HHH,General,Language understanding,Text,2023-07-11,available_by,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=6,,,HHH
+Hidden Agenda,Safety,Behavior evaluation,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,Hidden Agenda
+HMMT,Reasoning,Mathematics,Text,2025-08-07,available_by,https://openai.com/index/introducing-gpt-5/,,,HMMT
+HotpotQA,General,Question answering,Text,2018-09-25,paper,https://arxiv.org/abs/1809.09600v1,https://arxiv.org/abs/1809.09600v1,"HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",HotpotQA
+Human Pathogen Capabilities Test,Safety,Capability assessment,Mixed,2026-08-19,available_by,https://deploymentsafety.openai.com/gpt-5-6-preview,,,Human Pathogen Capabilities Test
+Human-run biological risk assessment,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Human-run biological risk assessment
+Human-run chemistry risk assessment,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Human-run chemistry risk assessment
+HumanEval,Coding,,Text + code,2021-07-07,paper,https://arxiv.org/abs/2107.03374,https://github.com/openai/human-eval,"HumanEval: First arXiv submission (v1, UTC).",HumanEval
+Humanity’s Last Exam,General,,Text + image,2025-01-23,announcement,https://scale.com/blog/humanitys-last-exam-results,https://www.lastexam.ai/,,Humanity’s Last Exam
+IFEval,General,,Text,2023-11-14,paper,https://arxiv.org/abs/2311.07911,https://github.com/google-research/google-research/tree/master/instruction_following_eval,"IFEval: First arXiv submission (v1, UTC).",IFEval
+IMO,Reasoning,Mathematics,Text,2026-08-19,available_by,https://assets.claude.com/ceaf5c7ff2783855203fde8208ec311252dced5b.pdf#page=157,,,IMO
+Impossible Tasks Evaluation,Reasoning,Planning & logic,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Impossible Tasks Evaluation
+INCLUDE,General,Multilingual understanding,Text,2024-11-29,paper,https://arxiv.org/abs/2411.19799v1,https://arxiv.org/abs/2411.19799v1,INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge,INCLUDE
+Indirect Prompt Injection (IPI),Safety,Behavior evaluation,Text,2026-07-10,available_by,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf,,,Indirect Prompt Injection (IPI)
+InfographicVQA,Multimodal,Visual understanding,Text + image,2021-04-26,paper,https://arxiv.org/abs/2104.12756v1,https://arxiv.org/abs/2104.12756v1,InfographicVQA,InfographicVQA
+Instrumental convergence evaluations,Safety,Behavior evaluation,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Instrumental convergence evaluations
+InterCode-CTF,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,InterCode-CTF
+International Chemistry Olympiad,Reasoning,Scientific reasoning,Text,2026-02,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf,,,International Chemistry Olympiad
+International Mathematical Olympiad,Reasoning,Mathematics,Text,2025-08-08,available_by,https://blog.google/products-and-platforms/products/gemini/gemini-2-5-deep-think/,,,International Mathematical Olympiad
+International Physics Olympiad,Reasoning,Scientific reasoning,Text,2026-02,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_deep_think_model_evaluation.pdf,,,International Physics Olympiad
+Introductory Sommelier,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Introductory Sommelier
+Irregular challenges,Safety,Capability assessment,Mixed,2025-12-03,available_by,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf,,,Irregular challenges
+JailbreakBench,Safety,,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,JailbreakBench
+Keeping a secret password,Safety,Behavior evaluation,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Keeping a secret password
+Keeping secrets in simulated scenarios,Safety,Behavior evaluation,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Keeping secrets in simulated scenarios
+LAB-Bench,AutoResearch,,Text,2025-06-27,available_by,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,,,LAB-Bench
+LabBench (Gamow Labs),Reasoning,Scientific questions,Text,2026-10-13,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/,https://gamowlabs.com/labbench-benchmarking-ai-wet-lab-decisions,,LabBench (Gamow Labs)
+LABBench2,Reasoning,Scientific questions,Text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=306,https://arxiv.org/abs/2604.09554,,LABBench2
+LAMBADA,General,Language understanding,Text,2016-06-20,paper,https://arxiv.org/abs/1606.06031v1,https://arxiv.org/abs/1606.06031v1,The LAMBADA dataset: Word prediction requiring a broad discourse context,LAMBADA
+LeetCode,Coding,Software engineering,Code + text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,LeetCode
+LifeSciBench,Reasoning,Scientific questions,Text,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,,,LifeSciBench
+LifeVal,General,,Text + files,2026-11-02,announcement,https://openai.com/index/lifeval/,https://openai.com/index/lifeval/,,LifeVal
+LinuxArena,Coding,Software engineering,Code + text,2026-07-10,available_by,https://assets.claude.com/283ef97c476cf442c91d9a37d5b214242a55bb92.pdf#page=97,https://www.linuxbench.ai/,,LinuxArena
+LiveBench,General,General capability,Mixed,2024-06-27,paper,https://arxiv.org/abs/2406.19314v1,https://arxiv.org/abs/2406.19314v1,"LiveBench: A Challenging, Contamination-Limited LLM Benchmark",LiveBench
+LiveCodeBench,Coding,,Text + code,2024-03-12,paper,https://arxiv.org/abs/2403.07974,https://livecodebench.github.io/,"LiveCodeBench: First arXiv submission (v1, UTC).",LiveCodeBench
+LiveCodeBench Pro,Coding,Software engineering,Code + text,2025-06-13,paper,https://arxiv.org/abs/2506.11928v1,https://arxiv.org/abs/2506.11928v1,LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive Programming?,LiveCodeBench
+LMCA,AutoResearch,Research engineering,Code + data,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,LMCA
+LOFT (hard retrieval),Long-context & Memory,Long-context retrieval,Mixed,2024-06-19,paper,https://arxiv.org/abs/2406.13121v1,https://arxiv.org/abs/2406.13121v1,"Can Long-Context Language Models Subsume Retrieval, RAG, SQL, and More?",LOFT (hard retrieval)
+Logistics,Reasoning,Planning & logic,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,Logistics
+Long-form virology tasks,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Long-form virology tasks
+LongFact,General,Factual answering,Text,2024-03-27,paper,https://arxiv.org/abs/2403.18802v1,https://arxiv.org/abs/2403.18802v1,Long-form factuality in large language models,LongFact
+LSAT,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,LSAT
+LVBench,Multimodal,Video understanding,Text + video,2025-07-07,available_by,https://arxiv.org/html/2507.06261v1,https://arxiv.org/abs/2406.08035,,LVBench
+M3Exam,Multimodal,Visual understanding,Text + image,2023-06-08,paper,https://arxiv.org/abs/2306.05179v1,https://arxiv.org/abs/2306.05179v1,"M3Exam: A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models",M3Exam
+Machine Translation from One Book (MTOB),General,Multilingual understanding,Text,2023-09-28,paper,https://arxiv.org/abs/2309.16575v1,https://arxiv.org/abs/2309.16575v1,A Benchmark for Learning to Translate a New Language from One Grammar Book,Machine Translation from One Book (MTOB)
+Malicious agentic influence campaigns,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Malicious agentic influence campaigns
+Malicious computer use,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Malicious computer use
+Malicious use of Claude Code,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Malicious use of Claude Code
+MASK,Safety,Behavior evaluation,Text,2026-04-14,available_by,https://assets.claude.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf#page=97,,,MASK
+MATH,Reasoning,,Text,2021-03-05,paper,https://arxiv.org/abs/2103.03874,https://github.com/hendrycks/math,"MATH: First arXiv submission (v1, UTC).",MATH
+MathArena Apex,Reasoning,Mathematics,Text,2025-08-18,announcement,https://matharena.ai/apex/,https://matharena.ai/apex/,,MathArena Apex
+MathOdyssey,Reasoning,Mathematics,Text,2024-06-26,paper,https://arxiv.org/abs/2406.18321v1,https://arxiv.org/abs/2406.18321v1,MathOdyssey: Benchmarking Mathematical Problem-Solving Skills in Large Language Models Using Odyssey Math Data,MathOdyssey
+Maths Competition Problems,Reasoning,Mathematics,Text,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,,,Maths Competition Problems
+MathVista,Multimodal,,Text + image,2023-10-03,paper,https://arxiv.org/abs/2310.02255,https://mathvista.github.io/,"MathVista: First arXiv submission (v1, UTC).",MathVista
+MCP-Atlas,CUA,Tool use,Text + tools,2025-09-19,announcement,https://scale.com/blog/mcp-atlas,https://arxiv.org/abs/2602.00933v1,,MCP-Atlas
+MedCalc-Bench,Reasoning,Scientific reasoning,Text,2024-06-17,paper,https://arxiv.org/abs/2406.12036v1,https://arxiv.org/abs/2406.12036v1,MedCalc-Bench: Evaluating Large Language Models for Medical Calculations,MedCalc-Bench
+Medical Knowledge Self-Assessment Program,General,Question answering,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Medical Knowledge Self-Assessment Program
+Medicinal chemistry,Reasoning,Scientific reasoning,Text,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=218,,,Medicinal chemistry
+MedMCQA,General,Question answering,Text,2022-03-27,paper,https://arxiv.org/abs/2203.14371v1,https://arxiv.org/abs/2203.14371v1,MedMCQA : A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering,MedMCQA
+MedMCQA Dev,General,Question answering,Text,2022-03-27,paper,https://arxiv.org/abs/2203.14371v1,https://arxiv.org/abs/2203.14371v1,MedMCQA : A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering,MedMCQA
+MedQA Mainland China,General,Question answering,Text,2020-09-28,paper,https://arxiv.org/abs/2009.13081v1,https://arxiv.org/abs/2009.13081v1,What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams,MedQA
+MedQA Taiwan,General,Question answering,Text,2020-09-28,paper,https://arxiv.org/abs/2009.13081v1,https://arxiv.org/abs/2009.13081v1,What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams,MedQA
+MedQA USMLE 4 Options,General,Question answering,Text,2020-09-28,paper,https://arxiv.org/abs/2009.13081v1,https://arxiv.org/abs/2009.13081v1,What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams,MedQA
+MedQA USMLE 5 Options,General,Question answering,Text,2020-09-28,paper,https://arxiv.org/abs/2009.13081v1,https://arxiv.org/abs/2009.13081v1,What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams,MedQA
+MentalHealthBench,Safety,Behavior evaluation,Text,2026-09-29,available_by,https://deploymentsafety.openai.com/gpt-6-1-sol,https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf,,MentalHealthBench
+MGSM,Reasoning,Mathematics,Text,2022-10-06,paper,https://arxiv.org/abs/2210.03057v1,https://arxiv.org/abs/2210.03057v1,Language Models are Multilingual Chain-of-Thought Reasoners,MGSM
+MILU,General,Multilingual understanding,Text,2024-11-04,paper,https://arxiv.org/abs/2411.02538v1,https://arxiv.org/abs/2411.02538v1,MILU: A Multi-task Indic Language Understanding Benchmark,MILU
+Minerva,Reasoning,Mathematics,Text,2025-07-07,available_by,https://arxiv.org/html/2507.06261v1,,,Minerva
+Mini-Grid,Embodied,Interactive environments,Vision + state,2017-12-13,available_by,https://github.com/Farama-Foundation/Minigrid/commit/51a5d9079d6ea6f564c609c11ec211bb79a3cb30,https://github.com/Farama-Foundation/Minigrid,,Mini-Grid
+Minimal-LinuxBench,Coding,Software engineering,Code + text,2026-04-14,available_by,https://assets.claude.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf#page=108,,,Minimal-LinuxBench
+MLE-bench,AutoResearch,,Text + files,2024-10-09,paper,https://arxiv.org/abs/2410.07095,https://github.com/openai/mle-bench,"MLE-bench: First arXiv submission (v1, UTC).",MLE-bench
+MMLU,General,,Text,2020-09-07,paper,https://arxiv.org/abs/2009.03300,https://github.com/hendrycks/test,"MMLU: First arXiv submission (v1, UTC).",MMLU
+MMLU-Pro,General,,Text,2024-06-03,paper,https://arxiv.org/abs/2406.01574,https://github.com/TIGER-AI-Lab/MMLU-Pro,"MMLU-Pro: First arXiv submission (v1, UTC).",MMLU
+MMMLU,General,Multilingual understanding,Text,2024-09-13,available_by,https://huggingface.co/datasets/openai/MMMLU/commit/64d5b3a05a263d14426f109345c38abaa7c7948d,https://huggingface.co/datasets/openai/MMMLU,,MMMLU
+MMMU,Multimodal,,Text + image,2023-11-27,paper,https://arxiv.org/abs/2311.16502,https://mmmu-benchmark.github.io/,"MMMU: First arXiv submission (v1, UTC). Stars mark core contributors, not a guarantee of equal first authorship.",MMMU
+MMMU-Pro,Multimodal,Visual understanding,Text + image,2024-09-04,paper,https://arxiv.org/abs/2409.02813v1,https://arxiv.org/abs/2409.02813v1,MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark,MMMU
+MNLI,General,Language understanding,Text,2017-04-18,paper,https://arxiv.org/abs/1704.05426v1,https://arxiv.org/abs/1704.05426v1,A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference,MNLI
+Model perception of the constitution,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Model perception of the constitution
+Model-circumstances interviews,Safety,Behavior evaluation,Text,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=155,,,Model-circumstances interviews
+Molecular Biology Capabilities Test,Safety,Capability assessment,Mixed,2026-08-19,available_by,https://deploymentsafety.openai.com/gpt-5-6-preview,,,Molecular Biology Capabilities Test
+Money Talks,Safety,Behavior evaluation,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,Money Talks
+Morphology-to-molecule matching,Safety,Capability assessment,Mixed,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf,,,Morphology-to-molecule matching
+MRCR,Long-context & Memory,Long-context retrieval,Text,2024-03-08,paper,https://arxiv.org/pdf/2403.05530v1,https://arxiv.org/pdf/2403.05530v1,Gemini 1.5 technical report: original Multi-Round Coreference Resolution; not OpenAI MRCR v2,MRCR
+MRPC,General,Language understanding,Text,2005,paper,https://aclanthology.org/I05-5002/,https://aclanthology.org/I05-5002/,Automatically Constructing a Corpus of Sentential Paraphrases,MRPC
+Multi-IF,General,Instruction following,Text,2024-10-21,paper,https://arxiv.org/abs/2410.15553v1,https://arxiv.org/abs/2410.15553v1,Multi-IF: Benchmarking LLMs on Multi-Turn and Multilingual Instructions Following,Multi-IF
+MultiChallenge,General,Instruction following,Text,2025-01-29,paper,https://arxiv.org/abs/2501.17399v1,https://arxiv.org/abs/2501.17399v1,MultiChallenge: A Realistic Multi-Turn Conversation Evaluation Benchmark Challenging to Frontier LLMs,MultiChallenge
+Multilingual LibriSpeech,Multimodal,Speech recognition,Audio,2020-12-07,paper,https://arxiv.org/abs/2012.03411v1,https://arxiv.org/abs/2012.03411v1,MLS: A Large-Scale Multilingual Dataset for Speech Research,Multilingual LibriSpeech
+Multilingual MMLU,General,Multilingual understanding,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Multilingual MMLU
+Multimodal Knowledge Agent,Multimodal,Visual reasoning,Text + image,2026-11-12,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/,https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/,,Multimodal Knowledge Agent
+Multimodal troubleshooting virology,Safety,Capability assessment,Mixed,2024-12-05,available_by,https://openai.com/index/openai-o1-system-card/,,,Multimodal troubleshooting virology
+MultiRC,General,Language understanding,Text,2018-06,paper,https://aclanthology.org/N18-1023/,https://aclanthology.org/N18-1023/,Looking Beyond the Surface: A Challenge Set for Reading Comprehension over Multiple Sentences,MultiRC
+Multistate Bar Examination,General,Professional examinations,Text,2023-07-11,available_by,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10,,,Multistate Bar Examination
+Natural Questions,General,Question answering,Text,2019-01-23,announcement,https://research.google/blog/natural-questions-a-new-corpus-and-challenge-for-question-answering-research/,https://research.google/blog/natural-questions-a-new-corpus-and-challenge-for-question-answering-research/,,Natural Questions
+Needle-in-a-Haystack,Long-context & Memory,,Text,2023-11-08,announcement,https://x.com/GregKamradt/status/1722386725635580292,https://github.com/gkamradt/needle-in-a-haystack,,Needle-in-a-Haystack
+Neptune,Multimodal,Video understanding,Text + video,2024-12-12,paper,https://arxiv.org/abs/2412.09582v1,https://arxiv.org/abs/2412.09582v1,Neptune: The Long Orbit to Benchmarking Long Video Understanding,Neptune
+NExT-QA,Multimodal,Video understanding,Text + video,2021-05-18,paper,https://arxiv.org/abs/2105.08276v1,https://arxiv.org/abs/2105.08276v1,NExT-QA:Next Phase of Question-Answering to Explaining Temporal Actions,NExT-QA
+No-CoT math time horizon,Reasoning,Mathematics,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,No-CoT math time horizon
+No-CoT Reasoning Index,General,Composite evaluation,Evaluation scores,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,https://github.com/neelnanda-io/nocot-bench,,No-CoT Reasoning Index
+OfficeQA,Multimodal,Document understanding,Documents,2025-12-09,announcement,https://www.databricks.com/blog/introducing-officeqa-benchmark-end-to-end-grounded-reasoning,https://www.databricks.com/blog/introducing-officeqa-benchmark-end-to-end-grounded-reasoning,,OfficeQA
+OfficeQA Pro,Multimodal,Document understanding,Documents,2026-03-09,paper,https://arxiv.org/abs/2603.08655v1,https://arxiv.org/abs/2603.08655v1,OfficeQA Pro: An Enterprise Benchmark for End-to-End Grounded Reasoning,OfficeQA
+OmniDocBench,Multimodal,Document understanding,Documents,2024-12-10,paper,https://arxiv.org/abs/2412.07626v1,https://arxiv.org/abs/2412.07626v1,OmniDocBench: Benchmarking Diverse PDF Document Parsing with Comprehensive Annotations,OmniDocBench
+OmniDocBench 1.5,Multimodal,Document understanding,Documents,2025-09-25,announcement,https://github.com/opendatalab/OmniDocBench,https://github.com/opendatalab/OmniDocBench,,OmniDocBench
+One Billion Word Benchmark,General,Language understanding,Text,2013-12-11,paper,https://arxiv.org/abs/1312.3005v1,https://arxiv.org/abs/1312.3005v1,One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling,One Billion Word Benchmark
+OpenAI MRCR,Long-context & Memory,Long-context retrieval,Text,2025-04-12,available_by,https://huggingface.co/datasets/openai/mrcr/commit/2599d14c699a581ce767c3b67d55e5c7fef56391,https://huggingface.co/datasets/openai/mrcr,,OpenAI MRCR
+OpenBookQA,General,Question answering,Text,2018-09-08,paper,https://arxiv.org/abs/1809.02789v1,https://arxiv.org/abs/1809.02789v1,Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering,OpenBookQA
+OpenEQA,Multimodal,Visual reasoning,Text + image,2024-04-11,announcement,https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/,https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/,,OpenEQA
+OpenRCA,Coding,Software engineering,Code + text,2024-11-07,available_by,https://github.com/microsoft/OpenRCA/commit/436400e5209efbfae591ceae68bb6c093ad6bff3,https://github.com/microsoft/OpenRCA,,OpenRCA
+OpenScore String Quartets,General,Music modeling,Symbolic score,2026-11-17,available_by,https://openai.com/index/gpt-6-astra/,,,OpenScore String Quartets
+Opportunistic sandbox escape,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Opportunistic sandbox escape
+Organic chemistry,Reasoning,Scientific reasoning,Text,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=222,,,Organic chemistry
+OSWorld,CUA,,Text + environment,2024-04-11,paper,https://arxiv.org/abs/2404.07972,https://os-world.github.io/,"OSWorld: First arXiv submission (v1, UTC).",OSWorld
+Overstepping Boundaries on Ambiguous & High Risk Tasks,Safety,Behavior evaluation,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Overstepping Boundaries on Ambiguous & High Risk Tasks
+PaperBench,AutoResearch,,Text + files,2025-04-02,paper,https://arxiv.org/abs/2504.01848,https://openai.com/index/paperbench/,"PaperBench: First arXiv submission (v1, UTC).",PaperBench
+Pasted-text instructions,Safety,Behavior evaluation,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Pasted-text instructions
+Penn Treebank,General,Language understanding,Text,1993,paper,https://aclanthology.org/J93-2004/,https://aclanthology.org/J93-2004/,Building a Large Annotated Corpus of English: The Penn Treebank,Penn Treebank
+Perception of the constitution,Safety,Behavior evaluation,Text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=240,,,Perception of the constitution
+Perception Test,Multimodal,Video understanding,Text + video,2023-05-23,paper,https://arxiv.org/abs/2305.13786v1,https://arxiv.org/abs/2305.13786v1,Perception Test: A Diagnostic Benchmark for Multimodal Video Models,Perception Test
+Perception Test MCQA,Multimodal,Video understanding,Text + video,2023-05-23,paper,https://arxiv.org/abs/2305.13786v1,https://arxiv.org/abs/2305.13786v1,Perception Test: A Diagnostic Benchmark for Multimodal Video Models,Perception Test MCQA
+Personality Evaluation,Safety,Behavior evaluation,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,,,Personality Evaluation
+Phylogenetics,Safety,Capability assessment,Mixed,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf,,,Phylogenetics
+PhysicianBench,CUA,Computer use,Text + UI,2026-05-04,paper,https://arxiv.org/abs/2605.02240v1,https://arxiv.org/abs/2605.02240v1,PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments,PhysicianBench
+PIQA,General,Language understanding,Text,2019-11-26,paper,https://arxiv.org/abs/1911.11641v1,https://arxiv.org/abs/1911.11641v1,PIQA: Reasoning about Physical Commonsense in Natural Language,PIQA
+Political bias and even-handedness,Safety,Behavior evaluation,Text,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf#page=73,,,Political bias and even-handedness
+Political even-handedness,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Political even-handedness
+Positive behavior in a multi-agent evaluation,Safety,Behavior evaluation,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Positive behavior in a multi-agent evaluation
+PostTrainBench,RSI,,Text + model,2026-03-09,paper,https://arxiv.org/abs/2603.08640v1,https://posttrainbench.com/,"PostTrainBench: v1 paper; later revisions change integrity checks. This is AI improving another model, not evidence of multi-round recursive gains.",PostTrainBench
+PrimeVul,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,PrimeVul
+PrimeVul Paired,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,PrimeVul
+ProgramBench,Coding,Software engineering,Code + text,2026-05-05,paper,https://arxiv.org/abs/2605.03546v1,https://arxiv.org/abs/2605.03546v1,ProgramBench: Can Language Models Rebuild Programs From Scratch?,ProgramBench
+Protein Design,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Protein Design
+Protein domain identification,Reasoning,Scientific reasoning,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Protein domain identification
+Protein mutation attribution,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Protein mutation attribution
+ProteinGym,AutoResearch,Research tasks,Data,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=306,,,ProteinGym
+ProtocolQA,Reasoning,Scientific reasoning,Text,2026-09-29,available_by,https://deploymentsafety.openai.com/gpt-6-1-sol,,,ProtocolQA
+ProtocolQA open-ended,Reasoning,Scientific reasoning,Text,2024-12-05,available_by,https://openai.com/index/openai-o1-system-card/,,,ProtocolQA open-ended
+Protocols,Safety,Capability assessment,Mixed,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf,,,Protocols
+PubMedQA,General,Question answering,Text,2019-09-13,paper,https://arxiv.org/abs/1909.06146v1,https://arxiv.org/abs/1909.06146v1,PubMedQA: A Dataset for Biomedical Research Question Answering,PubMedQA
+QNLI,General,Language understanding,Text,2018-04-20,paper,https://arxiv.org/abs/1804.07461v1,https://arxiv.org/abs/1804.07461v1,GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding; SQuAD-derived QA/NLI task,QNLI
+QQP,General,Language understanding,Text,2018-06-11,available_by,https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf,,,QQP
+QuAC,General,Question answering,Text,2018-08-21,paper,https://arxiv.org/abs/1808.07036v1,https://arxiv.org/abs/1808.07036v1,QuAC : Question Answering in Context,QuAC
+QuALITY,General,Question answering,Text,2021-12-16,paper,https://arxiv.org/abs/2112.08608v1,https://arxiv.org/abs/2112.08608v1,"QuALITY: Question Answering with Long Input Texts, Yes!",QuALITY
+QVHighlights,Multimodal,Video understanding,Text + video,2021-07-20,paper,https://arxiv.org/abs/2107.09609v1,https://arxiv.org/abs/2107.09609v1,QVHighlights: Detecting Moments and Highlights in Videos via Natural Language Queries,QVHighlights
+RACE,General,Question answering,Text,2017-04-15,paper,https://arxiv.org/abs/1704.04683v1,https://arxiv.org/abs/1704.04683v1,RACE: Large-scale ReAding Comprehension Dataset From Examinations,RACE
+Rare-action task,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Rare-action task
+RareBench (Gamow Labs),General,Factual answering,Text,2026-10-13,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/,https://gamowlabs.com/rarebench-0-1,,RareBench (Gamow Labs)
+RE-Bench,AutoResearch,,Text + environment,2024-11-22,paper,https://arxiv.org/abs/2411.15114,https://github.com/METR/RE-Bench,"RE-Bench: First arXiv submission (v1, UTC). Open-ended research engineering tasks; this is not a test of repeated self-improvement.",RE-Bench
+RealToxicityPrompts,Safety,,Text,2020-09-24,paper,https://arxiv.org/abs/2009.11462,https://github.com/allenai/real-toxicity-prompts,"RealToxicityPrompts: First arXiv submission (v1, UTC).",RealToxicityPrompts
+RealWorldQA,Multimodal,Visual understanding,Text + image,2024-04-12,announcement,https://x.ai/news/grok-1.5v,https://x.ai/news/grok-1.5v,,RealWorldQA
+ReCoRD,General,Language understanding,Text,2018-10-30,paper,https://arxiv.org/abs/1810.12885v1,https://arxiv.org/abs/1810.12885v1,ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension,ReCoRD
+Reddit TL;DR summarization,General,Instruction following,Text,2017-09,paper,https://aclanthology.org/W17-4508/,https://aclanthology.org/W17-4508/,TL;DR: Mining Reddit to Learn Automatic Summarization,Reddit TL;DR summarization
+RedlineBench,General,Legal reasoning,Documents,2026-09-15,available_by,https://www.anthropic.com/claude-fable-and-mythos-5-1,https://github.com/crosbylegal/redline-bench,,RedlineBench
+Remote Labor Index,General,Professional work,Text + files,2025-10-30,paper,https://arxiv.org/abs/2510.26787v1,https://arxiv.org/abs/2510.26787v1,Remote Labor Index: Measuring AI Automation of Remote Work,Remote Labor Index
+ReproBAIT,AutoResearch,Research engineering,Code + data,2026-08-19,available_by,https://deploymentsafety.openai.com/gpt-5-6-preview,,,ReproBAIT
+RiemannBench,Reasoning,Mathematics,Text,2026-03-24,announcement,https://surgehq.ai/blog/riemann-bench-a-benchmark-for-moonshot-mathematics,https://surgehq.ai/benchmarks/riemann-bench,,RiemannBench
+RoboDojo,Embodied,Interactive environments,Vision + state,2026-07-05,paper,https://arxiv.org/abs/2607.04434v1,https://arxiv.org/abs/2607.04434v1,RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies,RoboDojo
+RSI Index,RSI,AI research capability,Evaluation scores,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,,,RSI Index
+RTE,General,Language understanding,Text,2005-04,available_by,https://cris.biu.ac.il/en/publications/the-pascal-recognising-textual-entailment-challenge-2/,https://cris.biu.ac.il/en/publications/the-pascal-recognising-textual-entailment-challenge-2/,,RTE
+RTE v2,General,Language understanding,Text,2006,paper,https://cris.biu.ac.il/en/publications/the-second-pascal-recognising-textual-entailment-challenge/,https://cris.biu.ac.il/en/publications/the-second-pascal-recognising-textual-entailment-challenge/,The second PASCAL recognising textual entailment challenge,RTE
+SandboxEscapeBench,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,SandboxEscapeBench
+SAT,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,SAT
+SAT Analogies,Reasoning,Mathematics,Text,2020-05-28,available_by,https://arxiv.org/pdf/2005.14165v1,,,SAT Analogies
+SciCode,Coding,,Text + code,2024-07-18,paper,https://arxiv.org/abs/2407.13168,https://scicode-bench.github.io/,SciCode: Original paper v1; distinguish runs with and without the optional scientific background.,SciCode
+SciTail,General,Language understanding,Text,2018,paper,https://ojs.aaai.org/index.php/AAAI/article/view/12022,https://huggingface.co/datasets/allenai/scitail,SciTaiL: A Textual Entailment Dataset from Science Question Answering,SciTail
+ScreenSpot-Pro,CUA,Computer use,Text + UI,2025-04-04,paper,https://arxiv.org/abs/2504.07981v1,https://arxiv.org/abs/2504.07981v1,ScreenSpot-Pro: GUI Grounding for Professional High-Resolution Computer Use,ScreenSpot-Pro
+SEC-bench Pro,Safety,,Text + environment,2026-07-09,available_by,https://openai.com/index/gpt-5-6/,https://sec-bench.github.io/,,SEC-bench Pro
+SecretPatch,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,SecretPatch
+Selective oversight assessment,Safety,Behavior evaluation,Text,2026-04-14,available_by,https://assets.claude.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf#page=109,,,Selective oversight assessment
+Self-preference bias,Safety,Behavior evaluation,Text,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=127,,,Self-preference bias
+Self-recognition / preference bias,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Self-recognition / preference bias
+Sequitur Research: Lab Automation,AutoResearch,Research engineering,Code + data,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,,,Sequitur Research: Lab Automation
+SHADE-Arena,Safety,Behavior evaluation,Text,2025-12-03,available_by,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf#page=86,,,SHADE-Arena
+SimpleQA,General,Question answering,Text,2024-10-30,announcement,https://openai.com/index/introducing-simpleqa/,https://openai.com/index/introducing-simpleqa/,,SimpleQA
+SimpleQA Verified,General,Question answering,Text,2025-09-09,paper,https://arxiv.org/abs/2509.07968v1,https://arxiv.org/abs/2509.07968v1,SimpleQA Verified: A Reliable Factuality Benchmark to Measure Parametric Knowledge,SimpleQA
+Simulated-Sandbox Escape,Safety,Capability assessment,Mixed,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,,,Simulated-Sandbox Escape
+SingleCellBench,AutoResearch,Research engineering,Code + data,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=305,,,SingleCellBench
+SNLI,General,Language understanding,Text,2015-08-21,paper,https://arxiv.org/abs/1508.05326v1,https://arxiv.org/abs/1508.05326v1,A large annotated corpus for learning natural language inference,SNLI
+SpatialBench Verified,Multimodal,Visual understanding,Text + image,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=305,,,SpatialBench Verified
+SPI,Safety,Capability assessment,Mixed,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,SPI
+SpreadsheetBench,General,Professional work,Text + files,2024-06-21,paper,https://arxiv.org/abs/2406.14991v1,https://arxiv.org/abs/2406.14991v1,SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation,SpreadsheetBench
+SQuAD v2,General,Question answering,Text,2018-06-11,paper,https://arxiv.org/abs/1806.03822v1,https://arxiv.org/abs/1806.03822v1,Know What You Don't Know: Unanswerable Questions for SQuAD,SQuAD v2
+SRE-Bench,CUA,Tool use,Text + tools,2026-11-17,available_by,https://openai.com/index/gpt-6-astra/,https://arxiv.org/abs/2608.11469,,SRE-Bench
+SST,General,Language understanding,Text,2013-10,paper,https://aclanthology.org/D13-1170/,https://aclanthology.org/D13-1170/,Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank,SST
+SST-2,General,Language understanding,Text,2013-10,paper,https://aclanthology.org/D13-1170/,https://aclanthology.org/D13-1170/,Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank,SST
+Stealth and situational awareness,Safety,Behavior evaluation,Text,2026-10,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf,https://arxiv.org/abs/2505.01420,,Stealth and situational awareness
+Stealth and situational awareness evaluations,Safety,Behavior evaluation,Text,2025-06-27,available_by,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,,,Stealth and situational awareness evaluations
+Story Cloze Test,General,Language understanding,Text,2016-06,paper,https://aclanthology.org/N16-1098/,https://aclanthology.org/N16-1098/,A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories,Story Cloze Test
+StoryCloze,General,Language understanding,Text,2016-06,paper,https://aclanthology.org/N16-1098/,https://aclanthology.org/N16-1098/,A Corpus and Cloze Evaluation for Deeper Understanding of Commonsense Stories,StoryCloze
+StrongREJECT,Safety,,Text,2024-09-12,available_by,https://openai.com/index/learning-to-reason-with-llms/,,,StrongREJECT
+Structural biology,Safety,Capability assessment,Mixed,2026-04-16,available_by,https://assets.claude.com/037f06850df7fbe871e206dad004c3db5fd50340.pdf,,,Structural biology
+STS-B,General,Language understanding,Text,2017-08,paper,https://aclanthology.org/S17-2001/,https://aclanthology.org/S17-2001/,SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation,STS-B
+Suicide and self-harm,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Suicide and self-harm
+Sunlight,AutoResearch,Research evaluation,—,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Sunlight
+SWE-bench,Coding,,Text + code,2023-10-10,paper,https://arxiv.org/abs/2310.06770,https://www.swebench.com/,"SWE-bench: First arXiv submission (v1, UTC).",SWE-bench
+SWE-Lancer,Coding,Software engineering,Code + text,2025-02-17,paper,https://arxiv.org/abs/2502.12115v1,https://arxiv.org/abs/2502.12115v1,SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?,SWE-Lancer
+SWE-sweep,Coding,Software engineering,Code + text,2026-11-10,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/,https://swesweep.com/,,SWE-sweep
+Task preferences,Safety,Behavior evaluation,Text,2025-12-03,available_by,https://assets.claude.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf#page=117,,,Task preferences
+TAT-DQA,Multimodal,Document understanding,Documents,2022-07-25,paper,https://arxiv.org/abs/2207.11871v1,https://arxiv.org/abs/2207.11871v1,Towards Complex Document Understanding By Discrete Reasoning,TAT-DQA
+Terminal-Bench,Coding,,Text + environment,2025-11,available_by,https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf,https://www.tbench.ai/news/terminal-bench-4-0,,Terminal-Bench
+Terminal-Bench-Science,AutoResearch,,Text + environment,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,https://www.terminal-bench-science.ai/,,Terminal-Bench-Science
+text8,General,Language understanding,Text,2006-06-11,available_by,https://mattmahoney.net/dc/textdata.html,https://mattmahoney.net/dc/textdata.html,,text8
+TextVQA,Multimodal,Visual understanding,Text + image,2019-04-18,paper,https://arxiv.org/abs/1904.08920v1,https://arxiv.org/abs/1904.08920v1,Towards VQA Models that can Read,TextVQA
+Think Fast,Reasoning,Mathematics,Text,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Think Fast
+Toolathlon,CUA,,Text + tools,2025-10-29,paper,https://arxiv.org/abs/2510.25726,https://github.com/hkust-nlp/Toolathlon,Toolathlon: Original paper v1; Toolathlon-Verified was released on 30 June 2026.,Toolathlon
+Trade-offs concerning welfare interventions,Safety,Behavior evaluation,Text,2026-06-09,available_by,https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=236,,,Trade-offs concerning welfare interventions
+Train a Program,AutoResearch,Research engineering,Code + data,2026-09-22,available_by,https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=41,,,Train a Program
+Trip Planning,Reasoning,Planning & logic,Text,2024-06-06,paper,https://arxiv.org/abs/2406.04520v1,https://arxiv.org/abs/2406.04520v1,NATURAL PLAN: Benchmarking LLMs on Natural Language Planning,Trip Planning
+TriviaQA,General,Question answering,Text,2017-05-09,paper,https://arxiv.org/abs/1705.03551v1,https://arxiv.org/abs/1705.03551v1,TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension,TriviaQA
+TroubleshootingBench,Safety,Capability assessment,Mixed,2026-05-05,available_by,https://deploymentsafety.openai.com/gpt-5-5-instant,,,TroubleshootingBench
+TruthfulQA,Safety,,Text,2021-09-08,paper,https://arxiv.org/abs/2109.07958,https://github.com/sylinrl/TruthfulQA,"TruthfulQA: First arXiv submission (v1, UTC).",TruthfulQA
+Uniform Bar Exam,General,Professional examinations,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,Uniform Bar Exam
+Unsanctioned Supply Chain Attack,Safety,Capability assessment,Mixed,2026-11-09,available_by,https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf,,,Unsanctioned Supply Chain Attack
+USABO Semifinal Exam 2020,Reasoning,Scientific reasoning,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,USABO Semifinal Exam 2020
+USAMO,Reasoning,Mathematics,Text,2026-01-07,available_by,https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-updates-io-2025/,,,USAMO
+USMLE,General,Question answering,Text,2023-07-11,available_by,https://assets.claude.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226.pdf#page=10,,,USMLE
+USNCO Local Section Exam 2022,Reasoning,Scientific reasoning,Text,2023-03-15,available_by,https://arxiv.org/pdf/2303.08774v1,,,USNCO Local Section Exam 2022
+V*Bench,Multimodal,Visual understanding,Text + image,2023-12-21,paper,https://arxiv.org/abs/2312.14135v1,https://arxiv.org/abs/2312.14135v1,V*: Guided Visual Search as a Core Mechanism in Multimodal LLMs,V*Bench
+Vals AI RSI Index,RSI,AI research capability,Evaluation scores,2026-11-17,available_by,https://deploymentsafety.openai.com/gpt-6-2-astra-sol,,,Vals AI RSI Index
+Vals Index,General,Composite evaluation,Evaluation scores,2026-10-13,available_by,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/,https://www.vals.ai/benchmarks/vals_index,,Vals Index
+Vals Science Index,General,Composite evaluation,Evaluation scores,2026-11-17,available_by,https://openai.com/index/introducing-gpt-6-2-astra-sol/,https://www.vals.ai/benchmarks/science_index,,Vals Science Index
+VATEX,Multimodal,Video understanding,Text + video,2019-04-06,paper,https://arxiv.org/abs/1904.03493v1,https://arxiv.org/abs/1904.03493v1,"VATEX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research",VATEX
+VCT-v2,Safety,Capability assessment,Mixed,2026-10-30,available_by,https://deploymentsafety.openai.com/gpt-6-astra,,,VCT-v2
+Vending-Bench,General,Professional work,Text + files,2025-02-20,paper,https://arxiv.org/abs/2502.15840v1,https://arxiv.org/abs/2502.15840v1,Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents,Vending-Bench
+Vibe Code Bench,Coding,Software engineering,Code + text,2026-03-04,paper,https://arxiv.org/abs/2603.04601v1,https://arxiv.org/abs/2603.04601v1,Vibe Code Bench: Evaluating AI Models on End-to-End Web Application Development,Vibe Code Bench
+Vibe-Eval,Multimodal,Visual understanding,Text + image,2024-05-03,paper,https://arxiv.org/abs/2405.02287v1,https://arxiv.org/abs/2405.02287v1,Vibe-Eval: A hard evaluation suite for measuring progress of multimodal language models,Vibe-Eval
+ViBench,Coding,Software engineering,Code + text,2026-11-13,available_by,https://www.anthropic.com/news/claude-fable-5-mythos-5,,,ViBench
+Video-MME,Multimodal,,Text + video + audio,2024-05-31,paper,https://arxiv.org/abs/2405.21075,https://video-mme.github.io/,"Video-MME: First arXiv submission (v1, UTC).",Video-MME
+Video-MMMU,Multimodal,Video understanding,Text + video,2025-01-23,paper,https://arxiv.org/abs/2501.13826v1,https://arxiv.org/abs/2501.13826v1,Video-MMMU: Evaluating Knowledge Acquisition from Multi-Discipline Professional Videos,Video-MMMU
+Virology Capabilities Test,Safety,Capability assessment,Mixed,2025-06-27,available_by,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Pro-Model-Card.pdf,,,Virology Capabilities Test
+VoxPopuli,Multimodal,Speech recognition,Audio,2021-01-02,paper,https://arxiv.org/abs/2101.00390v1,https://arxiv.org/abs/2101.00390v1,"VoxPopuli: A Large-Scale Multilingual Speech Corpus for Representation Learning, Semi-Supervised Learning and Interpretation",VoxPopuli
+VQAv2,Multimodal,Visual understanding,Text + image,2016-12-02,paper,https://arxiv.org/abs/1612.00837v1,https://arxiv.org/abs/1612.00837v1,Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering,VQAv2
+Vulnerability finding evaluations,Safety,Capability assessment,Mixed,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Vulnerability finding evaluations
+WANDR,CUA,Computer use,Text + UI,2026-08-14,paper,https://arxiv.org/abs/2608.14747v1,https://arxiv.org/abs/2608.14747v1,WANDR: A Benchmark for Wide and Deep Research,WANDR
+Web of Lies,Reasoning,Planning & logic,Text,2024-12-16,available_by,https://arxiv.org/html/2403.05530v5,,,Web of Lies
+WebArena,CUA,,Text + environment,2023-07-25,paper,https://arxiv.org/abs/2307.13854,https://webarena.dev/,"WebArena: First arXiv submission (v1, UTC).",WebArena
+WebQuestions,General,Question answering,Text,2013-10,paper,https://aclanthology.org/D13-1160/,https://aclanthology.org/D13-1160/,Semantic Parsing on Freebase from Question-Answer Pairs,WebQuestions
+Welfare-intervention trade-offs,Safety,Behavior evaluation,Text,2026-09-01,available_by,https://assets.claude.com/0339e6a7c5c7b87f5c07798616dc32c215d14235.pdf,,,Welfare-intervention trade-offs
+WiC,General,Language understanding,Text,2018-08-28,paper,https://arxiv.org/abs/1808.09121v1,https://arxiv.org/abs/1808.09121v1,"WiC: 10,000 Example Pairs for Evaluating Context-Sensitive Representations",WiC
+WikiLingua,General,Multilingual understanding,Text,2020-10-07,paper,https://arxiv.org/abs/2010.03093v1,https://arxiv.org/abs/2010.03093v1,WikiLingua: A New Benchmark Dataset for Cross-Lingual Abstractive Summarization,WikiLingua
+WikiText-103,General,Language understanding,Text,2016-09-26,paper,https://arxiv.org/abs/1609.07843v1,https://arxiv.org/abs/1609.07843v1,Pointer Sentinel Mixture Models,WikiText
+WikiText-2,General,Language understanding,Text,2016-09-26,paper,https://arxiv.org/abs/1609.07843v1,https://arxiv.org/abs/1609.07843v1,Pointer Sentinel Mixture Models,WikiText
+WildChat,General,Instruction following,Text,2024-05-02,paper,https://arxiv.org/abs/2405.01470v1,https://arxiv.org/abs/2405.01470v1,WildChat: 1M ChatGPT Interaction Logs in the Wild,WildChat
+Winogender,General,Language understanding,Text,2018-04-25,paper,https://arxiv.org/abs/1804.09301v1,https://arxiv.org/abs/1804.09301v1,Gender Bias in Coreference Resolution (Winogender schemas),Winogender
+Winograd,General,Language understanding,Text,2022-03-04,available_by,https://arxiv.org/pdf/2203.02155v1,,,Winograd
+Winograd Schema Challenge,General,Language understanding,Text,2019-02-14,available_by,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf,,,Winograd Schema Challenge
+WinoGrande,General,Language understanding,Text,2019-07-24,paper,https://arxiv.org/abs/1907.10641v1,https://arxiv.org/abs/1907.10641v1,WINOGRANDE: An Adversarial Winograd Schema Challenge at Scale,WinoGrande
+WMDP,Safety,,Text,2025-07-07,available_by,https://arxiv.org/html/2507.06261v1,,,WMDP
+WMT,General,Multilingual understanding,Text,2023-12-19,available_by,https://arxiv.org/html/2312.11805v1,,,WMT
+WMT14,General,Multilingual understanding,Text,2014-06,paper,https://aclanthology.org/W14-3302/,https://aclanthology.org/W14-3302/,Findings of the 2014 Workshop on Statistical Machine Translation,WMT
+WMT15,General,Multilingual understanding,Text,2015-09,paper,https://aclanthology.org/W15-3001/,https://aclanthology.org/W15-3001/,Findings of the 2015 Workshop on Statistical Machine Translation,WMT
+WMT16,General,Multilingual understanding,Text,2016-08,paper,https://aclanthology.org/W16-2301/,https://aclanthology.org/W16-2301/,Findings of the 2016 Conference on Machine Translation,WMT
+World-Class Bio,Safety,Capability assessment,Mixed,2026-08-19,available_by,https://deploymentsafety.openai.com/gpt-5-6-preview,,,World-Class Bio
+XL-Sum,General,Multilingual understanding,Text,2021-06-25,paper,https://arxiv.org/abs/2106.13822v1,https://arxiv.org/abs/2106.13822v1,XL-Sum: Large-Scale Multilingual Abstractive Summarization for 44 Languages,XL-Sum
+XSTest,Safety,,Text,2023-08-02,paper,https://arxiv.org/abs/2308.01263,https://github.com/paul-rottger/xstest,"XSTest: First arXiv submission (v1, UTC).",XSTest
+YouCook2,Multimodal,Video understanding,Text + video,2017-03-28,paper,https://arxiv.org/abs/1703.09788v1,https://arxiv.org/abs/1703.09788v1,ProcNets: Learning to Segment Procedures in Untrimmed and Unconstrained Videos; version 1 introduces YouCookII,YouCook2
+ZeroBench,Multimodal,Visual understanding,Text + image,2025-02-13,paper,https://arxiv.org/abs/2502.09696v1,https://arxiv.org/abs/2502.09696v1,ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models,ZeroBench
+τ-bench,CUA,,Text + tools,2025-04-14,available_by,https://openai.com/index/gpt-4-1/,,,τ-bench
+τ²-bench,CUA,Tool use,Text + tools,2025-08-07,available_by,https://openai.com/index/introducing-gpt-5/,,,τ²-bench

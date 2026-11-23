@@ -80,6 +80,15 @@ No qualifying same-name AI benchmark identified in the checked sources.
 
 Queries: [arXiv metadata titles (local scan)](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository search](<https://api.github.com/search/repositories?q=HumanityGym+OR+Humanity-Gym+in%3Aname&per_page=60>) · [Hugging Face datasets](<https://huggingface.co/api/datasets?search=HumanityGym&limit=40>) · [Europe PMC title index](<https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE%3A%22BenchGym%22+OR+TITLE%3A%22Bench-Gym%22+OR+TITLE%3A%22Bench+Gym%22%29+OR+%28TITLE%3A%22BenchBenchGym%22+OR+TITLE%3A%22BenchBench-Gym%22+OR+TITLE%3A%22BenchBench+Gym%22%29+OR+%28TITLE%3A%22BenchmarkGym%22+OR+TITLE%3A%22Benchmark-Gym%22+OR+TITLE%3A%22Benchmark+Gym%22%29+OR+%28TITLE%3A%22BenchmarksGym%22+OR+TITLE%3A%22Benchmarks-Gym%22+OR+TITLE%3A%22Benchmarks+Gym%22%29+OR+%28TITLE%3A%22BenchesGym%22+OR+TITLE%3A%22Benches-Gym%22+OR+TITLE%3A%22Benches+Gym%22%29+OR+%28TITLE%3A%22MetaGym%22+OR+TITLE%3A%22Meta-Gym%22+OR+TITLE%3A%22Meta+Gym%22%29+OR+%28TITLE%3A%22FrontierGym%22+OR+TITLE%3A%22Frontier-Gym%22+OR+TITLE%3A%22Frontier+Gym%22%29+OR+%28TITLE%3A%22HumanityGym%22+OR+TITLE%3A%22Humanity-Gym%22+OR+TITLE%3A%22Humanity+Gym%22+OR+TITLE%3A%22Humanity%27s+Gym%22%29+OR+%28TITLE%3A%22AwesomeGym%22+OR+TITLE%3A%22Awesome-Gym%22+OR+TITLE%3A%22Awesome+Gym%22%29&format=json&pageSize=250&resultType=lite>)
 
+<a name="arena"></a>
+## Humanity Arena
+
+**No exact match found** · 2026-11-23
+
+No same-name AI benchmark was found in the checked sources.
+
+Queries: [arXiv pinned title scan](<https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data>) · [GitHub repository names (joined)](<https://api.github.com/search/repositories?q=HumanityArena+in%3Aname&per_page=100>) · [GitHub repository names (hyphenated)](<https://api.github.com/search/repositories?q=Humanity-Arena+in%3Aname&per_page=100>) · [Hugging Face datasets (joined)](<https://huggingface.co/api/datasets?search=HumanityArena&limit=50>) · [Hugging Face datasets (hyphenated)](<https://huggingface.co/api/datasets?search=Humanity-Arena&limit=50>) · [Hugging Face spaces (joined)](<https://huggingface.co/api/spaces?search=HumanityArena&limit=50>) · [Hugging Face spaces (hyphenated)](<https://huggingface.co/api/spaces?search=Humanity-Arena&limit=50>) · [Web discovery (query replay)](<https://www.google.com/search?q=%28%22HumanityArena%22+OR+%22Humanity-Arena%22+OR+%22Humanity+Arena%22%29+AI+model+evaluation+benchmark+leaderboard+paper+project>)
+
 <a name="squared"></a>
 ## Humanity²
 
