@@ -2,6 +2,8 @@
 
 **Is that benchmark name taken?** Two different papers already use *BenchBench*: one [compares how benchmarks rank models](https://arxiv.org/abs/2407.13696); the other [tests how models design benchmarks](https://arxiv.org/abs/2603.20807).
 
+[中文网站](https://yiming-shi.com/awesome-big-bench/zh/) · [English website](https://yiming-shi.com/awesome-big-bench/)
+
 **[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
 
 The **name map** checks 319 prefix–ending pairs. 80 have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
@@ -26,7 +28,7 @@ Help me contribute one benchmark addition or correction to https://github.com/yi
 
 Read CONTRIBUTING.md. Check the existing name, edition and open PRs. Verify the claim against the original paper, project or dated release; cite the exact section or version. A new benchmark belongs in the Directory even if its name does not fit the map. Only change a map verdict with evidence for that exact name; don't add a row or column for a single submission.
 
-Edit the source data on a new branch, not the generated page by hand. Run:
+Edit the source data on a new branch, not the generated page by hand. Supply Simplified Chinese for new or revised display copy; keep official names, editions, metrics and source links intact. Run:
 python3 scripts/build_guide.py
 python3 vote-service/catalog.py
 python3 scripts/build_guide.py --check

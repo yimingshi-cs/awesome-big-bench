@@ -1,0 +1,12 @@
+帮我向 https://github.com/yimingshi-cs/awesome-big-bench 补收录一个评测，或纠正一条记录。改动以我提供的说明和公开来源为准；缺其中一项就先问我。
+
+先读 CONTRIBUTING.md，检查现有条目、具体版本和未合并的 PR。用原始论文、项目官网或有日期的版本公告核实，指明出处和版本。新评测即使不符合命名表的组合，也可以进目录；只有找到该名字的直接证据才能改变格子状态，不要为一次投稿直接加行或列。
+
+在新分支修改源数据，不要手改生成的网页。新增或改写的展示文案需同时提供简体中文，保留官方名称、版本、指标和来源链接。运行：
+python3 scripts/build_guide.py
+python3 vote-service/catalog.py
+python3 scripts/build_guide.py --check
+python3 vote-service/catalog.py --check
+python3 -m unittest discover -s tests
+
+检查 diff。用我已授权的 GitHub 账号将分支推到我的 fork，向 yimingshi-cs/awesome-big-bench:main 提 PR。在 PR 里附上来源和检查结果，把链接给我；由项目维护者审核合并。如果无法提 PR，请给我补丁，并说明还差哪一步。

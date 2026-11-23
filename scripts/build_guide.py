@@ -6,6 +6,7 @@ from itertools import product
 from flagship_reports import history_overview, reports
 from historical_evidence import index_reports, norm
 from directory_catalog import assemble_directory
+from site_locale import editions
 import io
 from urllib.parse import quote
 import csv
@@ -245,7 +246,7 @@ def render():
             raise ValueError('The public ballot API must be a bare HTTPS origin')
     payload = dict(ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
-    scripts = ('app.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
+    scripts = ('language.js','app.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()+'\n'+(ROOT/'web/ballot.css').read_text()).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()
@@ -254,12 +255,12 @@ def render():
     font_license=(ROOT/'web/assets/Manrope-OFL.txt').read_text()
     html=html.replace('/* MARK */',mark).replace('/* MARK_URI */',mark_uri).replace('/* FONT */',font)
     html=html.replace('</head>','<!-- Bundled font notice:\n'+font_license.replace('--','—')+'\n-->\n</head>')
-    html = html.replace('/* DATA */',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'))
+    localized_pages = editions(ROOT, html, payload)
     masthead = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 136" role="img" aria-label="Awesome Big Bench">'
                 '<rect width="960" height="136" rx="10" fill="#e9f8f2"/>'
                 +mark.replace('<svg ', '<svg x="28" y="24" width="88" height="88" ',1)
                 +'<text x="140" y="91" font-family="Georgia,serif" font-size="62" letter-spacing="-3" fill="#192522">Awesome Big Bench</text></svg>\n')
-    outputs={'README.md':readme, 'docs/index.html':html, 'docs/masthead.svg':masthead}
+    outputs={'README.md':readme, **localized_pages, 'docs/masthead.svg':masthead}
     def slug(v):
         return 'squared' if v=='²' else re.sub(r'[^a-z0-9]+','-',v.lower()).strip('-')
     for prefix in prefixes:

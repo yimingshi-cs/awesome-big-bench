@@ -36,6 +36,10 @@ The [optional CI example](verification/ci/catalog.yml.example) runs the same rea
 
 Ballots are attached to directory edition IDs, not to unverified name combinations. If the directory changes, regenerate the ballot allowlist with `python3 vote-service/catalog.py` after building the guide. Include both artifacts in the PR. The maintainer, not the contributor’s agent, deploys the ballot service and controls the round and cutoff. See [operations and the tally method](vote-service/OPERATIONS.md).
 
+## English and Simplified Chinese
+
+Both editions use the same evidence, edition IDs and ballot. Translate reader-facing source sentences alongside each addition: catalog copy in `web/locale/zh-catalog.json`, name checks, reading notes and report annotations in `web/locale/zh-evidence.json`, interface labels in `web/locale/ui.zh.json`. Keep benchmark names, versions, original paper titles, metric symbols and URLs intact. If only an upper bound for the public date is known, keep that qualification. The build flags missing source sentences.
+
 ## Rebuild
 
 Run from the root:
@@ -48,7 +52,7 @@ python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 ```
 
-Commit the regenerated README and `docs/index.html` with the sources. Open the HTML locally to test it. The public site is served by GitHub Pages from `main:/docs`; no external scripts or fonts are needed. See [data methods](data/README.md) to regenerate the figures.
+Commit the regenerated README and both Pages entries (`docs/index.html`, `docs/zh/index.html`) with the sources. Open the HTML locally to test it. The public site is served by GitHub Pages from `main:/docs`; no external scripts or fonts are needed. See [data methods](data/README.md) to regenerate the figures.
 
 The comparison table and source details take inspiration from [Awesome CUA](https://awesomecua.com/categories/benchmark/), [Awesome 3D Gaussian Splatting](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) and [Awesome-WAM](https://openmoss.ai/Awesome-WAM/). The interface uses its own HTML, CSS and JavaScript.
 
