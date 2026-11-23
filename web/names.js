@@ -4,7 +4,7 @@ function initNames(){
   const endings=families.flatMap(([,items])=>items), map=new Map(names.map(n=>[n.prefix+'|'+n.suffix,n]));
   const chooser=$('#names-field'), table=$('#name-map');
   let lastPick=null, cells=[];
-  chooser.add(new Option(T('All fields'),''));for(const [f] of fields)chooser.add(new Option(displayDomain(f),f));
+  chooser.disabled=false;for(const [f] of fields)chooser.add(new Option(displayDomain(f),f));
   function open(n,b){
     lastPick=n;const sheet=nameCard(n,recordsById.get(mapCatalog[namePair(n)]));sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;presentCard(sheet,b);
   }

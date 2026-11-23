@@ -1,6 +1,7 @@
 """Render two portable editions from one guide. A changed source sentence needs a new translation."""
 from copy import deepcopy
 from html import escape
+from initial_map import render_map
 import json
 import re
 
@@ -65,6 +66,7 @@ def editions(root, shell, source):
         lang = 'zh-Hans' if is_zh else 'en'
         path = 'docs/zh/index.html' if is_zh else 'docs/index.html'
         html = re.sub(r'@@TEXT\[([^\]\n]+)\]@@', lambda m: escape(ui[m[1]] if is_zh else m[1], quote=True), shell)
+        html = html.replace('<!-- INITIAL MAP -->', render_map(data, lambda k: ui[k] if is_zh else k))
         for key, value in {
             'LANG': lang, 'TITLE': 'Awesome Big Bench · 评测起名图鉴' if is_zh else 'Awesome Big Bench',
             'CANONICAL': PUBLIC + ('zh/' if is_zh else ''), 'OTHER_LANG': 'en' if is_zh else 'zh-Hans',

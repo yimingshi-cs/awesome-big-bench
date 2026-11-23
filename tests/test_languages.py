@@ -31,6 +31,14 @@ class Languages(unittest.TestCase):
         for filename, payload in [('agent-prompt.txt', self.en), ('agent-prompt.zh.txt', self.zh)]:
             self.assertEqual(payload['agentPrompt'], (ROOT/'contribute'/filename).read_text().strip())
 
+    def test_map_is_already_readable_before_scripts(self):
+        for html, data in [(self.en_html, self.en), (self.zh_html, self.zh)]:
+            markup = html.split('id="name-map">', 1)[1].split('</table>', 1)[0]
+            self.assertEqual(markup.count('class="map-cell '), len(data['names']))
+            self.assertEqual(markup.count('class="map-cell yes'), sum(r['status']=='used' for r in data['names']))
+            self.assertIn('/verification/matrix/swe.md#dojo', markup)
+            self.assertIn('aria-label="SWE-Dojo:', markup)
+
     def test_editions_and_evidence_are_identical(self):
         for key in ['months','nameGroups','fieldLandmarks','mapCatalog','ballotConfig','domains']:
             self.assertEqual(self.en[key], self.zh[key], key)
