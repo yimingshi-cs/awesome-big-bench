@@ -130,3 +130,4 @@ html:lang(zh) .card-lead,html:lang(zh) .interpretation,html:lang(zh) .source-fac
 @media(max-width:650px){.top>.language-switch{margin-left:auto}.dialog-language{top:18px;right:58px}.card-meta{padding-right:85px}}
 
 .original-title{display:block;width:fit-content;margin:4px 0 10px;line-height:1.45}
+a.map-cell{text-decoration:none}
