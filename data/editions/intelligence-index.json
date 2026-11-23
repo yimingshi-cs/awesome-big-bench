@@ -16,7 +16,7 @@
     "input": "Component evaluation results under the original methodology",
     "output": "One composite score for a model",
     "assessment": "The published early composite rating; the current normalization and weights do not reconstruct it.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [],
     "aliases": [],
@@ -41,7 +41,7 @@
     "input": "Evaluation results collected under index v2.0",
     "output": "One composite score for a model",
     "assessment": "The model’s v2.0 composite; compare within that index version.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v2.0",
@@ -69,7 +69,7 @@
     "input": "Constituent scores from the v2.1 evaluation set",
     "output": "One composite score for a model",
     "assessment": "Aggregate with the v2.1 evaluation weights.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v2.1",
@@ -97,7 +97,7 @@
     "input": "Constituent scores including long-context reasoning",
     "output": "One composite score for a model",
     "assessment": "Aggregate with the v2.2 evaluation weights.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v2.2",
@@ -125,7 +125,7 @@
     "input": "Constituent task results under the v3.0 methodology",
     "output": "One composite score for a model",
     "assessment": "Aggregate under the v3.0 scoring and weights.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v3.0",
@@ -153,7 +153,7 @@
     "input": "Results for agentic tasks, coding, science and general capabilities",
     "output": "One composite score for a model",
     "assessment": "Four category scores contribute 25% each.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.0",
@@ -182,7 +182,7 @@
     "input": "Agent, coding, scientific reasoning and general evaluation results",
     "output": "One composite score for a model",
     "assessment": "Category weights: agents 34%, coding 24%, scientific reasoning 24%, general 18%.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.1",
@@ -210,7 +210,7 @@
     "input": "Constituent task results including four updated grading configurations",
     "output": "One composite score for a model",
     "assessment": "Aggregate under v4.1 weights with the v4.1.1 grading protocols.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.1.1",
@@ -238,7 +238,7 @@
     "input": "Constituent scores including knowledge-work and long-document tasks",
     "output": "One composite score for a model",
     "assessment": "Rebalanced component weights under v4.2.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.2",
@@ -266,7 +266,7 @@
     "input": "Constituent evaluations including AutomationBench-AA and Terminal-Bench 4.0",
     "output": "One composite score for a model",
     "assessment": "Weighted aggregate with the v4.3 components and document handling.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.3",
@@ -294,7 +294,7 @@
     "input": "Constituent scores with the September pairwise judging configuration",
     "output": "One composite score for a model",
     "assessment": "v4.3 composite using the v4.3.1 judging panel.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.3.1",
@@ -324,7 +324,7 @@
     "input": "Constituent scores with the v4.3.2 ratings methodology",
     "output": "One composite score for a model",
     "assessment": "Weighted aggregate using the updated rating estimates and anchor.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v4.3.2",
@@ -353,7 +353,7 @@
     "input": "Results on the v5.0 component evaluations",
     "output": "One composite score for a model",
     "assessment": "Four equally weighted categories, using the v5.0 component definitions and grading.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": false,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v5.0",
@@ -381,7 +381,7 @@
     "input": "Results from nine component evaluations under v5.0.1",
     "output": "One composite score for a model",
     "assessment": "Four categories weighted 25% each, including the revised physics grader.",
-    "input_modality": "Scores",
+    "input_modality": "—",
     "existing": true,
     "reported_labels": [
       "Artificial Analysis Intelligence Index v5.0.1",

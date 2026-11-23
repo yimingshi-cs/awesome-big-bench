@@ -1,6 +1,10 @@
-# Contribute
+# Contribute a benchmark or correction
 
-[Suggest a benchmark](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=benchmark.md) or [flag a name](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). Include the exact spelling, a primary source and what it establishes.
+**Bring one public source and one change.** The directory accepts your own benchmark even if none of the map’s prefixes or endings fit it. A collision, incorrect date, missing edition or mistaken input modality is just as useful a contribution.
+
+1. **Start with the right prompt.** To add a benchmark, [open Contribute](https://yiming-shi.com/awesome-big-bench/#contribute) or copy the [plain-text prompt](contribute/agent-prompt.txt). To correct a record or name, use **Copy PR prompt** on its card: the copy includes its identifier and current evidence.
+2. **Give the prompt and your source to your agent.** For example: “Add the benchmark introduced in this paper, including its first public version,” or “This grey cell already has an exact match; here is the project and its scoring protocol.” Check that the cited source supports the proposed change.
+3. **Review the PR.** The agent works on a branch in the contributor’s fork, rebuilds the guide and opens one pull request against `yimingshi-cs/awesome-big-bench:main`. The maintainer decides whether to merge. A conventional, hand-written PR is equally welcome.
 
 ## Benchmarks
 
@@ -10,7 +14,7 @@ The details shown from the name map and directory use the same task record. If a
 
 ## Complete web directory
 
-- Add a modality and series key to `data/directory_profiles.csv` for a curated entry. The list uses short input types; inputs, outputs and scoring stay in the detail view. A field shortcut on the name map need not be the project's scientific classification.
+- Add a modality and series key to `data/directory_profiles.csv` for a curated entry. Use the model-facing input modality, not a file format, tool, language or environment. Textual code, serialized tables and tool schemas are Text; screenshots are Image. See [input modality rules](verification/input-modalities.md). Task inputs, outputs and scoring stay in the detail view. A field shortcut on the name map need not be the project's scientific classification.
 - Record materially different benchmark editions in `data/editions/`. Keep every edition visible. Group by field then series, newest edition first. Keep a tested version distinct from a scaffold, tool setting, reprint or spelling variant. An unspecified version in a model comparison does **not** prove the newest edition was tested.
 - Cite the benchmark author's version announcement or substantive GitHub/dataset release, the paper submission, or a dated public reference for that edition. Use the available precision. If a source only establishes that it existed by that time, use `available_by`. A repository's initial creation, the end of a contest window, and a model's launch date are not inherently the benchmark's release date. A model card may be published or revised later than its model.
 - For new public evaluations in the three release ledgers, add or reconcile the family in `data/reported_directory.csv`. Record field, modality, purpose and the best dated evidence. A sourced reference can be listed before its full editorial card is written; do not fabricate inputs, metrics or exact launch dates. Add later, better date evidence in place. Build validation rejects unprofiled families; each family must resolve to a visible directory row in [the complete coverage crosswalk](verification/flagships/directory-coverage.csv).
@@ -35,7 +39,7 @@ Run from the root:
 ```sh
 python3 scripts/build_guide.py
 python3 scripts/build_guide.py --check
-python3 scripts/audit_trends.py
+python3 -m unittest discover -s tests
 ```
 
 Commit the regenerated README and `docs/index.html` with the sources. Open the HTML locally to test it. The public site is served by GitHub Pages from `main:/docs`; no external scripts or fonts are needed. See [data methods](data/README.md) to regenerate the figures.

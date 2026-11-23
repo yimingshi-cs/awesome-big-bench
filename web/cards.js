@@ -15,11 +15,6 @@ function dateLink(x){
   const human={paper:'First public paper',tag:'Version tag',available_by:'Documented publicly by',public_record:'Dated public record',released:'Public release',announcement:'Public announcement'};
   const a=link((upper?'By ':'')+d,x.date_source_url,'entry-date');a.title=(human[x.date_basis]||'Dated evidence')+': '+d;return a;
 }
-function nameCorrection(n){
-  const used=n.status==='used';
-  const body='**Name:** '+n.name+'\n**Combination:** '+n.prefix+' × '+n.suffix+'\n**Listed as:** '+(used?'same-name AI benchmark':'no exact AI benchmark found')+'\n\n**Primary source:**\n\n**What should change?**\n';
-  return issue(n.name+': name check','name')+'&body='+encodeURIComponent(body);
-}
 function cardHead(group,title,lead){
   const h=el('div',null,'card-head'),name=el('h2',title);name.id='cell-title';
   h.append(group,name);if(lead)h.append(el('p',lead,'card-lead'));
@@ -90,8 +85,7 @@ function catalogCard(x,n=null){
   }
   reportDetails(box,key,n?'Family release reports':'Release reports');
   box.append(sourceNotes(x,n,x.primary_url,guide,protocol));
-  const edit=n?nameCorrection(n):issue(x.name+': correction','benchmark');
-  box.append(cardFooter(link(x.origin==='report'?(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||'Original source'),x.primary_url),link('Suggest a correction',edit)));
+  box.append(cardFooter(link(x.origin==='report'?(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||'Original source'),x.primary_url),contributionButton(x,n)));
   return box;
 }
 function nameCard(n,x){
@@ -104,7 +98,7 @@ function nameCard(n,x){
     for(const id of nameGroups.relatedCatalog[pair]||[])box.append(compareLine(recordsById.get(id)));
     reportDetails(box,key,'Family release reports');
     const check=el('p',null,'checked-date');check.append(link('Name checked '+n.checked_on,nameEvidence(n)));box.append(check);
-    box.append(cardFooter(link('Original source',n.source_url),link('Suggest a correction',nameCorrection(n))));return box;
+    box.append(cardFooter(link('Original source',n.source_url),contributionButton(null,n)));return box;
   }
   // A version in the directory may be related without being the exact named test.
   if(x&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'"))return catalogCard(x,n);
@@ -117,7 +111,7 @@ function nameCard(n,x){
   reportDetails(box,key,'Family release reports');
   if(used)box.append(link('Search record',nameEvidence(n),'related-use'));
   box.append(cardFooter(link(used?'Original source':'Search record',used?n.source_url:nameEvidence(n)),
-    link(used?'Suggest a correction':'Found a match?',nameCorrection(n))));
+    contributionButton(null,n)));
   return box;
 }
 const cardDialog=$('#cell-dialog');

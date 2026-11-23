@@ -14,7 +14,7 @@
     "input": "CAD renders, part specifications or CAD code, by track",
     "output": "An executable design or task-specific answer",
     "assessment": "Executed solids are compared geometrically; numeric questions use answer accuracy.",
-    "input_modality": "Text / image / code",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "BenchCAD 1.0"
@@ -39,7 +39,7 @@
     "input": "Engineering drawings, rendered components or PCB images",
     "output": "An executable design or task-specific answer",
     "assessment": "Task-specific comparisons on the 100-case Core split; the public sample is not the reportable Core score.",
-    "input_modality": "Text / image / code",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "BenchCAD 2.0"
@@ -62,7 +62,7 @@
     "input": "Core hardware-design briefs and associated images",
     "output": "An executable design or task-specific answer",
     "assessment": "Mean Core score under the 2.1 budget and verifier. Standard and customized harnesses are reported separately.",
-    "input_modality": "Text / image / code",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "BenchCAD 2.1",
@@ -86,7 +86,7 @@
     "input": "A repository and a maintainer-defined engineering brief",
     "output": "A proposed repository change",
     "assessment": "Maintainer-defined rubrics, with blocking criteria and a weighted score.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FrontierCode 1.0"
@@ -109,7 +109,7 @@
     "input": "A repository and a maintainer-defined engineering brief",
     "output": "A proposed repository change",
     "assessment": "Revised weighted rubrics and blocking criteria, on the specified subset.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FrontierCode 1.1",
@@ -138,7 +138,7 @@
     "input": "A repository and a maintainer-defined engineering brief",
     "output": "A proposed repository change",
     "assessment": "Repository-specific checks assess whether the change is mergeable under the 2.0 protocol.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FrontierCode 2.0"
@@ -162,7 +162,7 @@
     "input": "Coding brief, repository context and tools",
     "output": "A code change or other task-specific response",
     "assessment": "Score under that CursorBench task set and run budget; latency and cost are reported separately.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CursorBench 3.0"
@@ -185,7 +185,7 @@
     "input": "Coding brief, repository context and tools",
     "output": "A code change or other task-specific response",
     "assessment": "Score under that CursorBench task set and run budget; latency and cost are reported separately.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CursorBench 3.1"
@@ -208,7 +208,7 @@
     "input": "Coding brief, repository context and tools",
     "output": "A code change or other task-specific response",
     "assessment": "Score under that CursorBench task set and run budget; latency and cost are reported separately.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CursorBench 3.2",
@@ -232,7 +232,7 @@
     "input": "Coding brief, repository context and tools",
     "output": "A code change or other task-specific response",
     "assessment": "Score under that CursorBench task set and run budget; latency and cost are reported separately.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CursorBench 4.0"
@@ -255,7 +255,7 @@
     "input": "Coding brief, repository context and tools",
     "output": "A code change or other task-specific response",
     "assessment": "Score under that CursorBench task set and run budget; latency and cost are reported separately.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CursorBench 4.1"
@@ -278,7 +278,7 @@
     "input": "A professional brief, reference files and the AA agent environment",
     "output": "A professional work product",
     "assessment": "Blind pairwise assessments summarized as a relative rating under the original AA protocol.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "GDPval-AA 1.0"
@@ -309,7 +309,7 @@
     "input": "A professional brief, reference files and the AA agent environment",
     "output": "A professional work product",
     "assessment": "Pairwise evaluations by a panel of judges; the v2 rating scale is anchored to human expert performance at 1000.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "GDPval-AA v2",
@@ -333,7 +333,7 @@
     "input": "A professional brief, reference files and the AA agent environment",
     "output": "A professional work product",
     "assessment": "Crowd-BT fitted ratings with DeepSeek V4.1 Flash (max) fixed at 1600; do not equate the Elo scale to v2.0.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "GDPval-AA 2.1",
@@ -360,7 +360,7 @@
     "input": "A financial research question, filings and search tools",
     "output": "A supported numerical or textual answer",
     "assessment": "Reference and rubric-based accuracy on the named Finance Agent dataset.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FinanceAgent v1.0",
@@ -384,7 +384,7 @@
     "input": "A financial research question, filings and search tools",
     "output": "A supported numerical or textual answer",
     "assessment": "Model-based grading with revised rounding guidance and a three-evaluation vote.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FinanceAgent v1.1",
@@ -408,7 +408,7 @@
     "input": "A financial research question, filings and search tools",
     "output": "A supported numerical or textual answer",
     "assessment": "Accuracy under the v2 tasks and financial research harness.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FinanceAgent v2.0",
@@ -436,7 +436,7 @@
     "input": "A financial research question, filings and search tools",
     "output": "A supported numerical or textual answer",
     "assessment": "Accuracy using the v2.1 judge panel and updated grading rubric.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "FinanceAgent v2.1",
@@ -460,7 +460,7 @@
     "input": "A workplace task, tools and domain-specific software",
     "output": "A completed task artifact and application state",
     "assessment": "Task-specific verifiers assess the resulting work on the corresponding release.",
-    "input_modality": "Text / screenshot / documents",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "Agents’ Last Exam v1.0",
@@ -484,7 +484,7 @@
     "input": "A workplace task, tools and domain-specific software",
     "output": "A completed task artifact and application state",
     "assessment": "Task-specific verifiers assess the resulting work on the corresponding release.",
-    "input_modality": "Text / screenshot / documents",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "Agents’ Last Exam v1.1"
@@ -530,7 +530,7 @@
     "input": "A repository at a fixed revision and an engineering brief",
     "output": "A committed code change",
     "assessment": "Pass rate under task-specific behavioral tests for the originally released tasks and grading protocol.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "DeepSWE"
@@ -576,7 +576,7 @@
     "input": "Repository and defensive audit task",
     "output": "Code changes resolving the identified weakness",
     "assessment": "Programmatic security and regression checks",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "CWE-bench v2"
@@ -622,7 +622,7 @@
     "input": "A repository snapshot and an engineering task",
     "output": "A committed code change",
     "assessment": "Tests grade the submitted patch in a clean environment, not the agent’s transient workspace.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "DeepSWE 1.1",
@@ -694,7 +694,7 @@
     "input": "A repository and a defensive repair requirement",
     "output": "A corrected software artifact",
     "assessment": "Programmatic checks assess the requested repair and previously supported behavior.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CWE-bench v0"
@@ -717,7 +717,7 @@
     "input": "A repository and a defensive repair requirement",
     "output": "A corrected software artifact",
     "assessment": "Programmatic checks assess the requested repair and previously supported behavior.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "CWE-bench v1"

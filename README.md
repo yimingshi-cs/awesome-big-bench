@@ -1,12 +1,40 @@
-![Awesome Big Bench — a field guide to AI evaluation](docs/masthead.svg)
+# <img src="docs/bench-mark.svg" width="32" height="32" alt=""> Awesome Big Bench
 
-# Awesome Big Bench
+**Is that benchmark name taken?** Two different papers already use *BenchBench*: one [compares how benchmarks rank models](https://arxiv.org/abs/2407.13696); the other [tests how models design benchmarks](https://arxiv.org/abs/2603.20807).
 
-**Pick a benchmark by what it asks a model to do.** Then check the source, look up a name, or bring us a counterexample.
+**[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
+
+The **name map** checks 319 prefix–ending pairs. 80 have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
+
+The **directory** has 556 entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
 
-**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Model release sources](verification/flagships/)** · **[Contribute](CONTRIBUTING.md)**
+## Contribute with your agent
+
+Have a benchmark of your own? Found a citation that points to the wrong edition? Give **Codex, Claude Code or another coding agent** your paper or project link and one sentence about the change. No issue form is required. Your agent checks the sources and opens a pull request; a maintainer reviews and merges it.
+
+**[Copy a PR prompt](https://yiming-shi.com/awesome-big-bench/#contribute)** · [Plain-text prompt](contribute/agent-prompt.txt) · [Contribution guide](CONTRIBUTING.md)
+
+For a correction, open the name or edition on the website and choose **Copy PR prompt**. That copy already identifies the cell or record you mean. New benchmarks go in the directory first; a new row or column requires checking all of its combinations.
+
+<details>
+<summary>Read or copy the prompt here</summary>
+
+```text
+Help me contribute one benchmark addition or correction to https://github.com/yimingshi-cs/awesome-big-bench. Use the public source and change I provide. If either is missing, ask me before editing.
+
+Read CONTRIBUTING.md. Check the existing name, edition and open PRs. Verify the claim against the original paper, project or dated release; cite the exact section or version. A new benchmark belongs in the Directory even if its name does not fit the map. Only change a map verdict with evidence for that exact name; don't add a row or column for a single submission.
+
+Edit the source data on a new branch, not the generated page by hand. Run:
+python3 scripts/build_guide.py
+python3 scripts/build_guide.py --check
+python3 -m unittest discover -s tests
+
+Inspect the diff. Using my authorized GitHub account, push the branch to my fork and open a pull request against yimingshi-cs/awesome-big-bench:main. Include the evidence and checks, then give me the PR link. Leave review and merge to the maintainer. If you can't open a PR, give me the patch and the remaining step.
+```
+
+</details>
 
 ## Where to start
 
@@ -198,27 +226,6 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 
 [Source table](data/famous.csv) · [Documented dates](verification/catalog.md) · [Candidates not yet in the guide](data/candidates_unverified.csv). A date identifies the event supported by its source, such as a v1 submission or public release. A project, a call for tasks and a finished release can have different dates.
 
-## Benchmark names
-
-**Even BenchBench is taken twice.** The [2024 paper](https://arxiv.org/abs/2407.13696) asks whether benchmarks agree; the [2026 paper](https://arxiv.org/abs/2603.20807) evaluates automated benchmark generation. Same name, different test.
-
-Examples with no exact AI benchmark match in the sources checked:
-
-| Field | No exact benchmark found |
-|---|---|
-| Coding | [SWEval](<https://api.github.com/search/repositories?q=SWEval+in%3Aname&per_page=35>), [SWE-Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22SWEExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22SWE-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22SWE+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22SWE%27s+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22SWEs%27+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22SWEs+Exam%22&terms-5-field=all&size=50>) |
-| CUA | [Agentval](<https://api.github.com/search/repositories?q=Agentval+in%3Aname&per_page=35>), [Agents’ First Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AgentFirstExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Agent-First-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Agent+First+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Agent%27s+First+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Agents%27+First+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Agents+First+Exam%22&terms-5-field=all&size=50>) |
-| Reasoning | [Reasoningval](<https://api.github.com/search/repositories?q=Reasoningval+in%3Aname&per_page=35>), [Reasoning-Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22ReasoningExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Reasoning-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Reasoning+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Reasoning%27s+Exam%22&terms-3-field=all&size=50>) |
-| Multimodal | [MMval](<https://api.github.com/search/repositories?q=MMval+in%3Aname&per_page=35>), [MM-Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22MMExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22MM-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22MM+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22MM%27s+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22MMs%27+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22MMs+Exam%22&terms-5-field=all&size=50>) |
-| Embodied | [Embodiedval](<https://api.github.com/search/repositories?q=Embodiedval+in%3Aname&per_page=35>), [Embodied-Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22EmbodiedExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Embodied-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Embodied+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Embodied%27s+Exam%22&terms-3-field=all&terms-4-operator=OR&terms-4-term=%22Embodieds%27+Exam%22&terms-4-field=all&terms-5-operator=OR&terms-5-term=%22Embodieds+Exam%22&terms-5-field=all&size=50>) |
-| Safety | [Alignmentval](<https://api.github.com/search/repositories?q=Alignmentval+in%3Aname&per_page=35>), [Alignment-Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22AlignmentExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Alignment-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Alignment+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Alignment%27s+Exam%22&terms-3-field=all&size=50>) |
-| Long-context & Memory | [Longval](<https://api.github.com/search/repositories?q=Longval+in%3Aname&per_page=35>), [Long-Exam](<https://api.github.com/search/repositories?q=LongExam+in%3Aname&per_page=35>) |
-| AutoResearch | [Researchval](<https://api.github.com/search/repositories?q=Researchval+in%3Aname&per_page=35>), [Research-Exam](<https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22ResearchExam%22&terms-0-field=all&terms-1-operator=OR&terms-1-term=%22Research-Exam%22&terms-1-field=all&terms-2-operator=OR&terms-2-term=%22Research+Exam%22&terms-2-field=all&terms-3-operator=OR&terms-3-term=%22Research%27s+Exam%22&terms-3-field=all&size=50>) |
-| RSI | [PostTrain-Eval](<https://api.github.com/search/repositories?q=PostTrainEval+in%3Aname&per_page=35>), [PostTrainval](<https://api.github.com/search/repositories?q=PostTrainval+in%3Aname&per_page=35>) |
-| General | [GDP-Bench](<https://api.github.com/search/repositories?q=GDPBench+in%3Aname&per_page=35>), [GDP-Eval](<https://api.github.com/search/repositories?q=GDPEval+in%3Aname&per_page=35>) |
-
-[Names by field](https://yiming-shi.com/awesome-big-bench/#names) · [Search records and dates](verification/names.md) · [Report a match](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). The map opens with every checked combination.
-
 ## “Bench” in arXiv titles
 
 Compare the **same nine months** in the pinned arXiv metadata snapshot:
@@ -230,10 +237,8 @@ Compare the **same nine months** in the pinned arXiv metadata snapshot:
 
 [View the illustrated trend](figures/overview.png). The share was **6.81 times as high** in 2026. Across the longer collection (January 2020 through the partial November 2026 pull), the repository contains **17,809 distinct matching IDs**. Titles such as *benchmarking* and *workbench* count, and plenty of actual benchmarks do not have *bench* in their paper titles. The [audit](verification/trends.md) separates the independently rebuilt period from the API extension.
 
-[See the nine chart topics and alternative cover](figures/) · [Monthly counts](data/monthly.csv) · [Collection method](data/README.md) · [Reproduction and discrepancies](verification/trends.md). The title census and the curated directory answer different questions: HumanEval belongs in the directory even though its paper title does not contain “bench”.
+[Charts](figures/) · [Monthly counts](data/monthly.csv) · [Collection method](data/README.md) · [Reproduction and discrepancies](verification/trends.md). The title census includes papers whose titles contain “bench”; the directory is a catalog of evaluations, including names such as HumanEval.
 
-## Contribute
+## Provenance and licenses
 
-Found two papers with the same name, a better starting point for a task, or an incorrect date? [Open an issue](https://github.com/yimingshi-cs/awesome-big-bench/issues/new/choose) with the exact spelling and a primary source. PRs are welcome; [here is how to update both editions](CONTRIBUTING.md).
-
-Compiled with AI assistance; corrections backed by primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and marks belong to their owners. Only the [credited identification marks](web/assets/marks/) are bundled, under their respective licenses or brand permissions.
+This project started as a weekend, AI-assisted build. A working link can still point to the wrong benchmark, release or scoring rule. Corrections with primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and marks belong to their owners; [credited marks](web/assets/marks/) retain their respective terms.

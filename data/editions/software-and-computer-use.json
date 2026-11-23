@@ -14,7 +14,7 @@
     "input": "Natural-language instruction and initialized desktop environment",
     "output": "Desktop actions that change applications or files",
     "assessment": "Task-specific execution checks on the resulting state",
-    "input_modality": "Text / screenshot",
+    "input_modality": "Text + Image",
     "existing": true,
     "reported_labels": [
       "OSWorld"
@@ -37,7 +37,7 @@
     "input": "Repository snapshot and corresponding GitHub issue",
     "output": "Patch to the repository",
     "assessment": "Required issue-fixing and regression tests must pass",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "SWE-bench"
@@ -60,7 +60,7 @@
     "input": "Human-validated issue and matching repository snapshot",
     "output": "Patch to the repository",
     "assessment": "Same test-based resolution criterion, on 500 validated issues",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "SWE-bench Verified"
@@ -84,7 +84,7 @@
     "input": "Desktop observation and a task instruction",
     "output": "Actions that change application or system state",
     "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
-    "input_modality": "Text / screenshot",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "OSWorld-Verified",
@@ -108,7 +108,7 @@
     "input": "Desktop observation and a task instruction",
     "output": "Actions that change application or system state",
     "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
-    "input_modality": "Text / screenshot",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "OSWorld 2.0",
@@ -132,7 +132,7 @@
     "input": "Desktop observation and a task instruction",
     "output": "Actions that change application or system state",
     "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
-    "input_modality": "Text / screenshot",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "osworld-v2-2026.08.08",
@@ -157,7 +157,7 @@
     "input": "Desktop observation and a task instruction",
     "output": "Actions that change application or system state",
     "assessment": "Task-specific executable checks validate the resulting state; report task set, snapshot and action budget.",
-    "input_modality": "Text / screenshot",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "OSWorld 2.1",
@@ -182,7 +182,7 @@
     "input": "An issue description and its repository snapshot",
     "output": "A proposed repository patch",
     "assessment": "Fraction of selected issues resolved by the test harness.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "SWE-bench Lite"
@@ -205,7 +205,7 @@
     "input": "A repository, issue description and associated visual evidence",
     "output": "A proposed repository patch",
     "assessment": "Fraction of issues resolved on the original evaluation split.",
-    "input_modality": "Text / image / code",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "SWE-bench Multimodal"
@@ -228,7 +228,7 @@
     "input": "A repository, issue description and associated visual evidence",
     "output": "A proposed repository patch",
     "assessment": "Fraction of the V2 issues resolved, using the revised visual-asset and JavaScript evaluation pipeline.",
-    "input_modality": "Text / image / code",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [
       "SWE-bench Multimodal V2"
@@ -251,7 +251,7 @@
     "input": "An issue description and project files in the task’s programming language",
     "output": "A proposed repository patch",
     "assessment": "Fraction of instances passing the task’s repository tests.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "SWE-bench Multilingual"
@@ -274,7 +274,7 @@
     "input": "A repository snapshot and engineering requirement",
     "output": "A proposed repository patch",
     "assessment": "Task resolution under the specified split and repository test harness.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "SWE-bench Pro",
@@ -298,7 +298,7 @@
     "input": "A repository snapshot and Pro V2 task specification",
     "output": "A proposed repository patch",
     "assessment": "Task resolution on the V2 public split under its published run protocol.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "SWE-Bench Pro V2",
@@ -322,7 +322,7 @@
     "input": "A contest problem statement and examples",
     "output": "A program implementing the solution",
     "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "LiveCodeBench v1",
@@ -354,7 +354,7 @@
     "input": "A contest problem statement and examples",
     "output": "A program implementing the solution",
     "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "LiveCodeBench v2",
@@ -386,7 +386,7 @@
     "input": "A contest problem statement and examples",
     "output": "A program implementing the solution",
     "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "LiveCodeBench v3",
@@ -418,7 +418,7 @@
     "input": "A contest problem statement and examples",
     "output": "A program implementing the solution",
     "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "LiveCodeBench v4",
@@ -450,7 +450,7 @@
     "input": "A contest problem statement and examples",
     "output": "A program implementing the solution",
     "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "LiveCodeBench v5",
@@ -482,7 +482,7 @@
     "input": "A contest problem statement and examples",
     "output": "A program implementing the solution",
     "assessment": "Pass@1 or reported pass@k on the specified snapshot and problem-date window.",
-    "input_modality": "Text + code",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "LiveCodeBench v6",
