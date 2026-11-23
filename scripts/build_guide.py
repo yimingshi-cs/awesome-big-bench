@@ -134,15 +134,10 @@ def render():
         if not rows:
             parts.append("| — | No entry selected yet. [Suggest one](CONTRIBUTING.md). | — | — |")
         parts.append('')
-    sample = ['| Field | No exact benchmark found |', '|---|---|']
-    for domain, members in groups['fields'].items():
-        checked = [n for n in names if n['status']=='no_match' and
-                   groups['exceptions'].get(n['prefix']+'|'+n['suffix'],domain if n['prefix'] in members else '')==domain]
-        if checked:
-            sample.append('| '+domain+' | '+', '.join(link(n['name'],n['search_url']) for n in checked[:2])+' |')
+    agent_prompt=(ROOT/'contribute/agent-prompt.txt').read_text(encoding='utf-8').strip()
     trend = (ROOT/'web/trend-note.md').read_text().strip()
     readme=(ROOT/'web/readme.md').read_text()
-    for k,v in [('COUNT',str(len(cat))),('JUMP',' · '.join(jumps)),('CATALOG','\n'.join(parts).strip()),('GRID','\n'.join(sample)),('TREND',trend)]:
+    for k,v in [('AGENT_PROMPT',agent_prompt),('COMBINATIONS',str(len(names))),('TAKEN',str(sum(n['status']=='used' for n in names))),('COUNT',str(len(cat))),('JUMP',' · '.join(jumps)),('CATALOG','\n'.join(parts).strip()),('TREND',trend)]:
         readme=readme.replace('@@'+k+'@@',v)
     # No remote fetches, fonts or trackers, so the downloaded file also works via file://.
     fields=['name','slug','date','date_source_url','first_author_affil','affil_source_url','domain',
@@ -240,9 +235,10 @@ def render():
             mime={'.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp'}[asset.suffix.lower()]
             marks[k]={**item,'uri':'data:'+mime+';base64,'+base64.b64encode(asset.read_bytes()).decode()}
     directory_fields=fields+['series','modalities','date_basis','date_note','display_name','display_date','edition_order','origin','aliases','reported_family','alternative_dates']
-    payload = dict(readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
+    readme=readme.replace('@@DIRECTORY_COUNT@@',str(len(directory)))
+    payload = dict(agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
-    scripts = ('app.js','cards.js','directory.js','names.js','trends.js','route.js')
+    scripts = ('app.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
     html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()

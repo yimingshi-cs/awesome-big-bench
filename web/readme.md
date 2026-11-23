@@ -1,12 +1,31 @@
-![Awesome Big Bench — a field guide to AI evaluation](docs/masthead.svg)
+# <img src="docs/bench-mark.svg" width="32" height="32" alt=""> Awesome Big Bench
 
-# Awesome Big Bench
+**Is that benchmark name taken?** Two different papers already use *BenchBench*: one [compares how benchmarks rank models](https://arxiv.org/abs/2407.13696); the other [tests how models design benchmarks](https://arxiv.org/abs/2603.20807).
 
-**Pick a benchmark by what it asks a model to do.** Then check the source, look up a name, or bring us a counterexample.
+**[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
+
+The **name map** checks @@COMBINATIONS@@ prefix–ending pairs. @@TAKEN@@ have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
+
+The **directory** has @@DIRECTORY_COUNT@@ entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
 
-**[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Find a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Explore trends](https://yiming-shi.com/awesome-big-bench/#trends)** · **[Model release sources](verification/flagships/)** · **[Contribute](CONTRIBUTING.md)**
+## Contribute with your agent
+
+Have a benchmark of your own? Found a citation that points to the wrong edition? Give **Codex, Claude Code or another coding agent** your paper or project link and one sentence about the change. No issue form is required. Your agent checks the sources and opens a pull request; a maintainer reviews and merges it.
+
+**[Copy a PR prompt](https://yiming-shi.com/awesome-big-bench/#contribute)** · [Plain-text prompt](contribute/agent-prompt.txt) · [Contribution guide](CONTRIBUTING.md)
+
+For a correction, open the name or edition on the website and choose **Copy PR prompt**. That copy already identifies the cell or record you mean. New benchmarks go in the directory first; a new row or column requires checking all of its combinations.
+
+<details>
+<summary>Read or copy the prompt here</summary>
+
+```text
+@@AGENT_PROMPT@@
+```
+
+</details>
 
 ## Where to start
 
@@ -27,24 +46,12 @@ The curated tables below compare inputs, outputs and scoring for **@@COUNT@@ ben
 
 [Source table](data/famous.csv) · [Documented dates](verification/catalog.md) · [Candidates not yet in the guide](data/candidates_unverified.csv). A date identifies the event supported by its source, such as a v1 submission or public release. A project, a call for tasks and a finished release can have different dates.
 
-## Benchmark names
-
-**Even BenchBench is taken twice.** The [2024 paper](https://arxiv.org/abs/2407.13696) asks whether benchmarks agree; the [2026 paper](https://arxiv.org/abs/2603.20807) evaluates automated benchmark generation. Same name, different test.
-
-Examples with no exact AI benchmark match in the sources checked:
-
-@@GRID@@
-
-[Names by field](https://yiming-shi.com/awesome-big-bench/#names) · [Search records and dates](verification/names.md) · [Report a match](https://github.com/yimingshi-cs/awesome-big-bench/issues/new?template=name.md). The map opens with every checked combination.
-
 ## “Bench” in arXiv titles
 
 @@TREND@@
 
-[See the nine chart topics and alternative cover](figures/) · [Monthly counts](data/monthly.csv) · [Collection method](data/README.md) · [Reproduction and discrepancies](verification/trends.md). The title census and the curated directory answer different questions: HumanEval belongs in the directory even though its paper title does not contain “bench”.
+[Charts](figures/) · [Monthly counts](data/monthly.csv) · [Collection method](data/README.md) · [Reproduction and discrepancies](verification/trends.md). The title census includes papers whose titles contain “bench”; the directory is a catalog of evaluations, including names such as HumanEval.
 
-## Contribute
+## Provenance and licenses
 
-Found two papers with the same name, a better starting point for a task, or an incorrect date? [Open an issue](https://github.com/yimingshi-cs/awesome-big-bench/issues/new/choose) with the exact spelling and a primary source. PRs are welcome; [here is how to update both editions](CONTRIBUTING.md).
-
-Compiled with AI assistance; corrections backed by primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and marks belong to their owners. Only the [credited identification marks](web/assets/marks/) are bundled, under their respective licenses or brand permissions.
+This project started as a weekend, AI-assisted build. A working link can still point to the wrong benchmark, release or scoring rule. Corrections with primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and marks belong to their owners; [credited marks](web/assets/marks/) retain their respective terms.

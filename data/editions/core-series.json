@@ -43,7 +43,7 @@
     "input": "A task brief and a configured terminal environment",
     "output": "Files, program outputs or a changed environment",
     "assessment": "Share of tasks completed under their task-specific verifiers.",
-    "input_modality": "Text + files",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "Terminal-Bench 2.0"
@@ -67,7 +67,7 @@
     "input": "An 89-task terminal suite with corrected task definitions",
     "output": "Required files or environment changes",
     "assessment": "Task completion under the corrected instructions and verifiers.",
-    "input_modality": "Text + files",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "Terminal-Bench 2.1"
@@ -91,7 +91,7 @@
     "input": "A work request and a configured terminal environment",
     "output": "A verified artifact or state change",
     "assessment": "Pass rate under the 3.0 task verifiers.",
-    "input_modality": "Text + files",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "Terminal-Bench 3.0"
@@ -123,7 +123,7 @@
     "input": "The 66-task terminal suite and its 4.0 resource settings",
     "output": "Task-specific artifacts or state changes",
     "assessment": "Share of tasks passing the 4.0 checks under the specified resources.",
-    "input_modality": "Text + files",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "Terminal-Bench 4.0",
@@ -156,7 +156,7 @@
     "input": "The same 66 agent-facing terminal tasks as 4.0",
     "output": "Task-specific artifacts or state changes",
     "assessment": "Share passing the revised 4.1 verifiers; saved 4.0 outputs can be regraded.",
-    "input_modality": "Text + files",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [
       "Terminal-Bench 4.1"
@@ -283,7 +283,7 @@
     "input": "A text or spoken support request, domain tools and policies or a knowledge base",
     "output": "A response and effective changes in the customer-support environment",
     "assessment": "Task-specific completion checks and repeated-run reliability, reported by domain and interface.",
-    "input_modality": "Text / audio",
+    "input_modality": "Text / Audio",
     "existing": false,
     "reported_labels": [],
     "aliases": [
@@ -307,7 +307,7 @@
     "input": "A support interaction with domain tools; banking tasks also have a policy corpus",
     "output": "Responses and tool-driven environment changes",
     "assessment": "Revised banking task and rubric checks. Pre-1.0.1 banking scores are not directly comparable.",
-    "input_modality": "Text / audio",
+    "input_modality": "Text / Audio",
     "existing": false,
     "reported_labels": [],
     "aliases": [],
@@ -328,7 +328,7 @@
     "input": "A text or voice support request, domain tools and a language-specific environment",
     "output": "A dialogue and task-specific environment updates",
     "assessment": "Completion and consistency on the named text or voice manifest; 1.x scores are not interchangeable.",
-    "input_modality": "Text / audio",
+    "input_modality": "Text / Audio",
     "existing": false,
     "reported_labels": [],
     "aliases": [
@@ -359,7 +359,7 @@
     "input": "Example input/output grid pairs and a test grid",
     "output": "Predicted output grid",
     "assessment": "Grid dimensions and all cell values must match",
-    "input_modality": "Grid",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "ARC-AGI-1"
@@ -386,7 +386,7 @@
     "input": "Example input/output grid pairs and a test input",
     "output": "Predicted output grid",
     "assessment": "Dimensions and every cell must match the target",
-    "input_modality": "Grid",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "ARC-AGI-2"
@@ -409,7 +409,7 @@
     "input": "Grid observations from the preview games",
     "output": "A sequence of legal game actions",
     "assessment": "The preview competition ranked performance on held-back games by levels completed, with tie-breaks; not the full 2026 RHAE score.",
-    "input_modality": "Interactive grid",
+    "input_modality": "Text + Image",
     "existing": false,
     "reported_labels": [],
     "aliases": [],
@@ -430,7 +430,7 @@
     "input": "Observations from an unfamiliar interactive environment",
     "output": "Actions that reach the level goals",
     "assessment": "Relative Human Action Efficiency (RHAE), using human action baselines",
-    "input_modality": "Interactive grid",
+    "input_modality": "Text + Image",
     "existing": true,
     "reported_labels": [
       "ARC-AGI-3"
@@ -461,7 +461,7 @@
     "input": "A professional brief, files and workplace applications",
     "output": "A client-ready answer or work product",
     "assessment": "Expert rubrics: full-task pass rate and mean criterion score",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": true,
     "reported_labels": [
       "APEX-Agents"
@@ -486,7 +486,7 @@
     "input": "A work brief, reference files and workplace tools",
     "output": "A client-ready response or artifact",
     "assessment": "Expert-authored rubric criteria; report mean rubric score or full-task pass rate with the 1.1 grading protocol.",
-    "input_modality": "Text + documents",
+    "input_modality": "Text",
     "existing": false,
     "reported_labels": [],
     "aliases": [

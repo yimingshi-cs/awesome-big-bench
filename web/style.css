@@ -101,3 +101,16 @@ select{appearance:none;padding:7px 29px 7px 11px;border:1px solid #b3c2bb;border
 .detail-sheet{padding:18px 18px 0}.card-head h2{font-size:30px}.card-lead{font-size:15px}.card-meta{font-size:12px;gap:6px}.card-date{margin-left:0}.card-footer{margin-inline:-18px;padding:11px 18px}.score-note{padding:6px 0 6px 11px}.score-note .score-rule{font-size:15px}.score-note .interpretation{font-size:14px}.card-signature{max-width:50px;height:30px}.card-signature img{max-width:50px;max-height:26px}}
 .directory-key{position:relative;display:block;padding-left:44px;line-height:18px}.directory-key i{position:absolute;left:0;top:2px;width:3px}
 @media(max-width:650px){.directory-key{padding-left:28px}}
+
+.copy-pr{background:transparent;color:var(--deep);border:1px solid #b1c7bd;border-radius:6px;padding:7px 12px;font:650 14px/1.35 var(--sans)}
+.copy-pr:hover{background:var(--wash)}#contribute-entry{font-weight:680;color:var(--deep)}
+#contribute-dialog{width:min(480px,calc(100% - 28px));max-height:88dvh;border:1px solid #b9c9c0;border-radius:10px;padding:26px 26px 16px;box-shadow:0 24px 80px #102e2538;color:var(--ink);background:var(--paper)}
+#contribute-dialog::backdrop{background:#17332a57;backdrop-filter:blur(2px)}
+#contribute-dialog .close{float:right;width:30px;height:30px;border:1px solid var(--rule);border-radius:50%;background:white;font-size:21px;line-height:1}
+#contribute-title{padding-right:34px;font:400 32px/1.1 var(--serif);letter-spacing:-.04em}
+#contribute-dialog>p{margin:10px 0 14px;color:var(--muted);font-size:15px}
+#prompt-preview-details{margin-top:15px;border-top:1px solid var(--rule);font-size:14px}
+#prompt-preview-details summary{padding:9px 0;color:var(--deep)}
+#agent-prompt{box-sizing:border-box;display:block;width:100%;height:13em;max-height:38dvh;padding:10px;resize:vertical;border:1px solid var(--rule);background:#f7faf8;color:var(--ink);font:14px/1.45 var(--sans)}
+#contribute-dialog #contribute-status{font-size:14px;margin:6px 0}#contribute-status:empty{display:none}
+.empty-actions{margin-top:10px}

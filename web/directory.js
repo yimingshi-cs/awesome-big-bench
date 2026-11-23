@@ -30,7 +30,12 @@ function initDirectory(){
     $('#mobile-domain').value=domain;for(const [d,b] of domButtons)setPressed(b,d===domain);
     const found=catalog.filter(x=>inDomain(x,domain)&&(seriesNames.has(query)?searchText(x.series)===query:words.every(w=>text.get(x.slug).includes(w)))).sort(order.value==='new'?recent:grouped);
     $('#count').textContent=found.length+' '+(found.length===1?'entry':'entries');
-    if(!found.length){host.append(el('p','No matching benchmarks.','small'),button('Clear filters',()=>choose('All domains'),'subtle'));return;}
+    if(!found.length){
+      const actions=el('div',null,'links empty-actions');
+      const add=button('Add it with your agent',()=>showContribution(query?'Directory search with no matching results: '+$('#query').value.trim():'',add,'add'),'action');
+      actions.append(add,button('Clear filters',()=>choose('All domains'),'subtle'));
+      host.append(el('p','No matching benchmarks.','small'),actions);return;
+    }
     const t=el('table',null,'directory-table');t.setAttribute('aria-label','Benchmark directory');const head=t.createTHead().insertRow();
     for(const label of ['Benchmark','Task','Input','Release date']){
       const th=el('th',label);th.scope='col';if(label==='Release date')th.title='The link identifies the announcement, paper, release tag or dated evidence of availability.';head.append(th);

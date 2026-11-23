@@ -5,7 +5,7 @@
 <title>Awesome Big Bench</title><link rel="icon" href="/* MARK_URI */" type="image/svg+xml"><style>/* STYLE */</style></head>
 <body><a class="skip" href="#main-content">Skip to content</a>
 <header><div class="shell top"><a href="#names" class="brand" aria-label="Awesome Big Bench home"><span class="brand-mark" aria-hidden="true">/* MARK */</span>Awesome Big Bench</a>
-<nav aria-label="Main"><a data-page="names" href="#names">Name map</a><a data-page="directory" href="#directory">Directory</a><a data-page="trends" href="#trends">Trends</a></nav><a class="repo-link" href="https://github.com/yimingshi-cs/awesome-big-bench">GitHub</a></div></header>
+<nav aria-label="Main"><a data-page="names" href="#names">Name map</a><a data-page="directory" href="#directory">Directory</a><a data-page="trends" href="#trends">Trends</a><a href="#contribute" id="contribute-entry" aria-haspopup="dialog">Contribute</a></nav><a class="repo-link" href="https://github.com/yimingshi-cs/awesome-big-bench">GitHub</a></div></header>
 <main id="main-content" tabindex="-1" class="shell">
 <section id="names" class="page">
 <div class="map-intro"><h1>The benchmark <em>index.</em></h1></div>
@@ -25,5 +25,13 @@
 <details class="method-note"><summary>What counts?</summary><p>Each line divides matching titles by all arXiv CS papers that month. Fields are assigned automatically. October and November 2026 include API records; November is partial. <a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/verification/trends.md">Methods and evidence</a></p></details><div id="trend-links" class="links"></div>
 <div class="chart-heading timeline-head"><h2>Benchmark timeline</h2><label>Year <select id="year-select"></select></label></div><div id="milestone-list"></div></section>
 <dialog id="cell-dialog" aria-labelledby="cell-title"><button type="button" class="close" autofocus aria-label="Close details">×</button><div id="cell-info"></div></dialog>
-</main><footer><div class="shell"><strong>Awesome Big Bench</strong><div><a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/CONTRIBUTING.md">Contribute</a> · <a href="https://github.com/yimingshi-cs/awesome-big-bench/issues/new/choose">Suggest a correction</a></div></div></footer>
+<dialog id="contribute-dialog" aria-labelledby="contribute-title">
+<button type="button" class="close" aria-label="Close contribution prompt">×</button>
+<h2 id="contribute-title">Add a benchmark or fix a record</h2>
+<p>Give your agent the prompt and a paper or project link. It opens a pull request; the maintainer reviews it.</p>
+<button id="copy-agent-prompt" type="button" class="action" autofocus>Copy PR prompt</button>
+<details id="prompt-preview-details"><summary>Read the prompt</summary><textarea id="agent-prompt" aria-label="Contribution prompt" readonly spellcheck="false"></textarea></details>
+<p id="contribute-status" role="status"></p>
+</dialog>
+</main><footer><div class="shell"><strong>Awesome Big Bench</strong><a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/CONTRIBUTING.md">Contribution guide</a></div></footer>
 <noscript>Browse the <a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/data/names.csv">name map as CSV</a> or the <a href="https://github.com/yimingshi-cs/awesome-big-bench">benchmark directory</a>.</noscript><script type="application/json" id="payload">/* DATA */</script><script>/* APP */</script></body></html>

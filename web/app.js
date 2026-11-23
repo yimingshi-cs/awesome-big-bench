@@ -1,5 +1,5 @@
 'use strict';
-const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks, agentPrompt} = JSON.parse(document.querySelector('#payload').textContent);
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
   const node = document.createElement(tag);
@@ -16,7 +16,6 @@ function svgNode(tag, attrs, text) {
   return n;
 }
 const gh = path => repo+'/blob/main/'+path;
-const issue = (name,template) => repo+'/issues/new?template='+template+'.md&title='+encodeURIComponent(name);
 const displayDomain = d => d;
 const fmt = n => n.toLocaleString('en-US');
 const setPressed = (node,on) => node.setAttribute('aria-pressed',String(on));

@@ -9,6 +9,21 @@ from pathlib import Path
 from historical_evidence import norm
 
 BASES={'released','announcement','paper','tag','available_by','public_record','month','released_month','methodology'}
+# The signal presented to the evaluated model, not a file, tool or output type.
+MODALITY_ORDER = ('Text', 'Image', 'Video', 'Audio', 'Proprioception')
+
+
+def validate_modalities(value):
+    if value == '—':
+        return  # Not applicable (composite index) or inputs not publicly specified.
+    if not isinstance(value, str) or not value:
+        raise ValueError(f'Invalid input modalities: {value!r}')
+    sep = ' / ' if ' / ' in value else ' + '
+    parts = value.split(sep)
+    if parts != [m for m in MODALITY_ORDER if m in parts]:
+        raise ValueError(f'Invalid or noncanonical input modalities: {value!r}')
+
+
 def slug_for(s):
     s=unicodedata.normalize('NFKC',s).casefold().replace('τ','tau')
     return re.sub(r'[^a-z0-9]+','-',s).strip('-')
@@ -18,6 +33,12 @@ def validate_date(s):
     date.fromisoformat((s+'-01-01')[:10] if len(s)==4 else s+'-01' if len(s)==7 else s)
 
 def assemble_directory(cat, profiles, reported, editions, domains, check_url, arena_records=()):
+    # Validate source rows too: editions may replace a profile, and a matching
+    # curated entry can hide an unused release-family label in the final view.
+    for records, field in ((profiles, 'modalities'), (reported, 'modalities'),
+                           (editions, 'input_modality'), (arena_records, 'modalities')):
+        for row in records:
+            validate_modalities(row.get(field))
     if {r['slug'] for r in profiles}!=cat.keys():raise ValueError('A catalog entry lacks an editorial domain / modality profile')
     directory={k:dict(r) for k,r in cat.items()}
     for r in profiles:directory[r['slug']].update(r)
