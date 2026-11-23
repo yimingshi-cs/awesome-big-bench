@@ -27,6 +27,12 @@ For a correction, open the name or edition on the website and choose **Copy PR p
 
 </details>
 
+## Community vote
+
+Would you recommend this edition to someone measuring the same task? On a [directory card](https://yiming-shi.com/awesome-big-bench/#directory), **👍 夯** means yes and **👎 拉** means no. Vote only on editions you know and skip those you helped design, grade or maintain. No sign-in or quota; you can change or withdraw your choice in the same browser while the poll is open.
+
+The card shows the live voting status. Results stay hidden during collection. After closing, report the up/down counts by domain and edition. Fewer than 20 votes means **not ranked**, not “poor”. [Ballot and tally method](vote-service/OPERATIONS.md).
+
 ## Where to start
 
 | If you want to test… | Compare these tasks | What distinguishes them |

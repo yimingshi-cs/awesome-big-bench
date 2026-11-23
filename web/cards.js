@@ -83,6 +83,7 @@ function catalogCard(x,n=null){
   for(const id of (pair&&nameGroups.relatedCatalog[pair])||[]){
     if(guide?.compare!==id)box.append(compareLine(recordsById.get(id)));
   }
+  box.append(benchmarkBallot(x,ballotConfig));
   reportDetails(box,key,n?'Family release reports':'Release reports');
   box.append(sourceNotes(x,n,x.primary_url,guide,protocol));
   box.append(cardFooter(link(x.origin==='report'?(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||'Original source'),x.primary_url),contributionButton(x,n)));

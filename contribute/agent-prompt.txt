@@ -4,7 +4,9 @@ Read CONTRIBUTING.md. Check the existing name, edition and open PRs. Verify the 
 
 Edit the source data on a new branch, not the generated page by hand. Run:
 python3 scripts/build_guide.py
+python3 vote-service/catalog.py
 python3 scripts/build_guide.py --check
+python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 
 Inspect the diff. Using my authorized GitHub account, push the branch to my fork and open a pull request against yimingshi-cs/awesome-big-bench:main. Include the evidence and checks, then give me the PR link. Leave review and merge to the maintainer. If you can't open a PR, give me the patch and the remaining step.

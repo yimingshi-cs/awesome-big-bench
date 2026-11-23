@@ -1,0 +1,5 @@
+.wrangler/
+wrangler.local.json
+wrangler.deploy.json
+*-counts.json
+poll-results*.csv

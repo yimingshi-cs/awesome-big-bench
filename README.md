@@ -28,13 +28,21 @@ Read CONTRIBUTING.md. Check the existing name, edition and open PRs. Verify the 
 
 Edit the source data on a new branch, not the generated page by hand. Run:
 python3 scripts/build_guide.py
+python3 vote-service/catalog.py
 python3 scripts/build_guide.py --check
+python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 
 Inspect the diff. Using my authorized GitHub account, push the branch to my fork and open a pull request against yimingshi-cs/awesome-big-bench:main. Include the evidence and checks, then give me the PR link. Leave review and merge to the maintainer. If you can't open a PR, give me the patch and the remaining step.
 ```
 
 </details>
+
+## Community vote
+
+Would you recommend this edition to someone measuring the same task? On a [directory card](https://yiming-shi.com/awesome-big-bench/#directory), **👍 夯** means yes and **👎 拉** means no. Vote only on editions you know and skip those you helped design, grade or maintain. No sign-in or quota; you can change or withdraw your choice in the same browser while the poll is open.
+
+The card shows the live voting status. Results stay hidden during collection. After closing, report the up/down counts by domain and edition. Fewer than 20 votes means **not ranked**, not “poor”. [Ballot and tally method](vote-service/OPERATIONS.md).
 
 ## Where to start
 

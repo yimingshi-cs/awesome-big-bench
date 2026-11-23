@@ -236,11 +236,18 @@ def render():
             marks[k]={**item,'uri':'data:'+mime+';base64,'+base64.b64encode(asset.read_bytes()).decode()}
     directory_fields=fields+['series','modalities','date_basis','date_note','display_name','display_date','edition_order','origin','aliases','reported_family','alternative_dates']
     readme=readme.replace('@@DIRECTORY_COUNT@@',str(len(directory)))
-    payload = dict(agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
+    ballot_config=json.loads((ROOT/'vote-service/campaign.json').read_text())
+    if not re.fullmatch(r'[-a-z0-9]{1,64}',ballot_config['id']):
+        raise ValueError('Invalid ballot identifier')
+    if ballot_config['api']:
+        url=urlsplit(ballot_config['api'])
+        if (url.scheme!='https' or not url.hostname or url.username or url.password or url.query or url.fragment or url.path not in ('','/')):
+            raise ValueError('The public ballot API must be a bare HTTPS origin')
+    payload = dict(ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
-    scripts = ('app.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
+    scripts = ('app.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
-    html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()).replace('/* APP */',app)
+    html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()+'\n'+(ROOT/'web/ballot.css').read_text()).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()
     mark_uri='data:image/svg+xml,'+quote(mark,safe='')
     font=base64.b64encode((ROOT/'web/assets/manrope-latin.woff2').read_bytes()).decode('ascii')
