@@ -32,13 +32,19 @@ For earlier mainline releases, add a row to `data/flagship_history.csv` with the
 
 The [optional CI example](verification/ci/catalog.yml.example) runs the same read-only build and directory tests under GitHub Actions. Auditing new model releases and approving new bibliographic evidence are editorial steps; the site does not silently ingest third-party feeds.
 
+## Community ballot
+
+Ballots are attached to directory edition IDs, not to unverified name combinations. If the directory changes, regenerate the ballot allowlist with `python3 vote-service/catalog.py` after building the guide. Include both artifacts in the PR. The maintainer, not the contributor’s agent, deploys the ballot service and controls the round and cutoff. See [operations and the tally method](vote-service/OPERATIONS.md).
+
 ## Rebuild
 
 Run from the root:
 
 ```sh
 python3 scripts/build_guide.py
+python3 vote-service/catalog.py
 python3 scripts/build_guide.py --check
+python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 ```
 
