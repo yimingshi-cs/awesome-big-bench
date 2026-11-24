@@ -194,5 +194,10 @@
   "Transparent margins removed and proportionally resized. Thumbnail licensed CC BY-SA 4.0.": "裁去透明边缘后等比缩放，缩略图采用 CC BY-SA 4.0 许可。",
   "Official purple symbol, unmodified.": "官方紫色标志，未经修改。",
   "Official HELM frontend asset, blank margins removed and proportionally resized. Original copyright and license supplied in HELM-APACHE-2.0.txt.": "HELM 官网素材，裁去留白后等比缩放。版权及许可见 HELM-APACHE-2.0.txt。",
-  "The complete title-page wordmark was extracted from the paper with its original opacity mask and proportionally resized.": "取自论文扉页的完整字标，保留原透明蒙版并等比缩放。"
+  "The complete title-page wordmark was extracted from the paper with its original opacity mask and proportionally resized.": "取自论文扉页的完整字标，保留原透明蒙版并等比缩放。",
+  "Loading details…": "正在读取详情…",
+  "Details could not be loaded.": "暂时无法读取详情。",
+  "Loading sources…": "正在读取来源…",
+  "Loading directory…": "正在读取目录…",
+  "Directory could not be loaded.": "暂时无法读取目录。"
 }

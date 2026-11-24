@@ -2,6 +2,7 @@
 from copy import deepcopy
 from html import escape
 from initial_map import render_map
+from reader_parts import render_reader
 import json
 import re
 
@@ -73,5 +74,5 @@ def editions(root, shell, source):
             'OTHER_NAME': 'English' if is_zh else '中文', 'OTHER_PATH': '../' if is_zh else 'zh/',
         }.items():
             html = html.replace('@@' + key + '@@', value)
-        result[path] = html.replace('/* DATA */', json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c'))
+        result.update(render_reader(html, path, data))
     return result

@@ -67,7 +67,14 @@ function benchmarkBallot(entry,config){
   async function init(){
     open=false;busy=true;paint();status.textContent=T('Checking voting status…');
     try{
-      const info=await request('/v1/status?entry='+encodeURIComponent(entry.slug));
+      const statusPath='/v1/status?entry='+encodeURIComponent(entry.slug);
+      let info;
+      try{info=await request(statusPath);}catch(e){
+        // A fresh connection can reset intermittently. Retry only this public,
+        // read-only status GET; never replay a ballot or suppress an actual API error.
+        if(e.name!=='TypeError'&&e.name!=='AbortError')throw e;
+        info=await request(statusPath);
+      }
       if(info.campaign!==config.id)throw Error('wrong_campaign');
       if(!info.open){
         status.textContent=info.phase==='pending'?T('Voting hasn’t opened yet.'):T('Voting is closed.');

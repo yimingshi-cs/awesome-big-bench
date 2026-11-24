@@ -5,7 +5,15 @@ function initDirectory(){
   const inDomain=(x,d)=>d==='All domains'||(d==='Cybersecurity'?security.has(x.slug):x.domain===d);
   const available=['All domains',...domains,'Cybersecurity'],domButtons=new Map();
   const searchText=s=>s.normalize('NFKC').toLowerCase().replace(/τ/g,'tau').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-  const text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.input,x.output,x.assessment,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
+  let text=null,loading=null;
+  function loadIndex(){
+    if(!loading)loading=readPart('directory-index').then(extra=>{
+      for(const x of catalog)Object.assign(x,extra[x.slug]);
+      text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.detailTerms,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
+    }).catch(e=>{loading=null;throw e;});
+    return loading;
+  }
+
   const seriesNames=new Set(catalog.map(x=>searchText(x.series)));
   const counts=Object.fromEntries(available.map(d=>[d,catalog.filter(x=>inDomain(x,d)).length]));
   const order=$('#directory-order'),state=()=>{
@@ -28,6 +36,13 @@ function initDirectory(){
   function draw(){
     const query=searchText($('#query').value),words=query.split(/\s+/).filter(Boolean),host=$('#entries');host.replaceChildren();
     $('#mobile-domain').value=domain;for(const [d,b] of domButtons)setPressed(b,d===domain);
+    if(!text){
+      const pending=el('p',T('Loading directory…'),'small');host.append(pending);
+      loadIndex().then(()=>{if(pending.isConnected)draw();}).catch(()=>{
+        if(pending.isConnected)pending.replaceChildren(document.createTextNode(T('Directory could not be loaded.')+' '),button(T('Retry'),draw,'subtle'));
+      });
+      return;
+    }
     const found=catalog.filter(x=>inDomain(x,domain)&&(seriesNames.has(query)?searchText(x.series)===query:words.every(w=>text.get(x.slug).includes(w)))).sort(order.value==='new'?recent:grouped);
     $('#count').textContent=T(found.length===1?'{n} entry':'{n} entries',{n:found.length});
     if(!found.length){
@@ -46,11 +61,11 @@ function initDirectory(){
         const band=el('th',displayDomain(x.domain),'directory-section');band.colSpan=4;body.insertRow().append(band);last=x.domain;
       }
       const row=body.insertRow();row.className='directory-row';
-      const cell=row.insertCell(),b=button(null,()=>presentCard(catalogCard(x),b),'directory-name');b.dataset.slug=x.slug;
+      const cell=row.insertCell(),b=button(null,()=>openEdition(x,b),'directory-name');b.dataset.slug=x.slug;
       const reported=mapEvidence.catalog[x.slug],mark=directoryMark(x);
       const slot=el('span',null,'mark-slot');slot.setAttribute('aria-hidden','true');if(mark?.placement==='row')slot.append(markImage(mark));
       const label=el('span',x.display_name,'directory-label');b.append(slot,label);b.setAttribute('aria-haspopup','dialog');
-      if(reported){b.classList.add('is-reported');b.setAttribute('aria-label',T('{n}: reported by {labs}',{n:x.display_name,labs:labNames(mapEvidence.reports[reported])}));}
+      if(reported){b.classList.add('is-reported');b.setAttribute('aria-label',T('{n}: reported by {labs}',{n:x.display_name,labs:reportedBy(reported)}));}
       cell.append(b);
       const task=row.insertCell();task.className='directory-task';task.textContent=x.task||'—';
       const mod=row.insertCell();mod.className='directory-modality';mod.textContent=x.modalities;
@@ -62,6 +77,6 @@ function initDirectory(){
     domain=available.includes(params.get('domain'))?params.get('domain'):'All domains';$('#query').value=params.get('q')||'';
     order.value=params.get('order')==='new'?'new':'group';draw();
     const x=recordsById.get(params.get('entry'));
-    if(x){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);presentCard(catalogCard(x),opener||$('#query'));}
+    if(x){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);openEdition(x,opener||$('#query'));}
   };
 }
