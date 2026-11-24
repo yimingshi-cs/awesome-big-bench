@@ -90,10 +90,13 @@ function catalogCard(x,n=null){
   box.append(cardFooter(link(x.origin==='report'?T(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||T('Original source')),x.primary_url),contributionButton(x,n)));
   return box;
 }
+function isFamilyName(n,x){
+  return x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&catalog.filter(r=>r.series===x.series).length>1;
+}
+function isCatalogName(n,x){return !isFamilyName(n,x)&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'");}
 function nameCard(n,x){
   const pair=namePair(n),used=n.status==='used',key=mapEvidence.cells[pair];
-  // A naming cell is evidence for a family, not proof of using every release.
-  if(x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&catalog.filter(r=>r.series===x.series).length>1){
+  if(isFamilyName(n,x)){
     const box=el('div',null,'detail-sheet name-sheet');
     box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':'yes'),n.name,n.note));
     box.append(link(T('Browse {series} editions',{series:x.series}),'#browse?'+new URLSearchParams({domain:x.domain,q:x.series}),'related-use'));
@@ -102,8 +105,7 @@ function nameCard(n,x){
     const check=el('p',null,'checked-date');check.append(link(T('Name checked {date}',{date:n.checked_on}),nameEvidence(n)));box.append(check);
     box.append(cardFooter(link(T('Original source'),n.source_url),contributionButton(null,n)));return box;
   }
-  // A version in the directory may be related without being the exact named test.
-  if(x&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'"))return catalogCard(x,n);
+  // A related edition does not establish an exact name match.
   const box=el('div',null,'detail-sheet name-sheet');
   const lead=n.note||(T(used?'A same-name AI evaluation is documented.':'No same-name AI evaluation found in the recorded searches.'));
   box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':used?'yes':'no'),n.name,lead));
@@ -121,6 +123,29 @@ let cardTrigger=null;
 function presentCard(content,trigger){
   cardTrigger=trigger||null;$('#cell-info').replaceChildren(content);
   cardDialog.scrollTop=0;if(!cardDialog.open)cardDialog.showModal();syncLanguageLinks();
+}
+function openEdition(x,trigger,n=null){
+  const sheet=el('div',null,'detail-sheet'), title=x.display_name||x.name;
+  sheet.dataset.entry=x.slug;if(n){sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;}
+  const status=el('p',T('Loading details…'),'card-lead');status.setAttribute('role','status');
+  sheet.append(cardHead(meta([displayDomain(x.domain)],null),title),status,cardFooter(link(T('Original source'),x.primary_url),contributionButton(x,n)));
+  presentCard(sheet,trigger);
+  async function read(){
+    try{
+      const part=await readPart('cards-'+domains.indexOf(x.domain));
+      if(!sheet.isConnected||!cardDialog.open)return;
+      if(!Object.hasOwn(part,x.slug))throw Error('Missing edition');
+      const full=catalogCard({...x,...part[x.slug]},n);
+      if(n){full.dataset.prefix=n.prefix;full.dataset.suffix=n.suffix;}
+      // Keep keyboard focus on the corresponding action if it was used while loading.
+      const focused=sheet.contains(document.activeElement)?document.activeElement:null;
+      sheet.replaceWith(full);
+      if(focused)full.querySelector(focused.matches('.copy-pr')?'.copy-pr':'.card-footer a')?.focus({preventScroll:true});
+    }catch{
+      if(sheet.isConnected)status.replaceChildren(document.createTextNode(T('Details could not be loaded.')+' '),button(T('Retry'),read,'subtle'));
+    }
+  }
+  read();
 }
 function dismissCard(){if(cardDialog.open)cardDialog.close();}
 cardDialog.querySelector('.close').onclick=dismissCard;

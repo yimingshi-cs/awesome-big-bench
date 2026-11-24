@@ -52,7 +52,7 @@ python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 ```
 
-Commit the regenerated README and both Pages entries (`docs/index.html`, `docs/zh/index.html`) with the sources. Open the HTML locally to test it. The public site is served by GitHub Pages from `main:/docs`; no external scripts or fonts are needed. See [data methods](data/README.md) to regenerate the figures.
+Commit the regenerated README, both Pages entries (`docs/index.html`, `docs/zh/index.html`) and their `parts/` directories with the sources. The map and contribution flow start before the full directory, protocols and release citations arrive. The online reader can request a selected part early; the same HTML embeds it later so a downloaded page still works offline. Open the HTML locally to test it. The public site is served by GitHub Pages from `main:/docs`; no external scripts or fonts are needed. To check the slow-connection path when Playwright is available, run `node tests/progressive_reader.cjs` (set `CHROME_CHANNEL=chrome` to use an existing Chrome installation). See [data methods](data/README.md) to regenerate the figures.
 
 The comparison table and source details take inspiration from [Awesome CUA](https://awesomecua.com/categories/benchmark/), [Awesome 3D Gaussian Splatting](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) and [Awesome-WAM](https://openmoss.ai/Awesome-WAM/). The interface uses its own HTML, CSS and JavaScript.
 

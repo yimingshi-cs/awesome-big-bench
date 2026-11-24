@@ -2,10 +2,12 @@ import csv, json, re, unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
+from compiled_guide import page
+
 class DirectoryContract(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.p=json.loads(re.search(r'id="payload">(.*?)</script>',(ROOT/'docs/index.html').read_text(),re.S)[1])
+        _,cls.p=page('docs/index.html')
         cls.cat={r['slug']:r for r in cls.p['catalog']};cls.ev=cls.p['mapEvidence']
     def test_directory_represents_every_audited_family(self):
         def read(p):

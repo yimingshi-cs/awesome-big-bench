@@ -6,15 +6,17 @@ function initNames(){
   let lastPick=null, cells=[];
   chooser.disabled=false;for(const [f] of fields)chooser.add(new Option(displayDomain(f),f));
   function open(n,b){
-    lastPick=n;const sheet=nameCard(n,recordsById.get(mapCatalog[namePair(n)]));sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;presentCard(sheet,b);
+    lastPick=n;const x=recordsById.get(mapCatalog[namePair(n)]);
+    if(x&&isCatalogName(n,x)){openEdition(x,b,n);return;}
+    const sheet=nameCard(n,x);sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;presentCard(sheet,b);
   }
   function landmark(x){
     const key=mapEvidence.landmarks[x.slug],a=link(x.name,recordUrl(x),key?'reported':'');
     a.setAttribute('aria-haspopup','dialog');
-    if(key)a.setAttribute('aria-label',T('{n}: reported by {labs}',{n:x.name,labs:labNames(mapEvidence.reports[key])}));
+    if(key)a.setAttribute('aria-label',T('{n}: reported by {labs}',{n:x.name,labs:reportedBy(key)}));
     a.onclick=e=>{
       if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
-      e.preventDefault();presentCard(catalogCard(x),a);
+      e.preventDefault();openEdition(x,a);
     };
     return a;
   }
@@ -41,7 +43,7 @@ function initNames(){
           const n=map.get(p+'|'+s),td=tr.insertCell();if(!j)td.className='family-start';const used=n.status==='used';
           const key=mapEvidence.cells[namePair(n)];
           const c=button(null,()=>open(n,c),'map-cell '+(used?'yes':'no')+(key?' reported':''));c.dataset.prefix=p;c.dataset.suffix=s;c.tabIndex=-1;
-          c.setAttribute('aria-label',T(key?'{n}: taken; reported by {labs}':used?'{n}: taken':'{n}: looks open',{n:n.name,labs:key?labNames(mapEvidence.reports[key]):''}));c.setAttribute('aria-haspopup','dialog');c.title=n.name;
+          c.setAttribute('aria-label',T(key?'{n}: taken; reported by {labs}':used?'{n}: taken':'{n}: looks open',{n:n.name,labs:key?reportedBy(key):''}));c.setAttribute('aria-haspopup','dialog');c.title=n.name;
           const text=el('span',n.name);
           // Soft-wrap joined names at the word boundary, never change their spelling.
           if(n.name.toLowerCase().startsWith(p.toLowerCase()) && n.name.length>p.length+1){

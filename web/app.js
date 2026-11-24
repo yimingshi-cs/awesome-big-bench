@@ -1,5 +1,5 @@
 'use strict';
-const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks, agentPrompt, ballotConfig, ui} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, months, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks, agentPrompt, ballotConfig, ui, parts} = JSON.parse(document.querySelector('#payload').textContent);
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
   const node = document.createElement(tag);
@@ -34,11 +34,26 @@ function renderTrendComparison(){
   const delta=el('div',null,'factor');delta.append(el('span',T('2026 vs. 2020')),el('b',(b.share/a.share).toFixed(2)+'×'),el('small',T('Jan–Sep share ratio')));$('#comparison').append(delta);
 }
 
-const labNames=rows=>['OpenAI','Anthropic','Google'].filter(l=>rows.some(r=>r.vendor===l)).join(', ');
+const reportedBy=key=>mapEvidence.vendors[key].join(', ');
 function reportDetails(box,key,label='Release reports'){
   if(!key)return;
-  const rows=mapEvidence.reports[key],details=el('details',null,'report-sources');
-  details.append(el('summary',T(label)+' · '+labNames(rows)));
+  const details=el('details',null,'report-sources');
+  details.append(el('summary',T(label)+' · '+reportedBy(key)));
+  const body=el('div');details.append(body);box.append(details);
+  let busy=false,filled=false;
+  async function read(){
+    if(busy||filled||!details.open)return;
+    busy=true;body.textContent=T('Loading sources…');
+    try{
+      const part=await readPart(mapEvidence.parts[key]);body.replaceChildren();
+      appendReportRows(body,part[key]);filled=true;
+    }catch{
+      body.replaceChildren(button(T('Retry'),read,'subtle'),document.createTextNode(' · '),link(T('Model release sources'),repo+'/tree/main/verification/flagships'));
+    }finally{busy=false;}
+  }
+  details.addEventListener('toggle',read);
+}
+function appendReportRows(details,rows){
   for(const lab of ['OpenAI','Anthropic','Google']){
     const own=rows.filter(r=>r.vendor===lab).sort((a,b)=>b.date.localeCompare(a.date));
     if(!own.length)continue;
@@ -61,5 +76,4 @@ function reportDetails(box,key,label='Release reports'){
     }
     details.append(group);
   }
-  box.append(details);
 }

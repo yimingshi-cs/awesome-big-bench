@@ -49,3 +49,20 @@ test('a saved single choice can change, reload and withdraw; failed writes never
   fail=true;await restored.up.onclick();assert.equal(restored.up.attrs['aria-pressed'],'false');assert.ok(restored.up.disabled);
   assert.match(restored.status.children[0],/还没收到投票确认/);assert.equal(saved,null);
 });
+
+test('a network failure may retry the anonymous status GET, never writes a ballot',async()=>{
+  const attempts=[];
+  const ui=setup(async(url,opts)=>{
+    attempts.push([url,opts.method||'GET']);
+    if(attempts.length===1)throw new TypeError('connection reset');
+    return response({open:false,phase:'pending',campaign:'qa',closesAt:null});
+  });
+  await wait();assert.deepEqual(attempts.map(x=>x[1]),['GET','GET']);
+  assert.equal(attempts[0][0],attempts[1][0]);assert.ok(ui.up.disabled);
+  assert.equal(ui.store.size,0);assert.match(ui.status.textContent,/hasn’t opened/);
+});
+test('a persistent network failure is not reported as a closed or pending poll',async()=>{
+  let calls=0;const ui=setup(async()=>{calls++;throw new TypeError('connection reset');});
+  await wait();assert.equal(calls,2);assert.ok(ui.down.disabled);
+  assert.match(ui.status.children[0],/Could not reach/);assert.equal(ui.status.children[1].textContent,'Retry');
+});

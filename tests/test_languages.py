@@ -7,10 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def page(path):
-    text = (ROOT / path).read_text()
-    payload = re.search(r'id="payload">(.*?)</script>', text, re.S)
-    return text[:payload.start()], json.loads(payload[1])
+from compiled_guide import page
 
 
 class Languages(unittest.TestCase):
