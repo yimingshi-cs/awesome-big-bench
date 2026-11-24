@@ -66,3 +66,16 @@ test('a persistent network failure is not reported as a closed or pending poll',
   await wait();assert.equal(calls,2);assert.ok(ui.down.disabled);
   assert.match(ui.status.children[0],/Could not reach/);assert.equal(ui.status.children[1].textContent,'Retry');
 });
+
+test('the official base retains its path and never includes cookies or the referring URL',async()=>{
+  const urls=[], f=async(url,opts)=>{
+    urls.push(url);assert.equal(opts.credentials,'omit');assert.equal(opts.referrerPolicy,'no-referrer');
+    return response({open:false,phase:'pending',campaign:'qa',closesAt:null});
+  };
+  const root='https://yiming-shi.com/awesome-big-bench/api',ui=setup(f,root);
+  await wait();assert.deepEqual(urls,[root+'/v1/status?entry=demo2']);assert.ok(ui.up.disabled);
+  for(const bad of [root+'-other','https://example.test/awesome-big-bench/api',root+'?wrong']){
+    const wrong=setup(f,bad);assert.match(wrong.status.textContent,/unavailable/);
+  }
+  assert.equal(urls.length,1);
+});

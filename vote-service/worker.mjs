@@ -26,9 +26,14 @@ export async function fetchBallot(request, env, now=Date.now()) {
   if(okOrigin) headers['Access-Control-Allow-Origin']=origin;
   const json=(status,body)=>new Response(JSON.stringify(body),{status,headers});
   const url=new URL(request.url);
-  if(!['/v1/status','/v1/ballot'].includes(url.pathname)) return json(404,{error:'not_found'});
+  // The existing workers.dev API remains compatible. Only the exact project
+  // prefix on the official HTTPS host maps to those same two handlers.
+  const prefix='/awesome-big-bench/api';
+  const path=url.origin==='https://yiming-shi.com'&&url.pathname.startsWith(prefix+'/')
+    ?url.pathname.slice(prefix.length):url.pathname;
+  if(!['/v1/status','/v1/ballot'].includes(path)) return json(404,{error:'not_found'});
   // Only public health metadata needs to work in a direct address-bar visit.
-  if((origin!==null&&!okOrigin) || (url.pathname==='/v1/ballot'&&!okOrigin)) return json(403,{error:'origin_not_allowed'});
+  if((origin!==null&&!okOrigin) || (path==='/v1/ballot'&&!okOrigin)) return json(403,{error:'origin_not_allowed'});
   if(request.method==='OPTIONS'){
     if(!okOrigin) return json(403,{error:'origin_not_allowed'});
     return new Response(null,{status:204,headers:{...headers,'Access-Control-Allow-Methods':'GET, POST, OPTIONS',
@@ -37,7 +42,7 @@ export async function fetchBallot(request, env, now=Date.now()) {
   const campaign=env.CAMPAIGN_ID, waiting=env.VOTING_OPEN==='false'&&env.CLOSES_AT==='', closeTime=Date.parse(env.CLOSES_AT);
   if(typeof campaign!=='string'||!/^[-a-z0-9]{1,64}$/.test(campaign)||(!waiting&&(!Number.isFinite(closeTime)||!/Z$/.test(env.CLOSES_AT)))||!['true','false'].includes(env.VOTING_OPEN)||!env.VOTES) return json(503,{error:'not_configured'});
   const open=env.VOTING_OPEN==='true'&&now<closeTime, phase=waiting?'pending':open?'open':'closed';
-  if(url.pathname==='/v1/status'){
+  if(path==='/v1/status'){
     if(request.method!=='GET') return json(405,{error:'method_not_allowed'});
     if([...url.searchParams.keys()].some(k=>k!=='entry')) return json(400,{error:'invalid_query'});
     if(url.searchParams.has('entry')&&!hasEntry(url.searchParams.get('entry'))) return json(404,{error:'unknown_edition'});

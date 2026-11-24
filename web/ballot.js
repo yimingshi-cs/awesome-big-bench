@@ -21,8 +21,9 @@ function benchmarkBallot(entry,config){
   let endpoint;
   try{
     const u=new URL(config.api);
-    if(u.username||u.password||u.search||u.hash||u.pathname!=='/'||(u.protocol!=='https:'&&!(hereIsLocal&&['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol==='http:')))throw Error();
-    endpoint=u.origin;
+    const projectAPI=u.origin==='https://yiming-shi.com'&&u.pathname==='/awesome-big-bench/api';
+    if(u.username||u.password||u.search||u.hash||(!projectAPI&&u.pathname!=='/')||(u.protocol!=='https:'&&!(hereIsLocal&&['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol==='http:')))throw Error();
+    endpoint=projectAPI?u.origin+u.pathname:u.origin;
   }catch{status.textContent=T('Voting is unavailable.');return section;}
   let key=null,choice=null,open=false,busy=false,deadline=0;
   function paint(){

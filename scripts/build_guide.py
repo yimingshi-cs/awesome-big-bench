@@ -242,8 +242,9 @@ def render():
         raise ValueError('Invalid ballot identifier')
     if ballot_config['api']:
         url=urlsplit(ballot_config['api'])
-        if (url.scheme!='https' or not url.hostname or url.username or url.password or url.query or url.fragment or url.path not in ('','/')):
-            raise ValueError('The public ballot API must be a bare HTTPS origin')
+        project_api=ballot_config['api']=='https://yiming-shi.com/awesome-big-bench/api'
+        if (url.scheme!='https' or not url.hostname or url.username or url.password or url.query or url.fragment or (not project_api and url.path not in ('','/'))):
+            raise ValueError('Use an HTTPS service origin or the exact official project API')
     payload = dict(ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
     scripts = ('language.js','app.js','parts.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')

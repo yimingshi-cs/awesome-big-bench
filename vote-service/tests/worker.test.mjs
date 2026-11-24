@@ -74,3 +74,20 @@ test('HTTP flow, concurrency, idempotence, no cross-edition/poll linkage or publ
   assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM ballots').get().n,2);
   assert.deepEqual(sql.prepare('PRAGMA table_info(ballots)').all().map(r=>r.name),['campaign','edition','handle','choice']);
 });
+
+test('the scoped HTTPS route is an alias to the same ballot and nothing else',async()=>{
+  const {env}=dbFixture(), root='https://yiming-shi.com/awesome-big-bench/api';
+  const get=(u,e=env)=>fetchBallot(new Request(u),e,now);
+  const status=await (await get(root+'/v1/status?entry=humaneval')).json();
+  assert.equal(status.campaign,campaign);assert.equal(status.open,true);
+  const waiting={...env,VOTING_OPEN:'false',CLOSES_AT:''};
+  const result=await (await get(root+'/v1/status',waiting)).json();
+  assert.equal(result.phase,'pending');assert.equal(result.closesAt,null);
+  const signed=(u,action,e=env)=>fetchBallot(new Request(u,{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify(action)}),e,now);
+  const k=key();assert.equal((await signed(root+'/v1/ballot',body(k),waiting)).status,409);
+  assert.equal((await signed(root+'/v1/ballot',body(k))).status,200);
+  assert.deepEqual(await (await signed('https://service.example/v1/ballot',{campaign,edition:entry,key:k,action:'read'})).json(),{open:true,choice:'up'});
+  for(const invalid of [root+'/v1/results',root+'-other/v1/status','https://other.example/awesome-big-bench/api/v1/status','https://yiming-shi.com/another/api/v1/status']){
+    assert.equal((await get(invalid)).status,404);
+  }
+});
