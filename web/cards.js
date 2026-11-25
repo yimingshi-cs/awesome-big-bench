@@ -68,7 +68,8 @@ function catalogCard(x,n=null){
   const key=n?mapEvidence.cells[pair]:mapEvidence.catalog[x.slug];
   const title=x.display_name||x.name;
   const top=meta([displayDomain(x.domain),guide?.kind&&!['Task suite','任务集','任务套件'].includes(guide.kind)?guide.kind:''],n?(key?'reported':'yes'):null);
-  const header=cardHead(top,title,x.description&&x.description!==title?x.description:null);
+  if(n&&mapBallots[pair]?.length===1&&n.name.toLowerCase()!==title.toLowerCase())top.append(el('span',n.name));
+  const header=cardHead(top,title,x.description&&x.description!==title?x.description:x.task);
   const mark=directoryMark(x);
   if(mark){const signature=el('div',null,'card-signature');signature.append(markImage(mark));header.prepend(signature);}
   const when=el('div',null,'card-date');when.append(dateLink(x));top.append(when);
@@ -79,48 +80,70 @@ function catalogCard(x,n=null){
     for(const fact of guide?.facts||[{label:T('Given'),value:x.input},{label:T('Result'),value:x.output}])protocol.append(field(fact.label,fact.value,fact.url));
     const score=el('section',null,'score-note');score.append(el('h3',T('Scoring')),el('p',x.assessment,'score-rule'));
     if(guide?.reading)score.append(el('p',guide.reading,'interpretation'));box.append(score);
-  }else if(!x.description&&x.task){header.append(el('p',x.task,'card-lead'));}
+  }
   if(guide?.compare)box.append(compareLine(recordsById.get(guide.compare),guide.contrast));
-  for(const id of (pair&&nameGroups.relatedCatalog[pair])||[]){
+  const canonical=pair&&(!n||mapCatalog[pair]===x.slug);
+  for(const id of (canonical&&nameGroups.relatedCatalog[pair])||[]){
     if(guide?.compare!==id)box.append(compareLine(recordsById.get(id),id==='gamecraft-bench'?T('Build a playable game instead of playing one.'):''));
   }
-  if(nameGroups.secondarySources?.[pair]){
+  if(canonical&&nameGroups.secondarySources?.[pair]){
     const more=el('details',null,'card-sources');more.append(el('summary',T('Other projects with this name')));
     for(const record of nameGroups.secondarySources[pair]){const item=el('p');item.append(link(zh?record.zh:record.en,record.url,'related-use'));more.append(item);}
     box.append(more);
   }
   box.append(benchmarkBallot(x,ballotConfig));
-  reportDetails(box,key,n?'Family release reports':'Release reports');
+  reportDetails(box,mapEvidence.catalog[x.slug],'Release reports');
   box.append(sourceNotes(x,n,x.primary_url,guide,protocol));
   box.append(cardFooter(link(x.origin==='report'?T(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||T('Original source')),x.primary_url),contributionButton(x,n)));
   return box;
 }
-function isFamilyName(n,x){
-  return x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&seriesSizes[x.series]>1;
-}
-function isCatalogName(n,x){return !isFamilyName(n,x)&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'");}
-function nameCard(n,x){
-  const pair=namePair(n),used=n.status==='used',key=mapEvidence.cells[pair];
-  if(isFamilyName(n,x)){
-    const box=el('div',null,'detail-sheet name-sheet');
-    box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':'yes'),n.name,n.note));
-    box.append(link(T('Browse {series} editions',{series:x.series}),'#browse?'+new URLSearchParams({domain:x.domain,q:x.series}),'related-use'));
-    for(const id of nameGroups.relatedCatalog[pair]||[])box.append(compareLine(recordsById.get(id)));
-    reportDetails(box,key,'Family release reports');
-    const check=el('p',null,'checked-date');check.append(link(T('Name checked {date}',{date:n.checked_on}),nameEvidence(n)));box.append(check);
-    box.append(cardFooter(link(T('Original source'),n.source_url),contributionButton(null,n)));return box;
+// Green is a naming verdict, not an edition ID. Never combine votes across
+// related tasks, versions, former names or independent projects with the same name.
+function openMapEvaluation(n,trigger,selected=null,focusChoice=false){
+  const pair=namePair(n),ids=mapBallots[pair],multi=ids.length>1;
+  const slug=multi?(ids.includes(selected)?selected:null):ids[0];
+  const x=slug?recordsById.get(slug):null;
+  const sheet=x?catalogCard(x,n):el('div',null,'detail-sheet name-sheet');
+  if(!x){
+    sheet.append(cardHead(meta([n.prefix+' × '+n.suffix],mapEvidence.cells[pair]?'reported':'yes'),n.name,n.note));
   }
-  // A related edition does not establish an exact name match.
+  sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;
+  if(multi){
+    const group=el('div',null,x?'edition-choice':'edition-choice bench-ballot'),label=el('label',T(x?'Choose what you’re rating':'Community vote'));
+    const select=el('select');select.id='ballot-edition';label.htmlFor=select.id;select.setAttribute('aria-label',T('Choose what you’re rating'));
+    select.add(new Option(T('Select a project or edition'),''));select.options[0].disabled=true;
+    for(const id of ids){const r=recordsById.get(id),name=r.display_name||r.name;select.add(new Option(zh?(ui[name]||name):name,id));}
+    select.value=slug||'';
+    select.onchange=()=>{
+      const params=new URLSearchParams(),field=$('#names-field').value;
+      if(field)params.set('field',field);
+      params.set('prefix',n.prefix);params.set('suffix',n.suffix);params.set('edition',select.value);
+      history.replaceState(history.state,'','#names?'+params);
+      openMapEvaluation(n,trigger,select.value,true);
+    };
+    group.append(label,select);sheet.querySelector('.card-head').after(group);
+  }
+  if(!x){
+    for(const id of nameGroups.relatedCatalog[pair]||[])sheet.append(compareLine(recordsById.get(id),id==='gamecraft-bench'?T('Build a playable game instead of playing one.'):''));
+    const opts=el('div',null,'ballot-options');
+    for(const key of ['👍 Recommend','👎 Wouldn’t recommend']){
+      const b=el('button',T(key));b.type='button';b.disabled=true;opts.append(b);
+    }
+    sheet.querySelector('.edition-choice').append(opts);
+    const check=el('p',null,'checked-date');check.append(link(T('Name checked {date}',{date:n.checked_on}),nameEvidence(n)));
+    sheet.append(check,cardFooter(link(T('Original source'),n.source_url),contributionButton(null,n)));
+
+  }
+  presentCard(sheet,trigger);
+  if(focusChoice)sheet.querySelector('#ballot-edition')?.focus({preventScroll:true});
+}
+function nameCard(n,x){
   const box=el('div',null,'detail-sheet name-sheet');
-  const lead=n.note||(T(used?'A same-name AI evaluation is documented.':'No same-name AI evaluation found in the recorded searches.'));
-  box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':used?'yes':'no'),n.name,lead));
-  const date=el('p',T('Checked {date}',{date:n.checked_on}),'checked-date');box.append(date);
+  box.append(cardHead(meta([n.prefix+' × '+n.suffix],'no'),n.name,n.note||T('No same-name AI evaluation found in the recorded searches.')));
+  box.append(el('p',T('Checked {date}',{date:n.checked_on}),'checked-date'));
   if(x)box.append(compareLine(x,T('See the documented edition and its scoring.')));
-  if(!used&&n.source_url)box.append(link(T('Related use'),n.source_url,'related-use'));
-  reportDetails(box,key,'Family release reports');
-  if(used)box.append(link(T('Search record'),nameEvidence(n),'related-use'));
-  box.append(cardFooter(link(T(used?'Original source':'Search record'),used?n.source_url:nameEvidence(n)),
-    contributionButton(null,n)));
+  if(n.source_url)box.append(link(T('Related use'),n.source_url,'related-use'));
+  box.append(cardFooter(link(T('Search record'),nameEvidence(n)),contributionButton(null,n)));
   return box;
 }
 const cardDialog=$('#cell-dialog');
@@ -132,27 +155,11 @@ function presentCard(content,trigger,rolling=false){
   if(rolling)$('#roll-again').focus({preventScroll:true});syncLanguageLinks();
 }
 function openEdition(x,trigger,n=null){
-  const sheet=el('div',null,'detail-sheet'), title=x.display_name||x.name;
-  sheet.dataset.entry=x.slug;if(n){sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;}
-  const status=el('p',T('Loading details…'),'card-lead');status.setAttribute('role','status');
-  sheet.append(cardHead(meta([displayDomain(x.domain)],null),title),status,cardFooter(link(T('Original source'),x.primary_url),contributionButton(x,n)));
+  // Records arrive with the map or directory row. The vote service and release
+  // bibliography are independent: neither can delay reading the edition.
+  const sheet=catalogCard(x,n);
+  if(n){sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;}
   presentCard(sheet,trigger);
-  async function read(){
-    try{
-      const part=await readPart('cards-'+domains.indexOf(x.domain));
-      if(!sheet.isConnected||!cardDialog.open)return;
-      if(!Object.hasOwn(part,x.slug))throw Error('Missing edition');
-      const full=catalogCard({...x,...part[x.slug]},n);
-      if(n){full.dataset.prefix=n.prefix;full.dataset.suffix=n.suffix;}
-      // Keep keyboard focus on the corresponding action if it was used while loading.
-      const focused=sheet.contains(document.activeElement)?document.activeElement:null;
-      sheet.replaceWith(full);
-      if(focused)full.querySelector(focused.matches('.copy-pr')?'.copy-pr':'.card-footer a')?.focus({preventScroll:true});
-    }catch{
-      if(sheet.isConnected)status.replaceChildren(document.createTextNode(T('Details could not be loaded.')+' '),button(T('Retry'),read,'subtle'));
-    }
-  }
-  read();
 }
 function dismissCard(){if(cardDialog.open)cardDialog.close();}
 cardDialog.querySelector('.close').onclick=dismissCard;
@@ -166,7 +173,7 @@ cardDialog.addEventListener('close',()=>{
   if(cardTrigger?.isConnected)cardTrigger.focus({preventScroll:true});
   const [page,qs]=location.hash.slice(1).split('?'),params=new URLSearchParams(qs);
   if((page==='browse'&&params.has('entry'))||(page==='names'&&params.has('prefix'))){
-    for(const k of ['entry','prefix','suffix','contribute','roll'])params.delete(k);
+    for(const k of ['entry','edition','prefix','suffix','contribute','roll'])params.delete(k);
     history.replaceState(null,'','#'+page+(params.size?'?'+params:''));
   }
   syncLanguageLinks();

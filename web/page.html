@@ -1,12 +1,23 @@
 <!doctype html>
 <html lang="@@LANG@@"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#fdfefd">
+<script>/* APPEARANCE */</script>
+<script>
+// Ordinary clicks in the prerendered table should open a site card even if
+// the main script is still in flight. Without JavaScript the evidence link works.
+document.addEventListener('click',function(e){
+  if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
+  var a=e.target.closest&&e.target.closest('a.map-cell[data-prefix]');
+  if(!a)return;
+  e.preventDefault();location.hash='names?'+new URLSearchParams({prefix:a.dataset.prefix,suffix:a.dataset.suffix});
+});
+</script>
 <meta name="description" content="@@TEXT[See which AI benchmark names already exist, compare benchmark tasks and explore arXiv title trends.]@@">
 <title>@@TITLE@@</title>
 <link rel="alternate" hreflang="en" href="https://yiming-shi.com/awesome-big-bench/"><link rel="alternate" hreflang="zh-Hans" href="https://yiming-shi.com/awesome-big-bench/zh/"><link rel="canonical" href="@@CANONICAL@@"><link rel="icon" href="/* MARK_URI */" type="image/svg+xml"><style>/* STYLE */</style></head>
 <body><a class="skip" href="#main-content">@@TEXT[Skip to content]@@</a>
 <header><div class="shell top"><a href="#names" class="brand" aria-label="@@TEXT[Awesome Big Bench home]@@"><span class="brand-mark" aria-hidden="true">/* MARK */</span>Awesome Big Bench</a>
-<nav aria-label="@@TEXT[Main]@@"><a data-page="names" href="#names">@@TEXT[Name map]@@</a><a data-page="directory" href="#directory">@@TEXT[Directory]@@</a><a data-page="trends" href="#trends">@@TEXT[Trends]@@</a><a href="#contribute" id="contribute-entry" aria-haspopup="dialog">@@TEXT[Contribute]@@</a></nav><a href="@@OTHER_PATH@@" class="language-switch" lang="@@OTHER_LANG@@" hreflang="@@OTHER_LANG@@">@@OTHER_NAME@@</a><a class="repo-link" href="https://github.com/yimingshi-cs/awesome-big-bench">GitHub</a></div></header>
+<nav aria-label="@@TEXT[Main]@@"><a data-page="names" href="#names">@@TEXT[Name map]@@</a><a data-page="directory" href="#directory">@@TEXT[Directory]@@</a><a data-page="trends" href="#trends">@@TEXT[Trends]@@</a><a href="#contribute" id="contribute-entry" aria-haspopup="dialog">@@TEXT[Contribute]@@</a><label class="appearance" title="@@TEXT[Appearance · automatic from 21:00 to 07:00]@@"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><g class="day-icon"><circle cx="10" cy="10" r="3.4"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2m13 0h2M4 4l1.5 1.5m9 9L16 16M4 16l1.5-1.5m9-9L16 4"/></g><path class="night-icon" d="M16.6 12.1A7.1 7.1 0 0 1 7.9 3.4 7.2 7.2 0 1 0 16.6 12.1Z"/></svg><span class="theme-auto" aria-hidden="true">@@TEXT[Auto]@@</span><span class="theme-light" aria-hidden="true">@@TEXT[Light]@@</span><span class="theme-dark" aria-hidden="true">@@TEXT[Dark]@@</span><select id="appearance-mode" aria-label="@@TEXT[Appearance]@@"><option value="auto">@@TEXT[Automatic · dark 21:00–07:00]@@</option><option value="light">@@TEXT[Light]@@</option><option value="dark">@@TEXT[Dark]@@</option></select></label></nav><a href="@@OTHER_PATH@@" class="language-switch" lang="@@OTHER_LANG@@" hreflang="@@OTHER_LANG@@">@@OTHER_NAME@@</a><a class="repo-link" href="https://github.com/yimingshi-cs/awesome-big-bench">GitHub</a></div></header>
 <main id="main-content" tabindex="-1" class="shell">
 <section id="names" class="page">
 <div class="map-intro"><h1>@@TEXT[The benchmark ]@@<em>@@TEXT[index.]@@</em></h1></div>
@@ -36,4 +47,4 @@
 <p id="contribute-status" role="status"></p>
 </dialog>
 </main><footer><div class="shell"><strong>Awesome Big Bench</strong><a class="offline-download" href="@@OFFLINE@@" download>@@TEXT[Download offline guide]@@</a><a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/CONTRIBUTING.md">@@TEXT[Contribution guide]@@</a></div></footer>
-<noscript>@@TEXT[Browse the]@@ <a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/data/names.csv">@@TEXT[name map as CSV]@@</a> @@TEXT[or the]@@ <a href="https://github.com/yimingshi-cs/awesome-big-bench">@@TEXT[benchmark directory]@@</a>.</noscript><script type="application/json" id="payload">/* DATA */</script><script>/* APP */</script><!-- READER PARTS --></body></html>
+<noscript>@@TEXT[Browse the]@@ <a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/data/names.csv">@@TEXT[name map as CSV]@@</a> @@TEXT[or the]@@ <a href="https://github.com/yimingshi-cs/awesome-big-bench">@@TEXT[benchmark directory]@@</a>.</noscript><script type="application/json" id="payload">/* DATA */</script><script id="reader-runtime">/* APP */</script><!-- READER PARTS --></body></html>

@@ -1,6 +1,6 @@
 // Filters and global date order can be shared. The default never collapses editions.
 function initDirectory(){
-  let domain='All domains',scope='featured',routeID=0;
+  let domain='All domains',scope='featured',routeID=0,pendingEntry=null;
   const chosen=new Set(featured);
   const security=new Set(['cwe-bench-v2','sec-bench-pro','webexploitbench-v12','cyberseceval']);
   const inDomain=(x,d)=>d==='All domains'||(d==='Cybersecurity'?security.has(x.slug):x.domain===d);
@@ -14,7 +14,7 @@ function initDirectory(){
         if(x)Object.assign(x,row);
         else{catalog.push(row);recordsById.set(slug,row);}
       }
-      text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.detailTerms,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
+      text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.input,x.output,x.assessment,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
     }).catch(e=>{loading=null;throw e;});
     return loading;
   }
@@ -46,7 +46,7 @@ function initDirectory(){
     syncScope();
     if(!text&&(scope==='all'||query)){
       const pending=el('p',T('Loading directory…'),'small');host.append(pending);
-      loadIndex().then(()=>{if(pending.isConnected)draw();}).catch(()=>{
+      loadIndex().then(()=>{if(pending.isConnected){draw();showRequested();}}).catch(()=>{
         if(pending.isConnected)pending.replaceChildren(document.createTextNode(T('Directory could not be loaded.')+' '),button(T('Retry'),draw,'subtle'));
       });
       return;
@@ -87,14 +87,26 @@ function initDirectory(){
     }
     host.append(t);
   }
+  function showRequested(){
+    if(!pendingEntry||pendingEntry.id!==routeID||$('#directory').hidden)return;
+    const x=recordsById.get(pendingEntry.slug);
+    if(!x&&!text)return; // The index request (or its Retry) owns the continuation.
+    pendingEntry=null;
+    if(x){
+      const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);
+      openEdition(x,opener||$('#query'));
+    }else{
+      $('#entries').prepend(el('p',T('No edition with this ID was found.'),'small'));
+    }
+  }
   return params=>{
     const id=++routeID,entry=params.get('entry');
+    pendingEntry=entry?{id,slug:entry}:null;
     scope=params.get('scope')==='featured'?'featured':(params.get('scope')==='all'||params.get('q')||entry&&!chosen.has(entry))?'all':'featured';
+    // A specifically linked historical entry must still resolve when a shared
+    // link also retains a Featured filter.
+    if(entry&&!recordsById.has(entry))scope='all';
     domain=available.includes(params.get('domain'))?params.get('domain'):'All domains';$('#query').value=params.get('q')||'';
-    order.value=params.get('order')==='new'?'new':'group';draw();
-    function showEntry(){const x=recordsById.get(entry);
-      if(x&&id===routeID&&!$('#directory').hidden){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);openEdition(x,opener||$('#query'));}
-    }
-    if(entry){if(recordsById.has(entry))showEntry();else loadIndex().then(showEntry).catch(()=>{});}
+    order.value=params.get('order')==='new'?'new':'group';draw();showRequested();
   };
 }

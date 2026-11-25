@@ -2,9 +2,9 @@
 
 **Bring one public source and one change.** The directory accepts your own benchmark even if none of the map’s prefixes or endings fit it. A collision, incorrect date, missing edition or mistaken input modality is just as useful a contribution.
 
-1. **Start with the right prompt.** To add a benchmark, [open Contribute](https://yiming-shi.com/awesome-big-bench/#contribute) or copy the [plain-text prompt](contribute/agent-prompt.txt). To correct a record or name, use **Copy PR prompt** on its card: the copy includes its identifier and current evidence.
-2. **Give the prompt and your source to your agent.** For example: “Add the benchmark introduced in this paper, including its first public version,” or “This grey cell already has an exact match; here is the project and its scoring protocol.” Check that the cited source supports the proposed change.
-3. **Review the PR.** The agent works on a branch in the contributor’s fork, rebuilds the guide and opens one pull request against `yimingshi-cs/awesome-big-bench:main`. The maintainer decides whether to merge. A conventional, hand-written PR is equally welcome.
+1. **Start with the right prompt.** To add a benchmark, [open Contribute](https://yiming-shi.com/awesome-big-bench/#contribute) or use the plain-text prompt in [English](contribute/agent-prompt.txt) or [简体中文](contribute/agent-prompt.zh.txt). To correct a record or name, use **Copy PR prompt** on its card: the copy includes its identifier and current evidence.
+2. **Give the prompt and your source to your agent.** For example: “Add the benchmark introduced in this paper, including its first public version,” or “This grey cell already has an exact match; here is the project and its scoring protocol.” Identify the edition and point to the passage, table, or scoring code that supports the change; a homepage alone may not. For example, the [dated SWE-bench Verified announcement](https://openai.com/index/introducing-swe-bench-verified/) supports the release date of that subset; the paper introducing the original SWE-bench does not.
+3. **Review the PR.** The agent works on a branch in the contributor’s fork, rebuilds the guide and opens one pull request against `yimingshi-cs/awesome-big-bench:main`. Use the [PR template](.github/pull_request_template.md): give the addition or old → new value, the primary source and what it establishes, and the actual validation results. The maintainer decides whether to merge. A conventional, hand-written PR is equally welcome.
 
 ## Benchmarks
 
@@ -42,6 +42,8 @@ Ballots are attached to directory edition IDs, not to unverified name combinatio
 
 Both editions use the same evidence, edition IDs and ballot. Translate reader-facing source sentences alongside each addition: catalog copy in `web/locale/zh-catalog.json`, name checks, reading notes and report annotations in `web/locale/zh-evidence.json`, interface labels in `web/locale/ui.zh.json`. Keep benchmark names, versions, original paper titles, metric symbols and URLs intact. If only an upper bound for the public date is known, keep that qualification. The build flags missing source sentences.
 
+Every positive pair in `data/names.csv` must have a `prefix|suffix` entry in `data/map_ballot_targets.json`. One verified directory ID opens that edition. When several projects or editions really share the name, list the eligible IDs explicitly; readers choose one before voting. Two aliases may use the same ID when the original source identifies the same protocol. A related tool or a similar name is not an eligible edition. Never add a ballot target for a negative search.
+
 ## Rebuild
 
 Run from the root:
@@ -54,8 +56,10 @@ python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 ```
 
-Edit the repository landing pages in `web/readme.md` and `web/readme.zh-CN.md`. Commit the regenerated `README.md`, `README.zh-CN.md` and `docs/` outputs together. GitHub Pages continues to serve `main:/docs`; no hosting or build service is required. The small web pages load records on demand. **Download offline guide** saves the complete, single-file edition from `docs/offline/`. Put the two downloads in the same folder to switch languages offline. Web share links and card IDs are unchanged. With Playwright available, run `node tests/progressive_reader.cjs` (optionally `CHROME_CHANNEL=chrome`) to exercise both formats. See [data methods](data/README.md) to regenerate the figures.
+Edit the landing pages in `web/readme.md` and `web/readme.zh-CN.md`. The `web/readme-benchmarks*` and `web/readme-sources*` templates own the longer reference pages. Include the regenerated root READMEs, `guide/` and `docs/` outputs in the same PR. GitHub Pages continues to serve `main:/docs`; no hosting or build service is required. The small web pages load records on demand. **Download offline guide** saves the complete, single-file edition from `docs/offline/`. Put the two downloads in the same folder to switch languages offline. Web share links and card IDs are unchanged. With Playwright available, run `node tests/progressive_reader.cjs` (optionally `CHROME_CHANNEL=chrome`) to exercise both formats. See [data methods](data/README.md) to regenerate the figures.
 
 The comparison table and source details take inspiration from [Awesome CUA](https://awesomecua.com/categories/benchmark/), [Awesome 3D Gaussian Splatting](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) and [Awesome-WAM](https://openmoss.ai/Awesome-WAM/). The interface uses its own HTML, CSS and JavaScript.
 
 The original bench-and-grid mark is shared by the site and repository. Its mint/ink palette draws on [Dots Studio](https://studio.dots.ai/); [Manrope](web/assets/README.md) is locally bundled under the SIL OFL. No Dots artwork or trial fonts are used.
+
+The web and offline editions default to dark from 21:00 until 07:00 in the reader’s local time. The navigation appearance control can override or restore this schedule. Keep text and chart colors theme-aware; use the same Playwright environment to run `node tests/appearance.cjs` after changing visual styles.

@@ -6,7 +6,7 @@ function T(key,values={}){
 }
 
 'use strict';
-const {catalog, readingNotes, names, featured, catalogSize, seriesSizes, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, marks, agentPrompt, ballotConfig, ui, parts} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, featured, catalogSize, seriesSizes, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, mapBallots, marks, agentPrompt, ballotConfig, ui, parts} = JSON.parse(document.querySelector('#payload').textContent);
 let months=[];
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
@@ -86,36 +86,46 @@ function appendReportRows(details,rows){
   }
 }
 
-// The embedded copy keeps standalone/offline HTML useful. While it streams,
-// a click can fetch just the relevant static part, without waiting for the rest.
+// Optional evidence, trends and the complete directory are cached per revision.
+// Opening a card from a visible row does not use this loader.
 const arrivedParts=new Set(), readerCache=new Map(), readerRequests=new Map();
 function readerArrived(key){
   arrivedParts.add(key);
-  const pending=readerRequests.get(key);
-  if(pending)pending.inline();
+  readerRequests.get(key)?.inline();
 }
 function readPart(key){
   if(readerCache.has(key))return Promise.resolve(readerCache.get(key));
   const rev=parts[key];
-  if(!rev)return Promise.reject(new Error('Unknown reader part'));
+  if(!rev)return Promise.reject(Error('Unknown reader part'));
   if(readerRequests.has(key))return readerRequests.get(key).promise;
-  const controller=new AbortController();
   let accept,reject;
   const promise=new Promise((ok,no)=>{accept=ok;reject=no;});
   function use(packet){
-    if(packet.revision!==rev)throw Error('Reader edition mismatch');
-    readerCache.set(key,packet.records);accept(packet.records);controller.abort();
+    if(packet.revision!==rev||!packet.records)throw Error('Reader edition mismatch');
+    readerCache.set(key,packet.records);accept(packet.records);
   }
   function inline(){try{use(JSON.parse(document.getElementById('part-'+key).textContent));}catch(e){reject(e);}}
   readerRequests.set(key,{promise,inline});
-  if(arrivedParts.has(key))inline();
-  else if(document.documentElement.dataset.edition!=='offline'){
-    fetch('parts/'+key+'.json?v='+rev,{signal:controller.signal,credentials:'omit'})
-      .then(r=>{if(!r.ok)throw Error('Part unavailable');return r.json();})
-      .then(use).catch(reject);
-  }else if(document.readyState!=='loading')reject(Error('Incomplete offline page'));
-  const timer=setTimeout(()=>{controller.abort();reject(Error('Part timed out'));},16000);
-  function done(){clearTimeout(timer);readerRequests.delete(key);}
+  if(document.documentElement.dataset.edition==='offline'){
+    if(arrivedParts.has(key))inline();
+    else if(document.readyState!=='loading')reject(Error('Incomplete offline page'));
+  }else{
+    const url=key==='directory-index'?'parts/directory-index.'+rev+'.json':'parts/'+key+'.json?v='+rev;
+    (async()=>{
+      for(let attempt=0;attempt<2;attempt++){
+        const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),attempt?20000:12000);
+        try{
+          const r=await fetch(url,{signal:controller.signal,credentials:'omit',cache:attempt?'reload':'default'});
+          if(!r.ok){const e=Error('Part unavailable');e.permanent=r.status<500&&![408,429].includes(r.status);throw e;}
+          use(await r.json());return;
+        }catch(e){if(attempt||e.permanent)throw e;}
+        finally{clearTimeout(timer);}
+      }
+    })().catch(reject);
+  }
+  // A truncated offline download should not leave a pending request forever.
+  const limit=document.documentElement.dataset.edition==='offline'?setTimeout(()=>reject(Error('Missing offline part')),16000):null;
+  function done(){if(limit!==null)clearTimeout(limit);readerRequests.delete(key);}
   promise.then(done,done);return promise;
 }
 
@@ -306,7 +316,8 @@ function catalogCard(x,n=null){
   const key=n?mapEvidence.cells[pair]:mapEvidence.catalog[x.slug];
   const title=x.display_name||x.name;
   const top=meta([displayDomain(x.domain),guide?.kind&&!['Task suite','任务集','任务套件'].includes(guide.kind)?guide.kind:''],n?(key?'reported':'yes'):null);
-  const header=cardHead(top,title,x.description&&x.description!==title?x.description:null);
+  if(n&&mapBallots[pair]?.length===1&&n.name.toLowerCase()!==title.toLowerCase())top.append(el('span',n.name));
+  const header=cardHead(top,title,x.description&&x.description!==title?x.description:x.task);
   const mark=directoryMark(x);
   if(mark){const signature=el('div',null,'card-signature');signature.append(markImage(mark));header.prepend(signature);}
   const when=el('div',null,'card-date');when.append(dateLink(x));top.append(when);
@@ -317,48 +328,70 @@ function catalogCard(x,n=null){
     for(const fact of guide?.facts||[{label:T('Given'),value:x.input},{label:T('Result'),value:x.output}])protocol.append(field(fact.label,fact.value,fact.url));
     const score=el('section',null,'score-note');score.append(el('h3',T('Scoring')),el('p',x.assessment,'score-rule'));
     if(guide?.reading)score.append(el('p',guide.reading,'interpretation'));box.append(score);
-  }else if(!x.description&&x.task){header.append(el('p',x.task,'card-lead'));}
+  }
   if(guide?.compare)box.append(compareLine(recordsById.get(guide.compare),guide.contrast));
-  for(const id of (pair&&nameGroups.relatedCatalog[pair])||[]){
+  const canonical=pair&&(!n||mapCatalog[pair]===x.slug);
+  for(const id of (canonical&&nameGroups.relatedCatalog[pair])||[]){
     if(guide?.compare!==id)box.append(compareLine(recordsById.get(id),id==='gamecraft-bench'?T('Build a playable game instead of playing one.'):''));
   }
-  if(nameGroups.secondarySources?.[pair]){
+  if(canonical&&nameGroups.secondarySources?.[pair]){
     const more=el('details',null,'card-sources');more.append(el('summary',T('Other projects with this name')));
     for(const record of nameGroups.secondarySources[pair]){const item=el('p');item.append(link(zh?record.zh:record.en,record.url,'related-use'));more.append(item);}
     box.append(more);
   }
   box.append(benchmarkBallot(x,ballotConfig));
-  reportDetails(box,key,n?'Family release reports':'Release reports');
+  reportDetails(box,mapEvidence.catalog[x.slug],'Release reports');
   box.append(sourceNotes(x,n,x.primary_url,guide,protocol));
   box.append(cardFooter(link(x.origin==='report'?T(x.protocol_url?'Protocol source':'Release evidence'):(guide?.action||T('Original source')),x.primary_url),contributionButton(x,n)));
   return box;
 }
-function isFamilyName(n,x){
-  return x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&seriesSizes[x.series]>1;
-}
-function isCatalogName(n,x){return !isFamilyName(n,x)&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'");}
-function nameCard(n,x){
-  const pair=namePair(n),used=n.status==='used',key=mapEvidence.cells[pair];
-  if(isFamilyName(n,x)){
-    const box=el('div',null,'detail-sheet name-sheet');
-    box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':'yes'),n.name,n.note));
-    box.append(link(T('Browse {series} editions',{series:x.series}),'#browse?'+new URLSearchParams({domain:x.domain,q:x.series}),'related-use'));
-    for(const id of nameGroups.relatedCatalog[pair]||[])box.append(compareLine(recordsById.get(id)));
-    reportDetails(box,key,'Family release reports');
-    const check=el('p',null,'checked-date');check.append(link(T('Name checked {date}',{date:n.checked_on}),nameEvidence(n)));box.append(check);
-    box.append(cardFooter(link(T('Original source'),n.source_url),contributionButton(null,n)));return box;
+// Green is a naming verdict, not an edition ID. Never combine votes across
+// related tasks, versions, former names or independent projects with the same name.
+function openMapEvaluation(n,trigger,selected=null,focusChoice=false){
+  const pair=namePair(n),ids=mapBallots[pair],multi=ids.length>1;
+  const slug=multi?(ids.includes(selected)?selected:null):ids[0];
+  const x=slug?recordsById.get(slug):null;
+  const sheet=x?catalogCard(x,n):el('div',null,'detail-sheet name-sheet');
+  if(!x){
+    sheet.append(cardHead(meta([n.prefix+' × '+n.suffix],mapEvidence.cells[pair]?'reported':'yes'),n.name,n.note));
   }
-  // A related edition does not establish an exact name match.
+  sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;
+  if(multi){
+    const group=el('div',null,x?'edition-choice':'edition-choice bench-ballot'),label=el('label',T(x?'Choose what you’re rating':'Community vote'));
+    const select=el('select');select.id='ballot-edition';label.htmlFor=select.id;select.setAttribute('aria-label',T('Choose what you’re rating'));
+    select.add(new Option(T('Select a project or edition'),''));select.options[0].disabled=true;
+    for(const id of ids){const r=recordsById.get(id),name=r.display_name||r.name;select.add(new Option(zh?(ui[name]||name):name,id));}
+    select.value=slug||'';
+    select.onchange=()=>{
+      const params=new URLSearchParams(),field=$('#names-field').value;
+      if(field)params.set('field',field);
+      params.set('prefix',n.prefix);params.set('suffix',n.suffix);params.set('edition',select.value);
+      history.replaceState(history.state,'','#names?'+params);
+      openMapEvaluation(n,trigger,select.value,true);
+    };
+    group.append(label,select);sheet.querySelector('.card-head').after(group);
+  }
+  if(!x){
+    for(const id of nameGroups.relatedCatalog[pair]||[])sheet.append(compareLine(recordsById.get(id),id==='gamecraft-bench'?T('Build a playable game instead of playing one.'):''));
+    const opts=el('div',null,'ballot-options');
+    for(const key of ['👍 Recommend','👎 Wouldn’t recommend']){
+      const b=el('button',T(key));b.type='button';b.disabled=true;opts.append(b);
+    }
+    sheet.querySelector('.edition-choice').append(opts);
+    const check=el('p',null,'checked-date');check.append(link(T('Name checked {date}',{date:n.checked_on}),nameEvidence(n)));
+    sheet.append(check,cardFooter(link(T('Original source'),n.source_url),contributionButton(null,n)));
+
+  }
+  presentCard(sheet,trigger);
+  if(focusChoice)sheet.querySelector('#ballot-edition')?.focus({preventScroll:true});
+}
+function nameCard(n,x){
   const box=el('div',null,'detail-sheet name-sheet');
-  const lead=n.note||(T(used?'A same-name AI evaluation is documented.':'No same-name AI evaluation found in the recorded searches.'));
-  box.append(cardHead(meta([n.prefix+' × '+n.suffix],key?'reported':used?'yes':'no'),n.name,lead));
-  const date=el('p',T('Checked {date}',{date:n.checked_on}),'checked-date');box.append(date);
+  box.append(cardHead(meta([n.prefix+' × '+n.suffix],'no'),n.name,n.note||T('No same-name AI evaluation found in the recorded searches.')));
+  box.append(el('p',T('Checked {date}',{date:n.checked_on}),'checked-date'));
   if(x)box.append(compareLine(x,T('See the documented edition and its scoring.')));
-  if(!used&&n.source_url)box.append(link(T('Related use'),n.source_url,'related-use'));
-  reportDetails(box,key,'Family release reports');
-  if(used)box.append(link(T('Search record'),nameEvidence(n),'related-use'));
-  box.append(cardFooter(link(T(used?'Original source':'Search record'),used?n.source_url:nameEvidence(n)),
-    contributionButton(null,n)));
+  if(n.source_url)box.append(link(T('Related use'),n.source_url,'related-use'));
+  box.append(cardFooter(link(T('Search record'),nameEvidence(n)),contributionButton(null,n)));
   return box;
 }
 const cardDialog=$('#cell-dialog');
@@ -370,27 +403,11 @@ function presentCard(content,trigger,rolling=false){
   if(rolling)$('#roll-again').focus({preventScroll:true});syncLanguageLinks();
 }
 function openEdition(x,trigger,n=null){
-  const sheet=el('div',null,'detail-sheet'), title=x.display_name||x.name;
-  sheet.dataset.entry=x.slug;if(n){sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;}
-  const status=el('p',T('Loading details…'),'card-lead');status.setAttribute('role','status');
-  sheet.append(cardHead(meta([displayDomain(x.domain)],null),title),status,cardFooter(link(T('Original source'),x.primary_url),contributionButton(x,n)));
+  // Records arrive with the map or directory row. The vote service and release
+  // bibliography are independent: neither can delay reading the edition.
+  const sheet=catalogCard(x,n);
+  if(n){sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;}
   presentCard(sheet,trigger);
-  async function read(){
-    try{
-      const part=await readPart('cards-'+domains.indexOf(x.domain));
-      if(!sheet.isConnected||!cardDialog.open)return;
-      if(!Object.hasOwn(part,x.slug))throw Error('Missing edition');
-      const full=catalogCard({...x,...part[x.slug]},n);
-      if(n){full.dataset.prefix=n.prefix;full.dataset.suffix=n.suffix;}
-      // Keep keyboard focus on the corresponding action if it was used while loading.
-      const focused=sheet.contains(document.activeElement)?document.activeElement:null;
-      sheet.replaceWith(full);
-      if(focused)full.querySelector(focused.matches('.copy-pr')?'.copy-pr':'.card-footer a')?.focus({preventScroll:true});
-    }catch{
-      if(sheet.isConnected)status.replaceChildren(document.createTextNode(T('Details could not be loaded.')+' '),button(T('Retry'),read,'subtle'));
-    }
-  }
-  read();
 }
 function dismissCard(){if(cardDialog.open)cardDialog.close();}
 cardDialog.querySelector('.close').onclick=dismissCard;
@@ -404,7 +421,7 @@ cardDialog.addEventListener('close',()=>{
   if(cardTrigger?.isConnected)cardTrigger.focus({preventScroll:true});
   const [page,qs]=location.hash.slice(1).split('?'),params=new URLSearchParams(qs);
   if((page==='browse'&&params.has('entry'))||(page==='names'&&params.has('prefix'))){
-    for(const k of ['entry','prefix','suffix','contribute','roll'])params.delete(k);
+    for(const k of ['entry','edition','prefix','suffix','contribute','roll'])params.delete(k);
     history.replaceState(null,'','#'+page+(params.size?'?'+params:''));
   }
   syncLanguageLinks();
@@ -418,7 +435,9 @@ function prContext(x,n){
     T('Name-map correction: ')+n.name,
     T('Cell: {pair} · {status} · checked {date}',{pair:n.prefix+' × '+n.suffix,status:T(n.status==='used'?'Taken':'Looks open'),date:n.checked_on}),
     T('Search record: ')+nameEvidence(n),
-    n.source_url&&T('Current evidence: ')+n.source_url
+    n.source_url&&T('Current evidence: ')+n.source_url,
+    x&&T('Entry ID: ')+x.slug,
+    x&&T('Current card: ')+publicBase+recordUrl(x)
   ].filter(Boolean).join('\n');
   if(x)return [T('Directory correction: ')+(x.display_name||x.name),T('Entry ID: ')+x.slug,
     T('Current card: ')+publicBase+recordUrl(x),T('Current source: ')+x.primary_url].join('\n');
@@ -478,7 +497,7 @@ contributeDialog.addEventListener('close',()=>{
 
 // Filters and global date order can be shared. The default never collapses editions.
 function initDirectory(){
-  let domain='All domains',scope='featured',routeID=0;
+  let domain='All domains',scope='featured',routeID=0,pendingEntry=null;
   const chosen=new Set(featured);
   const security=new Set(['cwe-bench-v2','sec-bench-pro','webexploitbench-v12','cyberseceval']);
   const inDomain=(x,d)=>d==='All domains'||(d==='Cybersecurity'?security.has(x.slug):x.domain===d);
@@ -492,7 +511,7 @@ function initDirectory(){
         if(x)Object.assign(x,row);
         else{catalog.push(row);recordsById.set(slug,row);}
       }
-      text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.detailTerms,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
+      text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.input,x.output,x.assessment,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
     }).catch(e=>{loading=null;throw e;});
     return loading;
   }
@@ -524,7 +543,7 @@ function initDirectory(){
     syncScope();
     if(!text&&(scope==='all'||query)){
       const pending=el('p',T('Loading directory…'),'small');host.append(pending);
-      loadIndex().then(()=>{if(pending.isConnected)draw();}).catch(()=>{
+      loadIndex().then(()=>{if(pending.isConnected){draw();showRequested();}}).catch(()=>{
         if(pending.isConnected)pending.replaceChildren(document.createTextNode(T('Directory could not be loaded.')+' '),button(T('Retry'),draw,'subtle'));
       });
       return;
@@ -565,15 +584,27 @@ function initDirectory(){
     }
     host.append(t);
   }
+  function showRequested(){
+    if(!pendingEntry||pendingEntry.id!==routeID||$('#directory').hidden)return;
+    const x=recordsById.get(pendingEntry.slug);
+    if(!x&&!text)return; // The index request (or its Retry) owns the continuation.
+    pendingEntry=null;
+    if(x){
+      const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);
+      openEdition(x,opener||$('#query'));
+    }else{
+      $('#entries').prepend(el('p',T('No edition with this ID was found.'),'small'));
+    }
+  }
   return params=>{
     const id=++routeID,entry=params.get('entry');
+    pendingEntry=entry?{id,slug:entry}:null;
     scope=params.get('scope')==='featured'?'featured':(params.get('scope')==='all'||params.get('q')||entry&&!chosen.has(entry))?'all':'featured';
+    // A specifically linked historical entry must still resolve when a shared
+    // link also retains a Featured filter.
+    if(entry&&!recordsById.has(entry))scope='all';
     domain=available.includes(params.get('domain'))?params.get('domain'):'All domains';$('#query').value=params.get('q')||'';
-    order.value=params.get('order')==='new'?'new':'group';draw();
-    function showEntry(){const x=recordsById.get(entry);
-      if(x&&id===routeID&&!$('#directory').hidden){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);openEdition(x,opener||$('#query'));}
-    }
-    if(entry){if(recordsById.has(entry))showEntry();else loadIndex().then(showEntry).catch(()=>{});}
+    order.value=params.get('order')==='new'?'new':'group';draw();showRequested();
   };
 }
 
@@ -585,9 +616,9 @@ function initNames(){
   let cells=[], bag=[], lastRoll=null;
   const picker=$('#pick-name'),again=$('#roll-again');
   chooser.disabled=false;for(const [f] of fields)chooser.add(new Option(displayDomain(f),f));
-  function open(n,b,rolling=false){
+  function open(n,b,rolling=false,edition=null){
     const x=recordsById.get(mapCatalog[namePair(n)]);
-    if(x&&isCatalogName(n,x)){openEdition(x,b,n);return;}
+    if(n.status==='used'){openMapEvaluation(n,b,edition);return;}
     const sheet=nameCard(n,x);sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;
     if(rolling){
       lastRoll=namePair(n);
@@ -674,7 +705,7 @@ function initNames(){
       if(b){
         const n=map.get(prefix+'|'+suffix),rolling=params.get('roll')==='1'&&n.status==='no_match';
         if(rolling)refill(namePair(n));
-        open(n,rolling?picker:b,rolling);
+        open(n,rolling?picker:b,rolling,params.get('edition'));
       }
     }else if(params.get('roll')==='1'&&!picker.disabled){
       roll();
@@ -687,7 +718,7 @@ function initTrends(timeline){
   const one=$('#trend-domain'), two=$('#trend-other'), win=$('#trend-window'), range=$('#month-pick');
   choices.forEach(s=>one.add(new Option(displayDomain(s),s)));two.add(new Option(T('None'),''));choices.forEach(s=>two.add(new Option(displayDomain(s),s)));
   let pos=months.findIndex(m=>m.month==='2026-09'), activeSVG=null, coordinate=null;
-  const colors=['#147c6b','#7662a4'];
+  const colors=['var(--chart-a, #147c6b)','var(--chart-b, #7662a4)'];
   function windowIndices(){
     const all=months.map((_,i)=>i);if(win.value==='recent')return all.filter(i=>months[i].complete).slice(-12);
     return win.value==='since'?all.filter(i=>months[i].month>='2024-01'):all;
@@ -707,8 +738,8 @@ function initTrends(timeline){
     range.setAttribute('aria-valuetext',m.month+': '+d.map(s=>displayDomain(s)+' '+pct(m,s).toFixed(2)+'%').join('; '));
     if(!activeSVG)return;
     activeSVG.querySelector('.crosshair')?.remove();const g=svgNode('g',{class:'crosshair','pointer-events':'none'});
-    const x=coordinate.x(i);g.append(svgNode('line',{x1:x,x2:x,y1:coordinate.top,y2:coordinate.bottom,stroke:'#627b6e','stroke-dasharray':'3 4'}));
-    d.forEach((s,j)=>g.append(svgNode('circle',{cx:x,cy:coordinate.y(pct(m,s)),r:4.5,fill:'white',stroke:colors[j],'stroke-width':2})));activeSVG.append(g);
+    const x=coordinate.x(i);g.append(svgNode('line',{x1:x,x2:x,y1:coordinate.top,y2:coordinate.bottom,stroke:'var(--chart-cursor, #627b6e)','stroke-dasharray':'3 4'}));
+    d.forEach((s,j)=>g.append(svgNode('circle',{cx:x,cy:coordinate.y(pct(m,s)),r:4.5,fill:'var(--paper)',stroke:colors[j],'stroke-width':2})));activeSVG.append(g);
   }
   function draw(){
     syncChoices();const ids=windowIndices(),first=ids[0],last=ids.at(-1),d=sel();
@@ -719,16 +750,16 @@ function initTrends(timeline){
     const Y=v=>B-(B-top)*v/(5*step),X=i=>L+(R-L)*(i-first)/Math.max(1,last-first);
     const svg=svgNode('svg',{viewBox:'0 0 '+W+' '+H,role:'img','aria-label':T('Share of all CS titles by month: {fields}',{fields:d.map(displayDomain).join(T(' versus '))})});
     const mark=(tag,attrs,text)=>svg.append(svgNode(tag,attrs,text));
-    for(let j=0;j<=5;j++){const y=Y(j*step);mark('line',{x1:L,x2:R,y1:y,y2:y,stroke:'#dee6e4'});mark('text',{x:L-7,y:y+4,'text-anchor':'end',class:'axis'},Number((j*step).toFixed(3))+'%');}
+    for(let j=0;j<=5;j++){const y=Y(j*step);mark('line',{x1:L,x2:R,y1:y,y2:y,stroke:'var(--chart-grid, #dee6e4)'});mark('text',{x:L-7,y:y+4,'text-anchor':'end',class:'axis'},Number((j*step).toFixed(3))+'%');}
     let tickIds=ids.filter(i=>months[i].month.endsWith('-01'));
     if(ids.length<=15)tickIds=ids.filter((i,j)=>j%3===0);
     if(mobile&&tickIds.length>6)tickIds=tickIds.filter((_,j)=>j%2===0);
     for(const i of tickIds){const m=months[i].month;mark('text',{x:X(i),y:H-7,'text-anchor':'middle',class:'axis'},ids.length<=15?m:m.slice(0,4));}
     d.forEach((s,j)=>{
       const full=ids.filter(i=>months[i].complete),pts=full.map(i=>[X(i),Y(pct(months[i],s))]);
-      if(d.length===1&&pts.length)mark('polygon',{points:[...pts,[pts.at(-1)[0],B],[pts[0][0],B]].map(p=>p.join(',')).join(' '),fill:'#d7f2eb'});
+      if(d.length===1&&pts.length)mark('polygon',{points:[...pts,[pts.at(-1)[0],B],[pts[0][0],B]].map(p=>p.join(',')).join(' '),fill:'var(--chart-area, #d7f2eb)'});
       mark('polyline',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:colors[j],'stroke-width':2.5,'stroke-dasharray':j?'6 3':'none','stroke-linejoin':'round'});
-      for(const i of ids.filter(i=>!months[i].complete)){const y=Y(pct(months[i],s));if(i>first)mark('line',{x1:X(i-1),x2:X(i),y1:Y(pct(months[i-1],s)),y2:y,stroke:colors[j],'stroke-dasharray':'2 4'});mark('circle',{cx:X(i),cy:y,r:4,fill:'white',stroke:colors[j],'stroke-width':2});}
+      for(const i of ids.filter(i=>!months[i].complete)){const y=Y(pct(months[i],s));if(i>first)mark('line',{x1:X(i-1),x2:X(i),y1:Y(pct(months[i-1],s)),y2:y,stroke:colors[j],'stroke-dasharray':'2 4'});mark('circle',{cx:X(i),cy:y,r:4,fill:'var(--paper)',stroke:colors[j],'stroke-width':2});}
     });
     $('#plot').replaceChildren(svg);activeSVG=svg;coordinate={x:X,y:Y,top,bottom:B};displayPoint(pos);
     function pick(e){const matrix=svg.getScreenCTM();if(!matrix)return;const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const x=pt.matrixTransform(matrix.inverse()).x;
@@ -804,7 +835,7 @@ function syncLanguageLinks(){
   if(page==='names'&&sheet?.dataset.entry&&!sheet.dataset.prefix)page='browse';
   if(page==='names'){
     if($('#names-field').value)p.set('field',$('#names-field').value);
-    if(sheet?.dataset.prefix){p.set('prefix',sheet.dataset.prefix);p.set('suffix',sheet.dataset.suffix);if(cardDialog.hasAttribute('data-picker'))p.set('roll','1');}
+    if(sheet?.dataset.prefix){p.set('prefix',sheet.dataset.prefix);p.set('suffix',sheet.dataset.suffix);if(sheet.dataset.entry&&sheet.querySelector('#ballot-edition'))p.set('edition',sheet.dataset.entry);if(cardDialog.hasAttribute('data-picker'))p.set('roll','1');}
   }
   if(page==='browse'){
     const d=$('#mobile-domain').value,q=$('#query').value.trim();

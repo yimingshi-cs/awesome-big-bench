@@ -12,10 +12,6 @@ def js_json(x):
     return json.dumps(x, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
 
 
-DETAIL = ('description','input','output','assessment','date_note','alternative_dates',
-          'affil_source_url','first_author_affil','logo_source_url','protocol_url','source_title','reported_family')
-
-
 def render_reader(html, path, data):
     # Each inline part also has a small HTTP sibling for readers who click before
     # the rest of the HTML arrives. Opening the HTML alone requires no sibling.
@@ -30,19 +26,10 @@ def render_reader(html, path, data):
     # the original CSV. Name cards link directly to the dated search evidence.
     parts['name-queries']={r['prefix']+'|'+r['suffix']:r.pop('search_url') for r in core['names']}
     directory=parts['directory-index']={}
-    for row in core['catalog']:
-        id_='cards-'+str(core['domains'].index(row['domain']))
-        item={k:row.pop(k) for k in DETAIL if k in row}
-        # Full-text search must keep matching protocol terms even before the
-        # detail has loaded. Only normalized words, not full prose, are needed.
-        words=' '.join(item.get(k,'') for k in ('description','input','output','assessment'))
-        row['detailTerms']=' '.join(dict.fromkeys(words.split()))
-        parts.setdefault(id_,{})[row['slug']]=item
-        directory[row['slug']]={k:row.pop(k) for k in ('detailTerms','search_alias','aliases','modalities','task','edition_order') if k in row}
     # The first view needs the featured reading list and the projects reachable
     # from the map, not every historical release record.
     first=set(core['featured'])|set(core['marks'])|set(core['mapCatalog'].values())
-    for group in [core['fieldLandmarks'],core['nameGroups']['relatedCatalog']]:
+    for group in [core['fieldLandmarks'],core['nameGroups']['relatedCatalog'],core['mapBallots']]:
         for ids in group.values(): first.update(ids)
     first.update(n['compare'] for n in core['readingNotes'].values() if n.get('compare'))
     core['catalogSize']=len(core['catalog'])
@@ -54,11 +41,13 @@ def render_reader(html, path, data):
         if x['origin']!='report' and x['date_basis']!='available_by']}
     initial=[]
     for x in core['catalog']:
+        # A visible row is always a complete card. The index contains only the
+        # remaining rows, so the same prose isn't shipped twice.
         if x['slug'] in first:
-            if x['slug'] in core['featured']:
-                x.update({k:v for k,v in directory[x['slug']].items() if k in ('task','edition_order','modalities')})
             initial.append(x)
-        else: directory[x['slug']].update(x)
+            directory[x['slug']]={}
+        else:
+            directory[x['slug']]=x
     core['catalog']=initial
     group=0; size=0
     for key, rows in sorted(reports.items()):
@@ -74,7 +63,8 @@ def render_reader(html, path, data):
         rev=sha256(body.encode()).hexdigest()[:16]
         core['parts'][id_]=rev
         packet=js_json({'revision':rev,'records':part})
-        outputs[str(base/'parts'/(id_+'.json'))]=packet
+        filename=f'directory-index.{rev}.json' if id_=='directory-index' else id_+'.json'
+        outputs[str(base/'parts'/filename)]=packet
         inline.append(f'<script type="application/json" id="part-{id_}">{packet}</script><script>readerArrived("{id_}")</script>')
     offline_name='awesome-big-bench-'+('zh' if base.name=='zh' else 'en')+'.html'
     prefix='../' if base.name=='zh' else ''
@@ -87,7 +77,7 @@ def render_reader(html, path, data):
     outputs['docs/offline/'+offline_name]=portable.replace('/* DATA */',js_json(core)).replace('<!-- READER PARTS -->','\n'.join(inline))
     # Online HTML is a separate artifact, not a portable file with a delayed tail.
     prefix='../' if base.name=='zh' else ''
-    app=re.search(r'<script>(.*?)</script><!-- READER PARTS -->',html,re.S)
+    app=re.search(r'<script id="reader-runtime">(.*?)</script><!-- READER PARTS -->',html,re.S)
     if not app:raise ValueError('Missing runtime script boundary')
     runtime=app[1].rstrip()
     outputs['docs/assets/reader.js']=runtime+'\n'
