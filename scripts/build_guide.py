@@ -7,6 +7,7 @@ from flagship_reports import history_overview, reports
 from historical_evidence import index_reports, norm
 from directory_catalog import assemble_directory
 from site_locale import editions
+from readme_guides import render_readmes
 import io
 from urllib.parse import quote
 import csv
@@ -21,7 +22,6 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO = "https://github.com/yimingshi-cs/awesome-big-bench"
 DOMAINS = ["Coding", "CUA", "Reasoning", "Multimodal", "Embodied", "Safety",
            "Long-context & Memory", "AutoResearch", "RSI", "General"]
-LABEL = {}
 STATES = {"used": "Same-name AI benchmark", "no_match": "No exact match found"}
 
 
@@ -122,24 +122,7 @@ def render():
         months.append(dict(month=m, hits=int(r['bench_cs_all']), total=int(r['cs_all']),
                            complete=r['complete']=='yes', counts=counts))
     cat_rows = sorted(cat.values(),key=lambda x:(DOMAINS.index(x['domain']),x['date'],x['name']))
-    parts = []
-    jumps = []
-    for dom in DOMAINS:
-        rows = [x for x in cat_rows if x['domain']==dom]
-        anchor = 'domain-'+dom.lower().split()[0].replace('autoresearch','ai-research')
-        jumps.append(f"[{LABEL.get(dom,dom)}](#{anchor})")
-        parts.extend([f'<a id="{anchor}"></a>',f"### {LABEL.get(dom,dom)}","",
-                      "| Benchmark · primary source | Given | Must produce | Judged by · protocol |","|---|---|---|---|"])
-        for x in rows:
-            parts.append(f"| {link(x['name'],x['primary_url'])} | {md(x['input'])} | {md(x['output'])} | {link(x['assessment'],x['protocol_url'])} |")
-        if not rows:
-            parts.append("| — | No entry selected yet. [Suggest one](CONTRIBUTING.md). | — | — |")
-        parts.append('')
     agent_prompt=(ROOT/'contribute/agent-prompt.txt').read_text(encoding='utf-8').strip()
-    trend = (ROOT/'web/trend-note.md').read_text().strip()
-    readme=(ROOT/'web/readme.md').read_text()
-    for k,v in [('AGENT_PROMPT',agent_prompt),('COMBINATIONS',str(len(names))),('TAKEN',str(sum(n['status']=='used' for n in names))),('COUNT',str(len(cat))),('JUMP',' · '.join(jumps)),('CATALOG','\n'.join(parts).strip()),('TREND',trend)]:
-        readme=readme.replace('@@'+k+'@@',v)
     # No remote fetches, fonts or trackers, so the downloaded file also works via file://.
     fields=['name','slug','date','date_source_url','first_author_affil','affil_source_url','domain',
             'logo_source_url','task','description','primary_url','input','output','assessment','protocol_url']
@@ -241,7 +224,6 @@ def render():
             mime={'.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp'}[asset.suffix.lower()]
             marks[k]={**item,'uri':'data:'+mime+';base64,'+base64.b64encode(asset.read_bytes()).decode()}
     directory_fields=fields+['series','modalities','date_basis','date_note','display_name','display_date','edition_order','origin','aliases','reported_family','alternative_dates']
-    readme=readme.replace('@@DIRECTORY_COUNT@@',str(len(directory)))
     ballot_config=json.loads((ROOT/'vote-service/campaign.json').read_text())
     if not re.fullmatch(r'[-a-z0-9]{1,64}',ballot_config['id']):
         raise ValueError('Invalid ballot identifier')
@@ -266,11 +248,7 @@ def render():
     html=html.replace('/* MARK */',mark).replace('/* MARK_URI */',mark_uri).replace('/* FONT */',font)
     html=html.replace('</head>','<!-- Bundled font notice:\n'+font_license.replace('--','—')+'\n-->\n</head>')
     localized_pages = editions(ROOT, html, payload)
-    masthead = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 136" role="img" aria-label="Awesome Big Bench">'
-                '<rect width="960" height="136" rx="10" fill="#e9f8f2"/>'
-                +mark.replace('<svg ', '<svg x="28" y="24" width="88" height="88" ',1)
-                +'<text x="140" y="91" font-family="Georgia,serif" font-size="62" letter-spacing="-3" fill="#192522">Awesome Big Bench</text></svg>\n')
-    outputs={'README.md':readme, **localized_pages, 'docs/masthead.svg':masthead}
+    outputs={**render_readmes(ROOT,payload,cat_rows,mark,md,link), **localized_pages}
     def slug(v):
         return 'squared' if v=='²' else re.sub(r'[^a-z0-9]+','-',v.lower()).strip('-')
     for prefix in prefixes:

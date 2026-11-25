@@ -3,12 +3,22 @@ function initNames(){
   const fields=Object.entries(nameGroups.fields), families=Object.entries(nameGroups.endings);
   const endings=families.flatMap(([,items])=>items), map=new Map(names.map(n=>[n.prefix+'|'+n.suffix,n]));
   const chooser=$('#names-field'), table=$('#name-map');
-  let lastPick=null, cells=[];
+  let cells=[], bag=[], lastRoll=null;
+  const picker=$('#pick-name'),again=$('#roll-again');
   chooser.disabled=false;for(const [f] of fields)chooser.add(new Option(displayDomain(f),f));
-  function open(n,b){
-    lastPick=n;const x=recordsById.get(mapCatalog[namePair(n)]);
+  function open(n,b,rolling=false){
+    const x=recordsById.get(mapCatalog[namePair(n)]);
     if(x&&isCatalogName(n,x)){openEdition(x,b,n);return;}
-    const sheet=nameCard(n,x);sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;presentCard(sheet,b);
+    const sheet=nameCard(n,x);sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;
+    if(rolling){
+      lastRoll=namePair(n);
+      const params=new URLSearchParams();
+      if(chooser.value)params.set('field',chooser.value);
+      params.set('prefix',n.prefix);params.set('suffix',n.suffix);params.set('roll','1');
+      history.replaceState(history.state,'','#names?'+params);
+    }
+    presentCard(sheet,b,rolling);
+    if(rolling)$('#pick-announcement').textContent=n.name;
   }
   function landmark(x){
     const key=mapEvidence.landmarks[x.slug],a=link(x.name,recordUrl(x),key?'reported':'');
@@ -23,7 +33,7 @@ function initNames(){
   function tabStop(b){for(const x of cells)x.tabIndex=x===b?0:-1;}
   function draw(){
     const selected=fields.filter(([f])=>!chooser.value||chooser.value===f);
-    cells=[];table.replaceChildren();
+    cells=[];bag=[];lastRoll=null;table.replaceChildren();
     const cap=table.createCaption();cap.className='sr-only';cap.textContent=T('Benchmark names by prefix and ending. Grey: looks open. Mint: taken. Dark green: reported by OpenAI, Anthropic or Google.');
     const cg=el('colgroup');cg.append(el('col',null,'prefix-col'));table.append(cg);
     for(const [,ss] of families){const cols=el('colgroup');cols.span=ss.length;table.append(cols);}
@@ -54,7 +64,8 @@ function initNames(){
       });
     }
     if(cells.length)cells[0].tabIndex=0;
-    $('#pick-name').disabled=!cells.some(c=>c.classList.contains('no'));
+    const eligible=cells.filter(c=>c.classList.contains('no')).length;
+    picker.disabled=!eligible;again.disabled=eligible<2;
   }
   table.addEventListener('focusin',e=>{if(e.target.matches('.map-cell'))tabStop(e.target);});
   table.addEventListener('keydown',e=>{
@@ -64,19 +75,30 @@ function initNames(){
     if(go===undefined)return;e.preventDefault();cells[go].focus();
   });
   chooser.onchange=draw;
-  $('#pick-name').onclick=()=>{
-    const pool=cells.filter(b=>b.classList.contains('no'));
-    const alternatives=pool.filter(b=>b.dataset.prefix!==lastPick?.prefix||b.dataset.suffix!==lastPick?.suffix);
-    const from=alternatives.length?alternatives:pool;if(!from.length)return;
-    const b=from[Math.floor(Math.random()*from.length)];open(map.get(b.dataset.prefix+'|'+b.dataset.suffix),b);
-  };
+  function refill(except=null){
+    bag=cells.filter(b=>b.classList.contains('no')).map(b=>map.get(b.dataset.prefix+'|'+b.dataset.suffix)).filter(n=>namePair(n)!==except);
+    for(let i=bag.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[bag[i],bag[j]]=[bag[j],bag[i]];}
+    const end=bag.length-1;
+    if(end>0&&namePair(bag[end])===lastRoll)[bag[0],bag[end]]=[bag[end],bag[0]];
+  }
+  function roll(){
+    if(!bag.length)refill();
+    if(bag.length)open(bag.pop(),picker,true);
+  }
+  picker.onclick=again.onclick=roll;
   draw();$('#map-meta').append(link(T('Name checks'),gh('verification/names.md')),document.createTextNode(' · '),link(T('Model release sources'),repo+'/tree/main/verification/flagships'));
   return params=>{
     const f=params.get('field')||'', prefix=params.get('prefix'), suffix=params.get('suffix');
     if([...chooser.options].some(o=>o.value===f)&&chooser.value!==f){chooser.value=f;draw();}
     if(prefix&&suffix){
       const b=cells.find(c=>c.dataset.prefix===prefix&&c.dataset.suffix===suffix);
-      if(b)open(map.get(prefix+'|'+suffix),b);
+      if(b){
+        const n=map.get(prefix+'|'+suffix),rolling=params.get('roll')==='1'&&n.status==='no_match';
+        if(rolling)refill(namePair(n));
+        open(n,rolling?picker:b,rolling);
+      }
+    }else if(params.get('roll')==='1'&&!picker.disabled){
+      roll();
     }
   };
 }

@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 136" role="img" aria-label="Awesome Big Bench"><rect width="960" height="136" rx="10" fill="#e9f8f2"/><svg x="28" y="24" width="88" height="88" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Awesome Big Bench">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 218" role="img" aria-labelledby="title desc">
+<title id="title">Awesome Big Bench</title>
+<desc id="desc">A sample of the benchmark name map: the SWE, Game and Harness rows, and the Bench, Dojo and Exam endings.</desc>
+<rect width="900" height="218" rx="14" fill="#eef8f3"/>
+<svg x="30" y="19" width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Awesome Big Bench">
   <rect width="48" height="48" rx="11" fill="#a7e7d7"/>
   <g fill="#112f2a">
     <rect x="8" y="9" width="9" height="8" rx="2"/><rect x="19" y="9" width="9" height="8" rx="2"/>
@@ -6,4 +10,33 @@
     <path d="M11 30h5l-1 9h-5zm21 0h5l1 9h-5z"/>
   </g>
   <rect x="30" y="10" width="9" height="6" rx="1.5" fill="none" stroke="#346c5d" stroke-width="1.5"/>
-</svg><text x="140" y="91" font-family="Georgia,serif" font-size="62" letter-spacing="-3" fill="#192522">Awesome Big Bench</text></svg>
+</svg>
+<text x="27" y="114" font-family="Georgia, serif" font-size="65" font-weight="500" text-anchor="start" fill="#183930" letter-spacing="-3.8">Awesome</text>
+<text x="27" y="183" font-family="Georgia, serif" font-size="69" font-weight="500" text-anchor="start" fill="#183930" letter-spacing="-3.8">Big</text>
+<text x="138" y="183" font-family="Georgia, serif" font-size="69" font-weight="500" text-anchor="start" fill="#12694e" font-style="italic" letter-spacing="-3.8">Bench</text>
+<path d="M336 20V198" fill="none" stroke="#cadecf"/>
+<text x="509.0" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#183930" >Bench</text>
+<text x="655.0" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#183930" >Dojo</text>
+<text x="801.0" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#183930" >Exam</text>
+<text x="428" y="73.5" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="end" fill="#183930" >SWE</text>
+<rect x="438" y="47" width="141" height="42" rx="5" fill="#17664f" stroke="#17664f"/>
+<text x="508.5" y="73.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#ffffff" >SWE-bench</text>
+<rect x="584" y="47" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
+<text x="654.5" y="73.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >SWE-Dojo</text>
+<rect x="730" y="47" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
+<text x="800.5" y="73.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >SWE-Exam</text>
+<text x="428" y="120.5" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="end" fill="#183930" >Game</text>
+<rect x="438" y="94" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
+<text x="508.5" y="120.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >GameBench</text>
+<rect x="584" y="94" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
+<text x="654.5" y="120.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >GameDojo</text>
+<rect x="730" y="94" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
+<text x="800.5" y="120.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >GameExam</text>
+<text x="428" y="167.5" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="end" fill="#183930" >Harness</text>
+<rect x="438" y="141" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
+<text x="508.5" y="167.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >Harness-Bench</text>
+<rect x="584" y="141" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
+<text x="654.5" y="167.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >Harness Dojo</text>
+<rect x="730" y="141" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
+<text x="800.5" y="167.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >harness-exam</text>
+</svg>

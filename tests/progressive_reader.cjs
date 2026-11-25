@@ -25,6 +25,30 @@ const server=http.createServer((req,res)=>{
       await page.locator('button.map-cell').first().waitFor();
       assert.equal(await page.locator('.map-cell').count(),counts.names.length);
       assert.ok(!requests.slice(before).some(x=>x.includes('/parts/')||x.includes('/offline/')));
+      // A manual cell is a reference card, whereas the dice start a repeatable draw.
+      await page.selectOption('#names-field','RSI');
+      const eligible=await page.locator('.map-cell.no').count();assert.ok(eligible>1);
+      await page.locator('.map-cell.no').first().click();assert.ok(await page.locator('#roll-again').isHidden());
+      await page.locator('#cell-dialog .close').click();
+      await page.locator('#pick-name').click();
+      const again=page.getByRole('button',{name:locale?'再摇一次':'Roll again',exact:true});
+      const seen=new Set(),firstPosition=await again.boundingBox();let last;
+      for(let draw=0;draw<eligible;draw++){
+        const title=await page.locator('#cell-title').innerText();
+        assert.ok(!seen.has(title));seen.add(title);last=title;
+        assert.equal(await page.locator('#cell-info .badge.no').count(),1);
+        const pos=await again.boundingBox();assert.ok(Math.abs(pos.y-firstPosition.y)<2);
+        assert.ok(await again.evaluate(b=>b===document.activeElement));
+        await again.press('Enter');
+      }
+      assert.notEqual(await page.locator('#cell-title').innerText(),last);
+      const hash=new URL(await page.locator('#cell-dialog .language-switch').getAttribute('href'));
+      assert.ok(hash.hash.includes('field=RSI')&&hash.hash.includes('roll=1'));
+      const current=await page.locator('#cell-title').innerText();
+      await page.locator('#cell-dialog .copy-pr').click();
+      assert.ok((await page.evaluate(()=>navigator.clipboard.readText())).includes(current));
+      await page.keyboard.press('Escape');await page.waitForFunction(()=>document.activeElement.id==='pick-name'&&!new URLSearchParams(location.hash.split('?')[1]).has('roll'));
+      await page.selectOption('#names-field','');
       const link=page.locator('.offline-download');assert.ok(await link.getAttribute('download')!==null);
       await page.getByRole('link',{name:contribute,exact:true}).click();
       await page.locator('#copy-agent-prompt').click();
@@ -53,6 +77,8 @@ const server=http.createServer((req,res)=>{
     const p=await browser.newPage();await p.context().setOffline(true);await p.goto('file://'+path.join(docs,'offline/awesome-big-bench-zh.html')+'#browse?entry=osworld');
     await p.locator('.score-rule').waitFor();assert.match(await p.locator('.score-rule').innerText(),/状态/);
     await p.locator('.report-sources>summary').click();await p.locator('.reported-versions a').first().waitFor({state:'attached'});
+    await p.goto('file://'+path.join(docs,'offline/awesome-big-bench-zh.html')+'#names?roll=1');
+    const firstRoll=await p.locator('#cell-title').innerText();await p.getByRole('button',{name:'再摇一次',exact:true}).click();assert.notEqual(await p.locator('#cell-title').innerText(),firstRoll);
     console.log('PASS: both locales can copy prompts and read scores/citations without downloading the archive; featured/all/search and standalone offline cards work.');
   }finally{await browser.close();server.closeAllConnections();server.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
