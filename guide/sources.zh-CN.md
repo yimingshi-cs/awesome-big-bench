@@ -10,8 +10,6 @@
 
 例如，BenchBench 这个名字至少有两组研究者用过：[2024 年的论文](https://arxiv.org/abs/2407.13696)研究不同评测给出的模型排名是否一致；[2026 年的论文](https://arxiv.org/abs/2603.20807)研究模型自己设计评测的能力。名字相同，任务不同。
 
-<picture><source media="(max-width: 640px)" srcset="../docs/masthead-compact.svg"><img src="../docs/masthead.svg" width="100%" alt="命名表示例：SWE、Game、Harness 三行与 Bench、Dojo、Exam 三列"></picture>
-
 ## arXiv 标题里的 bench
 
 只比两年相同的 1–9 月：2020 年，51,439 篇 arXiv 计算机论文里有 314 篇标题含 `bench`（**0.61%**）；2026 年是 149,409 篇中的 6,215 篇（**4.16%**），占比约为原来的 **6.81 倍**。整个数据集（2020-01–2026-11，末月未满）共 17,809 个匹配的论文 ID。这里数的是标题，不是新评测：*benchmarking* 和 *workbench* 都算，HumanEval 这样的名字反而不会命中。[总览图](../figures/overview.png)。
@@ -29,3 +27,7 @@
 [Xinye Li 问](https://x.com/vclee8/status/2120212679470268893)，当基础模型能做的事越来越多，PhD 还能做什么？[Greg Hu](https://x.com/greghxm_1/status/2120436200746242530)给这场讨论起了个名字：「大 bench 理论」。Awesome Big Bench 的名字借自这里，和 [BIG-bench 评测套件](https://github.com/google/BIG-bench)不是同一个项目。
 
 代码与原创文档采用 [MIT](../LICENSE)，原创目录注释采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。arXiv 描述性元数据采用 [CC0](https://info.arxiv.org/help/api/tou.html)；[项目标志](../web/assets/marks/)按各自许可使用。
+
+## 这份导览参考了什么
+
+[Excalidraw](https://github.com/excalidraw/excalidraw#readme) 把作品图直接连到编辑器；这里点首图就能打开图中对应的命名格。[《动手学深度学习》](https://github.com/d2l-ai/d2l-zh#readme) 在书的入口旁用公式、图、代码和 Notebook 展示阅读方式；我们的首图也并排摆出读者实际会碰到的两样东西：命名表和版本记录。[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md) 用具体任务带读者走通投稿，再给核对事项；所以首页用一个具体版本的更正示范纠错，把完整清单留给 PR。这些图使用本项目的数据绘制，没有使用参考项目的图片。

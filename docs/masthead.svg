@@ -1,42 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 218" role="img" aria-labelledby="title desc">
-<title id="title">Awesome Big Bench</title>
-<desc id="desc">A sample of the benchmark name map: the SWE, Game and Harness rows, and the Bench, Dojo and Exam endings.</desc>
-<rect width="900" height="218" rx="14" fill="#eef8f3"/>
-<svg x="30" y="19" width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Awesome Big Bench">
-  <rect width="48" height="48" rx="11" fill="#a7e7d7"/>
-  <g fill="#112f2a">
-    <rect x="8" y="9" width="9" height="8" rx="2"/><rect x="19" y="9" width="9" height="8" rx="2"/>
-    <rect x="8" y="19" width="32" height="5" rx="2"/><rect x="6" y="26" width="36" height="5" rx="2"/>
-    <path d="M11 30h5l-1 9h-5zm21 0h5l1 9h-5z"/>
-  </g>
-  <rect x="30" y="10" width="9" height="6" rx="1.5" fill="none" stroke="#346c5d" stroke-width="1.5"/>
-</svg>
-<text x="27" y="114" font-family="Georgia, serif" font-size="65" font-weight="500" text-anchor="start" fill="#183930" letter-spacing="-3.8">Awesome</text>
-<text x="27" y="183" font-family="Georgia, serif" font-size="69" font-weight="500" text-anchor="start" fill="#183930" letter-spacing="-3.8">Big</text>
-<text x="138" y="183" font-family="Georgia, serif" font-size="69" font-weight="500" text-anchor="start" fill="#12694e" font-style="italic" letter-spacing="-3.8">Bench</text>
-<path d="M336 20V198" fill="none" stroke="#cadecf"/>
-<text x="509.0" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#183930" >Bench</text>
-<text x="655.0" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#183930" >Dojo</text>
-<text x="801.0" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#183930" >Exam</text>
-<text x="428" y="73.5" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="end" fill="#183930" >SWE</text>
-<rect x="438" y="47" width="141" height="42" rx="5" fill="#17664f" stroke="#17664f"/>
-<text x="508.5" y="73.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#ffffff" >SWE-bench</text>
-<rect x="584" y="47" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
-<text x="654.5" y="73.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >SWE-Dojo</text>
-<rect x="730" y="47" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
-<text x="800.5" y="73.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >SWE-Exam</text>
-<text x="428" y="120.5" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="end" fill="#183930" >Game</text>
-<rect x="438" y="94" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
-<text x="508.5" y="120.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >GameBench</text>
-<rect x="584" y="94" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
-<text x="654.5" y="120.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >GameDojo</text>
-<rect x="730" y="94" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
-<text x="800.5" y="120.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >GameExam</text>
-<text x="428" y="167.5" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="end" fill="#183930" >Harness</text>
-<rect x="438" y="141" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
-<text x="508.5" y="167.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >Harness-Bench</text>
-<rect x="584" y="141" width="141" height="42" rx="5" fill="#f7f9f7" stroke="#c8d3cc"/>
-<text x="654.5" y="167.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >Harness Dojo</text>
-<rect x="730" y="141" width="141" height="42" rx="5" fill="#a8e3ce" stroke="#90cfb7"/>
-<text x="800.5" y="167.5" font-family="Arial, sans-serif" font-size="17" font-weight="600" text-anchor="middle" fill="#183930" >harness-exam</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="344" viewBox="0 0 1000 344" role="img" aria-labelledby="title desc">
+<title id="title">From a name to an evaluation</title><desc id="desc">An excerpt from the name map next to the original SWE-bench protocol.</desc>
+<style>
+svg{--paper:#f4f7ef;--ink:#163b32;--quiet:#47655c;--line:#c1cec3;--cell:#f0f2ef;--mint:#b4e6cc;--deep:#185e49;--panel:#123c32;--cream:#f7f8e8;--tag:#b5dac9;--bar:#66ae8d;--accent:#185e49}
+@media(prefers-color-scheme:dark){svg{--paper:#1d302a;--ink:#edf5e9;--quiet:#c0d2c4;--line:#567166;--cell:#34403c;--mint:#376d56;--deep:#174637;--panel:#0e241e;--bar:#77c5a1;--accent:#b6f0c9}}
+text{font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:var(--ink)}
+.serif{font-family:Georgia,"Songti SC","Noto Serif CJK SC",serif}.quiet{fill:var(--quiet)}.cream{fill:var(--cream)}.tag{fill:var(--tag)}
+</style>
+<rect x="0.75" y="0.75" width="998.5" height="342.5" rx="14" fill="var(--paper)" stroke="var(--line)"/>
+<text x="28" y="36" font-size="14" class="quiet" font-weight="700" text-anchor="start" letter-spacing="1.3">01   /   NAME MAP</text>
+<text x="28" y="88" font-size="43" class="serif" font-weight="500" text-anchor="start" letter-spacing="0">Is the name taken?</text>
+<text x="184.0" y="131" font-size="18" class="quiet" font-weight="600" text-anchor="middle" letter-spacing="0">Bench</text>
+<text x="326.0" y="131" font-size="18" class="quiet" font-weight="600" text-anchor="middle" letter-spacing="0">Eval</text>
+<text x="468.0" y="131" font-size="18" class="quiet" font-weight="600" text-anchor="middle" letter-spacing="0">Dojo</text>
+<text x="102" y="164.5" font-size="17" class="quiet" font-weight="600" text-anchor="end" letter-spacing="0">SWE</text>
+<g data-cell="SWE|Bench" data-state="deep">
+<rect x="113" y="139" width="137" height="40" rx="4" fill="var(--deep)" stroke="var(--line)"/>
+<text x="122" y="164.5" font-size="15" class="cream" font-weight="600" text-anchor="start" letter-spacing="0">◆</text>
+<text x="186.5" y="164.5" font-size="17" class="cream" font-weight="600" text-anchor="middle" letter-spacing="0">SWE-bench</text>
+</g>
+<g data-cell="SWE|Eval" data-state="mint">
+<rect x="255" y="139" width="137" height="40" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="264" y="164.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="328.5" y="164.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">SWE-eval</text>
+</g>
+<g data-cell="SWE|Dojo" data-state="cell">
+<rect x="397" y="139" width="137" height="40" rx="4" fill="var(--cell)" stroke="var(--line)"/>
+<text x="406" y="164.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">–</text>
+<text x="470.5" y="164.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">SWE-Dojo</text>
+</g>
+<text x="102" y="209.5" font-size="17" class="quiet" font-weight="600" text-anchor="end" letter-spacing="0">Agent</text>
+<g data-cell="Agent|Bench" data-state="mint">
+<rect x="113" y="184" width="137" height="40" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="122" y="209.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="186.5" y="209.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">AgentBench</text>
+</g>
+<g data-cell="Agent|Eval" data-state="mint">
+<rect x="255" y="184" width="137" height="40" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="264" y="209.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="328.5" y="209.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">AgentEval</text>
+</g>
+<g data-cell="Agent|Dojo" data-state="mint">
+<rect x="397" y="184" width="137" height="40" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="406" y="209.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="470.5" y="209.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">AgentDojo</text>
+</g>
+<text x="102" y="254.5" font-size="17" class="quiet" font-weight="600" text-anchor="end" letter-spacing="0">Robo</text>
+<g data-cell="Robo|Bench" data-state="mint">
+<rect x="113" y="229" width="137" height="40" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="122" y="254.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="186.5" y="254.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">RoboBench</text>
+</g>
+<g data-cell="Robo|Eval" data-state="mint">
+<rect x="255" y="229" width="137" height="40" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="264" y="254.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="328.5" y="254.5" font-size="17" class="" font-weight="600" text-anchor="middle" letter-spacing="0">RoboEval</text>
+</g>
+<g data-cell="Robo|Dojo" data-state="deep">
+<rect x="397" y="229" width="137" height="40" rx="4" fill="var(--deep)" stroke="var(--line)"/>
+<text x="406" y="254.5" font-size="15" class="cream" font-weight="600" text-anchor="start" letter-spacing="0">◆</text>
+<text x="470.5" y="254.5" font-size="17" class="cream" font-weight="600" text-anchor="middle" letter-spacing="0">RoboDojo</text>
+</g>
+<text x="28" y="313" font-size="17" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">◆  In a report</text>
+<text x="195" y="313" font-size="17" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•  Evaluation</text>
+<text x="362" y="313" font-size="17" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">–  No match</text>
+<rect x="567" y="12" width="421" height="320" rx="10" fill="var(--panel)"/>
+<text x="594" y="45" font-size="14" class="tag" font-weight="700" text-anchor="start" letter-spacing="1.3">02   /   ORIGINAL EDITION</text>
+<text x="592" y="105" font-size="50" class="serif cream" font-weight="400" text-anchor="start" letter-spacing="0">SWE-bench</text>
+<path d="M594,125 L961,125" stroke="var(--quiet)"/>
+<text x="594" y="150" font-size="12" class="tag" font-weight="700" text-anchor="start" letter-spacing="1.2">INPUT</text>
+<text x="594" y="175" font-size="21" class="cream" font-weight="500" text-anchor="start" letter-spacing="0">Repository snapshot + GitHub issue</text>
+<text x="594" y="209" font-size="12" class="tag" font-weight="700" text-anchor="start" letter-spacing="1.2">OUTPUT</text>
+<text x="594" y="234" font-size="21" class="cream" font-weight="500" text-anchor="start" letter-spacing="0">A patch to the repository</text>
+<text x="594" y="268" font-size="12" class="tag" font-weight="700" text-anchor="start" letter-spacing="1.2">SCORING</text>
+<text x="594" y="293" font-size="21" class="cream" font-weight="500" text-anchor="start" letter-spacing="0">Issue-fixing + regression tests</text>
 </svg>

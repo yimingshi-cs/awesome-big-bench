@@ -2,7 +2,7 @@
 .bench-ballot h3{margin:0;color:var(--ink);font:700 16px/1.35 var(--sans)}
 .bench-ballot .ballot-rule,.bench-ballot .ballot-status{margin:4px 0 0;font:14px/1.4 var(--sans);color:var(--muted)}
 .ballot-options{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:9px 0 7px}
-.ballot-options button{padding:7px 16px;border:1px solid #afc3b8;border-radius:6px;background:white;color:var(--ink);font:650 15px/1.2 var(--sans);min-height:38px}
-.ballot-options button[aria-pressed=true]{background:var(--deep);border-color:var(--deep);color:white}
+.ballot-options button{padding:7px 16px;border:1px solid var(--control-edge,#afc3b8);border-radius:6px;background:var(--surface,white);color:var(--ink);font:650 15px/1.2 var(--sans);min-height:38px}
+.ballot-options button[aria-pressed=true]{background:var(--action-bg,var(--deep));border-color:var(--accent-edge,var(--deep));color:var(--on-action,white)}
 .ballot-options button:disabled{cursor:not-allowed;opacity:.58}
 .ballot-options .ballot-remove,.ballot-retry{padding:2px;border:0;background:transparent;color:var(--deep);text-decoration:underline;text-underline-offset:3px;font:500 14px/1.35 var(--sans)}

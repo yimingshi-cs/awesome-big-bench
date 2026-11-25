@@ -231,5 +231,11 @@
   "Game Arena": "Game Arena（Kaggle，模型对战）",
   "GameArena (Hu et al.)": "GameArena（Hu 等，人机推理游戏）",
   "Game Arena (LLM Stats)": "Game Arena（LLM Stats，生成游戏）",
-  "Community vote": "社区投票"
+  "Community vote": "社区投票",
+  "Appearance": "外观",
+  "Appearance · automatic from 21:00 to 07:00": "外观 · 自动模式在本地时间 21:00 至 07:00 使用深色",
+  "Automatic · dark 21:00–07:00": "自动 · 21:00–07:00 深色",
+  "Auto": "自动",
+  "Light": "浅色",
+  "Dark": "深色"
 }

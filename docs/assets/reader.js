@@ -718,7 +718,7 @@ function initTrends(timeline){
   const one=$('#trend-domain'), two=$('#trend-other'), win=$('#trend-window'), range=$('#month-pick');
   choices.forEach(s=>one.add(new Option(displayDomain(s),s)));two.add(new Option(T('None'),''));choices.forEach(s=>two.add(new Option(displayDomain(s),s)));
   let pos=months.findIndex(m=>m.month==='2026-09'), activeSVG=null, coordinate=null;
-  const colors=['#147c6b','#7662a4'];
+  const colors=['var(--chart-a, #147c6b)','var(--chart-b, #7662a4)'];
   function windowIndices(){
     const all=months.map((_,i)=>i);if(win.value==='recent')return all.filter(i=>months[i].complete).slice(-12);
     return win.value==='since'?all.filter(i=>months[i].month>='2024-01'):all;
@@ -738,8 +738,8 @@ function initTrends(timeline){
     range.setAttribute('aria-valuetext',m.month+': '+d.map(s=>displayDomain(s)+' '+pct(m,s).toFixed(2)+'%').join('; '));
     if(!activeSVG)return;
     activeSVG.querySelector('.crosshair')?.remove();const g=svgNode('g',{class:'crosshair','pointer-events':'none'});
-    const x=coordinate.x(i);g.append(svgNode('line',{x1:x,x2:x,y1:coordinate.top,y2:coordinate.bottom,stroke:'#627b6e','stroke-dasharray':'3 4'}));
-    d.forEach((s,j)=>g.append(svgNode('circle',{cx:x,cy:coordinate.y(pct(m,s)),r:4.5,fill:'white',stroke:colors[j],'stroke-width':2})));activeSVG.append(g);
+    const x=coordinate.x(i);g.append(svgNode('line',{x1:x,x2:x,y1:coordinate.top,y2:coordinate.bottom,stroke:'var(--chart-cursor, #627b6e)','stroke-dasharray':'3 4'}));
+    d.forEach((s,j)=>g.append(svgNode('circle',{cx:x,cy:coordinate.y(pct(m,s)),r:4.5,fill:'var(--paper)',stroke:colors[j],'stroke-width':2})));activeSVG.append(g);
   }
   function draw(){
     syncChoices();const ids=windowIndices(),first=ids[0],last=ids.at(-1),d=sel();
@@ -750,16 +750,16 @@ function initTrends(timeline){
     const Y=v=>B-(B-top)*v/(5*step),X=i=>L+(R-L)*(i-first)/Math.max(1,last-first);
     const svg=svgNode('svg',{viewBox:'0 0 '+W+' '+H,role:'img','aria-label':T('Share of all CS titles by month: {fields}',{fields:d.map(displayDomain).join(T(' versus '))})});
     const mark=(tag,attrs,text)=>svg.append(svgNode(tag,attrs,text));
-    for(let j=0;j<=5;j++){const y=Y(j*step);mark('line',{x1:L,x2:R,y1:y,y2:y,stroke:'#dee6e4'});mark('text',{x:L-7,y:y+4,'text-anchor':'end',class:'axis'},Number((j*step).toFixed(3))+'%');}
+    for(let j=0;j<=5;j++){const y=Y(j*step);mark('line',{x1:L,x2:R,y1:y,y2:y,stroke:'var(--chart-grid, #dee6e4)'});mark('text',{x:L-7,y:y+4,'text-anchor':'end',class:'axis'},Number((j*step).toFixed(3))+'%');}
     let tickIds=ids.filter(i=>months[i].month.endsWith('-01'));
     if(ids.length<=15)tickIds=ids.filter((i,j)=>j%3===0);
     if(mobile&&tickIds.length>6)tickIds=tickIds.filter((_,j)=>j%2===0);
     for(const i of tickIds){const m=months[i].month;mark('text',{x:X(i),y:H-7,'text-anchor':'middle',class:'axis'},ids.length<=15?m:m.slice(0,4));}
     d.forEach((s,j)=>{
       const full=ids.filter(i=>months[i].complete),pts=full.map(i=>[X(i),Y(pct(months[i],s))]);
-      if(d.length===1&&pts.length)mark('polygon',{points:[...pts,[pts.at(-1)[0],B],[pts[0][0],B]].map(p=>p.join(',')).join(' '),fill:'#d7f2eb'});
+      if(d.length===1&&pts.length)mark('polygon',{points:[...pts,[pts.at(-1)[0],B],[pts[0][0],B]].map(p=>p.join(',')).join(' '),fill:'var(--chart-area, #d7f2eb)'});
       mark('polyline',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:colors[j],'stroke-width':2.5,'stroke-dasharray':j?'6 3':'none','stroke-linejoin':'round'});
-      for(const i of ids.filter(i=>!months[i].complete)){const y=Y(pct(months[i],s));if(i>first)mark('line',{x1:X(i-1),x2:X(i),y1:Y(pct(months[i-1],s)),y2:y,stroke:colors[j],'stroke-dasharray':'2 4'});mark('circle',{cx:X(i),cy:y,r:4,fill:'white',stroke:colors[j],'stroke-width':2});}
+      for(const i of ids.filter(i=>!months[i].complete)){const y=Y(pct(months[i],s));if(i>first)mark('line',{x1:X(i-1),x2:X(i),y1:Y(pct(months[i-1],s)),y2:y,stroke:colors[j],'stroke-dasharray':'2 4'});mark('circle',{cx:X(i),cy:y,r:4,fill:'var(--paper)',stroke:colors[j],'stroke-width':2});}
     });
     $('#plot').replaceChildren(svg);activeSVG=svg;coordinate={x:X,y:Y,top,bottom:B};displayPoint(pos);
     function pick(e){const matrix=svg.getScreenCTM();if(!matrix)return;const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const x=pt.matrixTransform(matrix.inverse()).x;

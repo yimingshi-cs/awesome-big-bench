@@ -3,6 +3,7 @@ import csv
 import json
 import re
 import unittest
+from xml.etree import ElementTree as ET
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -19,6 +20,10 @@ class BilingualReadmes(unittest.TestCase):
             self.assertIn(f']({counterpart})', text.splitlines()[0])
             for route in ['#names', '#directory', '#contribute', '#trends']:
                 self.assertIn('https://yiming-shi.com/'+stem+route, text)
+            # The project heading is immediately followed by the linked map, then navigation.
+            self.assertTrue(text.split('\n\n')[2].startswith('<a href='))
+            self.assertIn('<picture>',text.split('\n\n')[2])
+            self.assertIn('edition=swe-bench',text.split('\n\n')[2])
             # No full tables or multi-page prompt before the contribution entry.
             self.assertLess(text.index(stem+'#directory'), text.index(stem+'#contribute'))
             self.assertLess(text.index(stem+'#contribute'), text.index('<details>'))
@@ -45,6 +50,37 @@ class BilingualReadmes(unittest.TestCase):
                 self.assertIn(f'name="{target}"', landing)
                 self.assertIn(f'{guide_path}#{target}', landing)
                 self.assertIn(f'name="{target}"', guide)
+
+    def test_figures_show_the_underlying_records(self):
+        # Check public artifacts against the map and the complete monthly counts,
+        # including the recomposed mobile view. Colour alone cannot identify a cell.
+        with (ROOT/'data/names.csv').open() as f:
+            names = {r['prefix']+'|'+r['suffix']:r for r in csv.DictReader(f)}
+        page = (ROOT/'docs/index.html').read_text()
+        reported = json.loads(re.search(r'id="payload">(.*?)</script>', page, re.S)[1])['mapEvidence']['cells']
+        with (ROOT/'data/monthly.csv').open() as f:
+            months = list(csv.DictReader(f))
+        for suffix in ['', '.zh-CN']:
+            landing = (ROOT/f'README{suffix}.md').read_text()
+            for compact in ['', '-compact']:
+                path = f'docs/masthead{compact}{suffix}.svg'
+                self.assertIn(path,landing)
+                cells = ET.parse(ROOT/path).findall('.//{*}g[@data-cell]')
+                self.assertEqual(len(cells),4 if compact else 9)
+                for g in cells:
+                    key = g.attrib['data-cell']
+                    row = names[key]
+                    state = 'deep' if key in reported else 'mint' if row['status']=='used' else 'cell'
+                    self.assertEqual(g.attrib['data-state'],state)
+                    self.assertEqual([t.text for t in g.findall('{*}text')], [{'deep':'◆','mint':'•','cell':'–'}[state], row['name']])
+            trend = ET.parse(ROOT/f'docs/masthead-trend{suffix}.svg')
+            labels = [el.text for el in trend.findall('.//{*}text')]
+            for year in range(2020,2027):
+                rows = [m for m in months if m['month'][:4]==str(year) and m['month'][5:]<='09']
+                self.assertEqual(len(rows),9)
+                self.assertTrue(all(r['complete']=='yes' for r in rows))
+                expected = sum(int(r['bench_cs_all']) for r in rows)/sum(int(r['cs_all']) for r in rows)
+                self.assertEqual(labels[labels.index(str(year))-1],f'{expected:.2%}')
 
     def test_reference_links_and_local_files(self):
         for suffix, prompt in [('', 'agent-prompt.txt'), ('.zh-CN','agent-prompt.zh.txt')]:

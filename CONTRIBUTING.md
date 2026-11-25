@@ -61,3 +61,5 @@ Edit the landing pages in `web/readme.md` and `web/readme.zh-CN.md`. The `web/re
 The comparison table and source details take inspiration from [Awesome CUA](https://awesomecua.com/categories/benchmark/), [Awesome 3D Gaussian Splatting](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) and [Awesome-WAM](https://openmoss.ai/Awesome-WAM/). The interface uses its own HTML, CSS and JavaScript.
 
 The original bench-and-grid mark is shared by the site and repository. Its mint/ink palette draws on [Dots Studio](https://studio.dots.ai/); [Manrope](web/assets/README.md) is locally bundled under the SIL OFL. No Dots artwork or trial fonts are used.
+
+The web and offline editions default to dark from 21:00 until 07:00 in the reader’s local time. The navigation appearance control can override or restore this schedule. Keep text and chart colors theme-aware; use the same Playwright environment to run `node tests/appearance.cjs` after changing visual styles.

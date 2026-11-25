@@ -10,8 +10,6 @@ Of @@COMBINATIONS@@ prefix–suffix combinations checked, @@TAKEN@@ have a same-
 
 For example, two groups independently used the name BenchBench. The [2024 paper](https://arxiv.org/abs/2407.13696) studies whether benchmarks agree on model rankings. The [2026 paper](https://arxiv.org/abs/2603.20807) studies whether models can design good benchmarks themselves.
 
-<picture><source media="(max-width: 640px)" srcset="../docs/masthead-compact.svg"><img src="../docs/masthead.svg" width="100%" alt="Example from the name map: SWE, Game and Harness crossed with Bench, Dojo and Exam"></picture>
-
 ## “Bench” in arXiv titles
 
 @@TREND@@
@@ -29,3 +27,7 @@ Totals stay hidden during voting. Results are grouped by field; editions with fe
 [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893). [Greg Hu](https://x.com/greghxm_1/status/2120436200746242530) called it 大 bench 理论, the “Big Bench Theory.” The project name is a nod to that exchange; it is not the [BIG-bench evaluation suite](https://github.com/google/BIG-bench).
 
 Code and original documentation: [MIT](../LICENSE). Original annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata: [CC0](https://info.arxiv.org/help/api/tou.html). [Project marks](../web/assets/marks/) retain their respective rights.
+
+## How this reading guide was designed
+
+[Excalidraw](https://github.com/excalidraw/excalidraw#readme) links its product showcase to the editor; our opening illustration opens the actual map cell. [Dive into Deep Learning](https://github.com/d2l-ai/d2l-zh#readme) puts an equation, a figure, code and a notebook next to its edition links to show how the book works; our two panels show the map and the edition record you can read from it. The [lm-evaluation-harness task guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md) uses worked examples before its submission checklist; our contribution section uses one edition-specific correction before linking the PR checklist. Our figures are drawn from this project’s own data.

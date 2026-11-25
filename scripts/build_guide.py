@@ -247,7 +247,7 @@ def render():
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
     scripts = ('language.js','app.js','parts.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
-    html = (ROOT/'web/page.html').read_text().replace('/* STYLE */',(ROOT/'web/style.css').read_text()+'\n'+(ROOT/'web/ballot.css').read_text()).replace('/* APP */',app)
+    html = (ROOT/'web/page.html').read_text().replace('/* APPEARANCE */',(ROOT/'web/theme.js').read_text().strip()).replace('/* STYLE */','\n'.join((ROOT/'web'/css).read_text() for css in ('style.css','ballot.css','theme.css'))).replace('/* APP */',app)
     mark=(ROOT/'docs/bench-mark.svg').read_text().strip()
     mark_uri='data:image/svg+xml,'+quote(mark,safe='')
     font=base64.b64encode((ROOT/'web/assets/manrope-latin.woff2').read_bytes()).decode('ascii')

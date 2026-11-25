@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="362" viewBox="0 0 390 362" role="img" aria-labelledby="title desc">
+<title id="title">从名字查到评测</title><desc id="desc">命名表示例及原版 SWE-bench 的任务和评分方式。</desc>
+<style>
+svg{--paper:#f4f7ef;--ink:#163b32;--quiet:#47655c;--line:#c1cec3;--cell:#f0f2ef;--mint:#b4e6cc;--deep:#185e49;--panel:#123c32;--cream:#f7f8e8;--tag:#b5dac9;--bar:#66ae8d;--accent:#185e49}
+@media(prefers-color-scheme:dark){svg{--paper:#1d302a;--ink:#edf5e9;--quiet:#c0d2c4;--line:#567166;--cell:#34403c;--mint:#376d56;--deep:#174637;--panel:#0e241e;--bar:#77c5a1;--accent:#b6f0c9}}
+text{font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:var(--ink)}
+.serif{font-family:Georgia,"Songti SC","Noto Serif CJK SC",serif}.quiet{fill:var(--quiet)}.cream{fill:var(--cream)}.tag{fill:var(--tag)}
+</style>
+<rect x="0.75" y="0.75" width="388.5" height="360.5" rx="14" fill="var(--paper)" stroke="var(--line)"/>
+<text x="16" y="26" font-size="14" class="quiet" font-weight="700" text-anchor="start" letter-spacing="1.3">01   /   命名表</text>
+<text x="16" y="61" font-size="31" class="serif" font-weight="500" text-anchor="start" letter-spacing="0">这个名字有人用吗？</text>
+<text x="146.0" y="86" font-size="16" class="quiet" font-weight="600" text-anchor="middle" letter-spacing="0">Bench</text>
+<text x="294.0" y="86" font-size="16" class="quiet" font-weight="600" text-anchor="middle" letter-spacing="0">Dojo</text>
+<text x="61" y="115.5" font-size="15" class="quiet" font-weight="600" text-anchor="end" letter-spacing="0">SWE</text>
+<g data-cell="SWE|Bench" data-state="deep">
+<rect x="72" y="94" width="143" height="32" rx="4" fill="var(--deep)" stroke="var(--line)"/>
+<text x="81" y="115.5" font-size="15" class="cream" font-weight="600" text-anchor="start" letter-spacing="0">◆</text>
+<text x="148.5" y="115.5" font-size="16" class="cream" font-weight="600" text-anchor="middle" letter-spacing="0">SWE-bench</text>
+</g>
+<g data-cell="SWE|Dojo" data-state="cell">
+<rect x="220" y="94" width="143" height="32" rx="4" fill="var(--cell)" stroke="var(--line)"/>
+<text x="229" y="115.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">–</text>
+<text x="296.5" y="115.5" font-size="16" class="" font-weight="600" text-anchor="middle" letter-spacing="0">SWE-Dojo</text>
+</g>
+<text x="61" y="152.5" font-size="15" class="quiet" font-weight="600" text-anchor="end" letter-spacing="0">Agent</text>
+<g data-cell="Agent|Bench" data-state="mint">
+<rect x="72" y="131" width="143" height="32" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="81" y="152.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="148.5" y="152.5" font-size="16" class="" font-weight="600" text-anchor="middle" letter-spacing="0">AgentBench</text>
+</g>
+<g data-cell="Agent|Dojo" data-state="mint">
+<rect x="220" y="131" width="143" height="32" rx="4" fill="var(--mint)" stroke="var(--line)"/>
+<text x="229" y="152.5" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•</text>
+<text x="296.5" y="152.5" font-size="16" class="" font-weight="600" text-anchor="middle" letter-spacing="0">AgentDojo</text>
+</g>
+<text x="16" y="192" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">◆  报告有记录</text>
+<text x="128" y="192" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">•  有同名评测</text>
+<text x="247" y="192" font-size="15" class="quiet" font-weight="600" text-anchor="start" letter-spacing="0">–  暂未找到</text>
+<rect x="9" y="211" width="372" height="142" rx="9" fill="var(--panel)"/>
+<text x="22" y="235" font-size="13" class="tag" font-weight="700" text-anchor="start" letter-spacing="1.1">02   /   原版评测</text>
+<text x="22" y="271" font-size="33" class="serif cream" font-weight="400" text-anchor="start" letter-spacing="0">SWE-bench</text>
+<path d="M22,284 L366,284" stroke="var(--quiet)"/>
+<text x="22" y="311" font-size="18" class="cream" font-weight="600" text-anchor="start" letter-spacing="0">给定仓库和 issue，提交补丁</text>
+<text x="22" y="337" font-size="16" class="tag" font-weight="400" text-anchor="start" letter-spacing="0">评分：修复问题的测试和回归测试都要通过。</text>
+</svg>
