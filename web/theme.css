@@ -29,6 +29,6 @@ html{background:var(--paper)}
 .appearance span,.appearance .night-icon,[data-theme="dark"] .appearance .day-icon{display:none}
 [data-theme="dark"] .appearance .night-icon,[data-appearance="auto"] .theme-auto,
 [data-appearance="light"] .theme-light,[data-appearance="dark"] .theme-dark{display:inline}
-@media(max-width:650px){.top nav{gap:clamp(7px,2.8vw,16px);align-items:center}.appearance{margin-inline-start:auto;min-height:34px}}
+@media(max-width:650px){.top nav{gap:clamp(5px,1.5vw,12px);align-items:center}.appearance{margin-inline-start:auto;min-height:34px}}
 @media(forced-colors:active){.appearance:focus-within{outline-color:Highlight}}
 @media(max-width:360px){.top .appearance span{display:none}.appearance{min-width:34px;justify-content:center;padding:0 5px}}

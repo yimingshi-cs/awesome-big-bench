@@ -6,7 +6,7 @@ function T(key,values={}){
 }
 
 'use strict';
-const {catalog, readingNotes, names, featured, catalogSize, seriesSizes, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, mapBallots, marks, agentPrompt, ballotConfig, ui, parts} = JSON.parse(document.querySelector('#payload').textContent);
+const {catalog, readingNotes, names, featured, votingPicks, catalogSize, seriesSizes, domains, repo, nameGroups, fieldLandmarks, mapEvidence, mapCatalog, mapBallots, marks, agentPrompt, ballotConfig, ui, parts} = JSON.parse(document.querySelector('#payload').textContent);
 let months=[];
 const $ = selector => document.querySelector(selector);
 function el(tag, text, cls) {
@@ -129,8 +129,37 @@ function readPart(key){
   promise.then(done,done);return promise;
 }
 
+function ballotEndpoint(config){
+  const u=new URL(config.api);
+  const local=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
+  const project=u.origin==='https://yiming-shi.com'&&u.pathname==='/awesome-big-bench/api';
+  if(u.username||u.password||u.search||u.hash||(!project&&u.pathname!=='/')||
+    (u.protocol!=='https:'&&!(local&&['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol==='http:')))throw Error('Invalid ballot endpoint');
+  return project?u.origin+u.pathname:u.origin;
+}
+async function ballotRequest(endpoint,path,body){
+  const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),8000);
+  try{
+    const opts={signal:abort.signal,cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',redirect:'error'};
+    if(body){opts.method='POST';opts.headers={'Content-Type':'application/json'};opts.body=JSON.stringify(body);}
+    const res=await fetch(endpoint+path,opts),out=await res.json();
+    if(!res.ok)throw Error(out.error||'unavailable');
+    return out;
+  }finally{clearTimeout(timer);}
+}
+async function ballotRound(endpoint,path='/v1/status'){
+  try{return await ballotRequest(endpoint,path);}catch(e){
+    if(e.name!=='TypeError'&&e.name!=='AbortError')throw e;
+    return ballotRequest(endpoint,path);
+  }
+}
+function ballotDeadline(info){
+  return T('Anonymous · closes {date} SGT.',{date:new Intl.DateTimeFormat(zh?'zh-CN':'en-GB',{
+    timeZone:'Asia/Singapore',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
+  }).format(new Date(info.closesAt))});
+}
 // Each edition has an independent random edit capability. A visitor can skip without creating one.
-function benchmarkBallot(entry,config){
+function benchmarkBallot(entry,config,sharedRound=null){
   const section=el('section',null,'bench-ballot');
   section.setAttribute('aria-label',T('Community vote for {name}',{name:entry.display_name}));
   const title=el('h3',T('Worth using for this task?'));
@@ -141,7 +170,8 @@ function benchmarkBallot(entry,config){
   }
   up.setAttribute('aria-pressed','false');down.setAttribute('aria-pressed','false');remove.hidden=true;
   const status=el('p',T('Voting hasn’t opened yet.'),'ballot-status');
-  status.setAttribute('role','status');section.append(title,rules,buttons,status);
+  status.setAttribute('role','status');if(!sharedRound)section.append(title,rules);
+  section.append(buttons,status);
   if(!config?.api)return section;
   const keyName='abb:ballot:'+config.id+':'+entry.slug;
   const hereIsLocal=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
@@ -150,12 +180,7 @@ function benchmarkBallot(entry,config){
     return section;
   }
   let endpoint;
-  try{
-    const u=new URL(config.api);
-    const projectAPI=u.origin==='https://yiming-shi.com'&&u.pathname==='/awesome-big-bench/api';
-    if(u.username||u.password||u.search||u.hash||(!projectAPI&&u.pathname!=='/')||(u.protocol!=='https:'&&!(hereIsLocal&&['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol==='http:')))throw Error();
-    endpoint=projectAPI?u.origin+u.pathname:u.origin;
-  }catch{status.textContent=T('Voting is unavailable.');return section;}
+  try{endpoint=ballotEndpoint(config);}catch{status.textContent=T('Voting is unavailable.');return section;}
   let key=null,choice=null,open=false,busy=false,deadline=0;
   function paint(){
     if(open&&Date.now()>=deadline)open=false;
@@ -177,20 +202,10 @@ function benchmarkBallot(entry,config){
     if(!key)throw Error('Not stored');
     return key;
   }
-  async function request(path,body){
-    const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),8000);
-    try{
-      const opts={signal:abort.signal,cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',redirect:'error'};
-      if(body){opts.method='POST';opts.headers={'Content-Type':'application/json'};opts.body=JSON.stringify(body);}
-      const res=await fetch(endpoint+path,opts),out=await res.json();
-      if(!res.ok)throw Error(out.error||'unavailable');
-      return out;
-    }finally{clearTimeout(timer);}
-  }
   function send(action,value){
     const data={edition:entry.slug,campaign:config.id,key,action};
     if(action==='set')data.choice=value;
-    return request('/v1/ballot',data);
+    return ballotRequest(endpoint,'/v1/ballot',data);
   }
   function retry(message){
     open=false;busy=false;paint();status.replaceChildren(document.createTextNode(message+' '));
@@ -200,13 +215,7 @@ function benchmarkBallot(entry,config){
     open=false;busy=true;paint();status.textContent=T('Checking voting status…');
     try{
       const statusPath='/v1/status?entry='+encodeURIComponent(entry.slug);
-      let info;
-      try{info=await request(statusPath);}catch(e){
-        // A fresh connection can reset intermittently. Retry only this public,
-        // read-only status GET; never replay a ballot or suppress an actual API error.
-        if(e.name!=='TypeError'&&e.name!=='AbortError')throw e;
-        info=await request(statusPath);
-      }
+      const info=sharedRound||await ballotRound(endpoint,statusPath);
       if(info.campaign!==config.id)throw Error('wrong_campaign');
       if(!info.open){
         status.textContent=info.phase==='pending'?T('Voting hasn’t opened yet.'):T('Voting is closed.');
@@ -219,9 +228,7 @@ function benchmarkBallot(entry,config){
       let confirmed=true;
       if(key){const own=await send('read');choice=own.choice;confirmed=own.open;}
       open=confirmed&&Date.now()<deadline;busy=false;paint();
-      status.textContent=open?T('Anonymous · closes {date} SGT.',{date:new Intl.DateTimeFormat(zh?'zh-CN':'en-GB',{
-        timeZone:'Asia/Singapore',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
-      }).format(new Date(deadline))}):T('Voting is closed.');
+      status.textContent=open?(sharedRound?'':ballotDeadline(info)):T('Voting is closed.');
     }catch(e){
       if(e.message==='unknown_edition'){busy=false;paint();status.textContent=T('This edition is not on the ballot yet.');}
       else retry(T('Could not reach the ballot service.'));
@@ -244,6 +251,80 @@ function benchmarkBallot(entry,config){
   }
   up.onclick=()=>cast('up');down.onclick=()=>cast('down');remove.onclick=()=>cast(null);
   init();return section;
+}
+
+// The shortlist is editorial, not a ranking. Every control uses the directory edition ID.
+let voteVisit=null;
+const voteField=$('#vote-field');
+function applyVoteField(){
+  const field=voteField.value;
+  for(const group of $('#vote-list').children)group.hidden=Boolean(field&&group.dataset.field!==field);
+}
+voteField.onchange=()=>{
+  applyVoteField();
+  history.replaceState(null,'','#vote'+(voteField.value?'?'+new URLSearchParams({field:voteField.value}):''));
+  syncLanguageLinks();
+};
+$('#vote-search').onsubmit=e=>{
+  e.preventDefault();const q=$('#vote-query').value.trim();
+  location.hash='browse?'+new URLSearchParams(q?{scope:'all',q}:{scope:'all'});
+};
+function leaveVotingPage(){
+  if(!voteVisit)return;
+  clearTimeout(voteVisit.timer);voteVisit=null;$('#vote-list').replaceChildren();
+}
+function showVotingPage(params){
+  leaveVotingPage();
+  const visit={timer:null}, list=$('#vote-list'), status=$('#vote-round'), slots=[];
+  voteVisit=visit;
+  const find=link(T('Search all {n} editions →',{n:catalogSize}),'#browse?scope=all&focus=search','vote-jump');
+  const tools=$('.vote-tools');tools.querySelector('.vote-jump')?.remove();tools.append(find);
+  voteField.replaceChildren(new Option(T('All fields'),''));
+  const rows=votingPicks.map(id=>recordsById.get(id));
+  for(const domain of domains){
+    const entries=rows.filter(x=>x.domain===domain);if(!entries.length)continue;
+    voteField.add(new Option(displayDomain(domain),domain));
+    const group=el('section',null,'vote-group');group.dataset.field=domain;
+    group.append(el('h3',displayDomain(domain)));
+    for(const x of entries){
+      const row=el('div',null,'vote-row'),label=el('div',null,'vote-label');
+      const name=link(x.display_name,'#browse?'+new URLSearchParams({entry:x.slug}));
+      label.append(name,el('small',x.task));const slot=el('div',null,'vote-controls');
+      row.dataset.edition=x.slug;row.append(label,slot);group.append(row);slots.push([slot,x]);
+    }
+    list.append(group);
+  }
+  voteField.value=domains.includes(params.get('field'))?params.get('field'):'';
+  applyVoteField();
+  status.textContent=T('Checking voting status…');
+  if(location.origin!=='https://yiming-shi.com'&&!['localhost','127.0.0.1','[::1]'].includes(location.hostname)){
+    status.replaceChildren(link(T('Vote on the public site'),publicBase+'#vote'));return;
+  }
+  async function load(){
+    status.textContent=T('Checking voting status…');
+    try{
+      const info=await ballotRound(ballotEndpoint(ballotConfig));
+      if(visit!==voteVisit)return;
+      if(info.campaign!==ballotConfig.id)throw Error('wrong_campaign');
+      if(!info.open||Date.parse(info.closesAt)<=Date.now()){
+        status.textContent=info.phase==='pending'?T('Voting hasn’t opened yet.'):T('Voting is closed.');return;
+      }
+      if(!Number.isFinite(Date.parse(info.closesAt)))throw Error('missing_deadline');
+      status.textContent=ballotDeadline(info);
+      for(const [slot,x] of slots)slot.replaceChildren(benchmarkBallot(x,ballotConfig,info));
+      // Stop accepting input in a tab that stays open across the deadline.
+      function expire(){
+        if(visit!==voteVisit)return;
+        const left=Date.parse(info.closesAt)-Date.now();
+        if(left>0){visit.timer=setTimeout(expire,Math.min(2147483647,left));return;}
+        for(const [slot] of slots)slot.replaceChildren();status.textContent=T('Voting is closed.');
+      }
+      expire();
+    }catch{
+      if(visit===voteVisit)status.replaceChildren(document.createTextNode(T('Could not reach the ballot service.')+' '),button(T('Retry'),load,'subtle'));
+    }
+  }
+  load();
 }
 
 // One reading card for the directory, field references, and exact catalog matches on the map.
@@ -806,13 +887,15 @@ function route(first=false){
   const [key,qs]=(location.hash.slice(1)||'names').split('?');
   // Older shared links now open the name map, not a retired section.
   if(key==='releases')history.replaceState(history.state,'','#names');
-  const page=(key==='browse'||key==='directory')?'directory':key==='trends'?'trends':'names';
+  const page=(key==='browse'||key==='directory')?'directory':key==='trends'?'trends':key==='vote'?'vote':'names';
   document.querySelectorAll('.page').forEach(s=>s.hidden=s.id!==page);
   document.querySelectorAll('nav [data-page]').forEach(n=>{
     if(n.dataset.page===page)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');
   });
   const params=new URLSearchParams(qs);
   if(page==='directory')renderDirectory(params);
+  if(page==='vote')showVotingPage(params);
+  else leaveVotingPage();
   if(page==='names')restoreNames(params);
   if(page==='trends')enterTrends(params);
   if(key==='contribute')showContribution();
@@ -824,6 +907,7 @@ function route(first=false){
   syncLanguageLinks();
   if(key==='browse')$('#directory').scrollIntoView({behavior:'instant'});
   else if(!first)window.scrollTo({top:0,behavior:'instant'});
+  if(page==='directory'&&params.get('focus')==='search')$('#query').focus({preventScroll:true});
 }
 // A language change is a normal navigation, not a second catalog or ballot.
 // Serialize the visible view, including dialogs opened without changing the URL.
@@ -848,6 +932,7 @@ function syncLanguageLinks(){
     }
     if(sheet?.dataset.entry)p.set('entry',sheet.dataset.entry);
   }
+  if(page==='vote'&&$('#vote-field').value)p.set('field',$('#vote-field').value);
   if(page==='trends'){
     for(const [k,id] of [['field','trend-domain'],['compare','trend-other'],['period','trend-window'],['year','year-select']]){
       const v=$('#'+id).value;if(v)p.set(k,v);

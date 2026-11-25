@@ -1,0 +1,12 @@
+[
+  "swe-bench-verified", "humaneval", "terminal-bench-2-0",
+  "osworld", "webarena", "tau2-bench",
+  "arc-agi-2", "frontiermath",
+  "mmmu", "video-mme",
+  "libero",
+  "truthfulqa", "strongreject",
+  "longbench-v2", "longmemeval",
+  "mle-bench", "paperbench",
+  "posttrainbench-1-2",
+  "humanitys-last-exam", "mmlu-pro"
+]

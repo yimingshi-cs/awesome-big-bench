@@ -36,6 +36,8 @@ The [optional CI example](verification/ci/catalog.yml.example) runs the same rea
 
 ## Community ballot
 
+The [voting shortlist](https://yiming-shi.com/awesome-big-bench/#vote) is hand-picked in [web/voting-picks.json](web/voting-picks.json). Edit the ordered list of exact edition IDs to change the starting suggestions. Choose familiar editions that measure different tasks; their order is not a recommendation score. This list does not determine voting eligibility or the opening cohort.
+
 Ballots are attached to directory edition IDs, not to unverified name combinations. If the directory changes, regenerate the ballot allowlist with `python3 vote-service/catalog.py` after building the guide. Include both artifacts in the PR. The maintainer, not the contributor’s agent, deploys the ballot service and controls the round and cutoff. See [operations and the tally method](vote-service/OPERATIONS.md).
 
 ## English and Simplified Chinese

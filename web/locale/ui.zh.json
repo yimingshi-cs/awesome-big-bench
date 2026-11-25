@@ -237,5 +237,15 @@
   "Automatic · dark 21:00–07:00": "自动 · 21:00–07:00 深色",
   "Auto": "自动",
   "Light": "浅色",
-  "Dark": "深色"
+  "Dark": "深色",
+  "Vote": "投票",
+  "Vote on benchmarks": "给评测投票",
+  "Which benchmarks would you recommend?": "哪些评测，你会推荐？",
+  "Core benchmarks": "核心评测",
+  "Filter votes by field": "按领域筛选投票条目",
+  "Not on the shortlist?": "没看到你想投的评测？",
+  "Search the full directory": "搜完整目录",
+  "Benchmark name or task": "评测名称或任务",
+  "No sign-in or vote limit. One choice per edition; change or withdraw it before the deadline. Skip your own work.": "匿名，不限总票数。每个版本一票，截止前可改、可撤。只投熟悉的，不投自己参与的。",
+  "Search all {n} editions →": "搜全部 {n} 个版本 →"
 }
