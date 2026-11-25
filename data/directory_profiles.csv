@@ -121,3 +121,4 @@ ocrbench,OCRBench,Text + Image,available_by
 webvoyager,WebVoyager,Text + Image,paper
 spider-2-0-lite,Spider,Text,paper
 gamebench,GameBench,Text + Image,paper
+harness-bench,Harness-Bench,Text + Image,paper

@@ -7,6 +7,7 @@
     ],
     "CUA": [
       "Agent",
+      "Harness",
       "GUI",
       "Tool",
       "Automation"
@@ -76,7 +77,9 @@
     "Frontier|RSI": "RSI"
   },
   "catalogVersions": {
-    "CWE|Bench": "cwe-bench-v2"
+    "CWE|Bench": "cwe-bench-v2",
+    "Harness|Eval": "harnesseval",
+    "Harness|Exam": "harness-exam"
   },
   "relatedCatalog": {
     "Terminal|Bench": [
@@ -100,6 +103,20 @@
         "en": "Game Arena (LLM Stats): text-to-game coding track",
         "zh": "另一个 Game Arena：根据提示做游戏（LLM Stats 编程赛道）",
         "url": "https://llm-stats.com/arenas/coding-arena/text-to-game"
+      }
+    ],
+    "Harness|Eval": [
+      {
+        "en": "MirroS: HarnessEval is the workflow; the benchmark is HarnessEval-W",
+        "zh": "MirroS：HarnessEval 是评测流程，评测套件叫 HarnessEval-W",
+        "url": "https://mirros.ai/blog/harnesseval"
+      }
+    ],
+    "Harness|Bench": [
+      {
+        "en": "A separate HarnessBench for everyday online tasks (reacher-z)",
+        "zh": "另一个 HarnessBench：日常在线任务（reacher-z）",
+        "url": "https://github.com/reacher-z/HarnessBench"
       }
     ]
   }

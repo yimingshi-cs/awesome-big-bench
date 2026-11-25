@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "harnesseval",
+    "name": "harnesseval",
+    "family": "harnesseval",
+    "domain": "Coding",
+    "date": "2026-09-20",
+    "date_basis": "available_by",
+    "date_url": "https://github.com/dsifry/harnesseval/commit/782e7591f0cf02361b9ae6db9b88b397bf58e75b",
+    "primary_url": "https://github.com/dsifry/harnesseval",
+    "protocol_url": "https://github.com/dsifry/harnesseval/blob/main/REPORT.md",
+    "task": "AI code-review workflows",
+    "description": "Compare review frameworks on real pull requests with reference findings. This is dsifry’s scored evaluation, not a new PR dataset or the MirroS workflow.",
+    "input": "A pull request and review instructions",
+    "output": "Review findings about the proposed change",
+    "assessment": "Check findings against the reference evaluation and report precision, recall and cost for the specified run.",
+    "input_modality": "Text",
+    "existing": false,
+    "aliases": [],
+    "date_note": "The public report is documented by this commit; this is not its first-ever release date."
+  },
+  {
+    "slug": "harness-exam",
+    "name": "harness-exam",
+    "family": "harness-exam",
+    "domain": "Coding",
+    "date": "2026-04-06",
+    "date_basis": "available_by",
+    "date_url": "https://github.com/kunchenguid/harness-exam/commit/983f4f50d69af7e853adecf05b953cbd4ff07c65",
+    "primary_url": "https://github.com/kunchenguid/harness-exam",
+    "protocol_url": "https://github.com/kunchenguid/harness-exam/blob/main/src/scorecard.js",
+    "task": "Coding-agent practical exam",
+    "description": "Give a coding agent a small set of practical tasks, including rewriting web content and reasoning over a novel. The project checks submitted answers.",
+    "input": "Task instructions and supplied source material",
+    "output": "An answer for each exam task",
+    "assessment": "The scorecard counts tasks passed out of the total, not a human preference vote.",
+    "input_modality": "Text",
+    "existing": false,
+    "aliases": [],
+    "date_note": "The scorecard existed in this dated repository commit."
+  }
+]

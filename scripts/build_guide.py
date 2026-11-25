@@ -156,10 +156,6 @@ def render():
     by_name = {identity(x['name']): x['slug'] for x in cat_rows}
     catalog_cells = {"|".join(pair): by_name[identity(x['name'])]
                      for pair, x in matrix.items() if x['status']=='used' and identity(x['name']) in by_name}
-    for pair, slug in groups['catalogVersions'].items():
-        if slug not in cat or matrix[tuple(pair.split('|'))]['status'] != 'used':
-            raise ValueError('Invalid catalog version link: '+pair)
-        catalog_cells[pair] = slug
     releases = read_csv('flagship_evaluations.csv')
     for r in releases:
         if not all(r.get(k) for k in ('vendor','release','generation','date','benchmark','family','tier','location','release_url','protocol_url')):
@@ -194,6 +190,10 @@ def render():
     positive_arena={r['prefix']+'|Arena' for r in names if r['suffix']=='Arena' and r['status']=='used'}
     if arena_by_pair.keys()!=positive_arena:raise ValueError('Arena directory is missing a checked name')
     for pair,ar in arena_by_pair.items(): catalog_cells[pair]=ar['slug']
+    for pair, slug in groups['catalogVersions'].items():
+        if slug not in directory or matrix[tuple(pair.split('|'))]['status'] != 'used':
+            raise ValueError('Invalid catalog version link: '+pair)
+        catalog_cells[pair] = slug
     for pair, slugs in groups['relatedCatalog'].items():
         if pair not in catalog_cells or not set(slugs) <= directory.keys() or catalog_cells[pair] in slugs:
             raise ValueError('Invalid related catalog reference: '+pair)
