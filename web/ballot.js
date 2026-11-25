@@ -1,5 +1,34 @@
+function ballotEndpoint(config){
+  const u=new URL(config.api);
+  const local=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
+  const project=u.origin==='https://yiming-shi.com'&&u.pathname==='/awesome-big-bench/api';
+  if(u.username||u.password||u.search||u.hash||(!project&&u.pathname!=='/')||
+    (u.protocol!=='https:'&&!(local&&['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol==='http:')))throw Error('Invalid ballot endpoint');
+  return project?u.origin+u.pathname:u.origin;
+}
+async function ballotRequest(endpoint,path,body){
+  const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),8000);
+  try{
+    const opts={signal:abort.signal,cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',redirect:'error'};
+    if(body){opts.method='POST';opts.headers={'Content-Type':'application/json'};opts.body=JSON.stringify(body);}
+    const res=await fetch(endpoint+path,opts),out=await res.json();
+    if(!res.ok)throw Error(out.error||'unavailable');
+    return out;
+  }finally{clearTimeout(timer);}
+}
+async function ballotRound(endpoint,path='/v1/status'){
+  try{return await ballotRequest(endpoint,path);}catch(e){
+    if(e.name!=='TypeError'&&e.name!=='AbortError')throw e;
+    return ballotRequest(endpoint,path);
+  }
+}
+function ballotDeadline(info){
+  return T('Anonymous · closes {date} SGT.',{date:new Intl.DateTimeFormat(zh?'zh-CN':'en-GB',{
+    timeZone:'Asia/Singapore',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
+  }).format(new Date(info.closesAt))});
+}
 // Each edition has an independent random edit capability. A visitor can skip without creating one.
-function benchmarkBallot(entry,config){
+function benchmarkBallot(entry,config,sharedRound=null){
   const section=el('section',null,'bench-ballot');
   section.setAttribute('aria-label',T('Community vote for {name}',{name:entry.display_name}));
   const title=el('h3',T('Worth using for this task?'));
@@ -10,7 +39,8 @@ function benchmarkBallot(entry,config){
   }
   up.setAttribute('aria-pressed','false');down.setAttribute('aria-pressed','false');remove.hidden=true;
   const status=el('p',T('Voting hasn’t opened yet.'),'ballot-status');
-  status.setAttribute('role','status');section.append(title,rules,buttons,status);
+  status.setAttribute('role','status');if(!sharedRound)section.append(title,rules);
+  section.append(buttons,status);
   if(!config?.api)return section;
   const keyName='abb:ballot:'+config.id+':'+entry.slug;
   const hereIsLocal=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
@@ -19,12 +49,7 @@ function benchmarkBallot(entry,config){
     return section;
   }
   let endpoint;
-  try{
-    const u=new URL(config.api);
-    const projectAPI=u.origin==='https://yiming-shi.com'&&u.pathname==='/awesome-big-bench/api';
-    if(u.username||u.password||u.search||u.hash||(!projectAPI&&u.pathname!=='/')||(u.protocol!=='https:'&&!(hereIsLocal&&['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol==='http:')))throw Error();
-    endpoint=projectAPI?u.origin+u.pathname:u.origin;
-  }catch{status.textContent=T('Voting is unavailable.');return section;}
+  try{endpoint=ballotEndpoint(config);}catch{status.textContent=T('Voting is unavailable.');return section;}
   let key=null,choice=null,open=false,busy=false,deadline=0;
   function paint(){
     if(open&&Date.now()>=deadline)open=false;
@@ -46,20 +71,10 @@ function benchmarkBallot(entry,config){
     if(!key)throw Error('Not stored');
     return key;
   }
-  async function request(path,body){
-    const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),8000);
-    try{
-      const opts={signal:abort.signal,cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',redirect:'error'};
-      if(body){opts.method='POST';opts.headers={'Content-Type':'application/json'};opts.body=JSON.stringify(body);}
-      const res=await fetch(endpoint+path,opts),out=await res.json();
-      if(!res.ok)throw Error(out.error||'unavailable');
-      return out;
-    }finally{clearTimeout(timer);}
-  }
   function send(action,value){
     const data={edition:entry.slug,campaign:config.id,key,action};
     if(action==='set')data.choice=value;
-    return request('/v1/ballot',data);
+    return ballotRequest(endpoint,'/v1/ballot',data);
   }
   function retry(message){
     open=false;busy=false;paint();status.replaceChildren(document.createTextNode(message+' '));
@@ -69,13 +84,7 @@ function benchmarkBallot(entry,config){
     open=false;busy=true;paint();status.textContent=T('Checking voting status…');
     try{
       const statusPath='/v1/status?entry='+encodeURIComponent(entry.slug);
-      let info;
-      try{info=await request(statusPath);}catch(e){
-        // A fresh connection can reset intermittently. Retry only this public,
-        // read-only status GET; never replay a ballot or suppress an actual API error.
-        if(e.name!=='TypeError'&&e.name!=='AbortError')throw e;
-        info=await request(statusPath);
-      }
+      const info=sharedRound||await ballotRound(endpoint,statusPath);
       if(info.campaign!==config.id)throw Error('wrong_campaign');
       if(!info.open){
         status.textContent=info.phase==='pending'?T('Voting hasn’t opened yet.'):T('Voting is closed.');
@@ -88,9 +97,7 @@ function benchmarkBallot(entry,config){
       let confirmed=true;
       if(key){const own=await send('read');choice=own.choice;confirmed=own.open;}
       open=confirmed&&Date.now()<deadline;busy=false;paint();
-      status.textContent=open?T('Anonymous · closes {date} SGT.',{date:new Intl.DateTimeFormat(zh?'zh-CN':'en-GB',{
-        timeZone:'Asia/Singapore',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
-      }).format(new Date(deadline))}):T('Voting is closed.');
+      status.textContent=open?(sharedRound?'':ballotDeadline(info)):T('Voting is closed.');
     }catch(e){
       if(e.message==='unknown_edition'){busy=false;paint();status.textContent=T('This edition is not on the ballot yet.');}
       else retry(T('Could not reach the ballot service.'));

@@ -6,3 +6,25 @@
 .ballot-options button[aria-pressed=true]{background:var(--action-bg,var(--deep));border-color:var(--accent-edge,var(--deep));color:var(--on-action,white)}
 .ballot-options button:disabled{cursor:not-allowed;opacity:.58}
 .ballot-options .ballot-remove,.ballot-retry{padding:2px;border:0;background:transparent;color:var(--deep);text-decoration:underline;text-underline-offset:3px;font:500 14px/1.35 var(--sans)}
+
+/* A short, editorial ballot, separate from the exhaustive reference directory. */
+#vote{max-width:1180px;margin-inline:auto}.vote-intro{padding:clamp(24px,4vw,58px) 0 24px;border-bottom:1px solid var(--rule)}
+.vote-intro h1{font-size:clamp(36px,4.75vw,68px);line-height:1.08;max-width:22ch}
+.vote-intro p{margin:12px 0 0;color:var(--muted);max-width:78ch}
+.vote-tools{display:flex;align-items:center;gap:12px 22px;padding:24px 0 18px;flex-wrap:wrap}.vote-tools>div{margin-right:auto}
+.vote-tools h2{font-size:25px}.vote-jump{font-weight:620;font-size:14px}
+#vote-round{font-size:14px;color:var(--muted);margin-top:4px}
+#vote-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px;align-items:start}
+.vote-group{min-width:0}.vote-group h3{background:var(--wash);color:var(--deep);border-top:2px solid var(--mint-line);font:700 16px/1.4 var(--sans);padding:8px 12px;margin:0}
+.vote-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 4px;border-bottom:1px solid var(--rule);min-height:70px}
+.vote-label{min-width:0}.vote-label>a{font-weight:750;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}.vote-label>a:hover{text-decoration:underline}
+.vote-label small{display:block;color:var(--muted);font-size:13px;margin:2px 0 0}.vote-controls{min-width:0}
+.vote-row .bench-ballot{border:0;margin:0;padding:0}.vote-row .ballot-options{margin:0;justify-content:flex-end}
+.vote-row .ballot-options button{padding:6px 10px;min-height:40px}.vote-row .ballot-status{max-width:26ch;text-align:right;font-size:12px}.vote-row .ballot-status:empty{display:none}
+#vote-search{margin:30px 0 0;border-top:1px solid var(--rule);padding:21px 0;max-width:100%}#vote-search label{display:block;font-weight:700;font-size:20px;margin-bottom:10px}
+#vote-search>div{display:flex;gap:8px;flex-wrap:wrap}#vote-query{padding:8px 12px;background:var(--surface,white);border:1px solid var(--control-edge,#aebfb7);border-radius:5px;width:min(340px,100%)}
+@media(max-width:1150px){#vote-list{grid-template-columns:1fr;gap:20px}}
+@media(max-width:785px){.top nav{gap:10px}.top{flex-wrap:wrap}.top nav{order:3;flex:0 0 100%;margin:0}.top>.language-switch{margin-left:auto}}
+@media(max-width:650px){.map-intro .vote-entry{margin-top:10px}.vote-tools{gap:10px 12px}.vote-intro p{font-size:14px}.vote-jump{font-size:13px}.vote-row{align-items:flex-start}.vote-row .ballot-options{gap:4px}.vote-row .ballot-options button{padding:5px 8px}.vote-controls{flex-shrink:0;max-width:54%}.vote-row .ballot-status{max-width:22ch}}
+@media(max-width:420px){.top nav{gap:clamp(4px,1.5vw,7px)}.top nav a{font-size:13px}.vote-tools>div{flex:1 0 60%}}
+@media(max-width:650px){html[lang=en] .vote-row{flex-wrap:wrap}html[lang=en] .vote-controls{max-width:100%}html[lang=en] .vote-row .ballot-options{justify-content:flex-start}}

@@ -28,7 +28,7 @@ def render_reader(html, path, data):
     directory=parts['directory-index']={}
     # The first view needs the featured reading list and the projects reachable
     # from the map, not every historical release record.
-    first=set(core['featured'])|set(core['marks'])|set(core['mapCatalog'].values())
+    first=set(core['featured'])|set(core['votingPicks'])|set(core['marks'])|set(core['mapCatalog'].values())
     for group in [core['fieldLandmarks'],core['nameGroups']['relatedCatalog'],core['mapBallots']]:
         for ids in group.values(): first.update(ids)
     first.update(n['compare'] for n in core['readingNotes'].values() if n.get('compare'))

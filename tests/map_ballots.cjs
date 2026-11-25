@@ -11,12 +11,13 @@ const root=path.resolve(__dirname,'..'), docs=path.join(root,'docs'), prefix='/a
   const browser=await chromium.launch(process.env.CHROME_CHANNEL?{channel:process.env.CHROME_CHANNEL}:{});
   try{for(const lang of ['zh/','']){
     const ctx=await browser.newContext({viewport:{width:lang?390:1280,height:844}});
-    let optionalIndexFailures=0,indexRequests=0,cardFetches=0,denyData=false;
+    let optionalIndexFailures=0,indexRequests=0,cardFetches=0,denyData=false,roundReads=0,roundFailure=false;
     const page=await ctx.newPage(),errors=[];page.setDefaultTimeout(10000);page.on('pageerror',e=>errors.push(e.message));
     await ctx.route('**/*',async route=>{
       const r=route.request(),u=new URL(r.url());
       if(u.origin!==origin||!u.pathname.startsWith(prefix))return route.abort();
       if(u.pathname.startsWith(prefix+'api/')){
+        if(u.pathname.endsWith('/v1/status')&&!u.search){roundReads++;if(roundFailure)return route.fulfill({status:503,json:{error:'storage_unavailable'}});}
         const opts={method:r.method(),headers:await r.allHeaders()};if(r.method()==='POST')opts.body=r.postData();
         const response=await fetchBallot(new Request(u,opts),env);
         return route.fulfill({status:response.status,headers:Object.fromEntries(response.headers),body:await response.text()});
@@ -62,6 +63,47 @@ const root=path.resolve(__dirname,'..'), docs=path.join(root,'docs'), prefix='/a
     await open('#names?field=Coding&prefix=SWE&suffix=Bench&edition=swe-bench-verified');
     await opts.nth(2).click();await page.waitForFunction(()=>document.querySelector('.ballot-remove').hidden);
     assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM ballots').get().n,0);
+    // One shared round read for the whole editorial list; no index download or vote on view.
+    roundFailure=true;await page.locator('#cell-dialog .close').click();await page.locator('.vote-entry').click();
+    await page.locator('#vote-round button').waitFor();roundFailure=false;
+    await page.locator('#vote-round button').click();
+    const row=page.locator('#vote .vote-row[data-edition="humaneval"]');
+    const controls=row.locator('.ballot-options button');
+    await controls.first().waitFor();
+    assert.equal(roundReads,2);assert.equal(indexRequests,0);
+    assert.equal(await page.locator('.vote-row').count(),JSON.parse(fs.readFileSync(path.join(root,'web/voting-picks.json'))).length);
+    await page.selectOption('#vote-field','Coding');
+    assert.ok((await page.locator('.top .language-switch').getAttribute('href')).includes('vote?field=Coding'));
+    assert.deepEqual(await page.locator('.vote-group:visible').evaluateAll(ns=>ns.map(n=>n.dataset.field)),['Coding']);
+    for(const width of [320,390,768,1280]){
+      await page.setViewportSize({width,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'vote overflow '+width);
+    }
+    if(process.env.VOTE_SCREENSHOTS){
+      const out=process.env.VOTE_SCREENSHOTS;fs.mkdirSync(out,{recursive:true});
+      await page.selectOption('#vote-field','');await page.selectOption('#appearance-mode',lang?'light':'dark');
+      await page.setViewportSize({width:lang?390:1280,height:844});
+      await page.screenshot({path:path.join(out,lang?'zh-phone.png':'en-desktop.png')});
+    }
+    await controls.nth(0).click();await page.waitForFunction(()=>document.querySelector('[data-edition="humaneval"] [aria-pressed=true]'));
+    const second=page.locator('.vote-row[data-edition="swe-bench-verified"] .ballot-options button');
+    await second.nth(0).click();await page.waitForFunction(()=>document.querySelector('[data-edition="swe-bench-verified"] [aria-pressed=true]'));
+    assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM ballots').get().n,2);
+    await second.nth(2).click();await page.waitForFunction(()=>!document.querySelector('[data-edition="swe-bench-verified"] [aria-pressed=true]'));
+    await row.locator('a').click();const card=page.locator('#cell-info .ballot-options button');
+    await page.waitForFunction(()=>document.querySelector('#cell-info .ballot-options button[aria-pressed=true]'));
+    await card.nth(1).click();await page.waitForFunction(()=>document.querySelectorAll('#cell-info .ballot-options button')[1].getAttribute('aria-pressed')==='true');
+    await page.locator('#cell-dialog .close').click();await page.locator('nav [data-page="vote"]').click();
+    await page.waitForFunction(()=>document.querySelectorAll('[data-edition="humaneval"] .ballot-options button')[1]?.getAttribute('aria-pressed')==='true');
+    await controls.nth(2).click();await page.waitForFunction(()=>document.querySelector('[data-edition="humaneval"] .ballot-remove').hidden);
+    assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM ballots').get().n,0);
+    await page.locator('.vote-jump').click();await page.waitForFunction(()=>document.activeElement.id==='query');
+    await page.locator('nav [data-page="vote"]').click();await page.locator('#vote-query').fill('MissingVoteSample');
+    await page.locator('#vote-search button').click();await page.locator('#entries .empty-actions .action').click();
+    assert.ok((await page.locator('#agent-prompt').inputValue()).includes('MissingVoteSample'));
+    await page.locator('#contribute-dialog .close').click();
+    env.VOTING_OPEN='false';await page.locator('nav [data-page=vote]').click();
+    await page.waitForFunction(()=>/closed|截止|结束/.test(document.querySelector('#vote-round').textContent));
+    assert.equal(await page.locator('#vote-list .ballot-options').count(),0);env.VOTING_OPEN='true';
     // A reload with a genuinely empty cache. One failed automatic retry, then
     // successful manual Retry, must still open the requested non-featured edition.
     optionalIndexFailures=2;indexRequests=0;

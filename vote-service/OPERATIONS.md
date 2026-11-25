@@ -8,6 +8,8 @@ The Worker accepts changes only when explicitly opened **and** an unexpired UTC 
 
 The Pages client displays both buttons disabled while pending. A participant can recommend (夯) or not recommend (拉) an edition for the task it claims to measure. Vote only on editions you know; don't vote on an edition you made or maintained. There is no required quota of either choice. Reopening the same edition in the same browser lets a participant change or withdraw their vote until close. Skipping it creates nothing. Deliberate repeat voting across browsers is **not** prevented.
 
+Voters can start with the [core shortlist](https://yiming-shi.com/awesome-big-bench/#vote), search the full directory, then propose a missing edition through the no-results PR prompt. Changing the shortlist is a Pages-only operation: it neither reopens a campaign nor changes a ballot or the frozen cohort.
+
 ## Setup (maintainer)
 
 Stay on **Workers Free**. Do not enable paid features or change billing to run this service. From `vote-service/`, use the official Wrangler CLI with the intended Cloudflare account. Do not put credentials in this repository. Check for an existing database and Worker with the intended name before creating resources; do not repurpose someone else's.

@@ -22,13 +22,15 @@ function route(first=false){
   const [key,qs]=(location.hash.slice(1)||'names').split('?');
   // Older shared links now open the name map, not a retired section.
   if(key==='releases')history.replaceState(history.state,'','#names');
-  const page=(key==='browse'||key==='directory')?'directory':key==='trends'?'trends':'names';
+  const page=(key==='browse'||key==='directory')?'directory':key==='trends'?'trends':key==='vote'?'vote':'names';
   document.querySelectorAll('.page').forEach(s=>s.hidden=s.id!==page);
   document.querySelectorAll('nav [data-page]').forEach(n=>{
     if(n.dataset.page===page)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');
   });
   const params=new URLSearchParams(qs);
   if(page==='directory')renderDirectory(params);
+  if(page==='vote')showVotingPage(params);
+  else leaveVotingPage();
   if(page==='names')restoreNames(params);
   if(page==='trends')enterTrends(params);
   if(key==='contribute')showContribution();
@@ -40,6 +42,7 @@ function route(first=false){
   syncLanguageLinks();
   if(key==='browse')$('#directory').scrollIntoView({behavior:'instant'});
   else if(!first)window.scrollTo({top:0,behavior:'instant'});
+  if(page==='directory'&&params.get('focus')==='search')$('#query').focus({preventScroll:true});
 }
 // A language change is a normal navigation, not a second catalog or ballot.
 // Serialize the visible view, including dialogs opened without changing the URL.
@@ -64,6 +67,7 @@ function syncLanguageLinks(){
     }
     if(sheet?.dataset.entry)p.set('entry',sheet.dataset.entry);
   }
+  if(page==='vote'&&$('#vote-field').value)p.set('field',$('#vote-field').value);
   if(page==='trends'){
     for(const [k,id] of [['field','trend-domain'],['compare','trend-other'],['period','trend-window'],['year','year-select']]){
       const v=$('#'+id).value;if(v)p.set(k,v);
