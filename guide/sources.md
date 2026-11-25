@@ -28,6 +28,6 @@ Totals stay hidden during voting. Results are grouped by field; editions with fe
 
 Code and original documentation: [MIT](../LICENSE). Original annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata: [CC0](https://info.arxiv.org/help/api/tou.html). [Project marks](../web/assets/marks/) retain their respective rights.
 
-## How this reading guide was designed
+## Design references
 
-[Excalidraw](https://github.com/excalidraw/excalidraw#readme) links its product showcase to the editor; our opening illustration opens the actual map cell. [Dive into Deep Learning](https://github.com/d2l-ai/d2l-zh#readme) puts an equation, a figure, code and a notebook next to its edition links to show how the book works; our two panels show the map and the edition record you can read from it. The [lm-evaluation-harness task guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md) uses worked examples before its submission checklist; our contribution section uses one edition-specific correction before linking the PR checklist. Our figures are drawn from this project’s own data.
+[Excalidraw](https://github.com/excalidraw/excalidraw#readme) and [Dive into Deep Learning](https://github.com/d2l-ai/d2l-zh#readme) show readers what they can open. Our figures link to the trend chart and a benchmark record. The worked correction in the contribution guide draws on the [lm-evaluation-harness task guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md). Both figures use this project's own data.

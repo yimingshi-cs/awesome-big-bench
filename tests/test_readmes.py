@@ -18,15 +18,21 @@ class BilingualReadmes(unittest.TestCase):
         ]:
             text = (ROOT/f'README{suffix}.md').read_text()
             self.assertIn(f']({counterpart})', text.splitlines()[0])
-            for route in ['#names', '#directory', '#contribute', '#trends']:
+            for route in ['#names', '#directory', '#trends']:
                 self.assertIn('https://yiming-shi.com/'+stem+route, text)
-            # The project heading is immediately followed by the linked map, then navigation.
-            self.assertTrue(text.split('\n\n')[2].startswith('<a href='))
-            self.assertIn('<picture>',text.split('\n\n')[2])
-            self.assertIn('edition=swe-bench',text.split('\n\n')[2])
-            # No full tables or multi-page prompt before the contribution entry.
-            self.assertLess(text.index(stem+'#directory'), text.index(stem+'#contribute'))
-            self.assertLess(text.index(stem+'#contribute'), text.index('<details>'))
+            # Lead with the trend, keep the linked product preview, then let a reader
+            # copy one complete prompt without navigating to the web app.
+            intro, trend = text.split(f'](docs/masthead-trend{suffix}.svg)', 1)
+            self.assertNotIn('<picture>', intro)
+            self.assertNotIn('## ', intro)
+            self.assertIn('](#contribute-with-your-agent)', intro)
+            self.assertIn('edition=swe-bench"><picture>', trend)
+            self.assertLess(trend.index('<picture>'), trend.index('```text'))
+            prompts = re.findall(r'^```text\n(.*?)\n```$', text, re.M | re.S)
+            self.assertEqual(len(prompts), 1)
+            for required in ['yimingshi-cs/awesome-big-bench',
+                             'CONTRIBUTING.md', 'PR', 'fork']:
+                self.assertIn(required, prompts[0])
             self.assertNotIn('|---', text)
             self.assertIn('name="contribute-with-your-agent"', text)
             self.assertIn(f'guide/sources{suffix}.md', text)
@@ -48,7 +54,7 @@ class BilingualReadmes(unittest.TestCase):
             for domain in ['coding','cua','reasoning','multimodal','embodied','safety','long-context','ai-research','rsi','general']:
                 target = f'domain-{domain}'
                 self.assertIn(f'name="{target}"', landing)
-                self.assertIn(f'{guide_path}#{target}', landing)
+                self.assertIn(f']({guide_path})', landing)
                 self.assertIn(f'name="{target}"', guide)
 
     def test_figures_show_the_underlying_records(self):
