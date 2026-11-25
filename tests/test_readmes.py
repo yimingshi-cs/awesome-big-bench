@@ -30,7 +30,7 @@ class BilingualReadmes(unittest.TestCase):
             self.assertLess(trend.index('<picture>'), trend.index('```text'))
             prompts = re.findall(r'^```text\n(.*?)\n```$', text, re.M | re.S)
             self.assertEqual(len(prompts), 1)
-            for required in ['https://github.com/yimingshi-cs/awesome-big-bench',
+            for required in ['yimingshi-cs/awesome-big-bench',
                              'CONTRIBUTING.md', 'PR', 'fork']:
                 self.assertIn(required, prompts[0])
             self.assertNotIn('|---', text)

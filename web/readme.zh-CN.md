@@ -29,12 +29,15 @@
 
 ```text
 帮我给这个 GitHub 仓库补评测或纠错：
-https://github.com/yimingshi-cs/awesome-big-bench
+yimingshi-cs/awesome-big-bench
 
-如果我没说清是哪个版本、要改什么，或者没给来源，先问我。
-按 CONTRIBUTING.md 查重，用原论文或官方发布说明核对这条改动。
-更新中英文条目，重新生成文件并跑完检查。
-从我的 fork 提一个 PR，写清改了什么、依据在哪，把链接发给我。
+先核对版本和原始出处。
+不清楚我要改什么，或缺来源，就问我。
+按 CONTRIBUTING.md 查重，
+用论文或官方发布说明核对要改的内容。
+更新中英文条目，重新生成文件，跑完检查。
+从我的 fork 提 PR，写清改动和出处，
+把 PR 链接发给我。
 ```
 
 <a name="community-vote"></a><a name="provenance-and-licenses"></a>

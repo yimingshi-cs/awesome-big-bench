@@ -28,15 +28,18 @@ Mint means we found a benchmark with that name; dark green means an OpenAI, Anth
 Paste this into Codex or Claude Code and send it the paper or project link. Your own benchmark is welcome too.
 
 ```text
-Help me add or correct a benchmark in this GitHub repository:
-https://github.com/yimingshi-cs/awesome-big-bench
+Help me add or fix a benchmark in
+this GitHub repo:
+yimingshi-cs/awesome-big-bench
 
-Ask me for the edition, change or source if any is missing.
-Follow CONTRIBUTING.md, check for duplicates and verify the change
-against the original paper or official release.
-Update both languages, rebuild the files and run the checks.
-Open a PR from my fork. Say what changed, cite the source
-and send me the PR link.
+Ask if the edition, change or source
+is missing. Follow CONTRIBUTING.md.
+Check for duplicates and verify the
+change against the paper or release.
+Update both languages, rebuild and
+run the checks. Open a PR from my
+fork, explain the change, cite the
+source and send me the PR link.
 ```
 
 <a name="community-vote"></a><a name="provenance-and-licenses"></a>
