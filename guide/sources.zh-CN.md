@@ -28,6 +28,6 @@
 
 代码与原创文档采用 [MIT](../LICENSE)，原创目录注释采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。arXiv 描述性元数据采用 [CC0](https://info.arxiv.org/help/api/tou.html)；[项目标志](../web/assets/marks/)按各自许可使用。
 
-## 这份导览参考了什么
+## 设计参考
 
-[Excalidraw](https://github.com/excalidraw/excalidraw#readme) 把作品图直接连到编辑器；这里点首图就能打开图中对应的命名格。[《动手学深度学习》](https://github.com/d2l-ai/d2l-zh#readme) 在书的入口旁用公式、图、代码和 Notebook 展示阅读方式；我们的首图也并排摆出读者实际会碰到的两样东西：命名表和版本记录。[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md) 用具体任务带读者走通投稿，再给核对事项；所以首页用一个具体版本的更正示范纠错，把完整清单留给 PR。这些图使用本项目的数据绘制，没有使用参考项目的图片。
+[Excalidraw](https://github.com/excalidraw/excalidraw#readme) 和[《动手学深度学习》](https://github.com/d2l-ai/d2l-zh#readme)让读者直接从图进入项目；这里的两张图也分别连到趋势和评测条目。投稿指南里的版本纠错示例参考了 [lm-evaluation-harness 的任务指南](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md)。图表均由本项目的数据生成。

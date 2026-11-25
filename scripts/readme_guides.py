@@ -160,7 +160,7 @@ def render_readmes(root, payload, cat_rows, _mark, md, link):
     for zh in (False, True):
         site='https://yiming-shi.com/awesome-big-bench/'+('zh/' if zh else '')
         sections=[]
-        field_links=[]
+        field_anchors=[]
         suffix='.zh-CN' if zh else ''
         outputs[f'docs/masthead{suffix}.svg'] = masthead(payload,False,zh)
         outputs[f'docs/masthead-compact{suffix}.svg'] = masthead(payload,True,zh)
@@ -171,7 +171,7 @@ def render_readmes(root, payload, cat_rows, _mark, md, link):
             anchor='domain-'+domain.lower().split()[0].replace('autoresearch','ai-research')
             old_heading=domain.lower().replace(' & ', '--').replace(' ', '-')
             aliases=f'<a name="{anchor}"></a><a name="{old_heading}"></a>'
-            field_links.append(f'- {aliases}[{label}](guide/benchmarks{suffix}.md#{anchor})')
+            field_anchors.append(aliases)  # Old README bookmarks now land at the field guide link.
             sections.extend([aliases,f'### {label} · {len(records)}','',
                              '| 评测 · 原始来源 | 输入 | 模型要给出什么 | 评分方法 · 依据 |' if zh else '| Benchmark · original source | Input | Expected output | Scoring · protocol |',
                              '|---|---|---|---|'])
@@ -180,7 +180,7 @@ def render_readmes(root, payload, cat_rows, _mark, md, link):
                 sections.append(f"| {link(r['name'],r['primary_url'])} | {md(a)} | {md(b)} | {link(c,r['protocol_url'])} |")
             full='打开本领域完整目录' if zh else 'Browse all entries in this field'
             sections.extend(['',f'[{full}]({site}#browse?domain={quote(domain,safe="")}&scope=all)',''])
-        substitutions={**counts,'CATALOG':'\n'.join(sections).rstrip(),'FIELD_LINKS':'\n'.join(field_links),
+        substitutions={**counts,'CATALOG':'\n'.join(sections).rstrip(),'FIELD_ANCHORS':''.join(field_anchors),
                        'SITE':site,'OFFLINE':'https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench',
                        'TREND':trend_excerpt(payload['months'],zh)}
         for template, dest in [('readme','README'),('readme-benchmarks','guide/benchmarks'),('readme-sources','guide/sources')]:
