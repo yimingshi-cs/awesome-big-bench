@@ -136,3 +136,10 @@ a.map-cell{text-decoration:none}
 .directory-scope button{border:0;border-radius:5px;background:transparent;padding:6px 14px;color:var(--muted);font:630 14px/1.35 var(--sans)}
 .directory-scope [aria-pressed=true]{background:white;color:var(--deep);box-shadow:0 1px 3px #23443620}
 footer .shell{flex-wrap:wrap}.offline-download{margin-left:auto}
+
+/* Keep the dice under the reader’s finger even when the new name wraps. */
+#cell-dialog[data-picker]{--pick-top:clamp(14px,calc(50dvh - 160px),32dvh);margin:var(--pick-top) auto auto;max-height:calc(100dvh - var(--pick-top) - 14px)}
+#pick-tools{padding:16px 126px 12px 30px;border-bottom:1px solid var(--rule)}
+#roll-again{min-height:40px}#roll-again svg{flex:none}
+#cell-dialog[data-picker] .card-meta{padding-right:0}
+@media(max-width:650px){#pick-tools{padding:10px 114px 10px 18px}#roll-again{min-height:44px}}

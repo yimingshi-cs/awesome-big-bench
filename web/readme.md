@@ -1,29 +1,42 @@
-# <img src="docs/bench-mark.svg" width="32" height="32" alt=""> Awesome Big Bench
+**English** · [简体中文](README.zh-CN.md)
 
-**Is that benchmark name taken?** Two different papers already use *BenchBench*: one [compares how benchmarks rank models](https://arxiv.org/abs/2407.13696); the other [tests how models design benchmarks](https://arxiv.org/abs/2603.20807).
+<a name="awesome-big-bench"></a>
+@@HERO@@
 
-[中文网站](https://yiming-shi.com/awesome-big-bench/zh/) · [English website](https://yiming-shi.com/awesome-big-bench/)
+**Two unrelated papers are called BenchBench.** The [2024 paper](https://arxiv.org/abs/2407.13696) asks whether benchmarks agree on model rankings. The [2026 paper](https://arxiv.org/abs/2603.20807) asks whether models can design good benchmarks themselves.
 
-**[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
+**[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse benchmarks](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute](#contribute-with-your-agent)**
 
-The **name map** checks @@COMBINATIONS@@ prefix–ending pairs. @@TAKEN@@ have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
+Of **@@COMBINATIONS@@ names checked**, **@@TAKEN@@** already have an AI evaluation. Mint marks a name in use; dark green means it also appears in an OpenAI, Anthropic or Google model report. Grey means [we looked but found no exact match](verification/names.md).
 
-**Featured** is the editors’ starting list by task. Search the entire catalog or switch to **All entries** for the long tail and older editions. The **directory** has @@DIRECTORY_COUNT@@ entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
+## Where to start
 
-The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
+The [directory](https://yiming-shi.com/awesome-big-bench/#directory) opens on **@@FEATURED@@ editor’s picks**. Switch to [all @@DIRECTORY_COUNT@@ entries](https://yiming-shi.com/awesome-big-bench/#browse?scope=all) to search earlier editions and evaluations documented in model releases. These pairs test different things:
 
-[Download one-file offline guides: English](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-en.html) · [简体中文](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-zh.html). On the website, use the footer download link to save an HTML file.
+| If you care about… | What the model actually has to do |
+|---|---|
+| Writing code | [HumanEval](https://yiming-shi.com/awesome-big-bench/#browse?entry=humaneval): finish a function. [SWE-bench](https://yiming-shi.com/awesome-big-bench/#browse?entry=swe-bench): fix an issue in an existing repository. |
+| Using a computer | [WebArena](https://yiming-shi.com/awesome-big-bench/#browse?entry=webarena): complete a task on a website. [OSWorld](https://yiming-shi.com/awesome-big-bench/#browse?entry=osworld): operate desktop applications. |
+| Games | [Kaggle Game Arena](https://yiming-shi.com/awesome-big-bench/#names?field=Embodied&prefix=Game&suffix=Arena): play an existing game against another model. [GameCraft-Bench](https://yiming-shi.com/awesome-big-bench/#browse?entry=gamecraft-bench): build a playable game. |
+| Remembering | [Needle in a Haystack](https://yiming-shi.com/awesome-big-bench/#browse?entry=needle-in-a-haystack): retrieve a planted fact. [LongMemEval](https://yiming-shi.com/awesome-big-bench/#browse?entry=longmemeval): answer from past conversations. |
+| Doing research | [MLE-bench](https://yiming-shi.com/awesome-big-bench/#browse?entry=mle-bench): make an ML competition submission. [PaperBench](https://yiming-shi.com/awesome-big-bench/#browse?entry=paperbench): reproduce a published paper. |
+
+## Benchmark directory
+
+For reading on GitHub: expand a field to compare **@@COUNT@@ benchmarks** by input, output and scoring. Each name links to the original paper or project; the last column links to its evaluation protocol.
+
+@@CATALOG@@
+
+[Source table](data/famous.csv) · [Dates and their sources](verification/catalog.md) · [Model-release coverage](verification/flagships/directory-coverage.csv) · [Candidates under review](data/candidates_unverified.csv)
 
 ## Contribute with your agent
 
-Have a benchmark of your own? Found a citation that points to the wrong edition? Give **Codex, Claude Code or another coding agent** your paper or project link and one sentence about the change. No issue form is required. Your agent checks the sources and opens a pull request; a maintainer reviews and merges it.
+A missing benchmark does **not** need “bench” in its name. Give your agent a paper or project link and the change you want. It checks the edition, edits the source data and opens a pull request. The maintainer reviews it.
 
-**[Copy a PR prompt](https://yiming-shi.com/awesome-big-bench/#contribute)** · [Plain-text prompt](contribute/agent-prompt.txt) · [Contribution guide](CONTRIBUTING.md)
-
-For a correction, open the name or edition on the website and choose **Copy PR prompt**. That copy already identifies the cell or record you mean. New benchmarks go in the directory first; a new row or column requires checking all of its combinations.
+**[Copy the PR prompt](https://yiming-shi.com/awesome-big-bench/#contribute)** · [Plain text](contribute/agent-prompt.txt) · [Contribution guide](CONTRIBUTING.md)
 
 <details>
-<summary>Read or copy the prompt here</summary>
+<summary>Read or copy the prompt on GitHub</summary>
 
 ```text
 @@AGENT_PROMPT@@
@@ -31,37 +44,26 @@ For a correction, open the name or edition on the website and choose **Copy PR p
 
 </details>
 
+Correcting an existing record? Use **Copy PR prompt** on that card; the copy includes the exact entry or name pair. New rows or columns need evidence for every new combination.
+
 ## Community vote
 
-Would you recommend this edition to someone measuring the same task? On a [directory card](https://yiming-shi.com/awesome-big-bench/#directory), **👍 夯** means yes and **👎 拉** means no. Vote only on editions you know and skip those you helped design, grade or maintain. No sign-in or quota; you can change or withdraw your choice in the same browser while the poll is open.
+Would you recommend this **edition** for the task it claims to measure? Each directory card shows whether voting is open. When it is, choose **👍 Recommend** or **👎 Wouldn’t recommend**. No sign-in is required. Skip editions you helped make or maintain; you can change or withdraw your vote in the same browser before the cutoff.
 
-The card shows the live voting status. Results stay hidden during collection. After closing, report the up/down counts by domain and edition. Fewer than 20 votes means **not ranked**, not “poor”. [Ballot and tally method](vote-service/OPERATIONS.md).
-
-## Where to start
-
-| If you want to test… | Compare these tasks | What distinguishes them |
-|---|---|---|
-| Coding | [HumanEval](https://github.com/openai/human-eval) · [SWE-bench](https://www.swebench.com/) | Complete one function vs. repair a real repository. |
-| An agent using a computer | [WebArena](https://webarena.dev/) · [OSWorld](https://os-world.github.io/) | Work inside websites vs. operate desktop applications. |
-| Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
-| AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
-
-The curated tables below compare inputs, outputs and scoring for **@@COUNT@@ benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries here are selected for distinct tasks. The [full web directory](https://yiming-shi.com/awesome-big-bench/#directory) also includes release-specific editions and every publicly documented family in our three-lab survey. [Coverage crosswalk](verification/flagships/directory-coverage.csv).
-
-## Benchmark directory
-
-@@JUMP@@
-
-@@CATALOG@@
-
-[Source table](data/famous.csv) · [Documented dates](verification/catalog.md) · [Candidates not yet in the guide](data/candidates_unverified.csv). A date identifies the event supported by its source, such as a v1 submission or public release. A project, a call for tasks and a finished release can have different dates.
+Totals stay hidden during voting. Results are grouped by field; editions with fewer than 20 votes are left unranked. [Voting and tally rules](vote-service/OPERATIONS.md).
 
 ## “Bench” in arXiv titles
 
 @@TREND@@
 
-[Charts](figures/) · [Monthly counts](data/monthly.csv) · [Collection method](data/README.md) · [Reproduction and discrepancies](verification/trends.md). The title census includes papers whose titles contain “bench”; the directory is a catalog of evaluations, including names such as HumanEval.
+[Explore the trend](https://yiming-shi.com/awesome-big-bench/#trends) · [Charts](figures/) · [Monthly counts](data/monthly.csv) · [Collection method](data/README.md) · [Audit](verification/trends.md)
 
 ## Provenance and licenses
 
-This project started as a weekend, AI-assisted build. A working link can still point to the wrong benchmark, release or scoring rule. Corrections with primary sources are welcome. Code and original documentation: [MIT](LICENSE). Original catalog annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata remains [CC0](https://info.arxiv.org/help/api/tou.html). Project names and marks belong to their owners; [credited marks](web/assets/marks/) retain their respective terms.
+**Why “Big Bench”?** [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893). [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). The name is a nod to that exchange, not the [BIG-bench evaluation suite](https://github.com/google/BIG-bench).
+
+[Offline HTML: English](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-en.html) · [简体中文](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-zh.html). To save a file for offline use, choose **Download offline guide** in the website footer.
+
+Code and original documentation: [MIT](LICENSE). Original annotations: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Descriptive arXiv metadata: [CC0](https://info.arxiv.org/help/api/tou.html). [Project marks](web/assets/marks/) retain their respective rights.
+
+This started as a weekend project built with AI assistance. A link can point to the right paper but the wrong edition or scoring rule. If you spot one, send the original source with your correction.

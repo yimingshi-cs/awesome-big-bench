@@ -54,7 +54,7 @@ python3 vote-service/catalog.py --check
 python3 -m unittest discover -s tests
 ```
 
-Commit the regenerated README and `docs/` outputs together. GitHub Pages continues to serve `main:/docs`; no hosting or build service is required. The small web pages load records on demand. **Download offline guide** saves the complete, single-file edition from `docs/offline/`. Put the two downloads in the same folder to switch languages offline. Web share links and card IDs are unchanged. With Playwright available, run `node tests/progressive_reader.cjs` (optionally `CHROME_CHANNEL=chrome`) to exercise both formats. See [data methods](data/README.md) to regenerate the figures.
+Edit the repository landing pages in `web/readme.md` and `web/readme.zh-CN.md`. Commit the regenerated `README.md`, `README.zh-CN.md` and `docs/` outputs together. GitHub Pages continues to serve `main:/docs`; no hosting or build service is required. The small web pages load records on demand. **Download offline guide** saves the complete, single-file edition from `docs/offline/`. Put the two downloads in the same folder to switch languages offline. Web share links and card IDs are unchanged. With Playwright available, run `node tests/progressive_reader.cjs` (optionally `CHROME_CHANNEL=chrome`) to exercise both formats. See [data methods](data/README.md) to regenerate the figures.
 
 The comparison table and source details take inspiration from [Awesome CUA](https://awesomecua.com/categories/benchmark/), [Awesome 3D Gaussian Splatting](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) and [Awesome-WAM](https://openmoss.ai/Awesome-WAM/). The interface uses its own HTML, CSS and JavaScript.
 

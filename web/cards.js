@@ -125,9 +125,11 @@ function nameCard(n,x){
 }
 const cardDialog=$('#cell-dialog');
 let cardTrigger=null;
-function presentCard(content,trigger){
+function presentCard(content,trigger,rolling=false){
+  cardDialog.toggleAttribute('data-picker',rolling);$('#pick-tools').hidden=!rolling;
   cardTrigger=trigger||null;$('#cell-info').replaceChildren(content);
-  cardDialog.scrollTop=0;if(!cardDialog.open)cardDialog.showModal();syncLanguageLinks();
+  cardDialog.scrollTop=0;if(!cardDialog.open)cardDialog.showModal();
+  if(rolling)$('#roll-again').focus({preventScroll:true});syncLanguageLinks();
 }
 function openEdition(x,trigger,n=null){
   const sheet=el('div',null,'detail-sheet'), title=x.display_name||x.name;
@@ -164,7 +166,7 @@ cardDialog.addEventListener('close',()=>{
   if(cardTrigger?.isConnected)cardTrigger.focus({preventScroll:true});
   const [page,qs]=location.hash.slice(1).split('?'),params=new URLSearchParams(qs);
   if((page==='browse'&&params.has('entry'))||(page==='names'&&params.has('prefix'))){
-    for(const k of ['entry','prefix','suffix','contribute'])params.delete(k);
+    for(const k of ['entry','prefix','suffix','contribute','roll'])params.delete(k);
     history.replaceState(null,'','#'+page+(params.size?'?'+params:''));
   }
   syncLanguageLinks();
