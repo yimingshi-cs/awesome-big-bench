@@ -236,7 +236,14 @@ def render():
     pick_ids=[k for ids in picks.values() for k in ids]
     if set(picks)!=set(DOMAINS) or len(pick_ids)!=len(set(pick_ids)) or any(directory.get(k,{}).get('domain')!=d for d,ids in picks.items() for k in ids):
         raise ValueError('Featured entries must be unique, present and correctly grouped by field.')
-    payload = dict(featured=pick_ids,ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
+    ballot_targets=json.loads((ROOT/'data/map_ballot_targets.json').read_text())
+    used_pairs={'|'.join(pair) for pair,n in matrix.items() if n['status']=='used'}
+    if set(ballot_targets)!=used_pairs:
+        raise ValueError('Every taken name (and no unclaimed name) needs a ballot target: '+str(used_pairs^set(ballot_targets)))
+    for pair, ids in ballot_targets.items():
+        if not isinstance(ids,list) or not ids or len(ids)!=len(set(ids)) or not set(ids)<=directory.keys():
+            raise ValueError(f'Invalid edition choice for {pair}: {ids}')
+    payload = dict(mapBallots=ballot_targets,featured=pick_ids,ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
     scripts = ('language.js','app.js','parts.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)

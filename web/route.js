@@ -51,7 +51,7 @@ function syncLanguageLinks(){
   if(page==='names'&&sheet?.dataset.entry&&!sheet.dataset.prefix)page='browse';
   if(page==='names'){
     if($('#names-field').value)p.set('field',$('#names-field').value);
-    if(sheet?.dataset.prefix){p.set('prefix',sheet.dataset.prefix);p.set('suffix',sheet.dataset.suffix);if(cardDialog.hasAttribute('data-picker'))p.set('roll','1');}
+    if(sheet?.dataset.prefix){p.set('prefix',sheet.dataset.prefix);p.set('suffix',sheet.dataset.suffix);if(sheet.dataset.entry&&sheet.querySelector('#ballot-edition'))p.set('edition',sheet.dataset.entry);if(cardDialog.hasAttribute('data-picker'))p.set('roll','1');}
   }
   if(page==='browse'){
     const d=$('#mobile-domain').value,q=$('#query').value.trim();

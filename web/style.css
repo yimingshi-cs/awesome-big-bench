@@ -143,3 +143,7 @@ footer .shell{flex-wrap:wrap}.offline-download{margin-left:auto}
 #roll-again{min-height:40px}#roll-again svg{flex:none}
 #cell-dialog[data-picker] .card-meta{padding-right:0}
 @media(max-width:650px){#pick-tools{padding:10px 114px 10px 18px}#roll-again{min-height:44px}}
+
+.edition-choice{display:grid;gap:6px;margin:4px 0 16px}
+.edition-choice label{font:700 14px/1.4 var(--sans);color:var(--deep)}
+.edition-choice select{width:100%;min-height:40px;font-size:15px}

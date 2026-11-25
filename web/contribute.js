@@ -6,7 +6,9 @@ function prContext(x,n){
     T('Name-map correction: ')+n.name,
     T('Cell: {pair} · {status} · checked {date}',{pair:n.prefix+' × '+n.suffix,status:T(n.status==='used'?'Taken':'Looks open'),date:n.checked_on}),
     T('Search record: ')+nameEvidence(n),
-    n.source_url&&T('Current evidence: ')+n.source_url
+    n.source_url&&T('Current evidence: ')+n.source_url,
+    x&&T('Entry ID: ')+x.slug,
+    x&&T('Current card: ')+publicBase+recordUrl(x)
   ].filter(Boolean).join('\n');
   if(x)return [T('Directory correction: ')+(x.display_name||x.name),T('Entry ID: ')+x.slug,
     T('Current card: ')+publicBase+recordUrl(x),T('Current source: ')+x.primary_url].join('\n');

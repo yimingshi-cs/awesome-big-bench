@@ -1,12 +1,7 @@
-Help me contribute one benchmark addition or correction to https://github.com/yimingshi-cs/awesome-big-bench. Use the public source and change I provide. If either is missing, ask me before editing.
+Help me add or correct one benchmark record in https://github.com/yimingshi-cs/awesome-big-bench. Work from the change and public source I provide. If either is missing, ask me before editing.
 
-Read CONTRIBUTING.md. Check the existing name, edition and open PRs. Verify the claim against the original paper, project or dated release; cite the exact section or version. A new benchmark belongs in the Directory even if its name does not fit the map. Only change a map verdict with evidence for that exact name; don't add a row or column for a single submission.
+Read CONTRIBUTING.md and .github/pull_request_template.md. Check the directory and open PRs for the name, aliases and edition. Verify the claim against the original paper, project, scoring code or dated release. Point to the section, table or release that establishes it. If the evidence is inconclusive, explain why instead of guessing. A new benchmark belongs in the directory even if it does not fit the name map. Change a map verdict only with direct evidence; do not add an axis for a single submission.
 
-Edit the source data on a new branch, not the generated page by hand. Supply Simplified Chinese for new or revised display copy; keep official names, editions, metrics and source links intact. Run:
-python3 scripts/build_guide.py
-python3 vote-service/catalog.py
-python3 scripts/build_guide.py --check
-python3 vote-service/catalog.py --check
-python3 -m unittest discover -s tests
+Edit the source data on a new branch, not the generated page by hand. Supply both English and Simplified Chinese display copy; preserve official names, editions, metrics and links. Follow the Rebuild steps in CONTRIBUTING.md to regenerate the outputs and run the checks. Inspect the diff.
 
-Inspect the diff. Using my authorized GitHub account, push the branch to my fork and open a pull request against yimingshi-cs/awesome-big-bench:main. Include the evidence and checks, then give me the PR link. Leave review and merge to the maintainer. If you can't open a PR, give me the patch and the remaining step.
+Using my authorized GitHub account, push to my fork and open one PR against yimingshi-cs/awesome-big-bench:main. Follow the PR template: state the addition or old → new value, link the primary evidence, say what it proves and report the actual check results. Give me the PR link; leave review and merge to the maintainer. If you lack permission, give me the patch and the remaining steps; do not push to main.

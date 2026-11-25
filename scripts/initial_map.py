@@ -47,7 +47,7 @@ def render_map(data, label):
                     shown=escape(name)
                     if name.lower().startswith(p.lower()) and len(name)>len(p)+1:
                         shown=escape(name[:len(p)])+'<wbr>'+escape(name[len(p):])
-                    cells.append(f'<td{cls}><a class="map-cell {state}" href="{escape(receipt)}" aria-label="{escape(name+": "+status)}"><span>{shown}</span></a></td>')
+                    cells.append(f'<td{cls}><a class="map-cell {state}" href="{escape(receipt)}" data-prefix="{escape(p)}" data-suffix="{escape(s)}" aria-label="{escape(name+": "+status)}"><span>{shown}</span></a></td>')
             cells.append('</tr>')
         cells.append('</tbody>')
     return ''.join(cells)

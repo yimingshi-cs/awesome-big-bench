@@ -70,11 +70,11 @@ def trend_excerpt(months, zh):
         return (f'只比两年相同的 1–9 月：2020 年，{n0:,} 篇 arXiv 计算机论文里有 {h0:,} 篇标题含 `bench`（**{s0:.2%}**）；'
                 f'2026 年是 {n1:,} 篇中的 {h1:,} 篇（**{s1:.2%}**），占比约为原来的 **{s1/s0:.2f} 倍**。'
                 f'整个数据集（{interval}，{"末月完整" if last["complete"] else "末月未满"}）共 {sum(m["hits"] for m in months):,} 个匹配的论文 ID。'
-                '这里数的是标题，不是新评测：*benchmarking* 和 *workbench* 都算，HumanEval 这样的名字反而不会命中。[总览图](figures/overview.png)。')
+                '这里数的是标题，不是新评测：*benchmarking* 和 *workbench* 都算，HumanEval 这样的名字反而不会命中。[总览图](../figures/overview.png)。')
     return (f'In January–September 2020, {h0:,} of {n0:,} arXiv CS papers had `bench` in the title (**{s0:.2%}**). '
             f'In the same nine months of 2026, it was {h1:,} of {n1:,} (**{s1:.2%}**): a **{s1/s0:.2f}×** increase in share. '
             f'The {interval} collection ({"complete" if last["complete"] else "partial"} final month) contains {sum(m["hits"] for m in months):,} matching paper IDs. '
-            'This counts titles, not new benchmarks: *benchmarking* and *workbench* qualify; *HumanEval* does not. [Overview chart](figures/overview.png).')
+            'This counts titles, not new benchmarks: *benchmarking* and *workbench* qualify; *HumanEval* does not. [Overview chart](../figures/overview.png).')
 
 
 def render_readmes(root, payload, cat_rows, mark, md, link):
@@ -87,28 +87,30 @@ def render_readmes(root, payload, cat_rows, mark, md, link):
     for zh in (False, True):
         site='https://yiming-shi.com/awesome-big-bench/'+('zh/' if zh else '')
         sections=[]
+        field_links=[]
+        suffix='.zh-CN' if zh else ''
         for domain in payload['domains']:
             records=[r for r in cat_rows if r['domain']==domain]
             label=labels[domain] if zh else domain
             anchor='domain-'+domain.lower().split()[0].replace('autoresearch','ai-research')
             old_heading=domain.lower().replace(' & ', '--').replace(' ', '-')
-            sections.extend([f'<a name="{anchor}"></a><a name="{old_heading}"></a>','<details>',
-                             f'<summary><strong>{escape(label)}</strong> · {len(records)}</summary>','',
+            aliases=f'<a name="{anchor}"></a><a name="{old_heading}"></a>'
+            field_links.append(f'- {aliases}[{label}](guide/benchmarks{suffix}.md#{anchor})')
+            sections.extend([aliases,f'### {label} · {len(records)}','',
                              '| 评测 · 原始来源 | 输入 | 模型要给出什么 | 评分方法 · 依据 |' if zh else '| Benchmark · original source | Input | Expected output | Scoring · protocol |',
                              '|---|---|---|---|'])
             for r in records:
                 a,b,c=(translations[r[k]] if zh else r[k] for k in ('input','output','assessment'))
                 sections.append(f"| {link(r['name'],r['primary_url'])} | {md(a)} | {md(b)} | {link(c,r['protocol_url'])} |")
             full='打开本领域完整目录' if zh else 'Browse all entries in this field'
-            sections.extend(['',f'[{full}]({site}#browse?domain={quote(domain,safe="")}&scope=all)','','</details>',''])
-        hero=(f'<h1><a href="{site}"><picture><source media="(max-width: 640px)" srcset="docs/masthead-compact.svg">'
-              '<img src="docs/masthead.svg" width="100%" alt="Awesome Big Bench"></picture></a></h1>')
-        suffix='.zh-CN' if zh else ''
-        substitutions={**counts,'CATALOG':'\n'.join(sections).rstrip(),'HERO':hero,
-                       'AGENT_PROMPT':(root/'contribute'/('agent-prompt.zh.txt' if zh else 'agent-prompt.txt')).read_text().strip(),
+            sections.extend(['',f'[{full}]({site}#browse?domain={quote(domain,safe="")}&scope=all)',''])
+        substitutions={**counts,'CATALOG':'\n'.join(sections).rstrip(),'FIELD_LINKS':'\n'.join(field_links),
+                       'SITE':site,'OFFLINE':'https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench',
                        'TREND':trend_excerpt(payload['months'],zh)}
-        body=(root/'web'/f'readme{suffix}.md').read_text()
-        for key,value in substitutions.items():body=body.replace('@@'+key+'@@',str(value))
-        if '@@' in body:raise ValueError('Unresolved README template variable')
-        outputs[f'README{suffix}.md']=body
+        for template, dest in [('readme','README'),('readme-benchmarks','guide/benchmarks'),('readme-sources','guide/sources')]:
+            body=(root/'web'/f'{template}{suffix}.md').read_text()
+            for key,value in substitutions.items():
+                body=body.replace('@@'+key+'@@',str(value))
+            if '@@' in body:raise ValueError(f'Unresolved variable in {template}{suffix}')
+            outputs[f'{dest}{suffix}.md']=body
     return outputs

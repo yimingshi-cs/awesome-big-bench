@@ -1,0 +1,300 @@
+{
+  "SWE|Bench": [
+    "swe-bench",
+    "swe-bench-lite",
+    "swe-bench-verified",
+    "swe-bench-multimodal",
+    "swe-bench-multilingual",
+    "swe-bench-pro",
+    "swe-bench-multimodal-v2",
+    "swe-bench-pro-v2"
+  ],
+  "SWE|Eval": [
+    "swe-eval-trajectories",
+    "sweeval-profanity"
+  ],
+  "Terminal|Bench": [
+    "terminal-bench",
+    "terminal-bench-2-0",
+    "terminal-bench-2-1",
+    "terminal-bench-3-0",
+    "terminal-bench-4-0",
+    "terminal-bench-4-1"
+  ],
+  "CWE|Bench": [
+    "cwe-bench-v0",
+    "cwe-bench-v1",
+    "cwe-bench-v2"
+  ],
+  "CWE|val": [
+    "cweval"
+  ],
+  "Agent|Bench": [
+    "agentbench"
+  ],
+  "Agent|Eval": [
+    "agenteval-agentgym"
+  ],
+  "Agent|Exam": [
+    "agentexam"
+  ],
+  "Agent|Last Exam": [
+    "agents-last-exam",
+    "agents-last-exam-1-1"
+  ],
+  "Agent|Dojo": [
+    "agentdojo"
+  ],
+  "Agent|Gym": [
+    "agenteval-agentgym"
+  ],
+  "Agent|²": [
+    "agent-squared"
+  ],
+  "Tool|Bench": [
+    "toolbench"
+  ],
+  "Tool|Eval": [
+    "toolbench"
+  ],
+  "Tool|Gym": [
+    "toolgym"
+  ],
+  "Reasoning|Bench": [
+    "reasoning-bench-inspect"
+  ],
+  "Reasoning|Eval": [
+    "reasoningeval"
+  ],
+  "Reasoning|Gym": [
+    "reasoning-gym"
+  ],
+  "MM|Bench": [
+    "mmbench"
+  ],
+  "MM|Eval": [
+    "mm-eval-judges",
+    "mm-eval-mongolian"
+  ],
+  "Vision|Bench": [
+    "visionbench-eurosat"
+  ],
+  "Vision|Eval": [
+    "visioneval-regression"
+  ],
+  "Video|Bench": [
+    "video-bench-generation",
+    "video-bench-understanding"
+  ],
+  "Video|Eval": [
+    "videoeval"
+  ],
+  "Video|Gym": [
+    "videogym"
+  ],
+  "Video|RSI": [
+    "video-rsi"
+  ],
+  "Embodied|Bench": [
+    "embodiedbench"
+  ],
+  "Embodied|Eval": [
+    "embodiedeval"
+  ],
+  "Embodied|First Exam": [
+    "embodied-first-exam"
+  ],
+  "Robo|Bench": [
+    "robobench-embodied",
+    "robo-bench-vals"
+  ],
+  "Robo|Eval": [
+    "roboeval"
+  ],
+  "Robo|Dojo": [
+    "ref-robodojo"
+  ],
+  "Robo|Gym": [
+    "robogym-carlo"
+  ],
+  "Robots|Last Exam": [
+    "robots-last-exam"
+  ],
+  "Alignment|Bench": [
+    "alignmentbench-brida"
+  ],
+  "Alignment|Eval": [
+    "alignment-eval-enricobottazzi"
+  ],
+  "Alignment|Gym": [
+    "alignment-gym-psychometrics"
+  ],
+  "Long|Bench": [
+    "longbench",
+    "longbench-v2"
+  ],
+  "Long|Eval": [
+    "longeval-generation",
+    "longeval-clef-2023"
+  ],
+  "Memory|Bench": [
+    "memorybench-thuir"
+  ],
+  "Memory|Eval": [
+    "memory-eval-wyyyyn"
+  ],
+  "Memory|Dojo": [
+    "memorydojo"
+  ],
+  "Memory|Gym": [
+    "memory-gym"
+  ],
+  "Research|Bench": [
+    "researchbench-researchtown"
+  ],
+  "Research|Eval": [
+    "research-eval-gimbal"
+  ],
+  "Research|Gym": [
+    "researchgym"
+  ],
+  "Scientists|First Exam": [
+    "scientists-first-exam"
+  ],
+  "PostTrain|Bench": [
+    "posttrainbench",
+    "posttrainbench-1-1",
+    "posttrainbench-1-2"
+  ],
+  "GDP|val": [
+    "gdpval"
+  ],
+  "Life|Bench": [
+    "life-bench-personalization",
+    "lifebench-length",
+    "lifebench-memory"
+  ],
+  "Life|Eval": [
+    "lifeeval"
+  ],
+  "Life|val": [
+    "lifeval"
+  ],
+  "Life|Gym": [
+    "lifegym"
+  ],
+  "Automation|Bench": [
+    "automationbench"
+  ],
+  "Frontier|Bench": [
+    "terminal-bench-3-0"
+  ],
+  "Frontier|Eval": [
+    "frontiereval"
+  ],
+  "Frontier|RSI": [
+    "frontier-rsi"
+  ],
+  "Humanity|First Exam": [
+    "humanitys-first-exam"
+  ],
+  "Humanity|Last Exam": [
+    "humanitys-last-exam"
+  ],
+  "Meta|Bench": [
+    "metabench-reasoning",
+    "metabench-metabolomics"
+  ],
+  "Meta|Eval": [
+    "metaeval"
+  ],
+  "Meta|Gym": [
+    "metagym-paddle"
+  ],
+  "Bench|Bench": [
+    "benchbench-generation",
+    "benchbench-agreement"
+  ],
+  "Benchmark|²": [
+    "benchmark-squared"
+  ],
+  "BenchBench|Bench": [
+    "benchbenchbench"
+  ],
+  "SWE|Arena": [
+    "swe-arena"
+  ],
+  "Agent|Arena": [
+    "agent-arena"
+  ],
+  "Tool|Arena": [
+    "toolarena"
+  ],
+  "Reasoning|Arena": [
+    "reasoning-arena"
+  ],
+  "MM|Arena": [
+    "mm-arena"
+  ],
+  "Vision|Arena": [
+    "vision-arena"
+  ],
+  "Video|Arena": [
+    "video-arena"
+  ],
+  "Embodied|Arena": [
+    "embodied-arena"
+  ],
+  "Robo|Arena": [
+    "roboarena"
+  ],
+  "Alignment|Arena": [
+    "alignment-arena"
+  ],
+  "Memory|Arena": [
+    "memoryarena"
+  ],
+  "Research|Arena": [
+    "researcharena-literature",
+    "researcharena-ai-rd"
+  ],
+  "PostTrain|Arena": [
+    "posttrain-arena"
+  ],
+  "Life|Arena": [
+    "lifearena"
+  ],
+  "Bench|Arena": [
+    "bencharena"
+  ],
+  "Game|Bench": [
+    "gamebench"
+  ],
+  "Game|Eval": [
+    "gameeval"
+  ],
+  "Game|Dojo": [
+    "gamedojo"
+  ],
+  "Game|Gym": [
+    "game-gym-nunu"
+  ],
+  "Game|Arena": [
+    "game-arena",
+    "gamearena-hu",
+    "game-arena-llm-stats"
+  ],
+  "Harness|Bench": [
+    "harness-bench",
+    "harnessbench-reacher"
+  ],
+  "Harness|Eval": [
+    "harnesseval"
+  ],
+  "Harness|Exam": [
+    "harness-exam"
+  ],
+  "Harness|Arena": [
+    "harness-arena"
+  ]
+}

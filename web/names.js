@@ -6,9 +6,9 @@ function initNames(){
   let cells=[], bag=[], lastRoll=null;
   const picker=$('#pick-name'),again=$('#roll-again');
   chooser.disabled=false;for(const [f] of fields)chooser.add(new Option(displayDomain(f),f));
-  function open(n,b,rolling=false){
+  function open(n,b,rolling=false,edition=null){
     const x=recordsById.get(mapCatalog[namePair(n)]);
-    if(x&&isCatalogName(n,x)){openEdition(x,b,n);return;}
+    if(n.status==='used'){openMapEvaluation(n,b,edition);return;}
     const sheet=nameCard(n,x);sheet.dataset.prefix=n.prefix;sheet.dataset.suffix=n.suffix;
     if(rolling){
       lastRoll=namePair(n);
@@ -95,7 +95,7 @@ function initNames(){
       if(b){
         const n=map.get(prefix+'|'+suffix),rolling=params.get('roll')==='1'&&n.status==='no_match';
         if(rolling)refill(namePair(n));
-        open(n,rolling?picker:b,rolling);
+        open(n,rolling?picker:b,rolling,params.get('edition'));
       }
     }else if(params.get('roll')==='1'&&!picker.disabled){
       roll();

@@ -41,7 +41,6 @@
   "A multilingual meta-evaluation of model judges. A separate Mongolian-language benchmark uses the same name.": "这项多语言元评测考察模型当裁判的能力。另有一项蒙古语评测也用这个名字。",
   "A multimodal benchmark for assistance in first-person video; not OpenAI LifeVal.": "这是一项第一人称视频辅助的多模态评测，不是 OpenAI 的 LifeVal。",
   "A multimodal personalization benchmark. LIFEBench is also used by a separate length-instruction-following evaluation.": "这是一项多模态个性化评测；另有一项也叫 LIFEBench，测试模型能否按指令控制文本长度。",
-  "A named robot-evaluation project already presents a simulated milk-tea order task. Its leaderboard and submission instructions are still marked “Coming soon”.": "同名机器人评测项目已展示模拟奶茶点单任务，排行榜和提交说明仍标为“即将上线”。",
   "A nearly right transformation still misses the task if the output grid has the wrong shape or even one wrong cell.": "输出网格的形状不对，或只错一个格子，整道题都不算答对。",
   "A patch need not match the maintainer’s code: it must fix the targeted failures without breaking the designated regression tests.": "补丁不必和维护者的代码一样；它要修复目标问题，同时通过指定的回归测试。",
   "A pre-release evaluation project already uses Frontier Arena. Its inventory lists no published benchmarks; no released same-name evaluation suite was found.": "一个尚未发布的项目已使用 Frontier Arena 这个名字，但目录没有任何已发布的评测；未找到已发布的同名套件。",
@@ -1103,5 +1102,6 @@
   "§9.4.4 Table 34: measured 1.5 Pro object-recognition accuracy by income/region.": "§9.4.4 表 34，1.5 Pro 按收入及地区分别报告的物体识别准确率。",
   "§9.4.4, Fig. 26, target 1.5 Pro bias/accuracy results on the BBQ QA task; not pretraining monitoring.": "§9.4.4 图 26，1.5 Pro 在 BBQ 问答任务上的偏差／准确率结果，不是预训练监测。",
   "§9.5.2, Tables 41–44: named, publicly described persuasion assessments, not assumptions from neighboring model columns.": "§9.5.2 表 41–44，公开描述且明确命名的说服力评测；不根据相邻模型列推定。",
-  "§§5.2.2.1–2, Tables 4–6, appendix §§12.16.13–14; translation and speech-recognition tasks on Kalamang.": "§§5.2.2.1–2 表 4–6，附录 §§12.16.13–14；Kalamang 语翻译与语音识别任务。"
+  "§§5.2.2.1–2, Tables 4–6, appendix §§12.16.13–14; translation and speech-recognition tasks on Kalamang.": "§§5.2.2.1–2 表 4–6，附录 §§12.16.13–14；Kalamang 语翻译与语音识别任务。",
+  "Robots’ Last Exam publishes preliminary robot-agent task results. Consult the pilot leaderboard for the tested setting.": "Robots’ Last Exam 已公布机器人智能体的初步任务结果；具体测试设置见试点榜单。"
 }

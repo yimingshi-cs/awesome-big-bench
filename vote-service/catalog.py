@@ -31,7 +31,7 @@ def snapshot():
     parser = PayloadParser()
     parser.feed((HERE.parent / "docs" / "index.html").read_text())
     core=json.loads("".join(parser.data))
-    index=json.loads((HERE.parent/'docs/parts/directory-index.json').read_text())
+    index=json.loads((HERE.parent/'docs/parts'/('directory-index.'+core['parts']['directory-index']+'.json')).read_text())
     if index['revision']!=core['parts']['directory-index']:raise ValueError('Stale full directory index')
     home={x['slug']:x for x in core['catalog']}
     entries=[{**home.get(k,{}),**v} for k,v in index['records'].items()]

@@ -24,7 +24,8 @@ def page(path):
     found=set()
     for key,body in re.findall(r'<script type="application/json" id="part-([a-z0-9-]+)">(.*?)</script>',portable,re.S):
         packet=json.loads(body)
-        if key in found or packet['revision']!=data['parts'][key] or packet!=json.loads((filename.parent/'parts'/(key+'.json')).read_text()):
+        filename_part=f'directory-index.{packet["revision"]}.json' if key=='directory-index' else key+'.json'
+        if key in found or packet['revision']!=data['parts'][key] or packet!=json.loads((filename.parent/'parts'/filename_part).read_text()):
             raise ValueError('Different online and portable data: '+key)
         found.add(key); rows=packet['records']
         if key.startswith('cards-') or key=='directory-index':
