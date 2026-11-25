@@ -6,9 +6,9 @@
 
 **[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
 
-The **name map** checks 330 prefix–ending pairs. 85 have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
+The **name map** checks 341 prefix–ending pairs. 89 have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
 
-**Featured** is the editors’ starting list by task. Search the entire catalog or switch to **All entries** for the long tail and older editions. The **directory** has 566 entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
+**Featured** is the editors’ starting list by task. Search the entire catalog or switch to **All entries** for the long tail and older editions. The **directory** has 570 entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
 
@@ -57,7 +57,7 @@ The card shows the live voting status. Results stay hidden during collection. Af
 | Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
 | AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
 
-The curated tables below compare inputs, outputs and scoring for **122 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries here are selected for distinct tasks. The [full web directory](https://yiming-shi.com/awesome-big-bench/#directory) also includes release-specific editions and every publicly documented family in our three-lab survey. [Coverage crosswalk](verification/flagships/directory-coverage.csv).
+The curated tables below compare inputs, outputs and scoring for **123 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries here are selected for distinct tasks. The [full web directory](https://yiming-shi.com/awesome-big-bench/#directory) also includes release-specific editions and every publicly documented family in our three-lab survey. [Coverage crosswalk](verification/flagships/directory-coverage.csv).
 
 ## Benchmark directory
 
@@ -107,6 +107,7 @@ The curated tables below compare inputs, outputs and scoring for **122 benchmark
 | [BrowseComp](<https://openai.com/index/browsecomp/>) | A question and access to the web | A concise factual answer | [Answer correctness against a reference, using the documented grader](<https://cdn.openai.com/pdf/5e10f4ab-d6f7-442e-9508-59515c65e35d/browsecomp.pdf>) |
 | [Toolathlon](<https://github.com/hkust-nlp/Toolathlon>) | A task and an initialized software workspace | Tool actions and a completed workspace task | [Task-specific scripts verify the outcome](<https://github.com/hkust-nlp/Toolathlon>) |
 | [AutomationBench](<https://zapier.com/benchmarks>) | Business request and starting application state | Tool actions and final state across apps | [Assertions check outcomes and policy compliance](<https://arxiv.org/abs/2604.18934>) |
+| [Harness-Bench](<https://github.com/Qihoo360/harness-bench>) | Task instructions and workspace materials; some tasks in the expanded suite include images | Completed work products and changes to the task workspace | [Task-specific checkers score the delivered work. Record the model, harness, task set and budget with the result.](<https://arxiv.org/abs/2605.27922>) |
 
 <a id="domain-reasoning"></a>
 ### Reasoning

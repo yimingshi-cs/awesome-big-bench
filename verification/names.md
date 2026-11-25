@@ -1,16 +1,16 @@
 # Benchmark name checks · 25 November 2026
 
-The homepage opens on the full **30 × 11** matrix. The map distinguishes names already used by an AI benchmark from names that still look open.
+The homepage opens on the full **31 × 11** matrix. The map distinguishes names already used by an AI benchmark from names that still look open.
 
 - **Green:** an original paper, task suite, implementation or scored evaluation identifies a benchmark of this name. A published earlier name is labelled as such in the cell details.
 - **Dark green:** a taken name whose benchmark family appears in at least one of the reviewed [flagship or reasoning-model reports](flagships/). Open the name for the exact versions. The accent marks documented use, not a quality score.
 - **Light grey:** the recorded searches did not establish such a benchmark. An unrelated repository, commercial service, model or training-only environment does not use up the name for this purpose. This is not a domain-registration or trademark search.
 
-The 330 decisions and dates are in [names.csv](../data/names.csv). The [2,494 individual query and source records](names/matrix-searches.csv) include failed requests marked as failures. Click a cell on the [name map](https://yiming-shi.com/awesome-big-bench/) for its evidence or to report a correction on GitHub.
+The 341 decisions and dates are in [names.csv](../data/names.csv). The [2,576 individual query and source records](names/matrix-searches.csv) include failed requests marked as failures. Click a cell on the [name map](https://yiming-shi.com/awesome-big-bench/) for its evidence or to report a correction on GitHub.
 
 ## Arena column
 
-All 29 prefix combinations were researched. Fifteen have a documented same-name AI evaluation; fourteen did not yield a qualifying match. See [the decisions, edge cases and search scope](names/arena-candidates.md). Dojo, Gym and Arena are grouped as naming **venues**, not scoring methods.
+At introduction, all 29 original Arena combinations were researched. Fifteen have a documented same-name AI evaluation; fourteen did not yield a qualifying match. See [the decisions, edge cases and search scope](names/arena-candidates.md). Dojo, Gym and Arena are grouped as naming **venues**, not scoring methods.
 
 ## Matrix revision
 
@@ -37,3 +37,7 @@ The arXiv scan used the relevant row groups of [this pinned metadata release](ht
 ### Game row · 25 November 2026
 
 The homepage groups Game under Embodied for browsing. Membership in this row does not turn a text-based strategic game into a physical robotics task. Five names have positive evaluation evidence; six had no qualifying hit in the dated searches. [Receipts for all eleven combinations](matrix/game.md). The [Kaggle platform](https://www.kaggle.com/game-arena) rates game play, as does the separate [human–model GameArena](https://arxiv.org/abs/2412.06394); [GameCraft-Bench](https://arxiv.org/abs/2606.17861) instead evaluates game creation.
+
+### Harness row · 25 November 2026
+
+Under CUA, Harness is the software layer around an agent. Four names have exact public evaluations (Bench, Eval, Exam, Arena); seven searches did not establish a match. A training framework, method or research atlas alone does not occupy a benchmark cell. [All eleven checks](matrix/harness.md) · [Rationale and namesakes](names/harness-candidate.md).

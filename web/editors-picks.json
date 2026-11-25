@@ -16,7 +16,8 @@
     "androidworld",
     "toolathlon",
     "tau2-bench",
-    "browsecomp"
+    "browsecomp",
+    "harness-bench"
   ],
   "Reasoning": [
     "gsm8k",

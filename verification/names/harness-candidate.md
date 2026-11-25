@@ -1,10 +1,14 @@
-# Should Harness be on the name map?
+# Harness: a prefix in the CUA group
 
-**Candidate for a prefix row, not a suffix column.** This is a placement decision, not a completed row of verdicts.
+The [published row](../matrix/harness.md) has eleven dated decisions. Four names refer to scored AI evaluations. The placement next to Agent describes the system being compared; it does not mean every evaluation uses a desktop GUI.
 
-- [Harness-Bench](https://arxiv.org/abs/2605.27922) evaluates model–harness configurations on the same set of tasks under shared budgets. The harness (the layer managing tools, state and execution) is an experimental variable.
-- [Harness Arena](https://github.com/Ondemand-OSS/harness-arena) holds the model and task constant and uses blind human judgments to compare harnesses. Public evaluation rules establish a name match; they do not establish wide adoption.
-- The widely used [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) runs many evaluations. Its existence is not evidence that a benchmark called “LM Harness” occupies a grid cell. Likewise [AgentHarness](https://github.com/ApodexAI/AgentHarness) runs other benchmarks, and [FrontierHarness Eval](https://frontierharness.org/about/) cannot be shortened to “FrontierHarness” to establish a match.
-- [HarnessDev](https://arxiv.org/abs/2609.01437) illustrates a third question: can the model *build* a harness that performs well on held-out tasks? It need not fit a map cell to be considered for the directory.
+| Name | What the primary source actually evaluates |
+|---|---|
+| [Harness-Bench](https://arxiv.org/abs/2605.27922) | Whether a model–harness pair delivers correct work on shared tasks and budgets. [Independent reuse](https://arxiv.org/html/2609.38143v2) documents a 106-task configuration; the [maintainers’ repository](https://github.com/Qihoo360/harness-bench) describes an expanded suite. Do not pool results across those settings. |
+| [harnesseval](https://github.com/dsifry/harnesseval/blob/main/REPORT.md) | AI code-review systems on real PRs. The public scored experiment reuses earlier datasets; it is not a new dataset. MirroS also uses [HarnessEval](https://mirros.ai/blog/harnesseval) for a workflow, but names its world-model benchmark HarnessEval-W. |
+| [harness-exam](https://github.com/kunchenguid/harness-exam) | A practical exam for coding agents, with [task definitions](https://github.com/kunchenguid/harness-exam/tree/main/src/tasks) and a [pass/fail scorecard](https://github.com/kunchenguid/harness-exam/blob/main/src/scorecard.js). |
+| [Harness Arena](https://github.com/Ondemand-OSS/harness-arena) | Blind comparisons of deliverables from different harnesses, keeping the model and task fixed. An exact-name hit does not imply widespread adoption. |
 
-A Harness prefix would add 11 checks at today's axes; a Harness suffix would now add 30, including Game. Recommend a prefix only after the full row has dated receipts. Revisit the suffix if several domains have independently documented benchmarks whose formal names end in Harness, rather than just runners. Neither axis was added in this release.
+Only Harness-Bench is an editorial pick in this release. All four have cards in the full directory. For Gym, squared and RSI, the names are in use for a [framework](https://harnessgym.com/), a [method](https://arxiv.org/abs/2610.14224) and a [research atlas](https://github.com/LucasXinYu/harness-rsi), respectively. These are not positive cells under the map’s benchmark-only rule.
+
+There is no Harness suffix column. Software such as the [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) runs existing evaluations rather than establishing independent benchmarks named X-Harness.

@@ -302,7 +302,7 @@ function sourceNotes(x,n,primary,guide,extra=null){
   return d;
 }
 function catalogCard(x,n=null){
-  const box=el('div',null,'detail-sheet');box.dataset.entry=x.slug;const guide=readingNotes[x.slug],pair=n?namePair(n):Object.keys(nameGroups.relatedCatalog).find(k=>mapCatalog[k]===x.slug);
+  const box=el('div',null,'detail-sheet');box.dataset.entry=x.slug;const guide=readingNotes[x.slug],pair=n?namePair(n):Object.keys(mapCatalog).find(k=>mapCatalog[k]===x.slug&&(nameGroups.relatedCatalog[k]||nameGroups.secondarySources?.[k]));
   const key=n?mapEvidence.cells[pair]:mapEvidence.catalog[x.slug];
   const title=x.display_name||x.name;
   const top=meta([displayDomain(x.domain),guide?.kind&&!['Task suite','任务集','任务套件'].includes(guide.kind)?guide.kind:''],n?(key?'reported':'yes'):null);

@@ -29,6 +29,19 @@ class FeaturedAndGame(unittest.TestCase):
             self.assertIn('gamecraft-bench',self.full['nameGroups']['relatedCatalog'][pair])
         self.assertIn('Godot',self.c['gamecraft-bench']['description'])
 
+    def test_harness_is_a_prefix_not_a_suffix_and_links_to_scored_suites(self):
+        self.assertIn('Harness',self.full['nameGroups']['fields']['CUA'])
+        self.assertNotIn('Harness',sum(self.full['nameGroups']['endings'].values(),[]))
+        row={n['suffix']:n for n in self.full['names'] if n['prefix']=='Harness'}
+        self.assertEqual(set(row),{v for vs in self.full['nameGroups']['endings'].values() for v in vs})
+        for end,slug in {'Bench':'harness-bench','Eval':'harnesseval','Exam':'harness-exam','Arena':'harness-arena'}.items():
+            self.assertEqual(row[end]['status'],'used')
+            self.assertEqual(self.full['mapCatalog']['Harness|'+end],slug)
+            self.assertTrue(self.c[slug]['assessment'] and self.c[slug]['protocol_url'])
+        for end in ['Gym','²','RSI']:
+            self.assertEqual(row[end]['status'],'no_match')
+            self.assertTrue(row[end]['source_url'])
+
     def test_single_file_is_a_download_not_an_automatic_request(self):
         for folder,lang in [('','en'),('zh/','zh')]:
             html=(ROOT/'docs'/folder/'index.html').read_text()
