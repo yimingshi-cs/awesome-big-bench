@@ -1,4 +1,4 @@
-function initTrends(){
+function initTrends(timeline){
   const ALL='All fields', choices=[ALL,...Object.keys(months[0].counts)];
   const one=$('#trend-domain'), two=$('#trend-other'), win=$('#trend-window'), range=$('#month-pick');
   choices.forEach(s=>one.add(new Option(displayDomain(s),s)));two.add(new Option(T('None'),''));choices.forEach(s=>two.add(new Option(displayDomain(s),s)));
@@ -53,7 +53,6 @@ function initTrends(){
   }
   range.oninput=()=>displayPoint(+range.value);one.onchange=draw;two.onchange=draw;win.onchange=draw;matchMedia('(max-width:640px)').addEventListener('change',draw);
   $('#trend-links').append(link(T('Download monthly counts'),gh('data/monthly.csv')),link(T('Charts'),repo+'/tree/main/figures'));
-  const timeline=catalog.filter(x=>x.origin!=='report'&&x.date_basis!=='available_by');
   const ypick=$('#year-select');[...new Set(timeline.map(x=>x.date.slice(0,4)))].sort().reverse().forEach(y=>ypick.add(new Option(y,y)));
   function milestones(){const host=$('#milestone-list');host.replaceChildren();for(const x of timeline.filter(x=>x.date.startsWith(ypick.value)).sort((a,b)=>a.date.localeCompare(b.date))){
     const row=el('div',null,'milestone-row'),left=el('div');left.append(el('span',x.date,'date'),link(x.name,x.primary_url),el('small',displayDomain(x.domain)));row.append(left);

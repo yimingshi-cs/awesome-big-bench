@@ -199,5 +199,13 @@
   "Details could not be loaded.": "暂时无法读取详情。",
   "Loading sources…": "正在读取来源…",
   "Loading directory…": "正在读取目录…",
-  "Directory could not be loaded.": "暂时无法读取目录。"
+  "Directory could not be loaded.": "暂时无法读取目录。",
+  "Directory view": "目录范围",
+  "Featured": "精选",
+  "All entries": "全部收录",
+  "Download offline guide": "下载离线版",
+  "Loading chart…": "正在读取图表…",
+  "Chart unavailable.": "暂时无法读取图表。",
+  "Build a playable game instead of playing one.": "这个评测要求做出一款可玩的游戏，而不是玩已有游戏。",
+  "Other projects with this name": "其他同名项目"
 }

@@ -8,9 +8,11 @@
 
 The **name map** checks @@COMBINATIONS@@ prefix–ending pairs. @@TAKEN@@ have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
 
-The **directory** has @@DIRECTORY_COUNT@@ entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
+**Featured** is the editors’ starting list by task. Search the entire catalog or switch to **All entries** for the long tail and older editions. The **directory** has @@DIRECTORY_COUNT@@ entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
+
+[Download one-file offline guides: English](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-en.html) · [简体中文](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-zh.html). On the website, use the footer download link to save an HTML file.
 
 ## Contribute with your agent
 

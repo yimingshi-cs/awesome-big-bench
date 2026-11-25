@@ -1,12 +1,12 @@
-# Benchmark name checks · 23 November 2026
+# Benchmark name checks · 25 November 2026
 
-The homepage opens on the full **29 × 11** matrix. The map distinguishes names already used by an AI benchmark from names that still look open.
+The homepage opens on the full **30 × 11** matrix. The map distinguishes names already used by an AI benchmark from names that still look open.
 
 - **Green:** an original paper, task suite, implementation or scored evaluation identifies a benchmark of this name. A published earlier name is labelled as such in the cell details.
 - **Dark green:** a taken name whose benchmark family appears in at least one of the reviewed [flagship or reasoning-model reports](flagships/). Open the name for the exact versions. The accent marks documented use, not a quality score.
 - **Light grey:** the recorded searches did not establish such a benchmark. An unrelated repository, commercial service, model or training-only environment does not use up the name for this purpose. This is not a domain-registration or trademark search.
 
-The 319 decisions and dates are in [names.csv](../data/names.csv). The [2,418 individual query and source records](names/matrix-searches.csv) include failed requests marked as failures. Click a cell on the [name map](https://yiming-shi.com/awesome-big-bench/) for its evidence or to report a correction on GitHub.
+The 330 decisions and dates are in [names.csv](../data/names.csv). The [2,494 individual query and source records](names/matrix-searches.csv) include failed requests marked as failures. Click a cell on the [name map](https://yiming-shi.com/awesome-big-bench/) for its evidence or to report a correction on GitHub.
 
 ## Arena column
 
@@ -33,3 +33,7 @@ All combinations were checked. Search variants included joined, spaced, hyphenat
 The arXiv scan used the relevant row groups of [this pinned metadata release](https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data) and the later title-census supplement. It is not a live, all-time index. Other searches are dated and their ranking and coverage can change.
 
 [Previous narrow search](names/search-log.csv) · [Previous field checks](names/field-checks-2026-11.csv). Those earlier checks recorded other uses as a separate category; the current binary verdicts apply only to AI benchmarks.
+
+### Game row · 25 November 2026
+
+The homepage groups Game under Embodied for browsing. Membership in this row does not turn a text-based strategic game into a physical robotics task. Five names have positive evaluation evidence; six had no qualifying hit in the dated searches. [Receipts for all eleven combinations](matrix/game.md). The [Kaggle platform](https://www.kaggle.com/game-arena) rates game play, as does the separate [human–model GameArena](https://arxiv.org/abs/2412.06394); [GameCraft-Bench](https://arxiv.org/abs/2606.17861) instead evaluates game creation.

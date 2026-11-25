@@ -21,14 +21,10 @@ function readPart(key){
   function inline(){try{use(JSON.parse(document.getElementById('part-'+key).textContent));}catch(e){reject(e);}}
   readerRequests.set(key,{promise,inline});
   if(arrivedParts.has(key))inline();
-  else if(location.protocol!=='file:'){
+  else if(document.documentElement.dataset.edition!=='offline'){
     fetch('parts/'+key+'.json?v='+rev,{signal:controller.signal,credentials:'omit'})
       .then(r=>{if(!r.ok)throw Error('Part unavailable');return r.json();})
-      .then(use).catch(e=>{
-        // While the HTML is still streaming, the embedded copy can satisfy
-        // the same request even after a network or revision mismatch.
-        if(!readerCache.has(key)&&document.readyState!=='loading')reject(e);
-      });
+      .then(use).catch(reject);
   }else if(document.readyState!=='loading')reject(Error('Incomplete offline page'));
   const timer=setTimeout(()=>{controller.abort();reject(Error('Part timed out'));},16000);
   function done(){clearTimeout(timer);readerRequests.delete(key);}
