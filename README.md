@@ -6,11 +6,13 @@
 
 **[Check a name](https://yiming-shi.com/awesome-big-bench/#names)** · **[Browse the directory](https://yiming-shi.com/awesome-big-bench/#directory)** · **[Contribute with your agent](#contribute-with-your-agent)**
 
-The **name map** checks 319 prefix–ending pairs. 80 have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
+The **name map** checks 330 prefix–ending pairs. 85 have a documented same-name AI evaluation. Grey means we searched and found no exact match, not that a name is reserved or guaranteed free. Select a cell for its [dated search record](verification/names.md).
 
-The **directory** has 556 entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
+**Featured** is the editors’ starting list by task. Search the entire catalog or switch to **All entries** for the long tail and older editions. The **directory** has 566 entries, including benchmark editions and publicly documented evaluations from OpenAI, Anthropic and Google releases. A benchmark can belong in the directory without fitting any cell on the map.
 
 The name comes from a November 2026 conversation: [Xinye Li asked what PhDs can build as foundation models absorb more tasks](https://x.com/vclee8/status/2120212679470268893); [Greg Hu called it 大bench理论, the “Big Bench Theory”](https://x.com/greghxm_1/status/2120436200746242530). This is a reading guide inspired by that exchange, not the [BIG-bench benchmark](https://github.com/google/BIG-bench).
+
+[Download one-file offline guides: English](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-en.html) · [简体中文](https://yiming-shi.com/awesome-big-bench/offline/awesome-big-bench-zh.html). On the website, use the footer download link to save an HTML file.
 
 ## Contribute with your agent
 
@@ -55,7 +57,7 @@ The card shows the live voting status. Results stay hidden during collection. Af
 | Memory | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) · [LongMemEval](https://github.com/xiaowu0162/LongMemEval) | Retrieve a planted fact vs. answer from a history of conversations. |
 | AI research | [MLE-bench](https://github.com/openai/mle-bench) · [PaperBench](https://openai.com/index/paperbench/) | Make an ML competition submission vs. reproduce a published paper. |
 
-The curated tables below compare inputs, outputs and scoring for **113 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries here are selected for distinct tasks. The [full web directory](https://yiming-shi.com/awesome-big-bench/#directory) also includes release-specific editions and every publicly documented family in our three-lab survey. [Coverage crosswalk](verification/flagships/directory-coverage.csv).
+The curated tables below compare inputs, outputs and scoring for **122 benchmarks across ten domains**. Click a benchmark for its original source; click its scoring rule for the protocol. Entries here are selected for distinct tasks. The [full web directory](https://yiming-shi.com/awesome-big-bench/#directory) also includes release-specific editions and every publicly documented family in our three-lab survey. [Coverage crosswalk](verification/flagships/directory-coverage.csv).
 
 ## Benchmark directory
 
@@ -66,6 +68,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 
 | Benchmark · primary source | Given | Must produce | Judged by · protocol |
 |---|---|---|---|
+| [Spider 1.0](<https://yale-lily.github.io/spider>) | A question and a relational schema | One SQL query | [Report the evaluator: original exact-set match or later test-suite execution accuracy.](<https://arxiv.org/abs/1809.08887>) |
 | [CodeXGLUE](<https://github.com/microsoft/CodeXGLUE>) | Code, text queries or paired snippets, by subtask | Labels, rankings, code or documentation | [Task-specific metrics including accuracy, F1 and BLEU](<https://arxiv.org/abs/2102.04664v1>) |
 | [APPS](<https://github.com/hendrycks/apps>) | Programming problem and required input/output behavior | Python solution program | [Fraction of tests passed and all-tests accuracy](<https://arxiv.org/abs/2105.09938v1>) |
 | [HumanEval](<https://github.com/openai/human-eval>) | Python function signature, docstring and examples | Function implementation | [Unit-test success, summarized as pass@k](<https://github.com/openai/human-eval>) |
@@ -77,6 +80,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 | [LiveCodeBench](<https://livecodebench.github.io/>) | Dated contest problem, code or execution example | Program, repair, execution result or predicted output | [Test-case success or answer matching, by subtask](<https://arxiv.org/pdf/2403.07974v1>) |
 | [SciCode](<https://scicode-bench.github.io/>) | A scientific problem and its component specifications | Executable Python code | [Scientist-authored test cases assess subproblems and full solutions](<https://github.com/scicode-bench/SciCode>) |
 | [SWE-bench Verified](<https://openai.com/index/introducing-swe-bench-verified/>) | Human-validated issue and matching repository snapshot | Patch to the repository | [Same test-based resolution criterion, on 500 validated issues](<https://openai.com/index/introducing-swe-bench-verified/>) |
+| [Spider 2.0-Lite](<https://github.com/xlang-ai/Spider2/tree/main/spider2-lite>) | A question, database metadata and reference documentation | SQL for the target database dialect | [Compare query results with the reference under the Lite execution evaluator.](<https://github.com/xlang-ai/Spider2/tree/main/spider2-lite/evaluation_suite>) |
 | [Code Arena · WebDev](<https://arena.ai/leaderboard/code/webdev>) | The same user-supplied web development brief for two models | Two runnable web apps for side-by-side comparison | [Pairwise user votes are aggregated into Bradley–Terry ratings; there is no fixed pass mark.](<https://arena.ai/blog/webdev-arena>) |
 | [Terminal-Bench](<https://www.tbench.ai/news/announcement>) | Terminal task instruction and a prepared container | Shell actions and resulting files or system state | [Task-specific tests determine completion](<https://www.tbench.ai/news/announcement>) |
 | [DeepSWE](<https://deepswe.datacurve.ai/>) | A repository at a fixed revision and an engineering brief | A committed code change | [Pass rate under task-specific behavioral tests; v1.1 grades the submitted patch in a clean environment.](<https://deepswe.datacurve.ai/blog/deepswe-v1-1>) |
@@ -95,6 +99,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 | [ToolBench](<https://github.com/OpenBMB/ToolBench>) | User instruction and available API documentation | Tool-call trajectory and final answer | [ToolEval model judges task pass rate and pairwise wins](<https://arxiv.org/abs/2307.16789v1>) |
 | [AgentBench](<https://github.com/THUDM/AgentBench>) | Task, environment state and available actions | Sequence of environment-specific actions or responses | [Environment-specific success or reward, then aggregate scoring](<https://arxiv.org/abs/2308.03688v1>) |
 | [GAIA](<https://arxiv.org/abs/2311.12983>) | Real-world question, sometimes with an attached file | Short text, number or list | [Normalized final answer matched against the reference](<https://huggingface.co/spaces/gaia-benchmark/leaderboard/blob/main/scorer.py>) |
+| [WebVoyager](<https://github.com/MinorJerry/WebVoyager>) | A user request and annotated browser screenshots in the visual setting | Browser actions and a final answer | [Task success rate; distinguish human judgments from the automated visual judge.](<https://arxiv.org/abs/2401.13919>) |
 | [Berkeley Function-Calling Leaderboard (BFCL)](<https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html>) | User request and available function signatures | Function calls with arguments, or no call | [Syntax-tree matching or execution checks by category](<https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html>) |
 | [OSWorld](<https://os-world.github.io/>) | Natural-language instruction and initialized desktop environment | Desktop actions that change applications or files | [Task-specific execution checks on the resulting state](<https://arxiv.org/pdf/2404.07972v1>) |
 | [AndroidWorld](<https://google-research.github.io/android_world/>) | A user instruction and a configured Android device | UI actions that complete the requested task | [Task-specific checks of the resulting device state](<https://github.com/google-research/android_world>) |
@@ -114,6 +119,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 | [BIG-bench Hard](<https://github.com/suzgunmirac/BIG-Bench-Hard>) | Task prompt with choices or short-answer format | Final choice or task-specific answer | [Accuracy against reference answers across 23 tasks](<https://arxiv.org/abs/2210.09261v1>) |
 | [GPQA](<https://github.com/idavidrein/gpqa>) | Expert-written science question and four options | One selected answer | [Accuracy against expert-provided answer keys](<https://arxiv.org/pdf/2311.12022v1>) |
 | [OlympiadBench](<https://arxiv.org/abs/2402.14008>) | Olympiad problem, sometimes with a diagram | Mathematical or physical answer; some problems request proof | [Reported automatic accuracy covers non-proof final answers](<https://arxiv.org/abs/2402.14008v1>) |
+| [GameBench](<https://github.com/Joshuaclymer/GameBench>) | Game rules and the current state; most are text, Hive can use an image | A move or action for the current turn | [Aggregate pairwise game outcomes with a Bradley–Terry rating model.](<https://arxiv.org/abs/2406.06613>) |
 | [FrontierMath](<https://epoch.ai/frontiermath>) | Original advanced mathematics problem | Numerical answer or specified mathematical object | [Verification script checks the answer or its properties](<https://epoch.ai/frontiermath/tiers-1-4/the-benchmark>) |
 | [ARC-AGI-2](<https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025>) | Example input/output grid pairs and a test input | Predicted output grid | [Dimensions and every cell must match the target](<https://arxiv.org/pdf/2505.11831v1>) |
 | [ARC-AGI-3](<https://arcprize.org/arc-agi/3>) | Observations from an unfamiliar interactive environment | Actions that reach the level goals | [Relative Human Action Efficiency (RHAE), using human action baselines](<https://arcprize.org/media/ARC_AGI_3_Technical_Report.pdf>) |
@@ -123,6 +129,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 
 | Benchmark · primary source | Given | Must produce | Judged by · protocol |
 |---|---|---|---|
+| [LibriSpeech](<https://www.openslr.org/12/>) | Spoken English audio | A text transcript | [Word error rate on the specified split; lower is better.](<https://www.openslr.org/12/>) |
 | [DocVQA](<https://www.docvqa.org/>) | Document page image and natural-language question | Short answer extracted from the document | [Average Normalized Levenshtein Similarity against reference answers](<https://arxiv.org/abs/2007.00398v1>) |
 | [ChartQA](<https://github.com/vis-nlp/ChartQA>) | Chart and natural-language question | Short textual or numerical answer | [Answer accuracy with tolerance for numerical responses](<https://arxiv.org/abs/2203.10244v1>) |
 | [ScienceQA](<https://scienceqa.github.io/>) | Science question, choices and optional image or context | Selected answer; explanations can also be generated | [Choice accuracy; explanation quality evaluated separately](<https://arxiv.org/abs/2209.09513v1>) |
@@ -132,6 +139,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 | [MathVista](<https://mathvista.github.io/>) | Visual math problem and optional answer choices | Choice or free-form mathematical answer | [Extracted answer normalized and matched to reference](<https://arxiv.org/abs/2310.02255v1>) |
 | [MMMU](<https://mmmu-benchmark.github.io/>) | College-level subject question and associated visuals | Selected option or open-ended answer | [Choice accuracy or rule-based open-answer matching](<https://arxiv.org/pdf/2311.16502v1>) |
 | [MVBench](<https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2>) | Video clip and multiple-choice temporal question | Selected answer choice | [Answer accuracy across temporal tasks](<https://arxiv.org/abs/2311.17005v1>) |
+| [OCRBench](<https://github.com/Yuliang-Liu/MultimodalOCR>) | An image and a question or recognition instruction | A text answer or transcription | [Count answers accepted by the official evaluator across its task categories.](<https://arxiv.org/abs/2305.07895>) |
 | [Video-MME](<https://video-mme.github.io/>) | Video and multiple-choice question; optional audio or subtitles | One selected answer | [Answer accuracy, broken down by video duration](<https://arxiv.org/pdf/2405.21075v1>) |
 | [LifeEval](<https://arxiv.org/abs/2603.00490>) | First-person video segment and question | Answer to the video question | [Answers scored against annotated choices, by capability](<https://arxiv.org/html/2603.00490v1>) |
 
@@ -140,6 +148,7 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 
 | Benchmark · primary source | Given | Must produce | Judged by · protocol |
 |---|---|---|---|
+| [RLBench](<https://github.com/stepjam/RLBench>) | A task instruction, camera observations and robot state in a common observation setting | Robot actions | [Fraction of trials that satisfy each task’s success conditions.](<https://arxiv.org/abs/1909.12271>) |
 | [ALFRED](<https://github.com/askforalfred/alfred>) | Household instructions and an egocentric view | Navigation and object-interaction actions | [Full task success and fraction of goal conditions met; path-weighted variants are also reported](<https://arxiv.org/pdf/1912.01734v1>) |
 | [CALVIN](<https://github.com/mees/calvin>) | A sequence of language commands and robot observations | Arm and gripper controls for each step | [Environment checks each subtask; report success by chain length and mean completed length](<https://arxiv.org/pdf/2112.03227v1>) |
 | [BEHAVIOR-1K](<https://behavior.stanford.edu/>) | An activity specification and simulated observations | Navigation and manipulation actions | [Check final goal conditions for task success; the paper also reports efficiency measures](<https://arxiv.org/pdf/2403.09227v1>) |
@@ -222,9 +231,11 @@ The curated tables below compare inputs, outputs and scoring for **113 benchmark
 |---|---|---|---|
 | [MMLU](<https://github.com/hendrycks/test>) | Subject question with four answer choices | One selected answer | [Accuracy against the answer key](<https://arxiv.org/pdf/2009.03300v1>) |
 | [BIG-bench](<https://github.com/google/BIG-bench>) | Task-specific prompt, sometimes with answer choices | Generated text or scores for candidate answers | [Task-defined metric; no single universal grader](<https://arxiv.org/pdf/2206.04615v1>) |
+| [MTEB](<https://github.com/embeddings-benchmark/mteb>) | Text queries, passages or sentence pairs, depending on the task | Embedding vectors | [Use each task’s metric and identify the suite or subset behind any reported average.](<https://arxiv.org/abs/2210.07316>) |
 | [HELM](<https://crfm.stanford.edu/helm/>) | Scenario-specific text prompts or answer choices | Generations or likelihoods, depending on scenario | [Scenario-specific metrics including accuracy, robustness and calibration](<https://arxiv.org/pdf/2211.09110v1>) |
 | [AGIEval](<https://github.com/ruixiangcui/AGIEval>) | Exam question, sometimes with supplied answer choices | Selected choice or filled-in answer | [Choice accuracy; exact match or F1 for blanks](<https://arxiv.org/abs/2304.06364v1>) |
 | [Chatbot Arena (LMArena)](<https://www.lmsys.org/blog/2023-05-03-arena/>) | User prompt shared with two anonymous models | Two competing conversational responses | [Users vote head-to-head; votes determine relative ratings](<https://www.lmsys.org/blog/2023-05-03-arena/>) |
+| [C-Eval](<https://cevalbenchmark.com/>) | A Chinese question and four answer options | The selected option | [Multiple-choice accuracy; specify the subject aggregation and prompting setup.](<https://arxiv.org/abs/2305.08322>) |
 | [IFEval](<https://github.com/google-research/google-research/tree/master/instruction_following_eval>) | Prompt with one or more verifiable constraints | One generated text response | [Rule checks; strict/loose prompt- and instruction-level accuracy](<https://arxiv.org/abs/2311.07911v1>) |
 | [MMLU-Pro](<https://github.com/TIGER-AI-Lab/MMLU-Pro>) | Multisubject question with up to ten options | Selected answer choice | [Accuracy against answer keys across subjects](<https://arxiv.org/abs/2406.01574v1>) |
 | [Humanity's Last Exam](<https://www.lastexam.ai/>) | Expert question, sometimes with an image | Selected or short answer with stated confidence | [Paper reports model-judged accuracy and RMS calibration error](<https://arxiv.org/pdf/2501.14249v1>) |

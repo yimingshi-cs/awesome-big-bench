@@ -23,7 +23,8 @@
     "Embodied": [
       "Embodied",
       "Robo",
-      "Robots"
+      "Robots",
+      "Game"
     ],
     "Safety": [
       "Alignment"
@@ -80,6 +81,26 @@
   "relatedCatalog": {
     "Terminal|Bench": [
       "terminal-bench-science"
+    ],
+    "Game|Bench": [
+      "gamecraft-bench"
+    ],
+    "Game|Arena": [
+      "gamecraft-bench"
+    ]
+  },
+  "secondarySources": {
+    "Game|Arena": [
+      {
+        "en": "GameArena (Hu et al.): human–model reasoning games",
+        "zh": "另一个 GameArena：人与模型玩推理游戏（Hu 等）",
+        "url": "https://arxiv.org/abs/2412.06394"
+      },
+      {
+        "en": "Game Arena (LLM Stats): text-to-game coding track",
+        "zh": "另一个 Game Arena：根据提示做游戏（LLM Stats 编程赛道）",
+        "url": "https://llm-stats.com/arenas/coding-arena/text-to-game"
+      }
     ]
   }
 }

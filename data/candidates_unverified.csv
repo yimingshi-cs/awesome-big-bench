@@ -1,7 +1,5 @@
 name,arxiv_id,arxiv_url,paper_title,v1_date,domain,status
 DS-1000,2211.11501,https://arxiv.org/abs/2211.11501,DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation,2022-11-18,Coding,candidate
-OCRBench,2305.07895,https://arxiv.org/abs/2305.07895,OCRBench: On the Hidden Mystery of OCR in Large Multimodal Models,2023-05-13,Multimodal,candidate
-C-Eval,2305.08322,https://arxiv.org/abs/2305.08322,C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models,2023-05-15,General,candidate
 TheoremQA,2305.12524,https://arxiv.org/abs/2305.12524,TheoremQA: A Theorem-driven Question Answering dataset,2023-05-21,Reasoning,candidate
 ZeroSCROLLS,2305.14196,https://arxiv.org/abs/2305.14196,ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding,2023-05-23,Long-context & Memory,candidate
 RepoBench,2306.03091,https://arxiv.org/abs/2306.03091,RepoBench: Benchmarking Repository-Level Code Auto-Completion Systems,2023-06-05,Coding,candidate
@@ -14,7 +12,6 @@ HallusionBench,2310.14566,https://arxiv.org/abs/2310.14566,HallusionBench: An Ad
 CRUXEval,2401.03065,https://arxiv.org/abs/2401.03065,"CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution",2024-01-05,Coding,candidate
 DebugBench,2401.04621,https://arxiv.org/abs/2401.04621,DebugBench: Evaluating Debugging Capability of Large Language Models,2024-01-09,Coding,candidate
 VisualWebArena,2401.13649,https://arxiv.org/abs/2401.13649,VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks,2024-01-24,CUA,candidate
-WebVoyager,2401.13919,https://arxiv.org/abs/2401.13919,WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models,2024-01-25,CUA,candidate
 MATH-Vision,2402.14804,https://arxiv.org/abs/2402.14804,Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset,2024-02-22,Multimodal,candidate
 WorkArena,2403.07718,https://arxiv.org/abs/2403.07718,WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?,2024-03-12,CUA,candidate
 RewardBench,2403.13787,https://arxiv.org/abs/2403.13787,RewardBench: Evaluating Reward Models for Language Modeling,2024-03-20,General,candidate

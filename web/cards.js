@@ -64,7 +64,7 @@ function sourceNotes(x,n,primary,guide,extra=null){
   return d;
 }
 function catalogCard(x,n=null){
-  const box=el('div',null,'detail-sheet');box.dataset.entry=x.slug;const guide=readingNotes[x.slug],pair=n&&namePair(n);
+  const box=el('div',null,'detail-sheet');box.dataset.entry=x.slug;const guide=readingNotes[x.slug],pair=n?namePair(n):Object.keys(nameGroups.relatedCatalog).find(k=>mapCatalog[k]===x.slug);
   const key=n?mapEvidence.cells[pair]:mapEvidence.catalog[x.slug];
   const title=x.display_name||x.name;
   const top=meta([displayDomain(x.domain),guide?.kind&&!['Task suite','任务集','任务套件'].includes(guide.kind)?guide.kind:''],n?(key?'reported':'yes'):null);
@@ -82,7 +82,12 @@ function catalogCard(x,n=null){
   }else if(!x.description&&x.task){header.append(el('p',x.task,'card-lead'));}
   if(guide?.compare)box.append(compareLine(recordsById.get(guide.compare),guide.contrast));
   for(const id of (pair&&nameGroups.relatedCatalog[pair])||[]){
-    if(guide?.compare!==id)box.append(compareLine(recordsById.get(id)));
+    if(guide?.compare!==id)box.append(compareLine(recordsById.get(id),id==='gamecraft-bench'?T('Build a playable game instead of playing one.'):''));
+  }
+  if(nameGroups.secondarySources?.[pair]){
+    const more=el('details',null,'card-sources');more.append(el('summary',T('Other projects with this name')));
+    for(const record of nameGroups.secondarySources[pair]){const item=el('p');item.append(link(zh?record.zh:record.en,record.url,'related-use'));more.append(item);}
+    box.append(more);
   }
   box.append(benchmarkBallot(x,ballotConfig));
   reportDetails(box,key,n?'Family release reports':'Release reports');
@@ -91,7 +96,7 @@ function catalogCard(x,n=null){
   return box;
 }
 function isFamilyName(n,x){
-  return x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&catalog.filter(r=>r.series===x.series).length>1;
+  return x&&x.display_name!==n.name&&x.series.toLowerCase()===n.name.toLowerCase()&&seriesSizes[x.series]>1;
 }
 function isCatalogName(n,x){return !isFamilyName(n,x)&&x.name.toLowerCase().replaceAll('’',"'")===n.name.toLowerCase().replaceAll('’',"'");}
 function nameCard(n,x){

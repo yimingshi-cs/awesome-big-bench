@@ -112,3 +112,12 @@ lifeval,LifeVal,Text,public_record
 cwe-bench-v2,CWE-bench,Text,announcement
 frontier-rsi,FrontierRSI,Text,public_record
 webexploitbench-v12,WebExploitBench v1.2,Text,available_by
+librispeech,LibriSpeech,Audio,available_by
+spider-1-0,Spider,Text,paper
+rlbench,RLBench,Text + Image + Proprioception,paper
+mteb,MTEB,Text,paper
+c-eval,C-Eval,Text,paper
+ocrbench,OCRBench,Text + Image,available_by
+webvoyager,WebVoyager,Text + Image,paper
+spider-2-0-lite,Spider,Text,paper
+gamebench,GameBench,Text + Image,paper

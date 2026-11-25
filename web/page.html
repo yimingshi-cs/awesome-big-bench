@@ -18,6 +18,7 @@
 <section id="directory" class="page" hidden>
 <div class="page-head directory-head"><h1>@@TEXT[Benchmark ]@@<em>@@TEXT[directory.]@@</em></h1><div class="directory-tools"><label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="query" type="search" placeholder="@@TEXT[Search]@@" aria-label="@@TEXT[Search benchmarks and tasks]@@"></label><select id="directory-order" aria-label="@@TEXT[Directory order]@@"><option value="group">@@TEXT[By field & series]@@</option><option value="new">@@TEXT[Newest first]@@</option></select></div></div>
 
+<div class="directory-scope" role="group" aria-label="@@TEXT[Directory view]@@"><button type="button" id="scope-featured" aria-pressed="true">@@TEXT[Featured]@@</button><button type="button" id="scope-all" aria-pressed="false">@@TEXT[All entries]@@</button></div>
 <div class="directory-layout"><aside class="filters"><div id="domains"></div><label class="mobile-domain">@@TEXT[Field]@@ <select id="mobile-domain"></select></label></aside><div class="results"><div class="directory-key"><i aria-hidden="true"></i>@@TEXT[In OpenAI, Anthropic or Google releases]@@</div><span id="count" class="sr-only" aria-live="polite"></span><div id="entries"></div></div></div></section>
 <section id="trends" class="page" hidden>
 <div class="page-head"><h1>@@TEXT[“Bench” in ]@@<em>@@TEXT[paper titles.]@@</em></h1></div><div id="comparison" class="comparison"></div>
@@ -34,5 +35,5 @@
 <details id="prompt-preview-details"><summary>@@TEXT[Read the prompt]@@</summary><textarea id="agent-prompt" aria-label="@@TEXT[Contribution prompt]@@" readonly spellcheck="false"></textarea></details>
 <p id="contribute-status" role="status"></p>
 </dialog>
-</main><footer><div class="shell"><strong>Awesome Big Bench</strong><a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/CONTRIBUTING.md">@@TEXT[Contribution guide]@@</a></div></footer>
+</main><footer><div class="shell"><strong>Awesome Big Bench</strong><a class="offline-download" href="@@OFFLINE@@" download>@@TEXT[Download offline guide]@@</a><a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/CONTRIBUTING.md">@@TEXT[Contribution guide]@@</a></div></footer>
 <noscript>@@TEXT[Browse the]@@ <a href="https://github.com/yimingshi-cs/awesome-big-bench/blob/main/data/names.csv">@@TEXT[name map as CSV]@@</a> @@TEXT[or the]@@ <a href="https://github.com/yimingshi-cs/awesome-big-bench">@@TEXT[benchmark directory]@@</a>.</noscript><script type="application/json" id="payload">/* DATA */</script><script>/* APP */</script><!-- READER PARTS --></body></html>

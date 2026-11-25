@@ -131,3 +131,8 @@ html:lang(zh) .card-lead,html:lang(zh) .interpretation,html:lang(zh) .source-fac
 
 .original-title{display:block;width:fit-content;margin:4px 0 10px;line-height:1.45}
 a.map-cell{text-decoration:none}
+
+.directory-scope{display:inline-flex;gap:2px;background:#edf3f0;border-radius:7px;padding:3px;margin:0 0 15px}
+.directory-scope button{border:0;border-radius:5px;background:transparent;padding:6px 14px;color:var(--muted);font:630 14px/1.35 var(--sans)}
+.directory-scope [aria-pressed=true]{background:white;color:var(--deep);box-shadow:0 1px 3px #23443620}
+footer .shell{flex-wrap:wrap}.offline-download{margin-left:auto}

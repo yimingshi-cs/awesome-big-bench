@@ -1,7 +1,21 @@
-renderTrendComparison();
 const renderDirectory=initDirectory();
 const restoreNames=initNames();
-const restoreTrends=initTrends();
+let restoreTrends=null,trendVersion=0;
+async function enterTrends(params){
+  const ticket=++trendVersion;
+  if(!restoreTrends){
+    const host=$('#plot');
+    host.textContent=T('Loading chart…');
+    try{
+      const chart=await readPart('trends');
+      if(ticket!==trendVersion||$('#trends').hidden)return;
+      months=chart.months;renderTrendComparison();restoreTrends=initTrends(chart.timeline);
+    }catch{
+      if(ticket===trendVersion)host.replaceChildren(document.createTextNode(T('Chart unavailable.')+' '),button(T('Retry'),()=>enterTrends(params),'subtle'));return;
+    }
+  }
+  restoreTrends(params);
+}
 function route(first=false){
   dismissCard();
   if(contributeDialog.open)contributeDialog.close();
@@ -16,7 +30,7 @@ function route(first=false){
   const params=new URLSearchParams(qs);
   if(page==='directory')renderDirectory(params);
   if(page==='names')restoreNames(params);
-  if(page==='trends')restoreTrends(params);
+  if(page==='trends')enterTrends(params);
   if(key==='contribute')showContribution();
   else if(params.get('contribute')==='1'){
     const sheet=$('#cell-info .detail-sheet'),n=sheet?.dataset.prefix?names.find(r=>r.prefix===sheet.dataset.prefix&&r.suffix===sheet.dataset.suffix):null;
@@ -44,6 +58,8 @@ function syncLanguageLinks(){
     if(visible==='directory'){
       if(d&&d!=='All domains')p.set('domain',d);
       if(q)p.set('q',q);
+      if($('#scope-all').getAttribute('aria-pressed')==='true')p.set('scope','all');
+      else if(q)p.set('scope','featured');
       if($('#directory-order').value==='new')p.set('order','new');
     }
     if(sheet?.dataset.entry)p.set('entry',sheet.dataset.entry);
@@ -57,7 +73,7 @@ function syncLanguageLinks(){
   if(contributeDialog.open){if(!sheet&&!activeContributionContext){page='contribute';}else{p.set('contribute','1');}}
   const h='#'+page+(p.size?'?'+p:'');
   for(const a of document.querySelectorAll('.language-switch')){
-    const url=location.protocol==='file:'?new URL(zh?'../index.html':'zh/index.html',location.href):new URL(a.href,location.href);
+    const url=location.protocol==='file:'?new URL(zh?'awesome-big-bench-en.html':'awesome-big-bench-zh.html',location.href):new URL(a.href,location.href);
     url.hash=h;a.href=url.href;
   }
 }

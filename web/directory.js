@@ -1,6 +1,7 @@
 // Filters and global date order can be shared. The default never collapses editions.
 function initDirectory(){
-  let domain='All domains';
+  let domain='All domains',scope='featured',routeID=0;
+  const chosen=new Set(featured);
   const security=new Set(['cwe-bench-v2','sec-bench-pro','webexploitbench-v12','cyberseceval']);
   const inDomain=(x,d)=>d==='All domains'||(d==='Cybersecurity'?security.has(x.slug):x.domain===d);
   const available=['All domains',...domains,'Cybersecurity'],domButtons=new Map();
@@ -8,42 +9,55 @@ function initDirectory(){
   let text=null,loading=null;
   function loadIndex(){
     if(!loading)loading=readPart('directory-index').then(extra=>{
-      for(const x of catalog)Object.assign(x,extra[x.slug]);
+      for(const [slug,row] of Object.entries(extra)){
+        const x=recordsById.get(slug);
+        if(x)Object.assign(x,row);
+        else{catalog.push(row);recordsById.set(slug,row);}
+      }
       text=new Map(catalog.map(x=>[x.slug,searchText([x.name,x.display_name,x.series,x.slug,x.task,x.search_alias,displayDomain(x.domain),x.description,x.domain,x.modalities,x.detailTerms,readingNotes[x.slug]?.kind,...(x.aliases||[])].filter(Boolean).join(' '))]));
     }).catch(e=>{loading=null;throw e;});
     return loading;
   }
 
-  const seriesNames=new Set(catalog.map(x=>searchText(x.series)));
-  const counts=Object.fromEntries(available.map(d=>[d,catalog.filter(x=>inDomain(x,d)).length]));
+  function pool(){return scope==='featured'?catalog.filter(x=>chosen.has(x.slug)):catalog;}
+  function syncScope(){for(const id of ['featured','all'])setPressed($('#scope-'+id),scope===id);}
   const order=$('#directory-order'),state=()=>{
     const p=new URLSearchParams(),q=$('#query').value.trim();
     if(domain!=='All domains')p.set('domain',domain);
     if(q)p.set('q',q);
+    if(scope==='all'||q)p.set('scope',scope);
     if(order.value==='new')p.set('order','new');
     history.replaceState(null,'','#browse'+(p.size?'?'+p:''));
   };
-  function choose(d,q=''){domain=d;$('#query').value=q;state();draw();}
+  function choose(d,q=''){routeID++;domain=d;$('#query').value=q;state();draw();}
   for(const d of available){
-    const b=button(displayDomain(d),()=>choose(d),'filter');b.append(el('span',counts[d]));$('#domains').append(b);domButtons.set(d,b);
-    $('#mobile-domain').add(new Option(displayDomain(d)+' ('+counts[d]+')',d));
+    const b=button(displayDomain(d),()=>choose(d),'filter');b.append(el('span'));$('#domains').append(b);domButtons.set(d,b);
+    $('#mobile-domain').add(new Option(displayDomain(d),d));
   }
   $('#mobile-domain').onchange=e=>choose(e.target.value);
-  $('#query').oninput=()=>{state();draw();};order.onchange=()=>{state();draw();};
+  $('#query').oninput=()=>{routeID++;if($('#query').value.trim())scope='all';state();draw();};
+  for(const id of ['all','featured'])$('#scope-'+id).onclick=()=>{routeID++;scope=id;state();draw();};order.onchange=()=>{state();draw();};
   const cmp=new Intl.Collator('en',{numeric:true,sensitivity:'base'});
   function recent(a,b){return b.date.localeCompare(a.date)||(b.edition_order||0)-(a.edition_order||0)||cmp.compare(b.display_name,a.display_name);}
   function grouped(a,b){return domains.indexOf(a.domain)-domains.indexOf(b.domain)||cmp.compare(a.series,b.series)||(b.edition_order&&a.edition_order?b.edition_order-a.edition_order:0)||recent(a,b);}
   function draw(){
     const query=searchText($('#query').value),words=query.split(/\s+/).filter(Boolean),host=$('#entries');host.replaceChildren();
     $('#mobile-domain').value=domain;for(const [d,b] of domButtons)setPressed(b,d===domain);
-    if(!text){
+    syncScope();
+    if(!text&&(scope==='all'||query)){
       const pending=el('p',T('Loading directory…'),'small');host.append(pending);
       loadIndex().then(()=>{if(pending.isConnected)draw();}).catch(()=>{
         if(pending.isConnected)pending.replaceChildren(document.createTextNode(T('Directory could not be loaded.')+' '),button(T('Retry'),draw,'subtle'));
       });
       return;
     }
-    const found=catalog.filter(x=>inDomain(x,domain)&&(seriesNames.has(query)?searchText(x.series)===query:words.every(w=>text.get(x.slug).includes(w)))).sort(order.value==='new'?recent:grouped);
+    const candidates=pool(), counts=Object.fromEntries(available.map(d=>[d,candidates.filter(x=>inDomain(x,d)).length]));
+    for(const [d,b] of domButtons){
+      b.lastChild.textContent=counts[d];
+      const opt=[...$('#mobile-domain').options].find(o=>o.value===d);opt.textContent=displayDomain(d)+' ('+counts[d]+')';
+    }
+    const seriesNames=new Set(candidates.map(x=>searchText(x.series)));
+    const found=candidates.filter(x=>inDomain(x,domain)&&(seriesNames.has(query)?searchText(x.series)===query:words.every(w=>text.get(x.slug).includes(w)))).sort(order.value==='new'?recent:grouped);
     $('#count').textContent=T(found.length===1?'{n} entry':'{n} entries',{n:found.length});
     if(!found.length){
       const actions=el('div',null,'links empty-actions');
@@ -74,9 +88,13 @@ function initDirectory(){
     host.append(t);
   }
   return params=>{
+    const id=++routeID,entry=params.get('entry');
+    scope=params.get('scope')==='featured'?'featured':(params.get('scope')==='all'||params.get('q')||entry&&!chosen.has(entry))?'all':'featured';
     domain=available.includes(params.get('domain'))?params.get('domain'):'All domains';$('#query').value=params.get('q')||'';
     order.value=params.get('order')==='new'?'new':'group';draw();
-    const x=recordsById.get(params.get('entry'));
-    if(x){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);openEdition(x,opener||$('#query'));}
+    function showEntry(){const x=recordsById.get(entry);
+      if(x&&id===routeID&&!$('#directory').hidden){const opener=[...document.querySelectorAll('.directory-name')].find(b=>b.dataset.slug===x.slug);openEdition(x,opener||$('#query'));}
+    }
+    if(entry){if(recordsById.has(entry))showEntry();else loadIndex().then(showEntry).catch(()=>{});}
   };
 }

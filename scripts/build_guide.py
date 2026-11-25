@@ -160,12 +160,6 @@ def render():
         if slug not in cat or matrix[tuple(pair.split('|'))]['status'] != 'used':
             raise ValueError('Invalid catalog version link: '+pair)
         catalog_cells[pair] = slug
-    for pair, slugs in groups['relatedCatalog'].items():
-        if pair not in catalog_cells or not set(slugs) <= cat.keys() or catalog_cells[pair] in slugs:
-            raise ValueError('Invalid related catalog reference: '+pair)
-    duplicated = set(catalog_cells.values()) & {s for ids in landmarks.values() for s in ids}
-    if duplicated:
-        raise ValueError('A field landmark repeats a name cell: '+str(duplicated))
     releases = read_csv('flagship_evaluations.csv')
     for r in releases:
         if not all(r.get(k) for k in ('vendor','release','generation','date','benchmark','family','tier','location','release_url','protocol_url')):
@@ -200,6 +194,17 @@ def render():
     positive_arena={r['prefix']+'|Arena' for r in names if r['suffix']=='Arena' and r['status']=='used'}
     if arena_by_pair.keys()!=positive_arena:raise ValueError('Arena directory is missing a checked name')
     for pair,ar in arena_by_pair.items(): catalog_cells[pair]=ar['slug']
+    for pair, slugs in groups['relatedCatalog'].items():
+        if pair not in catalog_cells or not set(slugs) <= directory.keys() or catalog_cells[pair] in slugs:
+            raise ValueError('Invalid related catalog reference: '+pair)
+    duplicated = set(catalog_cells.values()) & {s for ids in landmarks.values() for s in ids}
+    if duplicated:
+        raise ValueError('A field landmark repeats a name cell: '+str(duplicated))
+    for pair,alternatives in groups.get('secondarySources',{}).items():
+        if pair not in catalog_cells: raise ValueError('Unknown namesake '+pair)
+        for item in alternatives:
+            if not all(item.get(k) for k in ('en','zh','url')): raise ValueError('Incomplete namesake '+pair)
+            check_url(item['url'])
     evidence, _, _ = index_reports(rows,matches,matrix,landmarks,directory,aliases,strict)
     # For the bibliography, preserve the focal release attribution, not an
     # operational how-to. Do not turn risk assessments into task recipes.
@@ -245,7 +250,11 @@ def render():
         project_api=ballot_config['api']=='https://yiming-shi.com/awesome-big-bench/api'
         if (url.scheme!='https' or not url.hostname or url.username or url.password or url.query or url.fragment or (not project_api and url.path not in ('','/'))):
             raise ValueError('Use an HTTPS service origin or the exact official project API')
-    payload = dict(ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
+    picks=json.loads((ROOT/'web/editors-picks.json').read_text())
+    pick_ids=[k for ids in picks.values() for k in ids]
+    if set(picks)!=set(DOMAINS) or len(pick_ids)!=len(set(pick_ids)) or any(directory.get(k,{}).get('domain')!=d for d,ids in picks.items() for k in ids):
+        raise ValueError('Featured entries must be unique, present and correctly grouped by field.')
+    payload = dict(featured=pick_ids,ballotConfig=ballot_config,agentPrompt=agent_prompt,readingNotes=guidance,repo=REPO,domains=DOMAINS,nameGroups=groups,fieldLandmarks=landmarks,
                    mapEvidence=evidence,mapCatalog=catalog_cells,marks=marks,catalog=[{k:x[k] for k in directory_fields if k in x} for x in directory.values()],names=names,months=months)
     scripts = ('language.js','app.js','parts.js','ballot.js','cards.js','contribute.js','directory.js','names.js','trends.js','route.js')
     app = '\n'.join((ROOT/'web'/name).read_text() for name in scripts)
@@ -296,9 +305,10 @@ if __name__=='__main__':
     stale=[]
     for path,text in render().items():
         dest=ROOT/path
+        blob=text if isinstance(text,bytes) else text.encode('utf-8')
         if args.check:
-            if not dest.exists() or dest.read_text()!=text: stale.append(path)
+            if not dest.exists() or dest.read_bytes()!=blob: stale.append(path)
         else:
             dest.parent.mkdir(parents=True,exist_ok=True)
-            dest.write_text(text,encoding='utf-8')
+            dest.write_bytes(blob)
     if stale: sys.exit('Regenerate with python3 scripts/build_guide.py: '+', '.join(stale))

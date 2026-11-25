@@ -30,7 +30,12 @@ class PayloadParser(HTMLParser):
 def snapshot():
     parser = PayloadParser()
     parser.feed((HERE.parent / "docs" / "index.html").read_text())
-    entries = json.loads("".join(parser.data))["catalog"]
+    core=json.loads("".join(parser.data))
+    index=json.loads((HERE.parent/'docs/parts/directory-index.json').read_text())
+    if index['revision']!=core['parts']['directory-index']:raise ValueError('Stale full directory index')
+    home={x['slug']:x for x in core['catalog']}
+    entries=[{**home.get(k,{}),**v} for k,v in index['records'].items()]
+    if len(entries)!=core['catalogSize']:raise ValueError('Incomplete ballot directory')
     out = {}
     for x in entries:
         slug = x["slug"]

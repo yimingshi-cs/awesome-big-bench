@@ -1,0 +1,78 @@
+{
+  "Coding": [
+    "humaneval",
+    "livecodebench-v6",
+    "swe-bench-verified",
+    "terminal-bench-4-1",
+    "bird",
+    "spider-1-0",
+    "spider-2-0-lite",
+    "gamecraft-bench"
+  ],
+  "CUA": [
+    "webarena",
+    "webvoyager",
+    "osworld",
+    "androidworld",
+    "toolathlon",
+    "tau2-bench",
+    "browsecomp"
+  ],
+  "Reasoning": [
+    "gsm8k",
+    "gpqa",
+    "frontiermath",
+    "arc-agi",
+    "arc-agi-2",
+    "arc-agi-3",
+    "gamebench",
+    "game-arena"
+  ],
+  "Multimodal": [
+    "mmmu",
+    "mathvista",
+    "video-mme",
+    "docvqa",
+    "ocrbench",
+    "librispeech"
+  ],
+  "Embodied": [
+    "alfred",
+    "libero",
+    "rlbench",
+    "calvin"
+  ],
+  "Safety": [
+    "truthfulqa",
+    "bbq",
+    "xstest",
+    "strongreject"
+  ],
+  "Long-context & Memory": [
+    "needle-in-a-haystack",
+    "ruler",
+    "longbench-v2",
+    "longmemeval",
+    "graphwalks"
+  ],
+  "AutoResearch": [
+    "mle-bench",
+    "paperbench",
+    "re-bench",
+    "terminal-bench-science"
+  ],
+  "RSI": [
+    "posttrainbench-1-2",
+    "frontier-rsi"
+  ],
+  "General": [
+    "mmlu",
+    "mmlu-pro",
+    "c-eval",
+    "mteb",
+    "ifeval",
+    "humanitys-last-exam",
+    "gdpval",
+    "chatbot-arena"
+  ]
+}
